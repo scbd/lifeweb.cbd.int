@@ -6,7 +6,8 @@
     "http-proxy": "~1.0.2",
     "grunt": "~0.4.2",
     "grunt-bower-task": "~0.3.4",
-    "grunt-cli": "~0.1.13"
+    "grunt-cli": "~0.1.13",
+    "load-grunt-tasks": "^0.4.0"
   },
   "devDependencies": {
     "awsbox": "0.6.x"
