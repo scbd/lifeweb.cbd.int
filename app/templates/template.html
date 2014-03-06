@@ -26,13 +26,16 @@
     <style>[ng\:cloak], [ng-cloak], .ng-cloak { display: none !important; }</style>
 </head>
 
-<body ng-controller="MasterTemplateController">
+<body ng-controller="TemplateController">
 
-    <div class="fluid-container">
+    <iframe id="authenticationFrame" src="https://accounts.cbd.int/app/authorize.html" style="display:none"></iframe>
+
+    <div class="fluid-container" >
         <div ng-include="'/app/views/header/header.html'"></div>
         <ng-view></ng-view>
         <div>© CBD Secretariat</div>
     </div>
+
 
 
     <!-- Bootstrap core JavaScript

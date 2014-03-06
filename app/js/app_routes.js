@@ -1,6 +1,6 @@
 'use strict';
 
-define(['app'], function(app) {
+define(['app', 'authentication'], function(app) {
 
   app.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
@@ -10,41 +10,71 @@ define(['app'], function(app) {
       $routeProvider.
       when('/', {
         templateUrl: '/app/views/index.html',
-        resolve: {},
-        label: 'Home'
+        label: 'Home',
+        resolve: {
+           user : resolveUser()
+        }
       }).
       when('/about', {
         templateUrl: '/app/views/todo.html',
-        resolve: {},
-        label: 'About'
+        label: 'About',
+        resolve: {
+          user : resolveUser()
+        }
       }).
       when('/resources', {
         templateUrl: '/app/views/todo.html',
-        resolve: {},
-        label: 'Resources'
+        label: 'Resources',
+        resolve: {
+          user : resolveUser()
+        }
       }).
       when('/countries', {
         templateUrl: '/app/views/samples/index.html',
+        label: 'Countries',
         resolve: {
+          user : resolveUser(),
           dependencies: resolveJS()
-        },
-        label: 'Countries'
+        }
       }).
       when('/countries/:country', {
         templateUrl: '/app/views/samples/index-country.html',
+        label: 'Country',
         resolve: {
+          user : resolveUser(),
           dependencies: resolveJS()
-        },
-        label: 'Country'
+        }
+      }).
+      when('/oauth2/callback', { 
+        templateUrl: '/app/views/oauth2/callback.html',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS()
+        }
       }).
       when('/404', {
         templateUrl: '/app/views/404.html',
-        resolve: {},
-        label: '404'
+        label: 'Page not found',
+        resolve: {}
       }).
       otherwise({
         redirectTo: '/404'
       });
+
+
+      //==================================================
+      //
+      //
+      //==================================================
+      function resolveUser() { 
+
+        return ['$rootScope', 'authentication', function($rootScope, authentication) {
+          return authentication.getUser().then(function (user) {
+            $rootScope.user = user;
+            return user;
+          })
+        }];
+      }
 
       //==================================================
       //
