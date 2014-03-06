@@ -1,5 +1,5 @@
 {
-  "name": "ebsa-cbd-int",
+  "name": "lifeweb-cbd-int",
   "dependencies": {
     "angular": "~1.2.14",
     "angular-route": "~1.2.5",
