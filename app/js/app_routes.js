@@ -12,23 +12,23 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/home.html',
         resolve: {
            user : resolveUser()
-        }
+        },
         label: 'Home'
       })
       .when('/oauth2/callback', { 
-        templateUrl: '/app/views/oauth2/callback.html',
+        templateUrl: '/app/templates/oauth2/callback.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS()
-        }
+        },
       })
       .when('/404', {
         templateUrl: '/app/views/404.html',
         label: 'Page not found',
-        resolve: {}
-      }).
+        resolve: {},
+      })
       .otherwise({
-        redirectTo: '/404'
+        redirectTo: '/404',
       });
 
 

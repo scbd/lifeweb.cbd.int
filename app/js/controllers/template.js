@@ -1,5 +1,5 @@
 'use strict';
-define(['app', 'authentication', '../views/header/header.html'], function(app) {
+define(['app', 'authentication', 'controllers/header'], function(app) {
 
   app.controller('TemplateController', ['$scope', '$window', '$browser', '$document', '$location', 'authentication',
 	function($scope, $window, $browser, $document, $location, authentication) {
