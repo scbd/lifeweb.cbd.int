@@ -1,49 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="app">
-  <head>
-    <meta charset="utf-8">
-    <title>The LifeWeb Initiative</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-     <link rel="shortcut icon" href="ico/favicon.png">
-
-   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
-    <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
-      <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
-      <script src="http://code.angularjs.org/1.0.0rc10/angular-cookies-1.0.0rc10.js"></script>
-
-      <script>
-          angular.module('app', ["kmApp", "ngSanitize", "ngCookies"]);
-      </script>
-
-      <script src="/app/lifeweb/directives/signin.js"></script>
-      <script src="/app/lifeweb/app/js/PageController.js"></script>
-
-
-
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
-
-    <!-- NAVBAR
-    ================================================== -->
-     
-     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-                   <div ng-include src="'/app/lifeweb/navigation.html'"></div>
-          </div>
-        </div>
-      </div>
-    
-    <div class="container" >
-   
-   
        <!-- Docs nav
     ================================================== -->
     <div class="row" >
@@ -82,14 +36,14 @@
           <table>
     <tr>
         <td style="padding-right: 20px;"><a href="http://www.cbd.int/doc/publications/cbd-value-nature-en.pdf">
-            <img src="/app/lifeweb/images/docs/valueofnature_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+            <img src="/app/images/docs/valueofnature_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
         <td style="padding-right: 20px;"><a href="http://www.cbd.int/images/lifeweb/downloads/brochure.pdf">
-            <img src="/app/lifeweb/images/docs/lwbrochure_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+            <img src="/app/images/docs/lwbrochure_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
         
         <td style="padding-right: 20px;"><a href="http://www.cbd.int/doc/meetings/cop/cop-11/information/cop-11-inf-48-en.pdf">
-            <img src="/app/lifeweb/images/docs/cop11inf_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+            <img src="/app/images/docs/cop11inf_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
         <td style="padding-right: 20px;"><a href="http://www.cbd.int/images/lifeweb/downloads/2pager.pdf">
-            <img src="/app/lifeweb/images/docs/2pager_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+            <img src="/app/images/docs/2pager_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
     </tr>
     <tr>
         <td valign="top">
@@ -139,7 +93,7 @@ The Strategic Plan for Biodiversity 2011-2020 was adopted by the Conference of t
 <br>
 <h4 style="border-bottom:1px solid #dedede;"> <i class="icon-star-empty" style="position:relative; top:2px;"></i> More information </h4>
 <table><tr>
-<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/strategic-plan/2011-2020/Aichi-Targets-EN.pdf"  ><img src="/app/lifeweb/images/docs/sp_brochure_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/strategic-plan/2011-2020/Aichi-Targets-EN.pdf"  ><img src="/app/images/docs/sp_brochure_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
 <td valign="top"> 
 <i class="icon-file"></i> <a href="http://www.cbd.int/sp" target="__new">CBD Strategic Plan Website</a><br>
 <i class="icon-file"></i> <a href="http://www.cbd.int/nbsap/training/quick-guides/" target="__new">Quick Guides for the Aichi Biodiversity Targets</a><br>
@@ -170,14 +124,14 @@ The Strategic Plan for Biodiversity 2011-2020 was adopted by the Conference of t
 Adopted in 2004, the CBD Programme of Work on Protected Areas (PoWPA) is the most comprehensive global plan of action for the development of participatory, ecologically representative and effectively managed national and regional protected area systems, integrating other land uses and contributing to human well-being. 
 The PoWPA comprehensively addresses all the elements of Aichi Target 11, and its effective implementation will make a significant contribution to achieving not only Target 11 but many other related area-based Aichi Targets.</p>
 
-    <div ng-include src="'/app/lifeweb/partials/areabasedtargets.html'"></div>
+    <div ng-include src="'/app/partials/areabasedtargets.html'"></div>
 
 <br>
 <table><tr>
-<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/publications/pa-national-action-en.pdf"  ><img src="/app/lifeweb/images/docs/PowpaMessages_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
-<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/publications/cbd-value-nature-en.pdf"  ><img src="/app/lifeweb/images/docs/valueofnature_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
-<td style="padding-right:20px;"><a href="http://www.cbd.int/database/attachment/?id=1408"  ><img src="/app/lifeweb/images/docs/teeb11_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
-<td style="padding-right:20px;"><a href="http://www.cbd.int/database/attachment/?id=1720"  ><img src="/app/lifeweb/images/docs/t11resources_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/publications/pa-national-action-en.pdf"  ><img src="/app/images/docs/PowpaMessages_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/publications/cbd-value-nature-en.pdf"  ><img src="/app/images/docs/valueofnature_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+<td style="padding-right:20px;"><a href="http://www.cbd.int/database/attachment/?id=1408"  ><img src="/app/images/docs/teeb11_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+<td style="padding-right:20px;"><a href="http://www.cbd.int/database/attachment/?id=1720"  ><img src="/app/images/docs/t11resources_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
 </tr>
 <tr>
 <td valign="top" colspan="4" > 
@@ -420,20 +374,8 @@ Expressions of Interest meeting the eligibility criteria (see question 6) are po
 
     <!-- FOOTER -->
       <footer>
-        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+        <div ng-include src="'/app/templates/footer.html'"></div>
       </footer>
 
-
-
-    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js"></script>
-	  <!--CMS-->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
-	<script src="/app/js/app_0-0-0.js"></script>
-	<script src="/app/js/directives/cms/cms-module.js"></script>
-	<script src="/app/js/utilities/km-utilities.js"></script>
-	<script src="/app/js/utilities/km-authentication.js"></script>
 	<!--<placeholder id="script"/>-->
 	<div class="cmsToolbar"></div>
-  </body>
-</html>

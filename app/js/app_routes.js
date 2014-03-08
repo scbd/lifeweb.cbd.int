@@ -11,9 +11,16 @@ define(['app', 'authentication'], function(app) {
       .when('/', {
         templateUrl: '/app/templates/home.html',
         resolve: {
-           user : resolveUser()
+          user : resolveUser()
         },
         label: 'Home'
+      })
+      .when('/aboutus', {
+        templateUrl: '/app/templates/aboutus.html',
+        resolve: {
+          user : resolveUser(),
+        },
+        label: 'AboutUs',
       })
       .when('/oauth2/callback', { 
         templateUrl: '/app/templates/oauth2/callback.html',
