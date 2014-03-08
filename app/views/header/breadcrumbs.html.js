@@ -1,12 +1,9 @@
-define(['app'], function(app) {
+require("app").controller('BreadcrumbsCtrl', ['$scope', 'breadcrumbs', function ($scope, breadcrumbs) {
+  
+	$scope.breadcrumbs = breadcrumbs.getAll();
 
-	return app.controller('BreadcrumbsCtrl', ['$scope', 'breadcrumbs', function ($scope, breadcrumbs) {
-	  
+	$scope.$on('$routeChangeSuccess', function() {
 		$scope.breadcrumbs = breadcrumbs.getAll();
+	});
 
-		$scope.$on('$routeChangeSuccess', function() {
-			$scope.breadcrumbs = breadcrumbs.getAll();
-		});
-
-	}]);
-});
+}]);

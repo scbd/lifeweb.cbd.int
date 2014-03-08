@@ -1,41 +1,38 @@
-define(['app'], function(app) {
+require("app").controller('Oauth2CallbackController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
 
-    app.controller('Oauth2CallbackController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
+    //============================================================
+    // TODO: USE ANGULARJS EQUIVALENT
+    //
+    //============================================================
+     function setCookie (name, value, days, path) {
 
-        //============================================================
-        // TODO: USE ANGULARJS EQUIVALENT
-        //
-        //============================================================
-         function setCookie (name, value, days, path) {
+        var cookieString = escape(name) + "=";
 
-            var cookieString = escape(name) + "=";
+        if(value) cookieString += escape(value);
+        else      days = -1;
 
-            if(value) cookieString += escape(value);
-            else      days = -1;
+        if(path)
+            cookieString += "; path=" + path;
 
-            if(path)
-                cookieString += "; path=" + path;
+        if(days || days == 0) {
 
-            if(days || days == 0) {
+            var expirationDate = new Date();
 
-                var expirationDate = new Date();
+            expirationDate.setDate(expirationDate.getDate() + days);
 
-                expirationDate.setDate(expirationDate.getDate() + days);
-
-                cookieString += "; expires=" + expirationDate.toUTCString();
-            }
-
-            document.cookie = cookieString
-        };
-
-        var code  = $location.search().code||'';
-        var state = $location.search().state||'';
-
-        if(code) {
-            setCookie('authenticationToken', code, 7, '/');
-            $location.path(state || '/').search('');
-        } else {
-            alert('invalid code');
+            cookieString += "; expires=" + expirationDate.toUTCString();
         }
-    }]);
-});
+
+        document.cookie = cookieString
+    };
+
+    var code  = $location.search().code||'';
+    var state = $location.search().state||'';
+
+    if(code) {
+        setCookie('authenticationToken', code, 7, '/');
+        $location.path(state || '/').search('');
+    } else {
+        alert('invalid code');
+    }
+}]);
