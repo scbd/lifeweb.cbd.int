@@ -1,6 +1,6 @@
 'use strict';
 
-define(['app', 'controllers/MapController'], function(app, MapCtrl) {
+define(['app', 'authentication', 'controllers/MapController'], function(app, MapCtrl) {
   app.controller('HeaderCtrl', function() {});
 
 });

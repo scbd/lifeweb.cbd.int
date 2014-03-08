@@ -12,7 +12,7 @@ var server = http.createServer(app);
 var oneDay = 24*60*60*1000;
 
 app.configure(function() {
-    app.set('port', process.env.PORT || 2010, '127.0.0.1');
+    app.set('port', process.env.PORT || 2020, '127.0.0.1');
 
     app.use(express.logger('dev'));
     app.use(express.compress());
@@ -36,7 +36,7 @@ app.delete('/api/*', function(req, res) { proxy.web(req, res, { target: 'https:/
 // Configure index.html
 
 app.get('/*', function(req, res) {
-	fs.readFile(__dirname + '/app/templates/master.html', 'utf8', function (error, text) {
+	fs.readFile(__dirname + '/app/templates/template.html', 'utf8', function (error, text) {
 		res.send(text);
 	});
 });

@@ -1,6 +1,6 @@
 'use strict';
 
-define(['app'], function(app) {
+define(['app', 'authentication'], function(app) {
 
   app.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
@@ -10,17 +10,41 @@ define(['app'], function(app) {
       $routeProvider
       .when('/', {
         templateUrl: '/app/templates/home.html',
-        resolve: {},
+        resolve: {
+           user : resolveUser()
+        }
         label: 'Home'
       })
-      .when('/404', {
-        templateUrl: '/app/templates/404.html',
-        resolve: {},
-        label: '404'
+      .when('/oauth2/callback', { 
+        templateUrl: '/app/views/oauth2/callback.html',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS()
+        }
       })
+      .when('/404', {
+        templateUrl: '/app/views/404.html',
+        label: 'Page not found',
+        resolve: {}
+      }).
       .otherwise({
         redirectTo: '/404'
       });
+
+
+      //==================================================
+      //
+      //
+      //==================================================
+      function resolveUser() { 
+
+        return ['$rootScope', 'authentication', function($rootScope, authentication) {
+          return authentication.getUser().then(function (user) {
+            $rootScope.user = user;
+            return user;
+          })
+        }];
+      }
 
       //==================================================
       //
