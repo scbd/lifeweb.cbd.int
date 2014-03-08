@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>The LifeWeb Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <link href="/app/lifeweb/css/bootstrap.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
+
+    <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+	<script src="https://raw.github.com/angular-ui/angular-ui/master/build/angular-ui.js"></script>
+	<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+
+    <script src="/app/lifeweb/app/js/app.js" ></script>
+    <script src="/app/lifeweb/app/js/filters/filters.js" ></script>
+    <script src="/app/lifeweb/app/js/PageController.js"></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
+
+    <!-- NAVBAR
+    ================================================== -->
+     
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+                   <div ng-include src="'/app/lifeweb/navigation.html'"></div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+      <script>
+          angular.module('app').controller('EventsCtrl', function ($scope, $http, URI) {
+
+              var sID = new URI().query(true).id;
+
+              $scope.eventID = sID;
+
+              $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true })
+                  .success(function (data) {
+                      $scope.event = data;
+                  });
+
+          });
+</script>
+
+      <div class="container" style="padding-top: 100px; padding-left: 100px;" data-ng-controller="EventsCtrl">
+
+           <div ng-controller="PageController" class="pull-right">
+        <div ng-show="session.isAdministrator">
+            <a href="https://www.cbd.int/database/edit.shtml?documentid={{eventID}}" target="_edit_" class="btn btn-warning">edit </a>
+            <a href="http://www.cbd.int/admin/clearcachekey.shtml?key=DEVENTS" target="_refresh_" class="btn btn-info">refresh cache </a>
+        </div>
+    </div>
+
+          <div class="row">
+              
+              <!-- left side bar -->
+              <div class="span8">
+                  <h1 class="title-divider" ng-bind-html="event.title"></h1>
+
+
+                  <dl class="dl-horizontal">
+                      <dt>
+                          <img src="{{event.icon.url}}" ng-show="event.icon" class="img-polaroid" style="width:150px;margin-top:15px;" /></dt>
+                      <dd>
+                          <h3 style="color: #2185C5;" ng-bind-html="event.description"></h3>
+                          <h3>{{event.date}}</h3>
+                      </dd>
+                  </dl>
+
+                  <p ng-bind-html-unsafe="event.info"></p>
+
+              </div><!-- end left side bar -->
+
+
+              <!-- right side bar -->
+              <div class="span4" >
+
+                  <div ng-show="event.projects" >
+                      <h3 class="title-divider">Expression(s) of Interest</h3>
+                      <div ng-repeat="proj in event.projects">
+
+                          <div class="media-body">
+                              <span class="media-type" ng-bind-html="proj.country_names"></span>
+                              <a href="/project?id={{proj.id}}">
+                                  <img class="thumbnail pull-left" style="margin-right:5px;width: 50px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
+                                  <h4 class="media-heading" ng-bind-html="proj.title"></h4>
+                              </a>
+                              <span ng-bind-html="proj.summary"></span>
+                              <br />
+
+                              <div>
+                                  <span ng-show="proj.is_funded" style="color: #F00;">FUNDED:&nbsp;</span>
+                                  <span style="font-weight: bold; font-size: 13px;">Funding needed: <span class="label label-inverse">{{proj.funding_needed | filterCurrency:proj.currency}}</span> </span>
+                              </div>
+
+                          </div>
+
+                      </div>
+                  </div><!-- end projects -->
+
+                 <div ng-show="event.documents">
+                      <h3 class="title-divider">Documents</h3>
+                      <div>
+                          <ul ng-repeat="link in event.documents">
+                              <li><a href="{{link.url}}" target="_new"><i class="icon-file"></i>{{link.name}}</a></li>
+                          </ul>
+                      </div>
+                  </div><!-- end documents -->
+
+
+                  <div ng-show="(event.images).length > 0">
+                      <h3 class="title-divider">Images</h3>
+                      <div >
+                          <div ng-repeat="slide in event.images">
+                              <a href="#myModal{{$index}}"  data-toggle="modal">
+                                  <img src="{{slide.url}}&width=300" alt="x" style="width:300px;" class="img-polaroid img-rounded">
+                              </a>
+                              <br>
+                              <!-- Modal -->
+                              <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                  <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">x</button><br>
+                                  <img src="{{slide.url}}" alt="{{$index}}">
+                                  <p>{{slide.name}}</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+
+
+
+
+              </div><!-- end right side bar -->
+          </div> <!-- end row-->
+      </div><!-- end container-->
+
+     <!-- FOOTER -->
+      <footer>
+        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+      </footer>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+    <script src="/app/lifeweb/js/jquery.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-transition.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-alert.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-modal.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-dropdown.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-scrollspy.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tab.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tooltip.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-popover.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-button.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-collapse.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-carousel.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-typeahead.js"></script>
+    <script src="/app/lifeweb/js/holder/holder.js"></script>
+    
+      <!--CMS-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
+	<script src="/app/js/app_0-0-0.js"></script>
+	<script src="/app/js/directives/cms/cms-module.js"></script>
+	<script src="/app/js/utilities/km-utilities.js"></script>
+	<script src="/app/js/utilities/km-authentication.js"></script>
+	<!--<placeholder id="script"/>-->
+	<div class="cmsToolbar"></div>
+    
+  </body>
+</html>

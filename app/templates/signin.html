@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+         <link href="/app/lifeweb/css/lifeweb_inner.css" rel="stylesheet">
+		<style>[ng\:cloak], [ng-cloak], .ng-cloak { display: none !important; }</style>
+	</head>
+
+	<body ng-app="kmApp" data-spy="scroll" data-target=".bs-docs-sidebar" ng-controller="PageController">
+		
+		<!--NAVBAR-->
+		<div class="navbar navbar-inverse navbar-fixed-top" >
+			<div class="navbar-inner">
+				<div class="container">
+					
+					<a class="brand" href="#"></a>
+						<ul class="nav">
+							<li ><a href="/"> <img src="/app/lifeweb/ico/favicon_white.png" style="width:20px;top:-2px;position:relative;" />  LifeWeb</a> </li>
+							<li ng-show="session.isAuthenticated"><a class="user-menu" href="#" ng-click="signOut()"><i class="icon-signout"></i> Sign-out</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+
+		 <h2 class="form-signin-heading">Please sign in</h2>
+        <input type="text" class="form-control" placeholder="Email address" autofocus>
+        <input type="password" class="form-control" placeholder="Password">
+        <label class="checkbox">
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+
+
+		
+		<!--FOOTER-->
+		<div class="container">
+			<div style="height:30px"></div>
+		</div>
+		
+		<!--SCRIPTS-->
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+		<script src="/app/libs/angular/1.1.4/angular.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
+		<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js"></script>
+		<script src="/app/libs/jquery.timeago/1.3.0/jquery.timeago.js"></script>
+		<script src="/app/libs/select2/3.4.2/select2.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore.js"></script>
+		<script src="/app/libs/uri/1.7.2/URI.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.2.9/marked.js"></script>
+
+		<script src="/app/js/app_0-0-0.js"></script>
+		<script>
+		    function PageController($scope, $rootScope, $browser, $window, authHttp, authentication, URI) {
+
+		        //==============================
+		        //
+		        //==============================
+		        function toSectionMenuItems(menuItems) // Set the signin Url with good returnurl
+		        {
+		            menuItems = angular.fromJson(angular.toJson(menuItems));
+
+		            for (var i = menuItems.length - 1; i >= 0; --i) {
+
+		                if (menuItems[i].isSection)
+		                    continue;
+
+		                menuItems[i].isSection = true;
+
+		                if (menuItems[i].menuItems) {
+		                    var oSubItems = menuItems[i].menuItems;
+
+		                    menuItems[i].menuItems = null;
+
+		                    for (var j = oSubItems.length - 1; j >= 0; j--)
+		                        menuItems.splice(i + 1, 0, oSubItems[j]);
+		                }
+		            }
+
+		            return menuItems;
+		        }
+
+		        $scope.navigationItems = $$cms.navigation.siteItems;
+		        $scope.menuItems = toSectionMenuItems($$cms.navigation.menuItems);
+		        $scope.breadcrumbs = $$cms.navigation.breadcrumbs;
+		        $scope.IsHeroVisible = $$cms.document.documentId == 16023;
+		        $scope.session = $$cms.session;
+
+		        if (!authentication.user())
+		            authentication.user({
+		                userID: $$cms.session.userID,
+		                name: $$cms.session.name,
+		                email: $$cms.session.email,
+		                government: $$cms.session.government,
+		                roles: $$cms.session.roles,
+		                isAuthenticated: $$cms.session.isAuthenticated
+		            });
+
+
+		        //==============================
+		        //
+		        //==============================
+		        $scope.signIn = function () // Set the signin Url with good returnurl
+		        {
+		            var oCurrentUrl = URI();
+		            var oSignInConfig = {
+		                hostname: oCurrentUrl.host(),
+		                path: "/member/signin",
+		            };
+
+		            if (!oCurrentUrl.host().match(/.*\.local$/)) //Force HTTPS on non .local domains
+		                oSignInConfig.protocol = "https";
+
+		            oSignInConfig.query = oCurrentUrl.path() != oSignInConfig.path // Set returnUrl
+										? URI.buildQuery({ returnurl: (oCurrentUrl.path() + oCurrentUrl.search()) })
+										: oCurrentUrl.query();
+
+		            document.location = URI.build(oSignInConfig); //Set new signinUrl
+		        }
+
+		        //==============================
+		        //
+		        //==============================
+		        $scope.signOut = function () {// Set the signin Url with good returnurl
+		            authentication.signOut().then(function () {
+		                $scope.session = angular.extend({
+		                    "isAdministrator": false,
+		                    "isEditor": false
+		                }, authentication.user());
+		            });
+		        }
+
+		        //==============================
+		        //
+		        //==============================
+		        $rootScope.$on("signOut", function (user) {
+		            $window.location.reload(true);
+		        });
+		    }
+		</script>
+
+
+		<!--<placeholder id="script"/>-->
+		
+		<div class="cmsToolbar"></div>
+
+	</body>
+
+</html>

@@ -9,12 +9,12 @@ define(['app'], function(app) {
 
       $routeProvider
       .when('/', {
-        templateUrl: '/templates/index.html',
+        templateUrl: '/app/templates/home.html',
         resolve: {},
         label: 'Home'
       })
       .when('/404', {
-        templateUrl: '/templates/404.html',
+        templateUrl: '/app/templates/404.html',
         resolve: {},
         label: '404'
       })

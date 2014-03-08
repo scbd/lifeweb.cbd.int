@@ -1,0 +1,153 @@
+﻿<!doctype html>
+<html ng-app="app">
+	<head>
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+		<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+		<link href="/app/lifeweb/css/lifeweb-inner.css" rel="stylesheet">
+
+        <style>
+            [ng\:cloak], [ng-cloak], .ng-cloak {
+                display: none !important;
+            }
+        </style>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
+        <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+        <script src="http://code.angularjs.org/1.0.0rc10/angular-cookies-1.0.0rc10.js"></script>
+
+        <script>
+            angular.module('app', ["kmApp", "ngSanitize", "ngCookies"]);
+        </script>
+
+        <script src="/app/lifeweb/app/js/PageController.js"></script>
+        <script src="/app/lifeweb/directives/signin.js"></script>
+
+	</head>
+
+	<body ng-controller="PageController" ng-class="{'design-mode':session.isEditor}">
+		
+		<!--NAVBAR-->
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container" ng-cloak>
+					<ul class="nav">
+						<li><a href="/"><span class="icon-stack" style="font-size:16px;top:6px"><i class="icon-circle icon-stack-base icon-light"></i><i class="icon-globe" style="margin-left:5px;color:#000"></i></span></a></li>
+						<li class="nav-collapse collapse active" ng-cloak>
+							<a href="/">Home</a>
+						</li>
+						<li class="dropdown" ng-cloak>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Link to page 1</a></li>
+								<li><a href="#">Link to page 2</a></li>
+								<li><a href="#">Link to an external page <i class="icon-external-link-sign"></i></a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="nav pull-right" ng-hide="session.isAuthenticated">
+						<li class="light-blue user-profile">
+							<a class="user-menu" href="#" ng-click="signIn()"><i class="icon-signin"></i> Sign-in</a>
+						</li>
+					</ul>
+					<ul class="nav pull-right" ng-show="session.isAuthenticated">
+						
+						<li class="light-blue user-profile">
+							<a class="user-menu dropdown-toggle" href="#" data-toggle="dropdown">
+								<i class="icon-user"></i>
+								<span id="user_info">
+									<small>{{session.name}}</small>
+								</span>
+								<i class="icon-caret-down"></i>
+							</a>
+							<ul id="user_menu" class="pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+								<li><a href="#"><i class="icon-cog"></i> Settings</a></li>
+								<li><a href="#"><i class="icon-user"></i> Profile</a></li>
+								<li class="divider"></li>
+								<li><a href="#" ng-click="signOut()"><i class="icon-signout"></i> Sign-out</a></li>
+							</ul>
+						</li>
+						<li>
+							<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	
+
+		<!--JUMBOTRON-->
+		<header class="jumbotron subhead" id="overview" ng-show="IsHeroVisible" ng-cloak>
+			<div class="container">
+				<div class="row">
+					<div class="span8">
+						<!--<zone id="90"/>-->
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="panel" ng-class="{ipad:IsHeroVisible, first_tat:!IsHeroVisible}">
+			<div class="container">
+				<div class="row main-features">
+					<!--LEFT-->
+					<div class="span3" ng-hide="IsHeroVisible">
+						<!--<zone id="40"/>-->
+						<ul class="nav nav-list bs-docs-sidenav" style="margin-bottom:20px">
+							<li ng-repeat="item in menuItems" ng-class="{active:item.active}" ng-cloak><a href="{{item.href}}"><i class="icon-chevron-right"></i>{{item.caption}}</a></li>
+							<div style="margin-top:20px">
+						</ul>
+						<!--<zone id="99"/>-->
+					</div>
+					<div ng-class="{span12:IsHeroVisible, span9:!IsHeroVisible}">
+						<!--BREADCRUMPS-->
+						<ul class="breadcrumb" ng-hide="IsHeroVisible">
+							<li ng-repeat="breadcrumb in breadcrumbs" ng-cloak>
+								<a ng-href="{{breadcrumb.href}}">{{breadcrumb.caption}}</a><span class="divider" ng-show="!$last">/</span>
+							</li>
+						</ul>
+
+						<h1>{{document.caption}}</h1>
+						<!--PAGE CONTENT-->
+						<!--<zone id="100"/>-->
+
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div ng-show="IsHeroVisible" class="panel imac" style="background:#e2e2e2"><div class="container"><!--<zone id="300"/>--></div></div>
+		<div ng-show="IsHeroVisible" class="panel first_tat"><div class="container"><!--<zone id="400"/>--></div></div>
+		<div ng-show="IsHeroVisible" class="panel imac" style="background:#e2e2e2"><div class="container"><!--<zone id="500"/>--></div></div>
+		<div ng-show="IsHeroVisible"  class="panel first_tat"><div class="container"><!--<zone id="600"/>--></div></div>
+
+	  <!-- FOOTER -->
+      <footer>
+        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+      </footer>
+
+		
+		<!--<zone id="80"/>-->
+
+     <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.js"></script>
+	  <!--CMS-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
+	<script src="/app/js/app_0-0-0.js"></script>
+	<script src="/app/js/directives/cms/cms-module.js"></script>
+	<script src="/app/js/utilities/km-utilities.js"></script>
+	<script src="/app/js/utilities/km-authentication.js"></script>
+	<!--<placeholder id="script"/>-->
+	<div class="cmsToolbar"></div>
+
+	</body>
+
+</html>

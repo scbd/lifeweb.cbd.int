@@ -1,0 +1,382 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>The LifeWeb Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/app/lifeweb/ico/favicon.png">
+
+    <link href="/app/lifeweb/css/bootstrap.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
+
+	<script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+    <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/app/lifeweb/js/html5shiv.js"></script>
+    <![endif]-->
+
+      <script src="/app/lifeweb/app/js/app.js"></script>
+      <script src="/app/lifeweb/app/js/CountryController.js"></script>
+      <script src="/app/lifeweb/app/js/filters/filters.js"></script>
+
+     <script>
+         angular.module('app').controller('MapCtrl', function ($scope, $http, URI) {
+             //======================================
+             $scope.showMap = function () {
+                 if (!$scope.mapdata)
+                     return;
+
+                 //var map = L.map('map').setView([25, 15], 3);
+                 var map = new L.map('map');
+                 map.setView([25, 15], 3);
+
+                 var sCountry = new URI().query(true).country;
+
+                 if (!sCountry) {
+                     $window.location = "/countries";
+                     return;
+                 }
+
+                 $scope.geolocation = null;
+
+                 $http.jsonp('http://nominatim.openstreetmap.org/search/?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
+                .success(function (data) {
+                    $scope.geolocation = data;
+
+                    if ($scope.geolocation) {
+                        map.setView([$scope.geolocation[0].lat, $scope.geolocation[0].lon], 5);
+                    }
+                });
+
+
+                 //map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
+                 L.tileLayer('http://{s}.tiles.mapbox.com/v3/mcdias.map-ze88o7vz/{z}/{x}/{y}.png').addTo(map);
+
+                 var fundedIcon = L.icon({
+                     iconUrl: '/app/lifeweb/images/map/dark-marker-icon.png',
+                     shadowUrl: '/app/lifeweb/images/map/marker-shadow.png',
+                     iconAnchor: [0, 40], // point of the icon which will correspond to marker's location
+                     shadowAnchor: [0, 40],  // the same for the shadow
+                     popupAnchor: [13, -45] // point from which the popup should open relative to the iconAnchor
+
+                 });
+                 var notfundedIcon = L.icon({
+                     iconUrl: '/app/lifeweb/images/map/marker-icon.png',
+                     shadowUrl: '/app/lifeweb/images/map/marker-shadow.png',
+                     iconAnchor: [0, 40], // point of the icon which will correspond to marker's location
+                     shadowAnchor: [0, 40],  // the same for the shadow
+                     popupAnchor: [13, -45] // point from which the popup should open relative to the iconAnchor
+                 });
+
+                 function onEachFeature(feature, layer) {
+                     // Create custom popup content
+                     var popupContent = '<div id="' + feature.properties.title + '" class="popup" style="min-height:80px;">' +
+                                         '<a href="/project/?id=' + feature.properties.id + '">' +
+                                         '<img src="' + feature.properties.thumbnail + '" class="thumbnail pull-left" style="max-height:80px;max-width:80px;margin-right:10px;" alt="' + feature.properties.id + '"/>' +
+                                         '<strong>' + feature.properties.title + '</strong></a><br>' +
+                                         '<strong style="color:#660000;text-transform:uppercase;">' + feature.properties.funding_status + '</strong>' +
+                                         '<br>' +
+                                         '</div>';
+
+                     if (feature.properties && feature.properties.popupContent) {
+                         popupContent += feature.properties.popupContent;
+                     }
+
+                     layer.bindPopup(popupContent, {
+                         closeButton: false,
+                         minWidth: 320
+                     });
+                 }
+
+                 L.geoJson($scope.mapdata, {
+
+                     pointToLayer: function (feature, latlng) {
+                         if (feature.properties.funding_status == "funded")
+                             return L.marker(latlng, { icon: fundedIcon });
+                         else
+                             return L.marker(latlng, { icon: notfundedIcon });
+                     },
+                     onEachFeature: onEachFeature
+                 }).addTo(map);
+             }
+
+             $scope.$watch("mapdata", $scope.showMap);
+             $scope.mapdata = null;
+
+             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
+                 .success(function (data) {
+                     $scope.mapdata = data;
+                 });
+
+         });
+
+      </script>
+
+    
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
+
+    <!-- NAVBAR
+    ================================================== -->
+     
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+                  <div ng-include src="'/app/lifeweb/navigation.html'"></div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container">
+
+   
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row"  ng-controller="CountryCtrl" >
+      <div class="span3 bs-docs-sidebar" >
+      
+        <ul class="nav nav-list bs-docs-sidenav ">
+          <li><a style="font-size:14px;color:#999;text-transform:uppercase;">LifeWeb Country Profile</a></li>
+          <li><a href="#info"><i class="icon-chevron-right"></i>Country Information</a></li>
+          <li><a href="#projects"><i class="icon-chevron-right"></i>LifeWeb Projects</a></li>
+          <li><a href="#fps"><i class="icon-chevron-right"></i>Focal points</a></li>
+          <li><a href="#links"><i class="icon-chevron-right"></i>Websites and links</a></li>
+          <li ng-show="(countrydetails.info | filter:title='Status and trends of biodiversity, including benefits from biodiversity and ecosystem services')"><a href="#status"><i class="icon-chevron-right"></i>Status and trends</a></li>
+          <li ng-show="(countrydetails.info | filter:title='Main pressures on and drivers of change to biodiversity (direct and indirect)')"><a href="#drivers"><i class="icon-chevron-right"></i>Main pressures</a></li>
+          <li ng-show="(countrydetails.info | filter:title='Implementation of the NBSAP')"><a href="#nbsap_impl"><i class="icon-chevron-right"></i>Implementation</a></li>
+          <li ng-show="(countrydetails.info | filter:title='Actions taken to achieve the 2020 Aichi Biodiversity Targets')"><a href="#actions"><i class="icon-chevron-right"></i>Actions taken</a></li>
+          <li ng-show="(countrydetails.info | filter:title='Support mechanisms for national implementation (legislation, funding, capacity-building, coordination, mainstreaming, etc.)')"><a href="#support"><i class="icon-chevron-right"></i>Support mechanisms</a></li>
+          <li ng-show="(countrydetails.info | filter:title='Mechanisms for monitoring and reviewing implementation')" ><a href="#monitoring"><i class="icon-chevron-right" ></i>Monitoring</a></li>
+          <!--<li><a href="#small"><i class="icon-chevron-right"></i>Small states</a></li>-->
+        </ul>
+      </div>
+      
+      <div class="span9">
+
+ 
+
+<!--==============================================================================-->     
+<section id="info"  >    
+      
+      <h2 class="title-divider featurette-heading lw-top-heading" >
+          <img style="height:50px;display:inline!important;" src="http://www.cbd.int/{{countrydetails.flag.url}}" alt="{{countrydetails.flag.name}}" class="thumbnail" /> 
+          {{countries | filterCountryName:CountryID}}</h2> 
+
+        <div data-ng-controller="MapCtrl" >
+        
+        <div id='map' style="height:300px;" ></div>    
+        </div>
+
+
+    <div ng-show="countrydetails.NbsapReportList">
+        <h4>National Biodiversity Action Plans</h4>
+        <div ng-repeat="report in countrydetails.NbsapReportList">
+            <i class="icon-file"></i><a href="http://www.cbd.int/{{report.url}}" target="_new">{{report.name}}</a><br>
+        </div>
+    </div>
+    <div ng-show="actionplan.plan">
+        <h4>Protected Area Action Plans</h4>
+        <div ng-repeat="report in actionplan.plan">
+            <i class="icon-file"></i><a href="{{report.url}}" target="_new">{{report.name}}</a><br>
+        </div>
+    </div>
+    <div ng-show="countrydetails.NrReportList">
+        <h4>National Reports</h4>
+        <div ng-repeat="report in countrydetails.NrReportList">
+            <i class="icon-file"></i><a href="http://www.cbd.int/{{report.url}}" target="_new">{{report.name}}</a><br>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" >    
+ <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">LifeWeb Projects</h2>
+<!--******************************************** PROJECT SECTION ******************************************************-->
+<div ng-show="projects | filterCountry:CountryID | filterIsFunded:''">
+    <h4>Projects in need of funding</h4>
+    <div class="project_well" style="background-color: white!important;">
+        <table>
+            <tr ng-repeat="proj in projects | filterCountry:CountryID | filterIsFunded:''">
+                <td valign="top" style="padding-right: 10px; padding-bottom: 20px;">
+                    <a class="pull-left" href="/project/?id={{proj.id}}">
+                        <img class="img-rounded" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
+                    </a></td>
+                <td valign="top"><a href="/project/?id={{proj.id}}">
+                    <h5 class="media-heading">{{proj.title}}</h5>
+                </a></td>
+                <td valign="top" style="padding-left: 10px;" ng-show="!proj.is_funded"><span ng-switch on="proj.currency" style="white-space: nowrap;">
+                    <span ng-switch-when="US Dollars">{{ proj.funding_needed | currency:"USD$ " }} </span>
+                    <span ng-switch-when="Euros">{{ proj.funding_needed | currency:"EUR€ " }}</span></span>
+                </td>
+            </tr>
+        </table>
+    </div>   
+</div>
+
+<br>
+    <div ng-show="projects | filterCountry:CountryID | filterIsFunded:'true'">
+        <h4>Funded projects</h4>
+        <div class="project_well">
+            <table>
+                <tr ng-repeat="proj in projects | filterCountry:CountryID | filterIsFunded:'true'">
+                    <td valign="top" style="padding-right: 10px; padding-bottom: 20px;"><a class="pull-left" href="/project/?id={{proj.id}}">
+                        <img class="img-rounded" style="margin-top: 8px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
+                    </a></td>
+                    <td valign="top"><a href="/project/?id={{proj.id}}">
+                        <h5 class="media-heading">{{proj.title}}</h5>
+                    </a></td>
+                    <td valign="top" style="color: #FF0000; padding-left: 10px;"><span ng-switch on="proj.currency" style="white-space: nowrap;">
+                        <span ng-switch-when="US Dollars">{{ proj.funding_needed | currency:"USD$ " }} </span>
+                        <span ng-switch-when="Euros">{{ proj.funding_needed | currency:"EUR€ " }}</span></span>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!--==============================================================================-->   
+<section id="fps"   > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Country Focal Points</h2> 
+<h4>National Focal Point(s)</h4>
+
+<div class="lw-proj-text" ng-repeat="fp in fp_national">
+
+             <address>
+               <strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}}</strong><br>
+               <span ng-show="fp.Designation != ''">{{fp.Designation}}<br></span>
+               <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+               <span ng-show="fp.Email!= ''"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
+            </address>
+   </div >
+
+<h4>PoWPA Focal Point(s)</h4>
+
+<div class="lw-proj-text" ng-repeat="fp in fp_powpa">
+
+             <address>
+               <strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}}</strong><br>
+               <span ng-show="fp.Designation != ''">{{fp.Designation}}<br></span>
+               <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+               <span ng-show="fp.Email!= ''"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
+            </address>
+   </div >
+
+</section>
+
+
+<!--==============================================================================-->  
+          <section id="links" >
+              <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Websites and links</h2>
+              <div ng-repeat="report in countrydetails.Websites">
+                 
+                  <i class="icon-play"></i><a href="{{report.url | filterCBDLink}}" target="_new">{{report.name}}</a><br>
+              </div>
+          </section>
+
+
+<!--==============================================================================-->   
+<section id="status"   > 
+<div ng-repeat="info in countrydetails.info | filter:title='Status and trends of biodiversity, including benefits from biodiversity and ecosystem services'" > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
+<div ng-bind-html-unsafe="info.text"></div>
+</div>
+</section>
+
+<!--==============================================================================-->   
+<section id="drivers"   > 
+<div ng-repeat="info in countrydetails.info | filter:title='Main pressures on and drivers of change to biodiversity (direct and indirect)'" > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
+<div ng-bind-html-unsafe="info.text"></div>
+</div>
+</section>
+
+<!--==============================================================================-->   
+<section id="nbsap_impl"   > 
+<div ng-repeat="info in countrydetails.info | filter:title='Implementation of the NBSAP'" > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
+<div ng-bind-html-unsafe="info.text"></div>
+</div>
+</section>
+
+<!--==============================================================================-->   
+<section id="actions"   > 
+<div ng-repeat="info in countrydetails.info | filter:title='Actions taken to achieve the 2020 Aichi Biodiversity Targets'" > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
+<div ng-bind-html-unsafe="info.text"></div>
+</div>
+</section>
+
+<!--==============================================================================-->   
+<section id="support"   > 
+<div ng-repeat="info in countrydetails.info | filter:title='Support mechanisms for national implementation (legislation, funding, capacity-building, coordination, mainstreaming, etc.)'" > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
+<div ng-bind-html-unsafe="info.text"></div>
+</div>
+</section>
+
+<!--==============================================================================-->   
+<section id="monitoring"   > 
+<div ng-repeat="info in countrydetails.info | filter:title='Mechanisms for monitoring and reviewing implementation'" > 
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
+<div ng-bind-html-unsafe="info.text"></div>
+</div>
+</section>
+
+
+</div><!-- end span 9-->
+</div><!-- end row-->
+</div><!-- end container -->
+
+   <!-- FOOTER -->
+      <footer>
+        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+      </footer>
+
+ <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/app/lifeweb/js/jquery.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-transition.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-alert.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-modal.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-dropdown.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-scrollspy.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tab.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tooltip.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-popover.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-button.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-collapse.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-carousel.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-typeahead.js"></script>
+    <script src="/app/lifeweb/js/holder.js"></script>
+
+	<!--CMS-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
+	<script src="/app/js/app_0-0-0.js"></script>
+	<script src="/app/js/directives/cms/cms-module.js"></script>
+	<script src="/app/js/utilities/km-utilities.js"></script>
+	<script src="/app/js/utilities/km-authentication.js"></script>
+	<!--<placeholder id="script"/>-->
+	<div class="cmsToolbar"></div>
+  </body>
+</html>

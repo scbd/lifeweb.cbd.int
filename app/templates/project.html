@@ -1,0 +1,833 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>The LifeWeb Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/app/lifeweb/ico/favicon.png">
+
+	<script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+	<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+
+    <!-- Le styles -->
+      <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="/app/lifeweb//js/html5shiv.js"></script>
+    <![endif]-->
+
+    <script src="/app/lifeweb/app/js/app.js" ></script>
+    <script src="/app/lifeweb/app/js/filters/filters.js" ></script>
+    <script src="/app/lifeweb/app/js/PageController.js"></script>
+
+    <style>[ng\:cloak], [ng-cloak], .ng-cloak { display: none !important; }</style>
+
+
+    <script type="text/javascript" src="/app/lifeweb/js/scrollup-master/js/jquery.scrollUp.min.js"></script>
+
+<script>
+
+    /* scrollUp Minimum setup */
+     $(function () {
+      $.scrollUp();
+     });
+
+  </script>
+
+
+
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
+
+    <!-- NAVBAR
+    ================================================== -->
+     
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+                  <div ng-include src="'/app/lifeweb/navigation.html'"></div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+    <script>
+        angular.module('app').controller('EOIDetailCtrl', function ($scope, $http, URI) {
+
+            
+            $scope.currency = "EURO";
+
+                //==================================
+                $scope.toggleCurrency = function () {
+
+                    if ($scope.currency == "EURO")
+                        $scope.currency = "USD";
+                    else
+                        $scope.currency = "EURO";
+                }
+
+
+
+            var sID = new URI().query(true).id;
+
+            $scope.eoiID = sID;
+
+            if (!sID) {
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
+                    $scope.eoi = data;
+                });
+            }
+            else {
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
+                    $scope.eoi = data;
+                });
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
+                    $scope.contacts = data;
+                });
+
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
+                    $scope.partners = data;
+                });
+
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=powpa&eoi=' + sID, { cache: true }).success(function (data) {
+                    $scope.fp_powpa = data;
+                });
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&eoi=' + sID, { cache: true }).success(function (data) {
+                    $scope.fp_national = data;
+                });
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
+                    $scope.funding = data;
+                });
+
+                $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
+                           .success(function (data) {
+
+                               $scope.mapdata = data;
+
+                               var map = new L.map('map');
+                               map.setView([25, 15], 3);
+
+                               if ($scope.eoi.lat && $scope.eoi.lng)
+                                   map.setView([$scope.eoi.lat, $scope.eoi.lng], 8);
+
+                               //map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
+                               L.tileLayer('http://{s}.tiles.mapbox.com/v3/mcdias.map-ze88o7vz/{z}/{x}/{y}.png').addTo(map);
+
+                               var fundedIcon = L.icon({
+                                   iconUrl: '/app/lifeweb/images/map/dark-marker-icon.png',
+                                   shadowUrl: '/app/lifeweb/images/map/marker-shadow.png',
+                                   iconAnchor: [0, 40], // point of the icon which will correspond to marker's location
+                                   shadowAnchor: [0, 40],  // the same for the shadow
+                                   popupAnchor: [13, -45] // point from which the popup should open relative to the iconAnchor
+
+                               });
+                               var notfundedIcon = L.icon({
+                                   iconUrl: '/app/lifeweb/images/map/marker-icon.png',
+                                   shadowUrl: '/app/lifeweb/images/map/marker-shadow.png',
+                                   iconAnchor: [0, 40], // point of the icon which will correspond to marker's location
+                                   shadowAnchor: [0, 40],  // the same for the shadow
+                                   popupAnchor: [13, -45] // point from which the popup should open relative to the iconAnchor
+                               });
+
+                               function onEachFeature(feature, layer) {
+                                   // Create custom popup content
+                                   var popupContent = '<div id="' + feature.properties.title + '" class="popup" style="min-height:80px;">' +
+                                                       '<a href="/project/?id=' + feature.properties.id + '">' +
+                                                       '<img src="' + feature.properties.thumbnail + '" class="thumbnail pull-left" style="max-height:80px;max-width:80px;margin-right:10px;" alt="' + feature.properties.id + '"/>' +
+                                                       '<strong>' + feature.properties.title + '</strong></a><br>' +
+                                                       '<strong style="color:#660000;text-transform:uppercase;">' + feature.properties.funding_status + '</strong>' +
+                                                       '<br>' +
+                                                       '</div>';
+
+                                   if (feature.properties && feature.properties.popupContent) {
+                                       popupContent += feature.properties.popupContent;
+                                   }
+
+                                   layer.bindPopup(popupContent, {
+                                       closeButton: false,
+                                       minWidth: 320
+                                   });
+                               }
+
+                               L.geoJson($scope.mapdata, {
+
+                                   pointToLayer: function (feature, latlng) {
+                                       if (feature.properties.funding_status == "funded")
+                                           return L.marker(latlng, { icon: fundedIcon });
+                                       else
+                                           return L.marker(latlng, { icon: notfundedIcon });
+                                   },
+                                   onEachFeature: onEachFeature
+                               }).addTo(map);
+
+                           });
+            }
+
+        });
+
+    </script>
+
+
+    <div class="container"   style="min-height:700px!important;" >
+       
+
+       <!-- Docs nav
+           ================================================== -->
+        <div class="row" data-ng-controller="EOIDetailCtrl">
+            <div class="span3 bs-docs-sidebar">
+                <ul class="nav nav-list bs-docs-sidenav ">
+                    <li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>
+                    <li><a href="#sum"><i class="icon-chevron-right"></i>Summary</a></li>
+                    <li ng-show="eoi.description"><a href="#desc"><i class="icon-chevron-right"></i>Description</a></li>
+                    <li ng-show="eoi.objectives_info || eoi.objectives_results"><a href="#obj"><i class="icon-chevron-right"></i>Objectives</a></li>
+                     <li><a href="#funding"><i class="icon-chevron-right"></i>Funding Information</a></li>
+                    <li ng-show="eoi.ecoservices"><a href="#benefits"><i class="icon-chevron-right"></i>Ecosystem Benefits</a></li>
+                    <li ng-show="eoi.aichi_targets"><a href="#targets"><i class="icon-chevron-right"></i>Links with Aichi Targets</a></li>
+                    <li ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"><a href="#align"><i class="icon-chevron-right"></i>Alignment with National Planning</a></li>
+                    <li ng-show="eoi.ecological_contribution"><a href="#eco"><i class="icon-chevron-right"></i>Ecological Contribution</a></li>
+                    <li ng-show="eoi.participation || eoi.governance"><a href="#participation"><i class="icon-chevron-right"></i>Participation and Equity</a></li>
+                   
+                    <li><a href="#partners"><i class="icon-chevron-right"></i>Partners and Contacts</a></li>
+                    <li ng-show="ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null" "><a href="#attachments"><i class="icon-chevron-right"></i>Attachments</a></li>
+                    <li>&nbsp;</li>
+                    <li><div id='map' style="height:200px;" ></div></li>
+                </ul>
+
+                
+
+
+            </div>
+
+
+
+      
+      <div class="span9">
+         
+<!--==============================================================================-->     
+<section id="sum" style="margin:47px 0 0 0;" >
+    
+    
+    <!-- AddThis Button BEGIN -->
+    <div style="width: 100%;">
+        <div class="addthis_toolbox addthis_default_style pull-right" style="width:140px;">
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_preferred_2"></a>
+            <a class="addthis_button_preferred_3"></a>
+            <a class="addthis_button_preferred_4"></a>
+            <a class="addthis_button_compact"></a>
+            <a class="addthis_counter addthis_bubble_style"></a>
+        </div>
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51bf06933bfe7125"></script>
+    </div>
+    <!-- AddThis Button END -->
+    <div class="pull-right" style="padding-right:10px;">Currency: <a ng-click="toggleCurrency()" style="cursor:pointer;">{{currency}}</a> | </div>
+
+    <br/>
+
+    <table class="lw-tt well">
+        <tr>
+            <td class="lw-dt" style="padding-bottom: 15px;">
+                <img src="{{eoi.thumbnail}}" class="img-polaroid" alt="{{eoi.id}}" style="position: relative; top: 10px;"></td>
+            <td class="lw-dd">
+                <h3 ng-bind-html="eoi.title"></h3>
+            </td>
+        </tr>
+        <tr>
+            <td class="lw-dt">abstract</td>
+            <td valign="middle" class="lw-dd" style="vertical-align: middle!important;" ng-bind-html="eoi.summary"></td>
+        </tr>
+        <tr>
+            <td class="lw-dt">country</td>
+            <td class="lw-dd">
+                <div ng-repeat="c in eoi.country_name_list" style="display:inline;">
+                    <strong><a href="/country/?country={{eoi.country_codes[$index]}}">{{c}}</a></strong><span ng-show="!$last">, </span>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="lw-dt">
+                    <span>project total</span>
+            </td>
+            <td  class="lw-dd">{{eoi.funding_needed | filterCurrency:eoi.currency:currency}} 
+                
+            </td>
+            </tr>
+        <tr>
+            <td class="lw-dt">funding status</td>
+            <td  class="lw-dd">
+                 <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-important', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[eoi.funding_status]">
+                            <span ng-switch="eoi.funding_status">
+                                <span ng-switch-when="not yet funded">not yet funded</span>
+                                <span ng-switch-when="funded">fully funded</span>
+                                <span ng-switch-default>partially funded</span>
+                            </span>
+                        </span>
+                
+                <div ng-repeat="match in eoi.funding_matches" style="white-space:nowrap;">
+                                           {{match.amount |  filterCurrency:match.currency:currency}} ({{match.donor.name}})
+                                    </div>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td class="lw-dt"   ng-show="(eoi.images.concat(eoi.maps)).length > 0"><br/>images</td>
+            <td  class="lw-dd">
+                <!--  <div style="background-color:#AAA;margin:15px 0 0 0; padding:0;border:1px solid #333;" ng-show="eoi.images.concat(eoi.maps).length > 0" >
+<carousel interval="10000">
+    <slide ng-repeat="slide in eoi.images.concat(eoi.maps)" active="slide.active">
+      <img ng-src="{{slide.url}}&width=350&height=300" style="margin:auto;">
+       <div class="carousel-caption" style="padding:0;margin:0;" >
+        <h4>{{slide.name}}</h4>
+        </div>
+
+    </slide>
+  </carousel>
+</div>--><br/>
+
+                <ul class="thumbnails" style="padding-left: 10px; padding-bottom: 0; margin-bottom: 0;">
+                    <li class="span1" ng-repeat="slide in eoi.images.concat(eoi.maps)">
+                        <a href="#myModal{{$index}}" class="thumbnail" data-toggle="modal">
+                            <img src="{{slide.url}}&width=200&height=150" alt="x">
+                        </a>
+                        <!-- Modal -->
+                        <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                            <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">x</button><br>
+                            <img src="{{slide.url}}" alt="{{$index}}">
+                            <p>{{slide.name}}</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </td>
+        </tr>
+        <tr ng-show="eoi.project_doc">
+            <td></td>
+            <td><a href="{{eoi.project_doc.url}}" target="___new" class="lw-dt" style="color: #0088CC!important;">click here to download file (doc)</a>
+            <td>
+        </tr>
+    </table>
+
+
+
+    <div ng-controller="PageController" class="pull-right">
+        <div ng-show="session.isAdministrator">
+            <a href="https://www.cbd.int/database/edit.shtml?documentid={{eoi.id}}" target="_edit_" class="btn btn-warning">edit </a>
+            <a href="http://www.cbd.int/admin/clearcachekey.shtml?key=LWPROJECTS" target="_refresh_" class="btn btn-info">refresh project cache </a>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--==============================================================================-->     
+<section id="desc" ng-show="eoi.description" >  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project description</h2> 
+ <div class="lw-proj-text" ng-bind-html-unsafe="eoi.description"></div>
+</section>
+
+
+<!--==============================================================================-->     
+<section id="obj" ng-show="eoi.objectives_info || eoi.objectives_results"  >  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Objectives and Results</h2>
+
+    <div class="lw-proj-text" ng-bind-html="eoi.objectives_info"></div>
+    <table class="table  table-bordered table-hover"  ng-show="eoi.objectives_results"  ng-repeat="obj in eoi.objectives_results" >
+            <tr><td class="lw-dt" style="font-size:13px;">Objective</td><td  ng-bind-html-unsafe="obj.Objective" class="lw-proj-text"></td></tr>
+                 <tr><td class="lw-dt" style="font-size:13px;">Result</td><td  ng-bind-html-unsafe="obj.ExpectedResults;" class="lw-proj-text"></td></tr>
+                 <tr><td class="lw-dt" style="font-size:13px;">Funding&nbsp;needed</td><td ng-bind-html-unsafe="obj.Funding" class="lw-proj-text"></td></tr>
+    </table>
+ 
+</section>
+
+          
+<!--==============================================================================-->     
+<section id="funding" ng-controller="PageController"  >  
+    <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Project Financing</h2>
+
+
+    <table ng-show="!eoi.is_funded">
+        <tr>
+            <td style="text-align: right"><span class="muted" style="text-transform: uppercase;">Funding Status:</span> </td>
+            <td style="padding-left: 20px;">
+               <span ng:class="{'funded':'label', 'not yet funded':'label label-success', 'some secured funding':'label label-info', 'some expected funding':'label label-warning'}[eoi.funding_status]" >{{eoi.funding_status}}</span>
+    
+            </td>
+        </tr>
+        <tr>
+            <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Cost of Project:</span> </td>
+            <td style="padding-left:20px;"><strong>{{eoi.funding_needed | filterCurrency:eoi.currency:currency}}</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Secured Funding:</span> </td>
+            <td style="padding-left:20px;"><strong>{{funding | filterTotalSecured | filterCurrency:funding[0].currency:currency }}</strong></td>
+        </tr>
+        <tr>
+            <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Expected Funding:</span> </td>
+            <td style="padding-left:20px;"><strong>{{funding | filterTotalExpected | filterCurrency:funding[0].currency:currency}}</strong></td>
+        </tr>
+
+       
+    </table>
+
+    <div ng-show="eoi.funding_info!= ''">
+        <h4>Funding Information</h4>
+        <div class="lw-proj-text" ng-bind-html-unsafe="eoi.funding_info"></div>
+    </div>
+
+        <div ng-show="session.isAdministrator" class="pull-right">
+            <a href="http://www.cbd.int/database/edit.shtml?new=LWMATCH" target="_edit_" class="btn btn-warning"> add match </a>
+            <a href="http://www.cbd.int/admin/clearcachekey.shtml?key=LWMATCHES" target="_refresh_" class="btn btn-info">refresh match cache </a>
+        </div>
+
+    <div ng-show="funding.length">
+        <h4>Co-funding</h4>
+        <table class="table table-striped" >
+            <thead>
+                <tr>
+                    <th class="lw-proj-text">Donor</th>
+                    <th class="lw-proj-text" style="border-left:1px solid #ccc;"> Secured Funding</th>
+                    <th class="lw-proj-text" style="border-left:1px solid #ccc;"> Expected Funding</th>
+
+                </tr>
+            </thead>
+            <tr ng-repeat="f in funding ">
+                <td width="60%" class="lw-proj-text">
+                    <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.id}}">{{f.donor.name}}</span> </a>
+                    <span style="font-size: 14px;" ng-bind-html-unsafe="f.info"></span> 
+                    <div ng-show="session.isAdministrator" >
+                        <a href="https://www.cbd.int/database/edit.shtml?documentid={{f.id}}" target="_edit_" class="btn btn-warning"> edit </a>
+                        </div>
+                </td>
+                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="!f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td>
+                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td 
+            </tr>
+            <tr>
+                <td class="lw-proj-text">TOTAL</td>
+                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{funding | filterTotalSecured | filterCurrency:funding[0].currency:currency}}</td>
+                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{funding | filterTotalExpected | filterCurrency:funding[0].currency:currency }}</td>
+            </tr>
+        </table>
+    </div>
+
+
+   
+
+
+    <div ng-show="eoi.financial_sustainability!= ''" style="padding-top:20px;">
+        <h4>Financial Sustainability</h4>
+        <div class="lw-proj-text" ng-bind-html-unsafe="eoi.financial_sustainability"></div>
+    </div>
+ 
+</section>
+
+
+ <!--==============================================================================-->     
+<section id="benefits" ng-show="eoi.ecoservices_comments[0].termid" >  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecosystem benefits</h2>
+
+    <div ng-repeat="t in eoi.ecoservices_comments">
+        
+            <h4><img src="{{(t.termid | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.termid}}"/>  {{t.term}} </h4>
+            <div class="lw-proj-text" ng-bind-html="t.comment"></div>
+    </div>
+</section>
+
+<!--==============================================================================-->     
+<section id="targets" ng-show="eoi.aichi_targets"  >  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Links with the Aichi Targets</h2> 
+
+        <div ng-repeat="t in eoi.aichi_targets" >
+        <h4> Aichi {{t.term}} </h4>
+        <div style="min-height:50px;padding:5px 0 5px 5px;border-top:1px solid #ccc;background-color:#efefef;margin:0 0 10px 0;position:relative;top:-10px;width:100%;">
+            <img src="{{(t.termid | filterGetTargetInfo).icon}}" style="width:50px;padding:0 5px 5px 0;" class="pull-left"/>
+            <span>{{(t.termid | filterGetTargetInfo).desc}}</span></div>
+        <div class="lw-proj-text" ng-bind-html="t.comment"></div>
+        </div>
+ 
+</section>
+
+<!--==============================================================================-->     
+<section id="align" ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"  >  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Alignment with National Planning</h2> 
+
+    <div ng-show="eoi.alignment!= ''">
+        <h4>Alignment with National Planning</h4>
+
+        <div class="lw-proj-text" ng-bind-html="eoi.alignment"></div>
+    </div>
+
+    <div ng-show="eoi.alignment_cc!= ''">
+        <h4>Alignment with National Climate Change Strategies</h4>
+
+
+        <div class="lw-proj-text" ng-bind-html="eoi.alignment_cc"></div>
+
+    </div>
+    <div ng-show="eoi.alignment_nbsap!= ''">
+        <h4>Alignment with NSBSAPs</h4>
+
+        <div class="lw-proj-text" ng-bind-html="eoi.alignment_nbsap"></div>
+
+    </div>
+ 
+</section>
+
+
+<!--==============================================================================-->     
+<section id="eco" ng-show="eoi.ecological_contribution" >  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecological Contribution</h2> 
+
+    <div class="lw-proj-text" ng-bind-html-unsafe="eoi.ecological_contribution"></div>
+ 
+</section>
+
+<!--==============================================================================-->     
+<section id="participation"  ng-show="eoi.participation || eoi.governance">  
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Participation and Equity</h2>
+
+    <div ng-show="eoi.participation!= ''">
+        <h4>Participation and Equity</h4>
+        <div class="lw-proj-text" ng-bind-html-unsafe="eoi.participation"></div>
+    </div>
+
+    <div ng-show="eoi.governance!= ''">
+        <h4>Governance Types</h4>
+        <div class="lw-proj-text" ng-bind-html-unsafe="eoi.governance"></div>
+    </div>
+ 
+</section>
+
+
+
+<!--==============================================================================-->     
+<section id="partners"  >  
+    <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Partners and Contacts</h2>
+
+
+    <h4>Contacts</h4>
+    <table class="table table-striped">
+        <tr>
+            <th>Role</th>
+            <th>Name</th>
+            <th>Organization</th>
+        </tr>
+
+         <tr ng-repeat="fp in fp_national">
+            <td><span class="label label-info">National CBD Focal Point</span></td>
+            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong> 
+                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
+            <td>
+                <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+              
+            </td>
+        </tr>
+
+        <tr ng-repeat="fp in fp_powpa">
+            <td><span class="label label-info">PoWPA Focal Point</span></td>
+            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong> 
+                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
+            <td>
+                <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+              
+            </td>
+        </tr>
+
+
+        <tr ng-repeat="con in contacts">
+            <td>
+                <a ng-show="session.isAdministrator" href="https://www.cbd.int/database/edit.shtml?documentid={{con.id}}" target="_new" class="btn btn-warning">edit </a>
+
+                <span class="label label-info"><span ng-show="con.role != ''">{{con.role}}</span> <span ng-show="!con.role">Contact</span> </span></td>
+            <td><span ng-show="con.contact.name != ''" style="display: block;"><strong>{{con.contact.name}}<br>
+            </strong>
+            </span>
+                <span ng-show="con.contact.job != ''" style="display: block;">{{con.contact.job}}<br>
+                </span>
+                <span ng-show="con.contact.email != ''" style="display: block;"><a href="mailto:{{con.contact.email}}">{{con.email}}</a>
+                </span>
+            </td>
+            <td>
+                <span ng-show="con.contact.org.name != ''" style="display: block;">{{con.contact.org.name}}<br>
+                </span>
+                <span ng-show="con.contact.org.country != ''" style="display: block;">{{con.contact.org.country}}<br>
+                </span>
+
+            </td>
+        </tr>
+    </table>
+
+   <!-- <div ng-repeat="con in contacts">
+        <h4><span ng-show="con.role != ''">{{con.role}}</span> <span ng-show="!con.role">Contact</span> </h4>
+        <div class="lw-proj-text">
+            <span ng-show="con.role_info!= ''" style="display:block;">{{con.role_info}}</span>
+             <address>
+                <span ng-show="con.contact.name != ''" style="display:block;"><strong>{{con.contact.name}}<br></strong>
+                </span>
+                <span ng-show="con.contact.job != ''" style="display:block;">{{con.contact.job}}<br>
+                </span>
+                <span ng-show="con.contact.org.name != ''" style="display:block;">{{con.contact.org.name}}<br>
+                </span>
+                <span ng-show="con.contact.org.country != ''" style="display:block;">{{con.contact.org.country}}<br>
+                </span>
+                <span ng-show="con.contact.email != ''" style="display:block;"><a href="mailto:{{con.contact.email}}">{{con.email}}</a>
+                </span>
+            </address>
+        </div>
+    </div>
+
+    <h4>National Focal Point(s)</h4>
+<div class="lw-proj-text" ng-repeat="fp in fp_national">
+             <address>
+               <strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}}</strong><br>
+               <span ng-show="fp.Designation != ''">{{fp.Designation}}<br></span>
+               <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+               <span ng-show="fp.Email!= ''"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
+            </address>
+   </div >
+
+<h4>PoWPA Focal Point(s)</h4>
+<div class="lw-proj-text" ng-repeat="fp in fp_powpa">
+
+             <address>
+               <strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}}</strong><br>
+               <span ng-show="fp.Designation != ''">{{fp.Designation}}<br></span>
+               <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+               <span ng-show="fp.Email!= ''"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
+            </address>
+   </div >-->
+
+
+    <style>
+        .icons a {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 10px;
+            vertical-align: middle;
+            -o-transition: all .3s;
+            -moz-transition: all .3s;
+            -webkit-transition: all .3s;
+            -ms-transition: all .3s;
+        }
+
+            .icons a.twitter {
+                background: url(http://www.cbd.int/images/lifeweb/icons/social/twitter.png) left top no-repeat;
+            }
+
+            .icons a.rss {
+                background: url(http://www.cbd.int/images/lifeweb/icons/social/rss.png) left top no-repeat;
+            }
+
+
+            .icons a.flickr {
+                background: url(http://www.cbd.int/images/lifeweb/icons/social/flickr.png) left top no-repeat;
+            }
+
+            .icons a.facebook {
+                background: url(http://www.cbd.int/images/lifeweb/icons/social/facebook.png) left top no-repeat;
+            }
+
+            .icons a.youtube {
+                background: url(http://www.cbd.int/images/lifeweb/icons/social/youtube.png) left top no-repeat;
+            }
+
+
+            .icons a:hover {
+                background-position: left -34px;
+            }
+    </style>
+
+
+
+
+    <div ng-show="partners">
+    <h4>Partners</h4>
+    <table class="table table-striped">
+        <tr>
+            <th>Role</th>
+            <th>Organization</th>
+        </tr>
+
+        <tr ng-repeat="p in partners">
+            <td style="width:30%;">
+        
+                <div ng-repeat="r in p.roles" style="display: inline; text-transform: capitalize">
+                    <span class="label" ng-bind-html="r"></span><span ng-show="!$last">, </span>
+                </div>
+                <span ng-show="!p.roles || p.roles.length ==0">Partner</span>
+
+                {{p.info}} 
+    
+            </td>
+            <td>
+
+               <img ng-show="p.organization.logo" src="{{p.organization.logo}}" style="max-width:100px;max-height:45px;" class="pull-right">
+
+                <address>
+                   
+                    <strong>{{p.organization.name}} <span ng-show="p.organization.acronym">({{p.organization.acronym}})</span></strong><br>
+
+                    <div ng-repeat="web in p.organization.websites">
+                        <span ng-show="web.url != ''"><a href="{{web.url}}" target="_new_">{{web.name}}</a></span>
+                    </div>
+
+            <div class="icons">
+                    <a ng-show="p.organization.facebook" class="facebook" href="{{p.organization.facebook.url}}" target="_new"></a>
+                    <a ng-show="p.organization.twitter" class="twitter" href="{{p.organization.twitter.url}}" target="_new"></a>
+                    <a ng-show="p.organization.youtube" class="youtube" href="{{p.organization.youtube.url}}" target="_new"></a>
+                    <a ng-show="p.organization.flickr"  class="flickr" href="{{p.organization.flickr.url}}" target="_new"></a>
+                    <a ng-show="p.organization.rssfeed" class="rss" href="{{p.organization.rssfeed.url}}" target="_new"></a>
+                  
+                </div>
+                   
+
+                </address>
+            </td>
+        </tr>
+    </table>
+        </div>
+    <!--<div class="lw-proj-text" ng-repeat="p in partners">
+        <h4 style="background-color:#DDD"> <div ng-repeat="r in p.roles" style="display: inline; text-transform:capitalize">
+           <span ng-bind-html="r"></span><span ng-show="!$last">, </span></div>
+            <span ng-show="!p.roles || p.roles.length ==0">Partner</span>
+        </h4>
+        <table>
+            <tr>
+                <td style="vertical-align: top;">
+                <span ng-bind-html="p.info"></span>
+                            
+                            <td>
+                <td style="width: 50%;" ng-show="p.organization || p.contact">
+                    
+
+                    <address>
+                        <strong>Contact</strong><br>
+                        {{p.contact.name}}<br>
+                        <span ng-show="p.contact.email != ''"><a href="mailto:{{p.contact.email}}">{{p.contact.email}}</a><br>
+                        </span>
+
+                    </address>
+
+                    <td>
+            </tr>
+        </table>
+    </div>-->
+
+
+</section>
+
+<!--==============================================================================-->  
+           
+<section id="attachments" ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null" >  
+    <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Attachments</h2>
+
+    <div ng-show="eoi.project_doc">
+    <h4>Download project document</h4>
+        <a href="{{eoi.project_doc.url}}" target="___new" class="btn" > Download file (doc)</a>
+    </div>
+
+
+
+    <div ng-show="eoi.all_attachments.length > 0">
+        <h4>Attached Documents</h4>
+        <div ng-repeat="doc in eoi.all_attachments">
+            <i class="icon-file"></i>&nbsp; <a href="{{doc.url}}">{{doc.name}}</a><br />
+        </div>
+    </div>
+
+    <div ng-show="eoi.images.length > 0">
+        <h4>Maps and Images</h4>
+        <ul class="thumbnails">
+            <li ng-repeat="img in eoi.images">
+                <div class="thumbnail" style="width: 200px; background-color: white; text-align: center;">
+                    <a href="{{img.url}}">
+                        <img src="{{img.url}}&width=50&height=50" class="img-rounded" /></a>
+                    <p>{{img.name}}</p>
+                </div>
+            </li>
+
+            <li ng-repeat="map in eoi.maps">
+                <div class="thumbnail" style="width: 200px; background-color: white; text-align: center;">
+                    <a href="{{map.url}}">
+                        <img align="center" src="{{map.url}}&width=50&height=50" class="img-rounded" /></a>
+                    <p>{{map.name}}</p>
+                </div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div ng-show="eoi.links.length > 0">
+        <h4>Links</h4>
+        <div ng-repeat="link in eoi.links">
+            <i class="icon-file"></i>&nbsp; <a href="{{link.url}}" target="___new">{{link.name}}</a><br />
+        </div>
+    </div>
+
+    <div ng-show="eoi.protected_planet_links.length > 0">
+        <h4>Protected Planet Sites</h4>
+        <div ng-repeat="link in eoi.protected_planet_links">
+            <i class="icon-file"></i>&nbsp; <a href="http://www.protectedplanet.net/sites/{{link.url}}" target="___new">{{link.name}}</a><br />
+        </div>
+    </div>
+
+</section>
+
+      
+</div><!-- end span 9-->
+</div><!-- end row-->
+</div><!-- end container -->
+
+
+      <!-- FOOTER -->
+      <footer>
+        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+      </footer>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="/app/lifeweb/js/jquery.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-transition.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-alert.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-modal.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-dropdown.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-scrollspy.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tab.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tooltip.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-popover.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-button.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-collapse.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-carousel.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-typeahead.js"></script>
+    <script src="/app/lifeweb/js/holder.js"></script>
+
+	<!--CMS-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
+	<script src="/app/js/app_0-0-0.js"></script>
+	<script src="/app/js/directives/cms/cms-module.js"></script>
+	<script src="/app/js/utilities/km-utilities.js"></script>
+	<script src="/app/js/utilities/km-authentication.js"></script>
+	<!--<placeholder id="script"/>-->
+	<div class="cmsToolbar"></div>
+  </body>
+</html>

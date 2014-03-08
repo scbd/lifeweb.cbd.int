@@ -1,0 +1,110 @@
+<div class="row header-row" ng-controller="HeaderCtrl">
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div ng-include src="'/app/templates/navigation.html'"></div>
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+    <!-- Carousel
+    ================================================== -->
+
+      <script>
+          !function ($) {
+              $(function () {
+                  $('#myCarousel').carousel({ interval: 7000 })
+              })
+          }(window.jQuery)
+      </script>
+
+      <div id="myCarousel" class="carousel slide"  >
+      <div class="carousel-inner" style="border-bottom:1px solid #666;">
+        <div class="item active" >
+        
+        <div id='map' ng-controller="MapCtrl"></div>    
+        
+        <div id='legend-content' style='display: none;'>
+ 			<table style='background-color:#666;'>
+                <tr><td style="background-color:#000;width:25px;height:20px"></td><td style="color:#efefef;padding:5px;font-weigth:bold;text-transform:uppercase; font-size:10px;">funded</td></tr>
+                <tr><td style="background-color:#6666ff;width:25px;height:20px"></td><td style="color:#efefef;padding:5px;font-weigth:bold;text-transform:uppercase; font-size:10px;">not yet funded</td></tr>
+            </table>
+        </div>
+      </div>
+
+
+
+        <div class="item">
+          <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="" class="carousel_image">
+          <div class="container" >
+            <div class="carousel-caption" style="position:relative;top:-30px;">
+                <br/>
+                <h1 style="width: 1130px; color: white;">Zero Extinction Campaign
+                </h1>
+                <div style="color:white;font-size:110%;">
+                    LifeWeb's Zero Extinction campaign focuses attention on the extinction crisis and provides a platform for countries to profile their financial needs to prevent
+                    species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem biodiversity loss.
+                </div>
+
+                <a class="btn btn-large btn-primary" href="/campaigns/zeroextinction">more information</a> 
+            </div>
+          </div>
+        </div>
+
+          <div class="item">
+          <img src="http://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="carousel_image">
+          <div class="container">
+            <div class="carousel-caption" style="position:relative;top:-30px" >
+              <h1><span style="color:#efefef;background-color:#000;padding:5px!important; white-space:nowrap;">Carbon & Biodiversity Calculator</span></h1>
+              <p class="lead" style="background-color:#6666ff;padding:5px;">
+                  The Carbon and Biodiversity Calculator allows you to define your area of interest and calculate an estimated contribution of this area to climate change mitigation. At the same time, it also provides information on the area's conservation values, protected areas, forest status and opportunities for forest and landscape restoration.
+              </p>
+              <a class="btn btn-large btn-primary" href="http://carbonbiodiversitycalculator.unep-wcmc.org/" target="_blank">Try it for yourself</a>
+            </div>
+          </div>
+        </div>
+
+           
+
+      <!--  <div class="item">
+          <img src="/app/lifeweb/images/home_slider/amazonbg.jpg" alt="" class="carousel_image">
+          <div class="container">
+            <div class="carousel-caption" style="position:relative;top:-30px" >
+              <h1 style="color:#efefef;">Amazon Vision Roundtable</h1>
+              <p class="lead">Towards Building an Ecosystem-based Conservation Vision in the Amazon Biome within the framework of the Convention of Biological Diversity Programme of Work on Protected Areas of the and the Biodiversity Strategic Plan 2011-2020
+                   <br/>4 or 5 November 2013 - Paracas, Peru
+                  <br/>Please confirm your availability and participation in this meeting at the following link: <a href="http://doodle.com/xzyd6emtznkxnrdx">http://doodle.com/xzyd6emtznkxnrdx</a>
+               </p>
+              <a class="btn btn-large btn-primary" href="/event/?id=23834">more information</a>
+            </div>
+          </div>
+        </div>-->
+
+<!--         <div class="item">
+          <img src="/app/lifeweb/images/home_slider/botanical2.jpg" alt="" class="carousel_image">
+          <div class="container">
+            <div class="carousel-caption" >
+              <h1 style="color:#efefef;">Mexico Roundtable 2013</h1>
+              <p class="lead">The overall vision aims to implement a diversified and sustainable financing strategy, which contributes to the conservation, 
+                  sustainable use and restoration of Mexico's natural protected areas systems and ensure the operability of protected areas in the long term.
+                  <br/><br/>11 September 2013 - Mexico City, Mexico</p>
+              <a class="btn btn-large btn-primary" href="/event/?id=23835">more information</a>
+            </div>
+          </div>
+        </div>-->
+        
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+</div>
+
+<!--
+<div ng-include="'/app/views/header/navbar.html'"></div>
+<div ng-include="'/app/views/header/breadcrumbs.html'"></div>
+-->

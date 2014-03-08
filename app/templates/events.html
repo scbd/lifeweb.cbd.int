@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>The LifeWeb Initiative</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="ico/favicon.png">
+
+    <link href="/app/lifeweb/css/bootstrap.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
+
+    <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
+	<script src="https://raw.github.com/angular-ui/angular-ui/master/build/angular-ui.js"></script>
+	<script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+
+    <script src="/app/lifeweb/app/js/app.js" ></script>
+    <script src="/app/lifeweb/app/js/filters/filters.js" ></script>
+
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
+
+    <!-- NAVBAR
+    ================================================== -->
+     
+     <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+                   <div ng-include src="'/app/lifeweb/navigation.html'"></div>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+
+     
+<script>
+    angular.module('app').controller('EventsCtrl', function ($scope, $http) {
+        $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK', { cache: true })
+            .success(function (data) {
+
+                $scope.roundtables = [];
+
+                for (var i = 0; i < data.length; i++) {
+                    if (data[i].type != "news") {
+                        $scope.roundtables.push(data[i]);
+                    }
+                }
+
+            });
+    });
+
+    //##################################################################
+    angular.module('app').filter('filterFeaturedEvents', function () {
+        return function (items) {
+
+            if (!items)
+                return null;
+
+            var result = [];
+
+            var featured = []; //[{ "id": 23953 }, { "id": 23834 }];
+
+            for (var i = 0; i < featured.length; i++) {
+                for (var j = 0; j < items.length; j++) {
+                    if (featured[i].id == items[j].id) {
+                        result.push(items[j]);
+                    }
+                }
+            }
+            return result;
+
+        }
+    });
+
+</script>
+
+
+
+      <div class="container" style="padding-top: 80px;" data-ng-controller="EventsCtrl">
+
+          <!--  <div class="row">
+            <div class="span12" >
+                  <h2 class="featurette-heading">Featured Events </h2>
+                  <hr style="padding: 0; margin: 0;" />
+                  <br />
+                  <div class="row" data-ng-controller="EventsCtrl">
+                      <div class="span4" ng-repeat="rt in roundtables | filterFeaturedEvents">
+
+                          <a ng-show="rt.webpage" href="{{rt.webpage}}">
+                              <img src="{{rt.icon.url}}" alt="{{rt.id}}" class="thumbnail" style="max-height: 200px;">
+                              <h3 class="muted" style="padding-bottom: 0; margin-bottom: 0;">{{rt.title}}</h3>
+                          </a>
+                          <p>{{rt.date}}</p>
+                      </div>
+
+                  </div>
+              </div>
+      </div>--><!-- end row-->
+          <br/>
+          <div class="row">             
+              <div class="span12"  >
+                  
+                   <h2 class="title-divider featurette-heading">Events</h2>
+                  <table class="table table-striped">
+                      <thead><tr><th>Type</th><th>Event</th><th></th><th>Date and Place</th></tr></thead>
+                          <tr ng-repeat="rt in roundtables |  orderBy:'start':'reverse'" ng-hide="rt.hide">
+                          <td> <span ng:class="{'side event':'label label-inverse', 'meeting':'label label-info', 'roundtable':'label label-important'}[rt.type]"  style="white-space:nowrap;" >{{rt.type}}</span></td>
+                          <td style="width: 60px;"> <img src="{{rt.icon.url}}" alt="{{rt.id}}" class="thumbnail" style="max-height: 60px;"></td>
+                          <td> <a href="{{rt.webpage}}" >{{rt.title}}</a></td>
+                          <td> {{rt.date}}</td>
+                      </tr>
+                      </table>
+              </div>
+          </div><!-- end row-->
+      </div><!-- end container-->
+
+     <!-- FOOTER -->
+      <footer>
+        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+      </footer>
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
+    <script src="/app/lifeweb/js/jquery.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-transition.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-alert.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-modal.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-dropdown.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-scrollspy.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tab.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-tooltip.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-popover.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-button.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-collapse.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-carousel.js"></script>
+    <script src="/app/lifeweb/js/bootstrap-typeahead.js"></script>
+    <script src="/app/lifeweb/js/holder/holder.js"></script>
+    
+      <!--CMS-->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
+	<script src="/app/js/app_0-0-0.js"></script>
+	<script src="/app/js/directives/cms/cms-module.js"></script>
+	<script src="/app/js/utilities/km-utilities.js"></script>
+	<script src="/app/js/utilities/km-authentication.js"></script>
+	<!--<placeholder id="script"/>-->
+	<div class="cmsToolbar"></div>
+    
+  </body>
+</html>
