@@ -5,21 +5,23 @@ window.name = 'NG_DEFER_BOOTSTRAP!';
 require.config({
     baseUrl : '/app/js',
     paths: {
-        'angular'         : '../libs/angular/angular',
+        'angular'         : '//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min',
         'angular-route'   : '../libs/angular-route/angular-route',
         'ng-breadcrumbs'  : '../libs/ng-breadcrumbs/dist/js/ng-breadcrumbs',
         'async'           : '../libs/requirejs-plugins/src/async',
         'domReady'        : '../libs/requirejs-domready/domReady',
         'jquery'          : '../libs/jquery/jquery',
         'bootstrap'       : '../libs/bootstrap/dist/js/bootstrap.min',
-        'underscore'      : '../libs/underscore/underscore'
+        'underscore'      : '../libs/underscore/underscore',
+        'leaflet'         : '../libs/leaflet/leaflet',
     },
     shim: {
         'angular'        : { 'deps': ['jquery'], 'exports': 'angular' },
         'angular-route'  : { 'deps': ['angular'] },
         'bootstrap'      : { 'deps': ['jquery'] },
         'underscore'     : { 'exports': '_' },
-        'ng-breadcrumbs' : { 'deps': ['angular'] }
+        'ng-breadcrumbs' : { 'deps': ['angular'] },
+        'leaflet'        : { 'exports': 'L' },
     }
 });
 

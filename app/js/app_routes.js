@@ -7,42 +7,18 @@ define(['app'], function(app) {
       $locationProvider.html5Mode(true);
       $locationProvider.hashPrefix('!');
 
-      $routeProvider.
-      when('/', {
-        templateUrl: '/app/views/index.html',
+      $routeProvider
+      .when('/', {
+        templateUrl: '/templates/index.html',
         resolve: {},
         label: 'Home'
-      }).
-      when('/about', {
-        templateUrl: '/app/views/todo.html',
-        resolve: {},
-        label: 'About'
-      }).
-      when('/resources', {
-        templateUrl: '/app/views/todo.html',
-        resolve: {},
-        label: 'Resources'
-      }).
-      when('/countries', {
-        templateUrl: '/app/views/samples/index.html',
-        resolve: {
-          dependencies: resolveJS()
-        },
-        label: 'Countries'
-      }).
-      when('/countries/:country', {
-        templateUrl: '/app/views/samples/index-country.html',
-        resolve: {
-          dependencies: resolveJS()
-        },
-        label: 'Country'
-      }).
-      when('/404', {
-        templateUrl: '/app/views/404.html',
+      })
+      .when('/404', {
+        templateUrl: '/templates/404.html',
         resolve: {},
         label: '404'
-      }).
-      otherwise({
+      })
+      .otherwise({
         redirectTo: '/404'
       });
 
@@ -58,7 +34,13 @@ define(['app'], function(app) {
 
           for (var i = 0; i < dependencies.length; ++i) {
             if (dependencies[i] == '$route') {
-              dependencies[i] = $route.current.$$route.templateUrl + '.js';
+					//TODO: change this, so controllers are in a separate folder than templates.
+					var templateUrl= $route.current.$$route.templateUrl;
+					var filename_pos = templateUrl.lastIndexOf('/');
+					var filename = templateUrl.substring(filename_pos + 1, templateUrl.length - '.html'.length);
+
+					//TODO: put the app/js/controllers into a constant somewhere.
+              dependencies[i] = '/app/js/controllers/' + filename + '.js';
             }
           }
 
