@@ -1,0 +1,36 @@
+<div ng-controller="ProjectsCtrl" >
+
+<div class="project_well"><h3>Africa</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in (countries | filterLLDCs | filter:region='africa') | orderBy:'name'" >
+   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+  	{{c.name}} ({{c.project_count}})</a></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Asia</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in (countries | filterLLDCs | filter:region='asia') | orderBy:'name'" >
+   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+  	{{c.name}} ({{c.project_count}})</a></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Europe</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in (countries | filterLLDCs | filter:region='europe') | orderBy:'name'" >
+   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+  	{{c.name}} ({{c.project_count}})</a></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>South America</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in (countries | filterLLDCs | filter:region='south america') | orderBy:'name'" >
+   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+  	{{c.name}} ({{c.project_count}})</a></li>
+</ul>
+</div>
+
+
+</div>

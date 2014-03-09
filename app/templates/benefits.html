@@ -1,93 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en" ng-app>
-  <head>
-    <meta charset="utf-8">
-    <title>The LifeWeb Initiative</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-	<link href="/app/lifeweb/css/bootstrap.css" rel="stylesheet">
-    <link href="/app/lifeweb/css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
-
-	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.4/angular.min.js"></script>
-    
-      <!--[if lte IE 8]>
-        <link href='//api.tiles.mapbox.com/mapbox.js/v1.0.2/mapbox.ie.css' rel='stylesheet' >
-        <script src="/app/lifeweb/js/ie-shiv.js"></script>
-      <![endif]-->
-
-      <!--[if lt IE 9]>
-        <script src="/app/lifeweb/js/html5shiv.js"></script>
-        <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="shortcut icon" href="ico/favicon.png">
-      <style>
-          h4 {
-              background-color:#ededed;
-              width:100%;
-              padding:3px;
-              margin-top:20px;
-          }
-          </style>
-    
-<style>
-
-.bs-docs-fact:after {
-content: "Fact";
-position: absolute;
-top: -1px;
-left: -1px;
-padding: 3px 7px;
-font-weight: bold;
-background-color: #000;
-border: 1px solid #ddd;
-color: white;
--webkit-border-radius: 4px 0 4px 0;
--moz-border-radius: 4px 0 4px 0;
-border-radius: 4px 0 4px 0;
-}
-
-.bs-docs-fact {
-position: relative;
-margin: 15px 0;
-padding: 10px 19px 10px 65px;
-background-color: #fff;
-border: 1px solid #ddd;
--webkit-border-radius: 4px;
--moz-border-radius: 4px;
-border-radius: 4px;
-}
-
-div {
-display: block;
-}
-</style>
-  
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
-
-    <!-- NAVBAR
-    ================================================== -->
-     
-     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-                   <div ng-include src="'/app/lifeweb/navigation.html'"></div>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-    
-    
-
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container" >
    
    
@@ -148,7 +58,7 @@ The cost of establishing and maintaining a global protected area system has been
 <br>
 <h4> <i class="icon-star-empty" style="position:relative; top:2px;"></i> More information </h4>
 <table><tr>
-<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/publications/cbd-value-nature-en.pdf"  ><img src="/app/lifeweb/images/docs/valueofnature_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
+<td style="padding-right:20px;"><a href="http://www.cbd.int/doc/publications/cbd-value-nature-en.pdf"  ><img src="/app/images/docs/valueofnature_250.png" width="195" height="250" alt="sp" class="thumbnail"></a></td>
 <td valign="top"> 
 </td>
 </tr>
@@ -405,7 +315,7 @@ Travel and tourism is one of the world’s largest economic activities. Internat
 <section id="targets" > 
  <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Area-based Aichi Targets</h2> 
 
-    <div ng-include src="'/app/lifeweb/partials/areabasedtargets.html'"></div>
+    <div ng-include src="'/app/partials/areabasedtargets.html'"></div>
 
 </section>
       
@@ -421,45 +331,4 @@ Travel and tourism is one of the world’s largest economic activities. Internat
         </div>
       </footer>
 
-
-
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="http://twitter.github.io/bootstrap/assets/js/jquery.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-transition.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-alert.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-modal.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-dropdown.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tab.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-tooltip.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-popover.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-button.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-collapse.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-carousel.js"></script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/bootstrap-typeahead.js"></script>
-    <script>
-      !function ($) {
-        $(function(){
-          // carousel demo
-          $('#myCarousel').carousel()
-        })
-      }(window.jQuery)
-    </script>
-    <script src="http://twitter.github.io/bootstrap/assets/js/holder/holder.js"></script>
-    
-      <!--CMS-->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
-	<script src="/app/js/app_0-0-0.js"></script>
-	<script src="/app/js/directives/cms/cms-module.js"></script>
-	<script src="/app/js/utilities/km-utilities.js"></script>
-	<script src="/app/js/utilities/km-authentication.js"></script>
-	<!--<placeholder id="script"/>-->
 	<div class="cmsToolbar"></div>
-    
-  </body>
-</html>

@@ -1,0 +1,45 @@
+
+<div ng-controller="ProjectsCtrl" >
+
+<div class="project_well"><h3>Least Developed Countries (LDCs)</h3>
+<p>A Least Developed Country (LDC) is a country which, according to the United Nations, exhibits the lowest indicators of socioeconomic development, with the lowest Human Development Index ratings of all countries in the world. </p>
+
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in (countries | filterLCD ) | orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+
+<div class="project_well"><h3>Heavily Indebted Poor Countries (HIPC)</h3>
+<p>
+
+Heavily Indebted Poor Countries (HIPC) are a group of 39 developing countries with high levels of poverty and debt overhang which are eligible for special assistance from the International Monetary Fund (IMF) and the World Bank.
+
+The HIPC Initiative was initiated by the International Monetary Fund and the World Bank in 1996, following extensive lobbying by NGOs and other bodies. It provides debt relief and low-interest loans to cancel or reduce external debt repayments to sustainable levels. To be considered for the initiative, countries must face an unsustainable debt burden which cannot be managed with traditional means.[1] Assistance is conditional on the national governments of these countries meeting a range of economic management and performance targets.[which?]
+As of January 2012, the HIPC Initiative had identified 39 countries (33 of which are in Sub-Saharan Africa) as being potentially eligible to receive debt relief.[2] The 36 countries that have so far received full or partial debt relief are:[1]</p>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted )) | filter:region='Australia and Oceania' | orderBy:name)"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+
+<div class="project_well"><h3>More developed Countries (MDCs)</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted )) | filter:region='Australia and Oceania' | orderBy:name)"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+
+
+
+
+</div>

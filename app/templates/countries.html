@@ -1,49 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="en" ng-app="app">
-  <head>
-    <meta charset="utf-8">
-    <title>The LifeWeb Initiative</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="shortcut icon" href="ico/favicon.png">
-    
-      <link href="/app/lifeweb/css/bootstrap.css" rel="stylesheet">
-      <link href="/app/lifeweb/css/bootstrap-responsive.css" rel="stylesheet">
-      <link href="/app/lifeweb/css/lifeweb.css" rel="stylesheet">
-
-
-      <script src="http://code.angularjs.org/1.0.6/angular.min.js"></script>
-      <script src="http://angular-ui.github.com/bootstrap/ui-bootstrap-tpls-0.2.0.js"></script>
-      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular-sanitize.min.js"></script>
-
-      <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://twitter.github.io/bootstrap/assets/js/html5shiv.js"></script>
-    <![endif]-->
-
-    <script src="app/lifeweb/app/js/app.js" ></script>
-    <script src="app/lifeweb/app/js/ProjectsController.js" ></script>
-    <script src="app/lifeweb/app/js/filters/filters.js" ></script>
-     
-  </head>
-
-  <body data-spy="scroll" data-target=".bs-docs-sidebar" data-twttr-rendered="true" >
-
-    <!-- NAVBAR
-    ================================================== -->
-     
-     <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-                  <div ng-include src="'app/lifeweb/navigation.html'"></div>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-
-    
-
     <div class="container" ng-cloak>
 
 
@@ -66,7 +20,7 @@
 <!--==============================================================================-->     
 <section id="regions" style="height:2400px;" >    
       <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;"> World Regions</h2>   
-			 <div ng-include src="'app/lifeweb/browse/regions.html'"></div>
+			 <div ng-include src="'app/partials/regions.html'"></div>
 </section>
 
 <!--==============================================================================-->     
@@ -74,7 +28,7 @@
        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Megadiverse Countries</h2> 
        <p>The megadiverse countries are a group of countries that harbor the majority of the Earth's species and are therefore considered extremely biodiverse. Conservation International identified 17 megadiverse countries in 1998. 
            All are located in, or partially in, the tropics.</p>
- <div ng-include src="'app/lifeweb/browse/megadiverse.html'"></div>
+ <div ng-include src="'app/partials/megadiverse.html'"></div>
 </section>
 
  
@@ -82,7 +36,7 @@
 <section id="ldcs" style="height:650px;margin-top:40px;" >    
        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Least Developed Countries (LDCs)</h2> 
        <p>A Least Developed Country (LDC) is a country which, according to the United Nations, exhibits the lowest indicators of socioeconomic development, with the lowest Human Development Index ratings of all countries in the world. <p/>
- <div ng-include src="'app/lifeweb/browse/ldcs.html'"></div>
+ <div ng-include src="'app/partials/ldcs.html'"></div>
 </section>
 
 <!--==============================================================================-->     
@@ -91,7 +45,7 @@
               
               <p>Small Island Developing States (SIDS) are low-lying coastal countries that tend to share similar sustainable development challenges, including small but growing populations, limited resources, remoteness, susceptibility to natural disasters, vulnerability to external shocks, excessive dependence on international trade, and fragile environments. Their growth and development is also held back by high communication, energy and transportation costs, irregular international transport volumes, disproportionately expensive public administration and infrastructure due to their small size, and little to no opportunity to create economies of scale.</p>
               
-              <div ng-include src="'app/lifeweb/browse/sids.html'"></div>
+              <div ng-include src="'app/partials/sids.html'"></div>
 
 </section> 
 
@@ -101,7 +55,7 @@
               
               <p>Landlocked developing countries (LLDC) are developing countries that are landlocked.[1] The economic and other disadvantages experienced by such countries makes the majority of landlocked countries Least Developed Countries (LDC), with inhabitants of these countries occupying the bottom billion tier of the world's population in terms of poverty.[2] Apart from Europe, there is not a single successful highly developed landlocked country when measured with the Human Development Index (HDI) and nine of the twelve countries with the lowest HDI scores are landlocked.[3] Landlocked countries that rely on transoceanic trade usually suffer a cost of trade that is double of their maritime neighbours.[4] Landlocked countries experience economic growth 6% less of their non-landlocked countries, holding other variables constant.[5]</p>
               
-              <div ng-include src="'app/lifeweb/browse/lldcs.html'"></div>
+              <div ng-include src="'app/partials/lldcs.html'"></div>
 
 </section>    
    
@@ -135,36 +89,8 @@ Susceptibility to natural disasters and climate change. Most small states are vu
 
     <!-- FOOTER -->
       <footer>
-        <div ng-include src="'/app/lifeweb/footer.html'"></div>
+        <div ng-include src="'/app/templates/footer.html'"></div>
       </footer>
 
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/app/lifeweb/js/jquery.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-transition.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-alert.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-modal.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-dropdown.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-scrollspy.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-tab.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-tooltip.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-popover.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-button.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-collapse.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-carousel.js"></script>
-    <script src="/app/lifeweb/js/bootstrap-typeahead.js"></script>
-    <script src="/app/lifeweb/js/holder.js"></script>
-
-	<!--CMS-->
-	<script src="//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.js"></script>
-	<script src="/app/js/app_0-0-0.js"></script>
-	<script src="/app/js/directives/cms/cms-module.js"></script>
-	<script src="/app/js/utilities/km-utilities.js"></script>
-	<script src="/app/js/utilities/km-authentication.js"></script>
 	<!--<placeholder id="script"/>-->
 	<div class="cmsToolbar"></div>
-  </body>
-</html>

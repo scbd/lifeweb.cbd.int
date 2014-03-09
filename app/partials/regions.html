@@ -1,0 +1,76 @@
+
+<div ng-controller="ProjectsCtrl" >
+
+<div class="project_well"><h3>Asia</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted )) | filter:region='Asia' ) | orderBy:'name'" >
+    <div   class="lw-thumbnail">
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Australia and Oceania</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted )) | filter:region='Australia and Oceania' ) | orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Caribbean Region</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted)) | filter:region='Caribbean Region' )| orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Central and Western Africa Region</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted)) | filter:region='Central and Western Africa Region' ) | orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Central and South America</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted)) | filter:region='Central and South America' ) | orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>Europe</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted)) | filter:region='Europe') | orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div class="project_well"><h3>North Africa and Middle East</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted)) | filter:region='North Africa and Middle East' )| orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+<div  class="project_well"><h3>Southern and Eastern Africa Region</h3>
+<ul class="lw-thumbnail-list">
+  <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted))| filter:region='Southern and Eastern Africa Region' )| orderBy:'name'"  >
+    <div class="lw-thumbnail" >
+     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+    </div></li>
+</ul>
+</div>
+
+</div>
