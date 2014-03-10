@@ -109,4 +109,5 @@ define(['app', 'authentication', 'controllers/header'], function(app) {
             qAuthenticationFrame[0].contentWindow.postMessage('{"type":"getAuthenticationToken"}', 'https://accounts.cbd.int');
 
   }]);
+  return true;
 });

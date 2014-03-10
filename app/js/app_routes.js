@@ -162,6 +162,7 @@ define(['app', 'authentication'], function(app) {
 
             var results = Array.prototype.slice.call(arguments, 1);
 
+            console.log('done loading?');
             deferred.resolve(results);
 
             return results;

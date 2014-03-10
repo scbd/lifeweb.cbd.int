@@ -1,4 +1,4 @@
-require(['app'], function(app) {
+define(['app'], function(app) {
   app.filter('filterPartnerByProject', function () {
       return function (items, id) {
 
@@ -1361,4 +1361,5 @@ require(['app'], function(app) {
             return result;
         }
     });
+    return true;
 });

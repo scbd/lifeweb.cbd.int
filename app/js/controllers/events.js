@@ -1,4 +1,4 @@
-require(['app', 'authentication'], function(app) {
+define(['app', 'authentication'], function(app) {
    app.controller('EventsCtrl', function ($scope, $http) {
         $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK', { cache: true })
             .success(function (data) {
@@ -36,4 +36,5 @@ require(['app', 'authentication'], function(app) {
 
         }
     });
+    return true;
 });

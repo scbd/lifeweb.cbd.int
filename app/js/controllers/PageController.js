@@ -1,4 +1,4 @@
-﻿require(['app', 'authentication', 'URI',], function(app) {
+﻿define(['app', 'authentication', 'URI',], function(app) {
     app.controller('PageController', function($scope, $browser, authHttp, authentication) {
 
         //==============================
@@ -84,5 +84,6 @@
             });
             */
     });
+    return true;
 });
 		

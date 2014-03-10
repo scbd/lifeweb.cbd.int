@@ -1,4 +1,5 @@
-require(['app', 'authentication', 'app/js/services/filters.js', 'controllers/PageController', 'URI',], function(app) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/PageController', 'URI',], function(app) {
+  console.log('adding donor ctrl');
 	app.controller('DonorCtrl', function ($scope, $http) {
 		 $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {
@@ -35,4 +36,5 @@ require(['app', 'authentication', 'app/js/services/filters.js', 'controllers/Pag
 				  }
 			 }
 	});
+  return false;
 });

@@ -38,4 +38,5 @@ define(['app'], function(app) {
             alert('invalid code');
         }
     }]);
+    return true;
 });

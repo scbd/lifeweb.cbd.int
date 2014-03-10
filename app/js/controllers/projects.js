@@ -60,4 +60,5 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI',], functio
       }
 
   });
+  return true;
 });

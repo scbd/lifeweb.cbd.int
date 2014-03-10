@@ -6,4 +6,5 @@ define(['app'], function(app) {
         {$scope.twitter = data;});
 
     });
+    return true;
 });

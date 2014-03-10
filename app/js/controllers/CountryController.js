@@ -1,4 +1,4 @@
-require(['app', 'authentication', 'URI', 'app/js/controllers/MapController.js'], function(app) {
+define(['app', 'authentication', 'URI', 'app/js/controllers/MapController.js'], function(app) {
   app.controller('CountryCtrl', function($scope, $http, $window) {
 
       var sCountry = new URI().query(true).country;
@@ -34,4 +34,5 @@ require(['app', 'authentication', 'URI', 'app/js/controllers/MapController.js'],
       $scope.fp_national = data;
     });
   });
+  return true;
 });

@@ -1,4 +1,4 @@
-require(['app', 'authentication', 'URI', 'controllers/PageController',], function(app) {
+define(['app', 'authentication', 'URI', 'controllers/PageController',], function(app) {
   app.controller('EventsCtrl', function ($scope, $http) {
 
       var sID = new URI().query(true).id;
@@ -11,5 +11,6 @@ require(['app', 'authentication', 'URI', 'controllers/PageController',], functio
           });
 
   });
+  return true;
 });
 
