@@ -145,37 +145,20 @@
 <br>
 <div class="row" >
     <event-min doc-id="23834" class="span4"></event-min>
-        <event-min doc-id="23953" class="span4"></event-min>
-        
-        <event-min doc-id="10668" class="span4"></event-min>
-      </div>             
+    <event-min doc-id="23953" class="span4"></event-min>
+    <event-min doc-id="10668" class="span4"></event-min>
+</div>             
 <br/>
 <br/>  
 
 
 
-<!-- Latest News
-     ================================================== --> 
-<script>
-    angular.module('app').controller('TwitterCtrl', function ($scope, $http) {
-        $scope.tweets =
-               [
-                    { "date": "4 NOV 2013", "link": "http://bit.ly/1azD7uJ ", "text": "Thank you Austria for providing over $2 million USD to support projects profiled through the LifeWeb Initiative" },
-                    { "date": "1 OCT 2013", "link": "http://bit.ly/1c0qhGe ", "text": "More investment sought to protect Southeast Asia's rich heritage parks." },
-                    { "date": "19 AUG 2013", "link": "http://bit.ly/14dXMQY", "text": "The Dragons of Inaction: Psychological Barriers That Limit Climate Change Mitigation and Adaptation " },
-                    { "date": "15 AUG 2013", "link": "http://bit.ly/1eMh1lJ", "text": "If biodiversity disappears what will happen to our food?" },
-                    { "date": "13 AUG 2013", "link": "http://to.pbs.org/17L96kY", "text": "How the World's Most Biodiverse Place Could Be Ransomed for Oil Money" },
-                    { "date": "8 AUG 2013", "link": "http://www.the-scientist.com/?articles.view/articleNo/36822/title/Climate-Change-and-Violence/", "text": "An analysis of 60 studies finds that warmer temperatures and extreme rainfall lead to a rise in violence." },
-               ];
-    });
-</script>
-        
 <h2 class="featurette-heading"> <a href="http://twitter.com/CBDLifeWeb">Latest News <i class="icon-chevron-right" style="position:relative;top:12px;"></i></a></h2> <hr style="padding:0;margin:0;"/><br/>
 <div class="row" data-ng-controller="TwitterCtrl">
  
 <div class="span2" style="height:150px; border-right: solid 1px #dedede; padding-right:10px; margin-right:-15px;margin-bottom:20px; display:inline;" ng-repeat="tweet in tweets" >
 <p class="twitter_date"><strong>{{tweet.date}}</strong></p><p>
-<a href="{{tweet.link}}" target="new__" style="font-size:14px;" ng-bind-html-unsafe="tweet.text"></a></p></div>
+<a href="{{tweet.link}}" target="new__" style="font-size:14px;" ng-bind-html-unsafe="tweet.text">{{tweet.text}}</a></p></div> <!--TODO: vulnerable to XSS through twitter api-->
 
 </div>
       

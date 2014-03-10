@@ -1,7 +1,6 @@
 'use strict';
 
 define(['app', 'authentication'], function(app) {
-
   app.config(['$routeProvider', '$locationProvider',
     function($routeProvider, $locationProvider) {
       $locationProvider.html5Mode(true);
@@ -12,7 +11,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/home.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/MapController.js', '/app/js/controllers/TwitterController.js',]),
+          dependencies: resolveJS(['/app/js/controllers/MapController.js', '/app/js/controllers/TwitterController.js', '/app/js/directives/event-min.js', '/app/js/directives/project-min.js']),
         },
         label: 'Home'
       })

@@ -1,0 +1,44 @@
+ 
+ 
+<div>
+<div style="background-color:#efefef; padding:10px; border-bottom: #dedede solid 1px; margin-bottom: 10px;">
+            <table style="height:220px;margin:0;padding:0;" >
+                <tr>
+                    <td colspan="2" style="margin:0;padding:0;">
+                       <span style="color:#000; font-weight:bold; line-height:12px;font-size:12px;">{{proj.country}}</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:100px; padding-right:10px;">
+                        <a href="/project?id={{proj.id}}">
+                            <div>
+                                        <img src="{{proj.thumbnail}}" alt="" class="thumbnail " style="margin-right:10px;max-width:90px;" />
+                                </div>
+                        </a>
+                    </td>
+                    <td>
+                        
+                        <a href="/project?id={{proj.id}}" class="proj_title" >
+                            {{proj.title}}
+                        </a>
+                        <br/>
+                        <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-important', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[proj.funding_status]">
+                            <span ng-switch="proj.funding_status">
+                                <span ng-switch-when="not yet funded">not yet funded</span>
+                                <span ng-switch-when="funded">fully funded</span>
+                                <span ng-switch-default>partially funded</span>
+                            </span>
+                        </span>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <p style="text-align: justify; font-size: 12px;">
+                            {{proj.summary | truncate:220}} <a href="/project?id={{proj.id}}">View details &raquo;</a>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+ </div>
+ </div>
