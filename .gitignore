@@ -1,3 +1,4 @@
+TODO
 lib-cov
 *.seed
 *.log
@@ -6,6 +7,9 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.swp
+*.vimrc
+*.DS_STORE
 
 pids
 logs

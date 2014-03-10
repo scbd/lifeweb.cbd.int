@@ -1,0 +1,33 @@
+<div class="row header-row" ng-controller="HeaderCtrl">
+  <div ng-cloak class="col-lg-1 ">
+      <div ng-cloak ng-show="user && !user.isAuthenticated">
+          <a class="signin" href="#" ng-click="actionSignin()" data-slug="signin"><i class="fa fa-power-off" ></i><strong>Sign In</strong></a>
+      </div>
+      <div ng-cloak class="dropdown" ng-show="user && user.isAuthenticated" >
+          <a data-toggle="dropdown" href="#"><i class="fa fa-chevron-down" ></i>{{user.name}}</a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#" ng-click="actionProfile()"><i class="fa fa-user" ></i>Profile</a></li>
+              <li><a href="#" ng-click="actionPassword()"><i class="fa fa-user" ></i>Password</a></li>
+              <li><a href="#" ng-click="actionSignOut()"><i class="fa fa-sign-out" ></i>Sign-out</a></li>
+          </ul>
+      </div>
+  </div>
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <div ng-include src="'/app/templates/navigation.html'"></div>
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+</div>
+
+<!--
+<div ng-include="'/app/views/header/navbar.html'"></div>
+<div ng-include="'/app/views/header/breadcrumbs.html'"></div>
+-->
