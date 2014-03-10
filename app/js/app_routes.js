@@ -9,7 +9,7 @@ define(['app', 'authentication'], function(app) {
 
       $routeProvider
       .when('/', {
-        templateUrl: '/app/templates/home.html',
+        templateUrl: '/app/templates/routes/home.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/MapController.js', '/app/js/controllers/TwitterController.js',]),
@@ -17,88 +17,88 @@ define(['app', 'authentication'], function(app) {
         label: 'Home'
       })
       .when('/aboutus', {
-        templateUrl: '/app/templates/aboutus.html',
+        templateUrl: '/app/templates/routes/aboutus.html',
         resolve: {
           user : resolveUser(),
         },
         label: 'AboutUs',
       })
       .when('/explore', {
-        templateUrl: '/app/templates/explore.html',
+        templateUrl: '/app/templates/routes/explore.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/projects.js']),
         },
       })
       .when('/matches', {
-        templateUrl: '/app/templates/matches.html',
+        templateUrl: '/app/templates/routes/matches.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/donors.js']),
         },
       })
       .when('/countries', {
-        templateUrl: '/app/templates/countries.html',
+        templateUrl: '/app/templates/routes/countries.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/projects.js']),
         },
       })
       .when('/country', {
-        templateUrl: '/app/templates/country.html',
+        templateUrl: '/app/templates/routes/country.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/CountryController.js']),
         },
       })
       .when('/events', {
-        templateUrl: '/app/templates/events.html',
+        templateUrl: '/app/templates/routes/events.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(),
         },
       })
       .when('/event', {
-        templateUrl: '/app/templates/event.html',
+        templateUrl: '/app/templates/routes/event.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(),
         },
       })
       .when('/map', {
-        templateUrl: '/app/templates/map.html',
+        templateUrl: '/app/templates/routes/map.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/MapController.js']),
         },
       })
       .when('/campaigns/zeroextinction', {
-        templateUrl: '/app/templates/campaigns/zeroextinction.html',
+        templateUrl: '/app/templates/routes/campaigns/zeroextinction.html',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/projects.js']),
         },
       })
       .when('/share', {
-        templateUrl: '/app/templates/share.html',
+        templateUrl: '/app/templates/routes/share.html',
         resolve: {
           user : resolveUser(),
         },
       })
       .when('/benefits', {
-        templateUrl: '/app/templates/benefits.html',
+        templateUrl: '/app/templates/routes/benefits.html',
         resolve: {
           user : resolveUser(),
         },
       })
       .when('/benefits/carbon', {
-        templateUrl: '/app/templates/benefits/carbon.html',
+        templateUrl: '/app/templates/routes/benefits/carbon.html',
         resolve: {
           user : resolveUser(),
         },
       })
       .when('/connect', {
-        templateUrl: '/app/templates/connect.html',
+        templateUrl: '/app/templates/routes/connect.html',
         resolve: {
           user : resolveUser(),
         },
