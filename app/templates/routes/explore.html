@@ -108,11 +108,11 @@
                         </a>
 
                         <div class="media-body">
-                            <span class="media-type" ng-bind-html="proj.country"></span>
+                            <span class="media-type" ng-bind-html-unsafe="proj.country"></span>
                             <a href="/project?id={{proj.id}}">
-                                <h4 class="media-heading" ng-bind-html="proj.title"></h4>
+                                <h4 class="media-heading" ng-bind-html-unsafe="proj.title"></h4>
                             </a>
-                            <span ng-bind-html="proj.summary"></span>
+                            <span ng-bind-html-unsafe="proj.summary"></span>
                             <br />
 
                             <div>
@@ -160,8 +160,8 @@
 
                                     <a href="/project?id={{proj.id}}"><img ng-show="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
                                     <img ng-hide="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a></td>
-                                <td style="font-weight:bold;"> <a href="/project?id={{proj.id}}"><span class="media-heading" ng-bind-html="proj.title"></span></a></td>
-                                <td> <span ng-bind-html="proj.country" style="font-weight:bold;"></span></td>
+                                <td style="font-weight:bold;"> <a href="/project?id={{proj.id}}"><span class="media-heading" ng-bind-html-unsafe="proj.title"></span></a></td>
+                                <td> <span ng-bind-html-unsafe="proj.country" style="font-weight:bold;"></span></td>
                                 <td nowrap> {{proj.funding_needed | filterCurrency:proj.currency:currency}} </td>
                                 <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ proj.approved_on_date | filterDate  }}</td>
                                 <td >
