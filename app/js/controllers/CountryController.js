@@ -1,4 +1,4 @@
-require(['app', 'authentication', 'URI', 'app/js/services/filters.js', 'app/js/controllers/MapController.js'], function(app) {
+require(['app', 'authentication', 'URI', 'app/js/controllers/MapController.js'], function(app) {
   app.controller('CountryCtrl', function($scope, $http, $window) {
 
       var sCountry = new URI().query(true).country;

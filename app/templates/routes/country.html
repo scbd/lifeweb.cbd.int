@@ -12,12 +12,12 @@
           <li><a href="#projects"><i class="icon-chevron-right"></i>LifeWeb Projects</a></li>
           <li><a href="#fps"><i class="icon-chevron-right"></i>Focal points</a></li>
           <li><a href="#links"><i class="icon-chevron-right"></i>Websites and links</a></li>
-          <li ng-show="(countrydetails.info | filter:title='Status and trends of biodiversity, including benefits from biodiversity and ecosystem services')"><a href="#status"><i class="icon-chevron-right"></i>Status and trends</a></li>
-          <li ng-show="(countrydetails.info | filter:title='Main pressures on and drivers of change to biodiversity (direct and indirect)')"><a href="#drivers"><i class="icon-chevron-right"></i>Main pressures</a></li>
-          <li ng-show="(countrydetails.info | filter:title='Implementation of the NBSAP')"><a href="#nbsap_impl"><i class="icon-chevron-right"></i>Implementation</a></li>
-          <li ng-show="(countrydetails.info | filter:title='Actions taken to achieve the 2020 Aichi Biodiversity Targets')"><a href="#actions"><i class="icon-chevron-right"></i>Actions taken</a></li>
-          <li ng-show="(countrydetails.info | filter:title='Support mechanisms for national implementation (legislation, funding, capacity-building, coordination, mainstreaming, etc.)')"><a href="#support"><i class="icon-chevron-right"></i>Support mechanisms</a></li>
-          <li ng-show="(countrydetails.info | filter:title='Mechanisms for monitoring and reviewing implementation')" ><a href="#monitoring"><i class="icon-chevron-right" ></i>Monitoring</a></li>
+          <li ng-show="countrydetails.info.indexOf('Status and trends of biodiversity, including benefits from biodiversity and ecosystem services') != -1"><a href="#status"><i class="icon-chevron-right"></i>Status and trends</a></li>
+          <li ng-show="countrydetails.info.indexOf('Main pressures on and drivers of change to biodiversity (direct and indirect)') != -1"><a href="#drivers"><i class="icon-chevron-right"></i>Main pressures</a></li>
+          <li ng-show="countrydetails.info.indexOf('Implementation of the NBSAP') != -1"><a href="#nbsap_impl"><i class="icon-chevron-right"></i>Implementation</a></li>
+          <li ng-show="countrydetails.info.indexOf('Actions taken to achieve the 2020 Aichi Biodiversity Targets') != -1"><a href="#actions"><i class="icon-chevron-right"></i>Actions taken</a></li>
+          <li ng-show="countrydetails.info.indexOf('Support mechanisms for national implementation (legislation, funding, capacity-building, coordination, mainstreaming, etc.)') != -1"><a href="#support"><i class="icon-chevron-right"></i>Support mechanisms</a></li>
+          <li ng-show="countrydetails.info.indexOf('Mechanisms for monitoring and reviewing implementation') != -1" ><a href="#monitoring"><i class="icon-chevron-right" ></i>Monitoring</a></li>
           <!--<li><a href="#small"><i class="icon-chevron-right"></i>Small states</a></li>-->
         </ul>
       </div>
@@ -63,7 +63,7 @@
 <section id="projects" >    
  <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">LifeWeb Projects</h2>
 <!--******************************************** PROJECT SECTION ******************************************************-->
-<div ng-show="projects | filterCountry:CountryID | filterIsFunded:''">
+<div ng-show="projects">
     <h4>Projects in need of funding</h4>
     <div class="project_well" style="background-color: white!important;">
         <table>
@@ -85,7 +85,7 @@
 </div>
 
 <br>
-    <div ng-show="projects | filterCountry:CountryID | filterIsFunded:'true'">
+    <div ng-show="projects">
         <h4>Funded projects</h4>
         <div class="project_well">
             <table>
