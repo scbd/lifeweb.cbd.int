@@ -29,6 +29,13 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(['/app/js/controllers/projects.js']),
         },
       })
+      .when('/project', {
+        templateUrl: '/app/templates/routes/project.html',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/eoidetail.js']),
+        },
+      })
       .when('/matches', {
         templateUrl: '/app/templates/routes/matches.html',
         resolve: {

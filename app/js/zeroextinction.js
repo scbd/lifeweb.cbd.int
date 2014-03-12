@@ -1,7 +1,7 @@
   $(function () {
       $.stellar({
           horizontalScrolling: false,
-          verticalOffset: -400
+          //verticalOffset: 1600
       });
       $('a[href*=#]:not([href=#])').click(function () {
           if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

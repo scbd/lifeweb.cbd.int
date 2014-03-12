@@ -70,7 +70,7 @@
            <a href="#item2" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item1bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
+     <div data-stellar-vertical-offset="-800" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item1bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-7">
@@ -98,7 +98,7 @@
            <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-      <div data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
+      <div data-stellar-vertical-offset="-1400" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-5">
@@ -125,7 +125,7 @@
            <a href="#item4" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item3bg.jpg); background-repeat: no-repeat; background-position: top; background-color: #111; width: 100%; padding: 40px 0 40px 0;">
+     <div data-stellar-vertical-offset="-2200" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item3bg.jpg); background-repeat: no-repeat; background-position: top; background-color: #111; width: 100%; padding: 40px 0 40px 0;">
          <div class="container marketing">
              <div class="row featurette">
                  <div class="col-md-7">
@@ -158,7 +158,7 @@
              <br>
              <div ng-repeat="proj in projects | filterTargets:'Target12'" class="well"  >
                  <a class="anchor" id="proj{{$index}}"></a>
-                 <div class="row">
+                 <div>
                      <div class="col-md-2">
                          <a href="/project?id={{proj.id}}" class="pull-right">
                              <img ng-show="proj.old_id" class="media-object img-thumbnail" style="margin-top: 0px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
@@ -173,18 +173,16 @@
                          <h4 style="color:#666; background-color:#efefef;padding:6px;">Summary</h4>
                          <span ng-bind-html-unsafe="proj.summary">{{proj.summary}}</span>
                           <hr />
-                         <div class="row" style="padding-top:10px; background-color:#efefef;">
+                         <div style="padding-top:10px; background-color:#efefef;">
                              <div class="col-md-4"  style="color:#666;"><h4>Funding needed</h4></div>
-                             <div class="col-md-4"  style="color:#666;"><h4>Funding Status</h4></div>
-                             <div class="col-md-4"  style="color:#666;"><h4>Date submitted</h4></div>
-                          </div>
-                          <div class="row">
-                             <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
                                <div class="col-md-4"><span ng-switch="proj.funding_status">
                                 <span ng-switch-when="not yet funded">not yet funded</span>
                                 <span ng-switch-when="funded">fully funded</span>
                                 <span ng-switch-default>partially funded</span>
                             </span></div>
+                             <div class="col-md-4"  style="color:#666;"><h4>Funding Status</h4></div>
+                             <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
+                             <div class="col-md-4"  style="color:#666;"><h4>Date submitted</h4></div>
                                <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
                           </div>
 
@@ -204,7 +202,7 @@
                                 </ul>
                      </div>
                  </div>
-                 <div class="row">
+                 <div>
                      <div class="col-md-2"></div>
                      <div class="col-md-10" ></div>
                   </div>
