@@ -5,13 +5,13 @@ define(['app', 'leaflet',], function(app, L) {
 				return;
 
 			var map = L.map('map', {
-				 center: [25,15],
-				 zoom: 3,
+				 center: [30,15],
+				 zoom: 2,
 				 scrollWheelZoom:false
 			});
 
 			//map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
-			L.tileLayer('http://{s}.tiles.mapbox.com/v3/mcdias.map-ze88o7vz/{z}/{x}/{y}.png').addTo(map);
+			L.tileLayer('http://{s}.tile.cloudmade.com/2441defe017745a29b7576818f21432b/2/256/{z}/{x}/{y}.png').addTo(map);
 
 			var fundedIcon = L.icon({
 				 iconUrl: '/app/images/map/dark-marker-icon.png',
