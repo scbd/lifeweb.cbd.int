@@ -1,4 +1,4 @@
-define(['app', 'app/js/controllers/MapController.js', 'authentication', 'URI'], function(app) {
+define(['app', 'app/js/controllers/MapController.js', 'authentication', 'URI'], function(app, map) {
   app.controller('CountryCtrl', function($scope, $http, $window) {
 
       var sCountry = new URI().query(true).country;
@@ -35,16 +35,15 @@ define(['app', 'app/js/controllers/MapController.js', 'authentication', 'URI'], 
     });
 
   console.log('country: ', sCountry);
-	  $http.jsonp('http://nominatim.openstreetmap.org/search/cn?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
+	  $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
 		 .success(function (data) {
 			  $scope.geolocation = {
           lat: data[0].lat,
           lon: data[0].lon,
         };
 
-        console.log($scope.geolocation);
 			  if ($scope.geolocation) {
-					//map.setView([$scope.geolocation.lat, $scope.geolocation.lon], 5);
+					map.map.setView([$scope.geolocation.lat, $scope.geolocation.lon], 5);
 			  }
 		 });
   });

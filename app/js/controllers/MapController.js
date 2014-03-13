@@ -1,10 +1,11 @@
 define(['app', 'leaflet',], function(app, L) {
+  var cheating = {};
 	app.controller('MapCtrl', function($scope, $http) {
 		 $scope.showMap = function() {
 			if (!$scope.mapdata)
 				return;
 
-			var map = L.map('map', {
+			var map = cheating.map = L.map('map', {
 				 center: [30,15],
 				 zoom: 2,
 				 scrollWheelZoom:false
@@ -80,4 +81,5 @@ define(['app', 'leaflet',], function(app, L) {
 			});
 		
 	});
+	return cheating;
 });
