@@ -1,4 +1,4 @@
-define(['app', 'authentication', 'URI', 'app/js/controllers/MapController.js'], function(app) {
+define(['app', 'app/js/controllers/MapController.js', 'authentication', 'URI'], function(app) {
   app.controller('CountryCtrl', function($scope, $http, $window) {
 
       var sCountry = new URI().query(true).country;
@@ -33,6 +33,20 @@ define(['app', 'authentication', 'URI', 'app/js/controllers/MapController.js'], 
     $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&country=' + sCountry, { cache: true }).success(function (data) {
       $scope.fp_national = data;
     });
+
+  console.log('country: ', sCountry);
+	  $http.jsonp('http://nominatim.openstreetmap.org/search/cn?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
+		 .success(function (data) {
+			  $scope.geolocation = {
+          lat: data[0].lat,
+          lon: data[0].lon,
+        };
+
+        console.log($scope.geolocation);
+			  if ($scope.geolocation) {
+					//map.setView([$scope.geolocation.lat, $scope.geolocation.lon], 5);
+			  }
+		 });
   });
   return true;
 });
