@@ -1,4 +1,5 @@
     <link href="/app/css/lifeweb_home.css" rel="stylesheet">
+    <link href="/app/libs/leaflet/leaflet.css" rel="stylesheet">
     <div class="container" style="position:relative;top:0px;"  >
 
     <!-- Carousel
@@ -8,23 +9,11 @@
 
       <div id="myCarousel" class="carousel slide"  >
       <div class="carousel-inner" style="border-bottom:1px solid #666;">
-        <!-- Commented out until the map limit thing is fixed.
         <div class="item active" >
-        
-        <div id='map' ng-controller="MapCtrl"></div>    
-        
-        <div id='legend-content' style='display: none;'>
- 			<table style='background-color:#666;'>
-                <tr><td style="background-color:#000;width:25px;height:20px"></td><td style="color:#efefef;padding:5px;font-weigth:bold;text-transform:uppercase; font-size:10px;">funded</td></tr>
-                <tr><td style="background-color:#6666ff;width:25px;height:20px"></td><td style="color:#efefef;padding:5px;font-weigth:bold;text-transform:uppercase; font-size:10px;">not yet funded</td></tr>
-            </table>
+          <div id='map' ng-controller="MapCtrl" style="height: 100%"></div>    
         </div>
-      </div>
-      -->
 
-
-
-        <div class="item active">
+        <div class="item">
           <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="" class="carousel_image">
           <div class="container" >
             <div class="carousel-caption" style="position:relative;top:-30px;">

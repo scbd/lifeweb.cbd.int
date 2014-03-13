@@ -1,3 +1,4 @@
+    <link href="/app/libs/leaflet/leaflet.css" rel="stylesheet">
     <div class="container">
 
    
@@ -33,12 +34,10 @@
           <img style="height:50px;display:inline!important;" src="http://www.cbd.int/{{countrydetails.flag.url}}" alt="{{countrydetails.flag.name}}" class="thumbnail" /> 
           {{countries | filterCountryName:CountryID}}</h2> 
 
-        <!--
         <div data-ng-controller="MapCtrl" >
         
-        <div id='map' style="height:300px;" ></div>    
+        <div id='map' style="height:300px;"></div>    
         </div>
-        -->
 
 
     <div ng-show="countrydetails.NbsapReportList">

@@ -10,8 +10,15 @@ define(['app', 'leaflet',], function(app, L) {
 				 scrollWheelZoom:false
 			});
 
-			//map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
-			L.tileLayer('http://{s}.tile.cloudmade.com/2441defe017745a29b7576818f21432b/2/256/{z}/{x}/{y}.png').addTo(map);
+      var cloudmade_url = 'http://{s}.tile.cloudmade.com/2441defe017745a29b7576818f21432b/2/256/{z}/{x}/{y}.png';
+      var openstreetmaps_url = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      /*
+      var legend = L.control({position: 'bottomright'});
+      legend.onAdd = function(map) {
+        return 'helloworld';
+      };
+      */
+			L.tileLayer(openstreetmaps_url).addTo(map);
 
 			var fundedIcon = L.icon({
 				 iconUrl: '/app/images/map/dark-marker-icon.png',
@@ -73,5 +80,4 @@ define(['app', 'leaflet',], function(app, L) {
 			});
 		
 	});
-	return true;
 });
