@@ -3,8 +3,9 @@
     -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-
-
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
 
 body {
     color: #5a5a5a;
@@ -24,6 +25,32 @@ h4 {
     width: 100%;
     padding: 3px;
     margin-top: 20px;
+}
+
+.alignCBDLogo {
+  position: relative;
+  top: -4px;
+}
+
+.lw-footerheader {
+    color: #efefef;
+    font-family: Sans-Serif;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px!important;
+}
+
+.lw-footerinfo {
+    color: #efefef!important;
+    font-family: Sans-Serif;
+    font-size: 12px;
+}
+
+.lw_footerlink {
+    list-style: none!important;
+    text-align: left!important;
+    margin: 0!important;
+    line-height: 14px!important;
 }
 
 .title-divider {
@@ -188,8 +215,6 @@ media-heading {
 /* RESPONSIVE CSS
     -------------------------------------------------- */
 
-
-
 @media (min-width: 650px) and (max-width: 980px) {
 
     .section {
@@ -311,10 +336,11 @@ media-heading {
       }
 }
 
-
-
-
-
+@media (max-width: 979px) {
+  .navbar {
+    padding-top:10px;
+  }
+}
 
 /* *********************************************** */
 /* Sidenav for Docs
@@ -523,6 +549,107 @@ hr.soften {
         padding: 0!important;
         line-height: 12px!important;
     }
+
+/* for aboutus... hopefully applies to whole website. */
+
+i.icon-stop
+{
+  padding-right: 5px;
+}
+
+i.icon-star-empty
+{
+  position: relative;
+  top: 2px;
+}
+
+section > table tr:first-child > td
+{
+  padding-right: 20px;
+}
+
+section > h4
+{
+  border-bottom: 1px solid #dedede;
+}
+
+section .title-divider
+{
+  margin:47px 0px 15px 0px;
+  padding: 0px;
+}
+
+section > h3
+{
+  color: #2185C5;
+}
+
+.well > h3
+{
+  margin-left: 20px;
+}
+
+/*footer stuff*/
+
+#footer
+{
+  background-color: #046380;
+  width: 100%
+  margin-top: 50px;
+  border-top: 10px solid #03455a;
+  padding-top: 10px;
+}
+
+#footer_header
+{
+  border-right: #808080 solid 1px;
+  height: 200px;
+}
+
+#footer_header > h3, #footer_header > h3, #footer_header > address, #signup_form > h3, #signup_form > span
+{
+  color: #efefef;
+}
+
+#footer_logo
+{
+  height: 80px;
+  padding-right: 10px;
+  padding-bottom: 140px;
+}
+
+#signup_form
+{
+  border-right: #808080 solid 1px;
+  height: 200px;
+}
+
+#signup_form > span
+{
+  font-size: 110%;
+  background-color: transparent!important;
+}
+
+#signup_form > div
+{
+  padding-top: 10px;
+}
+
+#signup_form > span
+{
+  padding-top: 20px!important;
+}
+
+#signup_form #mce-EMAIL
+{
+  width: 100%;
+}
+
+#signup_form #mc-embedded-subscribe
+{
+  position: relative!important;
+  vertical-align: top;
+}
 
 /* ++++++++++++++++++++++ */
 

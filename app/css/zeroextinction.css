@@ -1,6 +1,55 @@
   ng-view {
     position: relative;
-    top: 60px;
+    top: 70px;
+  }
+
+  #zero_header
+  {
+    background-color:#222222;
+    background-image:url(/app/images/campaigns/headerbg.gif);
+    background-position:bottom;
+    text-align:center;
+    padding: 0;
+    margin: 0;
+    height:193px;
+  }
+
+  .zero_container
+  {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .first_marketing
+  {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .first_marketing .col-lg-3
+  {
+    text-align: center;
+  }
+
+  .feature-nav
+  {
+    background-color: #111;
+    text-align: center;
+    height: 34px;
+    vertical-align: middle;
+  }
+
+  .stellar-container
+  {
+    background-image: url(/app/images/campaigns/item1bg.jpg);
+    background-repeat:no-repeat;
+    background-position:top;
+    background-color:#111;
+    width: 100%;
+    padding:40px 0 40px 0;
+  }
+
+  .lead, .lead a
+  {
+    color: white;
   }
 
   a.anchor{ display: block; position: relative; top: -100px; }

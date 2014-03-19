@@ -3,14 +3,14 @@
     ================================================== -->
   <link href="/app/css/zeroextinction.css" rel="stylesheet">
 
-      <div style="background-color:#222222;background-image:url(/app/images/campaigns/headerbg.gif);background-position:bottom;text-align:center;padding: 0; margin: 0;height:193px;">
-                 <img src="/app/images/campaigns/header.gif" style="padding:0; margin: 0;" />
+      <div id="zero_header">
+                 <img src="/app/images/campaigns/header.gif" />
       </div>
-     <div class="container" style="padding:30px 0 30px 0;">
+     <div class="container zero_container">
          <div class="row">
              <div class="col-md-12">
                
-                 <h2 style="margin-top: 0; padding-top: 0;">LifeWeb's Zero Extinction Campaign focuses attention on the extinction crisis and provides a platform for 
+                 <h2>LifeWeb's Zero Extinction Campaign focuses attention on the extinction crisis and provides a platform for 
                     countries to profile their financial needs to prevent species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem 
                     biodiversity loss.
                  </h2>
@@ -30,28 +30,28 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-     <div class="container marketing" style="padding: 0 0 30px 0;">
+     <div class="container marketing first_marketing">
          <!-- Three columns of text below the carousel -->
          <div class="row">
-             <div class="col-lg-3" style="text-align: center;">
+             <div class="col-lg-3">
                  <img class="img-circle" src="/app/images/campaigns/item1.gif" alt="item1" />
                  <h3>Why focus on preventing extinction?</h3>
                  <p><a class="btn btn-default" role="button" href="#item1">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" style="text-align: center;">
+             <div class="col-lg-3">
                  <img class="img-circle" src="/app/images/campaigns/item2.gif" alt="Generic placeholder image" />
                  <h3>Strategies to prevent extinctions</h3>
                  <p><a class="btn btn-default" role="button" href="#item2">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" style="text-align: center;">
+             <div class="col-lg-3">
                  <img class="img-circle"src="/app/images/campaigns/item3.gif" alt="Generic placeholder image" />
                  <h3>How to participate</h3>
                  <p><a class="btn btn-default" role="button" href="#item3">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" style="text-align: center;" ng-controller="ProjectsCtrl">
+             <div class="col-lg-3" ng-controller="ProjectsCtrl">
                  <img class="img-circle" src="/app/images/campaigns/item4.gif" alt="Generic placeholder image" />
                  <h3> <span class="label label-info">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction Campaign projects</h3>
                  <p><a class="btn btn-default" role="button" href="#item4">View details &raquo;</a></p>
@@ -65,17 +65,17 @@
       <!-- START THE FEATURETTES -->
      <hr id="item1" class="featurette-divider"  >
 
-      <div style="background-color:#111;text-align:center;height:34px;vertical-align:middle;">
+      <div class="featurette-nav">
            <a href="#top" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item2" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div data-stellar-vertical-offset="-800" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item1bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
+     <div class="stellar-container" style="background-image: url(/app/images/campaigns/item1bg.jpg);" data-stellar-vertical-offset="-800" data-stellar-background-ratio="0.1">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-7">
                      <h2 class="featurette-heading"><span style="color:#efefef;">Why focus on preventing extinction?</span></h2>
-                     <div class="lead" style="color:white;">
+                     <div class="lead">
                          One-third of global species assessed for threat are in danger of extinction. This phenomenon is thought to represent the sixth major extinction event on 
               Earth and it is a major threat to the persistence of Earth's biodiversity, which is crucial to the proper functioning of ecological systems. The parties to the 
               CBD have agreed to an explicit objective -Target 12- to prevent the extinction of known threatened species in the 2011-2020 Strategic Plan for Biodiversity. While ambitious, 
@@ -93,19 +93,19 @@
 
       <hr id="item2" class="featurette-divider">
 
-       <div style="background-color:#111;text-align:center;height:34px;vertical-align:middle;">
+       <div class="featurette-nav">
            <a href="#item1" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-      <div data-stellar-vertical-offset="-1400" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
+      <div class="stellar-container" data-stellar-vertical-offset="-1400" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-5">
                  </div>
                  <div class="col-md-7">  
                      <h2 class="featurette-heading"><span  style="color:#efefef;">Strategies to prevent extinctions</span></h2>
-                     <div class="lead" style="color:white;">
+                     <div class="lead">
                          The Zero Extinction Campaign advances two main approaches to address extinction threat: 
                             <ol><li>Protection of unprotected sites; and,</li> 
                             <li>Enhanced protection of currently protected sites.</li>
@@ -120,20 +120,20 @@
 
       <hr  id="item3"  class="featurette-divider">
 
-       <div style="background-color:#111;text-align:center;height:34px;vertical-align:middle;">
+       <div class="featurette-nav">
            <a href="#item2" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item4" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div data-stellar-vertical-offset="-2200" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item3bg.jpg); background-repeat: no-repeat; background-position: top; background-color: #111; width: 100%; padding: 40px 0 40px 0;">
+     <div class="stellar-container" style="background-image: url(/app/images/campaigns/item3bg.jpg);" data-stellar-vertical-offset="-2500" data-stellar-background-ratio="0.1">
          <div class="container marketing">
              <div class="row featurette">
                  <div class="col-md-7">
                      <h2 class="featurette-heading"><span style="color: #efefef;">How to Participate</span></h2>
-                     <div class="lead" style="color: white;">
+                     <div class="lead">
                          <p>LifeWeb's Zero Extinction campaign helps to finance biodiversity conservation at sites where Endangered or Critically Endangered species are found at a single remaining location on Earth. We achieve this by facilitating partnerships between public and private donors, and between developing countries and countries with economies in transition requiring funding. </p>
-                         <p>Countries requiring funds should visit: <a href="/share" style="color:white;">lifeweb.cbd.int/share</a> for more information and to access tools and data that will assist them in the preparation of a LifeWeb Expression of Interest.</p>
-                         <p>Donors wishing to support this campaign should contact: <a href="mailto:lifeweb@cbd.int" style="color:white;">lifeweb@cbd.int</a>.</p>
+                         <p>Countries requiring funds should visit: <a href="/share">lifeweb.cbd.int/share</a> for more information and to access tools and data that will assist them in the preparation of a LifeWeb Expression of Interest.</p>
+                         <p>Donors wishing to support this campaign should contact: <a href="mailto:lifeweb@cbd.int">lifeweb@cbd.int</a>.</p>
                      </div>
                  </div>
                  <div class="col-md-5">
@@ -143,7 +143,7 @@
      </div>
 
      <hr id="item4" class="featurette-divider">
-     <div style="background-color: #111; text-align: center; height: 34px; vertical-align: middle;">
+     <div class="featurette-nav">
          <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
          <a href="#footer" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
      </div>
