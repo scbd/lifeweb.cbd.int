@@ -14,9 +14,10 @@ require.config({
         'jquery'          : '../libs/jquery/jquery',
         'bootstrap'       : '../libs/bootstrap/dist/js/bootstrap.min',
         'underscore'      : '../libs/underscore/underscore',
-        'leaflet'         : '../libs/leaflet/leaflet',
+        'leaflet'         : 'http://cdn.leafletjs.com/leaflet-0.7.2/leaflet',
         'URI'             : '//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min',
-        'ui-utils'        : '../libs/ui-utils-master/modules/unique/unique',
+        'ui-utils'        : '../libs/angular-ui-utils/ui-utils',
+        'stellar'         : '../libs/jquery.stellar/jquery.stellar',
     },
     shim: {
         'angular'        : { 'deps': ['jquery'], 'exports': 'angular' },
@@ -27,6 +28,7 @@ require.config({
         'leaflet'        : { 'exports': 'L' },
         'URI'            : { 'exports': 'URI' },
         'ui-utils'       : { 'deps': ['angular'] },
+        'stellar'        : { 'deps': ['jquery'] },
     }
 });
 
