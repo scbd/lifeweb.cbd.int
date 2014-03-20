@@ -13,6 +13,13 @@
     margin: 0;
     height:193px;
   }
+  
+  #zproject_count
+  {
+    font-size: 36px;
+    position: relative;
+    top: -10px;
+  }
 
   .zero_container
   {
@@ -72,6 +79,53 @@
     margin-right: 10px;
   }
 
+  #projects_featurette
+  {
+    padding: 50px 0px 30px 0px;
+  }
+
+  .img-thumbnail
+  {
+    margin-top: 0px;
+    width: 90px;
+  }
+
+  #summary_heading
+  {
+    color: #666;
+    background-color: #efefef;
+    padding: 6px;
+  }
+
+  #to-top-div
+  {
+    background-color: #111;
+    text-align: center;
+    height: 34px;
+    vertical-align: middle;
+  }
+
+  .project-index
+  {
+    height: 38px;
+    position: relative;
+    top: 6px;
+  }
+
+  .project-index > span
+  {
+    font-size: 24px;
+  }
+
+  .agray
+  {
+    color: #666;
+  }
+  .agraybackground
+  {
+    background-color: #efefef;
+  }
+
   /* Featurettes
   ------------------------- */
   .featurette {
@@ -87,6 +141,11 @@
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+  }
+
+  .featurette-heading > span
+  {
+    color: #efefef;
   }
 
   /* RESPONSIVE CSS

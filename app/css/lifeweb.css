@@ -27,6 +27,26 @@ h4 {
     margin-top: 20px;
 }
 
+.navbar-wrapper
+{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 21435;
+}
+
+.navbar-wrapper > .container
+{
+  width: 100%;
+}
+
+.navbar-inner {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+
 .alignCBDLogo {
   position: relative;
   top: -4px;

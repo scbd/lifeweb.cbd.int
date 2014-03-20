@@ -74,7 +74,7 @@
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-7">
-                     <h2 class="featurette-heading"><span style="color:#efefef;">Why focus on preventing extinction?</span></h2>
+                     <h2 class="featurette-heading"><span>Why focus on preventing extinction?</span></h2>
                      <div class="lead">
                          One-third of global species assessed for threat are in danger of extinction. This phenomenon is thought to represent the sixth major extinction event on 
               Earth and it is a major threat to the persistence of Earth's biodiversity, which is crucial to the proper functioning of ecological systems. The parties to the 
@@ -104,7 +104,7 @@
                  <div class="col-md-5">
                  </div>
                  <div class="col-md-7">  
-                     <h2 class="featurette-heading"><span  style="color:#efefef;">Strategies to prevent extinctions</span></h2>
+                     <h2 class="featurette-heading"><span>Strategies to prevent extinctions</span></h2>
                      <div class="lead">
                          The Zero Extinction Campaign advances two main approaches to address extinction threat: 
                             <ol><li>Protection of unprotected sites; and,</li> 
@@ -129,7 +129,7 @@
          <div class="container marketing">
              <div class="row featurette">
                  <div class="col-md-7">
-                     <h2 class="featurette-heading"><span style="color: #efefef;">How to Participate</span></h2>
+                     <h2 class="featurette-heading"><span>How to Participate</span></h2>
                      <div class="lead">
                          <p>LifeWeb's Zero Extinction campaign helps to finance biodiversity conservation at sites where Endangered or Critically Endangered species are found at a single remaining location on Earth. We achieve this by facilitating partnerships between public and private donors, and between developing countries and countries with economies in transition requiring funding. </p>
                          <p>Countries requiring funds should visit: <a href="/share">lifeweb.cbd.int/share</a> for more information and to access tools and data that will assist them in the preparation of a LifeWeb Expression of Interest.</p>
@@ -148,46 +148,46 @@
          <a href="#footer" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
      </div>
      <div class="container marketing">
-         <div class="row featurette" ng-controller="ProjectsCtrl" style="padding:50px 0 30px 0;">
+         <div id="projects_featurette" class="row featurette" ng-controller="ProjectsCtrl">
    
 
              <div class="pull-right" style="padding-right: 10px;">Currency: <a ng-click="toggleCurrency()" style="cursor: pointer;">{{currency}}</a></div>
 
-             <h2 class="featurette-heading"> <span class="label label-info" style="font-size:36px;position:relative;top:-10px;">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction projects </h2>
-             <hr style="padding: 0; margin: 0;" />
+             <h2 class="featurette-heading"> <span class="label label-info" id="zproject_count">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction projects </h2>
+             <hr />
              <br>
              <div ng-repeat="proj in projects | filterTargets:'Target12'" class="well"  >
                  <a class="anchor" id="proj{{$index}}"></a>
                  <div>
                      <div class="col-md-2">
                          <a href="/project?id={{proj.id}}" class="pull-right">
-                             <img ng-show="proj.old_id" class="media-object img-thumbnail" style="margin-top: 0px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                             <img ng-hide="proj.old_id" class="media-object img-thumbnail" style="margin-top: 0px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a>
+                             <img ng-show="proj.old_id" class="media-object img-thumbnail" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
+                             <img ng-hide="proj.old_id" class="media-object img-thumbnail" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a>
                      </div>
                      <div class="col-md-8">
                          <a href="/project?id={{proj.id}}">
-                           <h3 ng-bind-html-unsafe="proj.title" style="margin-top:0;padding-top:0;">{{proj.title}}</h3> <!-- TODO: fix XSS vulnerability -->
+                           <h3 ng-bind-html-unsafe="proj.title">{{proj.title}}</h3> <!-- TODO: fix XSS vulnerability -->
                          </a>
                          <h4 ng-bind-html-unsafe="proj.country">{{proj.title}}</h4>
                          <hr />
-                         <h4 style="color:#666; background-color:#efefef;padding:6px;">Summary</h4>
+                         <h4 id="summary_heading">Summary</h4>
                          <span ng-bind-html-unsafe="proj.summary">{{proj.summary}}</span>
                           <hr />
-                         <div style="padding-top:10px; background-color:#efefef;">
-                             <div class="col-md-4"  style="color:#666;"><h4>Funding needed</h4></div>
+                         <div class="agraybackground" style="padding-top:10px;">
+                             <div class="col-md-4 agray"><h4>Funding needed</h4></div>
                                <div class="col-md-4"><span ng-switch="proj.funding_status">
                                 <span ng-switch-when="not yet funded">not yet funded</span>
                                 <span ng-switch-when="funded">fully funded</span>
                                 <span ng-switch-default>partially funded</span>
                             </span></div>
-                             <div class="col-md-4"  style="color:#666;"><h4>Funding Status</h4></div>
+                             <div class="col-md-4 agray"><h4>Funding Status</h4></div>
                              <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
-                             <div class="col-md-4"  style="color:#666;"><h4>Date submitted</h4></div>
+                             <div class="col-md-4 agray"><h4>Date submitted</h4></div>
                                <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
                           </div>
 
                          <hr />
-                         <h4  style="color:#666; background-color:#efefef;padding:6px;">How this project will address Aichi Target 12</h4>
+                         <h4 class="agray agraybackground" style="padding:6px;">How this project will address Aichi Target 12</h4>
                          <span ng-bind-html-unsafe="(proj.aichi_targets | filterGetTermComment:'Target12')">{{(proj.aichi_targets | filterGetTermComment:'Target12')}}</span>
                      </div>
                      <div class="col-md-2">
@@ -196,7 +196,7 @@
 
                              <li ng-show="$index==1"><a href="#item4" class="btn btn-default "><i class="glyphicon glyphicon-chevron-up"></i></a>
                                  <li ng-show="$index > 0 && $index!=1"><a href="#proj{{$index -1}}" class="btn btn-default "><i class="glyphicon glyphicon-chevron-up"></i></a>
-                             <li style="height:38px;position:relative;top:6px;"><span class="label label-default" style="font-size:24px;">{{$index+1}}</span><li>
+                             <li class="project-index"><span class="label label-default">{{$index+1}}</span><li>
                              
                              <li ng-hide="$last"><a href="#proj{{$index +1}}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
                                 </ul>
@@ -215,7 +215,7 @@
 
       <!-- /END THE FEATURETTES -->
  </div><!-- end wrap-->
-     <div style="background-color: #111; text-align: center; height: 34px; vertical-align: middle;">
+     <div id="to-top-div">
          <a href="#top" class="btn btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
      </div>
 
