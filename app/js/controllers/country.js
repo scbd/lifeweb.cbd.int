@@ -1,4 +1,4 @@
-define(['app', 'app/js/controllers/MapController.js', 'authentication', 'URI'], function(app, map) {
+define(['app', 'app/js/controllers/map.js', 'authentication', 'URI'], function(app, map) {
   app.controller('CountryCtrl', function($scope, $http, $window) {
 
       var sCountry = new URI().query(true).country;

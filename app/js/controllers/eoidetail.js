@@ -1,4 +1,4 @@
-define(['app', 'authentication', 'URI', 'leaflet', 'controllers/PageController',], function(app) {
+define(['app', 'authentication', 'URI', 'leaflet', 'controllers/page',], function(app) {
   app.controller('EOIDetailCtrl', function ($scope, $http) {
 
         

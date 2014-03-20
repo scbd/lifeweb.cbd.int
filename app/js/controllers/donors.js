@@ -1,4 +1,4 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/PageController', 'URI',], function(app) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',], function(app) {
 	app.controller('DonorCtrl', function ($scope, $http) {
 		 $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {

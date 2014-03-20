@@ -1,4 +1,4 @@
-define(['app', 'authentication', 'URI', 'controllers/PageController',], function(app) {
+define(['app', 'authentication', 'URI', 'controllers/page',], function(app) {
   app.controller('EventsCtrl', function ($scope, $http) {
 
       var sID = new URI().query(true).id;

@@ -11,7 +11,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/home.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/MapController.js', '/app/js/controllers/TwitterController.js', '/app/js/directives/event-min.js', '/app/js/directives/project-min.js']),
+          dependencies: resolveJS(['/app/js/controllers/map.js', '/app/js/controllers/twitter.js', '/app/js/directives/event-min.js', '/app/js/directives/project-min.js']),
         },
         label: 'Home'
       })
@@ -54,7 +54,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/country.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/CountryController.js']),
+          dependencies: resolveJS(['/app/js/controllers/country.js']),
         },
       })
       .when('/events', {
@@ -75,7 +75,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/map.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/MapController.js']),
+          dependencies: resolveJS(['/app/js/controllers/map.js']),
         },
       })
       .when('/campaigns/zeroextinction', {
