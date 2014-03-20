@@ -11,6 +11,11 @@
     "underscore": "latest",
     "jquery": "~2.0.3",
     "bootstrap": "~3.1.1",
-    "ng-breadcrumbs": "~0.0.3"
+    "ng-breadcrumbs": "~0.0.3",
+    "angular-ui-utils": "latest",
+    "jquery.stellar": "latest"
+  },
+  "resolutions": {
+    "angular": "~1.2.14"
   }
 }
