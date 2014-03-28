@@ -1,0 +1,123 @@
+<link href="/app/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
+  <h1>Create a Project</h1>
+  <form class="form-horizontal" role="form" ng-submit="save()">
+    <inputstring data-binding="project.title" data-title="Title" data-placeholder="title"></inputstring>
+    <inputtext data-binding="project.summary" data-title="Summary" data-placeholder="Summary of Project"></inputtext>
+    <inputstring data-binding="project.countries" data-title="Countries" data-placeholder="Canada, Japan, etc."></inputstring>
+    <inputstring data-binding="project.thumbnail" data-title="Thumbnail" data-placeholder="http://myurl.com/myimg.png" data-help="Upload an image to act as the banner for the project"></inputstring>
+    <inputoptions data-binding="project.scale" data-title="Project Scale" data-options="scales"></inputoptions>
+    <inputtext data-binding="project.description" data-title="Description" data-placeholder="Description of project."></inputtext>
+    <div class="form-group">
+      <h3>Geo-Location</h3>
+      <label for="lat" class="sr-only">Latitude</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" id="lat" placeholder="0.0" ng-model="project.geo_location.lat">
+      </div>
+      <label for="lon" class="sr-only">Longitude</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" id="lon" placeholder="0.0" ng-model="project.geo_location.lon">
+      </div>
+      <label for="zoom" class="sr-only">Zoom</label>
+      <div class="col-sm-3">
+        <input type="text" class="form-control" id="zoom" placeholder="2.5" ng-model="project.geo_location.zoom">
+      </div>
+    </div>
+    <div class="form-group">
+      <h3>Implementation Activity</h3>
+      <div class="form-group">
+        <label for="activity" class="col-sm-2 control-label">Activity</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="activity" placeholder="funding needed, etc." ng-model="project.implementation.activity">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="aichi_target" class="col-sm-2 control-label">Aichi Target</label>
+        <div class="col-sm-3">
+          <select id="aichi_target" class="form-control" ng-model="project.implementation.aichi_target">
+            <option value="one">One</option>
+            <option value="two">Two</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="aichi_sub_target" class="col-sm-2 control-label">Aichi Sub Target</label>
+        <div class="col-sm-3">
+          <select id="aichi_sub_target" class="form-control" ng-model="project.implementation.aichi_sub_target">
+            <option value="one">Une</option>
+            <option value="two">Duo</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="timeframe" class="col-sm-2 control-label">Time Frame in Months</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="timeframe" placeholder="funding needed, etc." ng-model="project.implementation.timeframe">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="participation_and_equity" class="col-sm-2 control-label">Participation and Equity</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="participation_and_equity" placeholder="How this project will ensure the full and effective participation of locals and equitable sharing of costs and benefits." rows="3" ng-model="project.implementation.participation_and_equity"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <h3>Benefits and Impacts</h3>
+      <div class="form-group">
+        <label for="term" class="col-sm-2 control-label">Term</label>
+        <div class="col-sm-3">
+          <select id="term" class="form-control" ng-model="project.benefits.term">
+            <option value="climate_change_mitigation">Climate Change Mitigation</option>
+            <option value="climate_change_adaptation">Climate Change Adaptation</option>
+            <option value="food_security">Food Security</option>
+            <option value="fresh_water_security">Fresh Water Security</option>
+            <option value="income_generation">Income Generation</option>
+            <option value="human_health">Human Health</option>
+            <option value="cultural_and_spiritual_enrichment">Cultural and Spiritual Enrichment</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="comment" class="col-sm-2 control-label">Related Comments</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="comment" placeholder="Any additional comments." ng-model="project.benefits.comment">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="alignment_nbsap" class="col-sm-2 control-label">Alignment with the NBSAP</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="alignment_nbasp" placeholder="How the project aligns with the NBSAP" rows="3" ng-model="project.alignment_nbsap"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="alignment_other" class="col-sm-2 control-label">Alignment with other National Planning Strategies</label>
+      <div class="col-sm-10">
+        <textarea class="form-control" id="alignment_other" placeholder="iHow the project aligns with other national planning strategies. For example PRSP, NCCS, REDD+, NAPAs, etc." rows="3" ng-model="project.alignment_other"></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <h3>Cost</h3>
+      <div class="form-group">
+        <label for="currency" class="col-sm-2 control-label">Currency</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="currency" placeholder="Currency." ng-model="project.cost.currency">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="amount" class="col-sm-2 control-label">Amount</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="amount" placeholder="amount." ng-model="project.cost.amount">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <button type="button" class="form-control">Add External Donation</button>
+    </div>
+    <div class="form-group">
+      <button type="submit" class="form-control">Save</button>
+    </div>
+  </form>
+</div>

@@ -8,6 +8,7 @@ require.config({
     paths: {
         'angular'         : '//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min',
         'angular-route'   : '../libs/angular-route/angular-route',
+        'angular-cookies'  : 'http://code.angularjs.org/1.2.12/angular-cookies',
         'ng-breadcrumbs'  : '../libs/ng-breadcrumbs/dist/js/ng-breadcrumbs',
         'async'           : '../libs/requirejs-plugins/src/async',
         'domReady'        : '../libs/requirejs-domready/domReady',
@@ -22,6 +23,7 @@ require.config({
     shim: {
         'angular'        : { 'deps': ['jquery'], 'exports': 'angular' },
         'angular-route'  : { 'deps': ['angular'] },
+        'angular-cookies': { 'deps': ['angular'] },
         'bootstrap'      : { 'deps': ['jquery'] },
         'underscore'     : { 'exports': '_' },
         'ng-breadcrumbs' : { 'deps': ['angular'] },
@@ -32,11 +34,11 @@ require.config({
     }
 });
 
-require(['angular', 'angular-route', 'bootstrap', 'ng-breadcrumbs', 'domReady'], function (ng) {
+require(['angular', 'angular-route', 'angular-cookies', 'bootstrap', 'ng-breadcrumbs', 'domReady'], function (ng) {
 
     // NOTE: place operations that need to initialize prior to app start here using the `run` function on the top-level module
 
-    require(['domReady!', 'main', 'app', 'app_routes', '/app/js/controllers/template.js', '/app/js/services/filters.js'], function (document) {
+    require(['domReady!', 'app_routes', '/app/js/controllers/template.js', '/app/js/services/filters.js'], function (document) {
         ng.bootstrap(document, ['app']);
         ng.resumeBootstrap();
     });

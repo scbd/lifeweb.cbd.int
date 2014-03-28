@@ -122,6 +122,13 @@ define(['app', 'authentication'], function(app) {
         label: 'Page not found',
         resolve: {},
       })
+      .when('/admin/projects/create', {
+        templateUrl: '/app/templates/routes/admin/projects/edit.html',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/editproject.js', '/app/js/directives/form/form.js']),
+        },
+      })
 
       .otherwise({
         redirectTo: '/404',

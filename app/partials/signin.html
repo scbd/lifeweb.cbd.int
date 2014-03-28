@@ -1,0 +1,62 @@
+<div class="ng-cloak" style="width:200px;" >
+    	<div ng-show="user.isAuthenticated">
+
+            <h3 style="color:#efefef;">You are currently signed in.</h3>
+
+            <ul style="color:#efefef;">
+                <li style="padding:3px;"> Management center</li>
+                <li style="padding:3px;"> Submit a new Expression of Interest</li>
+                <li style="padding:3px;"> My Profile</li>
+                <li style="padding:3px;"> <button type="button" class="btn btn-info" ng-click="signOut()"> <i class="icon  icon-off icon-white"></i> Sign out</button></li>
+           </ul>
+		
+	</div>
+
+    
+   <h3 ng-hide="user.isAuthenticated" style="color: #efefef;">Sign in</h3>
+		<form class="form-horizontal" ng-submit="doSignIn()" style="margin-left:15px;">
+	 
+		<div ng-hide="user.isAuthenticated">
+
+			<div class="alert alert-block" ng-show="isInvalid">
+				<h4>Login Failed!</h4>
+				You entered an invalid email address or password.
+			</div>
+
+			<div class="alert alert-error" ng-show="isErrorTimeout">
+				<h4>Login Failed!</h4>
+				The service is not available.
+			</div>
+
+			<div class="alert alert-error" ng-show="isError">
+				<h4>Login Failed!</h4>
+				An error has occured: {{error}}
+			</div>
+
+           <div class="control-group form-group">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-envelope"></i></span>
+						<input type="text" class="form-control" value="email" id="inputEmail" required ng-model="email" placeholder="Registered email address">
+					</div>
+			</div>
+			<div class="control-group form-group">
+					<div class="input-prepend">
+						<span class="add-on"><i class="icon-lock"></i></span>
+						<input type="password" class="form-control" value="password" id="inputPassword" ng-model="password" placeholder="Password">
+					</div>
+			</div>
+
+            <div class="control-group form-group">
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+                    <span style="padding: 5px; padding-left: 10px;">
+                        <input type="checkbox" ng-model="rememberMe" ng-change="onRememberMeChange()">
+                        <span style="color: #efefef; top: 3px; position: relative; white-space: nowrap;">Remember me</span>
+                    </span>
+            </div>
+
+        </div>
+
+	</form>
+
+
+</div>
