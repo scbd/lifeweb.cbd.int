@@ -1,123 +1,107 @@
     <link href="/app/css/lifeweb_home.css" rel="stylesheet">
     <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet">
-    <div class="container" style="position:relative;top:0px;width:100%"  >
+    <div class="" style="position:relative;top:0px;width:100%"  >
 
     <!-- Carousel
     ================================================== -->
 
-    <script src="/app/js/home.js"></script>
 
-      <div id="myCarousel" class="carousel slide"  >
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" style="border-bottom:1px solid #666;">
-        <div class="item active" >
-          <div id='map' ng-controller="MapCtrl" style="height: 100%"></div>    
+        <div class="item active">
+          <div class="" id='map' ng-controller="MapCtrl" style="height: 100%"></div>    
         </div>
 
         <div class="item">
-          <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="" class="carousel_image">
-          <div class="container" >
-            <div class="carousel-caption" style="position:relative;top:-30px;">
-                <br/>
-                <h1 style="width: 1130px; color: white;">Zero Extinction Campaign
-                </h1>
-                <div style="color:white;font-size:110%;">
-                    LifeWeb's Zero Extinction campaign focuses attention on the extinction crisis and provides a platform for countries to profile their financial needs to prevent
-                    species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem biodiversity loss.
-                </div>
-
-                <a class="btn btn-large btn-primary" href="/campaigns/zeroextinction">more information</a> 
-            </div>
+          <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="Endangered Frog" class="img-responsive" style="height: 100%">
+          <div class="carousel-caption">
+            <h1 style="color: white;">
+              Zero Extinction Campaign
+            </h1>
+            <p style="color:white;font-size:110%;">
+                LifeWeb's Zero Extinction campaign focuses attention on the extinction crisis and provides a platform for countries to profile their financial needs to prevent
+                species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem biodiversity loss.
+            </p>
+            <a class="btn btn-lg btn-primary" href="/campaigns/zeroextinction">more information</a> 
           </div>
         </div>
 
-          <div class="item">
-          <img src="http://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="carousel_image">
-          <div class="container">
-            <div class="carousel-caption" style="position:relative;top:-30px" >
-              <h1><span style="color:#efefef;background-color:#000;padding:5px!important; white-space:nowrap;">Carbon & Biodiversity Calculator</span></h1>
-              <p class="lead" style="background-color:#6666ff;padding:5px;">
-                  The Carbon and Biodiversity Calculator allows you to define your area of interest and calculate an estimated contribution of this area to climate change mitigation. At the same time, it also provides information on the area's conservation values, protected areas, forest status and opportunities for forest and landscape restoration.
-              </p>
-              <a class="btn btn-large btn-primary" href="http://carbonbiodiversitycalculator.unep-wcmc.org/" target="_blank">Try it for yourself</a>
-            </div>
+        <div class="item">
+          <img src="http://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="img-responsive" style="height: 100%">
+          <div class="carousel-caption">
+            <h1><span style="color:#efefef;background-color:#000;padding:5px!important; white-space:nowrap;">Carbon & Biodiversity Calculator</span></h1>
+            <p style="background-color:#6666ff;padding:5px;font-size:110%">
+                The Carbon and Biodiversity Calculator allows you to define your area of interest and calculate an estimated contribution of this area to climate change mitigation. At the same time, it also provides information on the area's conservation values, protected areas, forest status and opportunities for forest and landscape restoration.
+            </p>
+            <a class="btn btn-lg btn-primary" href="http://carbonbiodiversitycalculator.unep-wcmc.org/" target="_blank">Try it for yourself</a>
           </div>
         </div>
-
-           
-
-      <!--  <div class="item">
-          <img src="/app/lifeweb/images/home_slider/amazonbg.jpg" alt="" class="carousel_image">
-          <div class="container">
-            <div class="carousel-caption" style="position:relative;top:-30px" >
-              <h1 style="color:#efefef;">Amazon Vision Roundtable</h1>
-              <p class="lead">Towards Building an Ecosystem-based Conservation Vision in the Amazon Biome within the framework of the Convention of Biological Diversity Programme of Work on Protected Areas of the and the Biodiversity Strategic Plan 2011-2020
-                   <br/>4 or 5 November 2013 - Paracas, Peru
-                  <br/>Please confirm your availability and participation in this meeting at the following link: <a href="http://doodle.com/xzyd6emtznkxnrdx">http://doodle.com/xzyd6emtznkxnrdx</a>
-               </p>
-              <a class="btn btn-large btn-primary" href="/event/?id=23834">more information</a>
-            </div>
-          </div>
-        </div>-->
-
-<!--         <div class="item">
-          <img src="/app/lifeweb/images/home_slider/botanical2.jpg" alt="" class="carousel_image">
-          <div class="container">
-            <div class="carousel-caption" >
-              <h1 style="color:#efefef;">Mexico Roundtable 2013</h1>
-              <p class="lead">The overall vision aims to implement a diversified and sustainable financing strategy, which contributes to the conservation, 
-                  sustainable use and restoration of Mexico's natural protected areas systems and ensure the operability of protected areas in the long term.
-                  <br/><br/>11 September 2013 - Mexico City, Mexico</p>
-              <a class="btn btn-large btn-primary" href="/event/?id=23835">more information</a>
-            </div>
-          </div>
-        </div>-->
-        
-      </div>
-      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+      </div> <!-- /.carousel-inner -->
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a>
     </div><!-- /.carousel -->
 
 
  <!-- explore share contect
     ================================================== -->
 
-<div class="row text-center" style="position:relative;top:0px;margin-bottom:15px;">
+<div class="row container-fluid text-center" style="position:relative;top:0px;margin-top:15px;margin-bottom:15px;">
 
-<div class="span4"><div class="well" style="height:50px; background-color:#3E606F;"><a href="/explore/">
-    <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> 
-    <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> EXPLORE <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span></a>
-    <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3F403D" />
-<span class="muted" style="font-weight:normal;color:#999;"> national priority projects in need of funding</span></div></div>
+  <div class="col-xs-4">
+    <div class="well" style="background-color:#3E606F;">
+      <a href="/explore/">
+        <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> 
+        <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> EXPLORE <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span>
+      </a>
+      <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3F403D" />
+      <span class="muted" style="font-weight:normal;color:#999;"> national priority projects in need of funding</span>
+    </div>
+  </div>
 
-<div class="span4"><div class="well" style="height:50px;background-color:#3F403D;"><a href="/share/">
-    <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> 
-    <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> SHARE <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span></a>
-    <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3E606F" />
-<span class="muted" style="font-weight:normal;color:#999;">national funding priorities with donors</span></div></div>
+  <div class="col-xs-4">
+    <div class="well" style="background-color:#3F403D;">
+      <a href="/share/">
+        <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> 
+        <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> SHARE <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span>
+      </a>
+      <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3E606F" />
+      <span class="muted" style="font-weight:normal;color:#999;">national funding priorities with donors</span>
+    </div>
+  </div>
 
-<div class="span4"><div class="well" style="height:50px;background-color:#193441;"><a href="/benefits/">
-    <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" />
-     <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> LEARN <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span></a>
-    <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3F403D" />
-<span class="muted" style="font-weight:normal;color:#999;">why finance biodiversity conservation?</span></div></div>
-
+  <div class="col-xs-4">
+    <div class="well" style="background-color:#193441;">
+      <a href="/benefits/">
+        <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" />
+        <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> LEARN <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span>
+      </a>
+      <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3F403D" />
+      <span class="muted" style="font-weight:normal;color:#999;">why finance biodiversity conservation?</span>
+    </div>
+  </div>
 </div>
 
 
 <!-- Latest Projects
      ================================================== -->  
-<a href="/explore/"><h2 class="featurette-heading"> Latest projects <i class="icon-chevron-right" style="position:relative;top:12px;"></i></h2></a>
-<hr style="padding:0;margin:0;"/>
-<br>
-      <div class="row" >
-         <project-min doc-id="23916" class="span6"></project-min>
-         <project-min doc-id="23936" class="span6"></project-min>
-         <project-min doc-id="23236" class="span6"></project-min>
-         <project-min doc-id="23954" class="span6"></project-min>
-         <project-min doc-id="23208" class="span6"></project-min>
-         <project-min doc-id="23209" class="span6"></project-min>
-      </div>
-   
+<div class="container-liquid">
+  <a href="/explore/"><h2 class="featurette-heading"> Latest projects <i class="icon-chevron-right" style="position:relative;top:12px;"></i></h2></a>
+  <hr style="padding:0;margin:0;"/>
+  <br>
+        <div class="row" >
+           <project-min doc-id="23916" class="col-xs-6"></project-min>
+           <project-min doc-id="23936" class="col-xs-6"></project-min>
+           <project-min doc-id="23236" class="col-xs-6"></project-min>
+           <project-min doc-id="23954" class="col-xs-6"></project-min>
+           <project-min doc-id="23208" class="col-xs-6"></project-min>
+           <project-min doc-id="23209" class="col-xs-6"></project-min>
+        </div>
+</div>
+     
    <br/>
    <br/>  
 
@@ -128,9 +112,9 @@
 <hr style="padding: 0; margin: 0;" />
 <br>
 <div class="row" >
-    <event-min doc-id="23834" class="span4"></event-min>
-    <event-min doc-id="23953" class="span4"></event-min>
-    <event-min doc-id="10668" class="span4"></event-min>
+    <event-min doc-id="23834" class="col-xs-4"></event-min>
+    <event-min doc-id="23953" class="col-xs-4"></event-min>
+    <event-min doc-id="10668" class="col-xs-4"></event-min>
 </div>             
 <br/>
 <br/>  
@@ -140,7 +124,7 @@
 <h2 class="featurette-heading"> <a href="http://twitter.com/CBDLifeWeb">Latest News <i class="icon-chevron-right" style="position:relative;top:12px;"></i></a></h2> <hr style="padding:0;margin:0;"/><br/>
 <div class="row" data-ng-controller="TwitterCtrl">
  
-<div class="span2" style="height:150px; border-right: solid 1px #dedede; padding-right:10px; margin-right:-15px;margin-bottom:20px; display:inline;" ng-repeat="tweet in tweets" >
+<div class="col-xs-2" style="height:150px; border-right: solid 1px #dedede; padding-right:10px; margin-right:-15px;margin-bottom:20px; display:inline;" ng-repeat="tweet in tweets" >
 <p class="twitter_date"><strong>{{tweet.date}}</strong></p><p>
 <a href="{{tweet.link}}" target="new__" style="font-size:14px;" ng-bind-html-unsafe="tweet.text">{{tweet.text}}</a></p></div> <!--TODO: vulnerable to XSS through twitter api-->
 
@@ -149,7 +133,7 @@
 
    <br/><br/>   
 <div class="row">
-<div class="span12">  
+<div class="col-xs-12">  
 <h2 class="featurette-heading"> LifeWeb Donors <span class="muted" > </span></h2> <hr style="padding:0;margin:0;"/><br/>
 <style>
     .donor {

@@ -27,7 +27,7 @@ h4 {
     margin-top: 20px;
 }
 
-.navbar-wrapper
+.navbar-inverse
 {
   position: fixed;
   top: 0px;
@@ -36,15 +36,25 @@ h4 {
   z-index: 21435;
 }
 
-.navbar-wrapper > .container
+.navbar-inverse > .container-fluid
 {
   width: 100%;
 }
 
-.navbar-inner {
+#ngview-content
+{
+}
+
+.navbar-inverse {
+  height: 80px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+}
+
+.navbar-nav > li a
+{
+  line-height: 50px;
 }
 
 .alignCBDLogo {

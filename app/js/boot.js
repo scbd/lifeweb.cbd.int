@@ -13,7 +13,7 @@ require.config({
         'async'           : '../libs/requirejs-plugins/src/async',
         'domReady'        : '../libs/requirejs-domready/domReady',
         'jquery'          : '../libs/jquery/jquery',
-        'bootstrap'       : '../libs/bootstrap/dist/js/bootstrap.min',
+        'bootstrap'       : '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min',
         'underscore'      : '../libs/underscore/underscore',
         'leaflet'         : 'http://cdn.leafletjs.com/leaflet-0.7.2/leaflet',
         'URI'             : '//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min',

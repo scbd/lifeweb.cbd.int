@@ -10,7 +10,6 @@
     "requirejs-plugins": "latest",
     "underscore": "latest",
     "jquery": "~2.0.3",
-    "bootstrap": "latest",
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
     "jquery.stellar": "latest"
