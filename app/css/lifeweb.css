@@ -630,6 +630,11 @@ section > h3
   padding-top: 10px;
 }
 
+#mc_embed_signup
+{
+  height: 300px;
+}
+
 #footer_header
 {
   border-right: #808080 solid 1px;
@@ -645,7 +650,7 @@ section > h3
 {
   height: 80px;
   padding-right: 10px;
-  padding-bottom: 140px;
+  padding-top: 10px;
 }
 
 #signup_form
