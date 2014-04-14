@@ -538,6 +538,15 @@ img.thumbnail {
   height: auto;
 }
 
+.bold-btn {
+      margin-top: 10px;
+      text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+      border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+      background-color: #006dcc;
+      background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+      background-repeat: repeat-x;
+    }
+
 .lw-tt .lw-dd {
     margin: 2px;
     padding: 2px;
