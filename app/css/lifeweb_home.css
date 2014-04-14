@@ -15,18 +15,18 @@ body {
 
 
     /* Special class on .container surrounding .navbar, used for positioning it into place. */
-    .navbar-wrapper {
+    .navbar-inverse {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      z-index: 10;
+      z-index: 11;
       margin-top: 20px;
       margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
     }
 
     /* Remove border and change up box shadow for more contrast */
-    .navbar .navbar-inner {
+    .navbar-inverse {
       border: 0;
       -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
          -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
@@ -36,9 +36,10 @@ body {
       border-radius: 4px;
     }
 
-    .navbar-wrapper > .container
+    .navbar-inverse
     {
-      width: 90%;
+      left: 5%;
+      right: 5%;
     }
 
     .navbar-fixed-top {
@@ -63,6 +64,13 @@ body {
       margin-top: 10px;
     }
 
+    /* the body margin for the homepage isn't the same */
+
+    /*HERE*/
+    #ngview-content
+    {
+    }
+
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
     /* Carousel base class */
@@ -72,52 +80,35 @@ body {
       z-index: 9;
     }
 
-    .carousel-control {
-      height: 80px;
-      margin-top: 0;
-      font-size: 120px;
-      text-shadow: 0 1px 1px rgba(0,0,0,.4);
-      background-color: transparent;
-      border: 0;
-      z-index: 10;
-    }
-
     .carousel .item {
       height: 500px;
 	    border-bottom:1px solid #666;
     }
 	
-    .carousel_image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      height: 700px;
-    }
-
     .carousel-caption {
       background-color: transparent;
-      position: static;
+      font-size: 110%;
       max-width: 550px;
+      width: 550px;
       padding: 0 20px;
-      margin-top: 160px;
+      margin-bottom: 120px;
+      margin-left: -140px;
+      text-align: left;
     }
-    .carousel-caption h1,
-    .carousel-caption .lead {
+    .carousel-caption p {
+      line-height: 1;
+    }
+    .carousel-caption h1 {
       margin: 0;
+      font-size: 38.5px;
+      font-weight: bold;
       line-height: 1.25;
       color: rgb(255, 255, 255);
       text-shadow: 0 1px 1px rgba(0,0,0,.4);
     }
-    .carousel-caption .btn {
-      margin-top: 10px;
-    }
-
-
      #map {
               margin-left: auto;
               margin-right: auto;
               width: 100%; 
           }
-
          

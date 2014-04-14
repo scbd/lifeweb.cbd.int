@@ -19,7 +19,47 @@ define(['app'], function(app) {
       }
   });
 
+//##################################################################
+  app.filter('filterToUSD', function ($filter) {
+    return function (amount, currency) {
 
+        var USDtoEURO = 0.73227;
+
+        if (!amount)
+            return 0;
+
+            if (currency == "Euros" || currency == "EURO") {
+                return amount * (1 / USDtoEURO);
+            }
+            else {
+                return amount;
+            }
+
+    };
+  });
+
+//##################################################################
+  app.filter('getMatchesTotalUSD', function ($filter) {
+    return function (matches) {
+
+        var USDtoEURO = 0.73227;
+
+        var total = 0;
+
+        for (var i = 0; i < matches.length; i++) {
+
+            if (matches[i].currency == "Euros" || matches[i].currency == "EURO") {
+                total = total + (matches[i].amount * (1 / USDtoEURO));
+            }
+            else {
+                total = total + matches[i].amount;
+            }
+        }
+
+        return total;
+
+    };
+  });
 
   //##################################################################
   app.filter('filterGetTermComment', function () {

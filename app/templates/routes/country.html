@@ -5,25 +5,25 @@
     <!-- Docs nav
     ================================================== -->
     <div class="row"  ng-controller="CountryCtrl" >
-      <div class="span3 bs-docs-sidebar" >
+      <div class="col-xs-3 bs-docs-sidebar" >
       
         <ul class="nav nav-list bs-docs-sidenav ">
           <li><a style="font-size:14px;color:#999;text-transform:uppercase;">LifeWeb Country Profile</a></li>
           <li><a href="#info"><i class="icon-chevron-right"></i>Country Information</a></li>
           <li><a href="#projects"><i class="icon-chevron-right"></i>LifeWeb Projects</a></li>
           <li><a href="#fps"><i class="icon-chevron-right"></i>Focal points</a></li>
-          <li><a href="#links"><i class="icon-chevron-right"></i>Websites and links</a></li>
           <li ng-show="countrydetails.info.indexOf('Status and trends of biodiversity, including benefits from biodiversity and ecosystem services') != -1"><a href="#status"><i class="icon-chevron-right"></i>Status and trends</a></li>
           <li ng-show="countrydetails.info.indexOf('Main pressures on and drivers of change to biodiversity (direct and indirect)') != -1"><a href="#drivers"><i class="icon-chevron-right"></i>Main pressures</a></li>
           <li ng-show="countrydetails.info.indexOf('Implementation of the NBSAP') != -1"><a href="#nbsap_impl"><i class="icon-chevron-right"></i>Implementation</a></li>
           <li ng-show="countrydetails.info.indexOf('Actions taken to achieve the 2020 Aichi Biodiversity Targets') != -1"><a href="#actions"><i class="icon-chevron-right"></i>Actions taken</a></li>
           <li ng-show="countrydetails.info.indexOf('Support mechanisms for national implementation (legislation, funding, capacity-building, coordination, mainstreaming, etc.)') != -1"><a href="#support"><i class="icon-chevron-right"></i>Support mechanisms</a></li>
           <li ng-show="countrydetails.info.indexOf('Mechanisms for monitoring and reviewing implementation') != -1" ><a href="#monitoring"><i class="icon-chevron-right" ></i>Monitoring</a></li>
+          <li><a href="#links"><i class="icon-chevron-right"></i>Websites and links</a></li>
           <!--<li><a href="#small"><i class="icon-chevron-right"></i>Small states</a></li>-->
         </ul>
       </div>
       
-      <div class="span9">
+      <div class="col-xs-9">
 
  
 
@@ -64,29 +64,32 @@
 <section id="projects" >    
  <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">LifeWeb Projects</h2>
 <!--******************************************** PROJECT SECTION ******************************************************-->
-<div ng-show="projects">
-    <h4>Projects in need of funding</h4>
-    <div class="project_well" style="background-color: white!important;">
-        <table>
-            <tr ng-repeat="proj in projects | filterCountry:CountryID | filterIsFunded:''">
-                <td valign="top" style="padding-right: 10px; padding-bottom: 20px;">
-                    <a class="pull-left" href="/project/?id={{proj.id}}">
-                        <img class="img-rounded" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
-                    </a></td>
-                <td valign="top"><a href="/project/?id={{proj.id}}">
-                    <h5 class="media-heading">{{proj.title}}</h5>
-                </a></td>
-                <td valign="top" style="padding-left: 10px;" ng-show="!proj.is_funded"><span ng-switch on="proj.currency" style="white-space: nowrap;">
-                    <span ng-switch-when="US Dollars">{{ proj.funding_needed | currency:"USD$ " }} </span>
-                    <span ng-switch-when="Euros">{{ proj.funding_needed | currency:"EUR€ " }}</span></span>
-                </td>
-            </tr>
-        </table>
-    </div>   
+<div ng-show="(projects | filterCountry:CountryID | filterIsFunded:'').length > 0">
+  <h4>Projects in need of funding</h4>
+  <div class="project_well" style="background-color: white!important;">
+    <table>
+      <tr ng-repeat="proj in projects | filterCountry:CountryID | filterIsFunded:''">
+        <td valign="top" style="padding-right: 10px; padding-bottom: 20px;">
+          <a class="pull-left" href="/project/?id={{proj.id}}">
+            <img class="img-rounded" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
+          </a>
+        </td>
+        <td valign="top">
+          <a href="/project/?id={{proj.id}}">
+            <h5 class="media-heading">{{proj.title}}</h5>
+          </a>
+        </td>
+        <td valign="top" style="padding-left: 10px;" ng-show="!proj.is_funded"><span ng-switch on="proj.currency" style="white-space: nowrap;">
+          <span ng-switch-when="US Dollars">{{ proj.funding_needed | currency:"USD$ " }} </span>
+          <span ng-switch-when="Euros">{{ proj.funding_needed | currency:"EUR€ " }}</span></span>
+        </td>
+      </tr>
+    </table>
+  </div>   
 </div>
 
 <br>
-    <div ng-show="projects">
+<div ng-show="(projects | filterCountry:CountryID | filterIsFunded:'true').length > 0">
         <h4>Funded projects</h4>
         <div class="project_well">
             <table>
@@ -159,7 +162,7 @@
 <section id="status"   > 
 <div ng-repeat="info in countrydetails.info | filter:title='Status and trends of biodiversity, including benefits from biodiversity and ecosystem services'" > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
-<div ng-bind-html-unsafe="info.text">{{info.text}}</div><!--TODO: vulnerable to XSS-->
+<div ng-bind-html="info.text"></div><!--TODO: vulnerable to XSS-->
 </div>
 </section>
 
@@ -167,7 +170,7 @@
 <section id="drivers"   > 
 <div ng-repeat="info in countrydetails.info | filter:title='Main pressures on and drivers of change to biodiversity (direct and indirect)'" > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
-<div ng-bind-html-unsafe="info.text">{{info.text}}</div>
+<div ng-bind-html="info.text"></div>
 </div>
 </section>
 
@@ -175,7 +178,7 @@
 <section id="nbsap_impl"   > 
 <div ng-repeat="info in countrydetails.info | filter:title='Implementation of the NBSAP'" > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
-<div ng-bind-html-unsafe="info.text">{{info.text}}</div>
+<div ng-bind-html="info.text"></div>
 </div>
 </section>
 
@@ -183,7 +186,7 @@
 <section id="actions"   > 
 <div ng-repeat="info in countrydetails.info | filter:title='Actions taken to achieve the 2020 Aichi Biodiversity Targets'" > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
-<div ng-bind-html-unsafe="info.text">{{info.text}}</div>
+<div ng-bind-html="info.text"></div>
 </div>
 </section>
 
@@ -191,7 +194,7 @@
 <section id="support"   > 
 <div ng-repeat="info in countrydetails.info | filter:title='Support mechanisms for national implementation (legislation, funding, capacity-building, coordination, mainstreaming, etc.)'" > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
-<div ng-bind-html-unsafe="info.text">{{info.text}}</div>
+<div ng-bind-html="info.text"></div>
 </div>
 </section>
 
@@ -199,7 +202,7 @@
 <section id="monitoring"   > 
 <div ng-repeat="info in countrydetails.info | filter:title='Mechanisms for monitoring and reviewing implementation'" > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">{{info.title}}</h2> 
-<div ng-bind-html-unsafe="info.text">{{info.text}}</div>
+<div ng-bind-html="info.text"></div>
 </div>
 </section>
 

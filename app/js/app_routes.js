@@ -33,7 +33,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/project.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/eoidetail.js']),
+          dependencies: resolveJS(['/app/js/controllers/eoidetail.js', '/app/js/directives/funding-bar-chart.js']),
         },
       })
       .when('/matches', {
@@ -82,7 +82,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/campaigns/zeroextinction.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/projects.js']),
+          dependencies: resolveJS(['/app/js/controllers/projects.js', '/app/js/directives/funding-bar-chart.js']),
         },
       })
       .when('/share', {

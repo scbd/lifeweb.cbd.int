@@ -2,7 +2,7 @@
 
 define(['angular', 'ui-utils'], function(Angular) {
 
-	var app = Angular.module('app', ['ngRoute', 'ngCookies', 'ng-breadcrumbs', 'ui.unique']);
+	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ngCookies', 'ng-breadcrumbs', 'ui.unique']);
 
 	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider',
 		function($controllerProvider, $compileProvider, $provide, $filterProvider) {
