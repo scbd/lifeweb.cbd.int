@@ -22,11 +22,13 @@ define(['app', 'authentication', 'URI', 'leaflet', 'controllers/page',], functio
         if (!sID) {
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
                 $scope.eoi = data;
+            console.log($scope.eoi);
             });
         }
         else {
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
                 $scope.eoi = data;
+            console.log($scope.eoi);
             });
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.contacts = data;
@@ -48,6 +50,7 @@ define(['app', 'authentication', 'URI', 'leaflet', 'controllers/page',], functio
 
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
                .success(function (data) {
+                 return;  //TODO: make this working again?
 
                    $scope.mapdata = data;
 

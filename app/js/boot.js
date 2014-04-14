@@ -7,6 +7,7 @@ require.config({
     waitSeconds: 60,
     paths: {
         'angular'         : '//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min',
+        'angular-sanitize': '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular-sanitize.min',
         'angular-route'   : '../libs/angular-route/angular-route',
         'angular-cookies'  : 'http://code.angularjs.org/1.2.12/angular-cookies',
         'ng-breadcrumbs'  : '../libs/ng-breadcrumbs/dist/js/ng-breadcrumbs',
@@ -24,6 +25,7 @@ require.config({
         'angular'        : { 'deps': ['jquery'], 'exports': 'angular' },
         'angular-route'  : { 'deps': ['angular'] },
         'angular-cookies': { 'deps': ['angular'] },
+        'angular-sanitize': { 'deps': ['angular'] },
         'bootstrap'      : { 'deps': ['jquery'] },
         'underscore'     : { 'exports': '_' },
         'ng-breadcrumbs' : { 'deps': ['angular'] },
@@ -34,7 +36,7 @@ require.config({
     }
 });
 
-require(['angular', 'angular-route', 'angular-cookies', 'bootstrap', 'ng-breadcrumbs', 'domReady'], function (ng) {
+require(['angular', 'angular-route', 'angular-cookies', 'angular-sanitize', 'bootstrap', 'ng-breadcrumbs', 'domReady'], function (ng) {
 
     // NOTE: place operations that need to initialize prior to app start here using the `run` function on the top-level module
 
