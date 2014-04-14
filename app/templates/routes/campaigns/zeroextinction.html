@@ -8,7 +8,7 @@
       </div>
      <div class="container zero_container">
          <div class="row">
-             <div class="col-md-12">
+             <div class="col-xs-12">
                
                  <h2>LifeWeb's Zero Extinction Campaign focuses attention on the extinction crisis and provides a platform for 
                     countries to profile their financial needs to prevent species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem 
@@ -30,7 +30,7 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-     <div class="container marketing first_marketing">
+     <div class="container-liquid marketing first_marketing">
          <!-- Three columns of text below the carousel -->
          <div class="row">
              <div class="col-lg-3">
@@ -65,7 +65,7 @@
       <!-- START THE FEATURETTES -->
      <hr id="item1" class="featurette-divider"  >
 
-      <div class="featurette-nav">
+      <div class="featurette-nav text-center">
            <a href="#top" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item2" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
@@ -93,12 +93,12 @@
 
       <hr id="item2" class="featurette-divider">
 
-       <div class="featurette-nav">
+       <div class="featurette-nav text-center">
            <a href="#item1" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-      <div class="stellar-container" data-stellar-vertical-offset="-1400" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);">
+      <div class="stellar-container" data-stellar-vertical-offset="-1000" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-5">
@@ -120,12 +120,12 @@
 
       <hr  id="item3"  class="featurette-divider">
 
-       <div class="featurette-nav">
+       <div class="featurette-nav text-center">
            <a href="#item2" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item4" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div class="stellar-container" style="background-image: url(/app/images/campaigns/item3bg.jpg);" data-stellar-vertical-offset="-2500" data-stellar-background-ratio="0.1">
+     <div class="stellar-container" style="background-image: url(/app/images/campaigns/item3bg.jpg);" data-stellar-vertical-offset="-1800" data-stellar-background-ratio="0.1">
          <div class="container marketing">
              <div class="row featurette">
                  <div class="col-md-7">
@@ -143,9 +143,9 @@
      </div>
 
      <hr id="item4" class="featurette-divider">
-     <div class="featurette-nav">
+     <div class="featurette-nav text-center">
          <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
-         <a href="#footer" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+         <a href="#projects_featurette" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
      </div>
      <div class="container marketing">
          <div id="projects_featurette" class="row featurette" ng-controller="ProjectsCtrl">
@@ -156,39 +156,43 @@
              <h2 class="featurette-heading"> <span class="label label-info" id="zproject_count">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction projects </h2>
              <hr />
              <br>
-             <div ng-repeat="proj in projects | filterTargets:'Target12'" class="well"  >
+             <div ng-repeat="proj in projects | filterTargets:'Target12'" >
                  <a class="anchor" id="proj{{$index}}"></a>
-                 <div>
+                 <div class="well row">
                      <div class="col-md-2">
                          <a href="/project?id={{proj.id}}" class="pull-right">
                              <img ng-show="proj.old_id" class="media-object img-thumbnail" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
                              <img ng-hide="proj.old_id" class="media-object img-thumbnail" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a>
                      </div>
                      <div class="col-md-8">
-                         <a href="/project?id={{proj.id}}">
-                           <h3 ng-bind-html-unsafe="proj.title">{{proj.title}}</h3> <!-- TODO: fix XSS vulnerability -->
-                         </a>
-                         <h4 ng-bind-html-unsafe="proj.country">{{proj.title}}</h4>
-                         <hr />
-                         <h4 id="summary_heading">Summary</h4>
-                         <span ng-bind-html-unsafe="proj.summary">{{proj.summary}}</span>
-                          <hr />
-                         <div class="agraybackground" style="padding-top:10px;">
-                             <div class="col-md-4 agray"><h4>Funding needed</h4></div>
-                               <div class="col-md-4"><span ng-switch="proj.funding_status">
-                                <span ng-switch-when="not yet funded">not yet funded</span>
-                                <span ng-switch-when="funded">fully funded</span>
-                                <span ng-switch-default>partially funded</span>
-                            </span></div>
-                             <div class="col-md-4 agray"><h4>Funding Status</h4></div>
-                             <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
-                             <div class="col-md-4 agray"><h4>Date submitted</h4></div>
-                               <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
-                          </div>
+                       <a href="/project?id={{proj.id}}">
+                         <h3 ng-bind-html="proj.title"></h3> <!-- TODO: fix XSS vulnerability -->
+                       </a>
+                       <p style="color: black; font-weight: bold; font-size: 14pt;" ng-bind-html="proj.country"></p>
+                       <hr />
+                       <h4 id="summary_heading">Summary</h4>
+                       <span ng-bind-html="proj.summary"></span>
+                       <hr />
+                       <div class="agraybackground row" style="padding-top:10px;">
+                         <!--<div class="col-md-4 agray"><h4>Funding needed</h4></div>-->
+                         <div class="col-md-4">
+                           <span ng-switch="proj.funding_status">
+                             <span ng-switch-when="not yet funded">not yet funded</span>
+                             <span ng-switch-when="funded">fully funded</span>
+                             <span ng-switch-default>partially funded</span>
+                           </span>
+                         </div>
+                         <!--
+                         <div class="col-md-4 agray"><h4>Funding Status</h4></div>
+                         <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
+                         <div class="col-md-4 agray"><h4>Date submitted</h4></div>
+                         <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
+                         -->
+                       </div>
 
-                         <hr />
-                         <h4 class="agray agraybackground" style="padding:6px;">How this project will address Aichi Target 12</h4>
-                         <span ng-bind-html-unsafe="(proj.aichi_targets | filterGetTermComment:'Target12')">{{(proj.aichi_targets | filterGetTermComment:'Target12')}}</span>
+                       <hr />
+                       <h4 class="agray agraybackground" style="padding:6px;">How this project will address Aichi Target 12</h4>
+                       <span ng-bind-html="(proj.aichi_targets | filterGetTermComment:'Target12')"></span>
                      </div>
                      <div class="col-md-2">
 
