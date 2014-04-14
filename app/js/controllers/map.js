@@ -68,7 +68,7 @@ define(['app', 'leaflet',], function(app, L) {
 				 onEachFeature: onEachFeature
 			}).addTo(map);
 
-			
+       cheating.callback();  //call any callbacks the map has for once it was done.
 		 }
 		
 		$scope.$watch("mapdata", $scope.showMap);

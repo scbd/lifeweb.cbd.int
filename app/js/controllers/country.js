@@ -42,10 +42,19 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI'], function(a
           lat: data[0].lat,
           lon: data[0].lon,
         };
+        $scope.bounds = [
+          [data[0].boundingbox[0], data[0].boundingbox[2]],
+          [data[0].boundingbox[1], data[0].boundingbox[3]],
+        ];
 
-			  if ($scope.geolocation) {
-					map.map.setView([$scope.geolocation.lat, $scope.geolocation.lon], 5);
-			  }
+        var setview = function() {
+          if ($scope.geolocation)
+            map.map.fitBounds($scope.bounds, {reset: true});
+        }
+        if(map.map)
+          setview();
+        else
+          map.callback = setview;
 		 });
   });
   return true;
