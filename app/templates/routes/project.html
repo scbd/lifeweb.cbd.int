@@ -73,6 +73,7 @@
                 </div>
             </td>
         </tr>
+        <!--
         <tr>
             <td class="lw-dt">
                     <span>project total</span>
@@ -80,7 +81,7 @@
             <td  class="lw-dd">{{eoi.funding_needed | filterCurrency:eoi.currency:currency}} 
                 
             </td>
-            </tr>
+        </tr>
         <tr>
             <td class="lw-dt">funding status</td>
             <td  class="lw-dd">
@@ -103,6 +104,13 @@
 
             </td>
 
+        </tr>
+        -->
+        <tr>
+          <td class="lw-dt">funding</td>
+          <td  class="lw-dd">
+            <funding-bar-chart status="eoi.funding_status" total="eoi.funding_needed" currency="eoi.currency" display="currency" matches="eoi.funding_matches" width="580"></funding-bar-chart>
+          </td>
         </tr>
         <tr>
             <td class="lw-dt"   ng-show="(eoi.images.concat(eoi.maps)).length > 0"><br/>images</td>
