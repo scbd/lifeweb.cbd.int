@@ -174,7 +174,8 @@
                        <span ng-bind-html="proj.summary"></span>
                        <hr />
                        <div class="agraybackground row" style="padding-top:10px;">
-                         <!--<div class="col-md-4 agray"><h4>Funding needed</h4></div>-->
+                         <funding-bar-chart status="proj.funding_status" total="proj.funding_needed" currency="proj.currency" display="currency" matches="proj.funding_matches" width="800"></funding-bar-chart>
+                         <!--<div class="col-md-4 agray"><h4>Funding needed</h4></div>
                          <div class="col-md-4">
                            <span ng-switch="proj.funding_status">
                              <span ng-switch-when="not yet funded">not yet funded</span>
@@ -182,7 +183,6 @@
                              <span ng-switch-default>partially funded</span>
                            </span>
                          </div>
-                         <!--
                          <div class="col-md-4 agray"><h4>Funding Status</h4></div>
                          <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
                          <div class="col-md-4 agray"><h4>Date submitted</h4></div>
