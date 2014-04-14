@@ -10,7 +10,7 @@
           <div class="row">
               
               <!-- left side bar -->
-              <div class="span8">
+              <div class="col-xs-8">
                   <h1 class="title-divider" ng-bind-html="event.title"></h1>
 
 
@@ -23,13 +23,15 @@
                       </dd>
                   </dl>
 
-                  <p ng-bind-html-unsafe="event.info"></p>
+                  <p ng-bind-html="event.info"></p>
+                  <span>{{event.firstDocumentLink}}</span>
+                  <iframe ng-src="{{event.firstDocumentLink}}" style="width:700px; height:950px;"> </iframe>
 
               </div><!-- end left side bar -->
 
 
               <!-- right side bar -->
-              <div class="span4" >
+              <div class="col-xs-4" >
 
                   <div ng-show="event.projects" >
                       <h3 class="title-divider">Expression(s) of Interest</h3>
@@ -46,7 +48,7 @@
 
                               <div>
                                   <span ng-show="proj.is_funded" style="color: #F00;">FUNDED:&nbsp;</span>
-                                  <span style="font-weight: bold; font-size: 13px;">Funding needed: <span class="label label-inverse">{{proj.funding_needed | filterCurrency:proj.currency}}</span> </span>
+                                  <span style="font-weight: bold; font-size: 13px;">Funding needed: <span class="label label-warning">{{proj.funding_needed | filterCurrency:proj.currency}}</span> </span>
                               </div>
 
                           </div>

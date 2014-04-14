@@ -533,6 +533,10 @@ hr.soften {
 }
 
 
+img.thumbnail {
+  max-width: 100%;
+  height: auto;
+}
 
 .lw-tt .lw-dd {
     margin: 2px;
