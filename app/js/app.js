@@ -17,5 +17,11 @@ define(['angular', 'ui-utils'], function(Angular) {
 		}
 	]);
 
+  app.run(function($location, $rootScope) {
+    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+      $rootScope.title = current.$$route.title;
+    });
+  });
+
 	return app;
 });
