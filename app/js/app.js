@@ -20,6 +20,14 @@ define(['angular', 'ui-utils'], function(Angular) {
   app.run(function($location, $rootScope) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       $rootScope.title = current.$$route.title;
+
+      $(function() {
+        setTimeout(function() {
+          $('[data-spy="scroll"]').each(function() {
+            var $spy = $(this).scrollspy('refresh');
+          });
+        }, 1000);
+      });
     });
   });
 
