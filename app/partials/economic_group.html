@@ -7,7 +7,7 @@
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in (countries | filterLCD ) | orderBy:'name'"  >
     <div class="lw-thumbnail" >
-     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+     <a href="country/{{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
     </div></li>
 </ul>
 </div>
@@ -23,7 +23,7 @@ As of January 2012, the HIPC Initiative had identified 39 countries (33 of which
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted )) | filter:region='Australia and Oceania' | orderBy:name)"  >
     <div class="lw-thumbnail" >
-     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+     <a href="country/{{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
     </div></li>
 </ul>
 </div>
@@ -33,7 +33,7 @@ As of January 2012, the HIPC Initiative had identified 39 countries (33 of which
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in ((countries | filterProjectCountry:(projects | filterIsFunded:search.is_funded | filterYear:search.year_submitted )) | filter:region='Australia and Oceania' | orderBy:name)"  >
     <div class="lw-thumbnail" >
-     <a href="country/?country={{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
+     <a href="country/{{c.code}}" style="white-space:nowrap;">{{c.name}} ({{c.project_count}})</a>
     </div></li>
 </ul>
 </div>

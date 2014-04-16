@@ -20,6 +20,7 @@ define(['angular', 'ui-utils'], function(Angular) {
   app.run(function($location, $rootScope, $anchorScroll) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       $rootScope.title = current.$$route.title;
+      console.log('routed');
 
       $(function() {
         setTimeout(function() {

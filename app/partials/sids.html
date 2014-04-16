@@ -3,7 +3,7 @@
 <div class="project_well"><h3>Caribbean</h3>
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in (countries | filterSIDS:code:'caribbean') | orderBy:'name'" >
-   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+   	<a href="country/{{c.code}}" style="white-space:nowrap;">
   	{{c.name}} ({{c.project_count}})</a></li>
 </ul>
 </div>
@@ -11,7 +11,7 @@
 <div class="project_well" ><h3>Pacific</h3>
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in (countries | filterSIDS:code:'pacific') | orderBy:'name'" >
-   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+   	<a href="country/{{c.code}}" style="white-space:nowrap;">
   	{{c.name}} ({{c.project_count}})</a></li>
 </ul>
 </div>
@@ -19,7 +19,7 @@
 <div class="project_well"><h3>Africa, Indian Ocean, Mediterranean and South China Sea (AIMS)</h3>
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in (countries | filterSIDS:code:region='africa, indian ocean, mediterranean, and south china sea (aims)') | orderBy:'name'" >
-   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+   	<a href="country/{{c.code}}" style="white-space:nowrap;">
   	{{c.name}} ({{c.project_count}})</a></li>
 </ul>
 </div>

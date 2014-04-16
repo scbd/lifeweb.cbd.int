@@ -56,7 +56,7 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(['/app/js/controllers/projects.js']),
         },
       })
-      .when('/country', { //TODO use route parameters, for nicer urls and update title
+      .when('/country/:country', { //TODO use route parameters, for nicer urls and update title
         templateUrl: '/app/templates/routes/country.html',
         title : 'Country',
         resolve: {

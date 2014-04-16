@@ -5,10 +5,11 @@
        <!-- Docs nav
            ================================================== -->
         <div class="row" data-ng-controller="EOIDetailCtrl">
-            <div class="col-xs-3 bs-docs-sidebar">
-                <ul class="nav nav-list bs-docs-sidenav ">
-                    <li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>
-                    <li><a href="#sum"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
+            <div class="col-xs-3">
+              <div class="bs-sidebar affix" id="sidebar">
+                <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
+                  <!--<li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>-->
+                    <li class="active"><a href="#sum"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
                     <li ng-show="eoi.description"><a href="#desc"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
                     <li ng-show="eoi.objectives_info || eoi.objectives_results"><a href="#obj"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
                      <li><a href="#funding"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
@@ -21,9 +22,10 @@
                     <li><a href="#partners"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
                     <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a href="#attachments"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
                 </ul>
+              </div>
 
               <div data-ng-controller="MapCtrl">
-                <div id='map' style="height:200px;"></div>
+                <div id='map' style="height:200px; margin-top: 720px;"></div>
               </div>
       
             </div>
