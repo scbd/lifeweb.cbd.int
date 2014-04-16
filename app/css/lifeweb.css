@@ -280,6 +280,19 @@ media-heading {
         min-width:100px!important;
 
     }
+
+    #sidebar.affix-top {
+      position: static;
+      margin-top: 25px;
+      width: 228px;
+    }
+
+    #sidebar.affix {
+      position: fixed;
+      margin-top: 25px;
+      width: 228px;
+    }
+
      .navbar-inner {
         border-radius: 0;
         margin: -20px 0;
@@ -391,9 +404,9 @@ media-heading {
     top: 100px;
 }
 
-    .bs-docs-sidenav > li > a {
+    .bs-docs-sidenav > li > * {
         display: block;
-        /*width: 242px;*/
+        width: 242px;
         margin: 0 0 -2px;
         padding: 8px 14px;
         border-left: 1px solid #d5d5d5;
