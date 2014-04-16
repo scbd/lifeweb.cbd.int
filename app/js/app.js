@@ -17,7 +17,7 @@ define(['angular', 'ui-utils'], function(Angular) {
 		}
 	]);
 
-  app.run(function($location, $rootScope) {
+  app.run(function($location, $rootScope, $anchorScroll) {
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       $rootScope.title = current.$$route.title;
 
@@ -26,6 +26,7 @@ define(['angular', 'ui-utils'], function(Angular) {
           $('[data-spy="scroll"]').each(function() {
             var $spy = $(this).scrollspy('refresh');
           });
+          $anchorScroll();
         }, 1000);
       });
     });
