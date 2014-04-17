@@ -1,4 +1,5 @@
-require("app").controller('Oauth2CallbackController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
+define(['app'], function(app) {
+  app.controller('Oauth2CallbackController', ['$scope', '$rootScope', '$location', function ($scope, $rootScope, $location) {
 
     //============================================================
     // TODO: USE ANGULARJS EQUIVALENT

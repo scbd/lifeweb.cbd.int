@@ -1,4 +1,4 @@
-define(['app', 'authentication', 'URI', 'leaflet', 'controllers/PageController',], function(app) {
+define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page',], function(app, map) {
   app.controller('EOIDetailCtrl', function ($scope, $http) {
 
         
@@ -21,12 +21,35 @@ define(['app', 'authentication', 'URI', 'leaflet', 'controllers/PageController',
 
         if (!sID) {
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
-                $scope.eoi = data;
+              $scope.eoi = data;
+              
             });
         }
         else {
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
-                $scope.eoi = data;
+              $scope.eoi = data;
+
+              var sCountry = data.country;
+              $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
+               .success(function (data) {
+                  $scope.geolocation = {
+                    lat: data[0].lat,
+                    lon: data[0].lon,
+                  };
+                  $scope.bounds = [
+                    [data[0].boundingbox[0], data[0].boundingbox[2]],
+                    [data[0].boundingbox[1], data[0].boundingbox[3]],
+                  ];
+
+                  var setview = function() {
+                    if ($scope.geolocation)
+                      map.map.fitBounds($scope.bounds, {reset: true});
+                  }
+                  if(map.map)
+                    setview();
+                  else
+                    map.callback = setview;
+              });
             });
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.contacts = data;
@@ -48,6 +71,7 @@ define(['app', 'authentication', 'URI', 'leaflet', 'controllers/PageController',
 
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
                .success(function (data) {
+                 return;  //TODO: make this working again?
 
                    $scope.mapdata = data;
 

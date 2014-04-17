@@ -1,7 +1,7 @@
 'use strict';
 
 //Use define instead of require ensure dependencies are loaded 
-define(['app', 'authentication', 'controllers/header'], function(app) {
+define(['app', 'authentication', 'controllers/header', '/app/js/directives/signin.js',], function(app) {
 
   app.controller('TemplateController', ['$scope', '$window', '$browser', '$document', '$location', 'authentication',
 	function($scope, $window, $browser, $document, $location, authentication) {

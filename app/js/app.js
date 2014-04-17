@@ -1,8 +1,8 @@
 'use strict';
 
-define([ /*'angular', 'angular-route', */ 'ui-utils'], function() {
+define(['angular', 'ui-utils'], function(Angular) {
 
-	var app = require('angular').module('app', ['ngRoute', 'ng-breadcrumbs', 'ui.unique']);
+	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ngCookies', 'ng-breadcrumbs', 'ui.unique']);
 
 	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider',
 		function($controllerProvider, $compileProvider, $provide, $filterProvider) {
@@ -16,6 +16,22 @@ define([ /*'angular', 'angular-route', */ 'ui-utils'], function() {
 			app.directive  = $compileProvider.directive;
 		}
 	]);
+
+  app.run(function($location, $rootScope, $anchorScroll) {
+    $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
+      $rootScope.title = current.$$route.title;
+      console.log('routed');
+
+      $(function() {
+        setTimeout(function() {
+          $('[data-spy="scroll"]').each(function() {
+            var $spy = $(this).scrollspy('refresh');
+          });
+          $anchorScroll();
+        }, 1000);
+      });
+    });
+  });
 
 	return app;
 });

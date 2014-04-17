@@ -1,27 +1,3 @@
-
-   <style>
-    .lw-footerheader {
-        color: #efefef;
-        font-family: Sans-Serif;
-        font-size: 14px;
-        font-weight: bold;
-        padding-bottom: 10px!important;
-    }
-
-    .lw-footerinfo {
-        color: #efefef!important;
-        font-family: Sans-Serif;
-        font-size: 12px;
-    }
-
-    .lw_footerlink {
-        list-style: none!important;
-        text-align: left!important;
-        margin: 0!important;
-        line-height: 14px!important;
-    }
-</style>
-
 <script>
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -36,19 +12,18 @@
 </script>
 
 
-<div style="background-color: #046380; width: 100%; margin-top:50px;border-top:10px solid #03455a; padding-top:10px;">
-
+<div id="footer">
     <div class="container">
         <div class="row">
 
-            <div class="span4 pull-left">
-                <div style="border-right: #808080 solid 1px; height:200px;">
+            <div class="col-xs-4 pull-left">
+                <div id="footer_header">
 
-                    <h3 style="color:#efefef;">Contact us</h3>
+                    <h3>Contact us</h3>
 
-                    <img src="/app/images/lw_net.png" class="pull-left" style="height: 80px; padding-right: 10px; padding-bottom: 140px;" />
+                    <img id="footer_logo" src="/app/images/lw_net.png" class="pull-left" />
 
-                    <address style="color: #efefef;">
+                    <address style="padding-left: 80px;">
                         <strong>The CBD LifeWeb Coordination Office</strong><br>
                         Saint Jacques Street, suite 800
                     <br>
@@ -66,30 +41,43 @@
                 </div>
             </div>
             <!-- Begin MailChimp Signup Form -->
-            <div id="mc_embed_signup controls" class="span4">
-                <div style="border-right: #808080 solid 1px;  height:200px;">
-                     <h3 style="color:#efefef;">Our Mission</h3>
-                    <span style="font-size: 110%; color: #efefef; background-color: transparent!important;"><strong>Our mission</strong> is to facilitate financing that helps secure livelihoods and address climate change through 
+            <div id="mc_embed_signup" class="col-xs-4">
+                <div id="signup_form">
+                     <h3>Our Mission</h3>
+                    <span><strong>Our mission</strong> is to facilitate financing that helps secure livelihoods and address climate change through 
                     supporting the implementation of the Strategic Plan for Biodiversity 2011-2020 and the CBD Programme of Work on Protected Areas.</span>
 
-                    <div style="padding-top: 10px;">
-                        <span class="lw-footerheader" style="padding-top: 20px!important;">Subscribe to our mailing list</span>
+                    <div>
+                        <span class="lw-footerheader">Subscribe to our mailing list</span>
                        <form action="http://cbd.us2.list-manage.com/subscribe/post?u=42a68ff261d38de4d33dc9f2d&amp;id=cfa7ebf03a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                            <div class="input-prepend">
-                                <span class="add-on"><i class="icon-envelope"></i></span>
-                                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="width: 100%;">
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-envelope"></span>
+                              </span>
+                              <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
+                              <span class="input-group-btn">
+                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn">sign up</button>
+                              </span>
                             </div>
-                            <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="top: -20!important; position: relative!important; vertical-align: top;">sign up</button>
-
                         </form>
 
                     </div>
                 </div>
             </div>
             
-            <div class="span4">
-
-                <div signin></div>
+            <div class="col-xs-4">
+              <div ng-cloak ng-show="user && !user.isAuthenticated">
+                  <a href="#" ng-click="actionSignin()" data-slug="signin"><i class="fa fa-power-off" ></i><strong>Sign In</strong></a>
+              </div>
+              <div ng-cloak class="dropdown" ng-show="user && user.isAuthenticated" >
+                  <a data-toggle="dropdown" href="#"><i class="fa fa-chevron-down" ></i>{{user.name}}</a>
+                  <ul class="dropdown-menu" role="menu">
+                      <li><a href="#" ng-click="actionProfile()"><i class="fa fa-user" ></i>Profile</a></li>
+                      <li><a href="#" ng-click="actionPassword()"><i class="fa fa-user" ></i>Password</a></li>
+                      <li><a href="#" ng-click="actionSignOut()"><i class="fa fa-sign-out" ></i>Sign-out</a></li>
+                  </ul>
+              </div>
+              <div signin></div>
 
             </div>
         </div>

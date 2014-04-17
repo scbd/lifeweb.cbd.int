@@ -1,6 +1,62 @@
   ng-view {
     position: relative;
-    top: 60px;
+    top: 70px;
+  }
+
+  #zero_header
+  {
+    background-color:#222222;
+    background-image:url(/app/images/campaigns/headerbg.gif);
+    background-position:bottom;
+    text-align:center;
+    padding: 0;
+    margin-top: 80px;
+    height:193px;
+  }
+  
+  #zproject_count
+  {
+    font-size: 36px;
+    position: relative;
+    top: -10px;
+  }
+
+  .zero_container
+  {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .first_marketing
+  {
+    margin: 0px 0px 30px 0px;
+  }
+
+  .first_marketing .col-lg-3
+  {
+    text-align: center;
+  }
+
+  .feature-nav
+  {
+    background-color: #111;
+    text-align: center;
+    height: 34px;
+    vertical-align: middle;
+  }
+
+  .stellar-container
+  {
+    background-image: url(/app/images/campaigns/item1bg.jpg);
+    background-repeat:no-repeat;
+    background-position:top;
+    background-color:#111;
+    width: 100%;
+    padding:40px 0 40px 0;
+  }
+
+  .lead, .lead a
+  {
+    color: white;
   }
 
   a.anchor{ display: block; position: relative; top: -100px; }
@@ -23,6 +79,53 @@
     margin-right: 10px;
   }
 
+  #projects_featurette
+  {
+    padding: 50px 0px 30px 0px;
+  }
+
+  .img-thumbnail
+  {
+    margin-top: 0px;
+    width: 90px;
+  }
+
+  #summary_heading
+  {
+    color: #666;
+    background-color: #efefef;
+    padding: 6px;
+  }
+
+  #to-top-div
+  {
+    background-color: #111;
+    text-align: center;
+    height: 34px;
+    vertical-align: middle;
+  }
+
+  .project-index
+  {
+    height: 38px;
+    position: relative;
+    top: 6px;
+  }
+
+  .project-index > span
+  {
+    font-size: 24px;
+  }
+
+  .agray
+  {
+    color: #666;
+  }
+  .agraybackground
+  {
+    background-color: #efefef;
+  }
+
   /* Featurettes
   ------------------------- */
   .featurette {
@@ -38,6 +141,11 @@
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+  }
+
+  .featurette-heading > span
+  {
+    color: #efefef;
   }
 
   /* RESPONSIVE CSS

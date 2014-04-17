@@ -3,14 +3,14 @@
     ================================================== -->
   <link href="/app/css/zeroextinction.css" rel="stylesheet">
 
-      <div style="background-color:#222222;background-image:url(/app/images/campaigns/headerbg.gif);background-position:bottom;text-align:center;padding: 0; margin: 0;height:193px;">
-                 <img src="/app/images/campaigns/header.gif" style="padding:0; margin: 0;" />
+      <div id="zero_header">
+                 <img src="/app/images/campaigns/header.gif" />
       </div>
-     <div class="container" style="padding:30px 0 30px 0;">
+     <div class="container zero_container">
          <div class="row">
-             <div class="col-md-12">
+             <div class="col-xs-12">
                
-                 <h2 style="margin-top: 0; padding-top: 0;">LifeWeb's Zero Extinction Campaign focuses attention on the extinction crisis and provides a platform for 
+                 <h2>LifeWeb's Zero Extinction Campaign focuses attention on the extinction crisis and provides a platform for 
                     countries to profile their financial needs to prevent species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem 
                     biodiversity loss.
                  </h2>
@@ -30,28 +30,28 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-     <div class="container marketing" style="padding: 0 0 30px 0;">
+     <div class="container-liquid marketing first_marketing">
          <!-- Three columns of text below the carousel -->
          <div class="row">
-             <div class="col-lg-3" style="text-align: center;">
+             <div class="col-lg-3">
                  <img class="img-circle" src="/app/images/campaigns/item1.gif" alt="item1" />
                  <h3>Why focus on preventing extinction?</h3>
                  <p><a class="btn btn-default" role="button" href="#item1">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" style="text-align: center;">
+             <div class="col-lg-3">
                  <img class="img-circle" src="/app/images/campaigns/item2.gif" alt="Generic placeholder image" />
                  <h3>Strategies to prevent extinctions</h3>
                  <p><a class="btn btn-default" role="button" href="#item2">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" style="text-align: center;">
+             <div class="col-lg-3">
                  <img class="img-circle"src="/app/images/campaigns/item3.gif" alt="Generic placeholder image" />
                  <h3>How to participate</h3>
                  <p><a class="btn btn-default" role="button" href="#item3">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" style="text-align: center;" ng-controller="ProjectsCtrl">
+             <div class="col-lg-3" ng-controller="ProjectsCtrl">
                  <img class="img-circle" src="/app/images/campaigns/item4.gif" alt="Generic placeholder image" />
                  <h3> <span class="label label-info">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction Campaign projects</h3>
                  <p><a class="btn btn-default" role="button" href="#item4">View details &raquo;</a></p>
@@ -65,17 +65,17 @@
       <!-- START THE FEATURETTES -->
      <hr id="item1" class="featurette-divider"  >
 
-      <div style="background-color:#111;text-align:center;height:34px;vertical-align:middle;">
+      <div class="featurette-nav text-center">
            <a href="#top" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item2" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div data-stellar-vertical-offset="-800" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item1bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
+     <div class="stellar-container" style="background-image: url(/app/images/campaigns/item1bg.jpg);" data-stellar-vertical-offset="-800" data-stellar-background-ratio="0.1">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-7">
-                     <h2 class="featurette-heading"><span style="color:#efefef;">Why focus on preventing extinction?</span></h2>
-                     <div class="lead" style="color:white;">
+                     <h2 class="featurette-heading"><span>Why focus on preventing extinction?</span></h2>
+                     <div class="lead">
                          One-third of global species assessed for threat are in danger of extinction. This phenomenon is thought to represent the sixth major extinction event on 
               Earth and it is a major threat to the persistence of Earth's biodiversity, which is crucial to the proper functioning of ecological systems. The parties to the 
               CBD have agreed to an explicit objective -Target 12- to prevent the extinction of known threatened species in the 2011-2020 Strategic Plan for Biodiversity. While ambitious, 
@@ -93,19 +93,19 @@
 
       <hr id="item2" class="featurette-divider">
 
-       <div style="background-color:#111;text-align:center;height:34px;vertical-align:middle;">
+       <div class="featurette-nav text-center">
            <a href="#item1" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-      <div data-stellar-vertical-offset="-1400" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);background-repeat:no-repeat;background-position:top; background-color:#111; width: 100%; padding:40px 0 40px 0;">
+      <div class="stellar-container" data-stellar-vertical-offset="-1000" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item2bg.jpg);">
          <div class="container marketing" >
              <div class="row featurette">
                  <div class="col-md-5">
                  </div>
                  <div class="col-md-7">  
-                     <h2 class="featurette-heading"><span  style="color:#efefef;">Strategies to prevent extinctions</span></h2>
-                     <div class="lead" style="color:white;">
+                     <h2 class="featurette-heading"><span>Strategies to prevent extinctions</span></h2>
+                     <div class="lead">
                          The Zero Extinction Campaign advances two main approaches to address extinction threat: 
                             <ol><li>Protection of unprotected sites; and,</li> 
                             <li>Enhanced protection of currently protected sites.</li>
@@ -120,20 +120,20 @@
 
       <hr  id="item3"  class="featurette-divider">
 
-       <div style="background-color:#111;text-align:center;height:34px;vertical-align:middle;">
+       <div class="featurette-nav text-center">
            <a href="#item2" class="btn btn-default" ><i class="glyphicon glyphicon-chevron-up"></i></a>
            <a href="#item4" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
       </div>
 
-     <div data-stellar-vertical-offset="-2200" data-stellar-background-ratio="0.1" style="background-image: url(/app/images/campaigns/item3bg.jpg); background-repeat: no-repeat; background-position: top; background-color: #111; width: 100%; padding: 40px 0 40px 0;">
+     <div class="stellar-container" style="background-image: url(/app/images/campaigns/item3bg.jpg);" data-stellar-vertical-offset="-1800" data-stellar-background-ratio="0.1">
          <div class="container marketing">
              <div class="row featurette">
                  <div class="col-md-7">
-                     <h2 class="featurette-heading"><span style="color: #efefef;">How to Participate</span></h2>
-                     <div class="lead" style="color: white;">
+                     <h2 class="featurette-heading"><span>How to Participate</span></h2>
+                     <div class="lead">
                          <p>LifeWeb's Zero Extinction campaign helps to finance biodiversity conservation at sites where Endangered or Critically Endangered species are found at a single remaining location on Earth. We achieve this by facilitating partnerships between public and private donors, and between developing countries and countries with economies in transition requiring funding. </p>
-                         <p>Countries requiring funds should visit: <a href="/share" style="color:white;">lifeweb.cbd.int/share</a> for more information and to access tools and data that will assist them in the preparation of a LifeWeb Expression of Interest.</p>
-                         <p>Donors wishing to support this campaign should contact: <a href="mailto:lifeweb@cbd.int" style="color:white;">lifeweb@cbd.int</a>.</p>
+                         <p>Countries requiring funds should visit: <a href="/share">lifeweb.cbd.int/share</a> for more information and to access tools and data that will assist them in the preparation of a LifeWeb Expression of Interest.</p>
+                         <p>Donors wishing to support this campaign should contact: <a href="mailto:lifeweb@cbd.int">lifeweb@cbd.int</a>.</p>
                      </div>
                  </div>
                  <div class="col-md-5">
@@ -143,52 +143,56 @@
      </div>
 
      <hr id="item4" class="featurette-divider">
-     <div style="background-color: #111; text-align: center; height: 34px; vertical-align: middle;">
+     <div class="featurette-nav text-center">
          <a href="#item3" class="btn btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
-         <a href="#footer" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
+         <a href="#projects_featurette" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
      </div>
      <div class="container marketing">
-         <div class="row featurette" ng-controller="ProjectsCtrl" style="padding:50px 0 30px 0;">
+         <div id="projects_featurette" class="row featurette" ng-controller="ProjectsCtrl">
    
 
              <div class="pull-right" style="padding-right: 10px;">Currency: <a ng-click="toggleCurrency()" style="cursor: pointer;">{{currency}}</a></div>
 
-             <h2 class="featurette-heading"> <span class="label label-info" style="font-size:36px;position:relative;top:-10px;">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction projects </h2>
-             <hr style="padding: 0; margin: 0;" />
+             <h2 class="featurette-heading"> <span class="label label-info" id="zproject_count">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction projects </h2>
+             <hr />
              <br>
-             <div ng-repeat="proj in projects | filterTargets:'Target12'" class="well"  >
+             <div ng-repeat="proj in projects | filterTargets:'Target12'" >
                  <a class="anchor" id="proj{{$index}}"></a>
-                 <div>
+                 <div class="well row">
                      <div class="col-md-2">
                          <a href="/project?id={{proj.id}}" class="pull-right">
-                             <img ng-show="proj.old_id" class="media-object img-thumbnail" style="margin-top: 0px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                             <img ng-hide="proj.old_id" class="media-object img-thumbnail" style="margin-top: 0px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a>
+                             <img ng-show="proj.old_id" class="media-object img-thumbnail" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
+                             <img ng-hide="proj.old_id" class="media-object img-thumbnail" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a>
                      </div>
                      <div class="col-md-8">
-                         <a href="/project?id={{proj.id}}">
-                           <h3 ng-bind-html-unsafe="proj.title" style="margin-top:0;padding-top:0;">{{proj.title}}</h3> <!-- TODO: fix XSS vulnerability -->
-                         </a>
-                         <h4 ng-bind-html-unsafe="proj.country">{{proj.title}}</h4>
-                         <hr />
-                         <h4 style="color:#666; background-color:#efefef;padding:6px;">Summary</h4>
-                         <span ng-bind-html-unsafe="proj.summary">{{proj.summary}}</span>
-                          <hr />
-                         <div style="padding-top:10px; background-color:#efefef;">
-                             <div class="col-md-4"  style="color:#666;"><h4>Funding needed</h4></div>
-                               <div class="col-md-4"><span ng-switch="proj.funding_status">
-                                <span ng-switch-when="not yet funded">not yet funded</span>
-                                <span ng-switch-when="funded">fully funded</span>
-                                <span ng-switch-default>partially funded</span>
-                            </span></div>
-                             <div class="col-md-4"  style="color:#666;"><h4>Funding Status</h4></div>
-                             <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
-                             <div class="col-md-4"  style="color:#666;"><h4>Date submitted</h4></div>
-                               <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
-                          </div>
+                       <a href="/project?id={{proj.id}}">
+                         <h3 ng-bind-html="proj.title"></h3> <!-- TODO: fix XSS vulnerability -->
+                       </a>
+                       <p style="color: black; font-weight: bold; font-size: 14pt;" ng-bind-html="proj.country"></p>
+                       <hr />
+                       <h4 id="summary_heading">Summary</h4>
+                       <span ng-bind-html="proj.summary"></span>
+                       <hr />
+                       <div class="agraybackground row" style="padding-top:10px;">
+                         <funding-bar-chart status="proj.funding_status" total="proj.funding_needed" currency="proj.currency" display="currency" matches="proj.funding_matches" width="800"></funding-bar-chart>
+                         <!--<div class="col-md-4 agray"><h4>Funding needed</h4></div>
+                         <div class="col-md-4">
+                           <span ng-switch="proj.funding_status">
+                             <span ng-switch-when="not yet funded">not yet funded</span>
+                             <span ng-switch-when="funded">fully funded</span>
+                             <span ng-switch-default>partially funded</span>
+                           </span>
+                         </div>
+                         <div class="col-md-4 agray"><h4>Funding Status</h4></div>
+                         <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
+                         <div class="col-md-4 agray"><h4>Date submitted</h4></div>
+                         <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
+                         -->
+                       </div>
 
-                         <hr />
-                         <h4  style="color:#666; background-color:#efefef;padding:6px;">How this project will address Aichi Target 12</h4>
-                         <span ng-bind-html-unsafe="(proj.aichi_targets | filterGetTermComment:'Target12')">{{(proj.aichi_targets | filterGetTermComment:'Target12')}}</span>
+                       <hr />
+                       <h4 class="agray agraybackground" style="padding:6px;">How this project will address Aichi Target 12</h4>
+                       <span ng-bind-html="(proj.aichi_targets | filterGetTermComment:'Target12')"></span>
                      </div>
                      <div class="col-md-2">
 
@@ -196,7 +200,7 @@
 
                              <li ng-show="$index==1"><a href="#item4" class="btn btn-default "><i class="glyphicon glyphicon-chevron-up"></i></a>
                                  <li ng-show="$index > 0 && $index!=1"><a href="#proj{{$index -1}}" class="btn btn-default "><i class="glyphicon glyphicon-chevron-up"></i></a>
-                             <li style="height:38px;position:relative;top:6px;"><span class="label label-default" style="font-size:24px;">{{$index+1}}</span><li>
+                             <li class="project-index"><span class="label label-default">{{$index+1}}</span><li>
                              
                              <li ng-hide="$last"><a href="#proj{{$index +1}}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
                                 </ul>
@@ -215,7 +219,7 @@
 
       <!-- /END THE FEATURETTES -->
  </div><!-- end wrap-->
-     <div style="background-color: #111; text-align: center; height: 34px; vertical-align: middle;">
+     <div id="to-top-div">
          <a href="#top" class="btn btn-default"><i class="glyphicon glyphicon-chevron-up"></i></a>
      </div>
 
