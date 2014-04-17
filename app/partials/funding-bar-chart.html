@@ -1,6 +1,6 @@
 <div>
     <!-- PARTIALLY FUNDED------------------------------ -->
-    <div ng-show="status == 'some expected funding' || status == 'some secured funding' ">
+    <div ng-if="status == 'some expected funding' || status == 'some secured funding' ">
         <div style="width:{{width}}px;font-weight:bold;padding-bottom:10px;font-size:18px;" > partially funded </div>
         
         <table style="height: 20px;margin-bottom:10px;" cellspacing="0" cellpadding="0">
@@ -32,7 +32,7 @@
 
 
     <!--FULLY FUNDED-------------------------------->
-    <div ng-show="status == 'funded'">
+    <div ng-if="status == 'funded'">
         <div style="font-weight:bold;font-size:18px;padding-bottom:10px;"  > fully funded </div>
          <table style="height: 20px;" cellspacing="0" cellpadding="0">
             <tr>

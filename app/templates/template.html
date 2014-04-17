@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>The LifeWeb Initiative</title>
+    <title>LifeWeb - {{title}} - The LifeWeb Initiative</title>
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,12 +23,12 @@
     <![endif]-->
 </head>
 
-<body ng-controller="TemplateController">
+<body ng-controller="TemplateController" data-spy="scroll" data-target="#sidebar">
 
     <iframe id="authenticationFrame" src="https://accounts.cbd.int/app/authorize.html" style="display:none"></iframe>
 
     <div class="fluid-container" >
-        <div ng-include="'/app/templates/header.html'"></div>
+        <div ng-include="'/app/templates/header.html'" id='header'></div>
         <div id="ngview-content" ng-view></div>
         <div>© CBD Secretariat</div>
     </div>

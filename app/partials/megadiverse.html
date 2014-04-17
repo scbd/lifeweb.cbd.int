@@ -4,7 +4,7 @@
 <div class="project_well">
 <ul class="lw-thumbnail-list">
   <li  ng-repeat="c in (countries | filterMegaDiverse) | orderBy:'name'" >
-   	<a href="country/?country={{c.code}}" style="white-space:nowrap;">
+   	<a href="country/{{c.code}}" style="white-space:nowrap;">
   	{{c.name}} ({{c.project_count}})</a></li>
 </ul>
 </div>

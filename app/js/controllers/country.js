@@ -1,8 +1,8 @@
-define(['app', 'app/js/controllers/map.js', 'authentication', 'URI'], function(app, map) {
-  app.controller('CountryCtrl', function($scope, $http, $window) {
+define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(app, map) {
+  app.controller('CountryCtrl', function($scope, $http, $window, $routeParams) {
 
       //TODO: don't use URI... just use regular Angular.
-      var sCountry = new URI().query(true).country;
+      var sCountry = $routeParams.country;
 
       $scope.CountryID = sCountry;
 
