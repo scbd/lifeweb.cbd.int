@@ -1,0 +1,63 @@
+var projectSchema = new Schema({
+  lead_contact: String,
+  countries: [String],
+  title: String,
+  timeframe: Number,
+  abstract: String,
+  organizations: [String],
+  aichi_5: String,
+  aichi_6: String,
+  aichi_9: String,
+  aichi_10: String,
+  aichi_11: String,
+  aichi_12: String,
+  aichi_13: String,
+  aichi_14: String,
+  aichi_15: String,
+  aichi_other: String,
+  national_alignment: {
+    NBSAP_POWPA: String,
+    other: String,
+  },
+  ecological_contribution: String,
+  climate_contribution: {
+    mitigation: String,
+    adaptation: String,
+  },
+  institutional_context: [{
+    partner: String,
+    role: String,
+  }],
+  budget: [{
+    activity: String,
+    result: String,
+    cost: Number,
+  }],
+  donors: [{
+    name: String,
+    description: String,
+    funding: Number,
+  }],
+  Keywords: [String],
+  Images: {[
+    filename: String,
+    title: String,
+    Description: String,
+  ]},
+  protected_areas: [String],
+  maps: [{
+    filename: String,
+    title: String,
+    Description: String,
+  }],
+  coordinates: {
+    lon: Number,
+    lat: Number,
+  },
+  attachments: [{
+    filename: String,
+    title: String,
+    Description: String,
+  }],
+  additional_information: String,
+});

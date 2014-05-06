@@ -2,6 +2,10 @@
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
   <h1>Create a Project</h1>
   <form class="form-horizontal" role="form" ng-submit="save()">
+    <inputstring data-binding="project.contact" data-title="Lead Contact" data-placeholder="Contact's full name"></inputstring>
+    <tags-input ng-model="project.countries">
+      <auto-complete source="tagOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
+    </tags-input>
     <inputstring data-binding="project.title" data-title="Title" data-placeholder="title"></inputstring>
     <inputtext data-binding="project.summary" data-title="Summary" data-placeholder="Summary of Project"></inputtext>
     <inputstring data-binding="project.countries" data-title="Countries" data-placeholder="Canada, Japan, etc."></inputstring>

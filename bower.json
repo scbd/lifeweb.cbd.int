@@ -14,8 +14,5 @@
     "angular-ui-utils": "latest",
     "jquery.stellar": "latest",
     "angular_form_controls": "latest"
-  },
-  "resolutions": {
-    "angular": "~1.2.14"
   }
 }

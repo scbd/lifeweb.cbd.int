@@ -141,7 +141,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/editproject.js', '/app/js/directives/form/form.js']),
+          dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
       })
 
