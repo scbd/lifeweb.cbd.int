@@ -25,7 +25,7 @@ var projectSchema = new Schema({
     adaptation: String,
   },
   institutional_context: [{
-    partner: String,
+    name: String,
     role: String,
   }],
   budget: [{
@@ -40,13 +40,13 @@ var projectSchema = new Schema({
   }],
   Keywords: [String],
   Images: {[
-    filename: String,
+    url: String,
     title: String,
     Description: String,
   ]},
   protected_areas: [String],
   maps: [{
-    filename: String,
+    url: String,
     title: String,
     Description: String,
   }],
@@ -55,7 +55,7 @@ var projectSchema = new Schema({
     lat: Number,
   },
   attachments: [{
-    filename: String,
+    url: String,
     title: String,
     Description: String,
   }],

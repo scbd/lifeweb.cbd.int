@@ -13,6 +13,8 @@
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
     "jquery.stellar": "latest",
-    "angular_form_controls": "latest"
+    "angular_form_controls": "latest",
+    "ng-file-upload": "~1.4.0",
+    "ng-file-upload-shim": "~1.4.0"
   }
 }
