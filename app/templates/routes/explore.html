@@ -6,41 +6,42 @@
         <div class="row" ng-controller="ProjectsCtrl" >
             <div class="col-xs-3">
               <div class="bs-sidebar affix" id="sidebar">
-                <ul class="nav nav-list bs-docs-sidenav ">
-                    <li><a style="font-size: 14px; color: #999; text-transform: uppercase;">
-                        
-                        Search
-                        <span class="badge badge-info pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets ).length}}</span>
-                        </a></li>
-                    <li>
-                        
-
-                        <input ng-model="search.keyword" style="width: 98%; margin-top: 12px; height: 22px;">
-
-                        <select ng-model="search.country" style="width: 100%; margin-top: 12px;" ng-options="country.code as country.name for country in ((countries | filterProjectCountry:filtered)| orderBy:'name' ) ">
-                            <option value="" selected>Country</option>
-                        </select>
-
-                        <select ng-model="search.is_funded" style="width: 100%; margin-top: 5px;">
-                            <option value="" selected>Funding status</option>
-                            <option value="funded">funded</option>
-                            <option value="not yet funded">not yet funded</option>
-                            <option value="some expected funding">some expected funding</option>
-                            <option value="some secured funding">some secured funding</option>
-                        </select>
-
-                        <select ng-model="search.benefits" style="width: 100%; margin-top: 5px;">
-                            <option value="" selected>Ecosystem Benefits</option>
-                            <option value="ecoservices1">Climate Change Mitigation</option>
-                            <option value="ecoservices2">Climate Change Adapation</option>
-                            <option value="ecoservices3">Freahwater Security</option>
-                            <option value="ecoservices4">Food Security</option>
-                            <option value="ecoservices5">Human Health</option>
-                            <option value="ecoservices6">Cultural and Spiritual Access</option>
-                            <option value="ecoservices7">Income Generation</option>
-                        </select>
-
-
+                <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
+                  <li>
+                    <a style="font-size: 14px; color: #999; text-transform: uppercase;">
+                      
+                      Search
+                      <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets ).length}}</span>
+                    </a>
+                  </li>
+                  <li>
+                    <input ng-model="search.keyword" placeholder="Keywords" class="form-control">
+                  </li>
+                  <li>
+                    <select class="form-control" ng-model="search.country" ng-options="country.code as country.name for country in ((countries | filterProjectCountry:filtered)| orderBy:'name' ) ">
+                      <option value="" selected>Country</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="form-control" ng-model="search.is_funded" style="width: 100%; margin-top: 5px;">
+                      <option value="" selected>Funding status</option>
+                      <option value="funded">funded</option>
+                      <option value="not yet funded">not yet funded</option>
+                      <option value="some expected funding">some expected funding</option>
+                      <option value="some secured funding">some secured funding</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="form-control" ng-model="search.benefits" style="width: 100%; margin-top: 5px;">
+                      <option value="" selected>Ecosystem Benefits</option>
+                      <option value="ecoservices1">Climate Change Mitigation</option>
+                      <option value="ecoservices2">Climate Change Adapation</option>
+                      <option value="ecoservices3">Freahwater Security</option>
+                      <option value="ecoservices4">Food Security</option>
+                      <option value="ecoservices5">Human Health</option>
+                      <option value="ecoservices6">Cultural and Spiritual Access</option>
+                      <option value="ecoservices7">Income Generation</option>
+                    </select>
                           <!--<select ng-model="search.targets" style="width: 100%; margin-top: 5px;">
                             <option value="" selected>Aichi Targets</option>
                             <option value="Target1">Target 1: </option>
@@ -64,27 +65,26 @@
                               <option value="Target19">Target 19: </option>
                               <option value="Target20">Target 20: </option>
                         </select>-->
-
-
-                        <select ng-model="search.year_submitted" style="width: 100%; margin-top: 5px;">
-                            <option value="" selected>Year Submitted</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                            <option value="2011">2011</option>
-                            <option value="2010">2010</option>
-                            <option value="2009">2009</option>
-                        </select>
-
-                        <select ng-model="search.funding_needed" style="width: 100%; margin-top: 5px;">
-                            <option value="" selected>Amount of Funding Needed</option>
-                            <option value="0">less than $0.5M USD</option>
-                            <option value="500000">$0.5M to $2.5M USD</option>
-                            <option value="2500000">$2.5M to $10M USD</option>
-                            <option value="10000000">more than $10M USD</option>
-                        </select>
-
-                        <a class="btn-info" href="/explore/">clear search</a>
-
+                  </li>
+                  <li>
+                    <select class="form-control" ng-model="search.year_submitted" style="width: 100%; margin-top: 5px;">
+                        <option value="" selected>Year Submitted</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                    </select>
+                  </li>
+                  <li>
+                    <select class="form-control" ng-model="search.funding_needed" style="width: 100%; margin-top: 5px;">
+                        <option value="" selected>Amount of Funding Needed</option>
+                        <option value="0">less than $0.5M USD</option>
+                        <option value="500000">$0.5M to $2.5M USD</option>
+                        <option value="2500000">$2.5M to $10M USD</option>
+                        <option value="10000000">more than $10M USD</option>
+                    </select>
+                    <a class="btn btn-info" href="/explore/">clear search</a>
                     </li>
                 </ul>
               </div>
@@ -98,7 +98,9 @@
                     <h2 class="title-divider featurette-heading">LifeWeb Projects</h2>
                     <span class="muted">National priority projects</span> 
                     <div class="pull-right"><a ng-click="toggleList()" style="cursor:pointer;"><i class="{{listStyle}}"></i></a></div> 
+                    <!--
                     <div class="pull-right" style="padding-right:10px;">Currency: <a ng-click="toggleCurrency()" style="cursor:pointer;">{{currency}}</a> | </div>
+                    -->
 
 
                     <div ng-show="list==false" class="media project_well" ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">

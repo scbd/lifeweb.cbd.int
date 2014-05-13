@@ -3,6 +3,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 		 $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {
 					$scope.matches = data;
+          console.log(data);
 			  });
 		 $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {

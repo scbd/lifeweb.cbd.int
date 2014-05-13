@@ -10,7 +10,7 @@ require.config({
         'angular-sanitize': '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular-sanitize.min',
         'angular-route'   : '../libs/angular-route/angular-route',
         'angular-cookies'  : 'http://code.angularjs.org/1.2.12/angular-cookies',
-        'ng-breadcrumbs'  : '../libs/ng-breadcrumbs/dist/js/ng-breadcrumbs',
+        'ng-breadcrumbs'  : '../libs/ng-breadcrumbs/dist/ng-breadcrumbs',
         'async'           : '../libs/requirejs-plugins/src/async',
         'domReady'        : '../libs/requirejs-domready/domReady',
         'jquery'          : '../libs/jquery/jquery',
