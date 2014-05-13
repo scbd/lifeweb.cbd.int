@@ -20,10 +20,12 @@ var projectSchema = new Schema({
     other: String,
   },
   ecological_contribution: String,
-  climate_contribution: {
-    mitigation: String,
-    adaptation: String,
-  },
+  climate_contribution: [{
+    term: String,
+    comment: String,
+   // mitigation: String,
+   // adaptation: String,
+  }],
   institutional_context: [{
     name: String,
     role: String,
