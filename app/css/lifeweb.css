@@ -62,6 +62,15 @@ h4 {
   top: -4px;
 }
 
+.nav-header {
+  padding: 3px 20px;
+  font-size: 12px;
+  color: #AAAAAA;
+  font-weight: bold;
+  cursor: default;
+  text-transform: uppercase;
+}
+
 .lw-footerheader {
     color: #efefef;
     font-family: Sans-Serif;

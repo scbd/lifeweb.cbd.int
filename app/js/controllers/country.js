@@ -35,7 +35,6 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
       $scope.fp_national = data;
     });
 
-  console.log('country: ', sCountry);
 	  $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
 		 .success(function (data) {
 			  $scope.geolocation = {
@@ -52,9 +51,15 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
             map.map.fitBounds($scope.bounds, {reset: true});
         }
         if(map.map)
+        {
+          console.log('map already ready');
           setview();
+        }
         else
+        {
+          console.log('map not ready');
           map.callback = setview;
+        }
 		 });
   });
   return true;
