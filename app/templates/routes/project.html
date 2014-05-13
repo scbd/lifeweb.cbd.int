@@ -25,7 +25,7 @@
               </div>
 
               <div data-ng-controller="MapCtrl">
-                <div id='map' style="height:200px; margin-top: 720px;"></div>
+                <div id='map' style="height:200px; margin-top: 720px; z-index:-100;"></div>
               </div>
       
             </div>
@@ -55,7 +55,7 @@
     <table class="lw-tt well">
         <tr>
             <td class="lw-dt" style="padding-bottom: 15px;">
-                <img src="{{eoi.thumbnail}}" class="img-polaroid" alt="{{eoi.id}}" style="position: relative; top: 10px;"></td>
+                <img src="{{eoi.thumbnail}}" class="thumbnail" alt="{{eoi.id}}" style="position: relative; top: 10px; max-width:100px;"></td>
             <td class="lw-dd">
               <h3>{{eoi.title}}</h3>
             </td>
