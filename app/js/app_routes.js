@@ -132,11 +132,7 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS()
         },
       })
-      .when('/404', {
-        templateUrl: '/app/views/404.html',
-        label: 'Page not found',
-        resolve: {},
-      })
+
       .when('/admin/projects/create', {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
         resolve: {
@@ -144,7 +140,26 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
       })
+      .when('/admin/projects/edit/:title', {
+        templateUrl: '/app/templates/routes/admin/projects/edit.html',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/editproject.js']),
+        },
+      })
+      .when('/admin/', {
+        templateUrl: '/app/templates/routes/admin/index.html',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/admin.js']),
+        },
+      })
 
+      .when('/404', {
+        templateUrl: '/app/views/404.html',
+        label: 'Page not found',
+        resolve: {},
+      })
       .otherwise({
         redirectTo: '/404',
       });

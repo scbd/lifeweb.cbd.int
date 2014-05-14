@@ -1,5 +1,12 @@
-define(['app'], function(app, map) {
-  app.controller('EditProjectCtrl', function($scope, $http, $upload, $q) {
+define(['app'], function(app) {
+  app.controller('EditProjectCtrl', function($scope, $routeParams, $http, $upload, $q) {
+    console.log($routeParams)
+    if($routeParams.title)
+      $http.get('http://localhost:1818/projects', {title: $routeParams.title})
+        .success(function(data, status, headers, config) {
+          $scope.project = data[0];
+        });
+
     $scope.aichi_targets = [
       {title: "Aichi Target 5", key: "aichi_5", help: "By 2020, the rate of loss of all natural habitats, including forests, is at least halved and where feasible brought close to zero, and degradation and fragmentation is significantly reduced <PUT GUIDE LINKS HERE>"},
       {title: "Aichi Target 6", key: "aichi_6", help: "By 2020, all fish and invertebrate stocks and aquatic plants are managed and harvested sustainably, legally and applying ecosystem based approaches, so that overfishing is avoided, recovery plans and measures are in place for all depleted species, fisheries have no significant adverse impacts on threatened species and vulnerable ecosystems and the impacts of fisheries on stocks, species and ecosystems are within safe ecological limits. <GUIDE LINK>"},
@@ -91,8 +98,7 @@ define(['app'], function(app, map) {
        }
     };
 
-    $scope.onFileSelect = function($files, newItemKey) {
-      console.log($files);
+    $scope.onFileSelect = function($files, newItemKey, obj) {
       var rest_server = 'http://localhost:1818';
       if($files.length == 1)
         $upload.upload({
@@ -106,8 +112,12 @@ define(['app'], function(app, map) {
         .success(function(data, status, headers, config) {
           console.log('Uploaded file successfully!');
           console.log('Returned:', data); 
-          if(!$scope[newItemKey]) $scope[newItemKey] = {};
-          $scope[newItemKey].url = rest_server + data.url;
+          if(obj)
+            obj[newItemKey] = rest_server + data.url;
+          else {
+            if(!$scope[newItemKey]) $scope[newItemKey] = {};
+            $scope[newItemKey].url = rest_server + data.url;
+          }
         });
     };
 

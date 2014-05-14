@@ -22,6 +22,15 @@
     <afc-input ng-model="project.title" data-title="Title" data-placeholder="title"></afc-input>
     <afc-input type="number" ng-model="project.timeframe" title="Timeframe" placeholder="years"></afc-input>
     <afc-text ng-model="project.abstract" data-title="Abstract" data-placeholder="Abstract of Project"></afc-text>
+    <div class="row form-group" ng-file-drop="onFileSelect($files, 'thumbnail', project)" ng-file-drag-over-class="dragdrophover">
+      <label class="col-xs-2 control-label">Thumbnail</label>
+      <div class="col-xs-5">
+        <input type="text" class="pull-left" ng-model="project.thumbnail" />
+      </div>
+      <div class="col-xs-5">
+        <input type="file" ng-file-select="onFileSelect($files, 'thumbnai', project)" class="pull-left" />
+      </div>
+    </div>
     <div class="form-group">
       <label for="organizations" class="col-sm-2 control-label">Implementing Institutions</label>
       <div class="col-sm-10">
@@ -30,6 +39,7 @@
         </tags-input>
       </div>
     </div>
+    <afc-input title="Expiry Date" type="date" ng-model="project.expiry_date"></afc-input>"
     
     <hr />
     
@@ -204,6 +214,7 @@
         <tr>
           <th>title</th>
           <th>Description</th>
+          <th>Attachment Keywords</th>
           <th>Attachment Link</th>
         </tr>
       </thead>
@@ -211,11 +222,21 @@
         <tr ng-repeat="attachment in project.attachments">
           <td><input type="text" ng-model="attachment.title" /></td>
           <td><input type="text" ng-model="attachment.description" /></td>
+          <td>
+            <tags-input id="attachkeywords" ng-model="attachment.keywords">
+              <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
+            </tags-input>
+          </td>
           <td><a ng-href="{{attachment.url}}">Download Attachment</a><button ng-click="project.attachments.splice($index, 1)">X</button></td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newAttachment.title" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" /></td>
           <td><input type="text" ng-model="newAttachment.description" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" /></td>
+          <td>
+            <tags-input id="attachkeywords" ng-model="newAttachment.keywords">
+              <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
+            </tags-input>
+          </td>
           <td ng-file-drop="onFileSelect($files, 'newAttachment')" ng-file-drag-over-class="dragdrophover">
             <div>
               <input type="text" class="pull-left" ng-model="newAttachment.url" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" />
@@ -241,18 +262,24 @@
           <th>Donor Name</th>
           <th>Description</th>
           <th>Funding</th>
+          <th>Date Donated</th>
+          <th>Faciliated by LifeWeb</th>
         </tr>
       </thead>
       <tbody>
         <tr ng-repeat="donor in project.donors">
           <td><input type="text" ng-model="donor.name" /></td>
           <td><input type="text" ng-model="donor.description" /></td>
-          <td><input type="number" ng-model="donor.funding" /><button ng-click="project.donors.splice($index, 1)">X</button></td>
+          <td><input type="number" ng-model="donor.funding" /></td>
+          <td><input type="date" ng-model="donor.date_donated" /></td>
+          <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="project.donors.splice($index, 1)">X</button></td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
           <td><input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
-          <td><input type="number" ng-model="newdonor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /><button type="button" ng-click="addItem('newdonor', 'donors')">Add</button></td>
+          <td><input type="number" ng-model="donor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
+          <td><input type="date" ng-model="donor.date_donated"  ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
+          <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /><button type="button" ng-click="addItem('newdonor', 'donors')">Add</button></td>
         </tr>
       </tbody>
     </table>
