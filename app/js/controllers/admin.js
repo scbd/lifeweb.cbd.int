@@ -9,11 +9,28 @@ define(['app'], function(app, map) {
           console.log('*ERROR* Response (code '+status+'): ', response);
       });
 
+    $http.get('http://localhost:1818/organizations')
+      .success(function(response, status, headers, config) {
+        console.log(response);
+        $scope.organizations = response;
+      })
+      .error(function(response, status, headers, config) {
+          console.log('*ERROR* Response (code '+status+'): ', response);
+      });
+
     $scope.deleteProject = function(project) {
       $http.delete('http://localhost:1818/projects')
         .success(function(response, status) {
           console.log(response);
           $scope.projects.splice(1, $scope.projects.indexOf(project));
+        });
+    };
+
+    $scope.deleteOrganiation = function(organization) {
+      $http.delete('http://localhost:1818/organization')
+        .success(function(response, status) {
+          console.log(response);
+          $scope.organizations.splice(1, $scope.organizations.indexOf(organization));
         });
     };
   });

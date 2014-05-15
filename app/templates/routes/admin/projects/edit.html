@@ -1,4 +1,5 @@
 <link href="/app/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet">
 <style>
   .dragdrophover {
     background-color: #DDDDFF;
@@ -45,18 +46,19 @@
     
     <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets</h3>
     <h4>Lifeweb facilitates financing that contribute toward the achievement of the area-based Aichi Targets in the 2011-2020 Strategic Plan for Biodiversity.</h4>
-    <tabbed-textareas rows="4" ng-model="project.aichi_targets" tabs="aichi_targets"></tabbed-textareas>
+    <select ng-change="addTab(aichi_target_tabs, aichi_targets, addingAichiTab)" ng-model="addingAichiTab" ng-options="idx as target.name for (idx, target) in aichi_targets"></select>
+    <tabbed-textareas rows="4" ng-model="project.aichi_targets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="name" key-key="identifier"></tabbed-textareas>
     
     <h3>Alignment with National Planning</h3>
     <h4>Consistent with the decision X/31, please indicate the relevance between this sbumission and the following planning processes</h4>
-    <tabbed-textareas rows="4" ng-model="project.national_alignment" tabs="national_alignment"></tabbed-textareas>
+    <tabbed-textareas rows="4" ng-model="project.national_alignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
     <h3>Ecological Contribution</h3>
     <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
     <textarea class="form-control" ng-model="project.ecological_contribution" rows="4"></textarea>
 
     <h3>Contribution to Climate Change</h3>
-    <tabbed-textareas rows="4" ng-model="project.climate_contribution" tabs="climate_contribution"></tabbed-textareas>
+    <tabbed-textareas rows="4" ng-model="project.climate_contribution" tabs="climate_contribution" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
     <hr />
 
@@ -193,19 +195,7 @@
     </table>
 
     <h3>Coordinates</h3>
-    <div class="col-sm-3">
-      <label for="longitude">Longitude</label>
-    </div>
-    <div class="col-sm-3">
-      <input type="text" id="longitude" ng-model="project.coordinates.lon" />
-    </div>
-    <div class="col-sm-3">
-      <label for="latitude">Latitude</label>
-    </div>
-    <div class="col-sm-3">
-      <input type="text" id="latitude" ng-model="project.coordinates.lat" />
-    </div>
-    <br />
+    <lonlat-input ng-model="project.coordinates" help="General Longitude and Latutide of the project."></lonlat-input>
 
     <h3>Attachments</h3>
     <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>

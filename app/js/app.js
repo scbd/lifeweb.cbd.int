@@ -1,8 +1,8 @@
 'use strict';
 
-define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angular-file-upload'], function(Angular) {
+define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angular-file-upload',], function(Angular) {
 
-	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ngCookies', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload']);
+	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ngCookies', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload',]);
 
 	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider',
 		function($controllerProvider, $compileProvider, $provide, $filterProvider) {

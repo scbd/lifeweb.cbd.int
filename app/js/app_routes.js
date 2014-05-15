@@ -135,6 +135,7 @@ define(['app', 'authentication'], function(app) {
 
       .when('/admin/projects/create', {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
+        title : 'Create a new project',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
@@ -142,13 +143,31 @@ define(['app', 'authentication'], function(app) {
       })
       .when('/admin/projects/edit/:title', {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
+        title : 'Edit Project',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
       })
+      .when('/admin/organizations/create', {
+        templateUrl: '/app/templates/routes/admin/organizations/edit.html',
+        title : 'Create Organization',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
+        },
+      })
+      .when('/admin/organizations/edit/:name', {
+        templateUrl: '/app/templates/routes/admin/organizations/edit.html',
+        title : 'Edit Organization',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
+        },
+      })
       .when('/admin/', {
         templateUrl: '/app/templates/routes/admin/index.html',
+        title : 'Admin Panel',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/admin.js']),

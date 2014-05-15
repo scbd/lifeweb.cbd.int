@@ -4,6 +4,7 @@ var organizationSchema = new Schema({
   acronym: String,
   phone: String,
   email: String,
+  thumbnail: String,
   social: {
     website: String,
     facebook: String,

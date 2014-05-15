@@ -7,6 +7,14 @@ define(['app'], function(app) {
           $scope.project = data[0];
         });
 
+    $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
+      .success(function(response, status) {
+        $scope.aichi_targets = response;
+      })
+      .error(function(response, status) {
+      });
+
+      /*
     $scope.aichi_targets = [
       {title: "Aichi Target 5", key: "aichi_5", help: "By 2020, the rate of loss of all natural habitats, including forests, is at least halved and where feasible brought close to zero, and degradation and fragmentation is significantly reduced <PUT GUIDE LINKS HERE>"},
       {title: "Aichi Target 6", key: "aichi_6", help: "By 2020, all fish and invertebrate stocks and aquatic plants are managed and harvested sustainably, legally and applying ecosystem based approaches, so that overfishing is avoided, recovery plans and measures are in place for all depleted species, fisheries have no significant adverse impacts on threatened species and vulnerable ecosystems and the impacts of fisheries on stocks, species and ecosystems are within safe ecological limits. <GUIDE LINK>"},
@@ -19,6 +27,8 @@ define(['app'], function(app) {
       {title: "Aichi Target 15", key: "aichi_15", help: "By 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 percent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification."},
       {title: "Contribution to other Aichi Targets", key: "aichi_other", help: "Please describe contributions to any other Aichi Targets"},
     ];
+    */
+    $scope.aichi_target_tabs = [];
     
     $scope.national_alignment = [
       {title: 'NBSAPs and PoWPA', key: 'NBSAP_POWPA', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
@@ -70,6 +80,13 @@ define(['app'], function(app) {
 
       deferred.resolve(matchedOptions);
       return deferred.promise;
+    };
+
+    $scope.addTab = function(tabs, tabRepository, tabIndex) {
+      console.log(tabIndex);
+      console.log(tabRepository[tabIndex]);
+      if(tabs.indexOf(tabRepository[tabIndex]) === -1)
+        tabs.push(tabRepository[tabIndex]);
     };
 
     $scope.addItem = function(scopeNewItemKey, projectKey) {

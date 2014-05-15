@@ -1,0 +1,49 @@
+<link href="/app/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<style>
+  .dragdrophover {
+    background-color: #DDDDFF;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+</style>
+<div class="container" style="margin-top: 100px;" ng-controller="EditOrganizationCtrl">
+  <h1>Organization</h1>
+  <form role="form" ng-submit="save()" class="form-horizontal">
+    <afc-input ng-model="organization.name" title="Name" placeholder="Organization's Name"></afc-input>
+    <div class="form-control">
+      <div class="">
+        <label>
+          <input type="radio" name="organization.type" ng-model="organization.type" value="Implementing Organization" ng-init="organization.type='Implementing Organization'"/>
+          Implementing Organization
+        </label>
+        <label>
+          <input type="radio" name="organization.type" ng-model="organization.type" value="Donor" />
+           Donor 
+        </label>
+      </div>
+    </div>
+    <afc-input title="Acronym" ng-model="organization.acronym"></afc-input>
+    <afc-input title="Phone Number" ng-model="organization.phone"></afc-input>
+    <afc-input type="email" title="Email" ng-model="organization.email"></afc-input>
+    <div class="form-group" ng-file-drop="onFileSelect($files, 'thumbnail', organization);" ng-file-drag-over-class="dragdrophover">
+      <label class="col-xs-2 control-label">Thumbnail</label>
+      <div class="col-xs-5">
+        <input type="text" class="pull-left" ng-model="organization.thumbnail" />
+      </div>
+      <div class="col-xs-5">
+        <input type="file" ng-file-select="onFileSelect($files, 'thumbnai', organization)" class="pull-left" />
+      </div>
+    </div>
+    <hr />
+
+    <h2>Social Links</h2>
+    <afc-input title="Website" ng-model="organization.social.website"></afc-input>
+    <afc-input title="Facebook" ng-model="organization.social.facebook"></afc-input>
+    <afc-input title="Twitter" ng-model="organization.social.twitter"></afc-input>
+    <afc-input title="Google" ng-model="organization.social.google"></afc-input>
+    <afc-input title="Other" ng-model="organization.social.other_links"></afc-input>
+    <div class="form-group">
+      <button type="submit" class="form-control">Save</button>
+    </div>
+  </form>
+</div>
