@@ -1,12 +1,7 @@
-define(['app'], function(app) {
-  app.controller('EditProjectCtrl', function($scope, $routeParams, $http, $upload, $q) {
-    console.log($routeParams)
-    if($routeParams.title)
-      $http.get('http://localhost:1818/projects', {title: $routeParams.title})
-        .success(function(data, status, headers, config) {
-          $scope.project = data[0];
-        });
-
+define(['app', '/app/js/controllers/edit.js'], function(app) {
+  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller) {
+    $controller('EditCtrl', {$scope: $scope});
+ 
     $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
         $scope.aichi_targets = response;
@@ -120,29 +115,6 @@ define(['app'], function(app) {
        }
     };
 
-    $scope.onFileSelect = function($files, newItemKey, obj) {
-      var rest_server = 'http://localhost:1818';
-      if($files.length == 1)
-        $upload.upload({
-          url: rest_server + '/__file/lifeweb',
-          method: 'PUT',
-          file: $files[0],
-        })
-        .progress(function(evt) {
-          console.log('percent: ' + parseInt(100.0 * evt.loaded / evt.totle));
-        })
-        .success(function(data, status, headers, config) {
-          console.log('Uploaded file successfully!');
-          console.log('Returned:', data); 
-          if(obj)
-            obj[newItemKey] = rest_server + data.url;
-          else {
-            if(!$scope[newItemKey]) $scope[newItemKey] = {};
-            $scope[newItemKey].url = rest_server + data.url;
-          }
-        });
-    };
-
     $scope.project = {};
     $scope.project.budget = [];
     $scope.project.donors = [];
@@ -152,16 +124,6 @@ define(['app'], function(app) {
         sum += arr[i][key];
 
       return sum;
-    };
-
-    $scope.save = function() {
-      $http.post('http://localhost:1818/projects', $scope.project)
-        .success(function(response, status, headers, config) {
-          console.log('Response (code '+status+'): ', response);
-        })
-        .error(function(response, status, headers, config) {
-          console.log('*ERROR* Response (code '+status+'): ', response);
-        });
     };
   });
 });
