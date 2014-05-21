@@ -8,7 +8,7 @@ var projectSchema = new Schema({
   organizations: [String],
   aichi_targets: {String},
   national_alignment: {
-    NBSAP_POWPA: String,
+    NBSAP: String,
     other: String,
   },
   ecological_contribution: String,
@@ -51,6 +51,6 @@ var projectSchema = new Schema({
     Description: String,
     keywords: [String],
   }],
-  expiry_date: Date,
+  expiry_duration: Number,  //number of years. Defaults to 1.
   additional_information: String,
 });

@@ -8,7 +8,6 @@
   }
 </style>
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
-
   <h1>Expression of Interest</h1>
   <form class="form-horizontal" role="form" ng-submit="save()">
     <afc-input ng-model="project.contact" data-title="Lead Contact" data-placeholder="Contact's full name"></afc-input>
@@ -32,16 +31,7 @@
         <input type="file" ng-file-select="onFileSelect($files, 'thumbnai', project)" class="pull-left" />
       </div>
     </div>
-    <div class="form-group">
-      <label for="organizations" class="col-sm-2 control-label">Implementing Institutions</label>
-      <div class="col-sm-10">
-        <tags-input id="organizations" ng-model="project.organizations">
-          <auto-complete source="organizationOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
-        </tags-input>
-      </div>
-    </div>
-    <afc-input title="Expiry Date" type="date" ng-model="project.expiry_date"></afc-input>"
-    
+        
     <hr />
     
     <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets</h3>
@@ -58,7 +48,19 @@
     <textarea class="form-control" ng-model="project.ecological_contribution" rows="4"></textarea>
 
     <h3>Contribution to Climate Change</h3>
-    <tabbed-textareas rows="4" ng-model="project.climate_contribution" tabs="climate_contribution" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+    <select ng-model="addingBenefitsTab" ng-change="addTab(climate_contribution_tabs, 0, addingBenefitsTab)">
+      <option value="" selected>Ecosystem Benefits</option>
+      <option value="ecoservices1">Climate Change Mitigation</option>
+      <option value="ecoservices2">Climate Change Adapation</option>
+      <option value="ecoservices3">Freahwater Security</option>
+      <option value="ecoservices4">Food Security</option>
+      <option value="ecoservices5">Human Health</option>
+      <option value="ecoservices6">Cultural and Spiritual Access</option>
+      <option value="ecoservices7">Income Generation</option>
+    </select>
+
+
+    <tabbed-textareas rows="4" ng-model="project.climate_contribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
     <hr />
 
@@ -74,11 +76,32 @@
       <tbody>
         <tr ng-repeat="partner in project.institutional_context">
           <td><input type="text" ng-model="partner.name" /></td>
-          <td><input type="text" ng-model="partner.role" /><button ng-click="project.institutional_context.splice($index, 1)">X</button></td>
+          <td>
+            <select ng-model="partner.role">
+              <option value="community_engagement">Community Engagement</option>
+              <option value="implementation">Implementation</option>
+              <option value="monitoring">Monitoring</option>
+              <option value="partner_coordination">Partner Coordination</option>
+              <option value="project_management">Project Management</option>
+              <option value="strategic_planning">Strategic Planning</option>
+              <option value="technical_support">Technical Support</option>
+            </select>
+            <button ng-click="project.institutional_context.splice($index, 1)">X</button>
+          </td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutional_context')" /></td>
-          <td><input type="text" ng-model="newpartner.role" ng-keydown="maybeAddItem($event, 'newpartner', 'institutional_context')" /><button type="button" ng-click="addItem('newpartner', 'institutional_context')">Add</button></td>
+          <td>
+            <select ng-model="newpartner.role">
+              <option value="community_engagement">Community Engagement</option>
+              <option value="implementation">Implementation</option>
+              <option value="monitoring">Monitoring</option>
+              <option value="partner_coordination">Partner Coordination</option>
+              <option value="project_management">Project Management</option>
+              <option value="strategic_planning">Strategic Planning</option>
+              <option value="technical_support">Technical Support</option>
+            </select>
+            <button type="button" ng-click="addItem('newpartner', 'institutional_context')">Add</button></td>
         </tr>
       </tbody>
     </table>
@@ -97,6 +120,9 @@
           <td><input type="text" ng-model="activity.activity" /></td>
           <td><input type="text" ng-model="activity.result" /></td>
           <td><input type="number" ng-model="activity.cost" /><button ng-click="project.budget.splice($index, 1)">X</button></td>
+        </tr>
+        <tr>
+          <td colspan="3" style="text-align: right">Total: ${{sum(project.budget, 'cost')}}</td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newActivity.activity" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" /></td>
@@ -265,14 +291,18 @@
           <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="project.donors.splice($index, 1)">X</button></td>
         </tr>
         <tr>
+          <td colspan="5" style="text-align: right">Total: ${{sum(project.donors, 'funding')}}</td>
+        </tr>
+        <tr>
           <td><input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
           <td><input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
-          <td><input type="number" ng-model="donor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
-          <td><input type="date" ng-model="donor.date_donated"  ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
-          <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /><button type="button" ng-click="addItem('newdonor', 'donors')">Add</button></td>
+          <td><input type="number" ng-model="newdonor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
+          <td><input type="date" ng-model="newdonor.date_donated"  ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
+          <td><input type="checkbox" ng-model="newdonor.lifeweb_facilitated" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /><button type="button" ng-click="addItem('newdonor', 'donors')">Add</button></td>
         </tr>
       </tbody>
     </table>
+    <h3>Note: all Expressions of Interests (projects) expire after a year</h3>
 
     <hr />
 

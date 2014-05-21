@@ -165,6 +165,22 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
         },
       })
+      .when('/admin/contacts/create', {
+        templateUrl: '/app/templates/routes/admin/contacts/edit.html',
+        title : 'Create Contact',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
+        },
+      })
+      .when('/admin/contacts/edit/:name', {
+        templateUrl: '/app/templates/routes/admin/contacts/edit.html',
+        title : 'Edit Contact',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
+        },
+      })
       .when('/admin/', {
         templateUrl: '/app/templates/routes/admin/index.html',
         title : 'Admin Panel',

@@ -29,16 +29,19 @@ define(['app'], function(app) {
     ];
     */
     $scope.aichi_target_tabs = [];
+    $scope.climate_contribution_tabs = [];
     
     $scope.national_alignment = [
-      {title: 'NBSAPs and PoWPA', key: 'NBSAP_POWPA', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
-      {title: 'Other', key: 'other', help: 'e.g. Poverty Reduction Strategies (PRSPs), National Climate Change Strategies, REDD+ Strategies, National Adaptation Plans of Action (NAPAs), economic and sustainable development plans, national resource mobilization strategy, infrastructure plans, land use plans, strategies for achieving the Millennium Development Goals, etc.'},
+      {title: 'NBSAPs', key: 'NBSAP', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
+      {title: 'Other National Strategies', key: 'other', help: 'e.g. Programme of WOrk on Protected Areas (PoWPA), Poverty Reduction Strategies (PRSPs), National Climate Change Strategies, REDD+ Strategies, National Adaptation Plans of Action (NAPAs), economic and sustainable development plans, national resource mobilization strategy, infrastructure plans, land use plans, strategies for achieving the Millennium Development Goals, etc.'},
     ];
 
+    /*
     $scope.climate_contribution = [
       {title: 'Climate Change Mitigation', key: 'mitigation', help: 'Information about carbon sequestration and/or storage benefits from this project.',},
       {title: 'Climate Change Adaptation', key: 'adaptation', help: 'Information about climate change adaptation benefits from this project, such as storm barriers, flood control, protection against sea level rise, enabling specific mobility in the face of climate change, etc.',},
     ];
+    */
 
     $scope.countries = [];
     $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function(data) {
@@ -85,6 +88,8 @@ define(['app'], function(app) {
     $scope.addTab = function(tabs, tabRepository, tabIndex) {
       console.log(tabIndex);
       console.log(tabRepository[tabIndex]);
+      if(!tabRepository)
+        tabs.push({title: tabIndex, key: tabIndex});
       if(tabs.indexOf(tabRepository[tabIndex]) === -1)
         tabs.push(tabRepository[tabIndex]);
     };
@@ -136,6 +141,17 @@ define(['app'], function(app) {
             $scope[newItemKey].url = rest_server + data.url;
           }
         });
+    };
+
+    $scope.project = {};
+    $scope.project.budget = [];
+    $scope.project.donors = [];
+    $scope.sum = function(arr, key) {
+      var sum = 0;
+      for(var i=0; i!=arr.length; ++i)
+        sum += arr[i][key];
+
+      return sum;
     };
 
     $scope.save = function() {
