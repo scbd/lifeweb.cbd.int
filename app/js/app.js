@@ -42,6 +42,10 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
           console.log('error wth dict');
         });
 
+      $rootScope.changeLanguage = function(lang) {
+        $cookies.language = lang;
+      };
+
     });
   });
 

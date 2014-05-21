@@ -136,6 +136,7 @@ define(['app', 'authentication'], function(app) {
       .when('/admin/projects/create', {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
         title : 'Create a new project',
+        collectionKey: 'projects',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
@@ -144,6 +145,7 @@ define(['app', 'authentication'], function(app) {
       .when('/admin/projects/edit/:title', {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
         title : 'Edit Project',
+        collectionKey: 'projects',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
@@ -152,6 +154,7 @@ define(['app', 'authentication'], function(app) {
       .when('/admin/organizations/create', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
         title : 'Create Organization',
+        collectionKey: 'organizations',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
@@ -160,6 +163,7 @@ define(['app', 'authentication'], function(app) {
       .when('/admin/organizations/edit/:name', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
         title : 'Edit Organization',
+        collectionKey: 'organizations',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
@@ -168,6 +172,7 @@ define(['app', 'authentication'], function(app) {
       .when('/admin/contacts/create', {
         templateUrl: '/app/templates/routes/admin/contacts/edit.html',
         title : 'Create Contact',
+        collectionKey: 'contacts',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
@@ -176,6 +181,7 @@ define(['app', 'authentication'], function(app) {
       .when('/admin/contacts/edit/:name', {
         templateUrl: '/app/templates/routes/admin/contacts/edit.html',
         title : 'Edit Contact',
+        collectionKey: 'contacts',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
