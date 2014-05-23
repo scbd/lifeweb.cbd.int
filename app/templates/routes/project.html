@@ -10,6 +10,7 @@
                 <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
                   <!--<li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>-->
                     <li class="active"><a href="#sum"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
+                    <li><a href="#map"><span class="glyphicon glyphicon-chevron-right"></span>Map</a></li>
                     <li ng-show="eoi.description"><a href="#desc"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
                     <li ng-show="eoi.objectives_info || eoi.objectives_results"><a href="#obj"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
                      <li><a href="#funding"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
@@ -23,11 +24,6 @@
                     <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a href="#attachments"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
                 </ul>
               </div>
-
-              <div data-ng-controller="MapCtrl">
-                <div id='map' style="height:200px; margin-top: 720px; z-index:-100;"></div>
-              </div>
-      
             </div>
       <div class="col-xs-9">
          
@@ -55,7 +51,7 @@
     <table class="lw-tt well">
         <tr>
             <td class="lw-dt" style="padding-bottom: 15px;">
-                <img src="{{eoi.thumbnail}}" class="thumbnail" alt="{{eoi.id}}" style="position: relative; top: 10px; max-width:100px;"></td>
+                <img src="{{eoi.thumbnail}}" class="thumbnail" alt="{{eoi.id}}" style="position: relative; top: 10px; width:120px;"></td>
             <td class="lw-dd">
               <h3>{{eoi.title}}</h3>
             </td>
@@ -129,7 +125,7 @@
                 <div class="row" style="padding-left: 10px; padding-bottom: 0; margin-bottom: 0;">
                     <div class="col-xs-2" ng-repeat="slide in eoi.images.concat(eoi.maps)">
                         <a href="#myModal{{$index}}" class="thumbnail" data-toggle="modal">
-                            <img src="{{slide.url}}&width=200&height=150" alt="x">
+                            <img style="width: 120px;" src="{{slide.url}}&width=200&height=150" alt="x">
                         </a>
                         <!-- Modal -->
                         <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -160,6 +156,11 @@
 
 </section>
 
+<section id="map">
+  <div data-ng-controller="MapCtrl">
+    <div id='map' style="height:200px;"></div>
+  </div>
+</section>
 
 
 <!--==============================================================================-->     
@@ -588,24 +589,21 @@
 
     <div ng-show="eoi.images.length > 0">
         <h4>Maps and Images</h4>
-        <ul class="thumbnails">
-            <li ng-repeat="img in eoi.images">
-                <div class="thumbnail" style="width: 200px; background-color: white; text-align: center;">
-                    <a href="{{img.url}}">
-                        <img src="{{img.url}}&width=50&height=50" class="img-rounded" /></a>
-                    <p>{{img.name}}</p>
-                </div>
-            </li>
+        <div class="row">
+          <div ng-repeat="img in eoi.images" class="col-xs-3">
+            <div class="thumbnail">
+                <a href="{{img.url}}">
+                    <img style="width: 200px" src="{{img.url}}&width=50&height=50" class="img-rounded" /></a>
+                <p class="caption">{{img.name}}</p>
+            </div>
 
-            <li ng-repeat="map in eoi.maps">
-                <div class="thumbnail" style="width: 200px; background-color: white; text-align: center;">
-                    <a href="{{map.url}}">
-                        <img align="center" src="{{map.url}}&width=50&height=50" class="img-rounded" /></a>
-                    <p>{{map.name}}</p>
-                </div>
-            </li>
-
-        </ul>
+            <div ng-repeat="map in eoi.maps" class="thumbnail">
+                <a href="{{map.url}}">
+                    <img style="width: 200px" align="center" src="{{map.url}}&width=50&height=50" class="img-rounded" /></a>
+                <p class="caption">{{map.name}}</p>
+            </div>
+          </div>
+        </div>
     </div>
 
     <div ng-show="eoi.links.length > 0">
