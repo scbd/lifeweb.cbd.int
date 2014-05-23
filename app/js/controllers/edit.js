@@ -1,5 +1,6 @@
 define(['app'], function(app) {
-  app.controller('EditCtrl', function($scope, $routeParams, $http, $upload, $q, $route) {
+  app.controller('EditCtrl', function($scope, $routeParams, $http, $upload, $q, $route, breadcrumbs) {
+    $scope.breadcrumbs = breadcrumbs;
     var collectionKey = $route.current.collectionKey;
     //unpluralize the collection name for the object name
     var singularKey = collectionKey.substr(0,collectionKey.length-1)

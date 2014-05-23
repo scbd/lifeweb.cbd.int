@@ -141,6 +141,7 @@ define(['app', 'authentication'], function(app) {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
+        label: 'Create Project',
       })
       .when('/admin/projects/edit/:title', {
         templateUrl: '/app/templates/routes/admin/projects/edit.html',
@@ -150,6 +151,7 @@ define(['app', 'authentication'], function(app) {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
+        label: 'Edit Project',
       })
       .when('/admin/organizations/create', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
@@ -159,6 +161,7 @@ define(['app', 'authentication'], function(app) {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
         },
+        label: 'Create Organization',
       })
       .when('/admin/organizations/edit/:name', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
@@ -168,6 +171,7 @@ define(['app', 'authentication'], function(app) {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
         },
+        label: 'Edit Organization',
       })
       .when('/admin/contacts/create', {
         templateUrl: '/app/templates/routes/admin/contacts/edit.html',
@@ -177,6 +181,7 @@ define(['app', 'authentication'], function(app) {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
         },
+        label: 'Create Contact',
       })
       .when('/admin/contacts/edit/:name', {
         templateUrl: '/app/templates/routes/admin/contacts/edit.html',
@@ -186,14 +191,16 @@ define(['app', 'authentication'], function(app) {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
         },
+        label: 'Edit Contact',
       })
-      .when('/admin/', {
+      .when('/admin', {
         templateUrl: '/app/templates/routes/admin/index.html',
         title : 'Admin Panel',
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/admin.js']),
         },
+        label: 'Admin',
       })
 
       .when('/404', {

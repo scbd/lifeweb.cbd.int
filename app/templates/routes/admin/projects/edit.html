@@ -8,11 +8,7 @@
   }
 </style>
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
-  <p style="text-align: right">
-    <a ng-click="changeLanguage('en')">English</a> |
-    <a ng-click="changeLanguage('fr')">French</a> |
-    <a ng-click="changeLanguage('es')">Spanish</a>
-  </p>
+  <ng-include src="'/app/partials/admin_header.html'"></ng-include>
   <h1>Expression of Interest</h1>
   <form class="form-horizontal" role="form" ng-submit="save()">
     <afc-input ng-model="project.contact" data-title="Lead Contact" data-placeholder="Contact's full name"></afc-input>
