@@ -12,6 +12,9 @@ define(['app'], function(app) {
     else
       $scope[singularKey] = {};
 
+  //HERE, the form hasn't been introduced to the scope yet. I need to wait till that happens (Link function? Cotnroller definition obejct?), then I need to watch budget and update the validity when it changes.
+    $scope.editProjectForm.addActivity.$setValidity("size", $scope.budget.length >= 1);
+
     $scope.onFileSelect = function($files, newItemKey, obj) {
       var rest_server = 'http://localhost:1818';
       if($files.length == 1)
