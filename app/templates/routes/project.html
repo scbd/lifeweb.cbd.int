@@ -1,5 +1,5 @@
     <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet">
-    <div class="container"   style="min-height:700px!important;" >
+    <div class="container"   style="min-height:700px!important;margin-bottom:200px;" >
        
 
        <!-- Docs nav
@@ -10,7 +10,7 @@
                 <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
                   <!--<li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>-->
                     <li class="active"><a href="#sum"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
-                    <li><a href="#map"><span class="glyphicon glyphicon-chevron-right"></span>Map</a></li>
+                    <!-- <li><a href="#map"><span class="glyphicon glyphicon-chevron-right"></span>Map</a></li> -->
                     <li ng-show="eoi.description"><a href="#desc"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
                     <li ng-show="eoi.objectives_info || eoi.objectives_results"><a href="#obj"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
                      <li><a href="#funding"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
@@ -156,11 +156,11 @@
 
 </section>
 
-<section id="map">
+<!-- <section id="map">
   <div data-ng-controller="MapCtrl">
     <div id='map' style="height:200px;"></div>
   </div>
-</section>
+</section> -->
 
 
 <!--==============================================================================-->     
@@ -504,14 +504,14 @@
             <td style="width:30%;">
         
                 <div ng-repeat="r in p.roles" style="display: inline; text-transform: capitalize">
-                    <span class="label">{{r}}</span><span ng-show="!$last">, </span>
+                    <span class="label" style="color:#333;">{{r}}</span><span ng-show="!$last">, </span>
                 </div>
                 <span ng-show="!p.roles || p.roles.length ==0">Partner</span>
 
-                {{p.info}} 
-    
             </td>
             <td>
+
+            <p ng-show="p.info">{{p.info}} </p>
 
                <img ng-show="p.organization.logo" src="{{p.organization.logo}}" style="max-width:100px;max-height:45px;" class="pull-right">
 
