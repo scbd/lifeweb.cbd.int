@@ -6,6 +6,8 @@ define(['app', 'authentication'], function(app) {
       $locationProvider.html5Mode(true);
       $locationProvider.hashPrefix('!');
 
+      var allowedPrivs = ['LifewebAdmin'];
+
       $routeProvider
       .when('/', {
         templateUrl: '/app/templates/routes/home.html',
@@ -138,7 +140,7 @@ define(['app', 'authentication'], function(app) {
         title : 'Create a new project',
         collectionKey: 'projects',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
         label: 'Create Project',
@@ -148,7 +150,7 @@ define(['app', 'authentication'], function(app) {
         title : 'Edit Project',
         collectionKey: 'projects',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/editproject.js']),
         },
         label: 'Edit Project',
@@ -158,7 +160,7 @@ define(['app', 'authentication'], function(app) {
         title : 'Create Organization',
         collectionKey: 'organizations',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
         },
         label: 'Create Organization',
@@ -168,17 +170,37 @@ define(['app', 'authentication'], function(app) {
         title : 'Edit Organization',
         collectionKey: 'organizations',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
         },
         label: 'Edit Organization',
+      })
+      .when('/admin/events/create', {
+        templateUrl: '/app/templates/routes/admin/events/edit.html',
+        title : 'Create Event',
+        collectionKey: 'events',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editevent.js']),
+        },
+        label: 'Create Event',
+      })
+      .when('/admin/events/edit/:name', {
+        templateUrl: '/app/templates/routes/admin/events/edit.html',
+        title : 'Edit Events',
+        collectionKey: 'events',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editevent.js']),
+        },
+        label: 'Edit Event',
       })
       .when('/admin/contacts/create', {
         templateUrl: '/app/templates/routes/admin/contacts/edit.html',
         title : 'Create Contact',
         collectionKey: 'contacts',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
         },
         label: 'Create Contact',
@@ -188,7 +210,7 @@ define(['app', 'authentication'], function(app) {
         title : 'Edit Contact',
         collectionKey: 'contacts',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
         },
         label: 'Edit Contact',
@@ -197,7 +219,7 @@ define(['app', 'authentication'], function(app) {
         templateUrl: '/app/templates/routes/admin/index.html',
         title : 'Admin Panel',
         resolve: {
-          user : resolveUser(),
+          user : resolveUser(allowedPrivs),
           dependencies: resolveJS(['/app/js/controllers/admin.js']),
         },
         label: 'Admin',
@@ -217,11 +239,21 @@ define(['app', 'authentication'], function(app) {
       //
       //
       //==================================================
-      function resolveUser() { 
+      function resolveUser(requiredPrivilages) { 
 
-        return ['$rootScope', 'authentication', function($rootScope, authentication) {
+        return ['$rootScope', 'authentication', '$location', function($rootScope, authentication, $location) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
+            if(requiredPrivilages) {
+              var notAllowed = true;
+              for(var i=0; i!=user.roles.length; ++i)
+                if(requiredPrivilages.indexOf(user.roles[i]) != -1)
+                  notAllowed = false;
+
+              if(notAllowed)
+                $location.path('/login'); //TODO: add in a redirect, so they can easily login, then go back to where they were.
+            }
+
             return user;
           })
         }];

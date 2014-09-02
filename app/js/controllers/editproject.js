@@ -43,6 +43,16 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
       $scope.countries = data;
     });
 
+    $scope.countriesAC = function() {
+      return $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
+        var countries = data.data;
+        for(var i = 0; i != countries.length; ++i)
+          countries[i].__value = countries[i].name;
+
+        return countries;
+      });
+    };
+
     $scope.countryOptions = function($query) {
       var deferred = $q.defer();
       var matchedOptions = [];
@@ -67,7 +77,7 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
       return deferred.promise;
     };
 
-    $scope.keywords = ['Chips Ahoy', 'Oreo', 'Hydrox', 'Fudgeeos', 'Fig Newtons']
+    $scope.keywords = [];//['Chips Ahoy', 'Oreo', 'Hydrox', 'Fudgeeos', 'Fig Newtons']
 
     $scope.keywordOptions = function($query) {
       var deferred = $q.defer();
@@ -80,18 +90,44 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
       return deferred.promise;
     };
 
+    $scope.contrib_climate = {
+      ecoservices1: 'Climate Change Mitigation',
+      ecoservices2: 'Climate Change Adaption',
+      ecoservices3: 'Freshwater Security',
+      ecoservices4: 'Food Security',
+      ecoservices5: 'Human Health',
+      ecoservices6: 'Cultural and Spiritual Access',
+      ecoservices7: 'Income Generation',
+    };
+
+    $scope.roles = function() {
+      var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
+      deferred.resolve([
+        {__value: 'Community Engagement'},
+        {__value: 'Implementation'},
+        {__value: 'Monitoring'},
+        {__value: 'Partner Coordination'},
+        {__value: 'Project Management'},
+        {__value: 'Strategic Planning'},
+        {__value: 'Technical Support'},
+      ]);
+      return deferred.promise;
+    };
+
     $scope.addTab = function(tabs, tabRepository, tabIndex) {
       console.log(tabIndex);
       console.log(tabRepository[tabIndex]);
+      if(tabIndex == '_')
+        return;
       if(!tabRepository)
-        tabs.push({title: tabIndex, key: tabIndex});
+        tabs.push({title: $scope.contrib_climate[tabIndex], key: tabIndex});
       if(tabs.indexOf(tabRepository[tabIndex]) === -1)
         tabs.push(tabRepository[tabIndex]);
     };
 
     $scope.addItem = function(scopeNewItemKey, projectKey) {
-      if(!$scope.project[projectKey]) $scope.project[projectKey] = [];
-      $scope.project[projectKey].push($.extend({}, $scope[scopeNewItemKey]));
+      if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
+      $scope.document[projectKey].push($.extend({}, $scope[scopeNewItemKey]));
       $scope[scopeNewItemKey] = {};
     };
 
@@ -103,8 +139,8 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
     };
 
     $scope.addPrimitive = function(scopeNewItemKey, projectKey) {
-      if(!$scope.project[projectKey]) $scope.project[projectKey] = [];
-      $scope.project[projectKey].push($scope[scopeNewItemKey]);
+      if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
+      $scope.document[projectKey].push($scope[scopeNewItemKey]);
       $scope[scopeNewItemKey] = '';
     }
 
@@ -115,9 +151,12 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
        }
     };
 
-    $scope.project = {};
-    $scope.project.budget = [];
-    $scope.project.donors = [];
+    //TODO: this is ugly... it well be replaced when we get the document... it's weird... it's also boilerplate code.
+    $scope.document.budget = [];
+    $scope.document.donors = [];
+    $q.when($scope.documentPromise).then(function(document) {
+      $scope.document = document;
+    });
     $scope.sum = function(arr, key) {
       var sum = 0;
       for(var i=0; i!=arr.length; ++i)

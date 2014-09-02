@@ -1,0 +1,103 @@
+<link href="/app/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet">
+<style>
+  .dragdrophover {
+    background-color: #DDDDFF;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+</style>
+<div class="container" style="margin-top: 100px;" ng-controller="EditEventCtrl">
+  <h1>Event</h1>
+  <form role="form" ng-submit="save('lwEvent')" class="form-horizontal">
+    <afc-textarea title="Description" ng-model="document.description"></afc-textarea>
+    <afc-input type="date" ng-model="document.startDate" title="Start Date" placeholder="Date document begins"></afc-input>
+    <afc-input type="date" ng-model="document.endDate" title="End Date" placeholder="Date document finishes"></afc-input>
+    <afc-input type="string" ng-model="document.type" title="Event Type" placeholder="Select a type..."></afc-input>
+    <!--A directive should be created for location. country, address, and lon lat-->
+    <!--Fancy: if they fill in the address we use a service to get lon lat, if they use lon lat, we use a service to find the closest address-->
+    <fieldset>
+      <legend>Location</legend>
+      <afc-autocomplete ng-model="document.location.country" source="countriesAC" selectbox="true" placeholder="Country..."></afc-autocomplete>
+      <afc-textarea title="Address" ng-model="document.location.address" placeholder="Enter the full address of the event..."></afc-textarea>
+      <lonlat-input ng-model="document.location.coordinates" help="Longitude and Latitude of event location."></longlat-input>
+    </fieldset>
+    <h3>Documents For Event</h3>
+    <h4>Please add all the events documents, including schedules or such (*Clarify this header*)</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>title</th>
+          <th>tags</th>
+          <th>url</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="doc in document.documents">
+          <td><input type="text" ng-model="doc.name" /></td>
+          <!--TODO: once I know what tags are, turn this into ng-tags or autocomplete-->
+          <td><input type="text" ng-model="doc.tags" /></td>
+          <td>
+            <a ng-href="{{file_server}}{{doc.url}}">View Document</a>
+            <button ng-click="documents.documents.splice($index, 1)">X</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" ng-model="newDocument.name" ng-keydown="maybeAddItem($event, 'newDocument', 'documents')" /></td>
+          <td><input type="text" ng-model="newDocument.tags" ng-keydown="maybeAddItem($event, 'newDocument', 'documents')" /></td>
+          <td ng-file-drop="onFileSelect($files, 'newDocument')" ng-file-drag-over-class="dragdrophover"><div><input type="text" class="pull-left" ng-model="newDocument.url" ng-keydown="maybeAddItem($event, 'newDocument', 'documents')" /></div><input type="file" ng-file-select="onFileSelect($files, 'newDocument')" class="pull-left" /><button type="button" ng-click="addItem('newDocument', 'documents')">Add</button></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Images</h3>
+    <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
+    <div class="row">
+      <table class="col-sm-9">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Image Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="image in document.images">
+            <td><input type="text" ng-model="image.title" /></td>
+            <td><input type="text" ng-model="image.description" /></td>
+            <td><a ng-href="{{file_server}}{{image.url}}">View Image</a><button ng-click="document.images.splice($index, 1)">X</button></td>
+          </tr>
+          <tr>
+            <td><input type="text" ng-model="newImage.title" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></td>
+            <td><input type="text" ng-model="newImage.description" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></td>
+            <td ng-file-drop="onFileSelect($files, 'newImage')" ng-file-drag-over-class="dragdrophover"><div><input type="text" class="pull-left" ng-model="newImage.url" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></div><input type="file" ng-file-select="onFileSelect($files, 'newImage')" class="pull-left" /><button type="button" ng-click="addItem('newImage', 'images')">Add</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <fieldset class="col-sm-3">
+        <legend>New Image Preview</legend>
+        <img ng-src="{{file_server}}{{newImage.url}}" style="max-height: 100px;"></img>
+      </fieldset>
+    </div>
+    <!--TODO: add preview-->
+    <div class="row form-group" ng-file-drop="onFileSelect($files, 'coverImage', document)" ng-file-drag-over-class="dragdrophover">
+      <label class="col-xs-2 control-label">Cover Image</label>
+      <div class="col-xs-5">
+        <input type="text" class="pull-left" ng-model="document.coverImage" />
+      </div>
+      <div class="col-xs-5">
+        <input type="file" ng-file-select="onFileSelect($files, 'coverImage', document)" class="pull-left" />
+      </div>
+    </div>
+    
+    <h4>organizations km-references...</h4>
+    <h3>add it once i know where to get them</h3>
+    
+    <h4>Event's Project</h4>
+    <div km-reference ng-model="project" loader="loadRecords(identifier, 'lwProjects')"></div>
+
+    <div class="form-group">
+      <button type="submit" class="form-control">Save</button>
+    </div>
+  </form>
+</div>

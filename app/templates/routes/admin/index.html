@@ -3,7 +3,7 @@
   <fieldset>
     <legend>Projects</legend>
     <div ng-repeat="project in projects">
-      <a ng-href="/admin/projects/edit/{{project.title}}">{{project.title}}</a><button type="button" ng-click="deleteProject(project)">X</button>
+      <a ng-href="/admin/projects/edit/{{project.identifier}}">{{project.title}}</a><button type="button" ng-click="deleteProject(project)">X</button>
     </div>
   </fieldset>
   <fieldset>

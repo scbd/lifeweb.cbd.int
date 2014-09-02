@@ -10,26 +10,30 @@
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
   <ng-include src="'/app/partials/admin_header.html'"></ng-include>
   <h1>Expression of Interest</h1>
-  <form novalidate name="editProjectForm" class="form-horizontal" role="form" ng-submit="save()">
-    <afc-input ng-model="project.contact" required data-title="Lead Contact" data-placeholder="Contact's full name"></afc-input>
+  <form novalidate name="editProjectForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
+    <afc-input ng-model="document.contact" required data-title="Lead Contact" data-placeholder="Contact's full name"></afc-input>
     <div class="form-group">
       <label for="Countries" class="col-sm-2 control-label">Countries</label>
       <div class="col-sm-10">
-        <tags-input min-tags="1" id="Countries" ng-model="project.countries">
+        <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Please enter the countries involved..." multiple="true"></afc-autocomplete>
+        <!--
+        <tags-input min-tags="1" id="Countries" ng-model="document.countries">
           <auto-complete source="countryOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
         </tags-input>
+        -->
       </div>
     </div>
-    <afc-input ng-model="project.title" required data-title="Title" data-placeholder="title"></afc-input>
-    <afc-input type="number" ng-model="project.timeframe" title="Timeframe" placeholder="years"></afc-input>
-    <afc-text ng-model="project.abstract" required data-title="Abstract" data-placeholder="Abstract of Project"></afc-text>
-    <div class="row form-group" ng-file-drop="onFileSelect($files, 'thumbnail', project)" ng-file-drag-over-class="dragdrophover">
+    <afc-input ng-model="document.title" required data-title="Title" data-placeholder="title"></afc-input>
+    <afc-input type="number" ng-model="document.timeframe" title="Timeframe" placeholder="years"></afc-input>
+    <afc-text ng-model="document.abstract" required data-title="Abstract" data-placeholder="Abstract of Project"></afc-text>
+    <!--TODO: add preview -->
+    <div class="row form-group" ng-file-drop="onFileSelect($files, 'thumbnail', document)" ng-file-drag-over-class="dragdrophover">
       <label class="col-xs-2 control-label">Thumbnail</label>
       <div class="col-xs-5">
-        <input type="text" class="pull-left" ng-model="project.thumbnail" />
+        <input type="text" class="pull-left" ng-model="document.thumbnail" />
       </div>
       <div class="col-xs-5">
-        <input type="file" ng-file-select="onFileSelect($files, 'thumbnai', project)" class="pull-left" />
+        <input type="file" ng-file-select="onFileSelect($files, 'thumbnail', document)" class="pull-left" />
       </div>
     </div>
         
@@ -37,31 +41,35 @@
     
     <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets</h3>
     <h4>Lifeweb facilitates financing that contribute toward the achievement of the area-based Aichi Targets in the 2011-2020 Strategic Plan for Biodiversity.</h4>
-    <select ng-change="addTab(aichi_target_tabs, aichi_targets, addingAichiTab)" ng-model="addingAichiTab" ng-options="idx as target.name for (idx, target) in aichi_targets"></select>
-    <tabbed-textareas rows="4" ng-model="project.aichi_targets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="name" key-key="identifier"></tabbed-textareas>
+    <select ng-change="addTab(aichi_target_tabs, aichi_targets, addingAichiTab)" ng-model="addingAichiTab" ng-options="idx as target.name for (idx, target) in aichi_targets">
+      <option value="">Select an Aichi Target attributed to this project...</option>
+    </select>
+    <tabbed-textareas rows="4" ng-model="document.aichi_targets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="name" key-key="identifier"></tabbed-textareas>
     
     <h3>Alignment with National Planning</h3>
     <h4>Consistent with the decision X/31, please indicate the relevance between this sbumission and the following planning processes</h4>
-    <tabbed-textareas rows="4" ng-model="project.national_alignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+    <tabbed-textareas rows="4" ng-model="document.national_alignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
     <h3>Ecological Contribution</h3>
     <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
-    <textarea class="form-control" ng-model="project.ecological_contribution" rows="4"></textarea>
+    <textarea class="form-control" ng-model="document.ecological_contribution" rows="4"></textarea>
 
     <h3>Contribution to Climate Change</h3>
-    <select ng-model="addingBenefitsTab" ng-change="addTab(climate_contribution_tabs, 0, addingBenefitsTab)">
-      <option value="" selected>Ecosystem Benefits</option>
+    <select ng-model="addingBenefitsTab" ng-change="addTab(climate_contribution_tabs, 0, addingBenefitsTab)" ng-options="key as value for (key, value) in contrib_climate">
+      <option value="" selected>Select a contribution to attribute to this project...</option>
+    <!--
       <option value="ecoservices1">Climate Change Mitigation</option>
       <option value="ecoservices2">Climate Change Adapation</option>
-      <option value="ecoservices3">Freahwater Security</option>
+      <option value="ecoservices3">Freshwater Security</option>
       <option value="ecoservices4">Food Security</option>
       <option value="ecoservices5">Human Health</option>
       <option value="ecoservices6">Cultural and Spiritual Access</option>
       <option value="ecoservices7">Income Generation</option>
+      -->
     </select>
 
 
-    <tabbed-textareas rows="4" ng-model="project.climate_contribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+    <tabbed-textareas rows="4" ng-model="document.climate_contribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
     <hr />
 
@@ -72,12 +80,14 @@
         <tr>
           <th>Partner Name</th>
           <th>Role In This Project</th>
+          <th></th>
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="partner in project.institutional_context">
+        <tr ng-repeat="partner in document.institutional_context">
           <td><input type="text" ng-model="partner.name" /></td>
           <td>
+          <!--
             <select ng-model="partner.role">
               <option value="community_engagement">Community Engagement</option>
               <option value="implementation">Implementation</option>
@@ -87,12 +97,17 @@
               <option value="strategic_planning">Strategic Planning</option>
               <option value="technical_support">Technical Support</option>
             </select>
-            <button ng-click="project.institutional_context.splice($index, 1)">X</button>
+            -->
+            <afc-autocomplete source="roles" ng-model="partner.role"></afc-autocomplete>
+          </td>
+          <td>
+            <button ng-click="document.institutional_context.splice($index, 1)">X</button>
           </td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutional_context')" /></td>
-          <td>
+          <td class="roleButton">
+          <!--
             <select ng-model="newpartner.role">
               <option value="community_engagement">Community Engagement</option>
               <option value="implementation">Implementation</option>
@@ -102,7 +117,12 @@
               <option value="strategic_planning">Strategic Planning</option>
               <option value="technical_support">Technical Support</option>
             </select>
+            -->
+            <afc-autocomplete source="roles" ng-model="newpartner.role"></afc-autocomplete>
+          </td>
+          <td>
             <button type="button" ng-click="addItem('newpartner', 'institutional_context')">Add</button></td>
+          </td>
         </tr>
       </tbody>
     </table>
@@ -117,13 +137,13 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="activity in project.budget">
+        <tr ng-repeat="activity in document.budget">
           <td><input type="text" ng-model="activity.activity" /></td>
           <td><input type="text" ng-model="activity.result" /></td>
-          <td><input type="number" ng-model="activity.cost" /><button ng-click="project.budget.splice($index, 1)">X</button></td>
+          <td><input type="number" ng-model="activity.cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
         </tr>
         <tr>
-          <td colspan="3" style="text-align: right">Total: ${{sum(project.budget, 'cost')}}</td>
+          <td colspan="3" style="text-align: right">Total: ${{sum(document.budget, 'cost')}}</td>
         </tr>
         <tr>
           <td><input type="text" name="addActivity" ng-model="newActivity.activity" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" /></td>
@@ -138,7 +158,7 @@
     <div class="form-group">
       <label for="keywords" class="col-sm-2 control-label">Keywords</label>
       <div class="col-sm-10">
-        <tags-input id="keywords" ng-model="project.keywords">
+        <tags-input id="keywords" ng-model="document.keywords">
           <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
         </tags-input>
       </div>
@@ -156,10 +176,10 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="image in project.images">
+          <tr ng-repeat="image in document.images">
             <td><input type="text" ng-model="image.title" /></td>
             <td><input type="text" ng-model="image.description" /></td>
-            <td><a ng-href="{{image.url}}">View Image</a><button ng-click="project.images.splice($index, 1)">X</button></td>
+            <td><a ng-href="{{file_server}}{{image.url}}">View Image</a><button ng-click="document.images.splice($index, 1)">X</button></td>
           </tr>
           <tr>
             <td><input type="text" ng-model="newImage.title" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></td>
@@ -170,18 +190,18 @@
       </table>
       <fieldset class="col-sm-3">
         <legend>New Image Preview</legend>
-        <img ng-src="{{newImage.url}}" style="max-height: 100px;"></img>
+        <img ng-src="{{file_server}}{{newImage.url}}" style="max-height: 100px;"></img>
       </fieldset>
     </div>
 
     <h3>Links with the World Database on Protected Areas</h3>
     <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project.. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
-    <div ng-repeat="protected_area in project.protected_areas">
+    <div ng-repeat="protected_area in document.protected_areas">
       <div class="col-sm-10">
         <input type="text" class="form-control" ng-model="protected_area" />
       </div>
       <div class="col-sm-2">
-        <a ng-href="{{protected_area}}">View</a><button ng-click="project.protected_areas.splice($index, 1)">X</button>
+        <a ng-href="{{protected_area}}">View</a><button ng-click="document.protected_areas.splice($index, 1)">X</button>
       </div>
     </div>
     <div class="col-sm-10">
@@ -203,10 +223,10 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="map in project.maps">
+        <tr ng-repeat="map in document.maps">
           <td><input type="text" ng-model="map.title" /></td>
           <td><input type="text" ng-model="map.description" /></td>
-          <td><a ng-href="{{map.url}}">View Map</a><button ng-click="project.maps.splice($index, 1)">X</button></td>
+          <td><a ng-href="{{file_server}}{{map.url}}">View Map</a><button ng-click="document.maps.splice($index, 1)">X</button></td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newMap.title" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" /></td>
@@ -222,7 +242,7 @@
     </table>
 
     <h3>Coordinates</h3>
-    <lonlat-input ng-model="project.coordinates" required help="General Longitude and Latutide of the project."></lonlat-input>
+    <lonlat-input ng-model="document.coordinates" required help="General Longitude and Latutide of the project."></lonlat-input>
 
     <h3>Attachments</h3>
     <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
@@ -236,7 +256,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="attachment in project.attachments">
+        <tr ng-repeat="attachment in document.attachments">
           <td><input type="text" ng-model="attachment.title" /></td>
           <td><input type="text" ng-model="attachment.description" /></td>
           <td>
@@ -244,7 +264,7 @@
               <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
             </tags-input>
           </td>
-          <td><a ng-href="{{attachment.url}}">Download Attachment</a><button ng-click="project.attachments.splice($index, 1)">X</button></td>
+          <td><a ng-href="{{file_server}}{{attachment.url}}">Download Attachment</a><button ng-click="document.attachments.splice($index, 1)">X</button></td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newAttachment.title" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" /></td>
@@ -268,7 +288,7 @@
 
     <h3>Additional Project Information</h3>
 
-    <afc-textarea title="Additional Information" ng-model="project.additional_information"></afc-textarea>
+    <afc-textarea title="Additional Information" ng-model="document.additional_information"></afc-textarea>
 
     <hr />
 
@@ -284,15 +304,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr ng-repeat="donor in project.donors">
+        <tr ng-repeat="donor in document.donors">
           <td><input type="text" ng-model="donor.name" /></td>
           <td><input type="text" ng-model="donor.description" /></td>
           <td><input type="number" ng-model="donor.funding" /></td>
           <td><input type="date" ng-model="donor.date_donated" /></td>
-          <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="project.donors.splice($index, 1)">X</button></td>
+          <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
         </tr>
         <tr>
-          <td colspan="5" style="text-align: right">Total: ${{sum(project.donors, 'funding')}}</td>
+          <td colspan="5" style="text-align: right">Total: ${{sum(document.donors, 'funding')}}</td>
         </tr>
         <tr>
           <td><input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /></td>
@@ -308,7 +328,8 @@
     <hr />
 
     <div class="form-group">
-      <button type="submit" ng-disabled="editProjectForm.$invalid" class="form-control">Save</button>
+      <!--<button type="submit" ng-disabled="editProjectForm.$invalid" class="form-control">Save</button>-->
+      <button type="submit" class="form-control">Save</button>
     </div>
   </form>
 </div>
