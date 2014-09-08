@@ -4,6 +4,7 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
  
     $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
+        console.log('aichi: ', response);
         $scope.aichi_targets = response;
       })
       .error(function(response, status) {

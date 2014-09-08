@@ -14,6 +14,19 @@ define(['app'], function(app, map) {
       });
       */
 
+    query = '(type eq \'lwEvent\')';
+    IStorage.drafts.query(query, draftParams)
+      .then(function(response) {
+        $scope.events = response.data.Items;
+      })
+      /*
+      .error(function(response, status, headers, config) {
+          console.log('*ERROR* Response (code '+status+'): ', response);
+      });
+      */
+
+
+
     //$http.get('http://localhost:1818/organizations')
     query = '(type eq \'lwOrganization\')';
     IStorage.drafts.query(query, draftParams)

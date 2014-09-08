@@ -1,0 +1,36 @@
+var fs = require('q-io/fs');
+var http = require('q-io/http');
+var q = require('q');
+var util = require('util');
+var linq = require('linq');
+
+(function() {
+  //TODO: paste the command i used here as an example.
+  var oldProjectsFile = process.argv[2];
+  var newProjectsUrl = process.argv[3];
+
+  var qOldProjects = fs.read(oldProjectsFile);
+  var qAichi = http.read('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms');
+
+  q.all([qOldProjects, qAichi]).then(function(results) {
+      var projects = JSON.parse(results[0]);
+
+       //console.log('keys: ', string);
+      var aichi_targets = linq.from(results[1]).data.toArray();
+      console.log('aichi count: ', aichi_targets.length);
+      console.log(util.inspect(aichi_targets[0], {showHidden: false, depth: null}));
+      console.log('target: ', JSON.stringify(aichi_targets[0], null, 2));
+      console.log('Total old projects received: ', projects.length);
+
+      var newProjects = [];
+      for(var i=0; i!=projects.length; ++i) {
+        //setup aichi targets
+        var aichi = {};
+        for(var k=0; k!=projects[i].aichi_targets.length; ++k) {
+        }
+          
+        newProjects.push({
+        });
+      }
+  });
+})();

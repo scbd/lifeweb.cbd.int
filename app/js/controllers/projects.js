@@ -8,6 +8,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI',], functio
 
           $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
               $scope.projects = data;
+              console.log('data: ', data);
           });
       }
       else {
