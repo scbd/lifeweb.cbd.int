@@ -1,5 +1,6 @@
 <link href="/app/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
 <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet">
+<link href="/app/css/lifeweb_admin.css" rel="stylesheet">
 <style>
   .dragdrophover {
     background-color: #DDDDFF;
@@ -79,49 +80,34 @@
       <thead>
         <tr>
           <th>Partner Name</th>
+          <th style="width: 40px;">Info</th>
           <th>Role In This Project</th>
           <th></th>
         </tr>
       </thead>
       <tbody>
+        <tr ng-hide="document.institutional_context.length">
+          <td colspan="4" style="font-weight: bold; text-align: center;">... No Partners. Please add a partner below ...</td>
+        </tr>
         <tr ng-repeat="partner in document.institutional_context">
           <td><input type="text" ng-model="partner.name" /></td>
+          <td><input type="text" ng-model="partner.info" /></td>
           <td>
-          <!--
-            <select ng-model="partner.role">
-              <option value="community_engagement">Community Engagement</option>
-              <option value="implementation">Implementation</option>
-              <option value="monitoring">Monitoring</option>
-              <option value="partner_coordination">Partner Coordination</option>
-              <option value="project_management">Project Management</option>
-              <option value="strategic_planning">Strategic Planning</option>
-              <option value="technical_support">Technical Support</option>
-            </select>
-            -->
             <afc-autocomplete source="roles" ng-model="partner.role"></afc-autocomplete>
           </td>
           <td>
             <button ng-click="document.institutional_context.splice($index, 1)">X</button>
           </td>
         </tr>
+        <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
         <tr>
-          <td><input type="text" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutional_context')" /></td>
-          <td class="roleButton">
-          <!--
-            <select ng-model="newpartner.role">
-              <option value="community_engagement">Community Engagement</option>
-              <option value="implementation">Implementation</option>
-              <option value="monitoring">Monitoring</option>
-              <option value="partner_coordination">Partner Coordination</option>
-              <option value="project_management">Project Management</option>
-              <option value="strategic_planning">Strategic Planning</option>
-              <option value="technical_support">Technical Support</option>
-            </select>
-            -->
-            <afc-autocomplete source="roles" ng-model="newpartner.role"></afc-autocomplete>
-          </td>
           <td>
-            <button type="button" ng-click="addItem('newpartner', 'institutional_context')">Add</button></td>
+            <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutional_context')" placeholder="Full Name"/><br />
+            <afc-autocomplete source="roles" ng-model="newpartner.role" placeholder="Role"></afc-autocomplete><br />
+            <button type="button" ng-click="addItem('newpartner', 'institutional_context')">Add New Partner</button>
+          </td>
+          <td colspan="3">
+            <textarea style="width: 600px; height: 100%;" ng-model="newpartner.info" ng-keydown="maybeAddItem($event, 'newpartner', 'institutional_context')" placeholder="Partner Role Information"></textarea>
           </td>
         </tr>
       </tbody>
@@ -195,7 +181,7 @@
     </div>
 
     <h3>Links with the World Database on Protected Areas</h3>
-    <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project.. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
+    <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
     <div ng-repeat="protected_area in document.protected_areas">
       <div class="col-sm-10">
         <input type="text" class="form-control" ng-model="protected_area" />
