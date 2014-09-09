@@ -39,6 +39,13 @@ var q = require('q');
         newProject.title = oldProject.title;
         newProject.timeframe = 0; //I don't think anything exists in old projects
         newProject.abstract = oldProject.summary;
+        newProject.additional_information = '';
+        if(oldProject.description)
+          newProject.additional_information += '\n[description]\n'+oldProject.description;
+        if(oldProject.participation)
+          newProject.additional_information += '\n[participation]\n'+oldProject.participation;
+        if(oldProject.governance)
+          newProject.additional_information += '\n[governance]\n'+oldProject.governance;
         newProject.thumbnail = oldProject.thumbnail;
         newProject.national_alignment = {
           NBASP: oldProject.alignment_nbasp,
@@ -130,50 +137,68 @@ var q = require('q');
 
         //******* Data requiring ajax calls *******//
         //partner roles
+        newProject.institutionalContext = [];
         var rolesUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?eoi='+oldProject.id;
         allPromises.push(getJson(rolesUrl).then((function(oldProj, newProj) {
           return function(data) {
-            //data.roles might contains an array of the roles, but i haven't bee able to tell..
-            //data.info sounds like a description of the role
-            //data.id ???
-            //data.header is a guid
-            //data.organization.name is the only kind of name I could find.
             var contacts = JSON.parse(data.toString());
-            console.log('length: ', contacts.length);
-            for(var j=0; j!=contacts.length; ++j)
-              console.log('partner roles: ', contacts[j].roles);
+            for(var j=0; j!=contacts.length; ++j) {
+              newProj.institutionalContext.push({
+                partner: contacts[j].header,
+                info: contacts[j].info,
+                role: 'Other',
+              });
+              if(contacts[j].roles.length >= 1)
+                newProj.institutionalContext[j].role = contacts[j].roles[0];
+            }
           };
         })(oldProject, newProject)));
 
-        /*
         //contact roles
         var contactsUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?eoi='+oldProject.id;
         allPromises.push(getJson(contactsUrl).then((function(oldProj, newProj) {
           return function(data) {
             var contacts = JSON.parse(data.toString());
-            console.log('length: ', contacts.length);
             for(var j=0; j!=contacts.length; ++j)
-              console.log('partner roles: ', contacts[j].role);
+              newProj.institutionalContext.push({
+                partner: contacts[j].header,
+                info: contacts[j].info,
+                role: contacts[j].role,
+              });
           };
         })(oldProject, newProject)));
 
         //focal points powpa
         var fpPowpaUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?type=powpa&eoi='+oldProject.id;
-        allPromises.push(getJson(rolesUrl).then((function(oldProj, newProj) {
+        allPromises.push(getJson(fpPowpaUrl).then((function(oldProj, newProj) {
           return function(data) {
-            //console.log('partner roles: ', JSON.parse(data.toString()));
+            var contacts = JSON.parse(data.toString());
+            for(var j=0; j!=contacts.length; ++j) {
+              newProj.institutionalContext.push({
+                partner: contacts[j].Prefix + ' ' + contacts[j].FirstName + ' ' + contacts[j].LastName,
+                info: '[Powpa Focal Point]',
+                role: 'Other',
+              });
+            }
           };
         })(oldProject, newProject)));
 
         //focal points national
         var fpNationalUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?type=national&eoi='+oldProject.id;
-        allPromises.push(getJson(rolesUrl).then((function(oldProj, newProj) {
+        allPromises.push(getJson(fpNationalUrl).then((function(oldProj, newProj) {
           return function(data) {
-            //console.log('partner roles: ', JSON.parse(data.toString()));
+            var contacts = JSON.parse(data.toString());
+            for(var j=0; j!=contacts.length; ++j)
+              newProj.institutionalContext.push({
+                partner: contacts[j].Prefix + ' ' + contacts[j].FirstName + ' ' + contacts[j].LastName,
+                info: '[National Focal Point]',
+                role: 'Other',
+              });
           };
         })(oldProject, newProject)));
 
-        //functing matches
+/*
+        //donors
         var fundingUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?eoi='+oldProject.id;
         allPromises.push(getJson(rolesUrl).then((function(oldProj, newProj) {
           return function(data) {

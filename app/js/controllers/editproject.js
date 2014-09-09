@@ -111,6 +111,7 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
         {__value: 'Project Management'},
         {__value: 'Strategic Planning'},
         {__value: 'Technical Support'},
+        {__value: 'Other'},
       ]);
       return deferred.promise;
     };
