@@ -1,5 +1,5 @@
 define(['app'], function(app) {
-    app.controller('SigninCtrl', function ($scope, $http, $window, $cookies) {
+    app.controller('SigninCtrl', function ($scope, $http, $window, $cookies, $location) {
       $scope.email = null;
       $scope.password = null;
 
@@ -20,14 +20,23 @@ define(['app'], function(app) {
           var authenticationFrame = angular.element(document.querySelector('#authenticationFrame'))[0];
           authenticationFrame.contentWindow.postMessage(JSON.stringify(response), 'https://accounts.cbd.int');
 
-          //TODO: WHY??????
-        	$window.location.href = $window.location.href;
+          //TODO: don't reload, instead just show our new user info.
+          if($cookies.redirect)
+            $window.location.url = $cookies.loginRedirect;
+          else
+            $window.location.reload();
         }, function onerror(error) {
         	$scope.password     = "";
           $scope.errorInvalid = error.status == 403;
           $scope.errorTimeout = error.status != 403;
           $scope.waiting      = false;
         });
+      };
+
+      $scope.doSignOut = function() {
+            document.cookie = "authenticationToken=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+            var redirect_uri = encodeURIComponent($location.absUrl());
+            $window.location.href = 'https://accounts.cbd.int/signout?redirect_uri='+redirect_uri;
       };
     });
 });

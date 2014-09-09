@@ -9,6 +9,13 @@ define(['app', 'authentication'], function(app) {
       var allowedPrivs = ['LifewebAdmin'];
 
       $routeProvider
+      .when('/login', {
+        templateUrl: '/app/templates/routes/login.html',
+        title: 'Login',
+        resolve: {
+          user : resolveUser(),
+        },
+      })
       .when('/', {
         templateUrl: '/app/templates/routes/home.html',
         title : 'Welcome',
@@ -226,7 +233,8 @@ define(['app', 'authentication'], function(app) {
       })
 
       .when('/404', {
-        templateUrl: '/app/views/404.html',
+        templateUrl: '/app/templates/routes/404.html',
+        title: 'Page Not Found',
         label: 'Page not found',
         resolve: {},
       })
@@ -241,7 +249,7 @@ define(['app', 'authentication'], function(app) {
       //==================================================
       function resolveUser(requiredPrivilages) { 
 
-        return ['$rootScope', 'authentication', '$location', function($rootScope, authentication, $location) {
+        return ['$rootScope', 'authentication', '$location', '$cookies', '$window', function($rootScope, authentication, $location, $cookies, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
             if(requiredPrivilages) {
@@ -250,8 +258,11 @@ define(['app', 'authentication'], function(app) {
                 if(requiredPrivilages.indexOf(user.roles[i]) != -1)
                   notAllowed = false;
 
-              if(notAllowed)
-                $location.path('/login'); //TODO: add in a redirect, so they can easily login, then go back to where they were.
+              if(notAllowed) {
+                $cookies.loginRedirect = $location.absUrl();
+                debugger;
+                $location.url('/login');
+              }
             }
 
             return user;
