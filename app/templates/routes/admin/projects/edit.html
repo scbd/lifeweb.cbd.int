@@ -87,7 +87,7 @@
       </thead>
       <tbody>
         <tr ng-hide="document.institutional_context.length">
-          <td colspan="4" style="font-weight: bold; text-align: center;">... No Partners. Please add a partner below ...</td>
+          <td colspan="4" style="font-weight: bold; text-align: center;">... No Partners yet. Please add a partner below ...</td>
         </tr>
         <tr ng-repeat="partner in document.institutional_context">
           <td><input type="text" ng-model="partner.name" /></td>
@@ -123,32 +123,27 @@
         </tr>
       </thead>
       <tbody>
+        <tr ng-hide="document.budget.length">
+          <td colspan="4" style="font-weight: bold; text-align: center;">... No Activities Yet. Please add an activity below ...</td>
+        </tr>
         <tr ng-repeat="activity in document.budget">
           <td><input type="text" ng-model="activity.activity" /></td>
           <td><input type="text" ng-model="activity.result" /></td>
           <td><input type="number" ng-model="activity.cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
         </tr>
-        <tr>
+        <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
+        <tr ng-show="document.budget.length">
           <td colspan="3" style="text-align: right">Total: ${{sum(document.budget, 'cost')}}</td>
         </tr>
         <tr>
-          <td><input type="text" name="addActivity" ng-model="newActivity.activity" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" /></td>
-          <td><input type="text" ng-model="newActivity.result" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" /></td>
-          <td><input type="number" ng-model="newActivity.cost" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" /><button type="button" ng-click="addItem('newActivity', 'budget')">Add</button></td>
+          <td><textarea name="addActivity" ng-model="newActivity.activity" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" style="width: 300px;" palceholder="Activities"></textarea></td>
+          <td><textarea type="text" ng-model="newActivity.result" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" style="width: 300px;" palceholder="Result"></textarea></td>
+          <td><input type="number" ng-model="newActivity.cost" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" placeholder="$$$" /><br /><button type="button" ng-click="addItem('newActivity', 'budget')">Add</button></td>
         </tr>
       </tbody>
     </table>
 
     <hr />
-
-    <div class="form-group">
-      <label for="keywords" class="col-sm-2 control-label">Keywords</label>
-      <div class="col-sm-10">
-        <tags-input id="keywords" ng-model="document.keywords">
-          <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
-        </tags-input>
-      </div>
-    </div>
 
     <h3>Images</h3>
     <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
@@ -162,15 +157,27 @@
           </tr>
         </thead>
         <tbody>
+          <tr ng-hide="document.images.length">
+            <td colspan="4" style="font-weight: bold; text-align: center;">... No Images Yet. Please upload and add an image below ...</td>
+          </tr>
           <tr ng-repeat="image in document.images">
             <td><input type="text" ng-model="image.title" /></td>
             <td><input type="text" ng-model="image.description" /></td>
             <td><a ng-href="{{file_server}}{{image.url}}">View Image</a><button ng-click="document.images.splice($index, 1)">X</button></td>
           </tr>
+          <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
           <tr>
-            <td><input type="text" ng-model="newImage.title" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></td>
-            <td><input type="text" ng-model="newImage.description" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></td>
-            <td ng-file-drop="onFileSelect($files, 'newImage')" ng-file-drag-over-class="dragdrophover"><div><input type="text" class="pull-left" ng-model="newImage.url" ng-keydown="maybeAddItem($event, 'newImage', 'images')" /></div><input type="file" ng-file-select="onFileSelect($files, 'newImage')" class="pull-left" /><button type="button" ng-click="addItem('newImage', 'images')">Add</button></td>
+            <td>
+              <input style="width: 300px;" type="text" ng-model="newImage.title" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="Title" />
+              <div ng-file-drop="onFileSelect($files, 'newImage')" ng-file-drag-over-class="dragdrophover">
+                <input type="text" class="pull-left" style="width: 200px;" ng-model="newImage.url" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="URL - drag and drop file" />
+                <input type="file" ng-file-select="onFileSelect($files, 'newImage')" class="pull-left" /><br />
+                <button type="button" ng-click="addItem('newImage', 'images')">Add</button>
+              </div>
+            </td>
+            <td colspan="2">
+              <textarea style="width: 500px; height: 100%;" ng-model="newImage.description" ng-keydown="maybeAddItem($event, 'newImage', 'images')"></textarea>
+            </td>
           </tr>
         </tbody>
       </table>
@@ -209,19 +216,26 @@
         </tr>
       </thead>
       <tbody>
+        <tr ng-hide="document.maps.length">
+          <td colspan="4" style="font-weight: bold; text-align: center;">... No Maps Yet. Please upload and add a map below ...</td>
+        </tr>
         <tr ng-repeat="map in document.maps">
           <td><input type="text" ng-model="map.title" /></td>
           <td><input type="text" ng-model="map.description" /></td>
           <td><a ng-href="{{file_server}}{{map.url}}">View Map</a><button ng-click="document.maps.splice($index, 1)">X</button></td>
         </tr>
+        <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
         <tr>
-          <td><input type="text" ng-model="newMap.title" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" /></td>
-          <td><input type="text" ng-model="newMap.description" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" /></td>
-          <td ng-file-drop="onFileSelect($files, 'newMap')" ng-file-drag-over-class="dragdrophover">
-            <div>
-              <input type="text" class="pull-left" ng-model="newMap.url" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" />
+          <td>
+            <input type="text" style="width: 300px;" ng-model="newMap.title" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="title"/>
+            <div ng-file-drop="onFileSelect($files, 'newMap')" ng-file-drag-over-class="dragdrophover">
+              <input type="text" class="pull-left" ng-model="newMap.url" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="URL - drag and drop a file" style="width: 200px;" />
+              <input type="file" ng-file-select="onFileSelect($files, 'newMap')" class="pull-left" /><br />
+              <button type="button" ng-click="addItem('newMap', 'maps')">Add</button>
             </div>
-            <input type="file" ng-file-select="onFileSelect($files, 'newMap')" class="pull-left" /><button type="button" ng-click="addItem('newMap', 'maps')">Add</button>
+          </td>
+          <td colspan="2">
+            <textarea style="width: 500px; height: 100%;" ng-model="newMap.description" ng-keydown="maybeAddItem($event, 'newMap', 'maps')"></textarea></td>
           </td>
         </tr>
       </tbody>
@@ -273,8 +287,17 @@
     <hr />
 
     <h3>Additional Project Information</h3>
+    <div class="form-group">
+      <label for="keywords" class="col-sm-2 control-label">Keywords</label>
+      <div class="col-sm-10">
+        <tags-input id="keywords" ng-model="document.keywords">
+          <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
+        </tags-input>
+      </div>
+    </div>
 
     <afc-textarea title="Additional Information" ng-model="document.additional_information"></afc-textarea>
+
 
     <hr />
 
