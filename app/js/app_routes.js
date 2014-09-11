@@ -260,7 +260,7 @@ define(['app', 'authentication'], function(app) {
 
               if(notAllowed) {
                 $cookies.loginRedirect = $location.absUrl();
-                debugger;
+                //debugger;
                 $location.url('/login');
               }
             }

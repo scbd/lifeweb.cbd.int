@@ -1,5 +1,8 @@
-define(['app', 'angular-form-controls', 'editFormUtility',], function(app) {
-  app.controller('EditCtrl', function($scope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility) {
+define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js'], function(app) {
+  app.controller('EditCtrl', function($scope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility, $location) {
+
+    $scope.tab = 'edit';
+
     var keySchemaMap = {
       'project': 'lwProject',
       'event': 'lwEvent',
@@ -16,27 +19,21 @@ define(['app', 'angular-form-controls', 'editFormUtility',], function(app) {
       //$http.get('http://localhost:1818/api/'+schemaName, {name: $routeParams.name})
       $scope.documentPromise = editFormUtility.load($routeParams.title);
     else
-      $scope.document = {
+      $scope.documentPromise = {
         header: {
           identifier: guid(), 
           languages: ['en'],
           schema: schemaName
         },
-        government: {"identifier":"ht"},
-        realm: 'lifeweb',
       };
-    console.log('document: ', $scope.document);
+    //console.log('document: ', $scope.document);
 
     //authentication.js and services (guid is in services)
-    //schema and realm
-    /*
-    IStorage.drafts.put(id, {zzzzz: 'MY TITLE!', header: {identifier: id, languages: ['en'], schema: schemaName}, "government":{"identifier":"ht"},}).then(function(result) {
-      console.log('put, result: ', result);
-      IStorage.drafts.get(id, {body: true}).then(function(result) {
-        console.log('get result: ', result);
-      });
+
+    $scope.$on('documentDraftSaved', function(event, draftInfo) {
+      $location.path('/admin/projects/edit/' + draftInfo.identifier);
     });
-    */
+
   //HERE, the form hasn't been introduced to the scope yet. I need to wait till that happens (Link function? Cotnroller definition obejct?), then I need to watch budget and update the validity when it changes.
     //$scope.editProjectForm.addActivity.$setValidity("size", $scope.budget.length >= 1);
 
@@ -83,6 +80,34 @@ define(['app', 'angular-form-controls', 'editFormUtility',], function(app) {
         });
         */
     };
+
+    $scope.$on("documentInvalid", function(){
+      $scope.tab = "review";
+    });
+
+    $scope.$watch("tab", function(tab) {
+      if(tab == "review")
+        validate();
+    });
+
+    function validate() {
+
+      $scope.validationReport = null;
+
+      var oDocument = $scope.reviewDocument = $scope.document; //getCleanDocument()
+
+      return IStorage.documents.validate(oDocument).then(function(success) {
+
+        $scope.validationReport = success.data;
+        return !!(success.data && success.data.errors && success.data.errors.length);
+
+      }).catch(function(error) {
+
+        $scope.onError(error.data);
+        return true;
+
+      });
+    }
 
     $scope.save = function(localSchemaName) {
       //authentication.js and services (guid is in services)

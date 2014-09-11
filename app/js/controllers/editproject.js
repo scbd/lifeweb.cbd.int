@@ -154,11 +154,24 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
     };
 
     //TODO: this is ugly... it well be replaced when we get the document... it's weird... it's also boilerplate code.
+    $scope.document = $scope.document || {};
+    $scope.document.institutionalContext = [];
     $scope.document.budget = [];
+    $scope.document.images = []
+    $scope.document.maps = [];
+    $scope.document.attachments = [];
     $scope.document.donors = [];
     $q.when($scope.documentPromise).then(function(document) {
+      console.log('doc: ', document);
       $scope.document = document;
+      $scope.document.institutionalContext = $scope.document.institutionalContext || [];
+      $scope.document.budget = $scope.document.budget || [];
+      $scope.document.images = $scope.document.images || []
+      $scope.document.maps = $scope.document.maps || [];
+      $scope.document.attachments = $scope.document.attachments || [];
+      $scope.document.donors = $scope.document.donors || [];
     });
+
     $scope.sum = function(arr, key) {
       var sum = 0;
       for(var i=0; i!=arr.length; ++i)
