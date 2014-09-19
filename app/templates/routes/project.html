@@ -1,6 +1,6 @@
     <link href="http://cdn.leafletjs.com/leaflet-0.7.2/leaflet.css" rel="stylesheet">
     <div class="container"   style="min-height:700px!important;margin-bottom:200px;" >
-       
+
 
        <!-- Docs nav
            ================================================== -->
@@ -19,18 +19,18 @@
                     <li ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"><a href="#align"><span class="glyphicon glyphicon-chevron-right"></span>Alignment with National Planning</a></li>
                     <li ng-show="eoi.ecological_contribution"><a href="#eco"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
                     <li ng-show="eoi.participation || eoi.governance"><a href="#participation"><span class="glyphicon glyphicon-chevron-right"></span>Participation and Equity</a></li>
-                   
+
                     <li><a href="#partners"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
                     <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a href="#attachments"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
                 </ul>
               </div>
             </div>
       <div class="col-xs-9">
-         
-<!--==============================================================================-->     
+
+<!--==============================================================================-->
 <section id="sum" style="margin:47px 0 0 0;" >
-    
-    
+
+
     <!-- AddThis Button BEGIN -->
     <div style="width: 100%;">
         <div class="addthis_toolbox addthis_default_style pull-right" style="width:140px;">
@@ -73,8 +73,8 @@
             <td class="lw-dt">
                     <span>project total</span>
             </td>
-            <td  class="lw-dd">{{eoi.funding_needed | filterCurrency:eoi.currency:currency}} 
-                
+            <td  class="lw-dd">{{eoi.funding_needed | filterCurrency:eoi.currency:currency}}
+
             </td>
         </tr>
         <tr>
@@ -87,7 +87,7 @@
                                 <span ng-switch-default>partially funded</span>
                             </span>
                         </span>
-                
+
                 <div ng-repeat="match in eoi.funding_matches" style="white-space:nowrap;">
                                            {{match.amount |  filterCurrency:match.currency:currency}} ({{match.donor.name}})
                                     </div>
@@ -124,15 +124,15 @@
 
                 <div class="row" style="padding-left: 10px; padding-bottom: 0; margin-bottom: 0;">
                     <div class="col-xs-2" ng-repeat="slide in eoi.images.concat(eoi.maps)">
-                        <a href="#myModal{{$index}}" class="thumbnail" data-toggle="modal">
-                            <img style="width: 120px;" src="{{slide.url}}&width=200&height=150" alt="x">
+                        <a  class="thumbnail" href="{{removespaces(slide.url)}}" target="new_">
+                            <img style="width: 120px;" src="{{removespaces(slide.url)}}?width=200&height=150" alt="x">
                         </a>
                         <!-- Modal -->
-                        <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <!-- <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                             <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">x</button><br>
-                            <img src="{{slide.url}}" alt="{{$index}}">
+                            <img src="{{removespaces(slide.url)}}" alt="{{$index}}">
                             <p>{{slide.name}}</p>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
 
@@ -163,15 +163,15 @@
 </section> -->
 
 
-<!--==============================================================================-->     
-<section id="desc" ng-show="eoi.description" >  
-<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project description</h2> 
+<!--==============================================================================-->
+<section id="desc" ng-show="eoi.description" >
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project description</h2>
 <div class="lw-proj-text" ng-bind-html="eoi.description"></div>
 </section>
 
 
-<!--==============================================================================-->     
-<section id="obj" ng-show="eoi.objectives_info || eoi.objectives_results"  >  
+<!--==============================================================================-->
+<section id="obj" ng-show="eoi.objectives_info || eoi.objectives_results"  >
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Objectives and Results</h2>
 
 <div class="lw-proj-text">{{eoi.objectives_info}}</div>
@@ -180,12 +180,12 @@
                  <tr><td class="lw-dt" style="font-size:13px;">Result</td><td  class="lw-proj-text" ng-bind-html="obj.ExpectedResults"></td></tr>
                  <tr><td class="lw-dt" style="font-size:13px;">Funding&nbsp;needed</td><td class="lw-proj-text">{{obj.Funding}}</td></tr>
     </table>
- 
+
 </section>
 
-          
-<!--==============================================================================-->     
-<section id="funding" ng-controller="PageController"  >  
+
+<!--==============================================================================-->
+<section id="funding" ng-controller="PageController"  >
     <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Project Financing</h2>
 
 
@@ -194,7 +194,7 @@
             <td style="text-align: right"><span class="muted" style="text-transform: uppercase;">Funding Status:</span> </td>
             <td style="padding-left: 20px;">
                <span ng:class="{'funded':'label', 'not yet funded':'label label-success', 'some secured funding':'label label-info', 'some expected funding':'label label-warning'}[eoi.funding_status]" >{{eoi.funding_status}}</span>
-    
+
             </td>
         </tr>
         <tr>
@@ -210,7 +210,7 @@
             <td style="padding-left:20px;"><strong>{{funding | filterTotalExpected | filterCurrency:funding[0].currency:currency}}</strong></td>
         </tr>
 
-       
+
     </table>
 
     <div ng-show="eoi.funding_info!= ''">
@@ -237,13 +237,13 @@
             <tr ng-repeat="f in funding ">
                 <td width="60%" class="lw-proj-text">
                     <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.id}}">{{f.donor.name}}</span> </a>
-                    <span style="font-size: 14px;" ng-bind-html="f.info"></span> 
+                    <span style="font-size: 14px;" ng-bind-html="f.info"></span>
                     <div ng-show="session.isAdministrator" >
                         <a href="https://www.cbd.int/database/edit.shtml?documentid={{f.id}}" target="_edit_" class="btn btn-warning"> edit </a>
                         </div>
                 </td>
                 <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="!f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td>
-                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td 
+                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td
             </tr>
             <tr>
                 <td class="lw-proj-text">TOTAL</td>
@@ -254,31 +254,31 @@
     </div>
 
 
-   
+
 
 
     <div ng-show="eoi.financial_sustainability!= ''" style="padding-top:20px;">
         <h4>Financial Sustainability</h4>
         <div class="lw-proj-text" ng-bind-html="eoi.financial_sustainability"></div>
     </div>
- 
+
 </section>
 
 
- <!--==============================================================================-->     
-<section id="benefits" ng-show="eoi.ecoservices_comments[0].termid" >  
+ <!--==============================================================================-->
+<section id="benefits" ng-show="eoi.ecoservices_comments[0].termid" >
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecosystem benefits</h2>
 
     <div ng-repeat="t in eoi.ecoservices_comments">
-        
+
             <h4><img src="{{(t.termid | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.termid}}"/>  {{t.term}} </h4>
             <div class="lw-proj-text" ng-bind-html="t.comment"></div>
     </div>
 </section>
 
-<!--==============================================================================-->     
-<section id="targets" ng-show="eoi.aichi_targets"  >  
-<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Links with the Aichi Targets</h2> 
+<!--==============================================================================-->
+<section id="targets" ng-show="eoi.aichi_targets"  >
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Links with the Aichi Targets</h2>
 
         <div ng-repeat="t in eoi.aichi_targets" >
         <h4> Aichi {{t.term}} </h4>
@@ -287,12 +287,12 @@
             <span>{{(t.termid | filterGetTargetInfo).desc}}</span></div>
         <div class="lw-proj-text" ng-bind-html="t.comment"></div>
         </div>
- 
+
 </section>
 
-<!--==============================================================================-->     
-<section id="align" ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"  >  
-<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Alignment with National Planning</h2> 
+<!--==============================================================================-->
+<section id="align" ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"  >
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Alignment with National Planning</h2>
 
     <div ng-show="eoi.alignment!= ''">
         <h4>Alignment with National Planning</h4>
@@ -313,20 +313,20 @@
         <div class="lw-proj-text" ng-bind-html="eoi.alignment_nbsap"></div>
 
     </div>
- 
+
 </section>
 
 
-<!--==============================================================================-->     
-<section id="eco" ng-show="eoi.ecological_contribution" >  
-<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecological Contribution</h2> 
+<!--==============================================================================-->
+<section id="eco" ng-show="eoi.ecological_contribution" >
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecological Contribution</h2>
 
     <div class="lw-proj-text" ng-bind-html="eoi.ecological_contribution"></div>
- 
+
 </section>
 
-<!--==============================================================================-->     
-<section id="participation"  ng-show="eoi.participation || eoi.governance">  
+<!--==============================================================================-->
+<section id="participation"  ng-show="eoi.participation || eoi.governance">
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Participation and Equity</h2>
 
     <div ng-show="eoi.participation!= ''">
@@ -338,13 +338,13 @@
         <h4>Governance Types</h4>
         <div class="lw-proj-text" ng-bind-html="eoi.governance"></div>
     </div>
- 
+
 </section>
 
 
 
-<!--==============================================================================-->     
-<section id="partners"  >  
+<!--==============================================================================-->
+<section id="partners"  >
     <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Partners and Contacts</h2>
 
 
@@ -358,25 +358,25 @@
 
          <tr ng-repeat="fp in fp_national">
             <td><span class="label label-info">National CBD Focal Point</span></td>
-            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong> 
+            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong>
                 <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
             <td>
                 <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
                <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
                <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
-              
+
             </td>
         </tr>
 
         <tr ng-repeat="fp in fp_powpa">
             <td><span class="label label-info">PoWPA Focal Point</span></td>
-            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong> 
+            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong>
                 <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
             <td>
                 <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
                <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
                <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
-              
+
             </td>
         </tr>
 
@@ -502,7 +502,7 @@
 
         <tr ng-repeat="p in partners">
             <td style="width:30%;">
-        
+
                 <div ng-repeat="r in p.roles" style="display: inline; text-transform: capitalize">
                     <span class="label" style="color:#333;">{{r}}</span><span ng-show="!$last">, </span>
                 </div>
@@ -516,7 +516,7 @@
                <img ng-show="p.organization.logo" src="{{p.organization.logo}}" style="max-width:100px;max-height:45px;" class="pull-right">
 
                 <address>
-                   
+
                     <strong>{{p.organization.name}} <span ng-show="p.organization.acronym">({{p.organization.acronym}})</span></strong><br>
 
                     <div ng-repeat="web in p.organization.websites">
@@ -529,9 +529,9 @@
                     <a ng-show="p.organization.youtube" class="youtube" href="{{p.organization.youtube.url}}" target="_new"></a>
                     <a ng-show="p.organization.flickr"  class="flickr" href="{{p.organization.flickr.url}}" target="_new"></a>
                     <a ng-show="p.organization.rssfeed" class="rss" href="{{p.organization.rssfeed.url}}" target="_new"></a>
-                  
+
                 </div>
-                   
+
 
                 </address>
             </td>
@@ -547,10 +547,10 @@
             <tr>
                 <td style="vertical-align: top;">
                 <span>{{p.info}}</span>
-                            
+
                             <td>
                 <td style="width: 50%;" ng-show="p.organization || p.contact">
-                    
+
 
                     <address>
                         <strong>Contact</strong><br>
@@ -568,9 +568,9 @@
 
 </section>
 
-<!--==============================================================================-->  
-           
-<section id="attachments" ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null" >  
+<!--==============================================================================-->
+
+<section id="attachments" ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null" >
     <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Attachments</h2>
 
     <div ng-show="eoi.project_doc">
@@ -593,13 +593,13 @@
           <div ng-repeat="img in eoi.images" class="col-xs-3">
             <div class="thumbnail">
                 <a href="{{img.url}}">
-                    <img style="width: 200px" src="{{img.url}}&width=50&height=50" class="img-rounded" /></a>
+                    <img style="width: 200px" src="{{img.url}}" class="img-rounded" /></a>
                 <p class="caption">{{img.name}}</p>
             </div>
 
             <div ng-repeat="map in eoi.maps" class="thumbnail">
                 <a href="{{map.url}}">
-                    <img style="width: 200px" align="center" src="{{map.url}}&width=50&height=50" class="img-rounded" /></a>
+                    <img style="width: 200px" align="center" src="{{map.url}}" class="img-rounded" /></a>
                 <p class="caption">{{map.name}}</p>
             </div>
           </div>
@@ -622,7 +622,7 @@
 
 </section>
 
-      
+
 </div><!-- end span 9-->
 </div><!-- end row-->
 </div><!-- end container -->

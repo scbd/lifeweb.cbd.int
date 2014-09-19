@@ -13,8 +13,5 @@
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
     "jquery.stellar": "latest"
-  },
-  "resolutions": {
-    "angular": "~1.2.14"
   }
 }
