@@ -1,4 +1,10 @@
-define(['app', '/app/js/controllers/edit.js'], function(app) {
+define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js',], function(app) {
+    function ngTagsToArray(fake, real, realKey) {
+        real[realKey] = [];
+        for(var i=0; i!=fake.length; ++i)
+            real[realKey].push(fake[i].text);
+    }
+
   app.controller('EditProjectCtrl', function($scope, $http, $q, $controller) {
     $controller('EditCtrl', {$scope: $scope});
  
@@ -26,6 +32,9 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
     */
     $scope.aichi_target_tabs = [];
     $scope.climate_contribution_tabs = [];
+    $scope.fakeKeywords = [];
+    $scope.newAttachment = {};
+    $scope.fakeNewAttachmentKeywords = [];
     
     $scope.national_alignment = [
       {title: 'NBSAPs', key: 'NBSAP', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
@@ -80,26 +89,16 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
 
     $scope.keywords = [];//['Chips Ahoy', 'Oreo', 'Hydrox', 'Fudgeeos', 'Fig Newtons']
 
-    $scope.keywordOptions = function($query) {
-      var deferred = $q.defer();
-      var matchedOptions = [];
-      for(var i=0; i!=$scope.keywords.length; ++i)
-        if($scope.keywords[i].indexOf($query) !== -1)
-          matchedOptions.push($scope.keywords[i]);
-
-      deferred.resolve(matchedOptions);
-      return deferred.promise;
-    };
-
-    $scope.contrib_climate = {
-      ecoservices1: 'Climate Change Mitigation',
-      ecoservices2: 'Climate Change Adaption',
-      ecoservices3: 'Freshwater Security',
-      ecoservices4: 'Food Security',
-      ecoservices5: 'Human Health',
-      ecoservices6: 'Cultural and Spiritual Access',
-      ecoservices7: 'Income Generation',
-    };
+    //title, key, help
+    $scope.contrib_climate = [
+        {key: 'ecoservices1', title: 'Climate Change Mitigation',},
+        {key: 'ecoservices2', title: 'Climate Change Adaptation',},
+        {key: 'ecoservices3', title: 'Freshwater Security',},
+        {key: 'ecoservices4', title: 'Food Security',},
+        {key: 'ecoservices5', title: 'Human Health',},
+        {key: 'ecoservices6', title: 'Cultural and Spiritual Access',},
+        {key: 'ecoservices7', title: 'Income Generation',},
+    ];
 
     $scope.roles = function() {
       var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
@@ -119,12 +118,49 @@ define(['app', '/app/js/controllers/edit.js'], function(app) {
     $scope.addTab = function(tabs, tabRepository, tabIndex) {
       console.log(tabIndex);
       console.log(tabRepository[tabIndex]);
-      if(tabIndex == '_')
-        return;
-      if(!tabRepository)
-        tabs.push({title: $scope.contrib_climate[tabIndex], key: tabIndex});
       if(tabs.indexOf(tabRepository[tabIndex]) === -1)
         tabs.push(tabRepository[tabIndex]);
+    };
+    //maps tabbedTextarea format to the strange lifeweb format.
+    //{key: text} to ... {type: {identifier:key}, comment: text}
+    //Note: surprisingly doesn't lag? O.o
+    $scope.$watch('fakeAichiTargets', function() {
+        mapObjectToTermAndComment(
+            $scope.fakeAichiTargets,
+            $scope.document,
+            'aichiTargets'
+        );
+    }, true);
+    $scope.$watch('fakeNationalAlignment', function() {
+        mapObjectToTermAndComment(
+            $scope.fakeNationalAlignment,
+            $scope.document,
+            'nationalAlignment'
+        );
+    }, true);
+    $scope.$watch('fakeEco', function() {
+        mapObjectToTermAndComment(
+            $scope.fakeEco,
+            $scope.document,
+            'ecologicalContribution'
+        );
+    }, true);
+    function mapObjectToTermAndComment(fake, real, realKey) {
+        real[realKey] = [];
+        for(var key in fake)
+            real[realKey].push({
+                type: {identifier: key},
+                comment: fake[key],
+            });
+    }
+    $scope.$watch('fakeKeywords', function() {
+        ngTagsToArray($scope.fakeKeywords, $scope.document, 'keywords');
+        console.log('keywords: ', $scope.document.keywords);
+    }, true);
+
+
+    $scope.identifierMapping = function(item) {
+        return {identifier: item.identifier};
     };
 
     $scope.addItem = function(scopeNewItemKey, projectKey) {

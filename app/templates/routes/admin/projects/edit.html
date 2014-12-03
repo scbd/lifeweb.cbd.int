@@ -16,9 +16,9 @@
     <form novalidate name="editProjectForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
       <afc-input ng-model="document.leadContact" required data-title="Lead Contact" data-placeholder="Contact's full name"></afc-input>
       <div class="form-group">
-        <label for="Countries" class="col-sm-2 control-label">Countries</label>
+        <label for="Countries" class="col-sm-2 control-label">Country or Countries</label>
         <div class="col-sm-10">
-          <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Please enter the countries involved..." multiple="true"></afc-autocomplete>
+          <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Please enter the country or countries involved..." multiple="true" mapping="identifierMapping"></afc-autocomplete>
           <!--
           <tags-input min-tags="1" id="Countries" ng-model="document.countries">
             <auto-complete source="countryOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
@@ -51,23 +51,25 @@
           <span>{{aichi.name}}</span>
         </button>
       </div>
-      <tabbed-textareas rows="4" ng-model="document.aichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="name" key-key="identifier"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="name" key-key="identifier"></tabbed-textareas>
       
       <h3>Alignment with National Planning</h3>
       <h4>Consistent with the decision X/31, please indicate the relevance between this sbumission and the following planning processes</h4>
-      <tabbed-textareas rows="4" ng-model="document.nationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
       <h3>Ecological Contribution</h3>
       <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
-      <textarea class="form-control" ng-model="document.ecologicalContribution" rows="4"></textarea>
-
       <h3>Contribution to Climate Change</h3>
-      <select ng-model="addingBenefitsTab" ng-change="addTab(climate_contribution_tabs, 0, addingBenefitsTab)" ng-options="key as value for (key, value) in contrib_climate">
-        <option value="" selected>Select a contribution to attribute to this project...</option>
-      </select>
+      <div style="border: dotted 1px gray">
+        <p>Select an Contribution to Climate Change attributed to this project...</p>
+        <button type="button" ng-repeat="contrib in contrib_climate" ng-click="addTab(climate_contribution_tabs, contrib_climate, $index)" class="addTabButton">
+          <span class="glyphicon glyphicon-plus"></span>
+          <span>{{contrib.title}}</span>
+        </button>
+      </div>
 
 
-      <tabbed-textareas rows="4" ng-model="document.ecologicalContribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeEco" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
       <hr />
 
@@ -167,7 +169,7 @@
               <td>
                 <input style="width: 300px;" type="text" ng-model="newImage.title" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="Title" />
                 <div ng-file-drop="onFileSelect($files, 'newImage')" ng-file-drag-over-class="dragdrophover">
-                  <input type="text" class="pull-left" style="width: 200px;" ng-model="newImage.url" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="URL - drag and drop file" />
+                  <input type="hidden" class="pull-left" style="width: 200px;" ng-model="newImage.url" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="URL - drag and drop file" />
                   <input type="file" ng-file-select="onFileSelect($files, 'newImage')" class="pull-left" /><br />
                   <button type="button" ng-click="addItem('newImage', 'images')">Add</button>
                 </div>
@@ -226,7 +228,7 @@
             <td>
               <input type="text" style="width: 300px;" ng-model="newMap.title" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="title"/>
               <div ng-file-drop="onFileSelect($files, 'newMap')" ng-file-drag-over-class="dragdrophover">
-                <input type="text" class="pull-left" ng-model="newMap.url" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="URL - drag and drop a file" style="width: 200px;" />
+                <input type="hidden" class="pull-left" ng-model="newMap.url" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="URL - drag and drop a file" style="width: 200px;" />
                 <input type="file" ng-file-select="onFileSelect($files, 'newMap')" class="pull-left" /><br />
                 <button type="button" ng-click="addItem('newMap', 'maps')">Add</button>
               </div>
@@ -243,61 +245,11 @@
 
       <h3>Attachments</h3>
       <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
-      <table>
-        <thead>
-          <tr>
-            <th>title</th>
-            <th>Description</th>
-            <th>Attachment Keywords</th>
-            <th>Attachment Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-hide="document.attachments.length">
-            <td colspan="4" style="font-weight: bold; text-align: center;">... No Attachments Yet. Feel free to upload any related documents below ...</td>
-          </tr>
-          <tr ng-repeat="attachment in document.attachments">
-            <td><input type="text" ng-model="attachment.title" /></td>
-            <td><input type="text" ng-model="attachment.description" /></td>
-            <td>
-              <tags-input id="attachkeywords" ng-model="attachment.keywords">
-                <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
-              </tags-input>
-            </td>
-            <td><a ng-href="{{file_server}}{{attachment.url}}">Download Attachment</a><button ng-click="document.attachments.splice($index, 1)">X</button></td>
-          </tr>
-          <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
-          <tr>
-            <td>
-              <input type="text" ng-model="newAttachment.title" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" style="width: 300px;" placeholder="title" /><br />
-              <tags-input id="attachkeywords" ng-model="newAttachment.keywords">
-                <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
-              </tags-input><br />
-              <div ng-file-drop="onFileSelect($files, 'newAttachment')" ng-file-drag-over-class="dragdrophover">
-                <input type="text" class="pull-left" ng-model="newAttachment.url" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" style="width: 300px;" placeholder="URL - drag and drop a file" /><br />
-                <input type="file" ng-file-select="onFileSelect($files, 'newAttachment')" class="pull-left" />
-                <button type="button" ng-click="addItem('newAttachment', 'attachments')">Add</button>
-              </div>
-            </td>
-            <td colspan="3">
-              <textarea ng-model="newAttachment.description" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" style="width: 500px; height: 100%;" placeholder="Attachment information/description"></textarea>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <elink ng-model="document.attachments" typeTitle="Attachment"></elink>
 
       <hr />
 
       <h3>Additional Project Information</h3>
-      <div class="form-group">
-        <label for="keywords" class="col-sm-2 control-label">Keywords</label>
-        <div class="col-sm-10">
-          <tags-input id="keywords" ng-model="document.keywords">
-            <auto-complete source="keywordOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
-          </tags-input>
-        </div>
-      </div>
-
       <afc-textarea title="Additional Information" ng-model="document.additional_information"></afc-textarea>
 
 
