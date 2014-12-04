@@ -5,7 +5,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js',], f
             real[realKey].push(fake[i].text);
     }
 
-  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller) {
+  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope) {
     $controller('EditCtrl', {$scope: $scope});
  
     $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
@@ -206,6 +206,9 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js',], f
       $scope.document.maps = $scope.document.maps || [];
       $scope.document.attachments = $scope.document.attachments || [];
       $scope.document.donors = $scope.document.donors || [];
+
+        //TODO: move or something. This is for elink.js...
+        $rootScope.documentIdentifier = $scope.document.header.identifier;
     });
 
     $scope.sum = function(arr, key) {

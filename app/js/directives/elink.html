@@ -1,42 +1,46 @@
-<div>
-  <table>
+<div class="row">
+  <table class="col-sm-9">
     <thead>
       <tr>
         <th>title</th>
         <th>Description</th>
-        <th>Attachment Keywords</th>
-        <th>Attachment Link</th>
+        <th>{{typeTitle}} Keywords</th>
+        <th>{{typeTitle}} Link</th>
       </tr>
     </thead>
     <tbody>
-      <tr ng-hide="ngModel.attachments.length">
-        <td colspan="4" style="font-weight: bold; text-align: center;">... No Attachments Yet. Feel free to upload any related documents below ...</td>
+      <tr ng-hide="ngModel.length">
+        <td colspan="4" style="font-weight: bold; text-align: center;">... No {{typeTitle}} Yet. Feel free to upload any {{typeTitle}}s below ...</td>
       </tr>
-      <tr ng-repeat="attachment in ngModel.attachments" ng-controller="keywordsUsingController">
-        <td><input type="text" ng-model="attachment.title" /></td>
-        <td><input type="text" ng-model="attachment.description" /></td>
+      <tr ng-repeat="item in ngModel" ng-controller="keywordsUsingController">
+        <td><input type="text" ng-model="item.title" /></td>
+        <td><input type="text" ng-model="item.description" /></td>
         <td>
           <tags-input id="attachkeywords" ng-model="fakeKeywords">
           </tags-input>
         </td>
-        <td><a ng-href="{{file_server}}{{attachment.url}}">Download Attachment</a><button ng-click="ngModel.attachments.splice($index, 1)">X</button></td>
+        <td><a ng-href="{{item.url}}">Download {{typeTitle}}</a><button ng-click="ngModel.splice($index, 1)">X</button></td>
       </tr>
       <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
       <tr>
         <td>
-          <input type="text" ng-model="newAttachment.title" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" style="width: 300px;" placeholder="title" /><br />
-          <tags-input id="attachkeywords" ng-model="newAttachment.keywords">
-          </tags-input><br />
-          <div ng-file-drop="onFileSelect($files, 'newAttachment')" ng-file-drag-over-class="dragdrophover">
-            <input type="hidden" class="pull-left" ng-model="newAttachment.url" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" style="width: 300px;" placeholder="URL - drag and drop a file" /><br />
-            <input type="file" ng-file-select="onFileSelect($files, 'newAttachment')" class="pull-left" />
-            <button type="button" ng-click="addItem('newAttachment', 'attachments')">Add</button>
+          <input type="text" ng-model="newItem.title" ng-keydown="maybeAddItem($event, newItem)" style="width: 300px;" placeholder="title" /><br />
+          <tags-input id="attachkeywords" ng-model="newItem.keywords" style="width: 300px;">
+          </tags-input>
+          <div style="width: 300px; height: 30px;" ng-file-drop="onFileSelect($files, 'newItem')" ng-file-drag-over-class="dragdrophover">
+            <input type="file" style="width: 80px;" ng-file-select="onFileSelect($files, 'newItem')" class="pull-left" />
+            <a class="pull-left" style="width:200px; overflow: hidden; white-space: nowrap;" ng-href="{{newItem.url}}">{{getFilename(newItem.url)}}</a>
           </div>
+          <button type="button" style="width:300px;" ng-click="addItem(newItem)">Add</button>
         </td>
         <td colspan="3">
-          <textarea ng-model="newAttachment.description" ng-keydown="maybeAddItem($event, 'newAttachment', 'attachments')" style="width: 500px; height: 100%;" placeholder="Attachment information/description"></textarea>
+          <textarea ng-model="newItem.description" ng-keydown="maybeAddItem($event, newItem)" style="width: 500px; height: 100%;" placeholder="{{typeTitle}} information/description"></textarea>
         </td>
       </tr>
     </tbody>
   </table>
+    <fieldset ng-if="imgPreview" class="col-sm-3">
+      <legend>New Image Preview</legend>
+      <img ng-src="{{newItem.url}}" style="max-height: 100px;"></img>
+    </fieldset>
 </div>

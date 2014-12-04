@@ -146,45 +146,7 @@
 
       <h3>Images</h3>
       <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
-      <div class="row">
-        <table class="col-sm-9">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Description</th>
-              <th>Image Link</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr ng-hide="document.images.length">
-              <td colspan="4" style="font-weight: bold; text-align: center;">... No Images Yet. Please upload and add an image below ...</td>
-            </tr>
-            <tr ng-repeat="image in document.images">
-              <td><input type="text" ng-model="image.title" /></td>
-              <td><input type="text" ng-model="image.description" /></td>
-              <td><a ng-href="{{file_server}}{{image.url}}">View Image</a><button ng-click="document.images.splice($index, 1)">X</button></td>
-            </tr>
-            <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
-            <tr>
-              <td>
-                <input style="width: 300px;" type="text" ng-model="newImage.title" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="Title" />
-                <div ng-file-drop="onFileSelect($files, 'newImage')" ng-file-drag-over-class="dragdrophover">
-                  <input type="hidden" class="pull-left" style="width: 200px;" ng-model="newImage.url" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="URL - drag and drop file" />
-                  <input type="file" ng-file-select="onFileSelect($files, 'newImage')" class="pull-left" /><br />
-                  <button type="button" ng-click="addItem('newImage', 'images')">Add</button>
-                </div>
-              </td>
-              <td colspan="2">
-                <textarea style="width: 500px; height: 100%;" ng-model="newImage.description" ng-keydown="maybeAddItem($event, 'newImage', 'images')" placeholder="Image description"></textarea>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <fieldset class="col-sm-3">
-          <legend>New Image Preview</legend>
-          <img ng-src="{{file_server}}{{newImage.url}}" style="max-height: 100px;"></img>
-        </fieldset>
-      </div>
+      <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
 
       <h3>Links with the World Database on Protected Areas</h3>
       <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
@@ -206,46 +168,14 @@
 
       <h3>Maps</h3>
       <h4>Please send <strong>high quality digital GIS files</strong> or scanned maps situating and describing the project area. There files may be made available for download on the LifeWeb website and may be used in CBD and LifeWeb communication materials</h4>
-      <table>
-        <thead>
-          <tr>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Map Link</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-hide="document.maps.length">
-            <td colspan="4" style="font-weight: bold; text-align: center;">... No Maps Yet. Please upload and add a map below ...</td>
-          </tr>
-          <tr ng-repeat="map in document.maps">
-            <td><input type="text" ng-model="map.title" /></td>
-            <td><input type="text" ng-model="map.description" /></td>
-            <td><a ng-href="{{file_server}}{{map.url}}">View Map</a><button ng-click="document.maps.splice($index, 1)">X</button></td>
-          </tr>
-          <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
-          <tr>
-            <td>
-              <input type="text" style="width: 300px;" ng-model="newMap.title" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="title"/>
-              <div ng-file-drop="onFileSelect($files, 'newMap')" ng-file-drag-over-class="dragdrophover">
-                <input type="hidden" class="pull-left" ng-model="newMap.url" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="URL - drag and drop a file" style="width: 200px;" />
-                <input type="file" ng-file-select="onFileSelect($files, 'newMap')" class="pull-left" /><br />
-                <button type="button" ng-click="addItem('newMap', 'maps')">Add</button>
-              </div>
-            </td>
-            <td colspan="2">
-              <textarea style="width: 500px; height: 100%;" ng-model="newMap.description" ng-keydown="maybeAddItem($event, 'newMap', 'maps')" placeholder="Map information"></textarea></td>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <elink ng-model="document.maps" type-title="Map"></elink>
 
       <h3>Coordinates</h3>
       <lonlat-input ng-model="document.coordinates" required help="General Longitude and Latutide of the project."></lonlat-input>
 
       <h3>Attachments</h3>
       <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
-      <elink ng-model="document.attachments" typeTitle="Attachment"></elink>
+      <elink ng-model="document.attachments" type-title="Attachment"></elink>
 
       <hr />
 

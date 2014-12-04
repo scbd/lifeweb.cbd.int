@@ -1,4 +1,4 @@
-define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js', '/app/js/directives/elink.js',], function(app) {
+define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js',], function(app) {
   app.controller('EditCtrl', function($scope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility, $location) {
 
     $scope.tab = 'edit';
