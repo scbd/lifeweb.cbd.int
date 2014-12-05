@@ -27,9 +27,8 @@
           <input type="text" ng-model="newItem.title" ng-keydown="maybeAddItem($event, newItem)" style="width: 300px;" placeholder="title" /><br />
           <tags-input id="attachkeywords" ng-model="newItem.keywords" style="width: 300px;">
           </tags-input>
-          <div style="width: 300px; height: 30px;" ng-file-drop="onFileSelect($files, 'newItem')" ng-file-drag-over-class="dragdrophover">
-            <input type="file" style="width: 80px;" ng-file-select="onFileSelect($files, 'newItem')" class="pull-left" />
-            <a class="pull-left" style="width:200px; overflow: hidden; white-space: nowrap;" ng-href="{{newItem.url}}">{{getFilename(newItem.url)}}</a>
+          <div style="width: 300px;">
+            <afc-file ng-model="newItem.url"></afc-file>
           </div>
           <button type="button" style="width:300px;" ng-click="addItem(newItem)">Add</button>
         </td>

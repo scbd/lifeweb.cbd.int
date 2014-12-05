@@ -3,10 +3,16 @@
 <link href="/app/css/lifeweb_admin.css" rel="stylesheet">
 <style>
   .dragdrophover {
-    background-color: #DDDDFF;
+    background-color: #BBFFBB;
     border: dashed 2px gray;
     padding: 1px;
   }
+  .beforedragdrop {
+    height: 30px;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+
 </style>
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
   <ng-include src="'/app/partials/admin_header.html'"></ng-include>
@@ -26,17 +32,14 @@
           -->
         </div>
       </div>
-      <afc-input ng-model="document.title" required data-title="Title" data-placeholder="title"></afc-input>
+      <afc-input ng-model="fakeTitle" required data-title="Title" data-placeholder="title"></afc-input>
       <afc-input type="number" ng-model="document.timeFrame" title="Timeframe" placeholder="years"></afc-input>
       <afc-text ng-model="document.description" required data-title="Abstract" data-placeholder="Abstract of Project"></afc-text>
       <!--TODO: add preview -->
-      <div class="row form-group" ng-file-drop="onFileSelect($files, 'thumbnail', document)" ng-file-drag-over-class="dragdrophover">
+      <div class="row form-group">
         <label class="col-xs-2 control-label">Thumbnail</label>
-        <div class="col-xs-5">
-          <input type="text" class="pull-left" ng-model="document.thumbnail" />
-        </div>
-        <div class="col-xs-5">
-          <input type="file" ng-file-select="onFileSelect($files, 'thumbnail', document)" class="pull-left" />
+        <div class="col-xs-10">
+            <afc-file ng-model="document.thumbnail" maxUrlLength="100"></afc-file>
         </div>
       </div>
           
@@ -51,7 +54,7 @@
           <span>{{aichi.name}}</span>
         </button>
       </div>
-      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="name" key-key="identifier"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="description" key-key="identifier"></tabbed-textareas>
       
       <h3>Alignment with National Planning</h3>
       <h4>Consistent with the decision X/31, please indicate the relevance between this sbumission and the following planning processes</h4>
@@ -92,7 +95,7 @@
             <td><input type="text" ng-model="partner.name" /></td>
             <td><input type="text" ng-model="partner.info" /></td>
             <td>
-              <afc-autocomplete source="roles" ng-model="partner.role"></afc-autocomplete>
+              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="partner.role"></afc-autocomplete>
             </td>
             <td>
               <button ng-click="document.institutionalContext.splice($index, 1)">X</button>
@@ -102,7 +105,7 @@
           <tr>
             <td>
               <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Full Name"/><br />
-              <afc-autocomplete source="roles" ng-model="newpartner.role" placeholder="Role"></afc-autocomplete><br />
+              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="newpartner.role" placeholder="Role"></afc-autocomplete><br />
               <button type="button" ng-click="addItem('newpartner', 'institutionalContext')">Add New Partner</button>
             </td>
             <td colspan="3">
@@ -162,7 +165,7 @@
         <input type="text" class="form-control" ng-model="newProtected_area" ng-keydown="maybeAddPrimitive($event, 'newProtected_area', 'protectedAreas')" />
       </div>
       <div class="col-sm-2">
-        <button class="col-sm-2 form-control" ng-click="addPrimitive('newProtected_area', 'protectedAreas')">Add</button>
+        <button type="button" class="col-sm-2 form-control" ng-click="addPrimitive('newProtected_area', 'protectedAreas')">Add</button>
       </div>
       <br />
 
@@ -204,7 +207,7 @@
             <td><input type="text" ng-model="donor.name" /></td>
             <td><input type="text" ng-model="donor.description" /></td>
             <td><input type="number" ng-model="donor.funding" /></td>
-            <td><input type="date" ng-model="donor.date_donated" /></td>
+            <td><input type="date" ng-model="donor.date" /></td>
             <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
           </tr>
           <tr ng-show="document.donors.length">
@@ -218,7 +221,7 @@
             </td>
             <td>
               <input type="number" ng-model="newdonor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%" placeholder="$$$ (USD)" /><br />
-              <input type="date" ng-model="newdonor.date_donated"  ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" />
+              <input type="date" ng-model="newdonor.date"  ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" />
               <div class="checkbox">
                 <label>
                   <input type="checkbox" ng-model="newdonor.lifeweb_facilitated" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /> Lifeweb Facilitated<br />
