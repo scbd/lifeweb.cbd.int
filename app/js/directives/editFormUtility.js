@@ -89,22 +89,21 @@ app.factory("editFormUtility", ["IStorage", "$q","commonjs", function(storage, $
 			if (document.government)
 				metadata.government = document.government.identifier;
 
-			_self.draftExists(identifier).then(
-				function(hasDraft) {
+			_self.draftExists(identifier).then(function(hasDraft) {
+				var securityPromise = hasDraft ? storage.drafts.security.canUpdate(identifier, document.header.schema, metadata)
+											   : storage.drafts.security.canCreate(identifier, document.header.schema, metadata);
 
-					var securityPromise = hasDraft ? storage.drafts.security.canUpdate(identifier, document.header.schema, metadata)
-												   : storage.drafts.security.canCreate(identifier, document.header.schema, metadata);
+				securityPromise.then(function(isAllowed) {
+					if (!isAllowed)
+						throw { error: "Not authorized to save draft" };
 
-					securityPromise.then(
-						function(isAllowed) {
-							if (!isAllowed)
-								throw { error: "Not authorized to save draft" };
-
-							storage.drafts.put(identifier, document).then(function(result) {
-                deferred.resolve(result); //THIS is the resolution of the promise we return.
-              });
-						});
+                    //NOTE: CBD's rest services do everything by put? Confusing...
+                    //      normally you'd use post for creation, and put for editing.
+					storage.drafts.put(identifier, document).then(function(result) {
+                        deferred.resolve(result); //THIS is the resolution of the promise we return.
+                    });
 				});
+			});
 
         return deferred.promise;
 		},

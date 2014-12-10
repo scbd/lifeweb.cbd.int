@@ -8,7 +8,7 @@ define(['app', 'angular-form-controls'], function(app) {
                 maxUrlLength: '@',
             },
             controller: function($scope, IStorage, $rootScope) {
-                if(!$scope.maxUrlLength) $scope.maxUrlLength = 25;
+                if(!$scope.maxUrlLength) $scope.maxUrlLength = 20;
 
                 //TODO: get rid of the version of this function in editProjec tor edit.js or whereever
                 $scope.onFileSelect = function($files, newItemKey) {
@@ -33,6 +33,7 @@ define(['app', 'angular-form-controls'], function(app) {
                     if(url) {
                         var split = url.split('/');
                         var filename = split[split.length-1];
+                        console.log('filename, length, max: ', filename, filename.length, $scope.maxUrlLength);
                         if(filename.length > $scope.maxUrlLength)
                             return '...'+filename.substr(-25);
                         return filename;

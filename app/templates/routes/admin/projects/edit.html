@@ -39,7 +39,7 @@
       <div class="row form-group">
         <label class="col-xs-2 control-label">Thumbnail</label>
         <div class="col-xs-10">
-            <afc-file ng-model="document.thumbnail" maxUrlLength="100"></afc-file>
+            <afc-file ng-model="document.thumbnail.url" max-url-length="100"></afc-file>
         </div>
       </div>
           
@@ -155,7 +155,7 @@
       <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
       <div ng-repeat="protectedArea in document.protectedAreas">
         <div class="col-sm-10">
-          <input type="text" class="form-control" ng-model="protectedArea" />
+          <input type="text" class="form-control" ng-model="protectedArea.url" />
         </div>
         <div class="col-sm-2">
           <a ng-href="{{protectedArea}}">View</a><button ng-click="document.protectedAreas.splice($index, 1)">X</button>

@@ -28,7 +28,7 @@
           <tags-input id="attachkeywords" ng-model="newItem.keywords" style="width: 300px;">
           </tags-input>
           <div style="width: 300px;">
-            <afc-file ng-model="newItem.url"></afc-file>
+            <afc-file ng-model="newItem.url" max-url-length="25"></afc-file>
           </div>
           <button type="button" style="width:300px;" ng-click="addItem(newItem)">Add</button>
         </td>

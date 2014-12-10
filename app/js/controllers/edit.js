@@ -23,7 +23,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         header: {
           identifier: guid(), 
           languages: ['en'],
-          schema: schemaName
+          schema: schemaName,
         },
       };
     //console.log('document: ', $scope.document);

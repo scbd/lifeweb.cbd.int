@@ -17,15 +17,15 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       });
 
     var aichi_descriptions = {
-      'AICHI-TARGET-05': {title: "Aichi Target 5", key: "aichi_5", help: "By 2020, the rate of loss of all natural habitats, including forests, is at least halved and where feasible brought close to zero, and degradation and fragmentation is significantly reduced. <a href='http://www.cbd.int/doc/strategic-plan/targets/T5-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-06': {title: "Aichi Target 6", key: "aichi_6", help: "By 2020, all fish and invertebrate stocks and aquatic plants are managed and harvested sustainably, legally and applying ecosystem based approaches, so that overfishing is avoided, recovery plans and measures are in place for all depleted species, fisheries have no significant adverse impacts on threatened species and vulnerable ecosystems and the impacts of fisheries on stocks, species and ecosystems are within safe ecological limits.  <a href='http://www.cbd.int/doc/strategic-plan/targets/T6-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-09': {title: "Aichi Target ", key: "aichi_9", help: "By 2020, invasive alien species and pathways are identified and prioritized, priority species are controlled or eradicated, and measures are in place to manage pathways to prevent their introduction and establishment. <a href='http://www.cbd.int/doc/strategic-plan/targets/T9-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-10': {title: "Aichi Target 10", key: "aichi_10", help: "By 2015, the multiple anthropogenic pressures on coral reefs, and other vulnerable ecosystems impacted by climate change or ocean acidification are minimized, so as to maintain their integrity and functioning <a href='http://www.cbd.int/doc/strategic-plan/targets/T10-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-11': {title: "Aichi Target 11", key: "aichi_11", help: "By 2020, at least 17 percent of terrestial and inland water, and 10 percent of coastal and marine areas, especially areas of particular importane for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well-connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscapes and seascapes. <a href='http://www.cbd.int/doc/strategic-plan/targets/T11-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-12': {title: "Aichi Target 12", key: "aichi_12", help: "By 2020, the extinction of known threatened species has been prevented and their conservation status, particularly of those most in decline, has been improved and sustained. <a href='http://www.cbd.int/doc/strategic-plan/targets/T12-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-13': {title: "Aichi Target 13", key: "aichi_13", help: "By 2020, the genetic diversity of cultivated plants and farmed and domesticated animals and of wild relatives, including other socio-economically as well as culturally valuable species, is maintained, and strategies have been developed and implemented for minimizing genetic erosion and safeguarding their genetic diversity. <a href='http://www.cbd.int/doc/strategic-plan/targets/T13-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-14': {title: "Aichi Target 14", key: "aichi_14", help: "By 2020, ecosystems that provide essential services, including services related to water, and contribute to health, livelihoods and well-being, are restored and safeguarded, taking into account the needs of women, indigenous and local communities,and the poor and vulnerable. <a href='http://www.cbd.int/doc/strategic-plan/targets/T14-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-15': {title: "Aichi Target 15", key: "aichi_15", help: "By 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 percent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification. <a href='http://www.cbd.int/doc/strategic-plan/targets/T15-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-05': {title: "Aichi Target 5", key: "aichi_5", help: "By 2020, the rate of loss of all natural habitats, including forests, is at least halved and where feasible brought close to zero, and degradation and fragmentation is significantly reduced. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T5-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-06': {title: "Aichi Target 6", key: "aichi_6", help: "By 2020, all fish and invertebrate stocks and aquatic plants are managed and harvested sustainably, legally and applying ecosystem based approaches, so that overfishing is avoided, recovery plans and measures are in place for all depleted species, fisheries have no significant adverse impacts on threatened species and vulnerable ecosystems and the impacts of fisheries on stocks, species and ecosystems are within safe ecological limits.  <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T6-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-09': {title: "Aichi Target ", key: "aichi_9", help: "By 2020, invasive alien species and pathways are identified and prioritized, priority species are controlled or eradicated, and measures are in place to manage pathways to prevent their introduction and establishment. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T9-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-10': {title: "Aichi Target 10", key: "aichi_10", help: "By 2015, the multiple anthropogenic pressures on coral reefs, and other vulnerable ecosystems impacted by climate change or ocean acidification are minimized, so as to maintain their integrity and functioning <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T10-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-11': {title: "Aichi Target 11", key: "aichi_11", help: "By 2020, at least 17 percent of terrestial and inland water, and 10 percent of coastal and marine areas, especially areas of particular importane for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well-connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscapes and seascapes. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T11-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-12': {title: "Aichi Target 12", key: "aichi_12", help: "By 2020, the extinction of known threatened species has been prevented and their conservation status, particularly of those most in decline, has been improved and sustained. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T12-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-13': {title: "Aichi Target 13", key: "aichi_13", help: "By 2020, the genetic diversity of cultivated plants and farmed and domesticated animals and of wild relatives, including other socio-economically as well as culturally valuable species, is maintained, and strategies have been developed and implemented for minimizing genetic erosion and safeguarding their genetic diversity. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T13-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-14': {title: "Aichi Target 14", key: "aichi_14", help: "By 2020, ecosystems that provide essential services, including services related to water, and contribute to health, livelihoods and well-being, are restored and safeguarded, taking into account the needs of women, indigenous and local communities,and the poor and vulnerable. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T14-quick-guide-en.pdf'>More Info</a>"},
+      'AICHI-TARGET-15': {title: "Aichi Target 15", key: "aichi_15", help: "By 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 percent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T15-quick-guide-en.pdf'>More Info</a>"},
       'AICHI-TARGET-OTHER': {title: "Contribution to other Aichi Targets", key: "aichi_other", help: "Please describe contributions to any other Aichi Targets"},
     };
     function attachAichiDescriptions(targets) {
@@ -43,6 +43,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.fakeKeywords = [];
     $scope.newAttachment = {};
     $scope.fakeNewAttachmentKeywords = [];
+    $scope.fakeProtectedAreas = [];
     
     $scope.national_alignment = [
       {title: 'NBSAPs', key: 'NBSAP', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
@@ -162,10 +163,12 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 comment: fake[key],
             });
     }
+    /*
     $scope.$watch('fakeKeywords', function() {
         ngTagsToArray($scope.fakeKeywords, $scope.document, 'keywords');
         console.log('keywords: ', $scope.document.keywords);
     }, true);
+    */
     //TODO: use a lozalized input instead of doing this...
     $scope.$watch('fakeTitle', function() {
         $scope.document.title = {en: $scope.fakeTitle};
@@ -188,10 +191,12 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
        }
     };
 
+    //NOTE: this function is no longer generic.
     $scope.addPrimitive = function(scopeNewItemKey, projectKey) {
       if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
-      $scope.document[projectKey].push($scope[scopeNewItemKey]);
+      $scope.document[projectKey].push({url: $scope[scopeNewItemKey]});
       $scope[scopeNewItemKey] = '';
+      console.log('protectedareas: ', $scope.document.protectedAreas);
     }
 
     $scope.maybeAddPrimitive = function($event, scopeNewItemKey, projectKey) {
@@ -218,6 +223,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $scope.document.maps = $scope.document.maps || [];
       $scope.document.attachments = $scope.document.attachments || [];
       $scope.document.donors = $scope.document.donors || [];
+      $scope.document.thumbnail = $scope.document.thumbnail || {};
 
         //TODO: move or something. This is for elink.js...
         $rootScope.documentIdentifier = $scope.document.header.identifier;
