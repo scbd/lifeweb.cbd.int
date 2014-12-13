@@ -7,9 +7,11 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
                 ngModel: '=',
                 typeTitle: '@',
                 imgPreview: '@?',
+                autocomplete: '=?',
             },
             controller: function($scope, IStorage, $rootScope) {
                 $scope.url = '';
+                console.log('autocompete:', $scope.autocomplete);
 
                 //TODO: both ngTagsToArray are duplicated in edit.js and editProject.js
                 function ngTagsToArray(fake, real, realKey) {

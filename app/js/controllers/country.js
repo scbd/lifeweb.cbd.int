@@ -36,25 +36,26 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
     });
 
   console.log('country: ', sCountry);
+      //Duplicated in edit event
 	  $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
 		 .success(function (data) {
 			  $scope.geolocation = {
-          lat: data[0].lat,
-          lon: data[0].lon,
-        };
-        $scope.bounds = [
-          [data[0].boundingbox[0], data[0].boundingbox[2]],
-          [data[0].boundingbox[1], data[0].boundingbox[3]],
-        ];
+              lat: data[0].lat,
+              lon: data[0].lon,
+            };
+            $scope.bounds = [
+              [data[0].boundingbox[0], data[0].boundingbox[2]],
+              [data[0].boundingbox[1], data[0].boundingbox[3]],
+            ];
 
-        var setview = function() {
-          if ($scope.geolocation)
-            map.map.fitBounds($scope.bounds, {reset: true});
-        }
-        if(map.map)
-          setview();
-        else
-          map.callback = setview;
+            var setview = function() {
+              if ($scope.geolocation)
+                map.map.fitBounds($scope.bounds, {reset: true});
+            }
+            if(map.map)
+              setview();
+            else
+              map.callback = setview;
 		 });
   });
   return true;

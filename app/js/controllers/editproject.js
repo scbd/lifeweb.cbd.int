@@ -10,8 +10,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
  
     $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
-        console.log('aichi: ', response);
         attachAichiDescriptions(response);
+        console.log('aichi: ', $scope.aichi_targets);
       })
       .error(function(response, status) {
       });
@@ -26,7 +26,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       'AICHI-TARGET-13': {title: "Aichi Target 13", key: "aichi_13", help: "By 2020, the genetic diversity of cultivated plants and farmed and domesticated animals and of wild relatives, including other socio-economically as well as culturally valuable species, is maintained, and strategies have been developed and implemented for minimizing genetic erosion and safeguarding their genetic diversity. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T13-quick-guide-en.pdf'>More Info</a>"},
       'AICHI-TARGET-14': {title: "Aichi Target 14", key: "aichi_14", help: "By 2020, ecosystems that provide essential services, including services related to water, and contribute to health, livelihoods and well-being, are restored and safeguarded, taking into account the needs of women, indigenous and local communities,and the poor and vulnerable. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T14-quick-guide-en.pdf'>More Info</a>"},
       'AICHI-TARGET-15': {title: "Aichi Target 15", key: "aichi_15", help: "By 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 percent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification. <a target='_blank' href='http://www.cbd.int/doc/strategic-plan/targets/T15-quick-guide-en.pdf'>More Info</a>"},
-      'AICHI-TARGET-OTHER': {title: "Contribution to other Aichi Targets", key: "aichi_other", help: "Please describe contributions to any other Aichi Targets"},
+      'AICHI-TARGET-OTHER': {title: "Contribution to other Aichi Targets", key: "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED", help: "Please describe contributions to any other Aichi Targets"},
     };
     function attachAichiDescriptions(targets) {
         $scope.aichi_targets = [];
@@ -34,20 +34,17 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             if(aichi_descriptions[targets[i].identifier]) {
                 $scope.aichi_targets.push(targets[i]);
                 $scope.aichi_targets[$scope.aichi_targets.length - 1].description = aichi_descriptions[targets[i].identifier].help;
-            }
+                $scope.aichi_targets[$scope.aichi_targets.length - 1].key = $scope.aichi_targets[$scope.aichi_targets.length - 1].identifier;            }
         }
     }
 
     $scope.aichi_target_tabs = [];
     $scope.climate_contribution_tabs = [];
-    $scope.fakeKeywords = [];
     $scope.newAttachment = {};
-    $scope.fakeNewAttachmentKeywords = [];
-    $scope.fakeProtectedAreas = [];
     
     $scope.national_alignment = [
       {title: 'NBSAPs', key: 'NBSAP', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
-      {title: 'Other National Strategies', key: 'other', help: 'e.g. Programme of WOrk on Protected Areas (PoWPA), Poverty Reduction Strategies (PRSPs), National Climate Change Strategies, REDD+ Strategies, National Adaptation Plans of Action (NAPAs), economic and sustainable development plans, national resource mobilization strategy, infrastructure plans, land use plans, strategies for achieving the Millennium Development Goals, etc.'},
+      {title: 'Other National Strategies', key: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED', help: 'e.g. Programme of WOrk on Protected Areas (PoWPA), Poverty Reduction Strategies (PRSPs), National Climate Change Strategies, REDD+ Strategies, National Adaptation Plans of Action (NAPAs), economic and sustainable development plans, national resource mobilization strategy, infrastructure plans, land use plans, strategies for achieving the Millennium Development Goals, etc.'},
     ];
 
     /*
@@ -61,18 +58,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function(data) {
       $scope.countries = data;
     });
-
-    $scope.countriesAC = function() {
-      return $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
-      console.log('countries data format: ', data);
-        var countries = data.data;
-        for(var i = 0; i != countries.length; ++i)
-          countries[i].__value = countries[i].name;
-
-        return countries;
-      });
-    };
-
     $scope.countryOptions = function($query) {
       var deferred = $q.defer();
       var matchedOptions = [];
@@ -101,8 +86,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
     //title, key, help
     $scope.contrib_climate = [
-        {key: 'ecoservices1', title: 'Climate Change Mitigation',},
-        {key: 'ecoservices2', title: 'Climate Change Adaptation',},
+        {key: 'ecoservices1', title: 'Climate Change Mitigation', help: 'Please indicate information about <a href="http://www.cbd.int/doc/publications/cbd-value-nature-en.pdf">carbon sequestration and/or storage benefits</a> from this project. If specific figures are currently available, please include them here.', },
+        {key: 'ecoservices2', title: 'Climate Change Adaptation', help: 'Please indicate information about <a href="http://adaptation.cbd.int/">climate change adaptation</a> benefits from this project, such as storm barriers, flood control, protection against sea level rise, enabling specific mobility in the face of climate change, etc.',},
         {key: 'ecoservices3', title: 'Freshwater Security',},
         {key: 'ecoservices4', title: 'Food Security',},
         {key: 'ecoservices5', title: 'Human Health',},
@@ -120,8 +105,22 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         {__value: 'Project Management', identifier: 'project_management',},
         {__value: 'Strategic Planning', identifier: 'strategic_planning',},
         {__value: 'Technical Support', identifier: 'technical_support',},
-        {__value: 'Other', identifier: 'other',},
+        {__value: 'Other', identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED',},
       ]);
+      return deferred.promise;
+    };
+
+    var attachmentKeywords = [
+        {text: 'plans'},
+        {text: 'budget documents'},
+        {text: 'official expression of interest'},
+        {text: 'news article'},
+    ];
+    $scope.attachment_keywords = function($query) {
+      var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
+      deferred.resolve(attachmentKeywords.filter(function(element) {
+        return element.text.indexOf($query) != -1;
+      }));
       return deferred.promise;
     };
 
@@ -148,9 +147,9 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             'nationalAlignment'
         );
     }, true);
-    $scope.$watch('fakeEco', function() {
+    $scope.$watch('fakeEcologicalContribution', function() {
         mapObjectToTermAndComment(
-            $scope.fakeEco,
+            $scope.fakeEcologicalContribution,
             $scope.document,
             'ecologicalContribution'
         );
@@ -163,6 +162,19 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 comment: fake[key],
             });
     }
+    function mapTermAndCommentToObject(fake, real, fakeKey, tabInfo, tabs) {
+        var fakeTargets = [];
+        for(var i=0; i!=real.length; ++i) {
+            fakeTargets[real[i].type.identifier] = real[i].comment;
+            if(tabInfo)
+                for(var k=0; k!=tabInfo.length; ++k) {
+                    console.log(k + ': ', tabInfo[k].key, real[i].type.identifier);
+                    if(tabInfo[k].key == real[i].type.identifier)
+                        $scope.addTab(tabs, tabInfo, k);
+                        }
+        }
+        $scope[fakeKey] = fakeTargets;
+    }
     /*
     $scope.$watch('fakeKeywords', function() {
         ngTagsToArray($scope.fakeKeywords, $scope.document, 'keywords');
@@ -173,10 +185,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.$watch('fakeTitle', function() {
         $scope.document.title = {en: $scope.fakeTitle};
     });
-
-    $scope.identifierMapping = function(item) {
-        return {identifier: item.identifier};
-    };
 
     $scope.addItem = function(scopeNewItemKey, projectKey) {
       if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
@@ -214,6 +222,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.document.maps = [];
     $scope.document.attachments = [];
     $scope.document.donors = [];
+    $scope.fakeNewAttachmentKeywords = [];
+    $scope.fakeTitle = [];
     $q.when($scope.documentPromise).then(function(document) {
       console.log('doc: ', document);
       $scope.document = document;
@@ -224,6 +234,16 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $scope.document.attachments = $scope.document.attachments || [];
       $scope.document.donors = $scope.document.donors || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
+      if($scope.document.title)
+        $scope.fakeTitle = $scope.document.title.en || [];
+      if($scope.document.aichiTargets)
+        mapTermAndCommentToObject($scope.fakeAichiTargets, $scope.document.aichiTargets, 'fakeAichiTargets', $scope.aichi_targets, $scope.aichi_target_tabs);
+      if($scope.document.nationalAlignment)
+        mapTermAndCommentToObject($scope.fakeNationalAlignment, $scope.document.nationalAlignment, 'fakeNationalAlignment');
+      if($scope.document.ecologicalContribution)
+        mapTermAndCommentToObject($scope.fakeEcologicalContribution, $scope.document.ecologicalContribution, 'fakeEcologicalContribution', $scope.contrib_climate, $scope.climate_contribution_tabs);
+
+      console.log('fake aichi: ', $scope.fakeAichiTargets);
 
         //TODO: move or something. This is for elink.js...
         $rootScope.documentIdentifier = $scope.document.header.identifier;

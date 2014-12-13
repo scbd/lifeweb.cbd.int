@@ -24,6 +24,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
           identifier: guid(), 
           languages: ['en'],
           schema: schemaName,
+          realm: 'lifeweb',
         },
       };
     //console.log('document: ', $scope.document);
@@ -47,6 +48,21 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
       if(tab == "review")
         validate();
     });
+
+    $scope.countriesAC = function() {
+      return $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
+      console.log('countries data format: ', data);
+        var countries = data.data;
+        for(var i = 0; i != countries.length; ++i)
+          countries[i].__value = countries[i].name;
+
+        return countries;
+      });
+    };
+
+    $scope.identifierMapping = function(item) {
+        return {identifier: item.identifier};
+    };
 
     function validate() {
 

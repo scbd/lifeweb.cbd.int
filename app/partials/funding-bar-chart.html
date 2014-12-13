@@ -26,7 +26,7 @@
             <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.amount |  filterCurrency:match.currency:display}}</span> {{match.donor.name}}
         </div>
         <hr style="padding:0; margin:0; width:300px;border-top:1px solid #808080;" />
-        <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'US Dollars':display }} </span> funding needed
+        <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'US Dollars':display }} </span> &nbsp; funding needed
 
     </div>
 

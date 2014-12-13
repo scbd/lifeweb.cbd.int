@@ -1,8 +1,9 @@
 {
   "name": "lifeweb-cbd-int",
   "dependencies": {
-    "angular": "~1.2.14",
+    "angular": "~1.3.6",
     "angular-route": "~1.2.5",
+    "angular-bootstrap": "~0.12.0",
     "font-awesome": "~4.0.3",
     "requirejs": "latest",
     "requirejs-domready": "latest",
@@ -13,9 +14,12 @@
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
     "jquery.stellar": "latest",
-    "angular_form_controls": "0.3.28",
+    "angular_form_controls": "0.3.29",
     "ng-file-upload": "~1.4.0",
     "ng-file-upload-shim": "~1.4.0",
     "ui-autocomplete": "~0.5.6"
+  },
+  "resolutions": {
+    "angular": "1.3.6"
   }
 }

@@ -17,6 +17,7 @@
         <td><input type="text" ng-model="item.description" /></td>
         <td>
           <tags-input id="attachkeywords" ng-model="fakeKeywords">
+            <auto-complete ng-if="autocomplete" source="autocomplete($query)"></auto-complete>
           </tags-input>
         </td>
         <td><a ng-href="{{item.url}}">Download {{typeTitle}}</a><button ng-click="ngModel.splice($index, 1)">X</button></td>

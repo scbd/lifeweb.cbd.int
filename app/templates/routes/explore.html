@@ -102,7 +102,6 @@
 
 
                     <div ng-show="list==false" class="media project_well" ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
-
                         <a class="pull-left" href="/projects?id={{proj.id}}" >
                             <img ng-show="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
                             <img ng-hide="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" />
@@ -111,8 +110,8 @@
 
                         <div class="media-body">
                             <span class="media-type" ng-bind-html-unsafe="proj.country"></span>
-                            <a href="/project?id={{proj.id}}">
-                              <h4 class="media-heading">{{proj.title}}</h4>
+                            <a href="/project?id={{proj.identifier}}">
+                              *<h4 class="media-heading">{{proj.title}}</h4>
                             </a>
                             <span>{{proj.summary}}</span>
                             <br />
@@ -160,9 +159,9 @@
 
                                   
 
-                                    <a href="/project?id={{proj.id}}"><img ng-show="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
+                                    <a href="/project?id={{proj.identifier}}"><img ng-show="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
                                     <img ng-hide="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a></td>
-                                <td style="font-weight:bold;"> <a href="/project?id={{proj.id}}"><span class="media-heading">{{proj.title}}</span></a></td>
+                                <td style="font-weight:bold;"> <a ng-href="/project?id={{proj.identifier}}"><span class="media-heading">{{proj.title.en}}</span></a></td>
                                 <td> <span style="font-weight:bold;">{{proj.country}}</span></td>
                                 <td nowrap> {{proj.funding_needed | filterCurrency:proj.currency:currency}} </td>
                                 <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ proj.approved_on_date | filterDate  }}</td>

@@ -72,7 +72,7 @@
       </div>
 
 
-      <tabbed-textareas rows="4" ng-model="fakeEco" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeEcologicalContribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
 
       <hr />
 
@@ -178,7 +178,7 @@
 
       <h3>Attachments</h3>
       <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
-      <elink ng-model="document.attachments" type-title="Attachment"></elink>
+      <elink ng-model="document.attachments" type-title="Attachment" autocomplete="attachment_keywords"></elink>
 
       <hr />
 

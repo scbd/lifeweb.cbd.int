@@ -1,18 +1,22 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'URI',], function(app) {
-  app.controller('ProjectsCtrl', function ($scope, $http) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility',], function(app) {
+  app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility) {
       var sID = new URI().query(true).id;
 
+//TODO: none of this SID stuff is required... i don't think. the projects controller isn't used for a single project, the EOIDetails controller is.
       $scope.projID = sID;
 
       if (!sID) {
 
-          $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
-              $scope.projects = data;
+          var query = '(type eq \'lwProject\')';
+          IStorage.documents.query(query).then(function(data) {
+          //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
+              $scope.projects = data.data.Items;
               console.log('data: ', data);
           });
       }
       else {
-          $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
+          editFormUtility.load(sID).then(function(data) {
+          //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
               $scope.projects = data;
           });
       }

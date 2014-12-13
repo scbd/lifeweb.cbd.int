@@ -9,6 +9,7 @@ require.config({
         'angular'         : '//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min',
         'angular-sanitize': '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular-sanitize.min',
         'angular-route'   : '../libs/angular-route/angular-route',
+        'angular-bootstrap'   : '../libs/angular-bootstrap/ui-bootstrap-tpls',
         'angular-cookies' : 'http://code.angularjs.org/1.2.12/angular-cookies',
         'angular-form-controls': '../libs/angular_form_controls/form-controls',
         'editFormUtility': '../js/directives/editFormUtility',
