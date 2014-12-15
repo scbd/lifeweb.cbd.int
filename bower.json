@@ -14,7 +14,7 @@
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
     "jquery.stellar": "latest",
-    "angular_form_controls": "0.3.29",
+    "angular_form_controls": "0.3.30",
     "ng-file-upload": "~1.4.0",
     "ng-file-upload-shim": "~1.4.0",
     "ui-autocomplete": "~0.5.6"

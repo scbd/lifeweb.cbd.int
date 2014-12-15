@@ -186,6 +186,16 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         $scope.document.title = {en: $scope.fakeTitle};
     });
 
+    //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
+    $scope.$watch('document.donors', function() {
+        if($scope.document.donors && $scope.document.donors.length == 0)
+            $scope.document.donors = undefined;
+    });
+    $scope.$watch('document.maps', function() {
+        if($scope.document.maps && $scope.document.maps.length == 0)
+            $scope.document.maps = undefined;
+    });
+
     $scope.addItem = function(scopeNewItemKey, projectKey) {
       if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
       $scope.document[projectKey].push($.extend({}, $scope[scopeNewItemKey]));
@@ -221,7 +231,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.document.images = []
     $scope.document.maps = [];
     $scope.document.attachments = [];
-    $scope.document.donors = [];
+    //$scope.document.donors = [];
     $scope.fakeNewAttachmentKeywords = [];
     $scope.fakeTitle = [];
     $q.when($scope.documentPromise).then(function(document) {
@@ -232,7 +242,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $scope.document.images = $scope.document.images || []
       $scope.document.maps = $scope.document.maps || [];
       $scope.document.attachments = $scope.document.attachments || [];
-      $scope.document.donors = $scope.document.donors || [];
+      //$scope.document.donors = $scope.document.donors || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
       if($scope.document.title)
         $scope.fakeTitle = $scope.document.title.en || [];

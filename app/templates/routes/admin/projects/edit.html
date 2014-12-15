@@ -88,7 +88,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-hide="document.institutionalContext.length">
+          <tr ng-hide="document.institutionalContext && document.institutionalContext.length">
             <td colspan="4" style="font-weight: bold; text-align: center;">... No Partners yet. Please add a partner below ...</td>
           </tr>
           <tr ng-repeat="partner in document.institutionalContext">
@@ -125,7 +125,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-hide="document.budget.length">
+          <tr ng-hide="document.budget && document.budget.length">
             <td colspan="4" style="font-weight: bold; text-align: center;">... No Activities Yet. Please add an activity below ...</td>
           </tr>
           <tr ng-repeat="activity in document.budget">
@@ -134,7 +134,7 @@
             <td><input type="number" ng-model="activity.cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
           </tr>
           <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
-          <tr ng-show="document.budget.length">
+          <tr ng-if="document.budget && document.budget.length">
             <td colspan="3" style="text-align: right">Total: ${{sum(document.budget, 'cost')}}</td>
           </tr>
           <tr>
@@ -200,7 +200,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr ng-hide="document.donors.length">
+          <tr ng-hide="document.donors && document.donors.length">
             <td colspan="5" style="font-weight: bold; text-align: center;">... No Donors Yet. Add any pre-existing donors to using the form below ...</td>
           </tr>
           <tr ng-repeat="donor in document.donors">
@@ -210,7 +210,7 @@
             <td><input type="date" ng-model="donor.date" /></td>
             <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
           </tr>
-          <tr ng-show="document.donors.length">
+          <tr ng-if="document.donors && document.donors.length">
             <td colspan="5" style="text-align: right">Total: ${{sum(document.donors, 'funding')}}</td>
           </tr>
           <tr><td colspan="5" style="border-bottom: 1px solid gray;"></td></tr>

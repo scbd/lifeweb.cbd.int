@@ -24,7 +24,6 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
           identifier: guid(), 
           languages: ['en'],
           schema: schemaName,
-          realm: 'lifeweb',
         },
       };
     //console.log('document: ', $scope.document);

@@ -3,9 +3,10 @@
 define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angular-file-upload', 'ng-localizer', 'underscore', 'angular-bootstrap',], function(Angular) {
 
 	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ngCookies', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload', 'ngLocalizer', 'ui.bootstrap']);
+    angular.module('formControls').value('realm', 'lifeweb');
 
-	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider', 
-		function($controllerProvider, $compileProvider, $provide, $filterProvider) {
+	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider', '$httpProvider',
+		function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider) {
 			// Allow dynamic registration
 
 			app.filter     = $filterProvider.register;
