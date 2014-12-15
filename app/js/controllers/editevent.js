@@ -1,5 +1,5 @@
 define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js',], function(app) {
-  app.controller('EditEventCtrl', function($scope, $controller, $q, IStorage) {
+  app.controller('EditEventCtrl', function($rootScope, $scope, $controller, $q, IStorage, $http, $location) {
     $controller('EditCtrl', {$scope: $scope});
 
     $scope.loadRecords = function(identifier, schema) {
@@ -12,31 +12,40 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         $scope.document.coverImage = $scope.document.coverImage || {};
     });
 
+    $scope.$on('documentDraftSaved', function(event, draftInfo) {
+      $location.path('/admin/events/edit/' + draftInfo.identifier);
+    });
+
+    $scope.$watch('document.location.country', function() {
+        console.log('locationmap: ', $scope.locationMap);
+        if($scope.document.location.country) {
+            focusCountry($scope.locationMap, $scope.document.location.country.identifier).then(function(mapInfo) {
+console.log('mapinfo: ', mapInfo);
+                $scope.locationMap.fitBounds(mapInfo.bounds, {reset: true});
+                $scope.document.location.coordinates.lat = mapInfo.coordinates.lat;
+                $scope.document.location.coordinates.lng = mapInfo.coordinates.lng;
+            });
+        }
+    });
+
     //takes the base map that has 'callback'. This way we can work even if it hasn't loaded yet...
     function focusCountry(map, countryCode) {
-        $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
-		 .success(function (data) {
+        return $http.jsonp('http://nominatim.openstreetmap.org/search/'+countryCode+'?format=json&json_callback=JSON_CALLBACK&country=' + countryCode)
+		 .then(function (data) {
+            data = data.data;
 		    console.log('data from country bound call: ', data); //looking for zoom
-			  $scope.location.coordinates = {
+			  var coordinates = {
                   lat: data[0].lat,
-                  lon: data[0].lon,
+                  lng: data[0].lon,
                   zoom: 1, //HERE TODO: i need to pass or calculate zoom or something...
                 };
-            $scope.bounds = [
+            var bounds = [
               [data[0].boundingbox[0], data[0].boundingbox[2]],
               [data[0].boundingbox[1], data[0].boundingbox[3]],
             ];
 
-            var setview = function() {
-              if ($scope.geolocation)
-                map.map.fitBounds($scope.bounds, {reset: true});
-            }
-            //This is if the map hasn't been fully initialized yet...
-            if(map.map)
-              setview();
-            else
-              map.callback = setview;
-		 });
+            return { coordinates: coordinates, bounds: bounds };
+         });
     }
   });
 });

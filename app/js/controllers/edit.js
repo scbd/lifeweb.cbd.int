@@ -1,5 +1,5 @@
 define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js',], function(app) {
-  app.controller('EditCtrl', function($scope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility, $location) {
+  app.controller('EditCtrl', function($scope, $rootScope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility, $location) {
 
     $scope.tab = 'edit';
 
@@ -26,13 +26,17 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
           schema: schemaName,
         },
       };
+
+    $scope.documentPromise = $q.when($scope.documentPromise).then(function(document) {
+        //TODO: move or something. This is for elink.js...
+        console.log('doc: ', document);
+        $rootScope.documentIdentifier = document.header.identifier;
+        $scope.document = document;
+        return document;
+    });
     //console.log('document: ', $scope.document);
 
     //authentication.js and services (guid is in services)
-
-    $scope.$on('documentDraftSaved', function(event, draftInfo) {
-      $location.path('/admin/projects/edit/' + draftInfo.identifier);
-    });
 
   //HERE, the form hasn't been introduced to the scope yet. I need to wait till that happens (Link function? Cotnroller definition obejct?), then I need to watch budget and update the validity when it changes.
     //$scope.editProjectForm.addActivity.$setValidity("size", $scope.budget.length >= 1);

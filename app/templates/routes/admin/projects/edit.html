@@ -20,21 +20,16 @@
   <div workflow-std-buttons document="document"></div>
   <div class="row" ng-show="tab=='edit'" km-tab="edit">
     <form novalidate name="editProjectForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
-      <afc-input ng-model="document.leadContact" required data-title="Lead Contact" data-placeholder="Contact's full name"></afc-input>
+      <afc-input ng-model="document.leadContact" required data-title="Lead Contact" data-placeholder="Enter contact's full name"></afc-input>
       <div class="form-group">
         <label for="Countries" class="col-sm-2 control-label">Country or Countries</label>
         <div class="col-sm-10">
-          <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Please enter the country or countries involved..." multiple="true" mapping="identifierMapping"></afc-autocomplete>
-          <!--
-          <tags-input min-tags="1" id="Countries" ng-model="document.countries">
-            <auto-complete source="countryOptions($query)" min-length="1" debounce-delay="0"></auto-complete>
-          </tags-input>
-          -->
+          <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping"></afc-autocomplete>
         </div>
       </div>
-      <afc-input ng-model="fakeTitle" required data-title="Title" data-placeholder="title"></afc-input>
-      <afc-input type="number" ng-model="document.timeFrame" title="Timeframe" placeholder="years"></afc-input>
-      <afc-text ng-model="document.description" required data-title="Abstract" data-placeholder="Abstract of Project"></afc-text>
+      <afc-input ng-model="fakeTitle" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
+      <afc-input type="number" ng-model="document.timeFrame" title="Timeframe" placeholder="Enter project's timeframe in years"></afc-input>
+      <afc-text ng-model="document.description" required data-title="Abstract" data-placeholder="Enter abstract of project"></afc-text>
       <!--TODO: add preview -->
       <div class="row form-group">
         <label class="col-xs-2 control-label">Thumbnail</label>
@@ -48,23 +43,23 @@
       <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets</h3>
       <h4>Lifeweb facilitates financing that contribute toward the achievement of the area-based Aichi Targets in the 2011-2020 Strategic Plan for Biodiversity.</h4>
       <div style="border: dotted 1px gray">
-        <p>Select an Aichi Target attributed to this project...</p>
+        <p>Add an Aichi Target attributed to this project...</p>
         <button type="button" ng-repeat="aichi in aichi_targets" ng-click="addTab(aichi_target_tabs, aichi_targets, $index)" class="addTabButton">
           <span class="glyphicon glyphicon-plus"></span>
           <span>{{aichi.name}}</span>
         </button>
       </div>
-      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="description" key-key="identifier"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="description" key-key="identifier" placeholder="Describe this project's contribution to this aichi target"></tabbed-textareas>
       
       <h3>Alignment with National Planning</h3>
       <h4>Consistent with the decision X/31, please indicate the relevance between this sbumission and the following planning processes</h4>
-      <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key" placeholder="Enter the relevance of this project to this form of planning"></tabbed-textareas>
 
       <h3>Ecological Contribution</h3>
       <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
       <h3>Contribution to Climate Change</h3>
       <div style="border: dotted 1px gray">
-        <p>Select an Contribution to Climate Change attributed to this project...</p>
+        <p>Add an Ecological Contribution attributed to this project...</p>
         <button type="button" ng-repeat="contrib in contrib_climate" ng-click="addTab(climate_contribution_tabs, contrib_climate, $index)" class="addTabButton">
           <span class="glyphicon glyphicon-plus"></span>
           <span>{{contrib.title}}</span>
@@ -72,7 +67,7 @@
       </div>
 
 
-      <tabbed-textareas rows="4" ng-model="fakeEcologicalContribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeEcologicalContribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key" placeholder="Describe this project's contribution to this ecological challenge"></tabbed-textareas>
 
       <hr />
 
@@ -92,10 +87,10 @@
             <td colspan="4" style="font-weight: bold; text-align: center;">... No Partners yet. Please add a partner below ...</td>
           </tr>
           <tr ng-repeat="partner in document.institutionalContext">
-            <td><input type="text" ng-model="partner.name" /></td>
-            <td><input type="text" ng-model="partner.info" /></td>
+            <td><input type="text" ng-model="partner.name" placeholder="Enter partner's fulle name" /></td>
+            <td><input type="text" ng-model="partner.info" placeholder="Describe this partner's role specific to this project" /></td>
             <td>
-              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="partner.role"></afc-autocomplete>
+              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="partner.role" placeholder="Select partner's role"></afc-autocomplete>
             </td>
             <td>
               <button ng-click="document.institutionalContext.splice($index, 1)">X</button>
@@ -104,12 +99,12 @@
           <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
           <tr>
             <td>
-              <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Full Name"/><br />
-              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="newpartner.role" placeholder="Role"></afc-autocomplete><br />
+              <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Enter partner's full name"/><br />
+              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="newpartner.role" placeholder="Select partner's role"></afc-autocomplete><br />
               <button type="button" ng-click="addItem('newpartner', 'institutionalContext')">Add New Partner</button>
             </td>
             <td colspan="3">
-              <textarea style="width: 600px; height: 100%;" ng-model="newpartner.info" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Partner Role Information"></textarea>
+              <textarea style="width: 600px; height: 100%;" ng-model="newpartner.info" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Describe this partner's role specific to this project"></textarea>
             </td>
           </tr>
         </tbody>
@@ -129,18 +124,18 @@
             <td colspan="4" style="font-weight: bold; text-align: center;">... No Activities Yet. Please add an activity below ...</td>
           </tr>
           <tr ng-repeat="activity in document.budget">
-            <td><input type="text" ng-model="activity.activity" /></td>
-            <td><input type="text" ng-model="activity.result" /></td>
-            <td><input type="number" ng-model="activity.cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
+            <td><input type="text" ng-model="activity.activity" placeholder="Enter Associated Activity" /></td>
+            <td><input type="text" ng-model="activity.result" placeholder="Enter Activity's Result" /></td>
+            <td><input type="number" ng-model="activity.cost" placeholder="Enter Activity's Cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
           </tr>
           <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
           <tr ng-if="document.budget && document.budget.length">
             <td colspan="3" style="text-align: right">Total: ${{sum(document.budget, 'cost')}}</td>
           </tr>
           <tr>
-            <td><textarea name="addActivity" ng-model="newActivity.activity" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" style="width: 300px;" palceholder="Activities"></textarea></td>
-            <td><textarea type="text" ng-model="newActivity.result" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" style="width: 300px;" palceholder="Result"></textarea></td>
-            <td><input type="number" ng-model="newActivity.cost" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" placeholder="$$$" /><br /><button type="button" ng-click="addItem('newActivity', 'budget')">Add</button></td>
+            <td><textarea name="addActivity" ng-model="newActivity.activity" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" style="width: 300px;" placeholder="Enter Associated Activity"></textarea></td>
+            <td><textarea type="text" ng-model="newActivity.result" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" style="width: 300px;" placeholder="Enter Activity's Result"></textarea></td>
+            <td><input type="number" ng-model="newActivity.cost" ng-keydown="maybeAddItem($event, 'newActivity', 'budget')" placeholder="Enter Activity's Cost" /><br /><button type="button" ng-click="addItem('newActivity', 'budget')">Add</button></td>
           </tr>
         </tbody>
       </table>
@@ -162,7 +157,7 @@
         </div>
       </div>
       <div class="col-sm-10">
-        <input type="text" class="form-control" ng-model="newProtected_area" ng-keydown="maybeAddPrimitive($event, 'newProtected_area', 'protectedAreas')" />
+        <input type="text" class="form-control" ng-model="newProtected_area" ng-keydown="maybeAddPrimitive($event, 'newProtected_area', 'protectedAreas')" placeholder="Enter a protected area link" />
       </div>
       <div class="col-sm-2">
         <button type="button" class="col-sm-2 form-control" ng-click="addPrimitive('newProtected_area', 'protectedAreas')">Add</button>
@@ -174,7 +169,7 @@
       <elink ng-model="document.maps" type-title="Map"></elink>
 
       <h3>Coordinates</h3>
-      <lonlat-input ng-model="document.coordinates" required help="General Longitude and Latutide of the project."></lonlat-input>
+      <lonlat-input ng-model="document.coordinates" required help="Key-in or click on map, where the general longitude and latutide of the project is"></lonlat-input>
 
       <h3>Attachments</h3>
       <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
@@ -183,7 +178,7 @@
       <hr />
 
       <h3>Additional Project Information</h3>
-      <afc-textarea title="Additional Information" ng-model="document.additional_information"></afc-textarea>
+      <afc-text title="Additional Information" ng-model="document.additional_information" placeholder="Enter any additional information regarding this project"></afc-text>
 
 
       <hr />
@@ -204,9 +199,9 @@
             <td colspan="5" style="font-weight: bold; text-align: center;">... No Donors Yet. Add any pre-existing donors to using the form below ...</td>
           </tr>
           <tr ng-repeat="donor in document.donors">
-            <td><input type="text" ng-model="donor.name" /></td>
-            <td><input type="text" ng-model="donor.description" /></td>
-            <td><input type="number" ng-model="donor.funding" /></td>
+            <td><input type="text" ng-model="donor.name" placeholder="Enter donor's full name" /></td>
+            <td><input type="text" ng-model="donor.description" placeholder="Enter any information regarding donor's donation" /></td>
+            <td><input type="number" ng-model="donor.funding" placeholder="Donor's donation in USD" /></td>
             <td><input type="date" ng-model="donor.date" /></td>
             <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
           </tr>
@@ -216,11 +211,11 @@
           <tr><td colspan="5" style="border-bottom: 1px solid gray;"></td></tr>
           <tr>
             <td colspan="4" style="padding-top: 10px;">
-              Name: <input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 500px;" placeholder="name" /><br />
-              <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%; height: 100%;" placeholder="Description of donation" />
+              Name: <input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 500px;" placeholder="Enter donor's full name" /><br />
+              <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
             </td>
             <td>
-              <input type="number" ng-model="newdonor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%" placeholder="$$$ (USD)" /><br />
+              <input type="number" ng-model="newdonor.funding" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%" placeholder="Donor's donation in USD" /><br />
               <input type="date" ng-model="newdonor.date"  ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" />
               <div class="checkbox">
                 <label>
@@ -238,7 +233,8 @@
 
       <div class="form-group">
         <!--<button type="submit" ng-disabled="editProjectForm.$invalid" class="form-control">Save</button>-->
-        <button type="submit" class="form-control">Save</button>
+        <!-- disabled this save button because i know it uses a different function than the std buttons, and that worries me... -->
+        <!--<button type="submit" class="form-control">Save</button>-->
       </div>
     </form>
   </div>

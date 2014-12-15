@@ -124,6 +124,10 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       return deferred.promise;
     };
 
+    $scope.$on('documentDraftSaved', function(event, draftInfo) {
+      $location.path('/admin/projects/edit/' + draftInfo.identifier);
+    });
+
     $scope.addTab = function(tabs, tabRepository, tabIndex) {
       console.log(tabIndex);
       console.log(tabRepository[tabIndex]);
@@ -236,7 +240,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.fakeTitle = [];
     $q.when($scope.documentPromise).then(function(document) {
       console.log('doc: ', document);
-      $scope.document = document;
       $scope.document.institutionalContext = $scope.document.institutionalContext || [];
       $scope.document.budget = $scope.document.budget || [];
       $scope.document.images = $scope.document.images || []
@@ -254,9 +257,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         mapTermAndCommentToObject($scope.fakeEcologicalContribution, $scope.document.ecologicalContribution, 'fakeEcologicalContribution', $scope.contrib_climate, $scope.climate_contribution_tabs);
 
       console.log('fake aichi: ', $scope.fakeAichiTargets);
-
-        //TODO: move or something. This is for elink.js...
-        $rootScope.documentIdentifier = $scope.document.header.identifier;
     });
 
     $scope.sum = function(arr, key) {
