@@ -1075,14 +1075,15 @@ define(['app'], function(app) {
   //##################################################################
   app.filter('filterDate', function ($filter) {
       return function (d) {
-
           if (!d)
               return null;
 
-          var d1 = d.replace("/Date(", "");
-          d1 = d1.replace(")/", "");
-          return $filter('date')(new Date(Number(d1)), 'dd MMM yyyy');
-
+          var d1 = d;
+          if(d.indexOf('Date') != -1) {
+              d1 = d.replace("/Date(", "");
+              d1 = Number(d1.replace(")/", ""));
+          }
+          return $filter('date')(new Date(d1), 'dd MMM yyyy');
       }
   });
 
