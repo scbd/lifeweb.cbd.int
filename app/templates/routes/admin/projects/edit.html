@@ -191,7 +191,7 @@
             <th>Description</th>
             <th>Funding</th>
             <th>Date Donated</th>
-            <th>Faciliated by LifeWeb</th>
+            <th>Verified - Domestic</th>
           </tr>
         </thead>
         <tbody>
@@ -203,7 +203,7 @@
             <td><input type="text" ng-model="donor.description" placeholder="Enter any information regarding donor's donation" /></td>
             <td><input type="number" ng-model="donor.funding" placeholder="Donor's donation in USD" /></td>
             <td><input type="date" ng-model="donor.date" /></td>
-            <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
+            <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /> - <input type="checkbox" ng-model="donor.domestic" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
           </tr>
           <tr ng-if="document.donors && document.donors.length">
             <td colspan="5" style="text-align: right">Total: ${{sum(document.donors, 'funding')}}</td>
@@ -220,6 +220,11 @@
               <div class="checkbox">
                 <label>
                   <input type="checkbox" ng-model="newdonor.lifeweb_facilitated" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /> Lifeweb Facilitated<br />
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" ng-model="newdonor.domestic" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" /> Domestic Donation<br />
                 </label>
               </div>
               <button type="button" ng-click="addItem('newdonor', 'donors')">Add</button>
