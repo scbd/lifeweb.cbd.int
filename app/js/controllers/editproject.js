@@ -5,7 +5,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             real[realKey].push(fake[i].text);
     }
 
-  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope) {
+  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location) {
     $controller('EditCtrl', {$scope: $scope});
  
     $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
@@ -124,10 +124,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       return deferred.promise;
     };
 
-    $scope.$on('documentDraftSaved', function(event, draftInfo) {
-      $location.path('/admin/projects/edit/' + draftInfo.identifier);
-    });
-
     $scope.addTab = function(tabs, tabRepository, tabIndex) {
       console.log(tabIndex);
       console.log(tabRepository[tabIndex]);
@@ -155,7 +151,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         mapObjectToTermAndComment(
             $scope.fakeEcologicalContribution,
             $scope.document,
-            'ecologicalContribution'
+            'climateContribution'
         );
     }, true);
     function mapObjectToTermAndComment(fake, real, realKey) {
@@ -239,6 +235,10 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.fakeNewAttachmentKeywords = [];
     $scope.fakeTitle = [];
     $q.when($scope.documentPromise).then(function(document) {
+        if(typeof document.ecologicalContribution == 'array') { //TEMPORARY
+            document.climateContribution = document.ecologicalContribution;
+            document.ecologicalContribution = '';
+        }
       console.log('doc: ', document);
       $scope.document.institutionalContext = $scope.document.institutionalContext || [];
       $scope.document.budget = $scope.document.budget || [];
@@ -253,8 +253,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         mapTermAndCommentToObject($scope.fakeAichiTargets, $scope.document.aichiTargets, 'fakeAichiTargets', $scope.aichi_targets, $scope.aichi_target_tabs);
       if($scope.document.nationalAlignment)
         mapTermAndCommentToObject($scope.fakeNationalAlignment, $scope.document.nationalAlignment, 'fakeNationalAlignment');
-      if($scope.document.ecologicalContribution)
-        mapTermAndCommentToObject($scope.fakeEcologicalContribution, $scope.document.ecologicalContribution, 'fakeEcologicalContribution', $scope.contrib_climate, $scope.climate_contribution_tabs);
+      if($scope.document.climateContribution)
+        mapTermAndCommentToObject($scope.fakeEcologicalContribution, $scope.document.climateContribution, 'fakeEcologicalContribution', $scope.contrib_climate, $scope.climate_contribution_tabs);
 
       console.log('fake aichi: ', $scope.fakeAichiTargets);
     });

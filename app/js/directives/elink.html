@@ -22,7 +22,7 @@
         </td>
         <td><a ng-href="{{item.url}}">Download {{typeTitle}}</a><button ng-click="ngModel.splice($index, 1)">X</button></td>
       </tr>
-      <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
+      <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new {{typeTitle}} using the form below</td></tr>
       <tr>
         <td>
           <input type="text" ng-model="newItem.title" ng-keydown="maybeAddItem($event, newItem)" style="width: 300px;" placeholder="title" /><br />

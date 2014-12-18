@@ -19,7 +19,7 @@
   <h1>Expression of Interest</h1>
   <div workflow-std-buttons document="document"></div>
   <div class="row" ng-show="tab=='edit'" km-tab="edit">
-    <form novalidate name="editProjectForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
+    <form novalidate name="editForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
       <afc-input ng-model="document.leadContact" required data-title="Lead Contact" data-placeholder="Enter contact's full name"></afc-input>
       <div class="form-group">
         <label for="Countries" class="col-sm-2 control-label">Country or Countries</label>
@@ -40,7 +40,7 @@
           
       <hr />
       
-      <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets</h3>
+      <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets: </h3>
       <h4>Lifeweb facilitates financing that contribute toward the achievement of the area-based Aichi Targets in the 2011-2020 Strategic Plan for Biodiversity.</h4>
       <div style="border: dotted 1px gray">
         <p>Add an Aichi Target attributed to this project...</p>
@@ -52,11 +52,10 @@
       <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="description" key-key="identifier" placeholder="Describe this project's contribution to this aichi target"></tabbed-textareas>
       
       <h3>Alignment with National Planning</h3>
-      <h4>Consistent with the decision X/31, please indicate the relevance between this sbumission and the following planning processes</h4>
+      <h4>Please enter this projects alignment with national planning in the text box below</h4>
+      <h5>Consistent with the decision X/31, please indicate the relevance between this submission and the following planning processes</h5>
       <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key" placeholder="Enter the relevance of this project to this form of planning"></tabbed-textareas>
 
-      <h3>Ecological Contribution</h3>
-      <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
       <h3>Contribution to Climate Change</h3>
       <div style="border: dotted 1px gray">
         <p>Add an Ecological Contribution attributed to this project...</p>
@@ -66,13 +65,16 @@
         </button>
       </div>
 
-
       <tabbed-textareas rows="4" ng-model="fakeEcologicalContribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key" placeholder="Describe this project's contribution to this ecological challenge"></tabbed-textareas>
+
+      <h3>Ecological Contribution</h3>
+      <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
+      <textarea class="form-control" ng-model="document.ecologicalContribution" placeholder="Please enter the ecological contribution entailed by this project"></textarea>
 
       <hr />
 
       <h3>Institutional Context</h3>
-      <h4>Partners to be involved and their roles</h4>
+      <h4>Add and edit partners to be involved, their roles, and any additional information</h4>
       <table>
         <thead>
           <tr>
@@ -96,7 +98,7 @@
               <button ng-click="document.institutionalContext.splice($index, 1)">X</button>
             </td>
           </tr>
-          <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
+          <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new partner using the form below</td></tr>
           <tr>
             <td>
               <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Enter partner's full name"/><br />
@@ -128,7 +130,7 @@
             <td><input type="text" ng-model="activity.result" placeholder="Enter Activity's Result" /></td>
             <td><input type="number" ng-model="activity.cost" placeholder="Enter Activity's Cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
           </tr>
-          <tr><td colspan="4" style="border-bottom: 1px solid gray;"></td></tr>
+          <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new budgeted activity using the form below</td></tr>
           <tr ng-if="document.budget && document.budget.length">
             <td colspan="3" style="text-align: right">Total: ${{sum(document.budget, 'cost')}}</td>
           </tr>
@@ -208,7 +210,7 @@
           <tr ng-if="document.donors && document.donors.length">
             <td colspan="5" style="text-align: right">Total: ${{sum(document.donors, 'funding')}}</td>
           </tr>
-          <tr><td colspan="5" style="border-bottom: 1px solid gray;"></td></tr>
+          <tr><td colspan="5" style="border-top: 1px solid gray;">Add a new donor using the form below</td></tr>
           <tr>
             <td colspan="4" style="padding-top: 10px;">
               Name: <input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 500px;" placeholder="Enter donor's full name" /><br />
