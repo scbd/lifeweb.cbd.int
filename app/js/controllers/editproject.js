@@ -46,6 +46,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     
     $scope.national_alignment = [
       {title: 'NBSAPs', key: 'NBSAP', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
+      {title: 'Climate Change', key: 'CC', help: 'Alignment with National Climate Change Strategies',},
       {title: 'Other National Strategies', key: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED', help: 'e.g. Programme of WOrk on Protected Areas (PoWPA), Poverty Reduction Strategies (PRSPs), National Climate Change Strategies, REDD+ Strategies, National Adaptation Plans of Action (NAPAs), economic and sustainable development plans, national resource mobilization strategy, infrastructure plans, land use plans, strategies for achieving the Millennium Development Goals, etc.'},
     ];
 
@@ -257,6 +258,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         $scope.fakeTitle = $scope.document.title.en || '';
       if($scope.document.additionalInformation)
         $scope.fakeAdditionalInformation = $scope.document.additionalInformation.en || '';
+        console.log('additional info: ', $scope.fakeAdditionalInformation, $scope.document.additionalInformation);
       if($scope.document.aichiTargets)
         (function(aichiTargets) {
             aichiPromise.then(function() {

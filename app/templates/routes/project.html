@@ -24,23 +24,18 @@
                   <!--<li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>-->
                     <li class="active"><a href="#sum"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
                     <li ng-show="eoi.description"><a href="#desc"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
-                    <li ng-show="eoi.objectives_info || eoi.objectives_results"><a href="#obj"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
+                    <li ng-show="eoi.objectives_info || eoi.budget"><a href="#obj"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
                      <li><a href="#funding"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
                     <li ng-show="eoi.ecoservices"><a href="#benefits"><span class="glyphicon glyphicon-chevron-right"></span>Ecosystem Benefits</a></li>
                     <li ng-show="eoi.aichi_targets"><a href="#targets"><span class="glyphicon glyphicon-chevron-right"></span>Links with Aichi Targets</a></li>
                     <li ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"><a href="#align"><span class="glyphicon glyphicon-chevron-right"></span>Alignment with National Planning</a></li>
-                    <li ng-show="eoi.ecological_contribution"><a href="#eco"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
+                    <li ng-show="eoi.climateContribution"><a href="#eco"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
                     <li ng-show="eoi.participation || eoi.governance"><a href="#participation"><span class="glyphicon glyphicon-chevron-right"></span>Participation and Equity</a></li>
                    
                     <li><a href="#partners"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
                     <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a href="#attachments"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
                 </ul>
               </div>
-
-              <div data-ng-controller="MapCtrl">
-                <div id='map' style="height:200px; margin-top: 720px;"></div>
-              </div>
-      
             </div>
       <div class="col-xs-9">
          
@@ -89,7 +84,7 @@
         <tr>
           <td class="lw-dt">funding</td>
           <td  class="lw-dd">
-            <funding-bar-chart status="eoi.funding_status" total="eoi.total_cost" currency="eoi.currency" display="currency" matches="eoi.funding_matches" width="580"></funding-bar-chart>
+            <funding-bar-chart status="eoi.funding_status" total="eoi.total_cost" currency="eoi.currency" display="currency" matches="eoi.donors" width="580"></funding-bar-chart>
           </td>
         </tr>
         <tr>
@@ -97,18 +92,10 @@
             <td  class="lw-dd">
             <br/>
                 <div class="row" style="padding-left: 10px; padding-bottom: 0; margin-bottom: 0;">
-                    <div class="col-xs-2" ng-repeat="slide in eoi.images.concat(eoi.maps)">
-                        <!--<a href="#myModal{{$index}}" class="thumbnail" data-toggle="modal">-->
+                    <div class="col-xs-2" ng-repeat="slide in eoi.images">
                         <a ng-click="imageModal($index)" class="thumbnail">
                             <img src="{{slide.url}}" alt="x">
                         </a>
-                        <!--
-                        <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">x</button><br>
-                            <img src="{{slide.url}}" alt="{{$index}}">
-                            <p>{{slide.title}}</p>
-                        </div>
-                        -->
                     </div>
                 </div>
 
@@ -138,14 +125,14 @@
 
 
 <!--==============================================================================-->     
-<section id="obj" ng-show="eoi.objectives_info || eoi.objectives_results"  >  
+<section id="obj" ng-show="eoi.objectives_info || eoi.budget"  >  
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Objectives and Results</h2>
 
 <div class="lw-proj-text">{{eoi.objectives_info}}</div>
-    <table class="table  table-bordered table-hover"  ng-show="eoi.objectives_results"  ng-repeat="obj in eoi.objectives_results" >
-            <tr><td class="lw-dt" style="font-size:13px;">Objective</td><td  class="lw-proj-text" ng-bind-html="obj.Objective"></td></tr>
-                 <tr><td class="lw-dt" style="font-size:13px;">Result</td><td  class="lw-proj-text" ng-bind-html="obj.ExpectedResults"></td></tr>
-                 <tr><td class="lw-dt" style="font-size:13px;">Funding&nbsp;needed</td><td class="lw-proj-text">{{obj.Funding}}</td></tr>
+    <table class="table  table-bordered table-hover"  ng-show="eoi.budget"  ng-repeat="obj in eoi.budget" >
+            <tr><td class="lw-dt" style="font-size:13px;">Objective</td><td  class="lw-proj-text" ng-bind-html="obj.activity"></td></tr>
+                 <tr><td class="lw-dt" style="font-size:13px;">Result</td><td  class="lw-proj-text" ng-bind-html="obj.result"></td></tr>
+                 <tr><td class="lw-dt" style="font-size:13px;">Funding&nbsp;needed</td><td class="lw-proj-text">{{obj.cost}}</td></tr>
     </table>
  
 </section>
@@ -191,7 +178,7 @@
             <a href="http://www.cbd.int/admin/clearcachekey.shtml?key=LWMATCHES" target="_refresh_" class="btn btn-info">refresh match cache </a>
         </div>
 
-    <div ng-show="funding.length">
+    <div ng-show="eoi.donors.length">
         <h4>Co-funding</h4>
         <table class="table table-striped" >
             <thead>
@@ -202,21 +189,18 @@
 
                 </tr>
             </thead>
-            <tr ng-repeat="f in funding ">
+            <tr ng-repeat="f in eoi.donors ">
                 <td width="60%" class="lw-proj-text">
-                    <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.id}}">{{f.donor.name}}</span> </a>
+                    <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.id}}">{{f.name}}</span> </a>
                     <span style="font-size: 14px;" ng-bind-html="f.info"></span> 
-                    <div ng-show="session.isAdministrator" >
-                        <a href="https://www.cbd.int/database/edit.shtml?documentid={{f.id}}" target="_edit_" class="btn btn-warning"> edit </a>
-                        </div>
                 </td>
-                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="!f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td>
-                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.is_not_official">{{f.amount | filterCurrency:f.currency:currency}}</span></td 
+                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.lifeweb_facilitated">{{f.funding | filterCurrency:f.currency:currency}}</span></td>
+                <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="!f.lifeweb_facilitated">{{f.funding | filterCurrency:f.currency:currency}}</span></td 
             </tr>
             <tr>
                 <td class="lw-proj-text">TOTAL</td>
-                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{funding | filterTotalSecured | filterCurrency:funding[0].currency:currency}}</td>
-                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{funding | filterTotalExpected | filterCurrency:funding[0].currency:currency }}</td>
+                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donors | filterTotalSecured | filterCurrency:funding[0].currency:currency}}</td>
+                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donors | filterTotalExpected | filterCurrency:funding[0].currency:currency }}</td>
             </tr>
         </table>
     </div>
@@ -234,10 +218,10 @@
 
 
  <!--==============================================================================-->     
-<section id="benefits" ng-show="eoi.ecologicalContribution && eoi.ecologicalContribution.length" >  
+<section id="benefits" ng-show="eoi.climateContribution && eoi.climateContribution.length" >  
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecosystem benefits</h2>
 
-    <div ng-repeat="t in eoi.ecologicalContribution">
+    <div ng-repeat="t in eoi.climateContribution">
         
             <h4><img src="{{(t.type.identifier | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.type.identifier}}"/>  {{t.type.identifier}} </h4>
             <div class="lw-proj-text" ng-bind-html="t.comment"></div>
@@ -269,16 +253,17 @@
         <h4>Alignment with {{eoi.nationalAlignment[1].type.identifier}}</h4>
         <div ng-bind-html="eoi.nationalAlignment[1].comment"></div>
     </div>
+    <div ng-show="eoi.nationalAlignment[2].comment != ''">
+        <h4>Alignment with {{eoi.nationalAlignment[2].type.identifier}}</h4>
+        <div ng-bind-html="eoi.nationalAlignment[2].comment"></div>
+    </div>
 </section>
 
 
 <!--==============================================================================-->     
-<section id="eco" ng-show="eoi.ecologicalContribution && eoi.ecologicalContribution.length" >  
+<section id="eco" ng-show="eoi.ecologicalContribution" >  
     <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecological Contribution</h2> 
-    <div ng-repeat="contribution in eoi.ecologicalContribution">
-        <h4>Alignment with {{contribution.type.identifier}}</h4>
-        <div ng-bind-html="contribution.comment"></div>
-    </div>
+    <div ng-bind-html="eoi.ecologicalContribution"></div>
 </section>
 
 <!--==============================================================================-->     
@@ -313,7 +298,7 @@
 
          <tr ng-repeat="fp in eoi.institutionalContext">
             <td><span class="label label-info">{{fp.role.identifier}}</span></td>
-            <td><strong>{{fp.name}} </strong> 
+            <td><strong>{{fp.partner}} </strong> 
                 <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
             </td><td>
                <span ng-show="fp.Department!= ''">{{fp.Department}}</span>

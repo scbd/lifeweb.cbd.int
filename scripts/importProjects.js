@@ -74,26 +74,38 @@ var wait = require('wait.for');
                 newProject.countries.push({identifier: data.country_codes[i]});
             newProject.title = {en: data.title};
             //newProject.timeframe = 0; //I don't think anything exists in old projects
-            newProject.description = data.description;
+            newProject.description = data.summary;
+            /*
             newProject.budget = [{
                 activity: 'All Tasks',
                 result: 'project\'s completion',
                 cost: data.funding_needed,
             }];
+            */
             newProject.additionalInformation = {en: ''};
             if(data.participation)
               newProject.additionalInformation.en += '\n[participation]\n'+data.participation;
             if(data.governance)
               newProject.additionalInformation.en += '\n[governance]\n'+data.governance;
-            if(newProject.abstract)
-              newProject.additionalInformation.en += '\n[abstract]\n'+data.summary;
+            if(data.description)
+              newProject.additionalInformation.en += '\n[description]\n'+data.description;
             newProject.thumbnail = data.thumbnail;
             newProject.nationalAlignment = [
               {type: {identifier: 'NBSAP'}, comment: data.alignment_nbsap},
-              {type: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'}, comment: data.alignment_cc},
+              {type: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'}, comment: data.alignment},
+              {type: {identifier: 'CC'}, comment: data.alignment_cc},
             ];
             newProject.ecologicalContribution = data.ecological_contribution;
             //newProject.keywords = data.keywords.split('; ');
+            
+            //setup budget
+            newProject.budget = [];
+            for(var i = 0; i!=data.objectives_results.length; ++i)
+                newProject.budget.push({
+                    activity: data.objectives_results[i].Objective,
+                    result: data.objectives_results[i].ExpectedResults,
+                    cost: extractCurrency(data.objectives_results[i].Funding),
+                });
 
             //setup climate contibution
             newProject.climateContribution = [];
@@ -104,7 +116,10 @@ var wait = require('wait.for');
             newProject.aichiTargets = [];
             for(var k=0; k!=data.aichi_targets.length; ++k) {
               var aichi = data.aichi_targets[k];
-              var key = 'AICHI-TARGET-'+aichi.termid.slice('Target'.length);
+              var key = 'AICHI-TARGET-';
+              if(aichi.termid.length > ('Target'.length + 1))
+                key += '0';
+              key += aichi.termid.slice('Target'.length);
               newProject.aichiTargets.push({type: {identifier: key}, comment: aichi.comment});
             }
 
@@ -273,6 +288,12 @@ var wait = require('wait.for');
             if(!newProjects[i].leadContact && newProjects[i].institutionalContext.length > 0)
                 newProjects[i].leadContact = newProjects[i].institutionalContext[0].partner;
         }
+    }
+
+    function extractCurrency(strAmount) {
+        console.log('str: ', strAmount);
+        console.log('num: ',strAmount.substr(4).replace(/,/g, ''));
+        return Number(strAmount.substr(4).replace(/,/g, ''));
     }
 
     function S4() {

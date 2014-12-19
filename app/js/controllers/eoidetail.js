@@ -180,7 +180,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         var all = true;
         var one = false;
         for(var i=0; i!=project.donors.length; ++i) {
-            if(project.donors.lifeweb_facilitated)
+            if(project.donors[i].lifeweb_facilitated)
                 one = true;
             else
                 all = false;
@@ -195,7 +195,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             project.funding_status = 'not yet funded';
 
         project.currency = 'USD';
-        project.funding_matches = project.donors;
     };
   });
 });

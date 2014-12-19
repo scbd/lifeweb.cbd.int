@@ -991,6 +991,7 @@ define(['app'], function(app) {
              { "name": "AICHI-TARGET-19", "icon": "/app/lifeweb/images/targets/19.png", "desc": "By 2020, knowledge, the science base and technologies relating to biodiversity, its values, functioning, status and trends, and the consequences of its loss, are improved, widely shared and transferred, and applied." },
              { "name": "AICHI-TARGET-20", "icon": "/app/lifeweb/images/targets/20.png", "desc": "By 2020, at the latest, the mobilization of financial resources for effectively implementing the Strategic Plan for Biodiversity 2011-2020 from all sources, and in accordance with the consolidated and agreed process in the Strategy for Resource Mobilization, should increase substantially from the current levels. This target will be subject to changes contingent to resource needs assessments to be developed and reported by Parties." }
           ];
+          console.log('aichi traget: ', target);
 
           var result = [];
           for (var i = 0; i < targets.length; ++i)
@@ -1265,7 +1266,8 @@ define(['app'], function(app) {
       return function (amount, currency, selected_currency) {
 
           var USDtoEURO = 0.73500;
-
+          if(!currency)
+            currency = 'USD';
 
           if (amount === 0)
               return "undisclosed";
@@ -1287,7 +1289,7 @@ define(['app'], function(app) {
 
           if (selected_currency == "EURO") {
 
-              if (currency == "US Dollars") {
+              if (currency == "USD") {
                   amount = amount * USDtoEURO;
                   amount = $filter('number')(amount, 0);
                   return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"

@@ -5,17 +5,17 @@
         
         <table style="height: 20px;margin-bottom:10px;" cellspacing="0" cellpadding="0">
             <tr>
-                <td width="{{ (width * (match.amount | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
+                <td width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
 
                 <td width="{{( width * ((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))) / (total | filterToUSD:currency)}}px" class="not-funded">&nbsp; </td>
 
-                <td class="total" style="vertical-align: middle; padding-left: 10px; border-left: 2px solid #000; font-weight: bold;">{{total | filterCurrency:currency:display}}</td>
+budget<td class="total" style="vertical-align: middle; padding-left: 10px; border-left: 2px solid #000; font-weight: bold;">{{total | filterCurrency:currency:display}}</td>
             </tr>
 
             <tr>
-                <td colspan="{{matches.length}}" style="text-align: center;">{{(matches |getMatchesTotalUSD) | filterCurrency:'US Dollars':display}} </td>
+                <td colspan="{{matches.length}}" style="text-align: center;">{{(matches |getMatchesTotalUSD) | filterCurrency:'USD':display}} </td>
 
-                <td class="" style="text-align: center;">{{ ((total | filterToUSD:currency) - (matches | getMatchesTotalUSD ))  | filterCurrency:'US Dollars':display }} </td>
+                <td class="" style="text-align: center;">{{ ((total | filterToUSD:currency) - (matches | getMatchesTotalUSD ))  | filterCurrency:'USD':display }} </td>
 
                 <td class="total" style="vertical-align: middle; padding-left: 10px; font-weight: bold;"></td>
 
@@ -23,10 +23,10 @@
         </table>
 
         <div ng-repeat="match in matches" style="white-space: nowrap;">
-            <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.amount |  filterCurrency:match.currency:display}}</span> {{match.donor.name}}
+            <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.funding |  filterCurrency:match.currency:display}}</span> {{match.name}}
         </div>
         <hr style="padding:0; margin:0; width:300px;border-top:1px solid #808080;" />
-        <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'US Dollars':display }} </span> &nbsp; funding needed
+        <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'USD':display }} </span> &nbsp; funding needed
 
     </div>
 
@@ -36,7 +36,7 @@
         <div style="font-weight:bold;font-size:18px;padding-bottom:10px;"  > fully funded </div>
          <table style="height: 20px;" cellspacing="0" cellpadding="0">
             <tr>
-                <td width="{{ (width * (match.amount | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
+                <td width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
 
                 <td class="total" style="vertical-align: middle; padding-left: 10px; border-left: 2px solid #000; font-weight: bold;">{{total | filterCurrency:currency:display}}</td>
             </tr>
@@ -44,7 +44,7 @@
         
         <br>
         <div ng-repeat="match in matches" style="white-space: nowrap;">
-            <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.amount |  filterCurrency:match.currency:display}}</span> {{match.donor.name}}
+            <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.funding |  filterCurrency:match.currency:display}}</span> {{match.name}}
         </div>
     </div>
 
