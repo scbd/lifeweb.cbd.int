@@ -249,7 +249,7 @@ define(['app', 'authentication'], function(app) {
       //==================================================
       function resolveUser(requiredPrivilages) { 
 
-        return ['$rootScope', 'authentication', '$location', '$cookies', '$window', function($rootScope, authentication, $location, $cookies, $window) {
+        return ['$rootScope', 'authentication', '$location', '$cookieStore', '$window', function($rootScope, authentication, $location, $cookieStore, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
             if(requiredPrivilages) {
@@ -259,7 +259,7 @@ define(['app', 'authentication'], function(app) {
                   notAllowed = false;
 
               if(notAllowed) {
-                $cookies.loginRedirect = $location.absUrl();
+                $cookieStore.put('loginRedirect', $location.path()); //I give up... ffs...
                 //debugger;
                 $location.url('/login');
               }

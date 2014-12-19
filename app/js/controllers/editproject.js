@@ -8,10 +8,11 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
   app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location) {
     $controller('EditCtrl', {$scope: $scope});
  
-    $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
+    var aichiPromise = $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
         attachAichiDescriptions(response);
         console.log('aichi: ', $scope.aichi_targets);
+        return response;
       })
       .error(function(response, status) {
       });
@@ -34,7 +35,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             if(aichi_descriptions[targets[i].identifier]) {
                 $scope.aichi_targets.push(targets[i]);
                 $scope.aichi_targets[$scope.aichi_targets.length - 1].description = aichi_descriptions[targets[i].identifier].help;
-                $scope.aichi_targets[$scope.aichi_targets.length - 1].key = $scope.aichi_targets[$scope.aichi_targets.length - 1].identifier;            }
+                $scope.aichi_targets[$scope.aichi_targets.length - 1].key = $scope.aichi_targets[$scope.aichi_targets.length - 1].identifier;
+            }
         }
     }
 
@@ -166,6 +168,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         var fakeTargets = [];
         for(var i=0; i!=real.length; ++i) {
             fakeTargets[real[i].type.identifier] = real[i].comment;
+            console.log(real[i].type.identifier + 'tabInfo: ', tabInfo);
             if(tabInfo)
                 for(var k=0; k!=tabInfo.length; ++k) {
                     console.log(k + ': ', tabInfo[k].key, real[i].type.identifier);
@@ -184,6 +187,9 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     //TODO: use a lozalized input instead of doing this...
     $scope.$watch('fakeTitle', function() {
         $scope.document.title = {en: $scope.fakeTitle};
+    });
+    $scope.$watch('fakeAdditionalInformation', function() {
+        $scope.document.additionalInformation = {en: $scope.fakeAdditionalInformation};
     });
 
     //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
@@ -233,7 +239,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.document.attachments = [];
     //$scope.document.donors = [];
     $scope.fakeNewAttachmentKeywords = [];
-    $scope.fakeTitle = [];
+    $scope.fakeTitle = {};
     $q.when($scope.documentPromise).then(function(document) {
         if(typeof document.ecologicalContribution == 'array') { //TEMPORARY
             document.climateContribution = document.ecologicalContribution;
@@ -248,9 +254,15 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       //$scope.document.donors = $scope.document.donors || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
       if($scope.document.title)
-        $scope.fakeTitle = $scope.document.title.en || [];
+        $scope.fakeTitle = $scope.document.title.en || '';
+      if($scope.document.additionalInformation)
+        $scope.fakeAdditionalInformation = $scope.document.additionalInformation.en || '';
       if($scope.document.aichiTargets)
-        mapTermAndCommentToObject($scope.fakeAichiTargets, $scope.document.aichiTargets, 'fakeAichiTargets', $scope.aichi_targets, $scope.aichi_target_tabs);
+        (function(aichiTargets) {
+            aichiPromise.then(function() {
+                mapTermAndCommentToObject($scope.fakeAichiTargets, aichiTargets, 'fakeAichiTargets', $scope.aichi_targets, $scope.aichi_target_tabs);
+            });
+        })($scope.document.aichiTargets);
       if($scope.document.nationalAlignment)
         mapTermAndCommentToObject($scope.fakeNationalAlignment, $scope.document.nationalAlignment, 'fakeNationalAlignment');
       if($scope.document.climateContribution)

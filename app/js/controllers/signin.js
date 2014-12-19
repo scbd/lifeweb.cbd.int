@@ -21,8 +21,8 @@ define(['app'], function(app) {
           authenticationFrame.contentWindow.postMessage(JSON.stringify(response), 'https://accounts.cbd.int');
 
           //TODO: don't reload, instead just show our new user info.
-          if($cookies.redirect)
-            $window.location.url = $cookies.loginRedirect;
+          if($cookies.loginRedirect)
+            $location.path($cookies.loginRedirect);
           else
             $window.location.reload();
         }, function onerror(error) {
@@ -35,6 +35,8 @@ define(['app'], function(app) {
 
       $scope.doSignOut = function() {
             document.cookie = "authenticationToken=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT";
+            //deleting the cookie here doesn't appear to work... It's remaining fully set.
+            //delete $cookies['authenticationToken'];
             var redirect_uri = encodeURIComponent($location.absUrl());
             $window.location.href = 'https://accounts.cbd.int/signout?redirect_uri='+redirect_uri;
       };

@@ -36,6 +36,7 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
 
                 app.controller('keywordsUsingController', function($scope) {
                     $scope.fakeKeywords = [];
+                        console.log('keywords: ', $scope.item, $scope.item.keywords);
                     for(var i=0; i!=$scope.item.keywords.length; ++i)
                         $scope.fakeKeywords.push($scope.item.keywords[i]);
                     $scope.$watch('fakeKeywords', function() {
