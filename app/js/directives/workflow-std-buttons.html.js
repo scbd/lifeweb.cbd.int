@@ -158,7 +158,7 @@ define(['app','angular-form-controls'], function (app) {
 							}
                             $('form').filter('.dirty').removeClass('dirty');
 							$scope.$emit("documentPublished", documentInfo, document);
-                            $scope.$emit("updateOrignalDocument", document);
+                            $scope.$emit("updateOriginalDocument", document);
 							return documentInfo;
 
 						});
@@ -205,7 +205,7 @@ define(['app','angular-form-controls'], function (app) {
 							}
                             $('form').filter('.dirty').removeClass('dirty');
 							$scope.$emit("documentPublishRequested", workflowInfo, document);
-                            $scope.$emit("updateOrignalDocument", document);
+                            $scope.$emit("updateOriginalDocument", document);
 							return workflowInfo;
 
 						});
@@ -244,7 +244,8 @@ define(['app','angular-form-controls'], function (app) {
 						}
 						//$scope.$emit("documentDraftSaved", draftInfo)
                         $('form').filter('.dirty').removeClass('dirty');
-                        $scope.$emit("updateOrignalDocument", $scope.getDocumentFn());
+                        console.log('are we in here?');
+                        $scope.$emit("updateOriginalDocument", $scope.getDocumentFn());
                         //TODO: emit this at the correct time. This well be emitted immediately after the when of getting the document, NOT after the draft is saved as may be expected.
                         $scope.$emit("documentDraftSaved", draftInfo);
 						return draftInfo;

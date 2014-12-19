@@ -17,6 +17,7 @@
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
   <ng-include src="'/app/partials/admin_header.html'"></ng-include>
   <h1>Expression of Interest</h1>
+  <h2 ng-show="published_id"><a ng-href="/project2?id={{published_id}}" target="_new">Go to the published project page for {{published_id}}</a></h2>
   <div workflow-std-buttons document="document"></div>
   <div class="row" ng-show="tab=='edit'" km-tab="edit">
     <form novalidate name="editForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
@@ -27,9 +28,10 @@
           <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping"></afc-autocomplete>
         </div>
       </div>
-      <afc-input ng-model="fakeTitle" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
+      <afc-input ng-model="document.title" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
       <afc-input type="number" ng-model="document.timeFrame" title="Timeframe" placeholder="Enter project's timeframe in years"></afc-input>
-      <afc-text ng-model="document.description" required data-title="Abstract" data-placeholder="Enter abstract of project"></afc-text>
+      <afc-text ng-model="document.projectAbstract" required data-title="Abstract" data-placeholder="Enter the abstract that summarizes the project"></afc-text>
+      <afc-text ng-model="document.description" required data-title="Description" data-placeholder="Enter a more detailed description of the project"></afc-text>
       <!--TODO: add preview -->
       <div class="row form-group">
         <label class="col-xs-2 control-label">Thumbnail</label>
@@ -141,6 +143,7 @@
           </tr>
         </tbody>
       </table>
+      <afc-text ng-model="document.financialStability" required data-title="Financial Stability" data-placeholder="Enter the details of how the project well maintain financially stable."></afc-text>
 
       <hr />
 
@@ -180,7 +183,7 @@
       <hr />
 
       <h3>Additional Project Information</h3>
-      <afc-text title="Additional Information" ng-model="fakeAdditionalInformation" placeholder="Enter any additional information regarding this project"></afc-text>
+      <afc-text title="Additional Information" ng-model="document.additionalInformation" placeholder="Enter any additional information regarding this project"></afc-text>
 
 
       <hr />

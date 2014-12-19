@@ -18,7 +18,19 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
 		}
 	]);
 
-  app.run(function($location, $rootScope, $anchorScroll, $cookies, $http, Localizer) {
+  app.run(function($location, $route, $rootScope, $anchorScroll, $cookies, $http, Localizer) {
+    var original = $location.path;
+    $location.path = function (path, reload) {
+        if (reload === false) {
+            var lastRoute = $route.current;
+            var un = $rootScope.$on('$locationChangeSuccess', function () {
+                $route.current = lastRoute;
+                un();
+            });
+        }
+        return original.apply($location, [path]);
+    };
+
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
       $rootScope.title = current.$$route.title;
 

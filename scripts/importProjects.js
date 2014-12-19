@@ -72,9 +72,10 @@ var wait = require('wait.for');
             newProject.countries = [];
             for(var i=0; i!=data.country_codes.length; ++i)
                 newProject.countries.push({identifier: data.country_codes[i]});
-            newProject.title = {en: data.title};
+            newProject.title = data.title;
             //newProject.timeframe = 0; //I don't think anything exists in old projects
-            newProject.description = data.summary;
+            newProject.projectAbstract = data.summary;
+            newProject.description = data.description;
             /*
             newProject.budget = [{
                 activity: 'All Tasks',
@@ -82,13 +83,11 @@ var wait = require('wait.for');
                 cost: data.funding_needed,
             }];
             */
-            newProject.additionalInformation = {en: ''};
+            newProject.additionalInformation = '';
             if(data.participation)
-              newProject.additionalInformation.en += '\n[participation]\n'+data.participation;
+              newProject.additionalInformation += '\n[participation]\n'+data.participation;
             if(data.governance)
-              newProject.additionalInformation.en += '\n[governance]\n'+data.governance;
-            if(data.description)
-              newProject.additionalInformation.en += '\n[description]\n'+data.description;
+              newProject.additionalInformation += '\n[governance]\n'+data.governance;
             newProject.thumbnail = data.thumbnail;
             newProject.nationalAlignment = [
               {type: {identifier: 'NBSAP'}, comment: data.alignment_nbsap},
@@ -106,6 +105,7 @@ var wait = require('wait.for');
                     result: data.objectives_results[i].ExpectedResults,
                     cost: extractCurrency(data.objectives_results[i].Funding),
                 });
+            newProject.financialStability = data.financial_sustainability;
 
             //setup climate contibution
             newProject.climateContribution = [];
@@ -117,7 +117,7 @@ var wait = require('wait.for');
             for(var k=0; k!=data.aichi_targets.length; ++k) {
               var aichi = data.aichi_targets[k];
               var key = 'AICHI-TARGET-';
-              if(aichi.termid.length > ('Target'.length + 1))
+              if(aichi.termid.length == ('Target'.length + 1))
                 key += '0';
               key += aichi.termid.slice('Target'.length);
               newProject.aichiTargets.push({type: {identifier: key}, comment: aichi.comment});

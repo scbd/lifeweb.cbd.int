@@ -7,6 +7,15 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
   app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location) {
     $controller('EditCtrl', {$scope: $scope});
+
+    $scope.$on('documentPublished', function(event, docInfo, document) {
+        console.log('args: ', arguments);
+        $scope.published_id = document.header.identifier;
+    });
+
+    $scope.$on('updateOriginalDocument', function(event, doc) {
+        $location.path('/admin/projects/edit/' + doc.header.identifier, false);
+    });
  
     var aichiPromise = $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
@@ -185,13 +194,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         console.log('keywords: ', $scope.document.keywords);
     }, true);
     */
-    //TODO: use a lozalized input instead of doing this...
-    $scope.$watch('fakeTitle', function() {
-        $scope.document.title = {en: $scope.fakeTitle};
-    });
-    $scope.$watch('fakeAdditionalInformation', function() {
-        $scope.document.additionalInformation = {en: $scope.fakeAdditionalInformation};
-    });
 
     //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
     $scope.$watch('document.donors', function() {
@@ -240,7 +242,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.document.attachments = [];
     //$scope.document.donors = [];
     $scope.fakeNewAttachmentKeywords = [];
-    $scope.fakeTitle = {};
     $q.when($scope.documentPromise).then(function(document) {
         if(typeof document.ecologicalContribution == 'array') { //TEMPORARY
             document.climateContribution = document.ecologicalContribution;
@@ -254,11 +255,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $scope.document.attachments = $scope.document.attachments || [];
       //$scope.document.donors = $scope.document.donors || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
-      if($scope.document.title)
-        $scope.fakeTitle = $scope.document.title.en || '';
-      if($scope.document.additionalInformation)
-        $scope.fakeAdditionalInformation = $scope.document.additionalInformation.en || '';
-        console.log('additional info: ', $scope.fakeAdditionalInformation, $scope.document.additionalInformation);
       if($scope.document.aichiTargets)
         (function(aichiTargets) {
             aichiPromise.then(function() {
