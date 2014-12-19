@@ -1,0 +1,46 @@
+<div class="row">
+  <table class="col-sm-9">
+    <thead>
+      <tr>
+        <th>title</th>
+        <th>Description</th>
+        <th>{{typeTitle}} Keywords</th>
+        <th>{{typeTitle}} Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-hide="ngModel.length">
+        <td colspan="4" style="font-weight: bold; text-align: center;">... No {{typeTitle}} Yet. Feel free to upload any {{typeTitle}}s below ...</td>
+      </tr>
+      <tr ng-repeat="item in ngModel" ng-controller="keywordsUsingController">
+        <td><input type="text" ng-model="item.title" /></td>
+        <td><input type="text" ng-model="item.description" /></td>
+        <td>
+          <tags-input id="attachkeywords" ng-model="fakeKeywords">
+            <auto-complete ng-if="autocomplete" source="autocomplete($query)"></auto-complete>
+          </tags-input>
+        </td>
+        <td><a ng-href="{{item.url}}">Download {{typeTitle}}</a><button ng-click="ngModel.splice($index, 1)">X</button></td>
+      </tr>
+      <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new {{typeTitle}} using the form below</td></tr>
+      <tr>
+        <td>
+          <input type="text" ng-model="newItem.title" ng-keydown="maybeAddItem($event, newItem)" style="width: 300px;" placeholder="title" /><br />
+          <tags-input id="attachkeywords" ng-model="newItem.keywords" style="width: 300px;">
+          </tags-input>
+          <div style="width: 300px;">
+            <afc-file ng-model="newItem.url" max-url-length="25"></afc-file>
+          </div>
+          <button type="button" style="width:300px;" ng-click="addItem(newItem)">Add</button>
+        </td>
+        <td colspan="3">
+          <textarea ng-model="newItem.description" ng-keydown="maybeAddItem($event, newItem)" style="width: 500px; height: 100%;" placeholder="{{typeTitle}} information/description"></textarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    <fieldset ng-if="imgPreview" class="col-sm-3">
+      <legend>New Image Preview</legend>
+      <img ng-src="{{newItem.url}}" style="max-height: 100px;"></img>
+    </fieldset>
+</div>

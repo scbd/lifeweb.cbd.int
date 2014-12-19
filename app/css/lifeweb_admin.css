@@ -1,0 +1,104 @@
+table td {
+  padding: 2px;
+}
+
+table th {
+  text-align: center;
+}
+
+.addTabButton {
+  margin: 2px;
+  background-color: #AAFFAA;
+}
+.addTabButton:hover {
+  background-color: #CCFFFF;
+}
+/*progressbar*/
+    #progressbar {
+    	/*margin-bottom: 30px;*/
+    	overflow: hidden;
+    	/*CSS counters to number the steps*/
+    	counter-reset: step;
+
+    }
+    #progressbar li {
+    	list-style-type: none;
+    	color: white;
+    	text-transform: uppercase;
+    	font-size: 9px;
+    	width: 18.33%;
+    	float: left;
+    	position: relative;
+        text-align: center;
+        z-index:1;
+        padding-right: 20px;
+		padding-bottom:5px;
+
+        /*a {
+             text-decoration: none;
+             display: block;
+             width: 100%;
+             height: 100%;
+        }*/
+    }
+    /*#progressbar li:hover {
+        cursor:pointer;
+    }*/
+    #progressbar li:before {
+    	content: counter(step);
+    	counter-increment: step;
+    	width: 20px;
+    	line-height: 20px;
+    	display: block;
+    	font-size: 10px;
+    	color: #333;
+    	background: #ddd;
+    	border-radius: 3px;
+    	margin: 0 auto 5px auto;
+        z-index:-1;
+    }
+    /*progressbar connectors*/
+    #progressbar li:after {
+    	content: '';
+    	width: 100%;
+    	height: 3px;
+    	background: #ddd;
+    	position: absolute;
+    	left: -50%;
+    	top: 9px;
+    	z-index: -1; /*put it behind the numbers*/
+    }
+    #progressbar li:first-child:after {
+    	/*connector not needed before the first step*/
+    	content: none;
+    }
+    /*marking active/completed steps green*/
+    /*The number of the step and the connector before it = green*/
+    #progressbar li.active:before,  #progressbar li.active:after{
+    	background: #27AE60;
+    	color: white;
+    }
+    #progressbar li a,#progressbar li span{
+        color: white;
+        font-size: small;
+    }
+    .rowbg{
+        padding-top:20px;
+        background-color: #FFF;
+        /*padding-bottom: 10px;*/
+		position:relative;
+		top:-15px;
+		/*border-bottom:1px solid #ccc;*/
+
+		margin:0;
+
+    }
+    .colbg{
+        padding-bottom: 2px;
+        max-height: 100px;
+    }
+
+	.prg3 > span {
+		/*background-color:yellow;*/
+		color:#555!important;
+	}

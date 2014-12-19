@@ -34,32 +34,26 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
     $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&country=' + sCountry, { cache: true }).success(function (data) {
       $scope.fp_national = data;
     });
-
+      //Duplicated in edit event
 	  $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
 		 .success(function (data) {
 			  $scope.geolocation = {
-          lat: data[0].lat,
-          lon: data[0].lon,
-        };
-        $scope.bounds = [
-          [data[0].boundingbox[0], data[0].boundingbox[2]],
-          [data[0].boundingbox[1], data[0].boundingbox[3]],
-        ];
+              lat: data[0].lat,
+              lon: data[0].lon,
+            };
+            $scope.bounds = [
+              [data[0].boundingbox[0], data[0].boundingbox[2]],
+              [data[0].boundingbox[1], data[0].boundingbox[3]],
+            ];
 
-        var setview = function() {
-          if ($scope.geolocation)
-            map.map.fitBounds($scope.bounds, {reset: true});
-        }
-        if(map.map)
-        {
-          console.log('map already ready');
-          setview();
-        }
-        else
-        {
-          console.log('map not ready');
-          map.callback = setview;
-        }
+            var setview = function() {
+              if ($scope.geolocation)
+                map.map.fitBounds($scope.bounds, {reset: true});
+            }
+            if(map.map)
+              setview();
+            else
+              map.callback = setview;
 		 });
   });
   return true;

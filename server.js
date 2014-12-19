@@ -18,6 +18,7 @@ app.configure(function() {
     app.use(express.compress());
 
     app.use('/app', express.static(__dirname + '/app'));
+    app.use('/afc_template', express.static(__dirname + '/app/libs/angular_form_controls/afc_template'));
     app.use('/favicon.png', express.static(__dirname + '/app/templates/favicon.png', { maxAge: oneDay }));
 });
 
