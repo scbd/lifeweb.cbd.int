@@ -11,7 +11,12 @@
     "load-grunt-tasks": "^0.4.0"
   },
   "devDependencies": {
-    "awsbox": "0.6.x"
+    "awsbox": "0.6.x",
+    "q-io": "~1.11.4",
+    "q": "~1.0.1",
+    "xml2js": "~0.4.4",
+    "linq": "*",
+    "request": "~2.42.0"
   },
   "engine": "node >= 0.10.18",
   "scripts": {

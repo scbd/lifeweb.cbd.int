@@ -250,6 +250,10 @@ media-heading {
     letter-spacing: -1px;
 }
 
+#sidebar.affix {
+    z-index: 2000;
+}
+
 
 /* RESPONSIVE CSS
     -------------------------------------------------- */

@@ -1,7 +1,7 @@
-define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility',], function(app, map) {
-//TODO: rename this shittily named controller
-  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility) {
-        
+define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page',], function(app, map) {
+  app.controller('EOIDetailCtrl', function ($scope, $http) {
+
+
         $scope.currency = "EURO";
 
             //==================================
@@ -13,34 +13,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                     $scope.currency = "EURO";
             }
 
-        
-        var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
-            $scope.countries = data.data;
-            console.log('countries: ', $scope.countries);
-            return data; //good practice. always return from a promise, the same data.
-        });
-        //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
-        $scope.fullCountryName = function(shortCountryName) {
-            console.log('country short: ', shortCountryName);
-            for(var i=0; i!=$scope.countries.length; ++i)
-                if($scope.countries[i].identifier == shortCountryName)
-                    return $scope.countries[i].name;
-        };
-
-        $scope.imageModal = function(imageIndex) {
-            var modalInstance = $modal.open({
-                templateUrl: 'modal.html',
-                controller: function($scope, $modalInstance, image) { //Is the controller even needed??
-                    $scope.image = image;
-                },
-                size: 'lg',
-                resolve: {
-                    image: function() {
-                        return $scope.eoi.images[imageIndex];
-                    },
-                },
-            });
-        };
 
     //==================================
             $scope.removespaces = function (url) {
@@ -53,13 +25,17 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
         $scope.eoiID = sID;
 
-        if(sID) {
-            editFormUtility.load(sID).then(function(data) {
-            console.log('the data: ', data);
+        if (!sID) {
+            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
               $scope.eoi = data;
-              addFundingProperties($scope.eoi);
 
-              var sCountry = data.countries[0].identifier;
+            });
+        }
+        else {
+            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
+              $scope.eoi = data;
+
+              var sCountry = data.country;
               $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
                .success(function (data) {
                   $scope.geolocation = {
@@ -81,7 +57,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                     map.callback = setview;
               });
             });
-            /*
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.contacts = data;
             });
@@ -99,14 +74,11 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.funding = data;
             });
-            */
 
-            //Is this necessary anymore??
-            //I think it was to allow people to look around the map to se other funding opportunities.
-            //TODO: get this working again, remove the first line return;
-            /*
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
                .success(function (data) {
+                 return;  //TODO: make this working again?
+
                    $scope.mapdata = data;
 
                    var map = new L.map('map');
@@ -166,41 +138,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                    }).addTo(map);
 
                });
-               */
     }
 
-    function addFundingProperties(project) {
-        project.total_cost = project.budget.reduce(function(prev, cur) {
-            console.log('d cur: ', cur);
-            return prev + cur.cost;
-        }, 0);
-        var total_funding = project.donors.reduce(function(prev, cur) {
-            console.log('b cur: ', cur);
-            return prev + cur.funding;
-        }, 0);
-
-        project.funding_needed = project.total_cost - total_funding;
-        console.log('funding needed: ', project.funding_needed);
-        
-        //check whether any are lifeweb_facilitated:
-        var all = true;
-        var one = false;
-        for(var i=0; i!=project.donors.length; ++i) {
-            if(project.donors[i].lifeweb_facilitated)
-                one = true;
-            else
-                all = false;
-        }
-        if(project.funding_needed <= 0 && all)
-            project.is_funded = project.funding_status = 'funded';
-        else if(one)
-            project.funding_status = 'some secured funding';
-        else if(!one)
-            project.funding_status = 'some expected funding';
-        else
-            project.funding_status = 'not yet funded';
-
-        project.currency = 'USD';
-    };
   });
 });
