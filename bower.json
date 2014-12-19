@@ -12,10 +12,10 @@
     "jquery": "~2.0.3",
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
-    "jquery.stellar": "latest",
     "angular_form_controls": "latest"
   },
   "resolutions": {
     "angular": "~1.2.14"
+    "jquery.stellar": "latest"
   }
 }

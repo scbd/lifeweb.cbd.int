@@ -80,6 +80,13 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(),
         },
       })
+      .when('/events/impac3', {
+        templateUrl: '/app/templates/routes/events/impac3.html',
+        title: 'impac3', //TODO: better title
+        resolve: {
+          user: resolveUser(),
+        },
+      })
       .when('/map', {
         templateUrl: '/app/templates/routes/map.html',
         title : 'Map',

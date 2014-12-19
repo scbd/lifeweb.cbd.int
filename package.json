@@ -2,11 +2,12 @@
   "name": "lifeweb.cbd.int",
   "description": "Lifeweb #",
   "dependencies": {
+    "bower": "^1.3.11",
     "express": "~3.4.8",
-    "http-proxy": "~1.0.2",
     "grunt": "~0.4.2",
     "grunt-bower-task": "~0.3.4",
     "grunt-cli": "~0.1.13",
+    "http-proxy": "~1.0.2",
     "load-grunt-tasks": "^0.4.0"
   },
   "devDependencies": {
@@ -14,6 +15,6 @@
   },
   "engine": "node >= 0.10.18",
   "scripts": {
-    "postinstall": "echo postinstall time; ./node_modules/grunt-cli/bin/grunt bower"
+    "postinstall": "./node_modules/.bin/bower install"
   }
 }
