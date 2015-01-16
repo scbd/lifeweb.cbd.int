@@ -53,7 +53,7 @@ require(['angular', 'angular-route', 'angular-cookies', 'angular-sanitize', 'boo
 
     // NOTE: place operations that need to initialize prior to app start here using the `run` function on the top-level module
 
-    require(['domReady!', 'app_routes', '/app/js/controllers/template.js', '/app/js/services/filters.js'], function (document) {
+    require(['domReady!', 'app_routes', '/app/js/controllers/template.js', '/app/js/services/filters2.js'], function (document) {
         ng.bootstrap(document, ['app']);
         ng.resumeBootstrap();
     });
