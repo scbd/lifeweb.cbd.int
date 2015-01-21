@@ -73,6 +73,14 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(['/app/js/controllers/donors.js']),
         },
       })
+      .when('/donors', {
+        templateUrl: '/app/templates/routes/donors.html',
+        title: 'Donor',
+        resolve: {
+            user: resolveUser(),
+            dependencies: resolveJS(['/app/js/controllers/donor.js']),
+        },
+      })
       .when('/countries', {
         templateUrl: '/app/templates/routes/countries.html',
         title : 'Countries',

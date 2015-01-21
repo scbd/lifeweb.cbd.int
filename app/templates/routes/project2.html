@@ -9,19 +9,19 @@
               <div class="bs-sidebar affix" id="sidebar">
                 <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
                   <!--<li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>-->
-                    <li class="active"><a href="#sum"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
+                    <li class="active"><a ng-click="goto('sum')"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
                     <!-- <li><a href="#map"><span class="glyphicon glyphicon-chevron-right"></span>Map</a></li> -->
-                    <li ng-show="eoi.description"><a href="#desc"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
-                    <li ng-show="eoi.objectives_info || eoi.objectives_results"><a href="#obj"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
-                     <li><a href="#funding"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
-                    <li ng-show="eoi.ecoservices"><a href="#benefits"><span class="glyphicon glyphicon-chevron-right"></span>Ecosystem Benefits</a></li>
-                    <li ng-show="eoi.aichi_targets"><a href="#targets"><span class="glyphicon glyphicon-chevron-right"></span>Links with Aichi Targets</a></li>
-                    <li ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"><a href="#align"><span class="glyphicon glyphicon-chevron-right"></span>Alignment with National Planning</a></li>
-                    <li ng-show="eoi.ecological_contribution"><a href="#eco"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
-                    <li ng-show="eoi.participation || eoi.governance"><a href="#participation"><span class="glyphicon glyphicon-chevron-right"></span>Participation and Equity</a></li>
+                    <li ng-show="eoi.description"><a ng-click="goto('desc')"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
+                    <li ng-show="eoi.objectives_info || eoi.budget"><a ng-click="goto('obj')"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
+                     <li><a ng-click="goto('funding')"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
+                    <li ng-show="eoi.ecoservices"><a ng-click="goto('benefits')"><span class="glyphicon glyphicon-chevron-right"></span>Ecosystem Benefits</a></li>
+                    <li ng-show="eoi.aichi_targets"><a ng-click="goto('targets')"><span class="glyphicon glyphicon-chevron-right"></span>Links with Aichi Targets</a></li>
+                    <li ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"><a ng-click="goto('align')"><span class="glyphicon glyphicon-chevron-right"></span>Alignment with National Planning</a></li>
+                    <li ng-show="eoi.climateContribution"><a ng-click="goto('eco')"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
+                    <li ng-show="eoi.participation || eoi.governance"><a ng-click="goto('participation')"><span class="glyphicon glyphicon-chevron-right"></span>Participation and Equity</a></li>
 
-                    <li><a href="#partners"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
-                    <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a href="#attachments"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
+                    <li><a ng-click="goto('partners')"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
+                    <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a ng-click="goto('attachments')"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
                 </ul>
               </div>
             </div>
