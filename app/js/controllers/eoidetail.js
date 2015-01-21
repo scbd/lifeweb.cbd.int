@@ -1,6 +1,6 @@
 define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility',], function(app, map) {
 //TODO: rename this shittily named controller
-  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility) {
+  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility, $anchorScroll, $location) {
         
         $scope.currency = "EURO";
 
@@ -46,7 +46,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             $scope.removespaces = function (url) {
                 return url.replace(/ /g, "%20")
             }
-
 
 
         var sID = new URI().query(true).id;
