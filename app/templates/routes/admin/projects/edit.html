@@ -145,49 +145,6 @@
       </table>
       <afc-text ng-model="document.financialStability" required data-title="Financial Stability" data-placeholder="Enter the details of how the project well maintain financially stable."></afc-text>
 
-      <hr />
-
-      <h3>Images</h3>
-      <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
-      <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
-
-      <h3>Links with the World Database on Protected Areas</h3>
-      <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
-      <div ng-repeat="protectedArea in document.protectedAreas">
-        <div class="col-sm-10">
-          <input type="text" class="form-control" ng-model="protectedArea.url" />
-        </div>
-        <div class="col-sm-2">
-          <a ng-href="{{protectedArea}}">View</a><button ng-click="document.protectedAreas.splice($index, 1)">X</button>
-        </div>
-      </div>
-      <div class="col-sm-10">
-        <input type="text" class="form-control" ng-model="newProtected_area" ng-keydown="maybeAddPrimitive($event, 'newProtected_area', 'protectedAreas')" placeholder="Enter a protected area link" />
-      </div>
-      <div class="col-sm-2">
-        <button type="button" class="col-sm-2 form-control" ng-click="addPrimitive('newProtected_area', 'protectedAreas')">Add</button>
-      </div>
-      <br />
-
-      <h3>Maps</h3>
-      <h4>Please send <strong>high quality digital GIS files</strong> or scanned maps situating and describing the project area. There files may be made available for download on the LifeWeb website and may be used in CBD and LifeWeb communication materials</h4>
-      <elink ng-model="document.maps" type-title="Map"></elink>
-
-      <h3>Coordinates</h3>
-      <lonlat-input ng-model="document.coordinates" required help="Key-in or click on map, where the general longitude and latutide of the project is"></lonlat-input>
-
-      <h3>Attachments</h3>
-      <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
-      <elink ng-model="document.attachments" type-title="Attachment" autocomplete="attachment_keywords"></elink>
-
-      <hr />
-
-      <h3>Additional Project Information</h3>
-      <afc-text title="Additional Information" ng-model="document.additionalInformation" placeholder="Enter any additional information regarding this project"></afc-text>
-
-
-      <hr />
-
       <h3>Add and Edit Donors</h3>
       <table style="width: 90%">
         <thead>
@@ -237,6 +194,49 @@
           </tr>
         </tbody>
       </table>
+
+      <hr />
+
+      <h3>Images</h3>
+      <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
+      <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
+
+      <h3>Links with the World Database on Protected Areas</h3>
+      <h4>If this project's scope involved protected areas registered in the World Database on Protected Areas (WDPA), please include the URL links where the sites appear on http://www.protectedplanet.net of all the areas involved in this project. If the area(s) are not registered in the WDPA, please indicate the complete name(s).</h4>
+      <div ng-repeat="protectedArea in document.protectedAreas">
+        <div class="col-sm-10">
+          <input type="text" class="form-control" ng-model="protectedArea.url" />
+        </div>
+        <div class="col-sm-2">
+          <a ng-href="{{protectedArea}}">View</a><button ng-click="document.protectedAreas.splice($index, 1)">X</button>
+        </div>
+      </div>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" ng-model="newProtected_area" ng-keydown="maybeAddPrimitive($event, 'newProtected_area', 'protectedAreas')" placeholder="Enter a protected area link" />
+      </div>
+      <div class="col-sm-2">
+        <button type="button" class="col-sm-2 form-control" ng-click="addPrimitive('newProtected_area', 'protectedAreas')">Add</button>
+      </div>
+      <br />
+
+      <h3>Maps</h3>
+      <h4>Please send <strong>high quality digital GIS files</strong> or scanned maps situating and describing the project area. There files may be made available for download on the LifeWeb website and may be used in CBD and LifeWeb communication materials</h4>
+      <elink ng-model="document.maps" type-title="Map"></elink>
+
+      <h3>Coordinates</h3>
+      <lonlat-input ng-model="document.coordinates" required help="Key-in or click on map, where the general longitude and latutide of the project is"></lonlat-input>
+
+      <h3>Attachments</h3>
+      <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
+      <elink ng-model="document.attachments" type-title="Attachment" autocomplete="attachment_keywords"></elink>
+
+      <hr />
+
+      <h3>Additional Project Information</h3>
+      <afc-text title="Additional Information" ng-model="document.additionalInformation" placeholder="Enter any additional information regarding this project"></afc-text>
+
+
+      <hr />
       <h3>Note: all Expressions of Interests (projects) expire after a year</h3>
 
       <hr />
