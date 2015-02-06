@@ -39,13 +39,13 @@ app.factory("editFormUtility", ["IStorage", "$q","commonjs", function(storage, $
 						throw { data: { error: "Invalid schema type" }, status:"badSchema"};
 
 					var hasDraft = !!info.workingDocumentCreatedOn;
-					var securityPromise = hasDraft ? storage.drafts.security.canUpdate(info.identifier, info.type)
-												   : storage.drafts.security.canCreate(info.identifier, info.type);
+					//var securityPromise = hasDraft ? storage.drafts.security.canUpdate(info.identifier, info.type)
+					//							   : storage.drafts.security.canCreate(info.identifier, info.type);
 
-					return securityPromise.then(
-						function(isAllowed) {
-							if (!isAllowed && !commonjs.isIAC())
-								throw { data: { error: "Not allowed" }, status: "notAuthorized" };
+					//return securityPromise.then(
+					//	function(isAllowed) {
+					//		if (!isAllowed && !commonjs.isIAC())
+					//			throw { data: { error: "Not allowed" }, status: "notAuthorized" };
 
 							var documentPromise = hasDraft ? storage.drafts.get(identifier)
 														   : storage.documents.get(identifier);
@@ -54,7 +54,7 @@ app.factory("editFormUtility", ["IStorage", "$q","commonjs", function(storage, $
 								function(success) {
 									return success.data;
 								});
-						});
+					//	});
 				});
 		},
 

@@ -1,0 +1,27 @@
+<fieldset ng-class="{green: !donor.identification, blue: donor.identification && !isDirty, yellow: isDirty}">
+    <legend>Edit Donor</legend>
+    <div class="row form-group">
+        <div class="col-xs-4">
+            <input type="text" ng-change="changed()" placeholder="name" ng-model="donor.name" />
+            <input type="text" ng-change="changed()" placeholder="acronym" ng-model="donor.acronym" />
+            <afc-autocomplete ng-model="donor.country" source="countriesAC" selectbox="true" placeholder="Enter the country or countries involved" mapping="identifierMapping"></afc-autocomplete>
+            <input type="text" ng-change="changed()" placeholder="website" ng-model="donor.website.url" />
+        </div>
+        <div class="col-xs-8">
+            <textarea style="width: 100%" rows="5" ng-change="changed()" placeholder="Description of the donor" ng-model="donor.description"></textarea>
+        </div>
+    </div>
+    <div class="row form-group">
+        <label class="col-xs-4 control-label">Logo</label>
+        <div class="col-xs-8">
+            <afc-file ng-model="donor.logo.url" max-url-length="80"></afc-file>
+        </div>
+    </div>
+    TODO: add social media later. As you click on the logo of each social media, it presents the textbox to type the username.
+    <div class="row form-group">
+        <div class="col-xs-8"></div>
+        <div class="col-xs-4">
+            <button type="button" ng-click="saveDonor()">Save</button>
+        </div>
+    </div>
+</fieldset>

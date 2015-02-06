@@ -160,12 +160,20 @@
           <tr ng-hide="document.donors && document.donors.length">
             <td colspan="5" style="font-weight: bold; text-align: center;">... No Donors Yet. Add any pre-existing donors to using the form below ...</td>
           </tr>
-          <tr ng-repeat="donor in document.donors">
-            <td><input type="text" ng-model="donor.name" placeholder="Enter donor's full name" /></td>
+          <tr ng-repeat-start="donor in document.donors" ng-controller="documentDonorCtrl">
+            <td>
+                <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name"></afc-autocomplete>
+                <button type="button" ng-click="editDonor(donor.name, 'donatingDonor', donatingDonor)">edit</button>
+            </td>
             <td><input type="text" ng-model="donor.description" placeholder="Enter any information regarding donor's donation" /></td>
             <td><input type="number" ng-model="donor.funding" placeholder="Donor's donation in USD" /></td>
             <td><input type="date" ng-model="donor.date" /></td>
             <td><input type="checkbox" ng-model="donor.lifeweb_facilitated" /> - <input type="checkbox" ng-model="donor.domestic" /><button ng-click="document.donors.splice($index, 1)">X</button></td>
+          </tr>
+          <tr ng-show="show_donatingDonor" ng-repeat-end>
+            <td colspan="5">
+              <edit-donor donor="donatingDonor"></edit-donor>
+            </td>
           </tr>
           <tr ng-if="document.donors && document.donors.length">
             <td colspan="5" style="text-align: right">Total: ${{sum(document.donors, 'funding')}}</td>
@@ -173,7 +181,9 @@
           <tr><td colspan="5" style="border-top: 1px solid gray;">Add a new donor using the form below</td></tr>
           <tr>
             <td colspan="4" style="padding-top: 10px;">
-              Name: <input type="text" ng-model="newdonor.name" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 500px;" placeholder="Enter donor's full name" /><br />
+              Name: <afc-autocomplete ng-model="newdonor.name" source="donorsAC" placeholder="Enter donor's full name"></afc-autocomplete>
+              &nbsp;<button type="button" ng-click="editDonor(newdonor.name, 'newdonorDonor')">Expand Donor</button><br />
+              <edit-donor donor="newdonorDonor" ng-show="show_newdonorDonor"></edit-donor>
               <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
             </td>
             <td>

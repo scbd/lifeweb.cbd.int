@@ -1,11 +1,11 @@
-define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js',], function(app) {
+define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js', ], function(app) {
     function ngTagsToArray(fake, real, realKey) {
         real[realKey] = [];
         for(var i=0; i!=fake.length; ++i)
             real[realKey].push(fake[i].text);
     }
 
-  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location) {
+  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location, guid) {
     $controller('EditCtrl', {$scope: $scope});
 
     $scope.$on('documentPublished', function(event, docInfo, document) {
@@ -16,6 +16,113 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.$on('updateOriginalDocument', function(event, doc) {
         $location.path('/admin/projects/edit/' + doc.header.identifier, false);
     });
+
+    $scope.editDonor = function(name, donorKey, editingDonor) {
+        $scope['show_' + donorKey] = !$scope['show_' + donorKey];
+        if(!$scope['show_' + donorKey])
+            return;
+
+        $scope.donorsAC().then(function(data) {
+            var donor;
+            if(name)
+                for(var i=0; i!=data.length; ++i)
+                    if(data[i].name.toUpperCase() == name.toUpperCase())
+                        donor = data[i];
+
+            if(!donor)
+                donor = { name: name };
+
+            if(!editingDonor)
+                editingDonor = $scope[donorKey] = donor;
+            else {
+                //first clear out the object:
+                for(var k in editingDonor)
+                    delete editingDonor[k];
+                //then add eevrything back. (we have to do this so we keep the reference)
+                for(var k in donor)
+                    editingDonor[k] = donor[k];
+            }
+        });
+    };
+
+    var donorDeferred;
+    var donorPromise = function() {
+        var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
+        var guids = [guid(), guid(), guid()];
+        var schemaName = 'lwDonor';
+        deferred.resolve([
+            {
+                identifier: guids[0],
+                header: {
+                  identifier: guids[0], 
+                  languages: ['en'],
+                  schema: schemaName,
+                },
+                name: 'Association of Zoos and Aquariums',
+                acronym: 'AZA',
+                country: {
+                    identifier: 'us',
+                },
+                description: 'Leaders in the protection of endangered species',
+                logo: { url: 'https://www.aza.org/images/logo.gif', },
+                website: { url: 'www.aza.org', },
+                socialMedia: {
+                    twitter: 'zoos_aquariums',
+                    facebook: 'AssociationOfZoosAndAquariums',
+                },
+            },
+            {
+                identifier: guids[1],
+                header: {
+                  identifier: guids[1], 
+                  languages: ['en'],
+                  schema: schemaName,
+                },
+                name: 'Association of Animal Protections [fake]',
+                acronym: 'AZAF',
+                country: {
+                    identifier: 'us',
+                },
+                description: 'Leaders in the fake protection of common species',
+                logo: { url: 'https://www.aza.org/images/logof.gif', },
+                website: { url: 'www.azaf.org', },
+                socialMedia: {
+                    twitter: 'zoosaquariums',
+                    facebook: 'AsociationOfZoosAndAquariums',
+                },
+            },
+            {
+                identifier: guids[2],
+                header: {
+                  identifier: guids[2], 
+                  languages: ['en'],
+                  schema: schemaName,
+                },
+                name: 'IUCN Save Our Species',
+                acronym: 'IUCN SOS',
+                country: {
+                    identifier: 'ch',
+                },
+                description: 'Saving endangered species',
+                logo: { url: 'http://cmsdata.iucn.org/img/sos_logo_new.png', },
+                website: { url: 'http://sospecies.org/', },
+                socialMedia: {
+                    twitter: 'iucnsos',
+                    facebook: 'iucn_sos',
+                },
+            },
+        ]);
+        return deferred.promise;
+    };
+
+    $scope.donorsAC = function() {
+        return donorPromise().then(function(data) {
+            for(var i=0; i!=data.length; ++i)
+                data[i].__value = data[i].name;
+
+            return data;
+        });
+    };
  
     var aichiPromise = $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
@@ -278,5 +385,10 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
       return sum;
     };
+  });
+
+  app.controller('documentDonorCtrl', function($scope) {
+    $scope.show_donatingDonor;
+    $scope.donatingDonor;
   });
 });
