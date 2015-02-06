@@ -1,0 +1,54 @@
+<link href="/app/libs/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+<link href="/app/css/lifeweb_admin.css" rel="stylesheet">
+<style>
+  .dragdrophover {
+    background-color: #BBFFBB;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+  .beforedragdrop {
+    height: 30px;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+  tbody tr {
+    border: solid 2px #CCCFBC;
+  }
+  tbody tr:nth-child(odd) {
+    background-color: #86942A;
+  }
+  tbody tr:nth-child(even) {
+    background-color: #507642;
+  }
+  tbody tr:hover {
+    background-color: #F3F4EC;
+    border-color: #A37B45;
+    cursor: pointer;
+  }
+</style>
+<div class="container" style="margin-top: 100px;" ng-controller="EditDonorsCtrl">
+  <ng-include src="'/app/partials/admin_header.html'"></ng-include>
+  <h1>Donors</h1>
+  Filter: <input ng-model="quickFilter" autofocus />
+  <table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Region</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat-start="donor in donors | filter:quickFilter" ng-click="showing[$index] = !showing[$index]">
+            <td><img ng-src='{{donor.logo.url}}'>Logo</img></td>
+            <td>{{donor.identifier}}</td>
+            <td>{{donor.country}}</td>
+        </tr>
+        <tr ng-show="showing[$index]" ng-repeat-end>
+            <td colspan="3">
+                <edit-donor donor="donor"></edit-donor>
+            </td>
+        </tr>
+    </tbody>
+  </table>
+</div>

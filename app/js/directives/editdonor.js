@@ -1,4 +1,4 @@
-define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js',], function(app) {
+define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', 'editFormUtility',], function(app) {
     app.directive('editDonor', function() {
         return {
             restrict: 'EAC',
@@ -11,22 +11,23 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js',],
                     $scope.donor = {};
 
                 $scope.$watch('donor', function() {
-                    $scope.donor.logo = $scope.donor.logo || null;
-                    $scope.donor.website = $scope.donor.website || null;
-                    $scope.donor.socialMedia = $scope.donor.socialMedia || null;
-                    if($scope.donor.identifier) {
+                    if($scope.donor.header && $scope.donor.header.identifier) {
+                        $scope.saveButtonText = 'Update Donor';
+                        $scope.isNew = false;
                         $scope.origDonor = {};
                         for(var k in $scope.donor)
                             $scope.origDonor[k] = $scope.donor[k];
                         console.log('existing donor spawned: ', $scope.donor.identifier);
                     } else {
+                        $scope.saveButtonText = 'Create Donor';
+                        $scope.isNew = true;
                         function S4() {
                           return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
                         }
                         var guid = (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
-                        $scope.donor.identifier = guid;
+                        //$scope.donor.identifier = guid;
                         $scope.donor.header = {
-                          identifier: $scope.donor.identifier,
+                          identifier: guid,
                           languages: ['en'],
                           schema: 'lwDonor',
                         };
@@ -35,12 +36,14 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js',],
                     }
                 });
 
-                console.log('in controller');
                 $scope.saveDonor = function() {
-                    console.log('saving donor: ', $scope.donor);
-                    editFormUtility.saveDraft($scope.donor).then(function(result) {
+                    var donor = $.extend({}, $scope.donor);
+                    donor.socialMedia = [donor.socialMedia];
+                    delete donor.__value;
+                    console.log('saving donor: ', donor);
+                    editFormUtility.saveDraft(donor).then(function(result) {
                         console.log('saveDraft donor result: ', result);
-                        editFormUtility.publish($scope.donor).then(function(result) {
+                        editFormUtility.publish(donor).then(function(result) {
                             console.log('publish donor result: ', result);
 
                             IStorage.drafts.query('(type eq \'lwDonor\')', {cache: false}).then(function(result) {

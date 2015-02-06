@@ -12,7 +12,6 @@
     border: dashed 2px gray;
     padding: 1px;
   }
-
 </style>
 <div class="container" style="margin-top: 100px;" ng-controller="EditProjectCtrl">
   <ng-include src="'/app/partials/admin_header.html'"></ng-include>
@@ -25,7 +24,7 @@
       <div class="form-group">
         <label for="Countries" class="col-sm-2 control-label">Country or Countries</label>
         <div class="col-sm-10">
-          <afc-autocomplete ng-model="document.countries" source="countriesAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping"></afc-autocomplete>
+          <afc-autocomplete ng-model="document.countries" source="allRegionsAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping"></afc-autocomplete>
         </div>
       </div>
       <afc-input ng-model="document.title" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
@@ -163,7 +162,7 @@
           <tr ng-repeat-start="donor in document.donors" ng-controller="documentDonorCtrl">
             <td>
                 <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name"></afc-autocomplete>
-                <button type="button" ng-click="editDonor(donor.name, 'donatingDonor', donatingDonor)">edit</button>
+                <button type="button" ng-click="editDonor(donor.name, 'donatingDonor', donatingDonor)">{{donorButtonText}}</button>
             </td>
             <td><input type="text" ng-model="donor.description" placeholder="Enter any information regarding donor's donation" /></td>
             <td><input type="number" ng-model="donor.funding" placeholder="Donor's donation in USD" /></td>
@@ -182,7 +181,7 @@
           <tr>
             <td colspan="4" style="padding-top: 10px;">
               Name: <afc-autocomplete ng-model="newdonor.name" source="donorsAC" placeholder="Enter donor's full name"></afc-autocomplete>
-              &nbsp;<button type="button" ng-click="editDonor(newdonor.name, 'newdonorDonor')">Expand Donor</button><br />
+              &nbsp;<button type="button" ng-click="editDonor(newdonor.name, 'newdonorDonor')">{{donorButtonText}}</button><br />
               <edit-donor donor="newdonorDonor" ng-show="show_newdonorDonor"></edit-donor>
               <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
             </td>

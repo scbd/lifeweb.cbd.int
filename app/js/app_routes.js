@@ -193,6 +193,16 @@ define(['app', 'authentication'], function(app) {
         },
         label: 'Edit Project',
       })
+      .when('/admin/donors', {
+        templateUrl: '/app/templates/routes/admin/donors/index.html',
+        title: 'Edit Donors',
+        collectionKey: 'donors',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/editdonors.js']),
+        },
+        label: 'Edit Donors',
+      })
       .when('/admin/organizations/create', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
         title : 'Create Organization',

@@ -52,7 +52,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         var schemaName = 'lwDonor';
         deferred.resolve([
             {
-                identifier: guids[0],
                 header: {
                   identifier: guids[0], 
                   languages: ['en'],
@@ -72,7 +71,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 },
             },
             {
-                identifier: guids[1],
                 header: {
                   identifier: guids[1], 
                   languages: ['en'],
@@ -92,7 +90,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 },
             },
             {
-                identifier: guids[2],
                 header: {
                   identifier: guids[2], 
                   languages: ['en'],
@@ -277,6 +274,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         console.log('keywords: ', $scope.document.keywords);
     }, true);
     */
+
     $scope.addItem = function(scopeNewItemKey, projectKey) {
       if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
       $scope.document[projectKey].push($.extend({}, $scope[scopeNewItemKey]));
@@ -385,10 +383,30 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
       return sum;
     };
+
+    $scope.donorButtonText = 'New Donor';
+    $scope.newdonor = {};
+    $scope.$watch('newdonor.name', function() {
+        donorPromise().then(function(donors) {
+            for(var i=0;i!=donors.length; ++i)
+                if(donors[i].name == $scope.newdonor.name) {
+                    $scope.donorButtonText = 'Edit Donor'; break;
+                } else
+                    $scope.donorButtonText = 'New Donor';
+        });
+    });
   });
 
   app.controller('documentDonorCtrl', function($scope) {
-    $scope.show_donatingDonor;
-    $scope.donatingDonor;
+    $scope.donorButtonText = 'New Donor';
+    $scope.$watch('donor', function() {
+        donorPromise().then(function(donors) {
+            for(var i=0;i!=donors.length; ++i)
+                if(donors[i].name == $scope.donor.name) {
+                    $scope.donorButtonText = 'Edit Donor'; break;
+                } else
+                    $scope.donorButtonText = 'New Donor';
+        });
+    });
   });
 });

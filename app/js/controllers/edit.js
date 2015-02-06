@@ -72,8 +72,27 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         for(var i = 0; i != countries.length; ++i)
           countries[i].__value = countries[i].name;
 
+        countries.sort(function(a, b) {
+            return (a.name < b.name) ? -1 : 1;
+        });
+
         return countries;
       });
+    };
+
+    $scope.allRegionsAC = function() {
+        return $scope.countriesAC().then(function(countries) {
+            return $http.get('https://api.cbd.int/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
+                console.log('regions data format: ', data);
+                var regions = data.data;
+                for(var i = 0; i != regions.length; ++i)
+                  regions[i].__value = regions[i].name;
+
+                regions = regions.concat(countries);
+
+                return regions;
+            });
+        });
     };
 
     $scope.identifierMapping = function(item) {

@@ -1,4 +1,4 @@
-<fieldset ng-class="{green: !donor.identification, blue: donor.identification && !isDirty, yellow: isDirty}">
+<fieldset ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}">
     <legend>Edit Donor</legend>
     <div class="row form-group">
         <div class="col-xs-4">
@@ -21,7 +21,7 @@
     <div class="row form-group">
         <div class="col-xs-8"></div>
         <div class="col-xs-4">
-            <button type="button" ng-click="saveDonor()">Save</button>
+            <button type="button" ng-click="saveDonor()" ng-enabled="isDirty || isNew">{{saveButtonText}}</button>
         </div>
     </div>
 </fieldset>
