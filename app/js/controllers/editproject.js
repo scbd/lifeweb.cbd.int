@@ -142,30 +142,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       if(tabs.indexOf(tabRepository[tabIndex]) === -1)
         tabs.push(tabRepository[tabIndex]);
     };
-    //maps tabbedTextarea format to the strange lifeweb format.
-    //{key: text} to ... {type: {identifier:key}, comment: text}
-    //Note: surprisingly doesn't lag? O.o
-    $scope.$watch('fakeAichiTargets', function() {
-        mapObjectToTermAndComment(
-            $scope.fakeAichiTargets,
-            $scope.document,
-            'aichiTargets'
-        );
-    }, true);
-    $scope.$watch('fakeNationalAlignment', function() {
-        mapObjectToTermAndComment(
-            $scope.fakeNationalAlignment,
-            $scope.document,
-            'nationalAlignment'
-        );
-    }, true);
-    $scope.$watch('fakeEcologicalContribution', function() {
-        mapObjectToTermAndComment(
-            $scope.fakeEcologicalContribution,
-            $scope.document,
-            'climateContribution'
-        );
-    }, true);
     function mapObjectToTermAndComment(fake, real, realKey) {
         real[realKey] = [];
         for(var key in fake)
@@ -175,7 +151,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             });
     }
     function mapTermAndCommentToObject(fake, real, fakeKey, tabInfo, tabs) {
-        var fakeTargets = [];
+        var fakeTargets = {};
         for(var i=0; i!=real.length; ++i) {
             fakeTargets[real[i].type.identifier] = real[i].comment;
             console.log(real[i].type.identifier + 'tabInfo: ', tabInfo);
@@ -194,17 +170,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         console.log('keywords: ', $scope.document.keywords);
     }, true);
     */
-
-    //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
-    $scope.$watch('document.donors', function() {
-        if($scope.document.donors && $scope.document.donors.length == 0)
-            $scope.document.donors = undefined;
-    });
-    $scope.$watch('document.maps', function() {
-        if($scope.document.maps && $scope.document.maps.length == 0)
-            $scope.document.maps = undefined;
-    });
-
     $scope.addItem = function(scopeNewItemKey, projectKey) {
       if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
       $scope.document[projectKey].push($.extend({}, $scope[scopeNewItemKey]));
@@ -266,8 +231,45 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       if($scope.document.climateContribution)
         mapTermAndCommentToObject($scope.fakeEcologicalContribution, $scope.document.climateContribution, 'fakeEcologicalContribution', $scope.contrib_climate, $scope.climate_contribution_tabs);
 
-      console.log('fake aichi: ', $scope.fakeAichiTargets);
+        setupWatches();
     });
+
+    function setupWatches() {
+        //maps tabbedTextarea format to the strange lifeweb format.
+        //{key: text} to ... {type: {identifier:key}, comment: text}
+        //Note: surprisingly doesn't lag? O.o
+        $scope.$watch('fakeAichiTargets', function() {
+            mapObjectToTermAndComment(
+                $scope.fakeAichiTargets,
+                $scope.document,
+                'aichiTargets'
+            );
+        }, true);
+        $scope.$watch('fakeNationalAlignment', function() {
+            mapObjectToTermAndComment(
+                $scope.fakeNationalAlignment,
+                $scope.document,
+                'nationalAlignment'
+            );
+        }, true);
+        $scope.$watch('fakeEcologicalContribution', function() {
+            mapObjectToTermAndComment(
+                $scope.fakeEcologicalContribution,
+                $scope.document,
+                'climateContribution'
+            );
+        }, true);
+
+        //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
+        $scope.$watch('document.donors', function() {
+            if($scope.document.donors && $scope.document.donors.length == 0)
+                $scope.document.donors = undefined;
+        });
+        $scope.$watch('document.maps', function() {
+            if($scope.document.maps && $scope.document.maps.length == 0)
+                $scope.document.maps = undefined;
+        });
+    }
 
     $scope.sum = function(arr, key) {
       var sum = 0;

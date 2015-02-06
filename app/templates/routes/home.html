@@ -7,12 +7,11 @@
 
 
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" style="border-bottom:1px solid #666;">
-      <div class="item active">
+  <carousel interval="3000">
+      <slide active>
         <div class="" id='map' ng-controller="MapCtrl" style="height: 100%"></div>    
-      </div>
-
-      <div class="item">
+      </slide>
+      <slide>
         <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="Endangered Frog" class="img-responsive" style="height: 100%; width:100%;">
         <div class="carousel-caption">
           <h1 style="color: white;">
@@ -24,9 +23,9 @@
           </p>
           <a class="btn btn-lg btn-primary bold-btn" href="/campaigns/zeroextinction">more information</a> 
         </div>
-      </div>
+      </slide>
 
-      <div class="item">
+      <slide>
         <img src="http://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="img-responsive" style="height: 100%;width:100%;">
         <div class="carousel-caption">
           <h1><span style="color:#efefef;background-color:#000;padding:5px!important; white-space:nowrap;">Carbon & Biodiversity Calculator</span></h1>
@@ -35,15 +34,9 @@
           </p>
           <a class="btn btn-lg btn-primary" href="http://carbonbiodiversitycalculator.unep-wcmc.org/" target="_blank">Try it for yourself</a>
         </div>
-      </div>
-    </div> <!-- /.carousel-inner -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-  </div><!-- /.carousel -->
+      </slide>
+    </carousel>
+    </div>
 
 
  <!-- explore share contect
@@ -93,12 +86,13 @@
       <hr style="padding:0;margin:0;"/>
       <br>
       <div class="row" >
+       <project-min doc-id="24041" class="col-xs-6"></project-min>
+       <!--<project-min doc-id="24020" class="col-xs-6"></project-min>-->
+       <project-min doc-id="24012" class="col-xs-6"></project-min>
        <project-min doc-id="24003" class="col-xs-6"></project-min>
+       <project-min doc-id="23999" class="col-xs-6"></project-min>
        <project-min doc-id="23990" class="col-xs-6"></project-min>
-       <project-min doc-id="23916" class="col-xs-6"></project-min>
        <project-min doc-id="23936" class="col-xs-6"></project-min>
-       <project-min doc-id="23236" class="col-xs-6"></project-min>
-       <project-min doc-id="23954" class="col-xs-6"></project-min>
 
       </div>
     </div>
@@ -120,8 +114,7 @@
     <br/>
     <br/>  
 
-
-
+<!--
     <h2 class="featurette-heading"> <a href="http://twitter.com/CBDLifeWeb">Latest News <i class="icon-chevron-right" style="position:relative;top:12px;"></i></a></h2>
     <hr style="padding:0;margin:0;"/><br/>
     <div class="row" data-ng-controller="TwitterCtrl">
@@ -130,6 +123,7 @@
         <a href="{{tweet.link}}" target="new__" style="font-size:14px;" ng-bind-html-unsafe="tweet.text">{{tweet.text}}</a></p>
       </div> <!--TODO: vulnerable to XSS through twitter api-->
     </div>
+    -->
     <br/><br/>   
     <div class="row">
       <div class="col-xs-12">  

@@ -1,5 +1,5 @@
 define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page',], function(app, map) {
-  app.controller('EOIDetailCtrl', function ($scope, $http) {
+  app.controller('EOIDetailCtrl', function ($scope, $http, location, $anchorScroll) {
 
 
         $scope.currency = "EURO";
@@ -24,6 +24,11 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         var sID = new URI().query(true).id;
 
         $scope.eoiID = sID;
+
+    $scope.goto = function(hash) {
+        location.skipReload().hash(hash);
+        $anchorScroll();
+    };
 
         if (!sID) {
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
@@ -141,4 +146,22 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
     }
 
   });
+
+    app.factory('location', [
+        '$location',
+        '$route',
+        '$rootScope',
+        function ($location, $route, $rootScope) {
+            $location.skipReload = function () {
+                var lastRoute = $route.current;
+                var un = $rootScope.$on('$locationChangeSuccess', function () {
+                    $route.current = lastRoute;
+                    un();
+                });
+                return $location;
+            };
+            return $location;
+        }
+    ]);
+
 });
