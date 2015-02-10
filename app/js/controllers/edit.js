@@ -30,6 +30,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         if(exists)
             $scope.published_id = $routeParams.title;
       });
+      $scope.documentExists = true;
     }
     else
       $scope.documentPromise = {
