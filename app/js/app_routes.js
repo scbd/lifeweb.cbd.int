@@ -289,26 +289,26 @@ define(['app', 'authentication'], function(app) {
       //
       //==================================================
       function resolveUser(requiredPrivilages) { 
-
-        return ['$rootScope', 'authentication', '$location', '$cookieStore', '$window', function($rootScope, authentication, $location, $cookieStore, $window) {
+        return function($rootScope, authentication, $location, $cookieStore, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
+            console.log('user: ', user);
             if(requiredPrivilages) {
               var notAllowed = true;
               for(var i=0; i!=user.roles.length; ++i)
                 if(requiredPrivilages.indexOf(user.roles[i]) != -1)
                   notAllowed = false;
 
+                console.log('not allowed? ', notAllowed);
               if(notAllowed) {
                 $cookieStore.put('loginRedirect', $location.path()); //I give up... ffs...
-                //debugger;
                 $location.url('/login');
               }
             }
 
             return user;
           })
-        }];
+        };
       }
 
       //==================================================

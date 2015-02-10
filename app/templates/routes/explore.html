@@ -158,12 +158,15 @@
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
                                     <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
+                                <th ng-if="user.isAuthenticated">
+                                    Admin
+                                </th>
                             </tr>
                             <tr ng:class="{'funded':'error', false:''}[proj.status]"  ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
                                 <td style="width: 70px;">
                                     <a href="/project?id={{proj.identifier}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{proj.thumbnail_s}}" alt="" /></a>
                                 </td>
-                                <td style="font-weight:bold;"> <a ng-href="/project?id={{proj.identifier}}"><span class="media-heading">{{proj.title_EN_t}}</span></a></td>
+                                <td style="font-weight:bold;"> <a ng-href="/project?id={{proj.identifier_s}}"><span class="media-heading">{{proj.title_EN_t}}</span></a></td>
                                 <td> <span style="font-weight:bold;">{{proj.country_EN_t}}</span></td>
                                 <td nowrap> {{proj.budgetCost_d | filterCurrency:proj.currency:currency}} </td>
                                 <td nowrap> {{proj.funding_needed | filterCurrency:proj.currency:currency}} </td>
@@ -179,6 +182,9 @@
                                     <div ng-repeat="match in proj.funding_matches" style="white-space:nowrap;padding-top:5px;">
                                             {{match.amount |  filterCurrency:match.currency:currency}} ({{match.donor.acronym}})
                                     </div>
+                                </td>
+                                <td>
+                                    <a ng-href="/admin/projects/edit/{{proj.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
                                 </td>
                             </tr>
                         </table>

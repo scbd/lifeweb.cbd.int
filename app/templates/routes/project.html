@@ -44,9 +44,9 @@
 <section id="sum" style="margin:47px 0 0 0;" >
 
 
-    <!-- AddThis Button BEGIN -->
-    <!--TODO: wtf is this garbage??? -->
+    <!-- AddThis (Social Media controls) Button BEGIN -->
     <div style="width: 100%;">
+        <a ng-if="user.isAuthenticated" href="/admin/projects/edit/{{eoiID}}" target="_blank">Edit Project '{{eoi.title.en}}'</a>
         <div class="addthis_toolbox addthis_default_style pull-right" style="width:140px;">
             <a class="addthis_button_preferred_1"></a>
             <a class="addthis_button_preferred_2"></a>
@@ -310,6 +310,30 @@
                <span ng-show="fp.Organization!= ''">{{fp.Organization}}</span>
                <span ng-show="fp.Country!= ''">{{fp.Country}}</span>
                <span ng-show="fp.info!= ''">{{fp.info}}</span>
+            </td>
+        </tr>
+
+         <tr ng-repeat="fp in fp_national">
+            <td><span class="label label-info">National CBD Focal Point</span></td>
+            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong>
+                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
+            <td>
+                <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+
+            </td>
+        </tr>
+
+        <tr ng-repeat="fp in fp_powpa">
+            <td><span class="label label-info">PoWPA Focal Point</span></td>
+            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong>
+                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
+            <td>
+                <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
+
             </td>
         </tr>
     </table>

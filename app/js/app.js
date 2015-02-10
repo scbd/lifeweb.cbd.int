@@ -6,19 +6,17 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
     //angular.module('formControls').value('realm', 'lifeweb');
     app.value('realm', 'lifeweb');
 
-	app.config(['$controllerProvider', '$compileProvider', '$provide', '$filterProvider', '$httpProvider',
-		function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider) {
-			// Allow dynamic registration
+	app.config(function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider) {
+		// Allow dynamic registration
 
-			app.filter     = $filterProvider.register;
-			app.factory    = $provide.factory;
-			app.value      = $provide.value;
-			app.controller = $controllerProvider.register;
-			app.directive  = $compileProvider.directive;
-		}
-	]);
+		app.filter     = $filterProvider.register;
+		app.factory    = $provide.factory;
+		app.value      = $provide.value;
+		app.controller = $controllerProvider.register;
+		app.directive  = $compileProvider.directive;
+   });
 
-  app.run(function($location, $route, $rootScope, $anchorScroll, $cookies, $http, Localizer) {
+  app.run(function($location, $route, $rootScope, $anchorScroll, $cookieStore, $http, Localizer) {
     var original = $location.path;
     $location.path = function (path, reload) {
         if (reload === false) {
@@ -31,8 +29,19 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
         return original.apply($location, [path]);
     };
 
+    $rootScope.$on('$routeChangeError', function(current, previous, rejection) {
+        console.log('route error:');
+        console.log(current);
+        console.log(previous);
+        console.log(rejection);
+    });
+    $rootScope.$on('$routeChangeStart', function(next, current) {
+        console.log('start: ', next, current);
+    });
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
-      $rootScope.title = current.$$route.title;
+        console.log('route change to: ', current);
+      if(current.$$route)
+          $rootScope.title = current.$$route.title;
 
       $(function() {
         setTimeout(function() {
@@ -44,8 +53,8 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
       });
 
       //TODO: get language from browser if not set by user initially.
-      if(!$cookies.language)
-        $cookies.language = 'fr-ca';
+      if(!$cookieStore.get('language'))
+        $cookieStore.put('language', 'en-ca');
 
       $http.get('/app/translation.json')
         .success(function(response, status) {
@@ -56,7 +65,7 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
         });
 
       $rootScope.changeLanguage = function(lang) {
-        $cookies.language = lang;
+        $cookieStore.put('language', lang);
       };
 
     });

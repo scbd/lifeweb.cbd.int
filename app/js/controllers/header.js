@@ -2,31 +2,6 @@
 
 define(['app', 'authentication'], function(app, MapCtrl) {
   app.controller('HeaderCtrl', function($scope, $window, $browser, $document, $location, authentication) {
-    //============================================================
-    //
-    //
-    //============================================================
-    function setCookie (name, value, days, path) {
-
-        var cookieString = $window.escape(name) + '=';
-
-        if(value) cookieString += $window.escape(value);
-        else      days = -1;
-
-        if(path)
-            cookieString += '; path=' + path;
-
-        if(days || days === 0) {
-
-            var expirationDate = new Date();
-
-            expirationDate.setDate(expirationDate.getDate() + days);
-
-            cookieString += '; expires=' + expirationDate.toUTCString();
-        }
-
-        $document[0].cookie = cookieString;
-    }
 
     //============================================================
     //
@@ -43,6 +18,7 @@ define(['app', 'authentication'], function(app, MapCtrl) {
     //
     //============================================================
     $scope.actionSignOut = function () {
+    return;
         document.cookie = 'authenticationToken=; path=/; expires=Thu, 01 Jan 1970 00:00:01 GMT';
         var redirect_uri = $window.encodeURIComponent($location.protocol()+'://'+$location.host()+':'+$location.port()+'/');
         $window.location.href = 'https://accounts.cbd.int/signout?redirect_uri='+redirect_uri;
@@ -81,6 +57,7 @@ define(['app', 'authentication'], function(app, MapCtrl) {
     //============================================================
     $window.addEventListener('message', function receiveMessage(event)
     {
+        return;
         if(event.origin!='https://accounts.cbd.int')
             return;
 

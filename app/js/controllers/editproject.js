@@ -120,6 +120,55 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             return data;
         });
     };
+
+    $scope.updateSummary = function(index, second) {
+        console.log('1st second: ', index, second);
+
+        if($scope.document.campaign)
+            $scope.currentCampaign = $scope.campaigns[index];
+        else
+            $scope.currentCampaign = false;
+    };
+
+    $scope.campaignSummaries = {
+        '0': 'Zero Extinction summary and such',
+        '1': 'Island Resilience summary and what not',
+    };
+
+    var campaignPromise = function() {
+        var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
+        deferred.resolve([
+            { name: 'None', },
+            {
+                identifier: '0',
+                name: 'Zero Extinction',
+                website: {
+                    url: 'http://lifeweb.cbd.int/campaigns/zeroextinction',
+                },
+            },
+            {
+                identifier: '1',
+                name: 'Island Resilience',
+                website: {
+                    url: 'http://lifeweb.cbd.int/campaigns/islandresilience',
+                },
+            },
+        ]);
+        return deferred.promise;
+    };
+
+    $scope.campaignAC = function() {
+        return campaignPromise().then(function(data) {
+            $scope.campaigns = data;
+            for(var i=0; i!=data.length; ++i)
+                data[i].__value = data[i].name;
+
+            return data;
+        });
+    };
+    $scope.campaignAC(); //TODO: do in better way.. perhaps using angular resources?
+
+
  
     var aichiPromise = $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
@@ -397,7 +446,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     });
   });
 
-  app.controller('documentDonorCtrl', function($scope) {
+  app.controller('documentDonorCtrl', function($scope, $q, guid) {
     $scope.donorButtonText = 'New Donor';
     $scope.$watch('donor', function() {
         donorPromise().then(function(donors) {
@@ -408,5 +457,72 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                     $scope.donorButtonText = 'New Donor';
         });
     });
+
+    //TODO: this is duplicated in the other controller in this file.
+    var donorPromise = function() {
+        var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
+        var guids = [guid(), guid(), guid()];
+        var schemaName = 'lwDonor';
+        deferred.resolve([
+            {
+                header: {
+                  identifier: guids[0], 
+                  languages: ['en'],
+                  schema: schemaName,
+                },
+                name: 'Association of Zoos and Aquariums',
+                acronym: 'AZA',
+                country: {
+                    identifier: 'us',
+                },
+                description: 'Leaders in the protection of endangered species',
+                logo: { url: 'https://www.aza.org/images/logo.gif', },
+                website: { url: 'www.aza.org', },
+                socialMedia: {
+                    twitter: 'zoos_aquariums',
+                    facebook: 'AssociationOfZoosAndAquariums',
+                },
+            },
+            {
+                header: {
+                  identifier: guids[1], 
+                  languages: ['en'],
+                  schema: schemaName,
+                },
+                name: 'Association of Animal Protections [fake]',
+                acronym: 'AZAF',
+                country: {
+                    identifier: 'us',
+                },
+                description: 'Leaders in the fake protection of common species',
+                logo: { url: 'https://www.aza.org/images/logof.gif', },
+                website: { url: 'www.azaf.org', },
+                socialMedia: {
+                    twitter: 'zoosaquariums',
+                    facebook: 'AsociationOfZoosAndAquariums',
+                },
+            },
+            {
+                header: {
+                  identifier: guids[2], 
+                  languages: ['en'],
+                  schema: schemaName,
+                },
+                name: 'IUCN Save Our Species',
+                acronym: 'IUCN SOS',
+                country: {
+                    identifier: 'ch',
+                },
+                description: 'Saving endangered species',
+                logo: { url: 'http://cmsdata.iucn.org/img/sos_logo_new.png', },
+                website: { url: 'http://sospecies.org/', },
+                socialMedia: {
+                    twitter: 'iucnsos',
+                    facebook: 'iucn_sos',
+                },
+            },
+        ]);
+        return deferred.promise;
+    };
   });
 });
