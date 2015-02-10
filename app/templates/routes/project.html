@@ -46,7 +46,7 @@
 
     <!-- AddThis (Social Media controls) Button BEGIN -->
     <div style="width: 100%;">
-        <a ng-if="user.isAuthenticated" href="/admin/projects/edit/{{eoiID}}" target="_blank">Edit Project '{{eoi.title.en}}'</a>
+        <a ng-if="user.isAuthenticated" href="/admin/projects/edit/{{eoiID}}" target="_blank">Edit Project '{{eoi.title}}'</a>
         <div class="addthis_toolbox addthis_default_style pull-right" style="width:140px;">
             <a class="addthis_button_preferred_1"></a>
             <a class="addthis_button_preferred_2"></a>
@@ -67,7 +67,7 @@
             <td class="lw-dt" style="padding-bottom: 15px;">
                 <img src="{{eoi.thumbnail.url}}" class="thumbnail" alt="{{eoi.identifier}}" style="position: relative; top: 10px; width:120;"></td>
             <td class="lw-dd">
-              <h3>{{eoi.title.en}}</h3>
+              <h3>{{eoi.title}}</h3>
             </td>
         </tr>
         <tr>
