@@ -39,10 +39,10 @@
         </tr>
     </thead>
     <tbody>
-        <tr ng-repeat-start="donor in donors | filter:quickFilter" ng-click="showing[$index] = !showing[$index]">
-            <td><img ng-src='{{donor.logo.url}}'>Logo</img></td>
-            <td>{{donor.identifier}}</td>
-            <td>{{donor.country}}</td>
+        <tr ng-repeat-start="donor in donors | filter:quickFilter" >
+            <td><img ng-src='{{donor.logo.url}}' ng-click="showing[$index] = !showing[$index]">Logo</img></td>
+            <td ng-click="showing[$index] = !showing[$index]">{{donor.identifier}}</td>
+            <td><span ng-click="showing[$index] = !showing[$index]">{{donor.country}}</span> <button type="button" ng-click="deleteDonor(donor)">X</button></td>
         </tr>
         <tr ng-show="showing[$index]" ng-repeat-end>
             <td colspan="3">
