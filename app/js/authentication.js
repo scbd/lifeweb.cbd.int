@@ -52,13 +52,13 @@ define(['app'], function (app) {
             //deleting the cookie here doesn't appear to work... It's remaining fully set.
             $cookieStore.remove('authenticationToken');
             var redirect_uri = encodeURIComponent($location.absUrl());
-            console.error('SIGNING OUT DOES NOT CURRENTLY WORK... NEED API CALL (account.cbd url doesnt invalidate token)');
+            //console.error('SIGNING OUT DOES NOT CURRENTLY WORK... NEED API CALL (account.cbd url doesnt invalidate token)');
             //$window.location.href = 'https://accounts.cbd.int/signout?redirect_uri='+redirect_uri;
             //TODO: figure out how to logout using the api...
             //TODO: don't reload after logging out
-            //return $http.post('/api/v2013/authentication/logout').then(function onsuccess(success) {
-            //    $window.location.reload();
-            //});
+            return $http.delete('/api/v2013/authentication/token').then(function onsuccess(success) {
+                $window.location.reload();
+            });
 		}
 
 		return { getUser: getUser, signIn: signIn, signOut: signOut};
