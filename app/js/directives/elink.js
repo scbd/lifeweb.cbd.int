@@ -21,6 +21,8 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
                 }
 
                 $scope.addItem = function(newItem) {
+                    if(!$scope.ngModel) //This is becaus eof how retarded lifeweb data is... requiring undefined... so fucking dumb
+                        $scope.ngModel = [];
                     $scope.ngModel.push(angular.copy(newItem));
                     $scope.newItem = {};
                 };

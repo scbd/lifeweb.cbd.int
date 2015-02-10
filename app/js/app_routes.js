@@ -193,6 +193,16 @@ define(['app', 'authentication'], function(app) {
         },
         label: 'Edit Project',
       })
+      .when('/admin/donors', {
+        templateUrl: '/app/templates/routes/admin/donors/index.html',
+        title: 'Edit Donors',
+        collectionKey: 'donors',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/editdonors.js']),
+        },
+        label: 'Edit Donors',
+      })
       .when('/admin/organizations/create', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
         title : 'Create Organization',
@@ -279,26 +289,26 @@ define(['app', 'authentication'], function(app) {
       //
       //==================================================
       function resolveUser(requiredPrivilages) { 
-
-        return ['$rootScope', 'authentication', '$location', '$cookieStore', '$window', function($rootScope, authentication, $location, $cookieStore, $window) {
+        return function($rootScope, authentication, $location, $cookieStore, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
+            console.log('user: ', user);
             if(requiredPrivilages) {
               var notAllowed = true;
               for(var i=0; i!=user.roles.length; ++i)
                 if(requiredPrivilages.indexOf(user.roles[i]) != -1)
                   notAllowed = false;
 
+                console.log('not allowed? ', notAllowed);
               if(notAllowed) {
                 $cookieStore.put('loginRedirect', $location.path()); //I give up... ffs...
-                //debugger;
                 $location.url('/login');
               }
             }
 
             return user;
           })
-        }];
+        };
       }
 
       //==================================================

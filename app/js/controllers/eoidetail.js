@@ -80,6 +80,14 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                     map.callback = setview;
               });
             });
+
+            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=powpa&eoi=' + sID, { cache: true }).success(function (data) {
+                $scope.fp_powpa = data;
+            });
+            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&eoi=' + sID, { cache: true }).success(function (data) {
+                $scope.fp_national = data;
+            });
+
             /*
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.contacts = data;

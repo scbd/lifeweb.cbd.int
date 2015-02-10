@@ -20,7 +20,7 @@
             <auto-complete ng-if="autocomplete" source="autocomplete($query)"></auto-complete>
           </tags-input>
         </td>
-        <td><a ng-href="{{item.url}}">Download {{typeTitle}}</a><button ng-click="ngModel.splice($index, 1)">X</button></td>
+        <td><a ng-href="{{item.url}}" target="_blank" title="Download {{typeTitle}}"><img ng-src="{{item.url}}" style="height: 40px;"></img></a><button ng-click="ngModel.splice($index, 1)">X</button></td>
       </tr>
       <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new {{typeTitle}} using the form below</td></tr>
       <tr>

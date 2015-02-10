@@ -1,5 +1,13 @@
-define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js',], function(app) {
+define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js', '/app/js/directives/guid.js',], function(app) {
   app.controller('EditCtrl', function($scope, $rootScope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility) {
+
+    IStorage.drafts.query('(type eq \'lwDonor\')', {cahce: false}).then(function(result) {
+        console.log('donors: ', result);
+    });
+    //TODO: get the cb for lwDonor
+    //$http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
+    //    console.log('donor docs: ', data);
+    //});
 
     $scope.tab = 'edit';
 
@@ -64,8 +72,27 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         for(var i = 0; i != countries.length; ++i)
           countries[i].__value = countries[i].name;
 
+        countries.sort(function(a, b) {
+            return (a.name < b.name) ? -1 : 1;
+        });
+
         return countries;
       });
+    };
+
+    $scope.allRegionsAC = function() {
+        return $scope.countriesAC().then(function(countries) {
+            return $http.get('https://api.cbd.int/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
+                console.log('regions data format: ', data);
+                var regions = data.data;
+                for(var i = 0; i != regions.length; ++i)
+                  regions[i].__value = regions[i].name;
+
+                regions = regions.concat(countries);
+
+                return regions;
+            });
+        });
     };
 
     $scope.identifierMapping = function(item) {
@@ -95,7 +122,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
       //authentication.js and services (guid is in services)
       //schema and realm
       //$http.post('http://localhost:1818/api/'+schemaName, $scope[singularKey])
-      editFormUtility.saveDraft($scope.document).then(function(result) {;
+      editFormUtility.saveDraft($scope.document).then(function(result) {
         editFormUtility.load(id, localSchemaName).then(function(response) {
             console.log('Response: ', response);
         });
@@ -106,14 +133,5 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         });
         */
     };
-  });
-
-  app.factory('guid', function() {
-    function S4() {
-      return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-    }
-    return function() {
-      return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
-    }
   });
 });
