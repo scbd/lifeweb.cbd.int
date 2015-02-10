@@ -1,0 +1,22 @@
+<div class="container" ng-controller="AdminPanelCtrl" style="margin-top: 100px">
+  <h2>Admin Panel</h2>
+  <fieldset>
+    <legend>Projects</legend>
+    <div ng-repeat="project in projects">
+      <a ng-href="/admin/projects/edit/{{project.identifier}}">{{project.identifier}} - {{project.title.en}}</a><button type="button" ng-click="deleteProject(project)">X</button>
+    </div>
+  </fieldset>
+  <a href="/admin/donors/">View and Edit Donors</a>
+  <fieldset>
+    <legend>Events</legend>
+    <div ng-repeat="event in events">
+      <a ng-href="/admin/organizations/edit/{{event.identifier}}">{{event.title}}</a><button type="button" ng-click="deleteEvent(event)">X</button>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Organizations</legend>
+    <div ng-repeat="organization in organizations">
+      <a ng-href="/admin/organizations/edit/{{organization.name}}">{{organization.name}}</a><button type="button" ng-click="deleteOrganization(organization)">X</button>
+    </div>
+  </fieldset>
+</div>

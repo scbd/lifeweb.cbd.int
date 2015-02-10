@@ -1,33 +1,31 @@
-define(['app'], function(app) {
-    app.controller('SigninCtrl', function ($scope, $http, $window, $cookies) {
+define(['app', 'authentication',], function(app) {
+    app.controller('SigninCtrl', function ($scope, $http, $window, $cookieStore, $location, authentication) {
       $scope.email = null;
       $scope.password = null;
 
       $scope.doSignIn = function() {
+        if($scope.email)
+            $cookieStore.put('email', $scope.email);
+        var credentials = { 'email': $scope.email, 'password': $scope.password };
+
         $scope.errorInvalid = false;
         $scope.errorTimeout = false;
         $scope.waiting      = true;
 
-        var credentials = { 'email': $scope.email, 'password': $scope.password };
-
-        $http.post('/api/v2013/authentication/token', credentials).then(function onsuccess(success) {
-
-          $cookies.authenticationToken = success.data.authenticationToken;
-          $cookies.email = $scope.rememberMe ? $scope.email : undefined;
-
-          var response = { type: 'setAuthenticationToken', authenticationToken: $cookies.authenticationToken, setAuthenticationEmail: $cookies.email };
-        
-          var authenticationFrame = angular.element(document.querySelector('#authenticationFrame'))[0];
-          authenticationFrame.contentWindow.postMessage(JSON.stringify(response), 'https://accounts.cbd.int');
-
-          //TODO: WHY??????
-        	$window.location.href = $window.location.href;
+        authentication.signIn(credentials).then(function(response) {
+          console.log('sign in response: ', response);
+          //var authenticationFrame = angular.element(document.querySelector('#authenticationFrame'))[0];
+          //authenticationFrame.contentWindow.postMessage(JSON.stringify(response), 'https://accounts.cbd.int');
         }, function onerror(error) {
-        	$scope.password     = "";
+          $scope.password     = "";
           $scope.errorInvalid = error.status == 403;
           $scope.errorTimeout = error.status != 403;
           $scope.waiting      = false;
         });
+      };
+
+      $scope.doSignOut = function() {
+        authentication.signOut();
       };
     });
 });

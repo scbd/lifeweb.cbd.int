@@ -1,0 +1,72 @@
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+    <div class="container" data-ng-controller="DonorCtrl">
+       
+       <!-- Docs nav
+    ================================================== -->
+    <div class="row"  >
+    <!--
+      <div class="span3 bs-docs-sidebar" >    
+        <ul class="nav nav-list bs-docs-sidenav ">
+          <li><a style="font-size:14px;color:#999;text-transform:uppercase;">LifeWeb Donor</a></li>
+          <li><a href="#info"><i class="icon-chevron-right"></i>Donor Information</a></li>
+          <li><a href="#funded"><i class="icon-chevron-right"></i>Funded Projects</a></li>
+        </ul>
+      </div>
+      -->
+      
+      <div class="span9" >
+
+          <section  id="info" >
+             <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">
+                 <img ng-show="donor.logo" src="{{donor.logo}}" alt="{{donor.id}}" />
+                 {{donor.name}}</h2>
+                 <p ng-bind-html="donor.description" ></p>
+                 <p>{{donor.country}}</p>
+
+              <div ng-show="donor.websites">
+                  <h4>Links</h4>
+                  <div ng-repeat="link in donor.websites">
+                      <i class=""></i><a href="{{link.url}}" ng-bind-html="link.name"></a>
+                      <br />
+                  </div>
+              </div>
+
+          </section>
+
+          <section id="funded" >
+              <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Funded LifeWeb Projects</h2>
+
+             <div ng-repeat="match in matches ">
+                 
+                  <div class="media project_well">
+
+                      <table style="width:100%;">
+                          <tr>
+                              <td colspan="2"><h4>{{match.project.title}}</h4></td>
+                          </tr>
+                          <tr>
+                              <td class="media-type text-center;" style="vertical-align:top;padding-right:5px!important;">project:</td>
+                              <td><a href="/project/?id={{match.project.id}}"><strong ng-bind-html-unsafe="match.project.title"></strong></a> <br />{{match.project.summary}}</td>
+                          </tr>
+                          <tr>
+                              <td class="media-type text-center;" style="vertical-align:top;padding-right:5px!important;">amount:</td>
+                              <td>
+                                  {{match.amount | filterCurrency:match.currency}}
+                              </td>
+                          </tr>
+                          <tr>
+                              <td class="media-type text-center;" style="vertical-align:top;padding-right:5px!important;">year:</td>
+                              <td>{{match.year}}</td>
+                          </tr>
+                      </table>
+
+                  </div>
+
+          </section>
+      
+</div><!-- end span 9-->
+</div><!-- end row-->
+</div><!-- end container -->

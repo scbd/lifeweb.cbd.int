@@ -27,6 +27,16 @@ h4 {
     margin-top: 20px;
 }
 
+.green {
+    background-color: #BBFFBB;
+}
+.yellow {
+    background-color: #DDDDBB;
+}
+.blue {
+    background-color: #BBBBFF;
+}
+
 .navbar-inverse
 {
   position: fixed;
@@ -248,6 +258,10 @@ media-heading {
     font-weight: 300;
     line-height: 1;
     letter-spacing: -1px;
+}
+
+#sidebar.affix {
+    z-index: 2000;
 }
 
 

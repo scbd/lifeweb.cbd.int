@@ -41,23 +41,12 @@ define(['app'], function(app) {
 //##################################################################
   app.filter('getMatchesTotalUSD', function ($filter) {
     return function (matches) {
-
-        var USDtoEURO = 0.73227;
-
         var total = 0;
 
-        for (var i = 0; i < matches.length; i++) {
-
-            if (matches[i].currency == "Euros" || matches[i].currency == "EURO") {
-                total = total + (matches[i].amount * (1 / USDtoEURO));
-            }
-            else {
-                total = total + matches[i].amount;
-            }
-        }
+        for (var i = 0; i < matches.length; i++)
+            total = total + matches[i].funding;
 
         return total;
-
     };
   });
 
@@ -982,34 +971,32 @@ define(['app'], function(app) {
               return null;
 
           var targets = [
-             { "name": "Target1", "icon": "/app/lifeweb/images/targets/01.png", "desc": "By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to conserve and use it sustainably." },
-            { "name": "Target2", "icon": "/app/lifeweb/images/targets/02.png", "desc": "By 2020, at the latest, biodiversity values have been integrated into national and local development and poverty reduction strategies and planning processes and are being incorporated into national accounting, as appropriate, and reporting systems" },
-             { "name": "Target3", "icon": "/app/lifeweb/images/targets/03.png", "desc": "By 2020, at the latest, incentives, including subsidies, harmful to biodiversity are eliminated, phased out or reformed in order to minimize or avoid negative impacts, and positive incentives for the conservation and sustainable use of biodiversity are developed and applied, consistent and in harmony with the Convention and other relevant international obligations, taking into account national socio economic conditions." },
-             { "name": "Target4", "icon": "/app/lifeweb/images/targets/04.png", "desc": "By 2020, at the latest, Governments, business and stakeholders at all levels have taken steps to achieve or have implemented plans for sustainable production and consumption and have kept the impacts of use of natural resources well within safe ecological limits." },
-             { "name": "Target5", "icon": "/app/lifeweb/images/targets/05.png", "desc": "By 2020, the rate of loss of all natural habitats, including forests, is at least halved and where feasible brought close to zero, and degradation and fragmentation is significantly reduced." },
-             { "name": "Target6", "icon": "/app/lifeweb/images/targets/06.png", "desc": "By 2020 areas under agriculture, aquaculture and forestry are managed sustainably, ensuring conservation of biodiversity." },
-             { "name": "Target8", "icon": "/app/lifeweb/images/targets/08.png", "desc": "By 2020, pollution, including from excess nutrients, has been brought to levels that are not detrimental to ecosystem function and biodiversity." },
-             { "name": "Target9", "icon": "/app/lifeweb/images/targets/09.png", "desc": "By 2020, invasive alien species and pathways are identified and prioritized, priority species are controlled or eradicated, and measures are in place to manage pathways to prevent their introduction and establishment." },
-             { "name": "Target10", "icon": "/app/lifeweb/images/targets/10.png", "desc": "By 2015, the multiple anthropogenic pressures on coral reefs, and other vulnerable ecosystems impacted by climate change or ocean acidification are minimized, so as to maintain their integrity and functioning." },
-             { "name": "Target11", "icon": "/app/lifeweb/images/targets/11.png", "desc": "By 2020, at least 17 per cent of terrestrial and inland water, and 10 per cent of coastal and marine areas, especially areas of particular importance for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscapes and seascapes." },
-             { "name": "Target12", "icon": "/app/lifeweb/images/targets/12.png", "desc": "By 2020 the extinction of known threatened species has been prevented and their conservation status, particularly of those most in decline, has been improved and sustained." },
-             { "name": "Target13", "icon": "/app/lifeweb/images/targets/13.png", "desc": "By 2020, the genetic diversity of cultivated plants and farmed and domesticated animals and of wild relatives, including other socio-economically as well as culturally valuable species, is maintained, and strategies have been developed and implemented for minimizing genetic erosion and safeguarding their genetic diversity." },
-             { "name": "Target14", "icon": "/app/lifeweb/images/targets/14.png", "desc": "By 2020, ecosystems that provide essential services, including services related to water, and contribute to health, livelihoods and well-being, are restored and safeguarded, taking into account the needs of women, indigenous and local communities, and the poor and vulnerable." },
-             { "name": "Target15", "icon": "/app/lifeweb/images/targets/15.png", "desc": "By 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 per cent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification." },
-             { "name": "Target16", "icon": "/app/lifeweb/images/targets/16.png", "desc": "By 2015, the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization is in force and operational, consistent with national legislation." },
-             { "name": "Target17", "icon": "/app/lifeweb/images/targets/17.png", "desc": "By 2015 each Party has developed, adopted as a policy instrument, and has commenced implementing an effective, participatory and updated national biodiversity strategy and action plan." },
-             { "name": "Target18", "icon": "/app/lifeweb/images/targets/18.png", "desc": "By 2020, the traditional knowledge, innovations and practices of indigenous and local communities relevant for the conservation and sustainable use of biodiversity, and their customary use of biological resources, are respected, subject to national legislation and relevant international obligations, and fully integrated and reflected in the implementation of the Convention with the full and effective participation of indigenous and local communities, at all relevant levels." },
-             { "name": "Target19", "icon": "/app/lifeweb/images/targets/19.png", "desc": "By 2020, knowledge, the science base and technologies relating to biodiversity, its values, functioning, status and trends, and the consequences of its loss, are improved, widely shared and transferred, and applied." },
-             { "name": "Target20", "icon": "/app/lifeweb/images/targets/20.png", "desc": "By 2020, at the latest, the mobilization of financial resources for effectively implementing the Strategic Plan for Biodiversity 2011-2020 from all sources, and in accordance with the consolidated and agreed process in the Strategy for Resource Mobilization, should increase substantially from the current levels. This target will be subject to changes contingent to resource needs assessments to be developed and reported by Parties." }
+             { "name": "AICHI-TARGET-01", "icon": "/app/lifeweb/images/targets/01.png", "desc": "By 2020, at the latest, people are aware of the values of biodiversity and the steps they can take to conserve and use it sustainably." },
+            { "name": "AICHI-TARGET-02", "icon": "/app/lifeweb/images/targets/02.png", "desc": "By 2020, at the latest, biodiversity values have been integrated into national and local development and poverty reduction strategies and planning processes and are being incorporated into national accounting, as appropriate, and reporting systems" },
+             { "name": "AICHI-TARGET-03", "icon": "/app/lifeweb/images/targets/03.png", "desc": "By 2020, at the latest, incentives, including subsidies, harmful to biodiversity are eliminated, phased out or reformed in order to minimize or avoid negative impacts, and positive incentives for the conservation and sustainable use of biodiversity are developed and applied, consistent and in harmony with the Convention and other relevant international obligations, taking into account national socio economic conditions." },
+             { "name": "AICHI-TARGET-04", "icon": "/app/lifeweb/images/targets/04.png", "desc": "By 2020, at the latest, Governments, business and stakeholders at all levels have taken steps to achieve or have implemented plans for sustainable production and consumption and have kept the impacts of use of natural resources well within safe ecological limits." },
+             { "name": "AICHI-TARGET-05", "icon": "/app/lifeweb/images/targets/05.png", "desc": "By 2020, the rate of loss of all natural habitats, including forests, is at least halved and where feasible brought close to zero, and degradation and fragmentation is significantly reduced." },
+             { "name": "AICHI-TARGET-06", "icon": "/app/lifeweb/images/targets/06.png", "desc": "By 2020 areas under agriculture, aquaculture and forestry are managed sustainably, ensuring conservation of biodiversity." },
+             { "name": "AICHI-TARGET-08", "icon": "/app/lifeweb/images/targets/08.png", "desc": "By 2020, pollution, including from excess nutrients, has been brought to levels that are not detrimental to ecosystem function and biodiversity." },
+             { "name": "AICHI-TARGET-09", "icon": "/app/lifeweb/images/targets/09.png", "desc": "By 2020, invasive alien species and pathways are identified and prioritized, priority species are controlled or eradicated, and measures are in place to manage pathways to prevent their introduction and establishment." },
+             { "name": "AICHI-TARGET-10", "icon": "/app/lifeweb/images/targets/10.png", "desc": "By 2015, the multiple anthropogenic pressures on coral reefs, and other vulnerable ecosystems impacted by climate change or ocean acidification are minimized, so as to maintain their integrity and functioning." },
+             { "name": "AICHI-TARGET-11", "icon": "/app/lifeweb/images/targets/11.png", "desc": "By 2020, at least 17 per cent of terrestrial and inland water, and 10 per cent of coastal and marine areas, especially areas of particular importance for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscapes and seascapes." },
+             { "name": "AICHI-TARGET-12", "icon": "/app/lifeweb/images/targets/12.png", "desc": "By 2020 the extinction of known threatened species has been prevented and their conservation status, particularly of those most in decline, has been improved and sustained." },
+             { "name": "AICHI-TARGET-13", "icon": "/app/lifeweb/images/targets/13.png", "desc": "By 2020, the genetic diversity of cultivated plants and farmed and domesticated animals and of wild relatives, including other socio-economically as well as culturally valuable species, is maintained, and strategies have been developed and implemented for minimizing genetic erosion and safeguarding their genetic diversity." },
+             { "name": "AICHI-TARGET-14", "icon": "/app/lifeweb/images/targets/14.png", "desc": "By 2020, ecosystems that provide essential services, including services related to water, and contribute to health, livelihoods and well-being, are restored and safeguarded, taking into account the needs of women, indigenous and local communities, and the poor and vulnerable." },
+             { "name": "AICHI-TARGET-15", "icon": "/app/lifeweb/images/targets/15.png", "desc": "By 2020, ecosystem resilience and the contribution of biodiversity to carbon stocks has been enhanced, through conservation and restoration, including restoration of at least 15 per cent of degraded ecosystems, thereby contributing to climate change mitigation and adaptation and to combating desertification." },
+             { "name": "AICHI-TARGET-16", "icon": "/app/lifeweb/images/targets/16.png", "desc": "By 2015, the Nagoya Protocol on Access to Genetic Resources and the Fair and Equitable Sharing of Benefits Arising from their Utilization is in force and operational, consistent with national legislation." },
+             { "name": "AICHI-TARGET-17", "icon": "/app/lifeweb/images/targets/17.png", "desc": "By 2015 each Party has developed, adopted as a policy instrument, and has commenced implementing an effective, participatory and updated national biodiversity strategy and action plan." },
+             { "name": "AICHI-TARGET-18", "icon": "/app/lifeweb/images/targets/18.png", "desc": "By 2020, the traditional knowledge, innovations and practices of indigenous and local communities relevant for the conservation and sustainable use of biodiversity, and their customary use of biological resources, are respected, subject to national legislation and relevant international obligations, and fully integrated and reflected in the implementation of the Convention with the full and effective participation of indigenous and local communities, at all relevant levels." },
+             { "name": "AICHI-TARGET-19", "icon": "/app/lifeweb/images/targets/19.png", "desc": "By 2020, knowledge, the science base and technologies relating to biodiversity, its values, functioning, status and trends, and the consequences of its loss, are improved, widely shared and transferred, and applied." },
+             { "name": "AICHI-TARGET-20", "icon": "/app/lifeweb/images/targets/20.png", "desc": "By 2020, at the latest, the mobilization of financial resources for effectively implementing the Strategic Plan for Biodiversity 2011-2020 from all sources, and in accordance with the consolidated and agreed process in the Strategy for Resource Mobilization, should increase substantially from the current levels. This target will be subject to changes contingent to resource needs assessments to be developed and reported by Parties." }
           ];
+          console.log('aichi traget: ', target);
 
           var result = [];
-
-          for (var i = 0; i < targets.length; i++) {
-              if (targets[i].name == target) {
+          for (var i = 0; i < targets.length; ++i)
+              if (targets[i].name == target)
                   return targets[i];
-              }
-          }
 
           return result;
       }
@@ -1049,16 +1036,16 @@ define(['app'], function(app) {
 
   //##################################################################
   app.filter('filterTotalSecured', function () {
-      return function (funding) {
+      return function (donors) {
 
-          if (!funding)
+          if (!donors)
               return null;
 
           var total = 0;
 
-          for (var i = 0; i < funding.length; i++) {
-              if (!funding[i].is_not_official)
-                  total = total + funding[i].amount;
+          for (var i = 0; i < donors.length; i++) {
+              if (donors[i].lifeweb_facilitated)
+                  total = total + donors[i].funding;
           }
 
           return total;
@@ -1068,16 +1055,16 @@ define(['app'], function(app) {
 
   //##################################################################
   app.filter('filterTotalExpected', function () {
-      return function (funding) {
+      return function (donors) {
 
-          if (!funding)
+          if (!donors)
               return null;
 
           var total = 0;
 
-          for (var i = 0; i < funding.length; i++) {
-              if (funding[i].is_not_official)
-                  total = total + funding[i].amount;
+          for (var i = 0; i < donors.length; i++) {
+              if (!donors[i].lifeweb_facilitated)
+                  total = total + donors[i].funding;
           }
 
           return total;
@@ -1089,14 +1076,15 @@ define(['app'], function(app) {
   //##################################################################
   app.filter('filterDate', function ($filter) {
       return function (d) {
-
           if (!d)
               return null;
 
-          var d1 = d.replace("/Date(", "");
-          d1 = d1.replace(")/", "");
-          return $filter('date')(new Date(Number(d1)), 'dd MMM yyyy');
-
+          var d1 = d;
+          if(d.indexOf('Date') != -1) {
+              d1 = d.replace("/Date(", "");
+              d1 = Number(d1.replace(")/", ""));
+          }
+          return $filter('date')(new Date(d1), 'dd MMM yyyy');
       }
   });
 
@@ -1278,14 +1266,13 @@ define(['app'], function(app) {
       return function (amount, currency, selected_currency) {
 
           var USDtoEURO = 0.73500;
+          if(!currency)
+            currency = 'USD';
 
-
+          if (amount === 0)
+              return "undisclosed";
           if (!amount)
               return null;
-
-          if (amount == 0) {
-              return "undisclosed";
-          }
 
           if (selected_currency == "USD") {
 
@@ -1302,7 +1289,7 @@ define(['app'], function(app) {
 
           if (selected_currency == "EURO") {
 
-              if (currency == "US Dollars") {
+              if (currency == "USD") {
                   amount = amount * USDtoEURO;
                   amount = $filter('number')(amount, 0);
                   return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"

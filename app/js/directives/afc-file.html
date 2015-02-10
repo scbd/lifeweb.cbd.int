@@ -1,0 +1,5 @@
+<div ng-file-drop="onFileSelect($files, 'ngModel')" ng-file-drag-over-class="dragdrophover" class="beforedragdrop">
+    <input type="file" style="width: 80px;" ng-file-select="onFileSelect($files, 'ngModel')" class="pull-left" />
+    <span ng-hide="ngModel">Drag and Drop Attachment Here</span>
+    <a style="width:200px; overflow: hidden; white-space: nowrap;" ng-href="{{ngModel}}" target="_blank">{{getFilename(ngModel)}}</a>
+</div>

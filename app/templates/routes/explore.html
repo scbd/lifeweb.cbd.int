@@ -9,7 +9,7 @@
                 <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
                   <li>
                     <a style="font-size: 14px; color: #999; text-transform: uppercase;">
-                      
+
                       Search
                       <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets ).length}}</span>
                     </a>
@@ -96,15 +96,14 @@
 
                 <section id="projects" >
                     <h2 class="title-divider featurette-heading">LifeWeb Projects</h2>
-                    <span class="muted">National priority projects</span> 
-                    <div class="pull-right"><a ng-click="toggleList()" style="cursor:pointer;"><i class="{{listStyle}}"></i></a></div> 
+                    <span class="muted">National priority projects</span>
+                    <div class="pull-right"><a ng-click="toggleList()" style="cursor:pointer;"><i class="{{listStyle}}"></i></a></div>
                     <!--
                     <div class="pull-right" style="padding-right:10px;">Currency: <a ng-click="toggleCurrency()" style="cursor:pointer;">{{currency}}</a> | </div>
                     -->
 
 
                     <div ng-show="list==false" class="media project_well" ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
-
                         <a class="pull-left" href="/projects?id={{proj.id}}" >
                             <img ng-show="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
                             <img ng-hide="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" />
@@ -113,8 +112,8 @@
 
                         <div class="media-body">
                             <span class="media-type" ng-bind-html-unsafe="proj.country"></span>
-                            <a href="/project?id={{proj.id}}">
-                              <h4 class="media-heading">{{proj.title}}</h4>
+                            <a href="/project?id={{proj.identifier}}">
+                              *<h4 class="media-heading">{{proj.title}}</h4>
                             </a>
                             <span>{{proj.summary}}</span>
                             <br />
@@ -142,43 +141,50 @@
                         <table class="table table-striped  table-hover">
                             <tr>
                                 <th></th>
-                                <th><span style="cursor:pointer;" ng-click="sortTable('title')">Title 
+                                <th><span style="cursor:pointer;" ng-click="sortTable('title')">Title
                                     <i ng-show="sortTerm=='title'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span></th>
                                 <th><span style="cursor:pointer" ng-click="sortTable('country')">Country
                                     <i ng-show="sortTerm=='country'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Total Cost
+                                <th><span style="cursor:pointer" ng-click="sortTable('budgetCost_d')">Total Cost
                                     <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('approved_on_date')">Date 
+                                <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
+                                    <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                    </span></th>
+                                <th><span style="cursor:pointer" ng-click="sortTable('approved_on_date')">Date
                                     <i ng-show="sortTerm=='approved_on_date'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
                                     <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
+                                <th ng-if="user.isAuthenticated">
+                                    Admin
+                                </th>
                             </tr>
                             <tr ng:class="{'funded':'error', false:''}[proj.status]"  ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
                                 <td style="width: 70px;">
-
-                                  
-
-                                    <a href="/project?id={{proj.id}}"><img ng-show="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                                    <img ng-hide="proj.old_id" class="media-object img-rounded" style="max-width: 70px;max-height:70px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a></td>
-                                <td style="font-weight:bold;"> <a href="/project?id={{proj.id}}"><span class="media-heading">{{proj.title}}</span></a></td>
-                                <td> <span style="font-weight:bold;">{{proj.country}}</span></td>
+                                    <a href="/project?id={{proj.identifier}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{proj.thumbnail_s}}" alt="" /></a>
+                                </td>
+                                <td style="font-weight:bold;"> <a ng-href="/project?id={{proj.identifier_s}}"><span class="media-heading">{{proj.title_EN_t}}</span></a></td>
+                                <td> <span style="font-weight:bold;">{{proj.country_EN_t}}</span></td>
+                                <td nowrap> {{proj.budgetCost_d | filterCurrency:proj.currency:currency}} </td>
                                 <td nowrap> {{proj.funding_needed | filterCurrency:proj.currency:currency}} </td>
-                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ proj.approved_on_date | filterDate  }}</td>
+                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ proj.createdDate_s | filterDate  }}</td>
                                 <td >
-                                    <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-important', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[proj.funding_status]">
+                                    <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[proj.funding_status]">
                             <span ng-switch="proj.funding_status">
                                 <span ng-switch-when="not yet funded">not yet funded</span>
                                 <span ng-switch-when="funded">fully funded</span>
                                 <span ng-switch-default>partially funded</span>
                             </span>
                         </span>
-                                    <div ng-repeat="match in proj.funding_matches" style="white-space:nowrap;">
+                                    <div ng-repeat="match in proj.funding_matches" style="white-space:nowrap;padding-top:5px;">
                                             {{match.amount |  filterCurrency:match.currency:currency}} ({{match.donor.acronym}})
                                     </div>
+                                </td>
+                                <td>
+                                    <a ng-href="/admin/projects/edit/{{proj.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
                                 </td>
                             </tr>
                         </table>

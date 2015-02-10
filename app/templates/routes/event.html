@@ -14,17 +14,19 @@
                   <h1 class="title-divider" ng-bind-html="event.title"></h1>
 
 
-                  <dl class="dl-horizontal">
-                      <dt>
-                          <img src="{{event.icon.url}}" ng-show="event.icon" class="img-polaroid" style="width:150px;margin-top:15px;" /></dt>
-                      <dd>
-                          <h3 style="color: #2185C5;" ng-bind-html="event.description"></h3>
-                          <h3>{{event.date}}</h3>
-                      </dd>
-                  </dl>
+                <table style="margin-bottom:30px;">
+                <tr>
+                <td style="padding-right:20px;">
+                          <img src="{{event.icon.url}}" ng-show="event.icon" class="img-polaroid" style="max-width:150px;margin-top:15px;" /></td>
+                      
+                          <td><h3 style="color: #2185C5;" ng-bind-html="event.description"></h3>
+                          <h3>{{event.date}}</h3></td>
+                          </tr>
+                          </table>
+                     
 
                   <p ng-bind-html="event.info"></p>
-                  <span>{{event.firstDocumentLink}}</span>
+                  <!-- <span>{{event.firstDocumentLink}}</span> -->
                   <iframe ng-src="{{event.firstDocumentLink}}" style="width:700px; height:950px;"> </iframe>
 
               </div><!-- end left side bar -->

@@ -1,21 +1,23 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'URI',], function(app) {
-  app.controller('ProjectsCtrl', function ($scope, $http) {
-      var sID = new URI().query(true).id;
+define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility',], function(app) {
+  app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility) {
+      var query = '(type eq \'lwProject\')';
+      //IStorage.documents.query(query).then(function(data) {
+      $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
+      //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
+          console.log('data: ', data);
+          $scope.projects = data.response.docs;
 
-      $scope.projID = sID;
-
-      if (!sID) {
-
-          $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
-              $scope.projects = data;
-          });
-      }
-      else {
-          $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
-              $scope.projects = data;
-          });
-      }
-
+           //TODO: use a filter for this instead i think...
+        for(var i=0; i!=$scope.projects.length; ++i) {
+            if(!$scope.projects[i].budgetCost_d) {
+                $scope.projects[i].budgetCost_d = 0;
+                for(var k=0; k!=$scope.projects[i].budgetCost_ds.length; ++k)
+                    $scope.projects[i].budgetCost_d += $scope.projects[i].budgetCost_ds[k];
+            }
+            if(!$scope.projects[i].donorFunding_d) $scope.projects[i].donorFunding_d = 0;
+            $scope.projects[i].funding_needed = $scope.projects[i].budgetCost_d - $scope.projects[i].donorFunding_d;
+        }
+      });
 
       $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
           $scope.countries = data;

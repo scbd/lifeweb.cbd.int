@@ -6,7 +6,16 @@ define(['app', 'authentication'], function(app) {
       $locationProvider.html5Mode(true);
       $locationProvider.hashPrefix('!');
 
+      var allowedPrivs = ['LifewebAdmin'];
+
       $routeProvider
+      .when('/login', {
+        templateUrl: '/app/templates/routes/login.html',
+        title: 'Login',
+        resolve: {
+          user : resolveUser(),
+        },
+      })
       .when('/', {
         templateUrl: '/app/templates/routes/home.html',
         title : 'Welcome',
@@ -25,6 +34,14 @@ define(['app', 'authentication'], function(app) {
         label: 'AboutUs',
       })
       .when('/explore', {
+        templateUrl: '/app/templates/routes/explore2.html',
+        title : 'Explore',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/projects2.js']),
+        },
+      })
+      .when('/explore2', {
         templateUrl: '/app/templates/routes/explore.html',
         title : 'Explore',
         resolve: {
@@ -33,6 +50,14 @@ define(['app', 'authentication'], function(app) {
         },
       })
       .when('/project', { //we should use route for the id parameter, this way we can update the title.
+        templateUrl: '/app/templates/routes/project2.html',
+        title : 'Project',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/eoidetail2.js', '/app/js/directives/funding-bar-chart2.js']),
+        },
+      })
+      .when('/project2', { //we should use route for the id parameter, this way we can update the title.
         templateUrl: '/app/templates/routes/project.html',
         title : 'Project',
         resolve: {
@@ -46,6 +71,14 @@ define(['app', 'authentication'], function(app) {
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(['/app/js/controllers/donors.js']),
+        },
+      })
+      .when('/donors', {
+        templateUrl: '/app/templates/routes/donors.html',
+        title: 'Donor',
+        resolve: {
+            user: resolveUser(),
+            dependencies: resolveJS(['/app/js/controllers/donor.js']),
         },
       })
       .when('/countries', {
@@ -78,6 +111,13 @@ define(['app', 'authentication'], function(app) {
         resolve: {
           user : resolveUser(),
           dependencies: resolveJS(),
+        },
+      })
+      .when('/events/impac3', {
+        templateUrl: '/app/templates/routes/events/impac3.html',
+        title: 'impac3', //TODO: better title
+        resolve: {
+          user: resolveUser(),
         },
       })
       .when('/map', {
@@ -132,19 +172,113 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS()
         },
       })
+
+      .when('/admin/projects/create', {
+        templateUrl: '/app/templates/routes/admin/projects/edit.html',
+        title : 'Create a new project',
+        collectionKey: 'projects',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editproject.js']),
+        },
+        label: 'Create Project',
+      })
+      .when('/admin/projects/edit/:title', {
+        templateUrl: '/app/templates/routes/admin/projects/edit.html',
+        title : 'Edit Project',
+        collectionKey: 'projects',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editproject.js']),
+        },
+        label: 'Edit Project',
+      })
+      .when('/admin/donors', {
+        templateUrl: '/app/templates/routes/admin/donors/index.html',
+        title: 'Edit Donors',
+        collectionKey: 'donors',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/editdonors.js']),
+        },
+        label: 'Edit Donors',
+      })
+      .when('/admin/organizations/create', {
+        templateUrl: '/app/templates/routes/admin/organizations/edit.html',
+        title : 'Create Organization',
+        collectionKey: 'organizations',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
+        },
+        label: 'Create Organization',
+      })
+      .when('/admin/organizations/edit/:name', {
+        templateUrl: '/app/templates/routes/admin/organizations/edit.html',
+        title : 'Edit Organization',
+        collectionKey: 'organizations',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editorganization.js']),
+        },
+        label: 'Edit Organization',
+      })
+      .when('/admin/events/create', {
+        templateUrl: '/app/templates/routes/admin/events/edit.html',
+        title : 'Create Event',
+        collectionKey: 'events',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editevent.js']),
+        },
+        label: 'Create Event',
+      })
+      .when('/admin/events/edit/:name', {
+        templateUrl: '/app/templates/routes/admin/events/edit.html',
+        title : 'Edit Events',
+        collectionKey: 'events',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editevent.js']),
+        },
+        label: 'Edit Event',
+      })
+      .when('/admin/contacts/create', {
+        templateUrl: '/app/templates/routes/admin/contacts/edit.html',
+        title : 'Create Contact',
+        collectionKey: 'contacts',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
+        },
+        label: 'Create Contact',
+      })
+      .when('/admin/contacts/edit/:name', {
+        templateUrl: '/app/templates/routes/admin/contacts/edit.html',
+        title : 'Edit Contact',
+        collectionKey: 'contacts',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/editcontacts.js']),
+        },
+        label: 'Edit Contact',
+      })
+      .when('/admin', {
+        templateUrl: '/app/templates/routes/admin/index.html',
+        title : 'Admin Panel',
+        resolve: {
+          user : resolveUser(allowedPrivs),
+          dependencies: resolveJS(['/app/js/controllers/admin.js']),
+        },
+        label: 'Admin',
+      })
+
       .when('/404', {
-        templateUrl: '/app/views/404.html',
+        templateUrl: '/app/templates/routes/404.html',
+        title: 'Page Not Found',
         label: 'Page not found',
         resolve: {},
       })
-      .when('/admin/projects/create', {
-        templateUrl: '/app/templates/routes/admin/projects/edit.html',
-        resolve: {
-          user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/editproject.js', '/app/js/directives/form/form.js']),
-        },
-      })
-
       .otherwise({
         redirectTo: '/404',
       });
@@ -154,14 +288,27 @@ define(['app', 'authentication'], function(app) {
       //
       //
       //==================================================
-      function resolveUser() { 
-
-        return ['$rootScope', 'authentication', function($rootScope, authentication) {
+      function resolveUser(requiredPrivilages) { 
+        return function($rootScope, authentication, $location, $cookieStore, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
+            console.log('user: ', user);
+            if(requiredPrivilages) {
+              var notAllowed = true;
+              for(var i=0; i!=user.roles.length; ++i)
+                if(requiredPrivilages.indexOf(user.roles[i]) != -1)
+                  notAllowed = false;
+
+                console.log('not allowed? ', notAllowed);
+              if(notAllowed) {
+                $cookieStore.put('loginRedirect', $location.path()); //I give up... ffs...
+                $location.url('/login');
+              }
+            }
+
             return user;
           })
-        }];
+        };
       }
 
       //==================================================
