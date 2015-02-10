@@ -170,7 +170,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
 
  
-    var aichiPromise = $http.get('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
+    var aichiPromise = $http.get('/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
         attachAichiDescriptions(response);
         console.log('aichi: ', $scope.aichi_targets);
