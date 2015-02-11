@@ -4,6 +4,19 @@
   <div class="navbar navbar-inverse" role="navigation">
     <div class="container" ng-include src="'/app/templates/navigation.html'"></div>
   </div><!-- /.navbar -->
+  <div class="userheader">
+      <div ng-cloak ng-show="user && !user.isAuthenticated">
+          <a href="#" ng-click="actionSignin()" data-slug="signin" style="color: white"><i class="fa fa-power-off" ></i><strong>Sign In</strong></a>
+      </div>
+      <div ng-cloak class="dropdown" ng-show="user && user.isAuthenticated" >
+          <a data-toggle="dropdown" href="#" style="color: white"><i class="fa fa-chevron-down"></i>{{user.name}}</a>
+          <ul class="dropdown-menu" role="menu">
+              <li><a href="#" ng-click="actionProfile()"><i class="fa fa-user" ></i>Profile</a></li>
+              <li><a href="#" ng-click="actionPassword()"><i class="fa fa-user" ></i>Password</a></li>
+              <li><a href="#" ng-click="actionSignOut()"><i class="fa fa-sign-out" ></i>Sign-out</a></li>
+          </ul>
+      </div>
+  </div>
 </div>
 
 <!--
