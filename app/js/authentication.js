@@ -2,7 +2,7 @@
 
 define(['app'], function (app) {
 
-	app.factory('authentication', function($http, $browser, $cookieStore, $location, $window) { 
+	app.factory('authentication', function($http, $browser, $cookies, $location, $window) { 
 
 		var currentUser = null;
 
@@ -13,7 +13,7 @@ define(['app'], function (app) {
 		function getUser () {
 			if(currentUser) return currentUser; //if we're on the same refresh as the last time we got user, this is faster.
 
-			var headers = { Authorization: "Ticket " + $cookieStore.get('authenticationToken') };
+			var headers = { Authorization: "Ticket " + $cookies['authenticationToken'] };
 
 			currentUser = $http.get('/api/v2013/authentication/user', { headers: headers}).then(function onsuccess (response) {
 				return response.data;
@@ -27,15 +27,15 @@ define(['app'], function (app) {
 		function signIn(credentials) {
             return $http.post('/api/v2013/authentication/token', credentials).then(function onsuccess(success) {
               console.log('success: ', success);
-              $cookieStore.put('authenticationToken', success.data.authenticationToken);
-              console.log('auth: ', $cookieStore.get('authenticationToken'));
+              $cookies['authenticationToken'] = success.data.authenticationToken;
+              console.log('auth: ', $cookies['authenticationToken']);
 
-              var response = { type: 'setAuthenticationToken', authenticationToken: $cookieStore.get('authenticationToken'), setAuthenticationEmail: $cookieStore.get('email') };
+              var response = { type: 'setAuthenticationToken', authenticationToken: $cookies['authenticationToken'], setAuthenticationEmail: $cookies['email'] };
 
               //TODO: don't reload, instead just show our new user info.
-              console.log('redirect: ', $cookieStore.get('loginRedirect'));
-              if($cookieStore.get('loginRedirect'))
-                $window.location.href = $cookieStore.get('loginRedirect');
+              console.log('redirect: ', $cookies['loginRedirect']);
+              if($cookies['loginRedirect'])
+                $window.location.href = $cookies['loginRedirect'];
               else
                 $window.location.reload();
 
@@ -50,7 +50,7 @@ define(['app'], function (app) {
 		function signOut () {
 			currentUser = undefined;
             //deleting the cookie here doesn't appear to work... It's remaining fully set.
-            $cookieStore.remove('authenticationToken');
+            delete $cookies['authenticationToken'];
             var redirect_uri = encodeURIComponent($location.absUrl());
             //console.error('SIGNING OUT DOES NOT CURRENTLY WORK... NEED API CALL (account.cbd url doesnt invalidate token)');
             //$window.location.href = 'https://accounts.cbd.int/signout?redirect_uri='+redirect_uri;
@@ -64,7 +64,7 @@ define(['app'], function (app) {
 		return { getUser: getUser, signIn: signIn, signOut: signOut};
 	});
 
-	app.factory('authHttp', function($http, $browser, realm, $cookieStore) {
+	app.factory('authHttp', function($http, $browser, realm, $cookies) {
 
 		function addAuthentication(config) {
 		
@@ -73,7 +73,7 @@ define(['app'], function (app) {
 
             config.headers.realm = realm;
 
-			if($cookieStore.get('authenticationToken')) config.headers.Authorization = "Ticket "+$cookieStore.get('authenticationToken');
+			if($cookies['authenticationToken']) config.headers.Authorization = "Ticket "+$cookies['authenticationToken'];
 			else                                       config.headers.Authorization = undefined;
 
 			return config;
