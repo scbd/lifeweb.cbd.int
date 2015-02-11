@@ -25,10 +25,10 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
         $scope.eoiID = sID;
 
-    $scope.goto = function(hash) {
-        location.skipReload().hash(hash);
-        $anchorScroll();
-    };
+        $scope.goto = function(hash) {
+            location.skipReload().hash(hash);
+            $anchorScroll();
+        };
 
         if (!sID) {
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {

@@ -1,17 +1,22 @@
 define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility',], function(app, map) {
 //TODO: rename this shittily named controller
-  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility, $anchorScroll, $location) {
+  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility, $anchorScroll, location) {
         
         $scope.currency = "EURO";
 
             //==================================
-            $scope.toggleCurrency = function () {
+        $scope.toggleCurrency = function () {
 
-                if ($scope.currency == "EURO")
-                    $scope.currency = "USD";
-                else
-                    $scope.currency = "EURO";
-            }
+            if ($scope.currency == "EURO")
+                $scope.currency = "USD";
+            else
+                $scope.currency = "EURO";
+        }
+
+        $scope.goto = function(hash) {
+            location.skipReload().hash(hash);
+            $anchorScroll();
+        };
 
         
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
@@ -210,4 +215,23 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         project.currency = 'USD';
     };
   });
+
+    //TODO: duplicated in eoidetails2.js
+    app.factory('location', [
+        '$location',
+        '$route',
+        '$rootScope',
+        function ($location, $route, $rootScope) {
+            $location.skipReload = function () {
+                var lastRoute = $route.current;
+                var un = $rootScope.$on('$locationChangeSuccess', function () {
+                    $route.current = lastRoute;
+                    un();
+                });
+                return $location;
+            };
+            return $location;
+        }
+    ]);
+
 });
