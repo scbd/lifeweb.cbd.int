@@ -5,9 +5,11 @@
     <div class="container" ng-include src="'/app/templates/navigation.html'"></div>
   </div><!-- /.navbar -->
   <div class="userheader">
+  <!--
       <div ng-cloak ng-show="user && !user.isAuthenticated">
           <a href="#" ng-click="actionSignin()" data-slug="signin" style="color: white"><i class="fa fa-power-off" ></i><strong>Sign In</strong></a>
       </div>
+      -->
       <div ng-cloak class="dropdown" ng-show="user && user.isAuthenticated" >
           <a data-toggle="dropdown" href="#" style="color: white"><i class="fa fa-chevron-down"></i>{{user.name}}</a>
           <ul class="dropdown-menu" role="menu">
