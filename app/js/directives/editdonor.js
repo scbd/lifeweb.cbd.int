@@ -14,6 +14,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                     if($scope.donor.header && $scope.donor.header.identifier) {
                         $scope.saveButtonText = 'Update Donor';
                         $scope.isNew = false;
+                        $scope.donor.socialMedia = $scope.donor.socialMedia[0];
                         $scope.origDonor = {};
                         for(var k in $scope.donor)
                             $scope.origDonor[k] = $scope.donor[k];
@@ -31,6 +32,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                           languages: ['en'],
                           schema: 'lwDonor',
                         };
+                        $scope.donor.socialMedia = {};
                         $scope.origDonor = false;
                         console.log('new donor spawned: ', $scope.donor.identification);
                     }

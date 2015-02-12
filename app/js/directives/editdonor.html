@@ -1,3 +1,4 @@
+<link href="/app/css/lifeweb_admin.css" rel="stylesheet">
 <fieldset ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}">
     <legend>Edit Donor</legend>
     <div class="row form-group">
@@ -12,15 +13,21 @@
         </div>
     </div>
     <div class="row form-group">
-        <label class="col-xs-4 control-label">Logo</label>
-        <div class="col-xs-8">
+        <label class="col-xs-2 control-label">Logo</label>
+        <div class="col-xs-6">
             <afc-file ng-model="donor.logo.url" max-url-length="80"></afc-file>
         </div>
-    </div>
-    TODO: add social media later. As you click on the logo of each social media, it presents the textbox to type the username.
-    <div class="row form-group">
-        <div class="col-xs-8"></div>
         <div class="col-xs-4">
+            <img ng-src="{{donor.logo.url}}" style="height: 80px;"></img>
+        </div>
+    </div>
+    <div class="row form-group">
+        <div class="col-xs-9">
+            <input type="text" ng-model="donor.socialMedia.facebook" class="facebook" />
+            <input type="text" ng-model="donor.socialMedia.twitter" class="twitter" />
+            <input type="text" ng-model="donor.socialMedia.linkedin" class="linkedin" />
+        </div>
+        <div class="col-xs-3">
             <button type="button" ng-click="saveDonor()" ng-enabled="isDirty || isNew">{{saveButtonText}}</button>
         </div>
     </div>
