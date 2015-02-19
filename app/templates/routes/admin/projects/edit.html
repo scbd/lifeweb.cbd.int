@@ -89,7 +89,7 @@
             <td colspan="4" style="font-weight: bold; text-align: center;">... No Partners yet. Please add a partner below ...</td>
           </tr>
           <tr ng-repeat="partner in document.institutionalContext">
-            <td><input type="text" ng-model="partner.name" placeholder="Enter partner's full name" /></td>
+            <td><input type="text" ng-model="partner.partner" placeholder="Enter partner's full name" /></td>
             <td><input type="text" ng-model="partner.info" placeholder="Describe this partner's role specific to this project" /></td>
             <td>
               <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="partner.role" placeholder="Select partner's role"></afc-autocomplete>

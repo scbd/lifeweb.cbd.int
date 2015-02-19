@@ -19,9 +19,15 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         };
 
         
+        $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
             console.log('countries: ', $scope.countries);
+            $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
+                $scope.countries = $scope.countries.concat(data.data);
+
+                return data;
+            });
             return data; //good practice. always return from a promise, the same data.
         });
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
@@ -61,6 +67,13 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             editFormUtility.load(sID).then(function(data) {
             console.log('the data: ', data);
               $scope.eoi = data;
+              //fix protected planet links if necessary
+              if($scope.eoi.protectedAreas)
+                  for(var i=0; i!=$scope.eoi.protectedAreas.length; ++i) {
+                    var pa = $scope.eoi.protectedAreas[i].url;
+                    var split = pa.split('/');
+                    $scope.eoi.protectedAreas[i].url = split[split.length-1];
+                  }
               addFundingProperties($scope.eoi);
 
               var sCountry = data.countries[0].identifier;
@@ -182,11 +195,13 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
     }
 
     function addFundingProperties(project) {
+        var budget = project.budget || [];
         project.total_cost = project.budget.reduce(function(prev, cur) {
             console.log('d cur: ', cur);
             return prev + cur.cost;
         }, 0);
-        var total_funding = project.donors.reduce(function(prev, cur) {
+        var donors = project.donors || [];
+        var total_funding = donors.reduce(function(prev, cur) {
             console.log('b cur: ', cur);
             return prev + cur.funding;
         }, 0);
@@ -197,8 +212,8 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         //check whether any are lifeweb_facilitated:
         var all = true;
         var one = false;
-        for(var i=0; i!=project.donors.length; ++i) {
-            if(project.donors[i].lifeweb_facilitated)
+        for(var i=0; i!=donors.length; ++i) {
+            if(donors[i].lifeweb_facilitated)
                 one = true;
             else
                 all = false;
