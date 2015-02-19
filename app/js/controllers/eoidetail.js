@@ -1,22 +1,33 @@
 define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility',], function(app, map) {
 //TODO: rename this shittily named controller
-  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility, $anchorScroll, $location) {
+  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility, $anchorScroll, location) {
         
         $scope.currency = "EURO";
 
             //==================================
-            $scope.toggleCurrency = function () {
+        $scope.toggleCurrency = function () {
 
-                if ($scope.currency == "EURO")
-                    $scope.currency = "USD";
-                else
-                    $scope.currency = "EURO";
-            }
+            if ($scope.currency == "EURO")
+                $scope.currency = "USD";
+            else
+                $scope.currency = "EURO";
+        }
+
+        $scope.goto = function(hash) {
+            location.skipReload().hash(hash);
+            $anchorScroll();
+        };
 
         
+        $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
             console.log('countries: ', $scope.countries);
+            $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
+                $scope.countries = $scope.countries.concat(data.data);
+
+                return data;
+            });
             return data; //good practice. always return from a promise, the same data.
         });
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
@@ -56,6 +67,13 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             editFormUtility.load(sID).then(function(data) {
             console.log('the data: ', data);
               $scope.eoi = data;
+              //fix protected planet links if necessary
+              if($scope.eoi.protectedAreas)
+                  for(var i=0; i!=$scope.eoi.protectedAreas.length; ++i) {
+                    var pa = $scope.eoi.protectedAreas[i].url;
+                    var split = pa.split('/');
+                    $scope.eoi.protectedAreas[i].url = split[split.length-1];
+                  }
               addFundingProperties($scope.eoi);
 
               var sCountry = data.countries[0].identifier;
@@ -177,11 +195,13 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
     }
 
     function addFundingProperties(project) {
+        var budget = project.budget || [];
         project.total_cost = project.budget.reduce(function(prev, cur) {
             console.log('d cur: ', cur);
             return prev + cur.cost;
         }, 0);
-        var total_funding = project.donors.reduce(function(prev, cur) {
+        var donors = project.donors || [];
+        var total_funding = donors.reduce(function(prev, cur) {
             console.log('b cur: ', cur);
             return prev + cur.funding;
         }, 0);
@@ -192,8 +212,8 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         //check whether any are lifeweb_facilitated:
         var all = true;
         var one = false;
-        for(var i=0; i!=project.donors.length; ++i) {
-            if(project.donors[i].lifeweb_facilitated)
+        for(var i=0; i!=donors.length; ++i) {
+            if(donors[i].lifeweb_facilitated)
                 one = true;
             else
                 all = false;
@@ -210,4 +230,23 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         project.currency = 'USD';
     };
   });
+
+    //TODO: duplicated in eoidetails2.js
+    app.factory('location', [
+        '$location',
+        '$route',
+        '$rootScope',
+        function ($location, $route, $rootScope) {
+            $location.skipReload = function () {
+                var lastRoute = $route.current;
+                var un = $rootScope.$on('$locationChangeSuccess', function () {
+                    $route.current = lastRoute;
+                    un();
+                });
+                return $location;
+            };
+            return $location;
+        }
+    ]);
+
 });

@@ -1,4 +1,4 @@
-define(['app', 'angular-form-controls'], function(app) {
+define(['app', 'angular-form-controls', '/app/js/directives/guid.js',], function(app) {
     app.directive('afcFile', function() {
         return {
             restrict: 'EAC',
@@ -7,14 +7,14 @@ define(['app', 'angular-form-controls'], function(app) {
                 ngModel: '=',
                 maxUrlLength: '@',
             },
-            controller: function($scope, IStorage, $rootScope) {
+            controller: function($scope, IStorage, guid) {
                 if(!$scope.maxUrlLength) $scope.maxUrlLength = 20;
 
                 //TODO: get rid of the version of this function in editProjec tor edit.js or whereever
                 $scope.onFileSelect = function($files, newItemKey) {
                   if($files.length == 1)
                     //TODO: the document idenfitier is in a global variable... there must be a better way to isolate this... perhaps create another library i dunno...
-                    IStorage.attachments.put($rootScope.documentIdentifier, $files[0]).then(
+                    IStorage.attachments.put(guid(), $files[0]).then(
                       function(result) { //success
                           console.log('uploaded: ', result);
                           $scope[newItemKey] = result.url;

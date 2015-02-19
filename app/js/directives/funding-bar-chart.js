@@ -25,9 +25,7 @@ define(['app', 'URI'], function(app) {
       },
       controller : ['$scope', function ($scope) 
       {
-        
-        
-      
+            $scope.matches = $scope.matches || [];
       }]
     }
   });

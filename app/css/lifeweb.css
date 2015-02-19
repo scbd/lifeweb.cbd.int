@@ -51,6 +51,17 @@ h4 {
   width: 100%;
 }
 
+.userheader
+{
+    position: fixed;
+    z-index: 10;
+    top: 78px;
+    right: 80px;
+    left: auto;
+    background-color: #222;
+    border: 1px solid silver;
+}
+
 #ngview-content
 {
 }
@@ -261,7 +272,7 @@ media-heading {
 }
 
 #sidebar.affix {
-    z-index: 2000;
+    z-index: 1040;
 }
 
 

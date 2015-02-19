@@ -16,7 +16,7 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
 		app.directive  = $compileProvider.directive;
    });
 
-  app.run(function($location, $route, $rootScope, $anchorScroll, $cookieStore, $http, Localizer) {
+  app.run(function($location, $route, $rootScope, $anchorScroll, $cookies, $http, Localizer) {
     var original = $location.path;
     $location.path = function (path, reload) {
         if (reload === false) {
@@ -53,8 +53,8 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
       });
 
       //TODO: get language from browser if not set by user initially.
-      if(!$cookieStore.get('language'))
-        $cookieStore.put('language', 'en-ca');
+      if(!$cookies['language'])
+        $cookies['language'] = 'en-ca';
 
       $http.get('/app/translation.json')
         .success(function(response, status) {
@@ -65,7 +65,7 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
         });
 
       $rootScope.changeLanguage = function(lang) {
-        $cookieStore.put('language', lang);
+        $cookies['language'] = lang;
       };
 
     });

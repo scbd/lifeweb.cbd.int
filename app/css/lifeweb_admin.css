@@ -6,6 +6,27 @@ table th {
   text-align: center;
 }
 
+input.facebook {
+    background-image: url('/app/images/icons/facebook.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+input.twitter {
+    background-image: url('/app/images/icons/twitter.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+input.linkedin {
+    background-image: url('/app/images/icons/linkedin.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
 .addTabButton {
   margin: 2px;
   background-color: #AAFFAA;

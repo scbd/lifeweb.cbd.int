@@ -3,6 +3,8 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       var query = '(type eq \'lwProject\')';
       //IStorage.documents.query(query).then(function(data) {
       $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
+      //TODO: for grabbing focal points:
+      //$http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(government_s:<countrycode>)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
       //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
           console.log('data: ', data);
           $scope.projects = data.response.docs;

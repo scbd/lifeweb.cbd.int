@@ -1,18 +1,19 @@
-define(['app'], function(app, map) {
+define(['app', '/app/js/controllers/editdonors.js'], function(app, map) {
   app.controller('AdminPanelCtrl', function($scope, $http, $upload, $q, IStorage) {
     //$http.get('http://localhost:1818/projects')
     var query = '(type eq \'lwProject\')';
-    var draftParams = {cache: false};
+    var draftParams = {cache: false, body: true};
     IStorage.drafts.query(query, draftParams)
       .then(function(response) {
-        console.log('projects: ', response.data.Items);
-        $scope.projects = response.data.Items;
-      })
-      /*
-      .error(function(response, status, headers, config) {
-          console.log('*ERROR* Response (code '+status+'): ', response);
+        console.log('draft projects: ', response.data.Items);
+        $scope.draftProjects = response.data.Items;
       });
-      */
+    //IStorage.documents.query(query, draftParams)
+    $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my')
+        .then(function(response) {
+            console.log('published projects: ', response.data.Items);
+            $scope.publishedProjects = response.data.Items;
+        });
 
     query = '(type eq \'lwEvent\')';
     IStorage.drafts.query(query, draftParams)

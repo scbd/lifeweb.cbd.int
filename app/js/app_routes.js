@@ -289,7 +289,7 @@ define(['app', 'authentication'], function(app) {
       //
       //==================================================
       function resolveUser(requiredPrivilages) { 
-        return function($rootScope, authentication, $location, $cookieStore, $window) {
+        return function($rootScope, authentication, $location, $cookies, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
             console.log('user: ', user);
@@ -301,7 +301,7 @@ define(['app', 'authentication'], function(app) {
 
                 console.log('not allowed? ', notAllowed);
               if(notAllowed) {
-                $cookieStore.put('loginRedirect', $location.path()); //I give up... ffs...
+                $cookies['loginRedirect'] = $location.path();
                 $location.url('/login');
               }
             }

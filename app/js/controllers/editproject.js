@@ -385,8 +385,29 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       if($scope.document.climateContribution)
         mapTermAndCommentToObject($scope.fakeEcologicalContribution, $scope.document.climateContribution, 'fakeEcologicalContribution', $scope.contrib_climate, $scope.climate_contribution_tabs);
 
+        fixOldData();
         setupWatches();
     });
+    function fixOldData() {
+        //I used to have partner.name be the field, but it's actually partner.partner [old crummy field name that Blaise implemented.]
+        for(var i=0; i!=$scope.document.institutionalContext.length; ++i) {
+            var partner = $scope.document.institutionalContext[i];
+            if(partner.name) {
+                partner.partner = partner.name;
+                delete partner.name;
+            }
+        };
+
+        //replace all newlines without <br /> preceeding them.
+        if($scope.document.projectAbstract && $scope.document.projectAbstract.indexOf('<br />\n') == -1)
+            $scope.document.projectAbstract = $scope.document.projectAbstract.replace(/\n/g, '<br />\n');
+        if($scope.document.description && $scope.document.description.indexOf('<br />\n') == -1)
+            $scope.document.description = $scope.document.description.replace(/\n/g, '<br />\n');
+        if($scope.document.financialStability && $scope.document.financialStability.indexOf('<br />\n') == -1)
+            $scope.document.financialStability = $scope.document.financialStability.replace(/\n/g, '<br />\n');
+        if($scope.document.additionalInformation && $scope.document.additionalInformation.indexOf('<br />\n') == -1)
+            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/\n/g, '<br />\n');
+    };
 
     function setupWatches() {
         //maps tabbedTextarea format to the strange lifeweb format.
