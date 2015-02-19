@@ -64,7 +64,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr ng-repeat-start="donor in donors | filter:donorFilter | orderBy:'-body.name'">
+            <tr ng-repeat-start="donor in donors | filter:donorFilter | orderBy:'-body.updatedOn'">
                 <td><img ng-src='{{donor.body.logo.url}}' ng-click="showingDonor[$index] = !showingDonor[$index]" style="height: 40px"></img></td>
                 <td ng-click="showingDonor[$index] = !showingDonor[$index]">({{donor.body.acronym}}) {{donor.body.name}}</td>
                 <td><span ng-click="showingDonor[$index] = !showingDonor[$index]">{{donor.body.country.identifier}}</span></td>
@@ -81,6 +81,7 @@
             </tr>
         </tbody>
     </table>
+    <edit-donor donor="newdonor" is-create="true"></edit-donor>
   <fieldset>
     <legend>Events</legend>
       Event Filter: <input ng-model="eventFilter" autofocus />

@@ -5,10 +5,17 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
             templateUrl: '/app/js/directives/editdonor.html',
             scope: {
                 donor: '=',
+                isCreate: '@',
             },
             controller: function($scope, $http, editFormUtility, IStorage) {
+            console.log('isCreate: ', $scope.isCreate);
                 if(!$scope.donor)
                     $scope.donor = {};
+
+                //TODO: remove and use the guid module
+                function S4() {
+                  return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
+                }
 
                 $scope.$watch('donor', function() {
                     if($scope.donor.header && $scope.donor.header.identifier) {
@@ -22,9 +29,6 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                     } else {
                         $scope.saveButtonText = 'Create Donor';
                         $scope.isNew = true;
-                        function S4() {
-                          return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-                        }
                         var guid = (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
                         //$scope.donor.identifier = guid;
                         $scope.donor.header = {
@@ -41,12 +45,28 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                 $scope.saveDonor = function() {
                     var donor = $.extend({}, $scope.donor);
                     donor.socialMedia = [donor.socialMedia];
-                    delete donor.__value;
+                    delete donor.__value; //TODO: clean this up somehow... it's from autocomplete
                     console.log('saving donor: ', donor);
                     editFormUtility.saveDraft(donor).then(function(result) {
                         console.log('saveDraft donor result: ', result);
                         editFormUtility.publish(donor).then(function(result) {
                             console.log('publish donor result: ', result);
+                            $scope.$emit('donorSaved', donor, result);
+
+                            //clear on save
+                            var guid = (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
+                            if($scope.isCreate)
+                                $scope.donor = {};
+                                /*
+                                $scope.donor = {
+                                    header: {
+                                        identifier: guid,
+                                        languages: ['en'],
+                                        schema: 'lwDonor',
+                                    },
+                                    socialMedia: {},
+                                };
+                                */
 
                             IStorage.drafts.query('(type eq \'lwDonor\')', {cache: false}).then(function(result) {
                                 console.log('donors: ', result);
