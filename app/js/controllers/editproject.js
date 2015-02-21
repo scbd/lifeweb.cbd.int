@@ -399,14 +399,14 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         };
 
         //replace all newlines without <br /> preceeding them.
-        if($scope.document.projectAbstract && $scope.document.projectAbstract.indexOf('<br />\n') == -1)
-            $scope.document.projectAbstract = $scope.document.projectAbstract.replace(/\n/g, '<br />\n');
-        if($scope.document.description && $scope.document.description.indexOf('<br />\n') == -1)
-            $scope.document.description = $scope.document.description.replace(/\n/g, '<br />\n');
-        if($scope.document.financialStability && $scope.document.financialStability.indexOf('<br />\n') == -1)
-            $scope.document.financialStability = $scope.document.financialStability.replace(/\n/g, '<br />\n');
-        if($scope.document.additionalInformation && $scope.document.additionalInformation.indexOf('<br />\n') == -1)
-            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/\n/g, '<br />\n');
+        if($scope.document.projectAbstract)
+            $scope.document.projectAbstract = $scope.document.projectAbstract.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
+        if($scope.document.description)
+            $scope.document.description = $scope.document.description.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
+        if($scope.document.financialStability)
+            $scope.document.financialStability = $scope.document.financialStability.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
+        if($scope.document.additionalInformation)
+            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/(<br \/>)?\n(<br \/>)?)/g, '<br />\n');
     };
 
     function setupWatches() {
