@@ -16,6 +16,9 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         $scope.goto = function(hash) {
             location.skipReload().hash(hash);
             $anchorScroll();
+            if(document.querySelector('#sidebar .active'))
+                document.querySelector('#sidebar .active').classList.remove('active');
+            document.querySelector('#sidebar .' + hash).classList.add('active');
         };
 
         
@@ -67,6 +70,9 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             editFormUtility.load(sID).then(function(data) {
             console.log('the data: ', data);
               $scope.eoi = data;
+
+                getFocalPoints();
+
               //fix protected planet links if necessary
               if($scope.eoi.protectedAreas)
                   for(var i=0; i!=$scope.eoi.protectedAreas.length; ++i) {
@@ -105,7 +111,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.fp_national = data;
             });
-
             /*
             $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.contacts = data;
@@ -193,6 +198,18 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                });
                */
     }
+
+    function getFocalPoints() {
+        //Get national and powpa focal points
+        var regionsQuery = ''; var rqAnd = '%20AND%20'; var rqPre = 'government_s:'; rqOr = '%20OR%20';
+        for(var i=0; i!=$scope.eoi.countries.length; ++i)
+            regionsQuery += rqPre + $scope.eoi.countries[i].identifier + rqOr;
+        regionsQuery = regionsQuery.substr(0, regionsQuery.length - rqOr.length); //remove the last AND
+        $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(('+regionsQuery+')'+rqAnd+'(type_ss:CBD-FP2%20OR%20type_ss:CBD-FP1%20OR%20type_ss:PA-FP))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=department_s,organization_s,government_EN_t,schema_EN_t,title_s,email_ss').success(function(data) {
+            console.log('focal points? ', data.response.docs);
+            $scope.focalPoints = data.response.docs;
+        });
+    };
 
     function addFundingProperties(project) {
         var budget = project.budget || [];

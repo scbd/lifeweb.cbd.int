@@ -22,19 +22,19 @@
               <div class="bs-sidebar affix" id="sidebar">
                 <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
                   <!--<li><a style="font-size: 14px; color: #999; text-transform: uppercase;" href="#">Expression of Interest</a></li>-->
-                    <li class="active"><a ng-click="goto('sum')"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
-                    <!-- <li><a href="#map"><span class="glyphicon glyphicon-chevron-right"></span>Map</a></li> -->
-                    <li ng-show="eoi.description"><a ng-click="goto('desc')"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
-                    <li ng-show="eoi.objectives_info || eoi.budget"><a ng-click="goto('obj')"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
-                     <li><a ng-click="goto('funding')"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
-                    <li ng-show="eoi.ecoservices"><a ng-click="goto('benefits')"><span class="glyphicon glyphicon-chevron-right"></span>Ecosystem Benefits</a></li>
-                    <li ng-show="eoi.aichi_targets"><a ng-click="goto('targets')"><span class="glyphicon glyphicon-chevron-right"></span>Links with Aichi Targets</a></li>
-                    <li ng-show="eoi.alignment || eoi.alignment_cc || eoi.alignment_nbsap"><a ng-click="goto('align')"><span class="glyphicon glyphicon-chevron-right"></span>Alignment with National Planning</a></li>
-                    <li ng-show="eoi.climateContribution"><a ng-click="goto('eco')"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
-                    <li ng-show="eoi.participation || eoi.governance"><a ng-click="goto('participation')"><span class="glyphicon glyphicon-chevron-right"></span>Participation and Equity</a></li>
+                    <li class="sum"><a ng-click="goto('sum')"><span class="glyphicon glyphicon-chevron-right"></span>Summary</a></li>
+                    <li class="map"><a ng-click="goto('map')"><span class="glyphicon glyphicon-chevron-right"></span>Map</a></li>
+                    <li ng-show="eoi.description" class="desc"><a ng-click="goto('desc')"><span class="glyphicon glyphicon-chevron-right"></span>Description</a></li>
+                    <li ng-show="eoi.objectives_info || eoi.budget" class="obj"><a ng-click="goto('obj')"><span class="glyphicon glyphicon-chevron-right"></span>Objectives</a></li>
+                    <li class="funding"><a ng-click="goto('funding')"><span class="glyphicon glyphicon-chevron-right"></span>Funding Information</a></li>
+                    <li ng-show="eoi.climateContribution" class="benefits"><a ng-click="goto('benefits')"><span class="glyphicon glyphicon-chevron-right"></span>Ecosystem Benefits</a></li>
+                    <li ng-show="eoi.aichiTargets" class="targets"><a ng-click="goto('targets')"><span class="glyphicon glyphicon-chevron-right"></span>Links with Aichi Targets</a></li>
+                    <li ng-show="eoi.nationalAlignment || eoi.alignment_cc || eoi.alignment_nbsap" class="align"><a ng-click="goto('align')"><span class="glyphicon glyphicon-chevron-right"></span>Alignment with National Planning</a></li>
+                    <li ng-show="eoi.climateContribution"><a ng-click="goto('eco')" class="eco"><span class="glyphicon glyphicon-chevron-right"></span>Ecological Contribution</a></li>
+                    <li ng-show="eoi.participation || eoi.governance" class="participation"><a ng-click="goto('participation')"><span class="glyphicon glyphicon-chevron-right"></span>Participation and Equity</a></li>
 
-                    <li><a ng-click="goto('partners')"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
-                    <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null"><a ng-click="goto('attachments')"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
+                    <li class="partners"><a ng-click="goto('partners')"><span class="glyphicon glyphicon-chevron-right"></span>Partners and Contacts</a></li>
+                    <li ng-show="eoi.all_attachments != null || eoi.images != null || eoi.maps != null || eoi.links  != null || eoi.protected_planet_links != null" class="attachments"><a ng-click="goto('attachments')"><span class="glyphicon glyphicon-chevron-right"></span>Attachments</a></li>
                 </ul>
               </div>
             </div>
@@ -117,16 +117,16 @@
 
 </section>
 
-<!-- <section id="map">
-  <div data-ng-controller="MapCtrl">
-    <div id='map' style="height:200px;"></div>
+<section id="map">
+  <div data-ng-controller="MapCtrl" style="height:200px;">
+    <div id='map'></div>
   </div>
-</section> -->
+</section>
 
 
 <!--==============================================================================-->
 <section id="desc" ng-show="eoi.description" >
-<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project description</h2>
+<h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project Description</h2>
 <div class="lw-proj-text" ng-bind-html="eoi.description"></div>
 </section>
 
@@ -228,7 +228,7 @@
 
     <div ng-repeat="t in eoi.climateContribution">
         
-            <h4><img src="{{(t.type.identifier | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.type.identifier}}"/>  {{t.type.identifier}} </h4>
+            <h4><img src="{{(t.type.identifier | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.type.identifier}}"/>  {{(t.type.identifier | filterGetEcoservices).title}} </h4>
             <div class="lw-proj-text" ng-bind-html="t.comment"></div>
     </div>
 </section>
@@ -240,8 +240,8 @@
         <div ng-repeat="t in eoi.aichiTargets" >
         <h4> {{t.type.identifier}} </h4>
         <div style="min-height:50px;padding:5px 0 5px 5px;border-top:1px solid #ccc;background-color:#efefef;margin:0 0 10px 0;position:relative;top:-10px;width:100%;">
-            <img src="{{(t.type.identifier | filterGetTargetInfo).icon}}" style="width:50px;padding:0 5px 5px 0;" class="pull-left"/>
-            <span>{{(t.type.identifier | filterGetTargetInfo).desc}}</span></div>
+            <img src="{{(t.type.identifier | filterGetTargetInfo2).icon}}" style="width:50px;padding:0 5px 5px 0;" class="pull-left"/>
+            <span>{{(t.type.identifier | filterGetTargetInfo2).desc}}</span></div>
         <div class="lw-proj-text" ng-bind-html="t.comment"></div>
         </div>
 
@@ -301,6 +301,18 @@
             <th>Description</th>
         </tr>
 
+         <tr ng-repeat="fp in focalPoints">
+            <td><span class="label label-info">{{fp.schema_EN_t}}</span></td>
+            <td><strong>{{fp.title_s}} </strong>
+                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.email_ss[0]}}">{{fp.email_ss[0]}}</a></span></td>
+            <td>
+                <span ng-show="fp.Department!= ''">{{fp.department_s}}<br></span>
+               <span ng-show="fp.Organization!= ''">{{fp.organization_s}}<br></span>
+               <span ng-show="fp.Country!= ''">{{fp.government_EN_t}}<br></span>
+
+            </td>
+        </tr>
+
          <tr ng-repeat="fp in eoi.institutionalContext">
             <td><span class="label label-info">{{fp.role.identifier}}</span></td>
             <td><strong>{{fp.partner}} </strong> 
@@ -310,30 +322,6 @@
                <span ng-show="fp.Organization!= ''">{{fp.Organization}}</span>
                <span ng-show="fp.Country!= ''">{{fp.Country}}</span>
                <span ng-show="fp.info!= ''">{{fp.info}}</span>
-            </td>
-        </tr>
-
-         <tr ng-repeat="fp in fp_national">
-            <td><span class="label label-info">National CBD Focal Point</span></td>
-            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong>
-                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
-            <td>
-                <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
-               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
-               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
-
-            </td>
-        </tr>
-
-        <tr ng-repeat="fp in fp_powpa">
-            <td><span class="label label-info">PoWPA Focal Point</span></td>
-            <td><strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}} </strong>
-                <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span></td>
-            <td>
-                <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
-               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
-               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
-
             </td>
         </tr>
     </table>
