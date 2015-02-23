@@ -330,6 +330,7 @@ define(['app'], function(app) {
   //##################################################################
   app.filter('filterTargets', function () {
       return function (projs, tar) {
+        console.log('tdah projs: ', projs);
 
           if (!projs)
               return null;

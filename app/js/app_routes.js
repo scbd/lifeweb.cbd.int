@@ -133,7 +133,15 @@ define(['app', 'authentication'], function(app) {
         title : 'Zero Extinction',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/projects.js', '/app/js/directives/funding-bar-chart.js']),
+          dependencies: resolveJS(['/app/js/controllers/projects2.js', '/app/js/directives/funding-bar-chart2.js', 'stellar']),
+        },
+      })
+      .when('/campaigns/islandresilience', {
+        templateUrl: '/app/templates/routes/campaigns/islandresilience.html',
+        title : 'Island Resilience',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/projects.js', '/app/js/directives/funding-bar-chart.js', 'stellar']),
         },
       })
       .when('/share', {
