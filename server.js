@@ -12,6 +12,7 @@ var server = http.createServer(app);
 var oneDay = 24*60*60*1000;
 
 app.configure(function() {
+    app.use(express.favicon(__dirname + '/app/templates/favicon.png'));
     app.set('port', process.env.PORT || 2020, '127.0.0.1');
 
     app.use(express.logger('dev'));
@@ -19,7 +20,6 @@ app.configure(function() {
 
     app.use('/app', express.static(__dirname + '/app'));
     app.use('/afc_template', express.static(__dirname + '/app/libs/angular_form_controls/afc_template'));
-    app.use('/favicon.png', express.static(__dirname + '/app/templates/favicon.png', { maxAge: oneDay }));
 });
 
 // Configure routes

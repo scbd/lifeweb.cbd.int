@@ -23,7 +23,7 @@
       <div class="form-group">
         <label for="countries" class="col-sm-2 control-label">Country or Countries</label>
         <div class="col-sm-10">
-          <afc-autocomplete ng-model="document.countries" source="allRegionsAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping"></afc-autocomplete>
+          <afc-autocomplete ng-model="document.countries" source="allRegionsAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
         </div>
       </div>
       <afc-input ng-model="document.title" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
@@ -92,7 +92,7 @@
             <td><input type="text" ng-model="partner.partner" placeholder="Enter partner's full name" /></td>
             <td><input type="text" ng-model="partner.info" placeholder="Describe this partner's role specific to this project" /></td>
             <td>
-              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="partner.role" placeholder="Select partner's role"></afc-autocomplete>
+              <afc-autocomplete source="roles" ng-model="partner.role" placeholder="Select partner's role" windows-scrollbar-compatible="true"></afc-autocomplete>
             </td>
             <td>
               <button ng-click="document.institutionalContext.splice($index, 1)">X</button>
@@ -102,7 +102,7 @@
           <tr>
             <td>
               <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Enter partner's full name"/><br />
-              <afc-autocomplete source="roles" mapping="identifierMapping" selectbox="true" ng-model="newpartner.role" placeholder="Select partner's role"></afc-autocomplete><br />
+              <afc-autocomplete source="roles" ng-model="newpartner.role" placeholder="Select partner's role" windows-scrollbar-compatible="true"></afc-autocomplete><br />
               <button type="button" ng-click="addItem('newpartner', 'institutionalContext')">Add New Partner</button>
             </td>
             <td colspan="3">
@@ -112,7 +112,7 @@
         </tbody>
       </table>
 
-      <h3>Budget</h3>
+      <h3>Objectives and Results</h3>
       <table>
         <thead>
           <tr>
@@ -160,7 +160,7 @@
           </tr>
           <tr ng-repeat-start="donor in document.donors" ng-controller="documentDonorCtrl">
             <td style="width: 300px;">
-                <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name"></afc-autocomplete>
+                <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name" windows-scrollbar-compatible="true"></afc-autocomplete>
                 <button type="button" ng-click="editDonor(donor.name, 'donatingDonor', donatingDonor)">{{donorButtonText}}</button>
             </td>
             <td><input type="text" ng-model="donor.description" placeholder="Enter any information regarding donor's donation" /></td>
@@ -198,7 +198,7 @@
           <tr><td colspan="5" style="border-top: 1px solid gray;">Add a new donor using the form below</td></tr>
           <tr>
             <td colspan="4" style="padding-top: 10px;">
-              Name: <afc-autocomplete ng-model="newdonor.name" source="donorsAC" placeholder="Enter donor's full name"></afc-autocomplete>
+              Name: <afc-autocomplete ng-model="newdonor.name" source="donorsAC" placeholder="Enter donor's full name" windows-scrollbar-compatible="true"></afc-autocomplete>
               &nbsp;<button type="button" ng-click="editDonor(newdonor.name, 'newdonorDonor')">{{donorButtonText}}</button><br />
               <edit-donor donor="newdonorDonor" ng-show="show_newdonorDonor"></edit-donor>
               <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
