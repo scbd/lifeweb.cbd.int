@@ -94,7 +94,7 @@
           </tr>
           <tr ng-repeat="partner in document.institutionalContext">
             <td><input type="text" ng-model="partner.partner" placeholder="Enter partner's full name" /></td>
-            <td><input type="text" ng-model="partner.info" placeholder="Describe this partner's role specific to this project" /></td>
+            <td><textarea style="display: inline;" rows="1" ng-model="partner.info" expandable-text placeholder="Describe this partner's role specific to this project"></textarea></td>
             <td>
               <afc-autocomplete source="roles" ng-model="partner.role" placeholder="Select partner's role" windows-scrollbar-compatible="true"></afc-autocomplete>
             </td>
@@ -131,8 +131,8 @@
             <td colspan="4" style="font-weight: bold; text-align: center;">... No Activities Yet. Please add an activity below ...</td>
           </tr>
           <tr ng-repeat="activity in document.budget">
-            <td><input type="text" ng-model="activity.activity" placeholder="Enter Associated Activity" /></td>
-            <td><input type="text" ng-model="activity.result" placeholder="Enter Activity's Result" /></td>
+            <td><textarea style="display: inline;" expandable-text rows="1" ng-model="activity.activity" placeholder="Enter Associated Activity"></textarea></td>
+            <td><textarea style="display: inline;" expandable-text rows="1" ng-model="activity.result" placeholder="Enter Activity's Result"></textarea></td>
             <td><input type="number" ng-model="activity.cost" placeholder="Enter Activity's Cost" /><button ng-click="document.budget.splice($index, 1)">X</button></td>
           </tr>
           <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new budgeted activity using the form below</td></tr>
@@ -169,7 +169,7 @@
                 <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name" windows-scrollbar-compatible="true"></afc-autocomplete>
                 <button type="button" ng-click="editDonor(donor.name, 'donatingDonor', donatingDonor)">{{donorButtonText}}</button>
             </td>
-            <td><input type="text" ng-model="donor.description" placeholder="Enter any information regarding donor's donation" /></td>
+            <td><textarea style="display: inline;" expandable-text rows="1" ng-model="donor.description" placeholder="Enter any information regarding donor's donation"></textarea></td>
             <td><input type="number" ng-model="donor.funding" placeholder="Donor's donation in USD" /></td>
             <td><input type="date" ng-model="donor.date" /></td>
             <td>

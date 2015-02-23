@@ -14,7 +14,7 @@
       </tr>
       <tr ng-repeat="item in ngModel" ng-controller="keywordsUsingController">
         <td><input type="text" ng-model="item.title" /></td>
-        <td><input type="text" ng-model="item.description" /></td>
+        <td><textarea style="display: inline;" rows="1" expandable-text ng-model="item.description" /></td>
         <td>
           <tags-input id="attachkeywords" ng-model="fakeKeywords">
             <auto-complete ng-if="autocomplete" source="autocomplete($query)" windowsScrollbarCompatible="true"></auto-complete>

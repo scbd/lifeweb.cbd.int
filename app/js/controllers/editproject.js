@@ -4,7 +4,6 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         for(var i=0; i!=fake.length; ++i)
             real[realKey].push(fake[i].text);
     }
-
   app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location, guid) {
     $controller('EditCtrl', {$scope: $scope});
 
