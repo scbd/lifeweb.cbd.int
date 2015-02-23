@@ -19,20 +19,20 @@
   <div workflow-std-buttons document="document"></div>
   <div class="row" ng-show="tab=='edit'" km-tab="edit">
     <form novalidate name="editForm" class="form-horizontal" role="form" ng-submit="save('lwProject')">
-      <afc-input ng-model="document.leadContact" required data-title="Lead Contact" data-placeholder="Enter contact's full name"></afc-input>
+      <afc-input ng-model="document.leadContact" name="leadContact" required data-title="Lead Contact" data-placeholder="Enter contact's full name"></afc-input>
       <div class="form-group">
         <label for="countries" class="col-sm-2 control-label">Country or Countries</label>
         <div class="col-sm-10">
           <afc-autocomplete ng-model="document.countries" source="allRegionsAC" selectbox="true" placeholder="Enter the country or countries involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
         </div>
       </div>
-      <afc-input ng-model="document.title" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
-      <afc-input type="number" ng-model="document.timeFrame" title="Timeframe" placeholder="Enter project's timeframe in years"></afc-input>
-      <afc-text ng-model="document.projectAbstract" required data-title="Abstract" data-placeholder="Enter the abstract that summarizes the project"></afc-text>
-      <afc-text ng-model="document.description" required data-title="Description" data-placeholder="Enter a more detailed description of the project"></afc-text>
+      <afc-input ng-model="document.title" name="title" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
+      <afc-input type="number" ng-model="document.timeFrame" name="timeFrame" title="Timeframe" placeholder="Enter project's timeframe in years"></afc-input>
+      <afc-text ng-model="document.projectAbstract" name="projectAbstract" required data-title="Abstract" data-placeholder="Enter the abstract that summarizes the project"></afc-text>
+      <afc-text ng-model="document.description" name="description" required data-title="Description" data-placeholder="Enter a more detailed description of the project"></afc-text>
       <!--TODO: add preview -->
       <div class="row form-group">
-        <label class="col-xs-2 control-label">Thumbnail</label>
+        <label class="col-xs-2 control-label" for="thumbnail">Thumbnail</label>
         <div class="col-xs-10">
             <afc-file ng-model="document.thumbnail.url" max-url-length="100"></afc-file>
         </div>
@@ -43,6 +43,7 @@
       <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets: </h3>
       <h4>Lifeweb facilitates financing that contribute toward the achievement of the area-based Aichi Targets in the 2011-2020 Strategic Plan for Biodiversity.</h4>
       <div style="border: dotted 1px gray">
+        <label hidden for="aichiTargets"></label>
         <p>Add an Aichi Target attributed to this project...</p>
         <button type="button" ng-repeat="aichi in aichi_targets" ng-click="addTab(aichi_target_tabs, aichi_targets, $index)" class="addTabButton">
           <span class="glyphicon glyphicon-plus"></span>
@@ -54,9 +55,11 @@
       <h3>Alignment with National Planning</h3>
       <h4>Please enter this projects alignment with national planning in the text box below</h4>
       <h5>Consistent with the decision X/31, please indicate the relevance between this submission and the following planning processes</h5>
+      <label hidden for="nationalAlignment"></label>
       <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key" placeholder="Enter the relevance of this project to this form of planning"></tabbed-textareas>
 
       <h3>Contribution to Climate Change</h3>
+      <label hidden for="ecologicalContribution"></label>
       <div style="border: dotted 1px gray">
         <p>Add an Ecological Contribution attributed to this project...</p>
         <button type="button" ng-repeat="contrib in contrib_climate" ng-click="addTab(climate_contribution_tabs, contrib_climate, $index)" class="addTabButton">
@@ -75,6 +78,7 @@
 
       <h3>Institutional Context</h3>
       <h4>Add and edit partners to be involved, their roles, and any additional information</h4>
+      <label hidden for="institutionalContext"></label>
       <table>
         <thead>
           <tr>
@@ -113,6 +117,7 @@
       </table>
 
       <h3>Objectives and Results</h3>
+      <label hidden for="budget"></label>
       <table>
         <thead>
           <tr>
@@ -141,9 +146,10 @@
           </tr>
         </tbody>
       </table>
-      <afc-text ng-model="document.financialStability" required data-title="Financial Stability" data-placeholder="Enter the details of how the project well maintain financially stable."></afc-text>
+      <afc-text ng-model="document.financialStability" name="financialStability" required data-title="Financial Stability" data-placeholder="Enter the details of how the project well maintain financially stable."></afc-text>
 
       <h3>Add and Edit Donors</h3>
+      <label hidden for="donors"></label>
       <table style="width: 90%">
         <thead>
           <tr>
@@ -231,6 +237,7 @@
       <hr />
 
       <h3>Images</h3>
+      <label hidden for="images"></label>
       <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
       <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
 
@@ -253,13 +260,16 @@
       <br />
 
       <h3>Maps</h3>
+      <label hidden for="maps"></label>
       <h4>Please send <strong>high quality digital GIS files</strong> or scanned maps situating and describing the project area. There files may be made available for download on the LifeWeb website and may be used in CBD and LifeWeb communication materials</h4>
       <elink ng-model="document.maps" type-title="Map"></elink>
 
       <h3>Coordinates</h3>
+      <label hidden for="lonlat"></label>
       <lonlat-input ng-model="document.coordinates" required help="Key-in or click on map, where the general longitude and latutide of the project is"></lonlat-input>
 
       <h3>Attachments</h3>
+      <label hidden for="attachments"></label>
       <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
       <elink ng-model="document.attachments" type-title="Attachment" autocomplete="attachment_keywords"></elink>
 
@@ -268,7 +278,7 @@
       <h3>Additional Project Information</h3>
       <h4>Campaign</h4>
       <div class="form-group">
-        <label class="col-sm-3 control-label">Campaign:</label>
+        <label class="col-sm-3 control-label" for="campaigns">Campaign:</label>
         <label ng-repeat="campaign in campaigns" for="campaign{{campaign.name}}" class="col-sm-3">
             {{campaign.name}}
             <input type="radio" id="campaign{{campaign.name}}" name="campaign" ng-model="document.campaign" value="campaign.identifier" ng-click="updateSummary($index)" />
@@ -279,7 +289,7 @@
         <a href="{{currentCampaign.website.url}}">{{currentCampaign.website.url}}</a>
         <div class="col-sm-12">{{campaignSummaries[currentCampaign.identifier]}}</div>
       </div>
-      <afc-text title="Additional Information" ng-model="document.additionalInformation" placeholder="Enter any additional information regarding this project"></afc-text>
+      <afc-text title="Additional Information" ng-model="document.additionalInformation" name="additionalInformation" placeholder="Enter any additional information regarding this project"></afc-text>
 
       <hr />
       <h3>Note: all Expressions of Interests (projects) expire after a year</h3>
