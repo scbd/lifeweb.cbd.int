@@ -28,8 +28,8 @@
       </div>
       <afc-input ng-model="document.title" name="title" required data-title="Title" data-placeholder="Enter project's title"></afc-input>
       <afc-input type="number" ng-model="document.timeFrame" name="timeFrame" title="Timeframe" placeholder="Enter project's timeframe in years"></afc-input>
-      <afc-text ng-model="document.projectAbstract" name="projectAbstract" required data-title="Abstract" data-placeholder="Enter the abstract that summarizes the project"></afc-text>
-      <afc-text ng-model="document.description" name="description" required data-title="Description" data-placeholder="Enter a more detailed description of the project"></afc-text>
+      <afc-text ng-model="document.projectAbstract" name="projectAbstract" preview="true" required data-title="Abstract" data-placeholder="Enter the abstract that summarizes the project"></afc-text>
+      <afc-text ng-model="document.description" name="description" preview="true" required data-title="Description" data-placeholder="Enter a more detailed description of the project"></afc-text>
       <!--TODO: add preview -->
       <div class="row form-group">
         <label class="col-xs-2 control-label" for="thumbnail">Thumbnail</label>
@@ -96,7 +96,7 @@
             <td><input type="text" ng-model="partner.partner" placeholder="Enter partner's full name" /></td>
             <td><textarea style="display: inline;" rows="1" ng-model="partner.info" expandable-text placeholder="Describe this partner's role specific to this project"></textarea></td>
             <td>
-              <afc-autocomplete source="roles" ng-model="partner.role" placeholder="Select partner's role" windows-scrollbar-compatible="true"></afc-autocomplete>
+              <afc-autocomplete source="roles" ng-model="partner.role" placeholder="Select partner's role" scrollbar-compatible="true"></afc-autocomplete>
             </td>
             <td>
               <button ng-click="document.institutionalContext.splice($index, 1)">X</button>
@@ -267,6 +267,11 @@
       <h3>Coordinates</h3>
       <label hidden for="lonlat"></label>
       <lonlat-input ng-model="document.coordinates" required help="Key-in or click on map, where the general longitude and latutide of the project is"></lonlat-input>
+
+      <h3>Links</h3>
+      <label hidden for="links"></label>
+      <h4>Please add any external links relative to this document</h4>
+      <elink ng-model="document.links" type-title="Links" not-file="true"></elink>
 
       <h3>Attachments</h3>
       <label hidden for="attachments"></label>

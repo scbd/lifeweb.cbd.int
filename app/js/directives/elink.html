@@ -20,7 +20,7 @@
             <auto-complete ng-if="autocomplete" source="autocomplete($query)" windowsScrollbarCompatible="true"></auto-complete>
           </tags-input>
         </td>
-        <td><a ng-href="{{item.url}}" target="_blank" title="Download {{typeTitle}}"><img ng-src="{{item.url}}" style="height: 40px;"></img></a><button ng-click="ngModel.splice($index, 1)">X</button></td>
+        <td><a ng-href="{{item.url | linkify}}" target="_blank" title="Download {{typeTitle}}"><img ng-src="{{item.url}}" style="height: 40px;" ng-show="imgPreview"></img><span ng-show="!imgPreview">{{item.url}}</span></a><button ng-click="ngModel.splice($index, 1)">X</button></td>
       </tr>
       <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new {{typeTitle}} using the form below</td></tr>
       <tr>
@@ -29,7 +29,8 @@
           <tags-input id="attachkeywords" ng-model="newItem.keywords" style="width: 300px;">
           </tags-input>
           <div style="width: 300px;">
-            <afc-file ng-model="newItem.url" max-url-length="25"></afc-file>
+            <afc-file ng-model="newItem.url" ng-show="!notFile" max-url-length="25"></afc-file>
+            <input type="text" ng-show="notFile" ng-model="newItem.url" ng-keydown="maybeAddItem($event, newItem)" placeholder="Please enter the url" style="width: 300px;" />
           </div>
           <button type="button" style="width:300px;" ng-click="addItem(newItem)">Add</button>
         </td>

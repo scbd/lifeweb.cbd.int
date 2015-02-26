@@ -8,6 +8,7 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
                 typeTitle: '@',
                 imgPreview: '@?',
                 autocomplete: '=?',
+                notFile: '@?',
             },
             controller: function($scope, IStorage, $rootScope) {
                 $scope.url = '';
@@ -46,6 +47,15 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
                     }, true);
                 });
             },
+        };
+    })
+    .filter('linkify', function() {
+        return function(value) {
+            var prefix = 'http://';
+            if(value[0] != '/' && value.substr(0, prefix.length) != prefix)
+                return prefix + value;
+            else
+                return value;
         };
     });
 });
