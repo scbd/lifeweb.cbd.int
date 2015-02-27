@@ -15,11 +15,11 @@
         </thead>
         <tbody>
             <tr ng-repeat="project in draftProjects | filter:projectFilter | orderBy:'-updatedOn'">
-                <td><img ng-src="{{project.body.thumbnail.url}}" style="height: 40px;"></img></td>
+                <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
                 <td>
-                  <a ng-href="/admin/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
+                  <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteProject(project, draftProjects)">X</button>
                 </td>
@@ -40,7 +40,7 @@
         <tbody>
             <!-- TODO: remove duplicated code between different forms of projects -->
             <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:'-updatedOn'">
-                <td><img ng-src="{{project.body.thumbnail.url}}" style="height: 40px;"></img></td>
+                <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
                 <td>
@@ -66,10 +66,10 @@
         </thead>
         <tbody>
             <tr ng-repeat="campaign in draftCampaigns | filter:campaignFilter | orderBy:'-updatedOn'">
-                <td><img ng-src="{{campaign.body.logo.url}}" style="height: 40px;"></img></td>
+                <td><img ng-src="{{campaign.body.logo.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{campaign.body.title}}</td>
                 <td>
-                  <a ng-href="{{campaign.body.homepage.url}}">{{campaign.body.homepage}}</a>
+                  <a ng-href="{{campaign.body.homepage.url | linkify}}" target="_blank">{{campaign.body.homepage.url}}</a>
                   <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteCampaign(campaign, draftCampaigns)">X</button>
                 </td>
@@ -89,10 +89,10 @@
         <tbody>
             <!-- TODO: remove duplicated code between different forms of campaigns -->
             <tr ng-repeat="campaign in publishedCampaigns | filter:campaignFilter | orderBy:'-updatedOn'">
-                <td><img ng-src="{{campaign.body.logo.url}}" style="height: 40px;"></img></td>
+                <td><img ng-src="{{campaign.body.logo.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{campaign.body.title}}</td>
                 <td>
-                  <a ng-href="{{campaign.body.homepage.url}}">{{campaign.body.homepage.url}}</a>
+                  <a ng-href="{{campaign.body.homepage.url | linkify}}" target="_blank">{{campaign.body.homepage.url}}</a>
                   <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteCampaign(campaign, publishedCampaigns)">X</button>
                 </td>
@@ -113,7 +113,7 @@
         </thead>
         <tbody>
             <tr ng-repeat-start="donor in donors | filter:donorFilter | orderBy:'-body.updatedOn'">
-                <td><img ng-src='{{donor.body.logo.url}}' ng-click="showingDonor[$index] = !showingDonor[$index]" style="height: 40px"></img></td>
+                <td><img ng-src='{{donor.body.logo.url | thumbnail}}' ng-click="showingDonor[$index] = !showingDonor[$index]" style="height: 40px"></img></td>
                 <td ng-click="showingDonor[$index] = !showingDonor[$index]">({{donor.body.acronym}}) {{donor.body.name}}</td>
                 <td><span ng-click="showingDonor[$index] = !showingDonor[$index]">{{donor.body.country.identifier}}</span></td>
                 <td>
@@ -144,7 +144,7 @@
         </thead>
         <tbody>
             <tr ng-repeat="event in events | filter:eventFilter | orderBy:'-updatedOn'">
-                <td><img ng-src="{{event.body.thumbnail.url}}" style="height: 40px;"></img></td>
+                <td><img ng-src="{{event.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{event.body.title}}</td>
                 <td>{{event.body.leadContact}}</td>
                 <td>
@@ -169,7 +169,7 @@
         </thead>
         <tbody>
             <tr ng-repeat="campaign in campaigns | orderBy:'-updatedOn'">
-                <td><img ng-src="{{campaign.body.thumbnail.url}}" style="height: 40px;"></img></td>
+                <td><img ng-src="{{campaign.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{campaign.body.title}}</td>
                 <td>{{campaign.body.leadContact}}</td>
                 <td>

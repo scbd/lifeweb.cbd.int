@@ -1,4 +1,4 @@
-define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], function(app) {
+define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js', '/app/js/services/filters/linkify.js',], function(app) {
     app.directive('elink', function() {
         return {
             restrict: 'EAC',
@@ -49,13 +49,4 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
             },
         };
     })
-    .filter('linkify', function() {
-        return function(value) {
-            var prefix = 'http://';
-            if(value[0] != '/' && value.substr(0, prefix.length) != prefix)
-                return prefix + value;
-            else
-                return value;
-        };
-    });
 });

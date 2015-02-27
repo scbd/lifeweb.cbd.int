@@ -1,4 +1,4 @@
-define(['app', '/app/js/controllers/editdonors.js'], function(app, map) {
+define(['app', '/app/js/controllers/editdonors.js', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/linkify.js',], function(app, map) {
   app.controller('AdminPanelCtrl', function($scope, $http, $upload, $q, IStorage) {
     //$http.get('http://localhost:1818/projects')
     var query = '(type eq \'lwProject\')';
