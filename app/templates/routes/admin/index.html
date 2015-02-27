@@ -21,7 +21,7 @@
                 <td>
                   <a ng-href="/admin/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteProject(project)">X</button>
+                  <button type="button" ng-click="deleteProject(project, draftProjects)">X</button>
                 </td>
             </tr>
             
@@ -46,7 +46,55 @@
                 <td>
                   <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteProject(project)">X</button>
+                  <button type="button" ng-click="deleteProject(project, publishedProjects)">X</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </fieldset>
+  <fieldset>
+    <legend>Campaigns</legend>
+      Campaign Filter: <input ng-model="campaignFilter" />
+    <h3 style="color: #EEDD44;">Draft Campaigns</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="campaign in draftCampaigns | filter:campaignFilter | orderBy:'-updatedOn'">
+                <td><img ng-src="{{campaign.body.logo.url}}" style="height: 40px;"></img></td>
+                <td>{{campaign.body.title}}</td>
+                <td>
+                  <a ng-href="{{campaign.body.homepage.url}}">{{campaign.body.homepage}}</a>
+                  <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
+                  <button type="button" ng-click="deleteCampaign(campaign, draftCampaigns)">X</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <h3 style="color: #8888FF;">Published Campaigns</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: remove duplicated code between different forms of campaigns -->
+            <tr ng-repeat="campaign in publishedCampaigns | filter:campaignFilter | orderBy:'-updatedOn'">
+                <td><img ng-src="{{campaign.body.logo.url}}" style="height: 40px;"></img></td>
+                <td>{{campaign.body.title}}</td>
+                <td>
+                  <a ng-href="{{campaign.body.homepage.url}}">{{campaign.body.homepage.url}}</a>
+                  <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
+                  <button type="button" ng-click="deleteCampaign(campaign, publishedCampaigns)">X</button>
                 </td>
             </tr>
         </tbody>
