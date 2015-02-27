@@ -21,7 +21,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         if(!$scope['show_' + donorKey])
             return;
 
-        $scope.donorsAC().then(function(data) {
+        $scope.donationsAC().then(function(data) {
             var donor;
             if(name)
                 for(var i=0; i!=data.length; ++i)
@@ -44,7 +44,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         });
     };
 
-    $scope.donorsAC = function() {
+    $scope.donationsAC = function() {
         return donorPromise.then(function(donors) {
         console.log('ac donors: ', donors);
             for(var i=0; i!=donors.length; ++i)
@@ -307,7 +307,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       if($scope.document.maps && $scope.document.maps.length == 0)
         $scope.document.maps = null;  //fucking terrible cbd api...
       $scope.document.attachments = $scope.document.attachments || [];
-      //$scope.document.donors = $scope.document.donors || [];
+      //$scope.document.donations = $scope.document.donations || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
       if($scope.document.aichiTargets)
         (function(aichiTargets) {
@@ -332,6 +332,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 delete partner.name;
             }
         };
+        if($scope.document.donors)
+            delete $scope.document.donors;
 
         //replace all newlines without <br /> preceeding them.
         if($scope.document.projectAbstract)
@@ -371,9 +373,9 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         }, true);
 
         //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
-        $scope.$watch('document.donors', function() {
-            if($scope.document.donors && $scope.document.donors.length == 0)
-                $scope.document.donors = undefined;
+        $scope.$watch('document.donations', function() {
+            if($scope.document.donations && $scope.document.donations.length == 0)
+                $scope.document.donations = undefined;
         });
 
         $scope.$watch('document.maps', function() {
@@ -413,10 +415,10 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
   app.controller('documentDonorCtrl', function($scope, $q, guid) {
     $scope.donorButtonText = 'New Donor';
-    $scope.$watch('donor', function() {
+    $scope.$watch('donation', function() {
         donorPromise.then(function(donors) {
             for(var i=0;i!=donors.length; ++i)
-                if(donors[i].name == $scope.donor.name) {
+                if(donors[i].name == $scope.donation.donor) {
                     $scope.donorButtonText = 'Edit This Donor'; break;
                 } else
                     $scope.donorButtonText = 'Create New Donor';
