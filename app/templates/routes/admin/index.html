@@ -1,7 +1,10 @@
 <div class="container" ng-controller="AdminPanelCtrl" style="margin-top: 100px">
   <h2>Admin Panel</h2>
   <fieldset>
-    <legend>Projects</legend>
+    <legend>
+        Projects
+        <a ng-href="/admin/project/create" target="_blank"><button type="button">Create Project</button></a>
+    </legend>
       Project Filter: <input ng-model="projectFilter" autofocus />
     <h3 style="color: #EEDD44;">Draft Projects</h3>
     <table class="table table-striped table-hover">
@@ -21,7 +24,7 @@
                 <td>
                   <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteProject(project, draftProjects)">X</button>
+                  <button type="button" ng-click="deleteProject(project, draftProjects, 'drafts')">X</button>
                 </td>
             </tr>
             
@@ -46,14 +49,17 @@
                 <td>
                   <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteProject(project, publishedProjects)">X</button>
+                  <button type="button" ng-click="deleteProject(project, publishedProjects, 'documents')">X</button>
                 </td>
             </tr>
         </tbody>
     </table>
   </fieldset>
   <fieldset>
-    <legend>Campaigns</legend>
+    <legend>
+        Campaigns
+        <a ng-href="/admin/campaign/create" target="_blank"><button type="button">Create Project</button></a>
+    </legend>
       Campaign Filter: <input ng-model="campaignFilter" />
     <h3 style="color: #EEDD44;">Draft Campaigns</h3>
     <table class="table table-striped table-hover">
@@ -71,7 +77,7 @@
                 <td>
                   <a ng-href="{{campaign.body.homepage.url | linkify}}" target="_blank">{{campaign.body.homepage.url}}</a>
                   <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteCampaign(campaign, draftCampaigns)">X</button>
+                  <button type="button" ng-click="deleteCampaign(campaign, draftCampaigns, 'drafts')">X</button>
                 </td>
             </tr>
             
@@ -94,7 +100,7 @@
                 <td>
                   <a ng-href="{{campaign.body.homepage.url | linkify}}" target="_blank">{{campaign.body.homepage.url}}</a>
                   <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteCampaign(campaign, publishedCampaigns)">X</button>
+                  <button type="button" ng-click="deleteCampaign(campaign, publishedCampaigns, 'documents')">X</button>
                 </td>
             </tr>
         </tbody>

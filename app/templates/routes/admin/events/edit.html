@@ -48,11 +48,11 @@
     <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
     <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
     
-    <h4>organizations km-references...</h4>
-    <h3>add it once i know where to get them</h3>
+    <h4>organizations</h4>
+    <afc-autocomplete ng-model="document.organizations" source="allRegionsAC" selectbox="true" placeholder="Enter the organizations involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
     
     <h4>Event's Project</h4>
-    <div km-reference ng-model="project" loader="loadRecords(identifier, 'lwProjects')"></div>
+    <afc-autocomplete ng-model="document.project" source="projectsAC" selectbox="true" placeholder="Enter the project this event is for" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
 
     <div class="form-group">
       <button type="submit" class="form-control">Save</button>

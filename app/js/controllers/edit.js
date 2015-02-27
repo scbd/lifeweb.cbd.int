@@ -94,6 +94,28 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         });
     };
 
+    $scope.projectsAC = function() {
+        return $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
+            console.log('prpojects AC data: ', data.data.Items);
+            var projects = data.data.Items;
+            for(var i = 0; i != projects.length; ++i)
+                projects[i].__value = projects[i].title.en;
+
+            return projects;
+        });
+    };
+
+    $scope.campaignsAC = function() {
+        return $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
+            console.log('campaigns AC data: ', data.data.Items);
+            var campaigns = data.data.Items;
+            for(var i = 0; i != campaigns.length; ++i)
+                campaigns[i].__value = campaigns[i].title.en;
+
+            return campaigns;
+        });
+    };
+
     $scope.identifierMapping = function(item) {
         return {identifier: item.identifier};
     };

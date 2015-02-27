@@ -40,22 +40,22 @@ define(['app', '/app/js/controllers/editdonors.js', '/app/js/services/filters/th
         });
 
     //TODO: I can just put a delete draft here =P
-    $scope.deleteProject = function(project, projects) {
+    $scope.deleteProject = function(project, projects, type) {
       //$http.delete('http://localhost:1818/projects') //how did this only delete one? >>;;
-      IStorage.drafts.delete(project.identifier)
+      IStorage[type].delete(project.identifier)
         .then(function(response, status) {
           console.log('del proj: ', response);
-          $scope.projects.splice(projects.indexOf(project), 1);
+          projects.splice(projects.indexOf(project), 1);
         });
     };
 
     //TODO: I can just put a delete draft here =P
-    $scope.deleteCampaign = function(campaign, campaigns) {
+    $scope.deleteCampaign = function(campaign, campaigns, type) {
       //$http.delete('http://localhost:1818/projects') //how did this only delete one? >>;;
-      IStorage.drafts.delete(campaign.identifier)
+      IStorage[type].delete(campaign.identifier)
         .then(function(response, status) {
           console.log('del camp: ', response);
-          $scope.projects.splice(campaigns.indexOf(project), 1);
+          campaigns.splice(campaigns.indexOf(campaign), 1);
         });
     };
   });

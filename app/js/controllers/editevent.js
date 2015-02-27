@@ -22,8 +22,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             focusCountry($scope.locationMap, $scope.document.location.country.identifier).then(function(mapInfo) {
 console.log('mapinfo: ', mapInfo);
                 $scope.locationMap.fitBounds(mapInfo.bounds, {reset: true});
-                $scope.document.location.coordinates.lat = mapInfo.coordinates.lat;
-                $scope.document.location.coordinates.lng = mapInfo.coordinates.lng;
+                $scope.document.location.coordinates.lat = parseFloat(mapInfo.coordinates.lat);
+                $scope.document.location.coordinates.lng = parseFloat(mapInfo.coordinates.lng);
             });
         }
     });
