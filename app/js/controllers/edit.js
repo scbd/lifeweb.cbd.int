@@ -14,6 +14,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     var keySchemaMap = {
       'project': 'lwProject',
       'event': 'lwEvent',
+      'campaign': 'lwCampaign',
       //'organization': 'lwOrganization', //TODO: it apaprently already exists?
     };
     $scope.breadcrumbs = breadcrumbs;
@@ -124,7 +125,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
       //schema and realm
       //$http.post('http://localhost:1818/api/'+schemaName, $scope[singularKey])
       editFormUtility.saveDraft($scope.document).then(function(result) {
-        editFormUtility.load(id, localSchemaName).then(function(response) {
+        editFormUtility.load(result.identifier, localSchemaName).then(function(response) {
             console.log('Response: ', response);
         });
       });
