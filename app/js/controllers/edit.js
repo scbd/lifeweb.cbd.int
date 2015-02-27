@@ -1,9 +1,6 @@
 define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js', '/app/js/directives/guid.js',], function(app) {
   app.controller('EditCtrl', function($scope, $rootScope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility) {
 
-    IStorage.drafts.query('(type eq \'lwDonor\')', {cahce: false}).then(function(result) {
-        console.log('donors: ', result);
-    });
     //TODO: get the cb for lwDonor
     //$http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
     //    console.log('donor docs: ', data);
@@ -99,6 +96,9 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
 
     $scope.identifierMapping = function(item) {
         return {identifier: item.identifier};
+    };
+    $scope.identifierHeaderMapping = function(item) {
+        return {identifier: item.header.identifier};
     };
 
     function validate() {

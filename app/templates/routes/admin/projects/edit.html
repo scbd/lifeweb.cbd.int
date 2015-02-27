@@ -166,7 +166,7 @@
           </tr>
           <tr ng-repeat-start="donor in document.donors" ng-controller="documentDonorCtrl">
             <td style="width: 300px;">
-                <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name" windows-scrollbar-compatible="true"></afc-autocomplete>
+                <afc-autocomplete ng-model="donor.name" source="donorsAC" placeholder="Enter donor's full name"  mapping="identifierHeaderMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
                 <button type="button" ng-click="editDonor(donor.name, 'donatingDonor', donatingDonor)">{{donorButtonText}}</button>
             </td>
             <td><textarea style="display: inline;" expandable-text rows="1" ng-model="donor.description" placeholder="Enter any information regarding donor's donation"></textarea></td>
@@ -204,9 +204,9 @@
           <tr><td colspan="5" style="border-top: 1px solid gray;">Add a new donor using the form below</td></tr>
           <tr>
             <td colspan="4" style="padding-top: 10px;">
-              Name: <afc-autocomplete ng-model="newdonor.name" source="donorsAC" placeholder="Enter donor's full name" windows-scrollbar-compatible="true"></afc-autocomplete>
+              <afc-autocomplete ng-model="newdonor.name" source="donorsAC" placeholder="Enter donor's full name" mapping="identifierHeaderMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
               &nbsp;<button type="button" ng-click="editDonor(newdonor.name, 'newdonorDonor')">{{donorButtonText}}</button><br />
-              <edit-donor donor="newdonorDonor" ng-show="show_newdonorDonor"></edit-donor>
+              <edit-donor donor="newdonorDonor" ng-show="show_newdonorDonor"></edit-donor><br />
               <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donors')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
             </td>
             <td>

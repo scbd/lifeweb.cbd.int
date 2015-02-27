@@ -117,9 +117,9 @@
                 <td ng-click="showingDonor[$index] = !showingDonor[$index]">({{donor.body.acronym}}) {{donor.body.name}}</td>
                 <td><span ng-click="showingDonor[$index] = !showingDonor[$index]">{{donor.body.country.identifier}}</span></td>
                 <td>
-                  <a ng-href="/donors2?id={{event.identifier}}"><button type="button">View</button</a>
+                  <a ng-href="/donors2?id={{donor.identifier}}"><button type="button">View</button</a>
                   <a ng-click="showingDonor[$index] = !showingDonor[$index]"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteEvent(event)">X</button>
+                  <button type="button" ng-click="deleteDonor(donor)">X</button>
                 </td>
             </tr>
             <tr ng-show="showingDonor[$index]" ng-repeat-end>
