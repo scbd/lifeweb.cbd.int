@@ -1,0 +1,57 @@
+<div class="container" ng-controller="AdminProjectsCtrl" style="margin-top: 100px">
+  <fieldset>
+    <legend>
+        Projects
+        <a ng-href="/admin/project/create" target="_blank"><button type="button">Create Project</button></a>
+    </legend>
+      Project Filter: <input ng-model="projectFilter" autofocus />
+    <h3 style="color: #EEDD44;">Draft Projects</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Lead Contact</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="project in draftProjects | filter:projectFilter | orderBy:'-updatedOn'">
+                <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
+                <td>{{project.body.title}}</td>
+                <td>{{project.body.leadContact}}</td>
+                <td>
+                  <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
+                  <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
+                  <button type="button" ng-click="deleteProject(project, draftProjects, 'drafts')">X</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <h3 style="color: #8888FF;">Published Projects</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Title</th>
+                <th>Lead Contact</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: remove duplicated code between different forms of projects -->
+            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:'-updatedOn'">
+                <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
+                <td>{{project.body.title}}</td>
+                <td>{{project.body.leadContact}}</td>
+                <td>
+                  <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
+                  <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
+                  <button type="button" ng-click="deleteProject(project, publishedProjects, 'documents')">X</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </fieldset>
+</div>

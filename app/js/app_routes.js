@@ -211,6 +211,36 @@ define(['app', 'authentication'], function(app) {
         },
         label: 'Edit Donors',
       })
+      .when('/admin/projects', {
+        templateUrl: '/app/templates/routes/admin/projects/index.html',
+        title: 'Admin Projects',
+        collectionKey: 'projects',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/adminprojects.js']),
+        },
+        label: 'Admin Projects',
+      })
+      .when('/admin/events', {
+        templateUrl: '/app/templates/routes/admin/events/index.html',
+        title: 'Admin Events',
+        collectionKey: 'events',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/adminevents.js']),
+        },
+        label: 'Edit Donors',
+      })
+      .when('/admin/campaigns', {
+        templateUrl: '/app/templates/routes/admin/campaigns/index.html',
+        title: 'Admin Campaigns',
+        collectionKey: 'campaigns',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/admincampaigns.js']),
+        },
+        label: 'Edit Campaigns',
+      })
       .when('/admin/campaigns/create', {
         templateUrl: '/app/templates/routes/admin/campaigns/edit.html',
         title: 'Create Campaign',
