@@ -2,13 +2,14 @@
 
 define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angular-file-upload', 'ng-localizer', 'underscore', 'angular-bootstrap',], function(Angular) {
 
-	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ngCookies', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload', 'ngLocalizer', 'ui.bootstrap']);
+	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload', 'ngLocalizer', 'ui.bootstrap', 'ngKookies']);
     //angular.module('formControls').value('realm', 'lifeweb');
     app.value('realm', 'lifeweb');
 
-	app.config(function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider) {
+	app.config(function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider, $kookiesProvider) {
 		// Allow dynamic registration
 
+        $kookiesProvider.config.raw = true;
 		app.filter     = $filterProvider.register;
 		app.factory    = $provide.factory;
 		app.value      = $provide.value;
@@ -16,7 +17,7 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
 		app.directive  = $compileProvider.directive;
    });
 
-  app.run(function($location, $route, $rootScope, $anchorScroll, $cookies, $http, Localizer) {
+  app.run(function($location, $route, $rootScope, $anchorScroll, $kookies, $http, Localizer) {
     var original = $location.path;
     $location.path = function (path, reload) {
         if (reload === false) {
@@ -53,8 +54,8 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
       });
 
       //TODO: get language from browser if not set by user initially.
-      if(!$cookies['language'])
-        $cookies['language'] = 'en-ca';
+      if(!$kookies.get('language'))
+        $kookies.set('language', 'en-ca');
 
       $http.get('/app/translation.json')
         .success(function(response, status) {
@@ -65,7 +66,7 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
         });
 
       $rootScope.changeLanguage = function(lang) {
-        $cookies['language'] = lang;
+        $kookies.set('language', lang);
       };
 
     });

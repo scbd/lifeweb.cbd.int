@@ -15,24 +15,31 @@
     <ng-include src="'/app/partials/admin_header.html'"></ng-include>
     <h1>Campaign</h1>
     <div workflow-std-buttons document="document"></div>
-    <form role="form" ng-submit="save('lwCampaign')">
-        <afc-input type="text" ng-model="document.title" title="Campaign Title" placeholder="Type the title here"></afc-input>
-        <afc-input type="text" ng-model="document.homepage.url" title="Campaign Homepage" placeholder="Type the title here"></afc-input>
-        <br /><br />
-        <br /><br />
-        <div class="row form-group">
-            <label class="col-xs-2 control-label" for="logo">Campaign Logo</label>
-            <div class="col-xs-10">
-                <afc-file ng-model="document.logo.url" max-url-length="40"></afc-file>
+    <div class="row" ng-show="tab=='edit'" km-tab="edit">
+        <form role="form" ng-submit="save('lwCampaign')" name="editForm">
+            <afc-input type="text" ng-model="document.title" title="Campaign Title" placeholder="Type the title here"></afc-input>
+            <afc-input type="text" ng-model="document.homepage.url" title="Campaign Homepage" placeholder="Type the title here"></afc-input>
+            <br /><br />
+            <br /><br />
+            <div class="row form-group">
+                <label class="col-xs-2 control-label" for="logo">Campaign Logo</label>
+                <div class="col-xs-10">
+                    <afc-file ng-model="document.logo.url" max-url-length="40"></afc-file>
+                </div>
             </div>
+            <afc-input type="date" ng-model="document.startDate" title="Start Date" placeholder="choose date campaign begins"></afc-input>
+            <afc-input type="date" ng-model="document.endDate" title="End Date" placeholder="choose date campaign finishes"></afc-input>
+            <afc-input type="checkbox" ng-model="document.active" title="Is the campaign active?"></afc-input>
+            <!--
+            <div class="form-group">
+              <button type="submit" class="form-control">Save</button>
+            </div>
+            -->
+        </form>
+    </div>
+      <div class="row" ng-show="tab=='review'" km-tab="review">
+        <div class="col-xs-12">
+          <div km-document-validation ng-model="validationReport"></div>
         </div>
-        <afc-input type="date" ng-model="document.startDate" title="Start Date" placeholder="choose date campaign begins"></afc-input>
-        <afc-input type="date" ng-model="document.endDate" title="End Date" placeholder="choose date campaign finishes"></afc-input>
-        <afc-input type="checkbox" ng-model="document.active" title="Is the campaign active?"></afc-input>
-        <!--
-        <div class="form-group">
-          <button type="submit" class="form-control">Save</button>
-        </div>
-        -->
-    </form>
+      </div>
 </div>

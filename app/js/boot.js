@@ -10,7 +10,6 @@ require.config({
         'angular-sanitize': '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.12/angular-sanitize.min',
         'angular-route'   : '../libs/angular-route/angular-route',
         'angular-bootstrap'   : '../libs/angular-bootstrap/ui-bootstrap-tpls',
-        'angular-cookies' : '../libs/angular-cookies/angular-cookies',
         'angular-form-controls': '../libs/angular_form_controls/form-controls',
         'editFormUtility': '../js/directives/editFormUtility',
         'ng-tags-input'   : '../libs/ng-tags-input/ng-tags-input',
@@ -27,12 +26,15 @@ require.config({
         'URI'             : '//cdnjs.cloudflare.com/ajax/libs/URI.js/1.7.2/URI.min',
         'ui-utils'        : '../libs/angular-ui-utils/ui-utils',
         'stellar'         : '../libs/jquery.stellar/jquery.stellar',
+        'kookies'         : '../libs/ngkookies/ngKookies',
+        'angular-cookies'       : '../libs/angular-cookies/angular-cookies',   //cause ngLocalizer needs it... requireJS sucks
     },
     shim: {
         'angular'        : { 'deps': ['jquery'], 'exports': 'angular' },
         'angular-route'  : { 'deps': ['angular'] },
-        'angular-cookies': { 'deps': ['angular'] },
+        'angular-cookies'  : { 'deps': ['angular'] },
         'angular-sanitize': { 'deps': ['angular'] },
+        'kookies': { 'deps': ['angular'] },
         'angular-form-controls': {'deps': ['angular', 'leaflet', 'ng-localizer'] },
         'editFormUtility': {'deps': ['angular', 'leaflet'] },
         'ng-tags-input'  : { 'deps': ['angular'] },
@@ -49,7 +51,7 @@ require.config({
     }
 });
 
-require(['angular', 'angular-route', 'angular-cookies', 'angular-sanitize', 'bootstrap', 'ng-breadcrumbs', 'domReady'], function (ng) {
+require(['angular', 'angular-route', 'angular-sanitize', 'angular-cookies', 'kookies', 'bootstrap', 'ng-breadcrumbs', 'domReady'], function (ng) {
 
     // NOTE: place operations that need to initialize prior to app start here using the `run` function on the top-level module
 

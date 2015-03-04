@@ -43,7 +43,7 @@
       <h3>Link with the 2011-2020 strategic plan for biodiversity and the Aichi targets: </h3>
       <h4>Lifeweb facilitates financing that contribute toward the achievement of the area-based Aichi Targets in the 2011-2020 Strategic Plan for Biodiversity.</h4>
       <div style="border: dotted 1px gray">
-        <label hidden for="aichiTargets"></label>
+        <label hidden for="aichiTargets">Aichi Targets</label>
         <p>Add an Aichi Target attributed to this project...</p>
         <button type="button" ng-repeat="aichi in aichi_targets" ng-click="addTab(aichi_target_tabs, aichi_targets, $index)" class="addTabButton">
           <span class="glyphicon glyphicon-plus"></span>
@@ -55,11 +55,11 @@
       <h3>Alignment with National Planning</h3>
       <h4>Please enter this projects alignment with national planning in the text box below</h4>
       <h5>Consistent with the decision X/31, please indicate the relevance between this submission and the following planning processes</h5>
-      <label hidden for="nationalAlignment"></label>
+      <label hidden for="nationalAlignment">National Alignment</label>
       <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key" placeholder="Enter the relevance of this project to this form of planning"></tabbed-textareas>
 
       <h3>Contribution to Climate Change</h3>
-      <label hidden for="ecologicalContribution"></label>
+      <label hidden for="ecologicalContribution">Ecological Contribution</label>
       <div style="border: dotted 1px gray">
         <p>Add an Ecological Contribution attributed to this project...</p>
         <button type="button" ng-repeat="contrib in contrib_climate" ng-click="addTab(climate_contribution_tabs, contrib_climate, $index)" class="addTabButton">
@@ -78,7 +78,7 @@
 
       <h3>Institutional Context</h3>
       <h4>Add and edit partners to be involved, their roles, and any additional information</h4>
-      <label hidden for="institutionalContext"></label>
+      <label hidden for="institutionalContext">Institutional Context</label>
       <table>
         <thead>
           <tr>
@@ -117,7 +117,7 @@
       </table>
 
       <h3>Objectives and Results</h3>
-      <label hidden for="budget"></label>
+      <label hidden for="budget">Budget</label>
       <table>
         <thead>
           <tr>
@@ -149,7 +149,7 @@
       <afc-text ng-model="document.financialStability" name="financialStability" required data-title="Financial Stability" data-placeholder="Enter the details of how the project well maintain financially stable."></afc-text>
 
       <h3>Add and Edit Donors</h3>
-      <label hidden for="donations"></label>
+      <label hidden for="donations">Donations</label>
       <table style="width: 90%">
         <thead>
           <tr>
@@ -237,7 +237,7 @@
       <hr />
 
       <h3>Images</h3>
-      <label hidden for="images"></label>
+      <label hidden for="images">Images</label>
       <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
       <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
 
@@ -260,21 +260,21 @@
       <br />
 
       <h3>Maps</h3>
-      <label hidden for="maps"></label>
+      <label hidden for="maps">Maps</label>
       <h4>Please send <strong>high quality digital GIS files</strong> or scanned maps situating and describing the project area. There files may be made available for download on the LifeWeb website and may be used in CBD and LifeWeb communication materials</h4>
       <elink ng-model="document.maps" type-title="Map"></elink>
 
       <h3>Coordinates</h3>
-      <label hidden for="lonlat"></label>
+      <label hidden for="lonlat">Longitude and Latitude</label>
       <lonlat-input ng-model="document.coordinates" required help="Key-in or click on map, where the general longitude and latutide of the project is"></lonlat-input>
 
       <h3>Links</h3>
-      <label hidden for="links"></label>
+      <label hidden for="links">Links</label>
       <h4>Please add any external links relative to this document</h4>
       <elink ng-model="document.links" type-title="Links" not-file="true"></elink>
 
       <h3>Attachments</h3>
-      <label hidden for="attachments"></label>
+      <label hidden for="attachments">Attachments</label>
       <h4>Please add any supporting documents/annexes attached to this Expression of Interest</h4>
       <elink ng-model="document.attachments" type-title="Attachment" autocomplete="attachment_keywords"></elink>
 
@@ -287,12 +287,6 @@
         <div class="col-sm-10">
               <afc-autocomplete ng-model="document.campaigns" source="campaignsAC" placeholder="Enter campaigns' name" mapping="identifierMapping" multiple="true" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
         </div>
-      </div>
-        <label class="col-sm-3 control-label" for="campaigns">Campaign:</label>
-        <label ng-repeat="campaign in campaigns" for="campaign{{campaign.name}}" class="col-sm-3">
-            {{campaign.name}}
-            <input type="radio" id="campaign{{campaign.name}}" name="campaign" ng-model="document.campaign" value="campaign.identifier" ng-click="updateSummary($index)" />
-        </label>
       </div>
       <div class="form-group" ng-show="currentCampaign.name != 'None'">
         <h5>{{currentCampaign.name}}</h5>
