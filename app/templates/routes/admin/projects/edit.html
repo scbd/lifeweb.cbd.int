@@ -175,18 +175,18 @@
             <td>
                 <div class=form-inline"">
                   <label>
-                    <input type="radio" name="lifeweb_facilitated" ng-model="donation.lifeweb_facilitated" ng-value="true" />Secured
+                    <input type="radio" name="lifeweb_facilitated{{$index}}" ng-model="donation.lifeweb_facilitated" ng-value="true" />Secured
                   </label>
                   <label>
-                    <input type="radio" name="lifeweb_facilitated" ng-model="donation.lifeweb_facilitated" ng-value="false" />Unsecured
+                    <input type="radio" name="lifeweb_facilitated{{$index}}" ng-model="donation.lifeweb_facilitated" ng-value="false" />Unsecured
                   </label>
                 </div>
                 <div class="form-inline">
                     <label>
-                      <input type="radio" name="isdomestic" ng-model="donation.domestic" ng-value="true" />Domestic
+                      <input type="radio" name="isdomestic{{$index}}" ng-model="donation.domestic" ng-value="true" />Domestic
                     </label>
                     <label>
-                      <input type="radio" name="isdomestic" ng-model="donation.domestic" ng-value="false" />International
+                      <input type="radio" name="isdomestic{{$index}}" ng-model="donation.domestic" ng-value="false" />International
                     </label>
                 </div>
 

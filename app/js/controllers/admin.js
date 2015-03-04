@@ -18,13 +18,17 @@ define(['app', '/app/js/controllers/editdonors.js', '/app/js/services/filters/th
     query = '(type eq \'lwEvent\')';
     IStorage.drafts.query(query, draftParams)
       .then(function(response) {
-        $scope.events = response.data.Items;
+        $scope.draftEvents = response.data.Items;
       })
       /*
       .error(function(response, status, headers, config) {
           console.log('*ERROR* Response (code '+status+'): ', response);
       });
       */
+    $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwEvent%27)&body=true&cache=true&collection=my')
+        .then(function(response) {
+            $scope.publishedEvents = response.data.Items;
+        });
 
     query = '(type eq \'lwCampaign\')';
     IStorage.drafts.query(query, draftParams)
