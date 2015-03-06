@@ -50,13 +50,13 @@
           <span>{{aichi.name}}</span>
         </button>
       </div>
-      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" title-key="name" help-key="description" key-key="identifier" placeholder="Describe this project's contribution to this aichi target"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeAichiTargets" deletable-tabs="true" tabs="aichi_target_tabs" preview="true" title-key="name" help-key="description" key-key="identifier" placeholder="Describe this project's contribution to this aichi target"></tabbed-textareas>
       
       <h3>Alignment with National Planning</h3>
       <h4>Please enter this projects alignment with national planning in the text box below</h4>
       <h5>Consistent with the decision X/31, please indicate the relevance between this submission and the following planning processes</h5>
       <label hidden for="nationalAlignment">National Alignment</label>
-      <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" help-key="help" key-key="key" placeholder="Enter the relevance of this project to this form of planning"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeNationalAlignment" tabs="national_alignment" title-key="title" preview="true" help-key="help" key-key="key" placeholder="Enter the relevance of this project to this form of planning"></tabbed-textareas>
 
       <h3>Contribution to Climate Change</h3>
       <label hidden for="ecologicalContribution">Ecological Contribution</label>
@@ -68,7 +68,7 @@
         </button>
       </div>
 
-      <tabbed-textareas rows="4" ng-model="fakeEcologicalContribution" tabs="climate_contribution_tabs" title-key="title" help-key="help" key-key="key" placeholder="Describe this project's contribution to this ecological challenge"></tabbed-textareas>
+      <tabbed-textareas rows="4" ng-model="fakeEcologicalContribution" tabs="climate_contribution_tabs" title-key="title" preview="true" help-key="help" key-key="key" placeholder="Describe this project's contribution to this ecological challenge"></tabbed-textareas>
 
       <h3>Ecological Contribution</h3>
       <h4>Please indicate the extend to which the area(s) is/are ecological priority(s) for the national protected area system, based on contribution to ecological representation, connectivity, viability and/or irreplaceability within the protected area system. If available, please refer to the national ecological gap analysis or other geographic prioritisation exercises.</h4>
@@ -105,7 +105,7 @@
           <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new partner using the form below</td></tr>
           <tr>
             <td>
-              <input type="text" style="width: 300px;" ng-model="newpartner.name" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Enter partner's full name"/><br />
+              <input type="text" style="width: 300px;" ng-model="newpartner.partner" ng-keydown="maybeAddItem($event, 'newpartner', 'institutionalContext')" placeholder="Enter partner's full name"/><br />
               <afc-autocomplete source="roles" ng-model="newpartner.role" placeholder="Select partner's role" windows-scrollbar-compatible="true"></afc-autocomplete><br />
               <button type="button" ng-click="addItem('newpartner', 'institutionalContext')">Add New Partner</button>
             </td>
@@ -164,10 +164,10 @@
           <tr ng-hide="document.donations && document.donations.length">
             <td colspan="5" style="font-weight: bold; text-align: center;">... No Donors Yet. Add any pre-existing donations to using the form below ...</td>
           </tr>
-          <tr ng-repeat-start="donation in document.donations" ng-controller="documentDonorCtrl">
+          <tr ng-repeat="donation in document.donations" ng-controller="documentDonorCtrl">
             <td style="width: 300px;">
                 <afc-autocomplete ng-model="donation.donor" source="donationsAC" placeholder="Enter donor's full name"  mapping="identifierHeaderMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
-                <button type="button" ng-click="editDonor(donation.name, 'donatingDonor', donatingDonor)">{{donorButtonText}}</button>
+                <edit-donor donor="donatingDonor"></edit-donor>
             </td>
             <td><textarea style="display: inline;" expandable-text rows="1" ng-model="donation.description" placeholder="Enter any information regarding donor's donation"></textarea></td>
             <td><input type="number" ng-model="donation.funding" placeholder="Donor's donation in USD" /></td>
@@ -193,20 +193,14 @@
                 <button ng-click="document.donations.splice($index, 1)">X</button>
             </td>
           </tr>
-          <tr ng-show="show_donatingDonor" ng-repeat-end>
-            <td colspan="5">
-              <edit-donor donor="donatingDonor"></edit-donor>
-            </td>
-          </tr>
           <tr ng-if="document.donations && document.donations.length">
             <td colspan="5" style="text-align: right">Total: ${{sum(document.donations, 'funding')}}</td>
           </tr>
           <tr><td colspan="5" style="border-top: 1px solid gray;">Add a new donation using the form below</td></tr>
           <tr>
-            <td colspan="4" style="padding-top: 10px;">
+            <td colspan="4" style="padding-top: 10px; text-align: left;">
               <afc-autocomplete ng-model="newdonor.donor" source="donationsAC" placeholder="Enter donor's full name" mapping="identifierHeaderMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
-              &nbsp;<button type="button" ng-click="editDonor(newdonor.name, 'newdonorDonor')">{{donorButtonText}}</button><br />
-              <edit-donor donor="newdonorDonor" ng-show="show_newdonorDonor"></edit-donor><br />
+              <edit-donor donor="newdonorDonor"></edit-donor><br />
               <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donations')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
             </td>
             <td>
@@ -248,7 +242,7 @@
           <input type="text" class="form-control" ng-model="protectedArea.url" />
         </div>
         <div class="col-sm-2">
-          <a ng-href="{{protectedArea}}" target="_blank">View</a><button ng-click="document.protectedAreas.splice($index, 1)">X</button>
+          <a ng-href="{{protectedArea.url | linkify}}" target="_blank">View</a><button ng-click="document.protectedAreas.splice($index, 1)">X</button>
         </div>
       </div>
       <div class="col-sm-10">

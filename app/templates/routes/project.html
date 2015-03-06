@@ -65,7 +65,7 @@
     <table class="lw-tt well">
         <tr>
             <td class="lw-dt" style="padding-bottom: 15px;">
-                <img src="{{eoi.thumbnail.url}}" class="thumbnail" alt="{{eoi.identifier}}" style="position: relative; top: 10px; width:120;"></td>
+                <img src="{{eoi.thumbnail.url | thumbnail}}" class="thumbnail" alt="{{eoi.identifier}}" style="position: relative; top: 10px; width:120;"></td>
             <td class="lw-dd">
               <h3>{{eoi.title}}</h3>
             </td>
@@ -85,7 +85,7 @@
         <tr>
           <td class="lw-dt">funding</td>
           <td  class="lw-dd" ng-if="eoi.budget">
-            <funding-bar-chart status="eoi.funding_status" total="eoi.total_cost" currency="eoi.currency" display="currency" matches="eoi.donors" width="580"></funding-bar-chart>
+            <funding-bar-chart status="eoi.funding_status" total="eoi.total_cost" currency="eoi.currency" display="currency" matches="eoi.donations" width="580"></funding-bar-chart>
           </td>
         </tr>
         <tr>
@@ -96,7 +96,7 @@
 
                     <div class="col-xs-2" ng-repeat="slide in eoi.images">
                         <a ng-click="imageModal($index)" class="thumbnail" target="_new">
-                            <img src="{{slide.url}}" alt="x">
+                            <img src="{{slide.url | thumbnail}}" alt="x">
                         </a>
                     </div>
                 </div>
@@ -163,11 +163,11 @@
         </tr>
         <tr>
             <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Secured Funding:</span> </td>
-            <td style="padding-left:20px;"><strong>{{eoi.donors | filterTotalSecured | filterCurrency:funding[0].currency:currency }}</strong></td>
+            <td style="padding-left:20px;"><strong>{{eoi.donations | filterTotalSecured | filterCurrency:funding[0].currency:currency }}</strong></td>
         </tr>
         <tr>
             <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Expected Funding:</span> </td>
-            <td style="padding-left:20px;"><strong>{{eoi.donors | filterTotalExpected | filterCurrency:funding[0].currency:currency}}</strong></td>
+            <td style="padding-left:20px;"><strong>{{eoi.donations | filterTotalExpected | filterCurrency:funding[0].currency:currency}}</strong></td>
         </tr>
 
 
@@ -183,7 +183,7 @@
             <a href="http://www.cbd.int/admin/clearcachekey.shtml?key=LWMATCHES" target="_refresh_" class="btn btn-info">refresh match cache </a>
         </div>
 
-    <div ng-show="eoi.donors.length">
+    <div ng-show="eoi.donations.length">
         <h4>Co-funding</h4>
         <table class="table table-striped" >
             <thead>
@@ -194,9 +194,10 @@
 
                 </tr>
             </thead>
-            <tr ng-repeat="f in eoi.donors ">
+            <tr ng-repeat="f in eoi.donations ">
                 <td width="60%" class="lw-proj-text">
-                    <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.id}}" target="_blank">{{f.name}}</span> </a>
+                    <img ng-src="{{f.donor.logo.url}}" style="height: 24px;"></img>
+                    <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.header.identifier}}" target="_blank">{{f.donor.name}}</span> </a>
                     <span style="font-size: 14px;" ng-bind-html="f.info"></span> 
                 </td>
                 <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.lifeweb_facilitated">{{f.funding | filterCurrency:f.currency:currency}}</span></td>
@@ -204,8 +205,8 @@
             </tr>
             <tr>
                 <td class="lw-proj-text">TOTAL</td>
-                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donors | filterTotalSecured | filterCurrency:funding[0].currency:currency}}</td>
-                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donors | filterTotalExpected | filterCurrency:funding[0].currency:currency }}</td>
+                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donations | filterTotalSecured | filterCurrency:f.currency:currency}}</td>
+                <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donations | filterTotalExpected | filterCurrency:f.currency:currency }}</td>
             </tr>
         </table>
     </div>
@@ -259,7 +260,7 @@
         <div ng-bind-html="eoi.nationalAlignment[1].comment"></div>
     </div>
     <div ng-show="eoi.nationalAlignment[2].comment != ''">
-        <h4>Alignment with {{eoi.nationalAlignment[2].type.identifier}}</h4>
+        <h4>Alignment with Other National Strategies</h4> <!-- ya, i dont know... -->
         <div ng-bind-html="eoi.nationalAlignment[2].comment"></div>
     </div>
 </section>
@@ -314,7 +315,7 @@
         </tr>
 
          <tr ng-repeat="fp in eoi.institutionalContext">
-            <td><span class="label label-info">{{fp.role.identifier}}</span></td>
+            <td><span class="label label-info">{{fp.role}}</span></td>
             <td><strong>{{fp.partner}} </strong> 
                 <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
             </td><td>
@@ -393,7 +394,7 @@
           <div ng-repeat="img in eoi.images" class="col-xs-3">
             <div class="thumbnail">
                 <a href="{{img.url}}" target="_blank">
-                    <img style="width: 200px" src="{{img.url}}" class="img-rounded" /></a>
+                    <img style="width: 200px" src="{{img.url | thumbnail}}" class="img-rounded" /></a>
                 <p class="caption">{{img.title}}</p>
                 <p ng-show="img.description">{{img.description}}</p>
             </div>
@@ -401,7 +402,7 @@
           <div ng-repeat="img in eoi.maps" class="col-xs-3">
             <div class="thumbnail">
                 <a href="{{img.url}}" target="_blank">
-                    <img style="width: 200px" src="{{img.url}}" class="img-rounded" /></a>
+                    <img style="width: 200px" src="{{img.url | thumbnail}}" class="img-rounded" /></a>
                 <p class="caption">{{img.title}}</p>
                 <p ng-show="img.description">{{img.description}}</p>
             </div>
@@ -413,6 +414,13 @@
         <h4>Protected Planet Sites</h4>
         <div ng-repeat="link in eoi.protectedAreas">
             <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="http://www.protectedplanet.net/sites/{{link.url}}" target="_blank">{{link.url}}</a><br />
+        </div>
+    </div>
+
+    <div ng-show="eoi.links.length > 0">
+        <h4>Links</h4>
+        <div ng-repeat="link in eoi.links">
+            <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="{{link.url | linkify}}" target="_blank">{{link.url}}</a><br />
         </div>
     </div>
 

@@ -1,4 +1,4 @@
-define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js', ], function(app) {
+define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/linkify.js',], function(app) {
     function ngTagsToArray(fake, real, realKey) {
         real[realKey] = [];
         for(var i=0; i!=fake.length; ++i)
@@ -343,7 +343,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         if($scope.document.financialStability)
             $scope.document.financialStability = $scope.document.financialStability.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
         if($scope.document.additionalInformation)
-            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/(<br \/>)?\n(<br \/>)?)/g, '<br />\n');
+            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
     };
 
     function setupWatches() {

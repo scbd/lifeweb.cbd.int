@@ -49,10 +49,10 @@ define(['app'], function(app) {
         for (var i = 0; i < matches.length; i++) {
 
             if (matches[i].currency == "Euros" || matches[i].currency == "EURO") {
-                total = total + (matches[i].amount * (1 / USDtoEURO));
+                total = total + (matches[i].funding * (1 / USDtoEURO));
             }
             else {
-                total = total + matches[i].amount;
+                total = total + matches[i].funding;
             }
         }
 
@@ -1098,8 +1098,8 @@ define(['app'], function(app) {
           var total = 0;
 
           for (var i = 0; i < funding.length; i++) {
-              if (!funding[i].is_not_official)
-                  total = total + funding[i].amount;
+              if (funding[i].lifeweb_facilitated)
+                  total = total + funding[i].funding;
           }
 
           return total;
@@ -1117,8 +1117,8 @@ define(['app'], function(app) {
           var total = 0;
 
           for (var i = 0; i < funding.length; i++) {
-              if (funding[i].is_not_official)
-                  total = total + funding[i].amount;
+              if (!funding[i].lifeweb_facilitated)
+                  total = total + funding[i].funding;
           }
 
           return total;

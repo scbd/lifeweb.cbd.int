@@ -18,18 +18,18 @@
       -->
       
       <div class="span9" >
-
           <section  id="info" >
              <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">
-                 <img ng-show="donor.logo" src="{{donor.logo}}" alt="{{donor.id}}" />
+                 <img ng-show="donor.logo" src="{{donor.logo.url}}" alt="{{donor.header.identifier}}" />
                  {{donor.name}}</h2>
                  <p ng-bind-html="donor.description" ></p>
-                 <p>{{donor.country}}</p>
+                 <p>{{fullCountryName(donor.country.identifier)}}</p>
+                 <a ng-href="{{donor.website.url | linkify}}" target="_blank">{{donor.website.url}}</a>
 
-              <div ng-show="donor.websites">
+              <div ng-show="donor.socialMedia">
                   <h4>Links</h4>
-                  <div ng-repeat="link in donor.websites">
-                      <i class=""></i><a href="{{link.url}}" ng-bind-html="link.name"></a>
+                  <div ng-repeat="link in donor.socialMedia[0]">
+                      <i class=""></i><a href="{{link}}">{{link}}</a> <!-- TODO: fillin social media filters...-->
                       <br />
                   </div>
               </div>

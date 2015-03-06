@@ -1,35 +1,36 @@
-<link href="/app/css/lifeweb_admin.css" rel="stylesheet">
-<fieldset ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}">
-    <legend ng-if="!isNew">Edit Donor</legend>
-    <legend ng-if="isNew">Create Donor</legend>
-    <div class="row form-group">
-        <div class="col-xs-4">
-            <input type="text" ng-change="changed()" placeholder="name" ng-model="donor.name" />
-            <input type="text" ng-change="changed()" placeholder="acronym" ng-model="donor.acronym" />
-            <afc-autocomplete ng-model="donor.country" source="countriesAC" selectbox="true" placeholder="Enter the country or countries involved" mapping="identifierMapping"></afc-autocomplete>
-            <input type="text" ng-change="changed()" placeholder="website" ng-model="donor.website.url" />
+    <link href="/app/css/lifeweb_admin.css" rel="stylesheet">
+    <button type="button" ng-click="toggleShowEdit()">[{{showHideButtonText}}]</button>
+    <div ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}" style="position: absolute; margin-left: -10px; width: 1200px; z-index: 10; border: solid 5px white;" ng-show="showEditDonor">
+        <h3 ng-if="!isNew">Edit Donor</h3>
+        <h3 ng-if="isNew">Create Donor</h3>
+        <div class="row form-group">
+            <div class="col-xs-4">
+                <input type="text" ng-change="changed()" placeholder="name" ng-model="donor.name" />
+                <input type="text" ng-change="changed()" placeholder="acronym" ng-model="donor.acronym" />
+                <afc-autocomplete ng-model="donor.country" source="countriesAC" selectbox="true" placeholder="Enter the country or countries involved" mapping="identifierMapping"></afc-autocomplete>
+                <input type="text" ng-change="changed()" placeholder="website" ng-model="donor.website.url" />
+            </div>
+            <div class="col-xs-8">
+                <textarea style="width: 100%" rows="5" ng-change="changed()" placeholder="Description of the donor" ng-model="donor.description"></textarea>
+            </div>
         </div>
-        <div class="col-xs-8">
-            <textarea style="width: 100%" rows="5" ng-change="changed()" placeholder="Description of the donor" ng-model="donor.description"></textarea>
+        <div class="row form-group">
+            <label class="col-xs-2 control-label">Logo</label>
+            <div class="col-xs-6">
+                <afc-file ng-model="donor.logo.url" max-url-length="80"></afc-file>
+            </div>
+            <div class="col-xs-4">
+                <img ng-src="{{donor.logo.url}}" style="height: 80px;"></img>
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-9">
+                <input type="text" ng-model="donor.socialMedia.facebook" class="facebook" />
+                <input type="text" ng-model="donor.socialMedia.twitter" class="twitter" />
+                <input type="text" ng-model="donor.socialMedia.linkedin" class="linkedin" />
+            </div>
+            <div class="col-xs-3">
+                <button type="button" ng-click="saveDonor()" ng-enabled="isDirty || isNew">{{saveButtonText}}</button>
+            </div>
         </div>
     </div>
-    <div class="row form-group">
-        <label class="col-xs-2 control-label">Logo</label>
-        <div class="col-xs-6">
-            <afc-file ng-model="donor.logo.url" max-url-length="80"></afc-file>
-        </div>
-        <div class="col-xs-4">
-            <img ng-src="{{donor.logo.url}}" style="height: 80px;"></img>
-        </div>
-    </div>
-    <div class="row form-group">
-        <div class="col-xs-9">
-            <input type="text" ng-model="donor.socialMedia.facebook" class="facebook" />
-            <input type="text" ng-model="donor.socialMedia.twitter" class="twitter" />
-            <input type="text" ng-model="donor.socialMedia.linkedin" class="linkedin" />
-        </div>
-        <div class="col-xs-3">
-            <button type="button" ng-click="saveDonor()" ng-enabled="isDirty || isNew">{{saveButtonText}}</button>
-        </div>
-    </div>
-</fieldset>

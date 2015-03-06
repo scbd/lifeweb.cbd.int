@@ -20,7 +20,7 @@
             <auto-complete ng-if="autocomplete" source="autocomplete($query)" windowsScrollbarCompatible="true"></auto-complete>
           </tags-input>
         </td>
-        <td><a ng-href="{{item.url | linkify}}" target="_blank" title="Download {{typeTitle}}"><img ng-src="{{item.url}}" style="height: 40px;" ng-show="imgPreview"></img><span ng-show="!imgPreview">{{item.url}}</span></a><button ng-click="ngModel.splice($index, 1)">X</button></td>
+        <td><a ng-href="{{item.url | linkify}}" target="_blank" title="Download {{typeTitle}}"><img ng-src="{{item.url | thumbnail}}" style="height: 40px;" ng-show="imgPreview"></img><span ng-show="!imgPreview">{{item.url}}</span></a><button ng-click="ngModel.splice($index, 1)">X</button></td>
       </tr>
       <tr><td colspan="4" style="border-top: 1px solid gray;">Add a new {{typeTitle}} using the form below</td></tr>
       <tr>

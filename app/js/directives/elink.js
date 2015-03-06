@@ -1,4 +1,4 @@
-define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js', '/app/js/services/filters/linkify.js',], function(app) {
+define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js', '/app/js/services/filters/linkify.js', '/app/js/services/filters/thumbnail.js',], function(app) {
     app.directive('elink', function() {
         return {
             restrict: 'EAC',

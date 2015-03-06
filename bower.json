@@ -13,7 +13,7 @@
     "jquery": "~2.0.3",
     "ng-breadcrumbs": "~0.0.3",
     "angular-ui-utils": "latest",
-    "angular_form_controls": "0.3.38",
+    "angular_form_controls": "0.3.40",
     "ng-file-upload": "~2.0.5",
     "jquery.stellar": "latest",
     "ngkookies": "~0.1.1"

@@ -1,6 +1,6 @@
-define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility',], function(app, map) {
+define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility', '/app/js/services/filters/linkify.js', '/app/js/services/filters/thumbnail.js',], function(app, map) {
 //TODO: rename this shittily named controller
-  app.controller('EOIDetailCtrl', function ($scope, $http, $modal, editFormUtility, $anchorScroll, location) {
+  app.controller('EOIDetailCtrl', function ($scope, $http, $q, $modal, editFormUtility, $anchorScroll, location) {
         
         $scope.currency = "EURO";
 
@@ -34,6 +34,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             return data; //good practice. always return from a promise, the same data.
         });
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
+        //TODO: should be a filter!
         $scope.fullCountryName = function(shortCountryName) {
             console.log('country short: ', shortCountryName);
             for(var i=0; i!=$scope.countries.length; ++i)
@@ -71,6 +72,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             console.log('the data: ', data);
               $scope.eoi = data;
 
+                fillInDonorData();
                 getFocalPoints();
 
               //fix protected planet links if necessary
@@ -86,8 +88,8 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
               $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
                .success(function (data) {
                   $scope.geolocation = {
-                    lat: data[0].lat,
-                    lon: data[0].lon,
+                    lat: $scope.eoi.coordinates.lat,
+                    lon: $scope.eoi.coordinates.lng,
                   };
                   $scope.bounds = [
                     [data[0].boundingbox[0], data[0].boundingbox[2]],
@@ -96,7 +98,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
                   var setview = function() {
                     if ($scope.geolocation)
-                      map.map.fitBounds($scope.bounds, {reset: true});
+                      map.map.setView($scope.geolocation, 10);
                   }
                   if(map.map)
                     setview();
@@ -197,6 +199,22 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
                });
                */
+    }
+
+    function fillInDonorData() {
+        $scope.donors = {};
+        for(var i=0; i!=$scope.eoi.donations.length; ++i) {
+            var dID = $scope.eoi.donations[i].donor.identifier;
+            var promise = $scope.donors[dID];
+            if(!$scope.donors[dID])
+                promise = editFormUtility.load(dID).then(function(donor) {
+                    return $scope.donors[dID] = donor;
+                });
+            $q.when(promise).then(function(donor) {
+                console.log('the donor i found was: ', donor);
+                this.donor = donor;
+            }.bind($scope.eoi.donations[i]));
+        }
     }
 
     function getFocalPoints() {
