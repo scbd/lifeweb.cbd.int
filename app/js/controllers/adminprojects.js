@@ -9,7 +9,7 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
             $scope.draftProjects = response.data.Items;
           });
         //IStorage.documents.query(query, draftParams)
-        $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my')
+        $http.get('/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my')
             .then(function(response) {
                 console.log('published projects: ', response.data.Items);
                 $scope.publishedProjects = response.data.Items;

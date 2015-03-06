@@ -10,7 +10,7 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
           });
 
         //IStorage.documents.query(query, draftParams)
-        $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my')
+        $http.get('/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my')
             .then(function(response) {
                 console.log('published campaigns: ', response.data.Items);
                 $scope.publishedCampaigns = response.data.Items;
