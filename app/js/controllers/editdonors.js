@@ -9,7 +9,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/e
         });
     };
 
-    $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my')
+    $http.get('/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my')
         .then(function(response) {
             console.log('published donors: ', response.data.Items);
             $scope.donors = response.data.Items;

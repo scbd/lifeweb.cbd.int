@@ -22,7 +22,6 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     var schemaName = keySchemaMap[singularKey]; //TODO: still needed?
     $scope.document = {};
     if($routeParams.title) {
-      //$http.get('http://localhost:1818/api/'+schemaName, {name: $routeParams.name})
       $scope.documentPromise = editFormUtility.load($routeParams.title);
       editFormUtility.documentExists($routeParams.title).then(function(exists) {
         if(exists)
@@ -54,7 +53,6 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     //$scope.editProjectForm.addActivity.$setValidity("size", $scope.budget.length >= 1);
 
     //TODO: is this used anywhere anymore?
-    $scope.file_server = 'http://localhost:2020';
     $scope.$on("documentInvalid", function(){
       $scope.tab = "review";
     });
@@ -95,7 +93,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     };
 
     $scope.projectsAC = function() {
-        return $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
+        return $http.get('/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
             console.log('prpojects AC data: ', data.data.Items);
             var projects = data.data.Items;
             for(var i = 0; i != projects.length; ++i)
@@ -106,7 +104,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     };
 
     $scope.campaignsAC = function() {
-        return $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
+        return $http.get('/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
             console.log('campaigns AC data: ', data.data.Items);
             var campaigns = data.data.Items;
             for(var i = 0; i != campaigns.length; ++i)
@@ -145,7 +143,6 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     $scope.save = function(localSchemaName) {
       //authentication.js and services (guid is in services)
       //schema and realm
-      //$http.post('http://localhost:1818/api/'+schemaName, $scope[singularKey])
       editFormUtility.saveDraft($scope.document).then(function(result) {
         editFormUtility.load(result.identifier, localSchemaName).then(function(response) {
             console.log('Response: ', response);
