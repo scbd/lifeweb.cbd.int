@@ -1,10 +1,9 @@
-define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js', ], function(app) {
+define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/linkify.js',], function(app) {
     function ngTagsToArray(fake, real, realKey) {
         real[realKey] = [];
         for(var i=0; i!=fake.length; ++i)
             real[realKey].push(fake[i].text);
     }
-
   app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location, guid) {
     $controller('EditCtrl', {$scope: $scope});
 
@@ -22,7 +21,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         if(!$scope['show_' + donorKey])
             return;
 
-        $scope.donorsAC().then(function(data) {
+        $scope.donationsAC().then(function(data) {
             var donor;
             if(name)
                 for(var i=0; i!=data.length; ++i)
@@ -45,79 +44,13 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         });
     };
 
-    var donorDeferred;
-    var donorPromise = function() {
-        var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
-        var guids = [guid(), guid(), guid()];
-        var schemaName = 'lwDonor';
-        deferred.resolve([
-            {
-                header: {
-                  identifier: guids[0], 
-                  languages: ['en'],
-                  schema: schemaName,
-                },
-                name: 'Association of Zoos and Aquariums',
-                acronym: 'AZA',
-                country: {
-                    identifier: 'us',
-                },
-                description: 'Leaders in the protection of endangered species',
-                logo: { url: 'https://www.aza.org/images/logo.gif', },
-                website: { url: 'www.aza.org', },
-                socialMedia: {
-                    twitter: 'zoos_aquariums',
-                    facebook: 'AssociationOfZoosAndAquariums',
-                },
-            },
-            {
-                header: {
-                  identifier: guids[1], 
-                  languages: ['en'],
-                  schema: schemaName,
-                },
-                name: 'Association of Animal Protections [fake]',
-                acronym: 'AZAF',
-                country: {
-                    identifier: 'us',
-                },
-                description: 'Leaders in the fake protection of common species',
-                logo: { url: 'https://www.aza.org/images/logof.gif', },
-                website: { url: 'www.azaf.org', },
-                socialMedia: {
-                    twitter: 'zoosaquariums',
-                    facebook: 'AsociationOfZoosAndAquariums',
-                },
-            },
-            {
-                header: {
-                  identifier: guids[2], 
-                  languages: ['en'],
-                  schema: schemaName,
-                },
-                name: 'IUCN Save Our Species',
-                acronym: 'IUCN SOS',
-                country: {
-                    identifier: 'ch',
-                },
-                description: 'Saving endangered species',
-                logo: { url: 'http://cmsdata.iucn.org/img/sos_logo_new.png', },
-                website: { url: 'http://sospecies.org/', },
-                socialMedia: {
-                    twitter: 'iucnsos',
-                    facebook: 'iucn_sos',
-                },
-            },
-        ]);
-        return deferred.promise;
-    };
+    $scope.donationsAC = function() {
+        return donorPromise.then(function(donors) {
+        console.log('ac donors: ', donors);
+            for(var i=0; i!=donors.length; ++i)
+                donors[i].__value = donors[i].name;
 
-    $scope.donorsAC = function() {
-        return donorPromise().then(function(data) {
-            for(var i=0; i!=data.length; ++i)
-                data[i].__value = data[i].name;
-
-            return data;
+            return donors;
         });
     };
 
@@ -357,7 +290,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.document.institutionalContext = [];
     $scope.document.budget = [];
     $scope.document.images = []
-    $scope.document.maps = [];
+    //$scope.document.maps = [];
     $scope.document.attachments = [];
     //$scope.document.donors = [];
     $scope.fakeNewAttachmentKeywords = [];
@@ -370,9 +303,11 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $scope.document.institutionalContext = $scope.document.institutionalContext || [];
       $scope.document.budget = $scope.document.budget || [];
       $scope.document.images = $scope.document.images || []
-      $scope.document.maps = $scope.document.maps || [];
+      //$scope.document.maps = $scope.document.maps || [];
+      if($scope.document.maps && $scope.document.maps.length == 0)
+        $scope.document.maps = null;  //fucking terrible cbd api...
       $scope.document.attachments = $scope.document.attachments || [];
-      //$scope.document.donors = $scope.document.donors || [];
+      //$scope.document.donations = $scope.document.donations || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
       if($scope.document.aichiTargets)
         (function(aichiTargets) {
@@ -397,6 +332,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 delete partner.name;
             }
         };
+        if($scope.document.donors)
+            delete $scope.document.donors;
 
         //replace all newlines without <br /> preceeding them.
         if($scope.document.projectAbstract)
@@ -406,7 +343,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         if($scope.document.financialStability)
             $scope.document.financialStability = $scope.document.financialStability.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
         if($scope.document.additionalInformation)
-            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/(<br \/>)?\n(<br \/>)?)/g, '<br />\n');
+            $scope.document.additionalInformation = $scope.document.additionalInformation.replace(/(<br \/>)?\n(<br \/>)?/g, '<br />\n');
     };
 
     function setupWatches() {
@@ -436,10 +373,11 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         }, true);
 
         //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
-        $scope.$watch('document.donors', function() {
-            if($scope.document.donors && $scope.document.donors.length == 0)
-                $scope.document.donors = undefined;
+        $scope.$watch('document.donations', function() {
+            if($scope.document.donations && $scope.document.donations.length == 0)
+                $scope.document.donations = undefined;
         });
+
         $scope.$watch('document.maps', function() {
             if($scope.document.maps && $scope.document.maps.length == 0)
                 $scope.document.maps = undefined;
@@ -454,96 +392,47 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       return sum;
     };
 
-    $scope.donorButtonText = 'New Donor';
+    var donorPromise = $.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
+        var items = data.Items;
+        var newItems = [];
+        for(var i=0; i!=items.length; ++i)
+            newItems.push(items[i].body);
+
+        return newItems;
+    });
+    $scope.donorButtonText = 'Create New Donor';
     $scope.newdonor = {};
     $scope.$watch('newdonor.name', function() {
-        donorPromise().then(function(donors) {
+        donorPromise.then(function(donors) {
             for(var i=0;i!=donors.length; ++i)
                 if(donors[i].name == $scope.newdonor.name) {
-                    $scope.donorButtonText = 'Edit Donor'; break;
+                    $scope.donorButtonText = 'Edit This Donor'; break;
                 } else
-                    $scope.donorButtonText = 'New Donor';
+                    $scope.donorButtonText = 'Create New Donor';
         });
     });
   });
 
   app.controller('documentDonorCtrl', function($scope, $q, guid) {
     $scope.donorButtonText = 'New Donor';
-    $scope.$watch('donor', function() {
-        donorPromise().then(function(donors) {
+    $scope.$watch('donation', function() {
+        donorPromise.then(function(donors) {
             for(var i=0;i!=donors.length; ++i)
-                if(donors[i].name == $scope.donor.name) {
-                    $scope.donorButtonText = 'Edit Donor'; break;
+                if(donors[i].name == $scope.donation.donor) {
+                    $scope.donorButtonText = 'Edit This Donor'; break;
                 } else
-                    $scope.donorButtonText = 'New Donor';
+                    $scope.donorButtonText = 'Create New Donor';
         });
     });
 
-    //TODO: this is duplicated in the other controller in this file.
-    var donorPromise = function() {
-        var deferred = $q.defer(); //TODO: the source of autocomplete, should be accessed through "when" so I can also pass it just data.
-        var guids = [guid(), guid(), guid()];
-        var schemaName = 'lwDonor';
-        deferred.resolve([
-            {
-                header: {
-                  identifier: guids[0], 
-                  languages: ['en'],
-                  schema: schemaName,
-                },
-                name: 'Association of Zoos and Aquariums',
-                acronym: 'AZA',
-                country: {
-                    identifier: 'us',
-                },
-                description: 'Leaders in the protection of endangered species',
-                logo: { url: 'https://www.aza.org/images/logo.gif', },
-                website: { url: 'www.aza.org', },
-                socialMedia: {
-                    twitter: 'zoos_aquariums',
-                    facebook: 'AssociationOfZoosAndAquariums',
-                },
-            },
-            {
-                header: {
-                  identifier: guids[1], 
-                  languages: ['en'],
-                  schema: schemaName,
-                },
-                name: 'Association of Animal Protections [fake]',
-                acronym: 'AZAF',
-                country: {
-                    identifier: 'us',
-                },
-                description: 'Leaders in the fake protection of common species',
-                logo: { url: 'https://www.aza.org/images/logof.gif', },
-                website: { url: 'www.azaf.org', },
-                socialMedia: {
-                    twitter: 'zoosaquariums',
-                    facebook: 'AsociationOfZoosAndAquariums',
-                },
-            },
-            {
-                header: {
-                  identifier: guids[2], 
-                  languages: ['en'],
-                  schema: schemaName,
-                },
-                name: 'IUCN Save Our Species',
-                acronym: 'IUCN SOS',
-                country: {
-                    identifier: 'ch',
-                },
-                description: 'Saving endangered species',
-                logo: { url: 'http://cmsdata.iucn.org/img/sos_logo_new.png', },
-                website: { url: 'http://sospecies.org/', },
-                socialMedia: {
-                    twitter: 'iucnsos',
-                    facebook: 'iucn_sos',
-                },
-            },
-        ]);
-        return deferred.promise;
-    };
+    //TODO: duplicated above in other controller...
+    var donorPromise = $.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
+        var items = data.Items;
+        var newItems = [];
+        for(var i=0; i!=items.length; ++i)
+            newItems.push(items[i].body);
+
+        return newItems;
+    });
   });
 });

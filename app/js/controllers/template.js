@@ -73,6 +73,7 @@ define(['app', 'authentication', 'controllers/header', '/app/js/directives/signi
 
             if(message.type=='authenticationToken') {
                 if(message.authenticationToken && !$cookies.authenticationToken) {
+                console.error('impossible to get here...');
                     $cookies.authenticationToken = message.authenticationToken;
                     $window.location.reload();
                 }

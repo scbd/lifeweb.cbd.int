@@ -1,9 +1,6 @@
 define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/workflow-std-buttons.html.js', '/app/js/directives/guid.js',], function(app) {
   app.controller('EditCtrl', function($scope, $rootScope, $routeParams, $http, $upload, $q, $route, breadcrumbs, IStorage, guid, editFormUtility) {
 
-    IStorage.drafts.query('(type eq \'lwDonor\')', {cahce: false}).then(function(result) {
-        console.log('donors: ', result);
-    });
     //TODO: get the cb for lwDonor
     //$http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
     //    console.log('donor docs: ', data);
@@ -14,6 +11,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     var keySchemaMap = {
       'project': 'lwProject',
       'event': 'lwEvent',
+      'campaign': 'lwCampaign',
       //'organization': 'lwOrganization', //TODO: it apaprently already exists?
     };
     $scope.breadcrumbs = breadcrumbs;
@@ -96,8 +94,33 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         });
     };
 
+    $scope.projectsAC = function() {
+        return $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwProject%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
+            console.log('prpojects AC data: ', data.data.Items);
+            var projects = data.data.Items;
+            for(var i = 0; i != projects.length; ++i)
+                projects[i].__value = projects[i].title.en;
+
+            return projects;
+        });
+    };
+
+    $scope.campaignsAC = function() {
+        return $http.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my', { cache: true }).then(function(data) {
+            console.log('campaigns AC data: ', data.data.Items);
+            var campaigns = data.data.Items;
+            for(var i = 0; i != campaigns.length; ++i)
+                campaigns[i].__value = campaigns[i].title.en;
+
+            return campaigns;
+        });
+    };
+
     $scope.identifierMapping = function(item) {
         return {identifier: item.identifier};
+    };
+    $scope.identifierHeaderMapping = function(item) {
+        return {identifier: item.header.identifier};
     };
 
     function validate() {
@@ -124,7 +147,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
       //schema and realm
       //$http.post('http://localhost:1818/api/'+schemaName, $scope[singularKey])
       editFormUtility.saveDraft($scope.document).then(function(result) {
-        editFormUtility.load(id, localSchemaName).then(function(response) {
+        editFormUtility.load(result.identifier, localSchemaName).then(function(response) {
             console.log('Response: ', response);
         });
       });

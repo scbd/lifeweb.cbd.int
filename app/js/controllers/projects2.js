@@ -7,6 +7,7 @@ define(['app', 'authentication', '/app/js/services/filters2.js', 'URI',], functi
       if (!sID) {
 
           $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
+                console.log('projects: ', data);
               $scope.projects = data;
           });
       }

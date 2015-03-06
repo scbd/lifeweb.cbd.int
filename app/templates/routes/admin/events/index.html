@@ -1,0 +1,53 @@
+<div class="container" ng-controller="AdminEventsCtrl" style="margin-top: 100px">
+  <fieldset>
+    <legend>
+        Events
+        <a ng-href="/admin/event/create" target="_blank"><button type="button">Create Event</button></a>
+    </legend>
+      Event Filter: <input ng-model="eventFilter" />
+    <h3 style="color: #EEDD44;">Draft Events</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="event in draftEvents | filter:eventFilter | orderBy:'-updatedOn'">
+                <td><img ng-src="{{event.body.logo.url | thumbnail}}" style="height: 40px;"></img></td>
+                <td>{{event.body.description}}</td>
+                <td>
+                  <a ng-href="/event2?id={{event.identifier}}" target="_blank"><button type="button">View</button></a>
+                  <a ng-href="/admin/events/edit/{{event.identifier}}" target="_blank"><button type="button">Edit</button></a>
+                  <button type="button" ng-click="deleteEvent(event, draftEvents, 'drafts')">X</button>
+                </td>
+            </tr>
+            
+        </tbody>
+    </table>
+    <h3 style="color: #8888FF;">Published Events</h3>
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th></th>
+                <th>Description</th>
+                <th>Links</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- TODO: remove duplicated code between different forms of events -->
+            <tr ng-repeat="event in publishedEvents | filter:eventFilter | orderBy:'-updatedOn'">
+                <td><img ng-src="{{event.body.logo.url | thumbnail}}" style="height: 40px;"></img></td>
+                <td>{{event.body.description}}</td>
+                <td>
+                  <a ng-href="{{event.body.homepage.url | linkify}}" target="_blank">{{event.body.homepage.url}}</a>
+                  <a ng-href="/admin/events/edit/{{event.identifier}}" target="_blank"><button type="button">Edit</button></a>
+                  <button type="button" ng-click="deleteEvent(event, publishedEvents, 'documents')">X</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  </fieldset>
+</div>

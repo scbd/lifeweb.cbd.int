@@ -7,10 +7,23 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                 donor: '=',
                 isCreate: '@',
             },
-            controller: function($scope, $http, editFormUtility, IStorage) {
-            console.log('isCreate: ', $scope.isCreate);
+            controller: function($scope, $http, editFormUtility, IStorage, $element) {
                 if(!$scope.donor)
                     $scope.donor = {};
+
+                $scope.donorButtonText = 'Create Donor'
+                $scope.showHideButtonText = 'Create Donor'
+
+                $scope.showEditDonor = false;
+
+                $scope.toggleShowEdit = function() {
+                    $scope.showEditDonor = !$scope.showEditDonor;
+                    if($scope.showEditDonor)
+                        $scope.showHideButtonText = 'Close Donor';
+                    else
+                        $scope.showHideButtonText = $scope.donorButtonText;
+                        
+                }
 
                 //TODO: remove and use the guid module
                 function S4() {
@@ -20,6 +33,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                 $scope.$watch('donor', function() {
                     if($scope.donor.header && $scope.donor.header.identifier) {
                         $scope.saveButtonText = 'Update Donor';
+                        $scope.donorButtonText = 'Update Donor ' + $scope.donor.name;
                         $scope.isNew = false;
                         $scope.donor.socialMedia = $scope.donor.socialMedia[0];
                         $scope.origDonor = {};
@@ -28,6 +42,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                         console.log('existing donor spawned: ', $scope.donor.identifier);
                     } else {
                         $scope.saveButtonText = 'Create Donor';
+                        $scope.donorButtonText = 'Create Donor';
                         $scope.isNew = true;
                         var guid = (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
                         //$scope.donor.identifier = guid;

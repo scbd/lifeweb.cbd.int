@@ -133,7 +133,15 @@ define(['app', 'authentication'], function(app) {
         title : 'Zero Extinction',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/projects.js', '/app/js/directives/funding-bar-chart.js']),
+          dependencies: resolveJS(['/app/js/controllers/projects2.js', '/app/js/directives/funding-bar-chart2.js', 'stellar']),
+        },
+      })
+      .when('/campaigns/islandresilience', {
+        templateUrl: '/app/templates/routes/campaigns/islandresilience.html',
+        title : 'Island Resilience',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/projects.js', '/app/js/directives/funding-bar-chart.js', 'stellar']),
         },
       })
       .when('/share', {
@@ -202,6 +210,56 @@ define(['app', 'authentication'], function(app) {
             dependencies: resolveJS(['/app/js/controllers/editdonors.js']),
         },
         label: 'Edit Donors',
+      })
+      .when('/admin/projects', {
+        templateUrl: '/app/templates/routes/admin/projects/index.html',
+        title: 'Admin Projects',
+        collectionKey: 'projects',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/adminprojects.js']),
+        },
+        label: 'Admin Projects',
+      })
+      .when('/admin/events', {
+        templateUrl: '/app/templates/routes/admin/events/index.html',
+        title: 'Admin Events',
+        collectionKey: 'events',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/adminevents.js']),
+        },
+        label: 'Edit Donors',
+      })
+      .when('/admin/campaigns', {
+        templateUrl: '/app/templates/routes/admin/campaigns/index.html',
+        title: 'Admin Campaigns',
+        collectionKey: 'campaigns',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/admincampaigns.js']),
+        },
+        label: 'Edit Campaigns',
+      })
+      .when('/admin/campaigns/create', {
+        templateUrl: '/app/templates/routes/admin/campaigns/edit.html',
+        title: 'Create Campaign',
+        collectionKey: 'campaigns',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/editcampaigns.js']),
+        },
+        label: 'Create Campaign',
+      })
+      .when('/admin/campaigns/edit/:title', {
+        templateUrl: '/app/templates/routes/admin/campaigns/edit.html',
+        title: 'Edit Campaign',
+        collectionKey: 'campaigns',
+        resolve: {
+            user: resolveUser(allowedPrivs),
+            dependencies: resolveJS(['/app/js/controllers/editcampaigns.js']),
+        },
+        label: 'Edit Campaign',
       })
       .when('/admin/organizations/create', {
         templateUrl: '/app/templates/routes/admin/organizations/edit.html',
@@ -289,7 +347,7 @@ define(['app', 'authentication'], function(app) {
       //
       //==================================================
       function resolveUser(requiredPrivilages) { 
-        return function($rootScope, authentication, $location, $cookies, $window) {
+        return function($rootScope, authentication, $location, $kookies, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
             console.log('user: ', user);
@@ -301,7 +359,7 @@ define(['app', 'authentication'], function(app) {
 
                 console.log('not allowed? ', notAllowed);
               if(notAllowed) {
-                $cookies['loginRedirect'] = $location.path();
+                $kookies.set('loginRedirect', $location.path());
                 $location.url('/login');
               }
             }

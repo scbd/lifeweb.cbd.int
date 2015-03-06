@@ -1,4 +1,4 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility',], function(app) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility', '/app/js/services/filters/thumbnail.js',], function(app) {
   app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility) {
       var query = '(type eq \'lwProject\')';
       //IStorage.documents.query(query).then(function(data) {

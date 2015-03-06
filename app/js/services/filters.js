@@ -998,7 +998,7 @@ define(['app'], function(app) {
               if (targets[i].name == target)
                   return targets[i];
 
-          return result;
+          return false;
       }
   });
 

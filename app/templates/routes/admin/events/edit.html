@@ -16,46 +16,62 @@
   <ng-include src="'/app/partials/admin_header.html'"></ng-include>
   <h1>Event</h1>
   <div workflow-std-buttons document="document"></div>
-  <form role="form" ng-submit="save('lwEvent')" class="form-horizontal">
-    <fieldset>
-        <legend>Basic Information</legend>
-        <afc-text title="Description" ng-model="document.description"></afc-text>
-        <afc-input type="date" ng-model="document.startDate" title="Start Date" placeholder="Date document begins"></afc-input>
-        <afc-input type="date" ng-model="document.endDate" title="End Date" placeholder="Date document finishes"></afc-input>
-        <afc-input type="string" ng-model="document.type" title="Event Type" placeholder="Select a type..."></afc-input>
-        <div class="row form-group">
-          <label class="col-xs-2 control-label">Cover Image</label>
-          <div class="col-xs-6">
-              <afc-file ng-model="document.coverImage.url" max-url-length="60"></afc-file>
-          </div>
-          <div class="col-xs-4">
-            <img ng-show="document.coverImage.url" src="{{document.coverImage.url}}" style="height: 100px;" />
-          </div>
+  <div class="row" ng-show="tab=='edit'" km-tab="edit">
+      <form role="form" name="editForm" ng-submit="save('lwEvent')" class="form-horizontal">
+        <fieldset>
+            <legend>Basic Information</legend>
+            <afc-text title="Description" ng-model="document.description"></afc-text>
+            <afc-input type="date" name="startDate" ng-model="document.startDate" title="Start Date" placeholder="Date document begins"></afc-input>
+            <afc-input type="date" name="endDate" ng-model="document.endDate" title="End Date" placeholder="Date document finishes"></afc-input>
+            <afc-input type="string" name="type" ng-model="document.type" title="Event Type" placeholder="Select a type..."></afc-input>
+            <div class="row form-group">
+              <label class="col-xs-2 control-label" for="coverImage">Cover Image</label>
+              <div class="col-xs-6">
+                  <afc-file ng-model="document.coverImage.url" max-url-length="60"></afc-file>
+              </div>
+              <div class="col-xs-4">
+                <img ng-show="document.coverImage.url" src="{{document.coverImage.url}}" style="height: 100px;" />
+              </div>
+            </div>
+        </fieldset>
+        <!--A directive should be created for location. country, address, and lon lat-->
+        <!--Fancy: if they fill in the address we use a service to get lon lat, if they use lon lat, we use a service to find the closest address-->
+        <fieldset>
+          <legend>Location</legend>
+          <label hidden for="location">Location</label>
+          <afc-autocomplete ng-model="document.location.country" source="countriesAC" selectbox="true" mapping="identifierMapping" placeholder="Country..."></afc-autocomplete>
+          <afc-textarea title="Address" ng-model="document.location.address" placeholder="Enter the full address of the event..."></afc-textarea>
+          <lonlat-input ng-model="document.location.coordinates" help="Longitude and Latitude of event location." map-reference="locationMap"></longlat-input>
+        </fieldset>
+        <h3>Documents For Event</h3>
+        <h4>Please add all the events documents, including schedules</h4>
+        <label hidden for="documents">Documents</label>
+        <elink ng-model="document.documents" type-title="Document"></elink>
+        <h3>Images</h3>
+        <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
+        <label hidden for="images">Images</label>
+        <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
+        
+        <h4>organizations</h4>
+        <div>
+            <label for="organizations">Organizations</label>
+            <afc-autocomplete ng-model="document.organizations" source="allRegionsAC" selectbox="true" placeholder="Enter the organizations involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
         </div>
-    </fieldset>
-    <!--A directive should be created for location. country, address, and lon lat-->
-    <!--Fancy: if they fill in the address we use a service to get lon lat, if they use lon lat, we use a service to find the closest address-->
-    <fieldset>
-      <legend>Location</legend>
-      <afc-autocomplete ng-model="document.location.country" source="countriesAC" selectbox="true" mapping="identifierMapping" placeholder="Country..."></afc-autocomplete>
-      <afc-textarea title="Address" ng-model="document.location.address" placeholder="Enter the full address of the event..."></afc-textarea>
-      <lonlat-input ng-model="document.location.coordinates" help="Longitude and Latitude of event location." map-reference="locationMap"></longlat-input>
-    </fieldset>
-    <h3>Documents For Event</h3>
-    <h4>Please add all the events documents, including schedules</h4>
-    <elink ng-model="document.documents" type-title="Document"></elink>
-    <h3>Images</h3>
-    <h4>Please send <strong>high quality</strong> images and any additional media (videos, brochures, etc.) of the project. At least one image is required.</h4>
-    <elink ng-model="document.images" type-title="Image" img-preview="true"></elink>
-    
-    <h4>organizations km-references...</h4>
-    <h3>add it once i know where to get them</h3>
-    
-    <h4>Event's Project</h4>
-    <div km-reference ng-model="project" loader="loadRecords(identifier, 'lwProjects')"></div>
+        
+        <h4>Event's Project</h4>
+        <div>
+            <label for="Project">Project</label>
+            <afc-autocomplete ng-model="document.project" source="projectsAC" selectbox="true" placeholder="Enter the project this event is for" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
+        </div>
 
-    <div class="form-group">
-      <button type="submit" class="form-control">Save</button>
+        <div class="form-group">
+          <button type="submit" class="form-control">Save</button>
+        </div>
+      </form>
     </div>
-  </form>
+    <div class="row" ng-show="tab=='review'" km-tab="review">
+        <div class="col-xs-12">
+            <div km-document-validation ng-model="validationReport"></div>
+        </div>
+    </div>
 </div>

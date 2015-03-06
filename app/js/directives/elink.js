@@ -1,4 +1,4 @@
-define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], function(app) {
+define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js', '/app/js/services/filters/linkify.js', '/app/js/services/filters/thumbnail.js',], function(app) {
     app.directive('elink', function() {
         return {
             restrict: 'EAC',
@@ -8,6 +8,7 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
                 typeTitle: '@',
                 imgPreview: '@?',
                 autocomplete: '=?',
+                notFile: '@?',
             },
             controller: function($scope, IStorage, $rootScope) {
                 $scope.url = '';
@@ -47,5 +48,5 @@ define(['app', 'angular-form-controls', '/app/js/directives/afc-file.js',], func
                 });
             },
         };
-    });
+    })
 });

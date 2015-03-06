@@ -1,11 +1,11 @@
 define(['app', 'authentication',], function(app) {
-    app.controller('SigninCtrl', function ($scope, $http, $window, $cookies, $location, authentication) {
+    app.controller('SigninCtrl', function ($scope, $http, $window, $kookies, $location, authentication) {
       $scope.email = null;
       $scope.password = null;
 
       $scope.doSignIn = function() {
         if($scope.email)
-            $cookies['email'] = $scope.email;
+            $kookies.set('email', $scope.email);
         var credentials = { 'email': $scope.email, 'password': $scope.password };
 
         $scope.errorInvalid = false;

@@ -23,9 +23,9 @@ budget<td class="total" style="vertical-align: middle; padding-left: 10px; borde
         </table>
 
         <div ng-repeat="match in matches" style="white-space: nowrap;">
-            <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.funding |  filterCurrency:match.currency:display}}</span> {{match.name}}
+            <span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.funding |  filterCurrency:match.currency:display}}</span> {{match.donor.name}}
         </div>
-        <hr style="padding:0; margin:0; width:300px;border-top:1px solid #808080;" />
+        <hr style="padding:0; margin:0; width:100%;border-top:1px solid #808080;" />
         <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'USD':display }} </span> &nbsp; funding needed
 
     </div>
