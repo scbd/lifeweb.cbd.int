@@ -28,8 +28,9 @@
 
               <div ng-show="donor.socialMedia">
                   <h4>Links</h4>
-                  <div ng-repeat="link in donor.socialMedia[0]">
-                      <i class=""></i><a href="{{link}}">{{link}}</a> <!-- TODO: fillin social media filters...-->
+                  <div ng-repeat="(type, link) in donor.socialMedia[0]">
+                      <!--<a href="{{link}}"><img ng-src="{{type | socialmediaicon}}" style="height: 24px;"></img>{{link}}</a> --><!-- TODO: fillin social media filters...-->
+                      <a href="{{link}}" class="{{type}}">{{link}}</a> <!-- TODO: fillin social media filters...-->
                       <br />
                   </div>
               </div>

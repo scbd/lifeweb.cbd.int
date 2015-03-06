@@ -16,6 +16,8 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
 
                 $scope.showEditDonor = false;
 
+                $scope.socialMediaTypes = ['facebook', 'linkedin', 'twitter',];
+
                 $scope.toggleShowEdit = function() {
                     $scope.showEditDonor = !$scope.showEditDonor;
                     if($scope.showEditDonor)
