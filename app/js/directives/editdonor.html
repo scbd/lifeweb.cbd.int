@@ -1,6 +1,6 @@
     <link href="/app/css/lifeweb_admin.css" rel="stylesheet">
-    <button type="button" ng-click="toggleShowEdit()">[{{showHideButtonText}}]</button>
-    <div ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}" style="position: absolute; margin-left: -10px; width: 1200px; z-index: 10; border: solid 5px white;" ng-show="showEditDonor">
+    <button type="button" ng-show="!alwaysEditing" ng-click="toggleShowEdit()">[{{showHideButtonText}}]</button>
+    <div ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}" style="position: absolute; margin-left: -10px; width: 1200px; z-index: 10; border: solid 5px white;" ng-show="showEditDonor || alwaysEditing">
         <h3 ng-if="!isNew">Edit Donor</h3>
         <h3 ng-if="isNew">Create Donor</h3>
         <div class="row form-group">
@@ -24,11 +24,22 @@
             </div>
         </div>
         <div class="row form-group">
-            <div class="col-xs-9">
+            <div class="col-xs-12">
                 <input type="text" ng-repeat="type in socialMediaTypes" ng-model="donor.socialMedia[type]" class="{{type}}" />
+            </div>
+        </div>
+        <div class="row form-group">
+            <div class="col-xs-9">
+                <a ng-click="showProjects=!showProjects">Has Donated to {{matches.length}} Projects</a>
             </div>
             <div class="col-xs-3">
                 <button type="button" ng-click="saveDonor()" ng-enabled="isDirty || isNew">{{saveButtonText}}</button>
+            </div>
+        </div>
+        <div class="row form-group" ng-show="showProjects">
+            <div class="col-xs-12">
+                <h5>Projects Donor has made donations to:</h5>
+                <projecttable projects="matches"></projecttable>
             </div>
         </div>
     </div>

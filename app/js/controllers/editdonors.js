@@ -1,4 +1,4 @@
-define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/editdonor.js'], function(app) {
+define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/editdonor.js', '/app/js/services/filters/thumbnail.js', '/app/js/directives/projecttable.js',], function(app) {
   app.controller('EditDonorsCtrl', function($scope, IStorage, $http) {
     $scope.showingDonor = [];
     $scope.deleteDonor = function(donor) {
@@ -14,6 +14,27 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/e
             console.log('published donors: ', response.data.Items);
             $scope.donors = response.data.Items;
         });
+
+        
+        $scope.countries = [];
+        var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
+            $scope.countries = data.data;
+            console.log('countries: ', $scope.countries);
+            $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
+                $scope.countries = $scope.countries.concat(data.data);
+
+                return data;
+            });
+            return data; //good practice. always return from a promise, the same data.
+        });
+        //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
+        //TODO: should be a filter!
+        $scope.fullCountryName = function(shortCountryName) {
+            console.log('country short: ', shortCountryName);
+            for(var i=0; i!=$scope.countries.length; ++i)
+                if($scope.countries[i].identifier == shortCountryName)
+                    return $scope.countries[i].name;
+        };
 
     $scope.$on('donorSaved', function(event, donor, response) {
         console.log('donor saved arguments: ', arguments);

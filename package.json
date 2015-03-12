@@ -12,11 +12,12 @@
   },
   "devDependencies": {
     "awsbox": "0.6.x",
-    "q-io": "~1.11.4",
-    "q": "~1.0.1",
-    "xml2js": "~0.4.4",
     "linq": "*",
-    "request": "~2.42.0"
+    "prompt": "^0.2.14",
+    "q": "~1.0.1",
+    "q-io": "~1.11.4",
+    "request": "~2.42.0",
+    "xml2js": "~0.4.4"
   },
   "engine": "node >= 0.10.18",
   "scripts": {
