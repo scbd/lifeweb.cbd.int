@@ -63,18 +63,19 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         validate();
     });
 
+    function addValueAndSort(arr, key) {
+        for(var i = 0; i != arr.length; ++i)
+          arr[i].__value = arr[i][key];
+
+        arr.sort(function(a, b) {
+            return (a[key] < b[key]) ? -1 : 1;
+        });
+    }
+
     $scope.countriesAC = function() {
       return $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
-      console.log('countries data format: ', data);
-        var countries = data.data;
-        for(var i = 0; i != countries.length; ++i)
-          countries[i].__value = countries[i].name;
-
-        countries.sort(function(a, b) {
-            return (a.name < b.name) ? -1 : 1;
-        });
-
-        return countries;
+          console.log('countries data format: ', data);
+        return addValueAndSort(data.data, 'name');
       });
     };
 
