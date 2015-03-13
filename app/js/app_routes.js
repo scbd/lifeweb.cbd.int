@@ -291,7 +291,7 @@ define(['app', 'authentication'], function(app) {
         },
         label: 'Create Event',
       })
-      .when('/admin/events/edit/:name', {
+      .when('/admin/events/edit/:title', {
         templateUrl: '/app/templates/routes/admin/events/edit.html',
         title : 'Edit Events',
         collectionKey: 'events',

@@ -21,6 +21,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     var singularKey = collectionKey.substr(0,collectionKey.length-1)
     var schemaName = keySchemaMap[singularKey]; //TODO: still needed?
     $scope.document = {};
+    console.log('title: ', $routeParams.title);
     if($routeParams.title) {
       $scope.documentPromise = editFormUtility.load($routeParams.title);
       editFormUtility.documentExists($routeParams.title).then(function(exists) {

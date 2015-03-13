@@ -9,11 +9,27 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
     $q.when($scope.documentPromise).then(function(document) {
         $scope.document.location = $scope.document.location || {};
+        $scope.document.location.address = $scope.document.location.address || 'x';
         $scope.document.coverImage = $scope.document.coverImage || {};
     });
 
     $scope.$on('documentDraftSaved', function(event, draftInfo) {
       $location.path('/admin/events/edit/' + draftInfo.identifier);
+    });
+
+    $scope.typeAC = function() {
+       var deferred = $q.defer();
+       deferred.resolve([
+            {__value: 'meeting', identifier: 'meeting',},
+            {__value: 'round table', identifier: 'round table',},
+            {__value: 'side event', identifier: 'side event',},
+       ]);
+       return deferred.promise;
+    };
+
+    $scope.$watch('document.startDate', function() {
+        if(!$scope.document.endDate)
+            $scope.document.endDate = $scope.document.startDate;
     });
 
     $scope.$watch('document.location.country', function() {

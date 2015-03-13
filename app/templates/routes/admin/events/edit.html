@@ -23,7 +23,12 @@
             <afc-text title="Description" ng-model="document.description"></afc-text>
             <afc-input type="date" name="startDate" ng-model="document.startDate" title="Start Date" placeholder="Date document begins"></afc-input>
             <afc-input type="date" name="endDate" ng-model="document.endDate" title="End Date" placeholder="Date document finishes"></afc-input>
-            <afc-input type="string" name="type" ng-model="document.type" title="Event Type" placeholder="Select a type..."></afc-input>
+            <div class="row form-group">
+              <label class="col-xs-2 control-label" for="coverImage">Event Type</label>
+              <div class="col-xs-9">
+                <afc-autocomplete ng-model="document.type" multiple="true" placeholder="Select a type" source="typeAC" selectbox="true" mapping="identifierMapping"></afc-autocomplete>
+              </div>
+            </div>
             <div class="row form-group">
               <label class="col-xs-2 control-label" for="coverImage">Cover Image</label>
               <div class="col-xs-6">
@@ -55,7 +60,7 @@
         <h4>organizations</h4>
         <div>
             <label for="organizations">Organizations</label>
-            <afc-autocomplete ng-model="document.organizations" source="allRegionsAC" selectbox="true" placeholder="Enter the organizations involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
+            <afc-autocomplete ng-model="organizations" source="allRegionsAC" selectbox="true" placeholder="Enter the organizations involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
         </div>
         
         <h4>Event's Project</h4>
