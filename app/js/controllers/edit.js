@@ -70,6 +70,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
         arr.sort(function(a, b) {
             return (a[key] < b[key]) ? -1 : 1;
         });
+        return arr;
     }
 
     $scope.countriesAC = function() {

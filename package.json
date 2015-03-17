@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "awsbox": "0.6.x",
+    "http-sync": "^0.1.1",
     "linq": "*",
     "prompt": "^0.2.14",
     "q": "~1.0.1",

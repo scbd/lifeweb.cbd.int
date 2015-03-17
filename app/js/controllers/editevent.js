@@ -11,6 +11,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         $scope.document.location = $scope.document.location || {};
         $scope.document.location.address = $scope.document.location.address || 'x';
         $scope.document.coverImage = $scope.document.coverImage || {};
+        $scope.document.name = "add name to form...";
     });
 
     $scope.$on('documentDraftSaved', function(event, draftInfo) {
@@ -20,9 +21,9 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.typeAC = function() {
        var deferred = $q.defer();
        deferred.resolve([
-            {__value: 'meeting', identifier: 'meeting',},
-            {__value: 'round table', identifier: 'round table',},
-            {__value: 'side event', identifier: 'side event',},
+            {__value: 'meeting', identifier: 'ca',},
+            {__value: 'round table', identifier: 'en',},
+            {__value: 'side event', identifier: 'au',},
        ]);
        return deferred.promise;
     };
@@ -33,6 +34,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     });
 
     $scope.$watch('document.location.country', function() {
+    return;
         console.log('locationmap: ', $scope.locationMap);
         if($scope.document.location.country) {
             focusCountry($scope.locationMap, $scope.document.location.country.identifier).then(function(mapInfo) {
@@ -53,7 +55,6 @@ console.log('mapinfo: ', mapInfo);
 			  var coordinates = {
                   lat: data[0].lat,
                   lng: data[0].lon,
-                  zoom: 1, //HERE TODO: i need to pass or calculate zoom or something...
                 };
             var bounds = [
               [data[0].boundingbox[0], data[0].boundingbox[2]],
