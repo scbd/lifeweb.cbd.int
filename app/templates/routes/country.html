@@ -64,11 +64,11 @@
 <section id="projects" >    
  <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">LifeWeb Projects</h2>
 <!--******************************************** PROJECT SECTION ******************************************************-->
-<div ng-show="(projects | filterCountry:CountryID | filterIsFunded:'').length > 0">
+<div ng-show="projects.length > 0">
   <h4>Projects in need of funding</h4>
   <div class="project_well" style="background-color: white!important;">
     <table>
-      <tr ng-repeat="proj in projects | filterCountry:CountryID | filterIsFunded:''">
+      <tr ng-repeat="proj in projects">
         <td valign="top" style="padding-right: 10px; padding-bottom: 20px;">
           <a class="pull-left" href="/project/?id={{proj.id}}">
             <img class="img-rounded" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
@@ -89,11 +89,11 @@
 </div>
 
 <br>
-<div ng-show="(projects | filterCountry:CountryID | filterIsFunded:'true').length > 0">
+<div ng-show="projects.length > 0">
         <h4>Funded projects</h4>
         <div class="project_well">
             <table>
-                <tr ng-repeat="proj in projects | filterCountry:CountryID | filterIsFunded:'true'">
+                <tr ng-repeat="proj in projects">
                     <td valign="top" style="padding-right: 10px; padding-bottom: 20px;"><a class="pull-left" href="/project/?id={{proj.id}}">
                         <img class="img-rounded" style="margin-top: 8px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
                     </a></td>

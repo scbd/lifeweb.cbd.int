@@ -16,8 +16,9 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
       $scope.countrydetails = data;
     });
      
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK').success(function (data) {
-      $scope.projects = data;
+    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(government_s:'+sCountry+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function (data) {
+    console.log('proj response: ', data);
+      $scope.projects = data.response.docs;
     });
 
     $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function (data) {
@@ -28,11 +29,11 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
       $scope.actionplan = data;
     });
      
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=powpa&country=' + sCountry, { cache: true }).success(function (data) {
-      $scope.fp_powpa = data;
+    $http.get('/api/v2013/index/select?cb=1418322176016&q=((government_s:'+sCountry+')%20AND%20(type_ss:PA-FP))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=department_s,organization_s,government_EN_t,schema_EN_t,title_s,email_ss', { cache: true }).success(function (data) {
+      $scope.fp_powpa = data.response.docs;
     });
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&country=' + sCountry, { cache: true }).success(function (data) {
-      $scope.fp_national = data;
+    $http.get('/api/v2013/index/select?cb=1418322176016&q=((government_s:'+sCountry+')%20AND%20(type_ss:CBD-FP1%20OR%20type_ss:CBD-FP2))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=department_s,organization_s,government_EN_t,schema_EN_t,title_s,email_ss', { cache: true }).success(function (data) {
+      $scope.fp_national = data.response.docs;
     });
       //Duplicated in edit event
 	  $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)

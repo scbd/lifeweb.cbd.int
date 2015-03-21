@@ -1,0 +1,12 @@
+  .dragdrophover {
+    background-color: #BBFFBB;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+  .beforedragdrop {
+    height: 30px;
+    border: dashed 2px gray;
+    padding: 1px;
+  }
+
+

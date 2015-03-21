@@ -4,302 +4,87 @@ var File = require('fs');
 var http = require('q-io/http');
 var q = require('q');
 var wait = require('wait.for');
+var prompt = require('prompt');
+var httpsync = require('http-sync');
+
+var CBPromise = require('./cbpromise.js');
+var Project = require('./project.js');
+var Ajax = require('./ajax.js');
+var Downup = require('./downup.js');
+
+process.on('uncaughtException', function (exception) {
+  console.log(exception); // to see your exception details in the console
+  // if you are on production, maybe you can send the exception details to your
+  // email as well ?
+  process.exit();
+});
 
 (function() {
   //TODO: paste the command i used here as an example.
-  var oldProjectsFile = process.argv[2];
-  var newProjectsUrl = process.argv[3];
+  var oldProjectsFile = process.argv[2] || 'http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx';
+  var newProjectsUrl = process.argv[3] || 'http://lifeweb.cbd.int/api/v2013/documents?schema=';
+  Ajax.newProjectsUrl = newProjectsUrl;
 
-    if(!oldProjectsFile)
-        throw 'No old project file given!';
-  var qOldProjects = fs.read(oldProjectsFile);
+    var donorCache = {};
+    var savedDocuments = {};
 
-  function getJson(url) {
-    return http.read({
-      url: url,
-      method: 'get',
-      headers: {
-        Accept: 'application/json, text/plain, */*',
-      },
-    }).catch(function(err) {
-        console.log('error: ', err);
-    });
-  }
+  prompt.start();
 
-  var qAichi = getJson('http://127.0.0.1:2020/api/v2013/thesaurus/domains/AICHI-TARGETS/terms');
-  var importantProject;
+  var promptSchema = {
+    properties: {
+        authenticationToken: {}
+    },
+  };
 
-  var allPromises = [];
-  q.all([qOldProjects, qAichi]).then(function(results) {
-      var projects = JSON.parse(results[0]);
-
-      var aichi_targets = JSON.parse(results[1]);
-      console.log('Total old projects received: ', projects.length);
-
-    var newProjects = [];
-      //for(var i=0; i!=10; ++i)
-      //for(var i=0; i!=projects.length; ++i)
-      //  newProjects.push(translateToNewProject(projects[i].id, projects[i]));       
-      newProjects.push(translateToNewProject(24020));       
-
-      console.log('done looping');
-      var all = q.all(allPromises).then(function(results) {
-        fillHoles(newProjects);
-        File.writeFileSync('newprojects.json', JSON.stringify(newProjects[0], null, '\t'));
-        console.log('done writing the file...');
-      }, function(error) {
-        console.log('all failure: ', error.response.req.path);
-      });
-      wait.for(all);
-  }, function(error) {
-    console.log('failure: ', error);
+  var qOldProjects = Ajax.getJson(oldProjectsFile);
+  //var qOldProjects = q.fcall(function() { return '[]'; });
+  qOldProjects.then(function(data) {
+    console.log('received projects file...');
+    return data;
+  }, function(err) {
+    console.log('error with projects file!!');
   });
 
-    function translateToNewProject(id, oldProject) {
-    console.log('working on ', id);
-        var newProject = {
-            header: {
-              identifier: guid(), 
-              languages: ['en'],
-              schema: 'lwProject',
-            },
-        };
+  var authenticationToken;
+  prompt.get(promptSchema, function(err, credentials) {
+        //Downup.with(downfile, upfile).then(function(response) {
+        authenticationToken = credentials.authenticationToken;
+        Downup.authenticationToken = authenticationToken;
+        Ajax.authenticationToken = authenticationToken;
+        qOldProjects.then(function(results) {
+          console.log('now parsing projects...');
+          var projects = JSON.parse(results);
+          //allPromises: comes in the format of [newProject1, newProject2, newProject3, ...]
+          var allPromises = [];
 
-        var projectUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?id=' + id;
-        allPromises.push(getJson(projectUrl).then(function(data) {
-            data = JSON.parse(data.toString());
-            newProject.leadContact = data.desclaimer;
-            newProject.countries = [];
-            for(var i=0; i!=data.country_codes.length; ++i)
-                newProject.countries.push({identifier: data.country_codes[i]});
-            newProject.title = data.title;
-            //newProject.timeframe = 0; //I don't think anything exists in old projects
-            newProject.projectAbstract = data.summary;
-            newProject.description = data.description;
-            /*
-            newProject.budget = [{
-                activity: 'All Tasks',
-                result: 'project\'s completion',
-                cost: data.funding_needed,
-            }];
-            */
-            newProject.additionalInformation = '';
-            if(data.participation)
-              newProject.additionalInformation += '\n[participation]\n'+data.participation;
-            if(data.governance)
-              newProject.additionalInformation += '\n[governance]\n'+data.governance;
-            newProject.thumbnail = data.thumbnail;
-            newProject.nationalAlignment = [
-              {type: {identifier: 'NBSAP'}, comment: data.alignment_nbsap},
-              {type: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'}, comment: data.alignment},
-              {type: {identifier: 'CC'}, comment: data.alignment_cc},
-            ];
-            newProject.ecologicalContribution = data.ecological_contribution;
-            //newProject.keywords = data.keywords.split('; ');
-            
-            //setup budget
-            newProject.budget = [];
-            for(var i = 0; i!=data.objectives_results.length; ++i)
-                newProject.budget.push({
-                    activity: data.objectives_results[i].Objective,
-                    result: data.objectives_results[i].ExpectedResults,
-                    cost: extractCurrency(data.objectives_results[i].Funding),
-                });
-            newProject.financialStability = data.financial_sustainability;
+          //for(var i=30; i!=30; ++i)
+          console.log('TOTAL PROJECTS: ', projects.length);
+          for(var i=0; i!=projects.length; ++i)
+            allPromises.push(Project.get(projects[i].id));       
+          //allPromises.push(Project.get(24003));
 
-            //setup climate contibution
-            newProject.climateContribution = [];
-            for(var k=0; k!=data.ecoservices_comments.length; ++k)
-              newProject.climateContribution.push({type: {identifier: data.ecoservices_comments[k].termid}, comment: data.ecoservices_comments[k].comment});
+          console.log('done preparation...');
+          wait.for(q.all(allPromises).then(function(newProjects) {
+            console.log('done collecting all projects');
+            console.log('saving new projects...');
 
-            //setup aichi targets
-            newProject.aichiTargets = [];
-            for(var k=0; k!=data.aichi_targets.length; ++k) {
-              var aichi = data.aichi_targets[k];
-              var key = 'AICHI-TARGET-';
-              if(aichi.termid.length == ('Target'.length + 1))
-                key += '0';
-              key += aichi.termid.slice('Target'.length);
-              newProject.aichiTargets.push({type: {identifier: key}, comment: aichi.comment});
-            }
+            var savePromises = [];
+            for(var i=0; i!=newProjects.length; ++i)
+                savePromises.push(Ajax.saveDocument(newProjects[i], 'lwProject').then(function(doc) {
+                    //if I successfully saved, then delete the cache file
+                    //var deletePromise = fs.remove('./cache/' + doc.header.identifier + '.json');
+                    return doc;
+                }));
 
-            //setup images
-            newProject.images = [];
-            for(var k=0; k!=data.images.length; ++k)
-              newProject.images.push({
-                title: data.images[k].name,
-                keywords: [],
-                url: data.images[k].url,
-              });
+            return q.all(savePromises).then(function(result) {
+                console.log('Done Saving all documents!');
+                return result;
+            });
+          }, function(error) {
+            console.log('all failure: ', error.response.req.path);
+          }));
+          console.log('after wait for... DONE!');
+        });
+  });
 
-            //maps
-            newProject.maps = [];
-            for(var k=0; k!=data.maps.length; ++k)
-              newProject.maps.push({
-                title: data.maps[k].name,
-                keywords: [],
-                url: data.maps[k].url,
-              });
-
-            //lon lat
-            newProject.coordinates = {
-              lng: Number(data.longitude),
-              lat: Number(data.latitude),
-              zoom: 7, //just a decent estimate
-            };
-            //Some lon lats are in a format with NSWE prefixing [actually only 1]
-            if(data.longitude && (data.longitude.substr(0, 1) == 'E' || data.longitude.substr(0, 1) == 'W')) {
-              if(data.longitude.substr(0, 1) == 'E')
-                newProject.coordinates.lng = '+';
-              else
-                newProject.coordinates.lng = '-';
-              newProject.coordinates.lng += data.longitude.slice(2);
-              if(data.longitude.substr(0, 1) == 'E')
-                newProject.coordinates.lat = '+';
-              else
-                newProject.coordinates.lat = '-';
-              newProject.coordinates.lat += data.latitude.slice(2);
-            }
-
-            //all attachments
-            newProject.attachments = [];
-            for(var k=0; k!=data.all_attachments.length; ++k) {
-              newProject.attachments.push({
-                title: data.all_attachments[k].name,
-                keywords: [],
-                url: data.all_attachments[k].url,
-              });
-            }
-            if(data.pdf_override)
-              newProject.attachments.push({
-                title: data.pdf_override.name,
-                keywords: ['pdf_override'],
-                url: data.pdf_override.url,
-              });
-            if(data.project_doc)
-              newProject.attachments.push({
-                title: data.project_doc.name,
-                keywords: ['project_doc'],
-                url: data.project_doc.url,
-              });
-
-            //setup protected areas
-            if(data.protected_planet_links && data.protected_planet_links.length > 0) {
-                newProject.protectedAreas = [];
-                for(var k=0; k!=data.protected_planet_links.length; ++k)
-                  newProject.protectedAreas.push({url: 'http://www.protectedplanet.net/sites/'+data.protected_planet_links[k].url});
-            }
-        }, function(err) {
-            console.log('error: ', err);
-        }));
-        
-        //******* Data requiring ajax calls *******//
-        //partner roles
-        newProject.institutionalContext = [];
-        var rolesUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?eoi='+id;
-        allPromises.push(getJson(rolesUrl).then((function(oldProj, newProj) {
-          return function(data) {
-            console.log('done an partner');
-            var contacts = JSON.parse(data.toString());
-            for(var j=0; j!=contacts.length; ++j) {
-              newProj.institutionalContext.push({
-                partner: contacts[j].header,
-                info: contacts[j].info,
-                role: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'},
-              });
-              if(contacts[j].roles.length >= 1)
-                newProj.institutionalContext[j].role = contacts[j].roles[0];
-            }
-          };
-        })(oldProject, newProject)));
-
-        /*
-        //contact roles
-        var contactsUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?eoi='+id;
-        allPromises.push(getJson(contactsUrl).then((function(oldProj, newProj) {
-          return function(data) {
-            console.log('done an contact');
-            var contacts = JSON.parse(data.toString());
-            for(var j=0; j!=contacts.length; ++j)
-              newProj.institutionalContext.push({
-                partner: contacts[j].header,
-                info: contacts[j].info,
-                role: contacts[j].role,
-              });
-          };
-        })(oldProject, newProject)));
-        */
-
-        //focal points powpa
-        var fpPowpaUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?type=powpa&eoi='+id;
-        allPromises.push(getJson(fpPowpaUrl).then((function(oldProj, newProj) {
-          return function(data) {
-            console.log('done an powpa');
-            var contacts = JSON.parse(data.toString());
-            for(var j=0; j!=contacts.length; ++j) {
-              newProj.institutionalContext.push({
-                partner: contacts[j].Prefix + ' ' + contacts[j].FirstName + ' ' + contacts[j].LastName,
-                info: '[Powpa Focal Point]',
-                role: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'},
-              });
-            }
-          };
-        })(oldProject, newProject)));
-
-        //focal points national
-        var fpNationalUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?type=national&eoi='+id;
-        allPromises.push(getJson(fpNationalUrl).then((function(oldProj, newProj) {
-          return function(data) {
-            console.log('done an fp');
-            var contacts = JSON.parse(data.toString());
-            for(var j=0; j!=contacts.length; ++j)
-              newProj.institutionalContext.push({
-                partner: contacts[j].Prefix + ' ' + contacts[j].FirstName + ' ' + contacts[j].LastName,
-                info: '[National Focal Point]',
-                role: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'},
-              });
-          };
-        })(oldProject, newProject)));
-
-        //donors
-        newProject.donors = [];
-        var fundingUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?eoi='+id;
-        allPromises.push(getJson(fundingUrl).then((function(oldProj, newProj) {
-          return function(data) {
-            var donors = JSON.parse(data.toString());
-            for(var i=0; i!=donors.length; ++i) {
-              newProj.donors.push({
-                name: donors[i].donor.name,
-                description: donors[i].info,
-                funding: donors[i].amount,
-                dateTime: donors[i].date.slice('/Date('.length, -')/'.length),
-                lifeweb_facilitated: !donors[i].is_not_official,
-              });
-            }
-          };
-        })(oldProject, newProject)));
-
-        console.log('done project ', id);
-        return newProject;
-    }
-
-    function fillHoles(newProjects) {
-        for(var i=0; i!=newProjects.length; ++i) {
-            if(!newProjects[i].leadContact && newProjects[i].institutionalContext.length > 0)
-                newProjects[i].leadContact = newProjects[i].institutionalContext[0].partner;
-        }
-    }
-
-    function extractCurrency(strAmount) {
-        console.log('str: ', strAmount);
-        console.log('num: ',strAmount.substr(4).replace(/,/g, ''));
-        return Number(strAmount.substr(4).replace(/,/g, ''));
-    }
-
-    function S4() {
-      return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
-    }
-    function guid() {
-      return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
-    }
 })();

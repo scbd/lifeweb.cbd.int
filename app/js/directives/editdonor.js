@@ -5,7 +5,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
             templateUrl: '/app/js/directives/editdonor.html',
             scope: {
                 donor: '=',
-                isCreate: '@',
+                alwaysEditing: '@?',
             },
             controller: function($scope, $http, editFormUtility, IStorage, $element) {
                 if(!$scope.donor)
@@ -16,6 +16,8 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
 
                 $scope.showEditDonor = false;
 
+                $scope.socialMediaTypes = ['facebook', 'flickr', 'twitter', 'youtube',];
+
                 $scope.toggleShowEdit = function() {
                     $scope.showEditDonor = !$scope.showEditDonor;
                     if($scope.showEditDonor)
@@ -23,6 +25,15 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                     else
                         $scope.showHideButtonText = $scope.donorButtonText;
                         
+                }
+
+                if($scope.donor.header) {
+                    var sID = $scope.donor.header.identifier;
+                    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(donor_ss:'+sID+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
+                        console.log('sID: ', sID);
+                        $scope.matches = data.data.response.docs;
+                        console.log('match data: ', $scope.matches);
+                    });
                 }
 
                 //TODO: remove and use the guid module
@@ -70,8 +81,8 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
 
                             //clear on save
                             var guid = (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4()).toUpperCase();
-                            if($scope.isCreate)
-                                $scope.donor = {};
+                            //if($scope.isCreate)
+                            //    $scope.donor = {};
                                 /*
                                 $scope.donor = {
                                     header: {

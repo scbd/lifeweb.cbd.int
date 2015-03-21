@@ -20,13 +20,19 @@ input.twitter {
     padding-left: 25px;
 }
 
-input.linkedin {
-    background-image: url('/app/images/icons/linkedin.png');
+input.youtube {
+    background-image: url('/app/images/icons/youtube.png');
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 25px;
 }
 
+input.flickr {
+    background-image: url('/app/images/icons/flickr.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
 .addTabButton {
   margin: 2px;
   background-color: #AAFFAA;

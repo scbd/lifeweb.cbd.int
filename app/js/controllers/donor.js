@@ -1,4 +1,4 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editFormUtility', '/app/js/services/filters/linkify.js',], function(app) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editFormUtility', '/app/js/services/filters/linkify.js', '/app/js/directives/projecttable.js',], function(app) {
   app.controller('DonorCtrl', function ($scope, $http, editFormUtility) {
     var sID = new URI().query(true).id;
     console.log('sid: ', sID);
@@ -18,6 +18,13 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
         console.log('donor data: ', data);
         $scope.donor = data;
     });
+
+    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(schema_s:lwProject)%20AND%20(donor_ss:'+sID+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
+        $scope.matches = data.data.response.docs;
+        console.log('match data: ', $scope.matches);
+    });
+
+    $scope.count = function(o) { var c=0;for(var k in o)++c;return c;};
  
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {

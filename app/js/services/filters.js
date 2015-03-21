@@ -355,8 +355,8 @@ define(['app'], function(app) {
 
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
-                  for (var k = 0; k < pcountries[j].country_codes.length; k++) {
-                      if (countryList[i].code == pcountries[j].country_codes[k]) {
+                  for (var k = 0; k < pcountries[j].length; k++) {
+                      if (countryList[i].code == pcountries[j]) {
                           result.push(countryList[i]);
                       }
                   }

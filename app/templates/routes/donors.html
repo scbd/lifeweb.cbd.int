@@ -26,10 +26,10 @@
                  <p>{{fullCountryName(donor.country.identifier)}}</p>
                  <a ng-href="{{donor.website.url | linkify}}" target="_blank">{{donor.website.url}}</a>
 
-              <div ng-show="donor.socialMedia">
+              <div ng-show="donor.socialMedia && count(donor.socialMedia[0])">
                   <h4>Links</h4>
-                  <div ng-repeat="link in donor.socialMedia[0]">
-                      <i class=""></i><a href="{{link}}">{{link}}</a> <!-- TODO: fillin social media filters...-->
+                  <div ng-repeat="(type, link) in donor.socialMedia[0]">
+                      <a href="{{link}}" class="{{type}}">{{link}}</a> <!-- TODO: fillin social media filters...-->
                       <br />
                   </div>
               </div>
@@ -38,33 +38,7 @@
 
           <section id="funded" >
               <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Funded LifeWeb Projects</h2>
-
-             <div ng-repeat="match in matches ">
-                 
-                  <div class="media project_well">
-
-                      <table style="width:100%;">
-                          <tr>
-                              <td colspan="2"><h4>{{match.project.title}}</h4></td>
-                          </tr>
-                          <tr>
-                              <td class="media-type text-center;" style="vertical-align:top;padding-right:5px!important;">project:</td>
-                              <td><a href="/project/?id={{match.project.id}}"><strong ng-bind-html-unsafe="match.project.title"></strong></a> <br />{{match.project.summary}}</td>
-                          </tr>
-                          <tr>
-                              <td class="media-type text-center;" style="vertical-align:top;padding-right:5px!important;">amount:</td>
-                              <td>
-                                  {{match.amount | filterCurrency:match.currency}}
-                              </td>
-                          </tr>
-                          <tr>
-                              <td class="media-type text-center;" style="vertical-align:top;padding-right:5px!important;">year:</td>
-                              <td>{{match.year}}</td>
-                          </tr>
-                      </table>
-
-                  </div>
-
+                <projecttable projects="matches"></projecttable>
           </section>
       
 </div><!-- end span 9-->
