@@ -204,16 +204,21 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
     };
 
     function addFundingProperties(project) {
-        var budget = project.budget || [];
-        project.total_cost = project.budget.reduce(function(prev, cur) {
-            console.log('d cur: ', cur);
-            return prev + cur.cost;
-        }, 0);
-        var donors = project.donors || [];
-        var total_funding = donors.reduce(function(prev, cur) {
+        var donations = project.donations || [];
+        var total_funding = donations.reduce(function(prev, cur) {
             console.log('b cur: ', cur);
             return prev + cur.funding;
         }, 0);
+
+        var budget = project.budget || [];
+        console.log('budget: ', budget);
+        if(budget.length <= 0 && donations.length > 0)
+            project.total_cost = total_funding;
+        else
+            project.total_cost = project.budget.reduce(function(prev, cur) {
+                console.log('d cur: ', cur);
+                return prev + cur.cost;
+            }, 0);
 
         project.funding_needed = project.total_cost - total_funding;
         console.log('funding needed: ', project.funding_needed);
@@ -221,8 +226,8 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         //check whether any are lifeweb_facilitated:
         var all = true;
         var one = false;
-        for(var i=0; i!=donors.length; ++i) {
-            if(donors[i].lifeweb_facilitated)
+        for(var i=0; i!=donations.length; ++i) {
+            if(donations[i].lifeweb_facilitated)
                 one = true;
             else
                 all = false;
@@ -235,6 +240,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             project.funding_status = 'some expected funding';
         else
             project.funding_status = 'not yet funded';
+        console.log('funding status: ', project.funding_status);
 
         project.currency = 'USD';
     };
