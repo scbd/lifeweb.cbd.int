@@ -63,7 +63,10 @@
 
 <section id="projects" >    
  <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">LifeWeb Projects</h2>
+
+<projecttable projects="projects"></projecttable>
 <!--******************************************** PROJECT SECTION ******************************************************-->
+<!--
 <div ng-show="projects.length > 0">
   <h4>Projects in need of funding</h4>
   <div class="project_well" style="background-color: white!important;">
@@ -109,7 +112,7 @@
         </div>
     </div>
 </section>
-
+-->
 
 
 
@@ -118,32 +121,46 @@
 <section id="fps"   > 
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Country Focal Points</h2> 
 <h4>National Focal Point(s)</h4>
+<table class="table table-striped">
+    <tr>
+        <th>Role</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+     <tr ng-repeat="fp in fp_national">
+        <td><span class="label label-info">{{fp.schema_EN_t}}</span></td>
+        <td><strong>{{fp.title_s}} </strong>
+            <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.email_ss[0]}}">{{fp.email_ss[0]}}</a></span></td>
+        <td>
+            <span ng-show="fp.Department!= ''">{{fp.department_s}}<br></span>
+           <span ng-show="fp.Organization!= ''">{{fp.organization_s}}<br></span>
+           <span ng-show="fp.Country!= ''">{{fp.government_EN_t}}<br></span>
 
-<div class="lw-proj-text" ng-repeat="fp in fp_national">
+        </td>
+    </tr>
+</table>
 
-             <address>
-               <strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}}</strong><br>
-               <span ng-show="fp.Designation != ''">{{fp.Designation}}<br></span>
-               <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
-               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
-               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
-               <span ng-show="fp.Email!= ''"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
-            </address>
-   </div >
 
 <h4>PoWPA Focal Point(s)</h4>
+<table class="table table-striped">
+    <tr>
+        <th>Role</th>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+     <tr ng-repeat="fp in fp_powpa">
+        <td><span class="label label-info">{{fp.schema_EN_t}}</span></td>
+        <td><strong>{{fp.title_s}} </strong>
+            <span ng-show="fp.Email!= ''" style="display: block;"><a href="mailto:{{fp.email_ss[0]}}">{{fp.email_ss[0]}}</a></span></td>
+        <td>
+            <span ng-show="fp.Department!= ''">{{fp.department_s}}<br></span>
+           <span ng-show="fp.Organization!= ''">{{fp.organization_s}}<br></span>
+           <span ng-show="fp.Country!= ''">{{fp.government_EN_t}}<br></span>
 
-<div class="lw-proj-text" ng-repeat="fp in fp_powpa">
+        </td>
+    </tr>
+</table>
 
-             <address>
-               <strong>{{fp.Prefix}} {{fp.FirstName}} {{fp.LastName}}</strong><br>
-               <span ng-show="fp.Designation != ''">{{fp.Designation}}<br></span>
-               <span ng-show="fp.Department!= ''">{{fp.Department}}<br></span>
-               <span ng-show="fp.Organization!= ''">{{fp.Organization}}<br></span>
-               <span ng-show="fp.Country!= ''">{{fp.Country}}<br></span>
-               <span ng-show="fp.Email!= ''"><a href="mailto:{{fp.Email}}">{{fp.Email}}</a></span>
-            </address>
-   </div >
 
 </section>
 

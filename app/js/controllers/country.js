@@ -16,8 +16,8 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
       $scope.countrydetails = data;
     });
      
-    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(government_s:'+sCountry+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function (data) {
-    console.log('proj response: ', data);
+    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(schema_s:lwProject)%20AND%20(country_ss:'+sCountry+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function (data) {
+    console.log('proj response: ', data.response.docs.length);
       $scope.projects = data.response.docs;
     });
 

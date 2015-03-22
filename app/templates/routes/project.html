@@ -84,7 +84,7 @@
         </tr>
         <tr>
           <td class="lw-dt">funding</td>
-          <td  class="lw-dd" ng-if="eoi.budget">
+          <td  class="lw-dd" ng-if="eoi.budget || eoi.donations">
             <funding-bar-chart status="eoi.funding_status" total="eoi.total_cost" currency="eoi.currency" display="currency" matches="eoi.donations" width="580"></funding-bar-chart>
           </td>
         </tr>
@@ -157,15 +157,15 @@
 
             </td>
         </tr>
-        <tr>
+        <tr ng-show="project.budget">
             <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Cost of Project:</span> </td>
             <td style="padding-left:20px;"><strong>{{eoi.total_cost | filterCurrency:eoi.currency:currency}}</strong></td>
         </tr>
-        <tr>
+        <tr ng-show="project.funding_status=='some secured funding'">
             <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Secured Funding:</span> </td>
             <td style="padding-left:20px;"><strong>{{eoi.donations | filterTotalSecured | filterCurrency:funding[0].currency:currency }}</strong></td>
         </tr>
-        <tr>
+        <tr ng-show="project.funding_status=='some expected funding'">
             <td style="text-align:right"><span class="muted" style="text-transform: uppercase;">Total Expected Funding:</span> </td>
             <td style="padding-left:20px;"><strong>{{eoi.donations | filterTotalExpected | filterCurrency:funding[0].currency:currency}}</strong></td>
         </tr>
