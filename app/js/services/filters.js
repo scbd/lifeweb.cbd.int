@@ -353,12 +353,11 @@ define(['app'], function(app) {
 
           var result = [];
 
+            console.log('pr countries? ', pcountries);
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
-                  for (var k = 0; k < pcountries[j].length; k++) {
-                      if (countryList[i].code == pcountries[j]) {
-                          result.push(countryList[i]);
-                      }
+                  if (pcountries[j].country_ss && pcountries[j].country_ss.indexOf(countryList[i].code) != -1) {
+                      result.push(countryList[i]);
                   }
               }
 

@@ -20,8 +20,9 @@ define(['app', '/app/js/services/filters.js', '/app/js/services/filters/thumbnai
                 for(var i=0; i!=$scope.projects.length; ++i) {
                     if(!$scope.projects[i].totalCost) {
                         $scope.projects[i].totalCost = 0;
-                        for(var k=0; k!=$scope.projects[i].budgetCost_ds.length; ++k)
-                            $scope.projects[i].totalCost += $scope.projects[i].budgetCost_ds[k];
+                        var funding = $scope.projects[i].budgetCost_ds || [];
+                        for(var k=0; k!=funding.length; ++k)
+                            $scope.projects[i].totalCost += funding[k];
                     }
                     $scope.projects[i].totalFunding = $scope.projects[i].totalFunding || 0;
                     if(!$scope.projects[i].totalFunding)
@@ -31,6 +32,11 @@ define(['app', '/app/js/services/filters.js', '/app/js/services/filters/thumbnai
 
                     $scope.projects[i].funding_needed = $scope.projects[i].totalCost - $scope.projects[i].totalFunding;
                     console.log('FUNDING NEEDED: ', $scope.projects[i].totalCost, $scope.projects[i].totalFunding, $scope.projects[i].funding_needed);
+
+                    if($scope.projects[i].funding_needed < 1)
+                        $scope.projects[i].funding_status = 'funded';
+                    else if($scope.projects[i].totalFunding < 1)
+                        $scope.projects[i].funding_status = 'not yet funded';
                 }
               });
 
