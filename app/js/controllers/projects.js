@@ -1,5 +1,6 @@
 define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility', '/app/js/services/filters/thumbnail.js', '/app/js/directives/projecttable.js',], function(app) {
-  app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility) {
+  app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility, $rootScope) {
+  console.log('user:S', $rootScope.user);
       var query = '(type eq \'lwProject\')';
 
 

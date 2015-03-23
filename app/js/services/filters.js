@@ -1378,11 +1378,9 @@ define(['app'], function(app) {
             var result= []; 
             
             for (var i=0; i < projs.length; i++){
-                for(var j=0; j < projs[i].country_codes.length; j++){
-              if (projs[i].country_codes[j] == code) {
+              if (projs[i].country_ss && projs[i].country_ss.indexOf(code) != -1) {
                 result.push(projs[i]);
               }
-          }
             }
             return result;
         }

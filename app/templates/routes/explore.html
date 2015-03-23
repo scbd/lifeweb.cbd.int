@@ -158,7 +158,7 @@
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
                                     <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
-                                <th ng-if="user.isAuthenticated">
+                                <th ng-if="user.roles.indexOf('LifewebAdmin') != -1">
                                     Admin
                                 </th>
                             </tr>
@@ -183,7 +183,7 @@
                                             <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
                                     </div>
                                 </td>
-                                <td>
+                                <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
                                     <a ng-href="/admin/projects/edit/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
                                 </td>
                             </tr>
