@@ -41,6 +41,14 @@ define(['app', 'authentication'], function(app) {
           dependencies: resolveJS(['/app/js/controllers/projects.js']),
         },
       })
+      .when('/explore2', {
+        templateUrl: '/app/templates/routes/explore2.html',
+        title : 'Explore',
+        resolve: {
+          user : resolveUser(),
+          dependencies: resolveJS(['/app/js/controllers/projects2.js']),
+        },
+      })
       .when('/project2', { //we should use route for the id parameter, this way we can update the title.
         templateUrl: '/app/templates/routes/project2.html',
         title : 'Project',

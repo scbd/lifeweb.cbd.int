@@ -18,6 +18,7 @@ var guid = require('./guid.js');
                         return Donor.create(donor);
                     else
                         return q.fcall(function() { 
+                            newDonor.header = {identifier: newDonor.identifier};
                             return newDonor;
                         });
                 }).then(function(donor) {
@@ -57,20 +58,21 @@ var guid = require('./guid.js');
                 newDonor.logo = {url: donor.logo};
             if(donor.facebook || donor.flickr || donor.twitter || donor.youtube) {
                 if(donor.facebook)
-                    newDonor.socialMedia[0].facebook = donor.facebook;
+                    newDonor.socialMedia[0].facebook = donor.facebook.url;
                 if(donor.flickr)
-                    newDonor.socialMedia[0].flickr = donor.flickr;
+                    newDonor.socialMedia[0].flickr = donor.flickr.url;
                 if(donor.twitter)
-                    newDonor.socialMedia[0].twitter = donor.twitter;
+                    newDonor.socialMedia[0].twitter = donor.twitter.url;
                 if(donor.youtube)
-                    newDonor.socialMedia[0].youtube = donor.youtube;
+                    newDonor.socialMedia[0].youtube = donor.youtube.url;
             }
 
             function finishDonor(country) {
                 if(country)
                     newDonor.country = {identifier: country}
                 console.log('CREATEDONOR END: finished saving donor: ', newDonor.header.identifier);
-                return Ajax.saveDocument(newDonor, 'lwDonor');
+                //return Ajax.saveDocument(newDonor, 'lwDonor');
+                return  newDonor;
             }
             if(donor.country) {
                 if(donor.country.length > 12)
@@ -86,7 +88,9 @@ var guid = require('./guid.js');
                             country_code = response[0].alpha2Code.toLowerCase();
 
                         return country_code;
-                    }).then(finishDonor);
+                    }).then(finishDonor).fail(function(err) {
+                        console.log('DONOR ERROR: ', err);
+                    });
             }
             else
                 return q.fcall(function() {
