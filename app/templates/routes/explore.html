@@ -162,7 +162,7 @@
                                     Admin
                                 </th>
                             </tr>
-                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets | orderBy:sortTerm:orderList | page: pageNumber:itemsPerPage)">
+                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets | orderBy:sortTerm:orderList) | page: pageNumber:itemsPerPage)">
                                 <td style="width: 70px;">
                                     <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" /></a>
                                 </td>

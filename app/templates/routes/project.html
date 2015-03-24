@@ -72,11 +72,11 @@
         </tr>
         <tr>
             <td class="lw-dt">abstract</td>
-            <td valign="middle" class="lw-dd" style="vertical-align: middle!important;" ng-bind-html="eoi.projectAbstract"></td>
+            <td valign="middle" class="lw-dd" style="vertical-align: middle!important; text-align: left;" ng-bind-html="eoi.projectAbstract"></td>
         </tr>
         <tr>
             <td class="lw-dt">country</td>
-            <td class="lw-dd">
+            <td class="lw-dd" style="text-align: left;">
                 <div ng-repeat="c in eoi.countries" style="display:inline;">
                     <strong><a href="/country/{{c.identifier}}" target="_blank">{{fullCountryName(c.identifier)}}</a></strong><span ng-show="!$last">, </span>
                 </div>
@@ -84,7 +84,7 @@
         </tr>
         <tr>
           <td class="lw-dt">funding</td>
-          <td  class="lw-dd" ng-if="eoi.budget || eoi.donations">
+          <td  class="lw-dd" style="text-align: left;" ng-if="eoi.budget || eoi.donations">
             <funding-bar-chart status="eoi.funding_status" total="eoi.total_cost" currency="eoi.currency" display="currency" matches="eoi.donations" width="580"></funding-bar-chart>
           </td>
         </tr>

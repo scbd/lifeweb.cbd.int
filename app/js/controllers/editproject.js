@@ -14,6 +14,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
     $scope.$on('updateOriginalDocument', function(event, doc) {
         $location.path('/admin/projects/edit/' + doc.header.identifier, false);
+        $scope.documentExists = true;
     });
 
     $scope.editDonor = function(name, donorKey, editingDonor) {

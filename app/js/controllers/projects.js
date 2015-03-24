@@ -34,11 +34,12 @@ function getFundingStatus(proj) {
             $scope.pageNumber = 0;
         };
         $scope.decPage = function() {
-            --$scope.pageNumber;
+            if($scope.pageNumber > 0)
+                --$scope.pageNumber;
         };
         $scope.incPage = function() {
-            ++$scope.pageNumber;
-            console.log('published project page: ', $scope.pageNumber);
+            if(($scope.pageNumber+1) * $scope.itemsPerPage < $scope.projectsPage.length)
+                ++$scope.pageNumber;
         };
         $scope.lastPage = function() {
             $scope.pageNumber = Math.floor($scope.projects.length/$scope.itemsPerPage);

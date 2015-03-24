@@ -216,7 +216,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             project.total_cost = total_funding;
         else
             project.total_cost = project.budget.reduce(function(prev, cur) {
-                console.log('d cur: ', cur);
                 return prev + cur.cost;
             }, 0);
 
