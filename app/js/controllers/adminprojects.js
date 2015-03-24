@@ -1,6 +1,7 @@
 define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/page.js', '/app/js/services/filters/linkify.js',], function(app) {
     app.controller('AdminProjectsCtrl', function($scope, $http, $upload, $q, IStorage) {
         $scope.publishedProjectsPage = 0;
+        $scope.itemsPerPage = 10;
         $scope.sortTerm = '-updatedOn';
 
         $scope.firstPage = function() {
