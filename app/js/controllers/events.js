@@ -10,6 +10,17 @@ define(['app', 'authentication'], function(app) {
                         $scope.roundtables.push(data[i]);
                     }
                 }
+                
+                $scope.types = []
+                $http.get('/api/v2013/thesaurus/domains/ED902BF7-E9A8-42E8-958B-03B6899FCCA6/terms', { cache: true }).then(function(data) {
+                    $scope.types = data.data;
+                });
+                $scope.typeTitle = function(type) {
+                    for(var i=0; i!=$scope.types.length; ++i)
+                        if(type.identifier == $scope.types.identifier)
+                            return type.title;
+                    return 'unknown';
+                };
 
             });
     });

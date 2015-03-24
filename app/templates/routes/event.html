@@ -11,22 +11,19 @@
               
               <!-- left side bar -->
               <div class="col-xs-8">
-                  <h1 class="title-divider" ng-bind-html="event.title"></h1>
+                  <h1 class="title-divider" ng-bind-html="event.description"></h1>
 
 
                 <table style="margin-bottom:30px;">
                 <tr>
                 <td style="padding-right:20px;">
-                          <img src="{{event.icon.url}}" ng-show="event.icon" class="img-polaroid" style="max-width:150px;margin-top:15px;" /></td>
+                          <img src="{{event.coverImage.url}}" ng-show="event.icon" class="img-polaroid" style="max-width:150px;margin-top:15px;" /></td>
                       
                           <td><h3 style="color: #2185C5;" ng-bind-html="event.description"></h3>
-                          <h3>{{event.date}}</h3></td>
+                          <h3>{{event.startDate}} - {{event.endDate}}</h3></td>
                           </tr>
                           </table>
                      
-
-                  <p ng-bind-html="event.info"></p>
-                  <!-- <span>{{event.firstDocumentLink}}</span> -->
                   <iframe ng-src="{{event.firstDocumentLink}}" style="width:700px; height:950px;"> </iframe>
 
               </div><!-- end left side bar -->
@@ -35,34 +32,16 @@
               <!-- right side bar -->
               <div class="col-xs-4" >
 
-                  <div ng-show="event.projects" >
-                      <h3 class="title-divider">Expression(s) of Interest</h3>
-                      <div ng-repeat="proj in event.projects">
-
-                          <div class="media-body">
-                              <span class="media-type" ng-bind-html="proj.country_names"></span>
-                              <a href="/project?id={{proj.id}}">
-                                  <img class="thumbnail pull-left" style="margin-right:5px;width: 50px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                                  <h4 class="media-heading" ng-bind-html="proj.title"></h4>
-                              </a>
-                              <span ng-bind-html="proj.summary"></span>
-                              <br />
-
-                              <div>
-                                  <span ng-show="proj.is_funded" style="color: #F00;">FUNDED:&nbsp;</span>
-                                  <span style="font-weight: bold; font-size: 13px;">Funding needed: <span class="label label-warning">{{proj.funding_needed | filterCurrency:proj.currency}}</span> </span>
-                              </div>
-
-                          </div>
-
+                  <div ng-show="event.project" >
+                      <h3 class="title-divider">Expression of Interest</h3>
+                        <a href="/project?id={{event.project.identifier}}">View Expression of Interest</a>
                       </div>
-                  </div><!-- end projects -->
 
                  <div ng-show="event.documents">
                       <h3 class="title-divider">Documents</h3>
                       <div>
                           <ul ng-repeat="link in event.documents">
-                              <li><a href="{{link.url}}" target="_new"><i class="icon-file"></i>{{link.name}}</a></li>
+                              <li><a href="{{link.url}}" target="_new"><i class="icon-file"></i>{{link.title}}</a></li>
                           </ul>
                       </div>
                   </div><!-- end documents -->
@@ -73,14 +52,14 @@
                       <div >
                           <div ng-repeat="slide in event.images">
                               <a href="#myModal{{$index}}"  data-toggle="modal">
-                                  <img src="{{slide.url}}&width=300" alt="x" style="width:300px;" class="img-polaroid img-rounded">
+                                  <img src="{{slide.url}}" alt="x" style="width:300px;" class="img-polaroid img-rounded">
                               </a>
                               <br>
                               <!-- Modal -->
                               <div id="myModal{{$index}}" class="modal hide fade text-center" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                                   <button class="btn pull-right" data-dismiss="modal" aria-hidden="true">x</button><br>
                                   <img src="{{slide.url}}" alt="{{$index}}">
-                                  <p>{{slide.name}}</p>
+                                  <p>{{slide.title}}</p>
                               </div>
                           </div>
                       </div>

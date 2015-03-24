@@ -18,15 +18,22 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $location.path('/admin/events/edit/' + draftInfo.identifier);
     });
 
-    $scope.typeAC = function() {
-       var deferred = $q.defer();
-       deferred.resolve([
-            {__value: 'meeting', identifier: 'ca',},
-            {__value: 'round table', identifier: 'en',},
-            {__value: 'side event', identifier: 'au',},
-       ]);
-       return deferred.promise;
-    };
+    $scope.typeAC =  function() {
+      return $http.get('/api/v2013/thesaurus/domains/ED902BF7-E9A8-42E8-958B-03B6899FCCA6/terms', { cache: true }).then(function(data) {
+        return addValueAndSort(data.data, 'name');
+      });
+    }
+
+    function addValueAndSort(arr, key) {
+        for(var i = 0; i != arr.length; ++i)
+          arr[i].__value = arr[i][key];
+
+        arr.sort(function(a, b) {
+            return (a[key] < b[key]) ? -1 : 1;
+        });
+        return arr;
+    }
+
 
     $scope.$watch('document.startDate', function() {
         if(!$scope.document.endDate)

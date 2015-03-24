@@ -41,7 +41,7 @@
         </thead>
         <tbody>
             <!-- TODO: remove duplicated code between different forms of projects -->
-            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:'-updatedOn'">
+            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:'-updatedOn' | page: publishedProjectsPage">
                 <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
@@ -50,6 +50,12 @@
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteProject(project, publishedProjects, 'documents')">X</button>
                 </td>
+            </tr>
+            <tr>
+                <td><button type="button" ng-click="firstPage()">First</button></td>
+                <td><button type="button" ng-click="decPage()">Prev 10</button></td>
+                <td><button type="button" ng-click="incPage()">Next 10</button></td>
+                <td><button type="button" ng-click="lastPage()">Last</button></td>
             </tr>
         </tbody>
     </table>

@@ -1,5 +1,20 @@
-define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/linkify.js',], function(app) {
+define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/page.js', '/app/js/services/filters/linkify.js',], function(app) {
     app.controller('AdminProjectsCtrl', function($scope, $http, $upload, $q, IStorage) {
+        $scope.publishedProjectsPage = 0;
+
+        $scope.firstPage = function() {
+            $scope.publishedProjectsPage = 0;
+        };
+        $scope.decPage = function() {
+            --$scope.publishedProjectsPage;
+        };
+        $scope.incPage = function() {
+            ++$scope.publishedProjectsPage;
+            console.log('published project page: ', $scope.publishedProjectsPage);
+        };
+        $scope.lastPage = function() {
+            $scope.publishedProjectsPage = Math.floor($scope.publishedProjects.length/$scope.itemsPerPage);
+        };
 
         var query = '(type eq \'lwProject\')';
         var draftParams = {cache: false, body: true};
