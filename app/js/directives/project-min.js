@@ -4,19 +4,21 @@
 //
 //============================================================
 define(['app', 'URI', 'editFormUtility', ], function(app) {
-  app.directive('projectMin', ['authHttp', "$filter", 'editFormUtility', function ($http, guid, $filter, editFormUtility) {
+  app.directive('projectMin', ['authHttp', "$filter", function ($http, guid, $filter) {
     return {
       restrict   : 'EAC',
       templateUrl: '/app/partials/project-min.html',
       replace    : true,
       transclude : false,
       scope      : {
-          docId: "=" 
+          docId: "=",
+          project: "=?",
       },
       link : function($scope, $element)
       {
         $scope.proj = null;
 
+            console.log('doc id: ', $scope.docId);
         if($scope.docId)
           $scope.load();
         else
@@ -24,17 +26,20 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
       },
       controller : ['$scope', 'editFormUtility', function ($scope, editFormUtility) 
       {
-        
         //*********************************************
         $scope.load= function() {
 
+            console.log('doc id: ', $scope.docId);
           //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + $scope.docId, { cache: true })
-          editFormUtility.load($scope.docId)
+          if($scope.project)
+            $scope.proj = $scope.project;
+          else
+              editFormUtility.load($scope.docId)
               .then(function (data) {
                     console.log('project min data:' , data);
                   $scope.proj = data;
-                 });
-               };
+             });
+       };
 
         //*********************************************
         $scope.error= function() {
@@ -53,42 +58,36 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
                     console.log('projects: ', projects.data.response.docs);
                 $scope.projects = projects.data.response.docs.slice(0,6);
 
-for(var i=0; i!=$scope.projects.length; ++i) {
-var project = $scope.projects[i];
-        var budget = project.budget || [];
-        console.log('budget: ', budget);
-        if(budget.length <= 0 && donations.length > 0)
-            project.total_cost = total_funding;
-        else
-            project.total_cost = project.budget.reduce(function(prev, cur) {
-                console.log('d cur: ', cur);
-                return prev + cur.cost;
-            }, 0);
 
-        project.funding_needed = project.total_cost - total_funding;
-        console.log('funding needed: ', project.funding_needed);
-        
-        //check whether any are lifeweb_facilitated:
-        var all = true;
-        var one = false;
-        for(var i=0; i!=donations.length; ++i) {
-            if(donations[i].lifeweb_facilitated)
-                one = true;
-            else
-                all = false;
-        }
-        if(project.funding_needed <= 0 && all)
-            project.is_funded = project.funding_status = 'funded';
-        else if(one)
-            project.funding_status = 'some secured funding';
-        else if(!one)
-            project.funding_status = 'some expected funding';
-        else
-            project.funding_status = 'not yet funded';
-        console.log('funding status: ', project.funding_status);
-}
-    });
-    },
+                function getFundingStatus(proj) {
+                    if(!proj.totalCost) {
+                        proj.totalCost = 0;
+                        var budget = proj.budgetCost_ds || [];
+                        for(var k=0; k!=budget.length; ++k)
+                            proj.totalCost += budget[k];
+                    }
+                    proj.totalFunding = proj.totalFunding || 0;
+                    if(!proj.totalFunding)
+                        if(proj.donatioFunding_ds)
+                            for(var k=0; k!=proj.donatioFunding_ds.length; ++k)
+                                proj.totalFunding += proj.donatioFunding_ds[k];
+
+                    proj.funding_needed = proj.totalCost - proj.totalFunding;
+                    console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
+
+                    if(proj.funding_needed < 1)
+                        proj.funding_status = 'funded';
+                    else if(proj.totalFunding < 1)
+                        proj.funding_status = 'not yet funded';
+                    
+                    return proj.funding_status;
+                }
+
+                for(var i=0; i!=$scope.projects.length; ++i) {
+                    getFundingStatus($scope.projects[i]);
+                }
+            });
+        },
     };
   });
 });

@@ -1,8 +1,8 @@
 define(['app', 'authentication'], function(app) {
    app.controller('EventsCtrl', function ($scope, $http) {
-        $http.jsonp('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json', { cache: true })
+        $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwEvent))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json', { cache: true })
             .success(function (data) {
-
+                var data = data.response.docs;
                 $scope.roundtables = [];
 
                 for (var i = 0; i < data.length; i++) {

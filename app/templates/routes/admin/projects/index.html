@@ -21,7 +21,7 @@
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
                 <td>
-                  <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
+                  <a ng-href="/project?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteProject(project, draftProjects, 'drafts')">X</button>
                 </td>
