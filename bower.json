@@ -4,8 +4,10 @@
     "angular": "~1.3.6",
     "angular-route": "~1.2.5",
     "angular-bootstrap": "~0.12.0",
+    "angular-sanitize": "~1.3.6",
+    "bootstrap": "~3.1.1",
     "font-awesome": "~4.0.3",
-    "requirejs": "latest",
+    "requirejs": "~2.1.10",
     "requirejs-domready": "latest",
     "requirejs-text": "latest",
     "requirejs-plugins": "latest",
@@ -16,7 +18,8 @@
     "angular_form_controls": "0.3.40",
     "ng-file-upload": "~2.0.5",
     "jquery.stellar": "latest",
-    "ngkookies": "~0.1.1"
+    "ngkookies": "~0.1.1",
+    "leaflet": "~0.7.2"
   },
   "resolutions": {
     "angular": "~1.3.6",
