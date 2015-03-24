@@ -1,4 +1,4 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility', '/app/js/services/filters/thumbnail.js', '/app/js/directives/projecttable.js',], function(app) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility', '/app/js/services/filters/thumbnail.js', '/app/js/directives/projecttable.js', '/app/js/services/filters/page.js',], function(app) {
   app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility, $rootScope) {
   console.log('user:S', $rootScope.user);
       var query = '(type eq \'lwProject\')';
@@ -28,12 +28,29 @@ function getFundingStatus(proj) {
                     return proj.funding_status;
 }
 
+        $scope.pageNumber = 0;
+        $scope.itemsPerPage = 25;
+        $scope.firstPage = function() {
+            $scope.pageNumber = 0;
+        };
+        $scope.decPage = function() {
+            --$scope.pageNumber;
+        };
+        $scope.incPage = function() {
+            ++$scope.pageNumber;
+            console.log('published project page: ', $scope.pageNumber);
+        };
+        $scope.lastPage = function() {
+            $scope.pageNumber = Math.floor($scope.projects.length/$scope.itemsPerPage);
+        };
+
+
 
 
       //IStorage.documents.query(query).then(function(data) {
-      $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
+      //fields used: budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss
+      $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s').success(function(data) {
       //TODO: for grabbing focal points:
-      //$http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(government_s:<countrycode>)&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function(data) {
       //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
           console.log('data: ', data);
           $scope.projects = data.response.docs;

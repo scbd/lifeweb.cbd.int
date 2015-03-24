@@ -42,7 +42,7 @@
         </thead>
         <tbody>
             <!-- TODO: remove duplicated code between different forms of projects -->
-            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:sortTerm | page: publishedProjectsPage">
+            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:sortTerm | page: publishedProjectsPage:itemsPerPage">
                 <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
