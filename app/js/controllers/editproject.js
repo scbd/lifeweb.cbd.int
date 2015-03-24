@@ -394,7 +394,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       return sum;
     };
 
-    var donorPromise = $.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
+    var donorPromise = $.get('/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
         var items = data.Items;
         var newItems = [];
         for(var i=0; i!=items.length; ++i)
@@ -428,7 +428,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     });
 
     //TODO: duplicated above in other controller...
-    var donorPromise = $.get('http://localhost:2020/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
+    var donorPromise = $.get('/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
         var items = data.Items;
         var newItems = [];
         for(var i=0; i!=items.length; ++i)
