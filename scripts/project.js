@@ -26,6 +26,7 @@ var ALLERRORS = [];
       build: function(id) {
         return Project.translate(id).spread(function(newProject, partners, contacts, donations) {
             console.log('FIXING START');
+            newProject.donations = donations;
             newProject.institutionalContext = partners.concat(contacts);
             if(newProject.institutionalContext.length < 1)
                 delete newProject.institutionalContext;
@@ -53,7 +54,6 @@ var ALLERRORS = [];
                 newProject.leadContact = 'Unknown'
 
 
-            newProject.donations = donations;
             console.log('FIXING END: done project translation...');
             return newProject;
         });
@@ -277,14 +277,18 @@ var ALLERRORS = [];
                 console.log('contacts gotten: ', contacts.length);
                 var newContacts = [];
                 for(var j=0; j!=contacts.length; ++j) {
+                  var partner;
+                  if(contacts[j].contact)
+                    partner = contacts[j].contact;
+                  else
+                    partner = contacts[j].info.substr(0, 15);
                   newContacts.push({
+                    partner: partner,
                     info: contacts[j].info,
-                    role: {identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'},
+                    role: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED',
                   });
-                  if(contacts[j].contact && contacts[j].contact.length)
-                    newContacts[j].partner = contacts[j].contact;
                   if(contacts[j].roles.length >= 1)
-                    newContacts[j].role = contacts[j].roles[0];
+                    newContacts[j].role = contacts[j].roles[0].identifier;
                 }
 
                 console.log('CONTACTS END: finished with insitutional context...');
@@ -354,6 +358,8 @@ var ALLERRORS = [];
             return q.all(projectPromises).then(function(result) {
                 console.log('finished project!!');
                 return result;
+            }).fail(function(err) {
+                console.log('All project ERROR: ', err);
             });
         },
     };

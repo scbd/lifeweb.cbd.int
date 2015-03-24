@@ -19,8 +19,10 @@ var request = require('request');
         },
         saveDocument: function(doc, schema) {
             var options = {
-                method: 'post',
-                url: this.newProjectsUrl + schema,
+                //method: 'post',
+                //url: this.newProjectsUrl + schema,
+                method: 'put',
+                url: 'http://localhost:2020/api/v2013/documents/x/validate?schema=' + schema,
                 headers: {
                     authorization: 'Ticket ' + this.authenticationToken,
                     realm: 'lifeweb',

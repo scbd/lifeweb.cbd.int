@@ -309,6 +309,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       $scope.document.attachments = $scope.document.attachments || [];
       //$scope.document.donations = $scope.document.donations || [];
       $scope.document.thumbnail = $scope.document.thumbnail || {};
+      $scope.document.campaigns = $scope.document.campaigns || [];
       if($scope.document.aichiTargets)
         (function(aichiTargets) {
             aichiPromise.then(function() {

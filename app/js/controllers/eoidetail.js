@@ -1,4 +1,4 @@
-define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility', '/app/js/services/filters/linkify.js', '/app/js/services/filters/thumbnail.js',], function(app, map) {
+define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility', '/app/js/services/filters/linkify.js', '/app/js/services/filters/thumbnail.js', '/app/js/directives/campaign.js',], function(app, map) {
 //TODO: rename this shittily named controller
   app.controller('EOIDetailCtrl', function ($scope, $http, $q, $modal, editFormUtility, $anchorScroll, location) {
         

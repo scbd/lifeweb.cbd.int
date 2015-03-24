@@ -85,15 +85,9 @@
       <a href="/explore/"><h2 class="featurette-heading"> Latest projects <i class="icon-chevron-right" style="position:relative;top:12px;"></i></h2></a>
       <hr style="padding:0;margin:0;"/>
       <br>
-      <div class="row" >
-       <project-min doc-id="24041" class="col-xs-6"></project-min>
+      <div class="row" getprojects >
+       <project-min ng-repeat="proj in projects" doc-id="proj.identifier_s" project="proj" class="col-xs-6"></project-min>
        <!--<project-min doc-id="24020" class="col-xs-6"></project-min>-->
-       <project-min doc-id="24012" class="col-xs-6"></project-min>
-       <project-min doc-id="24003" class="col-xs-6"></project-min>
-       <project-min doc-id="23999" class="col-xs-6"></project-min>
-       <project-min doc-id="23990" class="col-xs-6"></project-min>
-       <project-min doc-id="23936" class="col-xs-6"></project-min>
-
       </div>
     </div>
          

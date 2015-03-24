@@ -21,7 +21,7 @@
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
                 <td>
-                  <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
+                  <a ng-href="/project?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteProject(project, draftProjects, 'drafts')">X</button>
                 </td>
@@ -34,22 +34,30 @@
         <thead>
             <tr>
                 <th></th>
-                <th>Title</th>
-                <th>Lead Contact</th>
+                <th ng-click="sortTerm='body.title'">Title</th>
+                <th ng-click="sortTerm='body.leadContact'">Lead Contact</th>
+                <th ng-click="sortTerm='-updatedOn'">Updated On</th>
                 <th>Links</th>
             </tr>
         </thead>
         <tbody>
             <!-- TODO: remove duplicated code between different forms of projects -->
-            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:'-updatedOn'">
+            <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:sortTerm | page: publishedProjectsPage">
                 <td><img ng-src="{{project.body.thumbnail.url | thumbnail}}" style="height: 40px;"></img></td>
                 <td>{{project.body.title}}</td>
                 <td>{{project.body.leadContact}}</td>
+                <td>{{project.updatedOn}}</td>
                 <td>
                   <a ng-href="/project2?id={{project.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/projects/edit/{{project.identifier}}" target="_blank"><button type="button">Edit</button></a>
                   <button type="button" ng-click="deleteProject(project, publishedProjects, 'documents')">X</button>
                 </td>
+            </tr>
+            <tr>
+                <td><button type="button" ng-click="firstPage()">First</button></td>
+                <td><button type="button" ng-click="decPage()">Prev 10</button></td>
+                <td><button type="button" ng-click="incPage()">Next 10</button></td>
+                <td><button type="button" ng-click="lastPage()">Last</button></td>
             </tr>
         </tbody>
     </table>

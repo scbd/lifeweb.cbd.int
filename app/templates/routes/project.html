@@ -424,8 +424,13 @@
         </div>
     </div>
 
+    <div ng-repeat="campaign in eoi.campaigns">
+        <campaign id="campaign.identifier"></campaign>
+    </div>
+
     <div ng-show="eoi.additionalInformation" style="padding-top:20px;">
         <h4>Additional Information</h4>
+        <div> Time Frame: {{eoi.timeFrame}} months</div>
         <div class="lw-proj-text" ng-bind-html="eoi.additionalInformation"></div>
     </div>
 </section>

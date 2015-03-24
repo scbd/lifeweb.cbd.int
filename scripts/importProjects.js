@@ -68,13 +68,15 @@ process.on('uncaughtException', function (exception) {
             console.log('done collecting all projects');
             console.log('saving new projects...');
 
+            //var savePromises = [q.fcall(function() { return []; })];
             var savePromises = [];
             for(var i=0; i!=newProjects.length; ++i)
-                savePromises.push(Ajax.saveDocument(newProjects[i], 'lwProject').then(function(doc) {
-                    //if I successfully saved, then delete the cache file
-                    //var deletePromise = fs.remove('./cache/' + doc.header.identifier + '.json');
-                    return doc;
-                }));
+                if(newProjects[i])
+                    savePromises.push(Ajax.saveDocument(newProjects[i], 'lwProject').then(function(doc) {
+                        //if I successfully saved, then delete the cache file
+                        //var deletePromise = fs.remove('./cache/' + doc.header.identifier + '.json');
+                        return doc;
+                    }));
 
             return q.all(savePromises).then(function(result) {
                 console.log('Done Saving all documents!');
