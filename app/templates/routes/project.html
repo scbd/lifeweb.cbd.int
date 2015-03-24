@@ -136,8 +136,8 @@
 
 <div class="lw-proj-text">{{eoi.objectives_info}}</div>
     <table class="table  table-bordered table-hover"  ng-show="eoi.budget"  ng-repeat="obj in eoi.budget" >
-            <tr><td class="lw-dt" style="font-size:13px;">Objective</td><td  class="lw-proj-text" ng-bind-html="obj.activity"></td></tr>
-                 <tr><td class="lw-dt" style="font-size:13px;">Result</td><td  class="lw-proj-text" ng-bind-html="obj.result"></td></tr>
+            <tr><td class="lw-dt" style="font-size:13px;">Objective</td><td style="text-align:left" class="lw-proj-text" ng-bind-html="obj.activity"></td></tr>
+                 <tr><td class="lw-dt" style="font-size:13px;">Result</td><td style="text-align:left" class="lw-proj-text" ng-bind-html="obj.result"></td></tr>
                  <tr><td class="lw-dt" style="font-size:13px;">Funding&nbsp;needed</td><td class="lw-proj-text">{{obj.cost}}</td></tr>
     </table>
 
