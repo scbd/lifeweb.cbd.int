@@ -253,9 +253,9 @@ var oldNewBridge = {};
                 //store old project date keyed by new ids, to be used to potentially fix problems later.
                 oldNewBridge[newProject.header.identifier] = data;
 
-                var thumbnail_id = data.id;
+                var thumbnail_id = data.old_id;
                 if(!thumbnail_id)
-                    thumbnail_id = data.old_id;
+                    thumbnail_id = data.id;
                 var downfile = 'http://www.cbd.int/images/lifeweb/eoi/thumbnails/'+thumbnail_id+'.jpg';
                 var upfile = 'http://lifeweb.cbd.int/api/v2013/documents/'+newProject.header.identifier+'/attachments/'+thumbnail_id+'.jpg';
                 return Downup.with(downfile, upfile).then(function(img_url) {

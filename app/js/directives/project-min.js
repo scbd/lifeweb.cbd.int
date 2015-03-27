@@ -47,6 +47,28 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
                 $scope.proj = null;
             };
 
+        $scope.countries = [];
+        var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
+            $scope.countries = data.data;
+            console.log('countries: ', $scope.countries);
+            $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
+                $scope.countries = $scope.countries.concat(data.data);
+
+                return data;
+            });
+            return data; //good practice. always return from a promise, the same data.
+        });
+        //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
+        //TODO: should be a filter!
+        $scope.fullCountryName = function(shortCountryName) {
+            console.log('country short: ', shortCountryName);
+            for(var i=0; i!=$scope.countries.length; ++i)
+                if($scope.countries[i].identifier == shortCountryName)
+                    return $scope.countries[i].name;
+        };
+
+
+
       
       }]
     }

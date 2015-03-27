@@ -92,7 +92,14 @@ process.on('uncaughtException', function (exception) {
             //create sql script as well
             var sqlstr = '';
             for(var k in bridge) {
-                var dateSubmitted = bridge[k].approved_on_date.slice('/Date('.length,-'000)/'.length);
+                var dateSubmitted = bridge[k].approved_on_date.slice('/Date('.length,-')/'.length);
+                date = new Date(parseInt(dateSubmitted));
+                dateSubmitted = date.getUTCFullYear() + '-' +
+                    ('00' + (date.getUTCMonth()+1)).slice(-2) + '-' +
+                    ('00' + date.getUTCDate()).slice(-2) + ' ' + 
+                    ('00' + date.getUTCHours()).slice(-2) + ':' + 
+                    ('00' + date.getUTCMinutes()).slice(-2) + ':' + 
+                    ('00' + date.getUTCSeconds()).slice(-2) + '.000';
                 sqlstr += "UPDATE km_documents SET CreatedOn='"+dateSubmitted+"', UpdatedOn='"+dateSubmitted+"' WHERE documentuid='"+k+"';\n";
             }
             var sqlPromise = CBPromise();

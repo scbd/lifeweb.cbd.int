@@ -11,13 +11,18 @@ var Downup = {
         var deferred = q.defer();
         //deferred.resolve(downfile);
         //return deferred.promise;
+        var contentType;
         request
             .get(downfile)
+            .on('response', function(response) {
+                console.log('content-type: ', response.headers['content-type']);
+                contentType = response.headers['content-type'];
+            })
             .on('error', function(err) {
                 console.log('download error: ', err);
                 deferred.reject({on: 'download', error: err});
             })
-            .pipe(request.put({url: upfile, headers: {Authorization: 'Ticket ' + this.authenticationToken}}))
+            .pipe(request.put({url: upfile, headers: {"content-type": contentType, Authorization: 'Ticket ' + this.authenticationToken}}))
             .on('response', function(response) {
                 if(response.statusCode == 200) {
                     fs.writeFileSync('output/d-FILE_'+path.basename(upfile)+'.response', JSON.stringify(response, null, '\t'));
