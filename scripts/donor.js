@@ -71,8 +71,8 @@ var guid = require('./guid.js');
                 if(country)
                     newDonor.country = {identifier: country}
                 console.log('CREATEDONOR END: finished saving donor: ', newDonor.header.identifier);
-                //return Ajax.saveDocument(newDonor, 'lwDonor');
-                return  newDonor;
+                return Ajax.saveDocument(newDonor, 'lwDonor');
+                //return  newDonor;
             }
             if(donor.country) {
                 if(donor.country.length > 12)
@@ -81,7 +81,7 @@ var guid = require('./guid.js');
                     .then(function(response) {
                         var country_code = false;
                         if(!response)
-                            return country_code;;
+                            return country_code;
 
                         response = JSON.parse(response.toString());
                         if(response.length > 0)

@@ -78,6 +78,31 @@ process.on('uncaughtException', function (exception) {
                         return doc;
                     }));
 
+            //saving oldNewBridge
+            var bridge = Project.oldNewBridge();
+            var bridgePromise = CBPromise();
+
+            File.writeFile('./oldNewBridge.json', JSON.stringify(bridge, null, '\t'), bridgePromise.hook);
+            bridgePromise.promise.then(function(err) {
+                if(err)
+                    console.log('writing bridge failed: ', err);
+            });
+            savePromises.push(bridgePromise.promise);
+
+            //create sql script as well
+            var sqlstr = '';
+            for(var k in bridge) {
+                var dateSubmitted = bridge[k].approved_on_date.slice('/Date('.length,-'000)/'.length);
+                sqlstr += "UPDATE km_documents SET CreatedOn='"+dateSubmitted+"', UpdatedOn='"+dateSubmitted+"' WHERE documentuid='"+k+"';\n";
+            }
+            var sqlPromise = CBPromise();
+            File.writeFile('./approvedon.sql', sqlstr, sqlPromise.hook);
+            sqlPromise.promise.then(function(err) {
+                if(err)
+                    console.log('writing sql failed: ', err);
+            });
+            savePromises.push(sqlPromise.promise);
+
             return q.all(savePromises).then(function(result) {
                 console.log('Done Saving all documents!');
                 return result;

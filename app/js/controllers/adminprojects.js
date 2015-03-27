@@ -30,6 +30,11 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
             .then(function(response) {
                 console.log('published projects: ', response.data.Items);
                 $scope.publishedProjects = response.data.Items;
+
+                //use to clear my published projects
+                //$scope.publishedProjects.forEach(function(item) {
+                //    $scope.deleteProject(item, $scope.publishedProjects, 'documents');
+                //});
             });
 
         //TODO: I can just put a delete draft here =P

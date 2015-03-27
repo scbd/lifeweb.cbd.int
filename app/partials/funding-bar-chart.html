@@ -5,7 +5,7 @@
         
         <table style="height: 20px;margin-bottom:10px;" cellspacing="0" cellpadding="0">
             <tr>
-                <td width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
+                <td ng-show="match.funding" width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
 
                 <td width="{{( width * ((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))) / (total | filterToUSD:currency)}}px" class="not-funded">&nbsp; </td>
 
@@ -36,7 +36,7 @@ budget<td class="total" style="vertical-align: middle; padding-left: 10px; borde
         <div style="font-weight:bold;font-size:18px;padding-bottom:10px;"  > fully funded </div>
          <table style="height: 20px;" cellspacing="0" cellpadding="0">
             <tr>
-                <td width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
+                <td ng-show="match.funding" width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
 
                 <td class="total" style="vertical-align: middle; padding-left: 10px; border-left: 2px solid #000; font-weight: bold;">{{total | filterCurrency:currency:display}}</td>
             </tr>

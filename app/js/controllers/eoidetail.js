@@ -206,8 +206,10 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
     function addFundingProperties(project) {
         var donations = project.donations || [];
         var total_funding = donations.reduce(function(prev, cur) {
-            console.log('b cur: ', cur);
-            return prev + cur.funding;
+            if(cur.funding)
+                return prev + cur.funding;
+            else
+                return prev;
         }, 0);
 
         var budget = project.budget || [];
@@ -216,7 +218,10 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             project.total_cost = total_funding;
         else
             project.total_cost = project.budget.reduce(function(prev, cur) {
-                return prev + cur.cost;
+                if(cur.cost)
+                    return prev + cur.cost;
+                else
+                    return prev;
             }, 0);
 
         project.funding_needed = project.total_cost - total_funding;

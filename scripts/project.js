@@ -9,8 +9,12 @@ var guid = require('./guid.js');
 var Downup = require('./downup.js');
 
 var ALLERRORS = [];
+var oldNewBridge = {};
 
     var Project = {
+      oldNewBridge: function() {
+        return oldNewBridge;
+      },
       get: function(id) {
         var projectPromise = CBPromise();
 
@@ -205,12 +209,6 @@ var ALLERRORS = [];
                     url: data.all_attachments[k].url,
                   });
                 }
-                if(data.pdf_override)
-                  newProject.attachments.push({
-                    title: data.pdf_override.name,
-                    keywords: ['pdf_override'],
-                    url: data.pdf_override.url,
-                  });
                 if(data.project_doc)
                   newProject.attachments.push({
                     title: data.project_doc.name,
@@ -252,8 +250,14 @@ var ALLERRORS = [];
                       newProject.protectedAreas.push({url: 'http://www.protectedplanet.net/sites/'+data.protected_planet_links[k].url});
                 }
 
-                var downfile = 'http://www.cbd.int/images/lifeweb/eoi/thumbnails/'+data.old_id+'.jpg';
-                var upfile = 'http://lifeweb.cbd.int/api/v2013/documents/'+newProject.header.identifier+'/attachments/'+data.old_id+'.jpg';
+                //store old project date keyed by new ids, to be used to potentially fix problems later.
+                oldNewBridge[newProject.header.identifier] = data;
+
+                var thumbnail_id = data.id;
+                if(!thumbnail_id)
+                    thumbnail_id = data.old_id;
+                var downfile = 'http://www.cbd.int/images/lifeweb/eoi/thumbnails/'+thumbnail_id+'.jpg';
+                var upfile = 'http://lifeweb.cbd.int/api/v2013/documents/'+newProject.header.identifier+'/attachments/'+thumbnail_id+'.jpg';
                 return Downup.with(downfile, upfile).then(function(img_url) {
                     console.log('done uploading file: ', img_url);
                     console.log('PROJECT END: finished all basic project data...');

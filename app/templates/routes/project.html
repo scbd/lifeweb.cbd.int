@@ -250,7 +250,7 @@
 
 <!--==============================================================================-->     
 <section id="align" ng-show="eoi.nationalAlignment"  >  
-    <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Alignment with National Planning</h2> 
+    <h2 ng-show="eoi.nationalAlignment[0].comment != '' || eoi.nationalAlignment[1].comment != '' || eoi.nationalAlignment[2].comment != ''" class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Alignment with National Planning</h2> 
     <div ng-show="eoi.nationalAlignment[0].comment != ''">
         <h4>Alignment with {{eoi.nationalAlignment[0].type.identifier}}</h4>
         <div ng-bind-html="eoi.nationalAlignment[0].comment"></div>
@@ -291,7 +291,7 @@
 
 
 <!--==============================================================================-->
-<section id="partners"  >
+<section id="partners">
     <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Partners and Contacts</h2>
 
     <h4>Contacts</h4>

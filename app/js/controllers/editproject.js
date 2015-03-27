@@ -236,6 +236,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
                 type: {identifier: key},
                 comment: fake[key],
             });
+        if(real[realKey].length == 0)
+            delete real[realKey];
     }
     function mapTermAndCommentToObject(fake, real, fakeKey, tabInfo, tabs) {
         var fakeTargets = {};
@@ -308,9 +310,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       if($scope.document.maps && $scope.document.maps.length == 0)
         $scope.document.maps = null;  //fucking terrible cbd api...
       $scope.document.attachments = $scope.document.attachments || [];
+      $scope.fakeCampaigns = $scope.document.campaigns || [];
       //$scope.document.donations = $scope.document.donations || [];
-      $scope.document.thumbnail = $scope.document.thumbnail || {};
-      $scope.document.campaigns = $scope.document.campaigns || [];
       if($scope.document.aichiTargets)
         (function(aichiTargets) {
             aichiPromise.then(function() {
@@ -375,6 +376,13 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         }, true);
 
         //This is beyond awful, just for the fucking retarded REST API they have that won't take an empty array, but well accept undefined... ffs.
+        $scope.$watch('fakeCampaigns', function() {
+            if($scope.fakeCampaigns && $scope.fakeCampaigns.length == 0)
+                $scope.document.campaigns = undefined;
+            else
+                $scope.document.campaigns = $scope.fakeCampaigns;
+        }, true);
+
         $scope.$watch('document.donations', function() {
             if($scope.document.donations && $scope.document.donations.length == 0)
                 $scope.document.donations = undefined;
@@ -384,12 +392,34 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             if($scope.document.maps && $scope.document.maps.length == 0)
                 $scope.document.maps = undefined;
         });
+
+        $scope.$watch('document.images', function() {
+            if($scope.document.images && $scope.document.images.length == 0)
+                $scope.document.images = undefined;
+        });
+
+        $scope.$watch('document.attachments', function() {
+            if($scope.document.attachments && $scope.document.attachments.length == 0)
+                $scope.document.attachments = undefined;
+        });
+
+        //TODO: find a better way for this one, because it reverts to an empty array after adding and deleting.
+        $scope.$watch('document.institutionalContext', function() {
+            if($scope.document.institutionalContext && $scope.document.institutionalContext.length == 0)
+                $scope.document.institutionalContext = undefined;
+        });
+
+        $scope.$watch('document.budget', function() {
+            if($scope.document.budget && $scope.document.budget.length == 0)
+                $scope.document.budget = undefined;
+        });
     }
 
     $scope.sum = function(arr, key) {
       var sum = 0;
       for(var i=0; i!=arr.length; ++i)
-        sum += arr[i][key];
+        if(arr[i][key])
+            sum += arr[i][key];
 
       return sum;
     };

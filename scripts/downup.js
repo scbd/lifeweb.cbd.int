@@ -19,10 +19,12 @@ var Downup = {
             })
             .pipe(request.put({url: upfile, headers: {Authorization: 'Ticket ' + this.authenticationToken}}))
             .on('response', function(response) {
-                if(response.statusCode >= 200 && response.statusCode < 300)
+                if(response.statusCode == 200) {
+                    fs.writeFileSync('output/d-FILE_'+path.basename(upfile)+'.response', JSON.stringify(response, null, '\t'));
                     deferred.resolve(upfile);
-                else {
+                } else {
                     deferred.resolve(downfile);
+                    console.log('ERROR');
                     console.log('UPLOAD ERROR with \''+upfile+'\': ', response.statusCode);
                     console.log('Using ', downfile);
                 }

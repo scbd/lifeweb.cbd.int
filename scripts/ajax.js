@@ -19,10 +19,10 @@ var request = require('request');
         },
         saveDocument: function(doc, schema) {
             var options = {
-                //method: 'post',
-                //url: this.newProjectsUrl + schema,
-                method: 'put',
-                url: 'http://localhost:2020/api/v2013/documents/x/validate?schema=' + schema,
+                method: 'post',
+                url: this.newProjectsUrl + schema,
+                //method: 'put',
+                //url: 'http://localhost:2020/api/v2013/documents/x/validate?schema=' + schema,
                 headers: {
                     authorization: 'Ticket ' + this.authenticationToken,
                     realm: 'lifeweb',
@@ -36,6 +36,8 @@ var request = require('request');
                     console.log(error);
                     deferred.reject(error);
                 } else {
+                    if(response.errors)
+                        console.log('ERRORS WITH: ', doc.header.identifier);
                     deferred.resolve(doc);
                     fs.writeFileSync('output/d-'+schema+'_'+doc.header.identifier+'.response', JSON.stringify(doc, null, '\t') + '\n\n' + JSON.stringify(response, null, '\t'));
                     console.log('Saving document '+schema+':'+doc.header.identifier+', successful...') 

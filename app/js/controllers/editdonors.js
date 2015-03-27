@@ -13,6 +13,11 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/e
         .then(function(response) {
             console.log('published donors: ', response.data.Items);
             $scope.donors = response.data.Items;
+
+            //use to clear my published donors
+            //$scope.donors.forEach(function(item) {
+            //    $scope.deleteDonor(item);
+            //});
         });
 
         
