@@ -1,0 +1,151 @@
+{
+	"header": {
+		"identifier": "D7D0302D-697A-B2AD-3A1D-FA7092349DB4",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "Funded by Germany BMU",
+			"funding": 1999361,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cd"
+		}
+	],
+	"title": "Creation of planning and capacity building essentials for an improved and expanded network of protected areas",
+	"timeFrame": null,
+	"projectAbstract": "Based on the Democratic Republic of the Congo's voluntary commitment to turn 15% of the country into protected areas (different categories) and to thus double the existing area size under protection, a platform for planning, designating and improving the comprehensive country-wide network of protected areas is to be established together with the stakeholders concerned.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"coordinates": {
+		"lng": 23.818359375,
+		"lat": -2.460181181020993,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/D7D0302D-697A-B2AD-3A1D-FA7092349DB4/attachments/5982.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "D7D0302D-697A-B2AD-3A1D-FA7092349DB4",
+		"documentID": 203713,
+		"createdOn": "2015-03-27T19:44:59.123",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:59.123",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 1666,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:01 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/D7D0302D-697A-B2AD-3A1D-FA7092349DB4",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 1273
+		}
+	}
+}

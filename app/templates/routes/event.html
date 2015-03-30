@@ -20,7 +20,7 @@
                           <img src="{{event.coverImage.url}}" ng-show="event.icon" class="img-polaroid" style="max-width:150px;margin-top:15px;" /></td>
                       
                           <td><h3 style="color: #2185C5;" ng-bind-html="event.description"></h3>
-                          <h3>{{event.startDate}} - {{event.endDate}}</h3></td>
+                          <h3>{{properDate(event.startDate)}} - {{properDate(event.endDate)}}</h3></td>
                           </tr>
                           </table>
                      

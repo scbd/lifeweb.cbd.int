@@ -154,8 +154,8 @@
           </tr>
           <tr ng-repeat="donation in document.donations" ng-controller="documentDonorCtrl">
             <td style="width: 300px;">
-                <afc-autocomplete ng-model="donation.donor" source="donationsAC" placeholder="Enter donor's full name"  mapping="identifierHeaderMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
-                <edit-donor donor="donatingDonor"></edit-donor>
+                <afc-autocomplete ng-model="donation.donor" source="donationsAC" placeholder="Enter donor's full name"  mapping="identifierMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
+                <edit-donor donorheader="donating.donor"></edit-donor>
             </td>
             <td><textarea style="display: inline;" expandable-text rows="1" ng-model="donation.description" placeholder="Enter any information regarding donor's donation"></textarea></td>
             <td><input type="number" ng-model="donation.funding" placeholder="Donor's donation in USD" /></td>
@@ -187,8 +187,8 @@
           <tr><td colspan="5" style="border-top: 1px solid gray;">Add a new donation using the form below</td></tr>
           <tr>
             <td colspan="4" style="padding-top: 10px; text-align: left;">
-              <afc-autocomplete ng-model="newdonor.donor" source="donationsAC" placeholder="Enter donor's full name" mapping="identifierHeaderMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
-              <edit-donor donor="newdonorDonor"></edit-donor><br />
+              <afc-autocomplete ng-model="newdonor.donor" source="donationsAC" placeholder="Enter donor's full name" mapping="identifierMapping" selectbox="true" windows-scrollbar-compatible="true"></afc-autocomplete>
+              <edit-donor donorheader="newdonor.donor" is-new="isNew"></edit-donor><br />
               <input type="text" ng-model="newdonor.description" ng-keydown="maybeAddItem($event, 'newdonor', 'donations')" style="width: 100%; height: 100%;" placeholder="Enter any information regarding donor's donation" />
             </td>
             <td>

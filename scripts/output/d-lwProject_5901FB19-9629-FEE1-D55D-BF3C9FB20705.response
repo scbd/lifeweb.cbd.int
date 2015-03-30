@@ -1,0 +1,192 @@
+{
+	"header": {
+		"identifier": "5901FB19-9629-FEE1-D55D-BF3C9FB20705",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "fj"
+		}
+	],
+	"title": "Fiji Marine Ecological Gap Analysis",
+	"timeFrame": null,
+	"projectAbstract": "Following participation in a regional workshop in Nadi in February 2009 to assess progress against PoWPA for Pacific Island countries, information on important marine and estuarine species and habitats was collated during a national planning workshop in June 2009 to develop marine and estuarine conservation targets for the national-scale ecological gap analysis.",
+	"description": "Following participation in a regional workshop in Nadi in February 2009 to assess progress against PoWPA for Pacific Island countries, information on important marine and estuarine species and habitats was collated during a national planning workshop in June 2009 to develop marine and estuarine conservation targets for the national-scale ecological gap analysis. Invited stakeholders and experts included representatives from Fiji government, non-governmental organizations, the University of the South Pacific and private-sector. <br/><br/>The workshop findings indicated that although some diversity surveys and prioritization exercises have been performed for certain taxa (e.g. seabirds), data on aquatic habitat condition and species distributions are currently too deficient to: (a) determine quantitative targets for protection; (b) establish gaps in current aquatic conservation efforts; and (c) prioritize regions for protection to maximize biodiversity conservation. Furthermore, most currently available data is decentralized and not spatially located within a geographic information system (GIS) for ready analysis. <br/><br/>This project seeks additional funding to fulfil two main recommendations from the workshop:<br/><br/>1.\tCollate existing freshwater and marine information into a centralized, spatially referenced database;<br/>2.\tCollect new biodiversity and biogeographic information from data deficient taxa and habitats (e.g. seagrass, marine algae, marine and freshwater invertebrates, cetaceans).<br/><br/>As a supporting objective, we propose to raise the technical capacity of members of the national Protected Area Committee (PAC) in conservation planning skills to improve the quality of products resulting from the ecological gap analysis. The PAC is a multi-disciplinary and multi-sectoral technical advisory committee to the National Environment Council (NEC) who is tasked to lead on work under PoWPA. As few members have had prior training in conservation planning and GIS, we seek to build expertise through skills-development workshops.<br/><br/>Anticipated outcomes from additional funding to complete a comprehensive ecological gap analysis for Fiji include:<br/>•\tZoning scheme established for marine and coastal areas in conjunction with the Integrated Coastal Management Committee, a second technical arm of the NEC;<br/>•\tPriority areas for aquatic biodiversity protection in rivers, estuaries, and inshore and offshore waters identified across the defined zones through conservation planning tools (e.g. MARXAN software) that emphasize connectivity between terrestrial and marine systems; and<br/>•\tFeasibility assessment of scaling up biodiversity protection through the existing Fiji Locally Managed Marine Area (FLMMA) network, through which currently 3% of exposed reefs and 0.7% of submerged reefs mapped for Fiji (within traditional fishing grounds that have been legally demarcated by the Native Lands and Fisheries Commission) are protected under no-take closures;<br/><br/>There is a strong desire to build on the success of the FLMMA network given that the sustainability of aquatic resources in Fiji is increasingly threatened as a result of increased pollution and overfishing. National catch per unit effort data indicate that  greater than 70% of catch from common food fish families (snapper and emperor) are below minimum reproductive size, therefore reducing the potential for population replenishment. Of this “subsistence” catch, more than 70% is sold, thus greatly underestimating the value of the fisheries sector, which is already the third largest contributor to gross domestic product (GDP) from natural resources. <br/><br/>Meanwhile, areas with poor land management practices have recently experienced massive flooding, resulting in enormous damage to infrastructure (~FJD$300 million spent on damages from January 2009 floods) and untold impacts to freshwater, coastal and marine habitats and species. Given the risk of increased frequency of extreme climate disturbance associated with global climate change, Fiji urgently needs to develop conservation plans which include both no-take areas preserve connectivity between terrestrial and marine systems and also other types of resource management (e.g. best practices for land management) to reduce threats from multiple use zones.",
+	"additionalInformation": "\n[participation]\nThe information generated out of this research project, will assist local communities by providing them with key information to make better informed decisions on the management of aquatic and marine areas in Fiji.<br/><br/>The recognition of priority aquatic and marine areas in Fiji, and the information generated regarding these areas enables all stakeholders to develop a better mechanism for equitable sharing of costs and benefits arising from the protection of these newly identified areas.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Fiji’s National Biodiversity Action Plan, recently revised in December 2009 prioritises the need for action in the completion of Fiji’s marine gap analysis by the end of 2011.<br/><br/>Fiji’s National Strategic Development Plan 2007-2011 prioritises the need to establish Marine Protected Areas in Fiji in support of the actions proposed by the Fiji National Biodiversity Action Plan."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Collate existing freshwater and marine information into a centralized, spatially referenced database",
+			"result": "Zoning scheme established for marine and coastal areas",
+			"cost": 50000
+		},
+		{
+			"activity": "Collect new biodiversity and biogeographic information from data deficient taxa and habitats (e.g. seagrass, marine algae, marine and freshwater invertebrates, cetaceans)",
+			"result": "Priority areas for aquatic biodiversity protection in rivers, estuaries, and inshore and offshore waters identified and protected. \r\nImproved representation of marine and freshwater ecosystems in Fiji’s protected area network.",
+			"cost": 400000
+		},
+		{
+			"activity": "Scholarships for post-graduate research in the field of invertebrate, marine, fish and cetacean biology.",
+			"result": "In-country species experts.",
+			"cost": 76000
+		},
+		{
+			"activity": "To establish, through research, the current status of known (and presumed) nesting & foraging marine turtle species in the identified sites.",
+			"result": "Priority habitats critical to the survival of marine turtles identified and protected.",
+			"cost": 70000
+		},
+		{
+			"activity": "Skills-development workshops in conservation planning and GIS.",
+			"result": "Built local and national capacity for conservation planning and GIS.",
+			"cost": 30000
+		}
+	],
+	"financialStability": "USP Biology – staff time, equipment, resources<br/>Wetlands International – staff time, equipment, resources<br/>WCS – staff time, equipment, GIS facility, resources, technical expertise<br/>USP Marine – staff time, equipment, resources<br/>WWF – staff time, equipment, resources",
+	"maps": [
+		{
+			"title": "Fig. 1a: Satellite tagged green turtle migration",
+			"url": "http://www.cbd.int/database/attachment/?id=417"
+		},
+		{
+			"title": "Fig. 1b: Satellite tagged hawksbill turtle migration From Samoa to Fiji – 2006.",
+			"url": "http://www.cbd.int/database/attachment/?id=418"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Fiji/LIFEWEB PROJECT EXPRESSION OF INTEREST (2).doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Fiji/LIFEWEB PROJECT EXPRESSION OF INTEREST (2).doc"
+		}
+	],
+	"coordinates": {
+		"lng": 179.414413,
+		"lat": -16.578193,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/5901FB19-9629-FEE1-D55D-BF3C9FB20705/attachments/4708.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "5901FB19-9629-FEE1-D55D-BF3C9FB20705",
+		"documentID": 203755,
+		"createdOn": "2015-03-27T19:45:42.573",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:42.573",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 9118,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:43 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/5901FB19-9629-FEE1-D55D-BF3C9FB20705",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 8436
+		}
+	}
+}

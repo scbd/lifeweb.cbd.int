@@ -1,0 +1,232 @@
+{
+	"header": {
+		"identifier": "54E4F4F1-C875-3931-6ECB-891AC7C191B1",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cv"
+		},
+		{
+			"identifier": "gm"
+		},
+		{
+			"identifier": "gn"
+		},
+		{
+			"identifier": "gw"
+		},
+		{
+			"identifier": "mr"
+		},
+		{
+			"identifier": "sn"
+		},
+		{
+			"identifier": "sl"
+		}
+	],
+	"title": "Far West African Challenge: Strengthening protected areas to preserve biodiversity, address climate change and secure livelihoods",
+	"timeFrame": null,
+	"projectAbstract": "This vision aims to enable seven West African countries (Cape Verde, Gambia, Guinea, Guinea Bissau, Mauritania, Senegal and Sierra Leone) to meet by 2020 their commitments for protected areas under the Convention on Biological Diversity, including Aichi target 11 and related protected area commitments,, by strengthening the national and regional protected areas system. The project will seek to maximise protected areas’ ecosystem services, particularly to local communities; by addressing sustainable finance, addressing institutional and legislative barriers, building  capacity of all involved stakeholders to addressing threats, promoting innovative governance mechanisms, as well as a major communication and outreach programme that will advocate the benefits from protected areas.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "carte mauritanie",
+			"url": "http://www.cbd.int/database/attachment/?id=1340"
+		},
+		{
+			"title": "carte rampao",
+			"url": "http://www.cbd.int/database/attachment/?id=1341"
+		},
+		{
+			"title": "senegal map",
+			"url": "http://www.cbd.int/database/attachment/?id=1342"
+		},
+		{
+			"title": "guinea bissau map",
+			"url": "http://www.cbd.int/database/attachment/?id=1343"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "https://www.cbd.int/lifeweb/eoi/eoi_west_africa.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "https://www.cbd.int/lifeweb/eoi/eoi_west_africa.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": -17.3583984375,
+		"lat": 14.743010965702727,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/54E4F4F1-C875-3931-6ECB-891AC7C191B1/attachments/6666.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "54E4F4F1-C875-3931-6ECB-891AC7C191B1",
+		"documentID": 203800,
+		"createdOn": "2015-03-27T19:46:29.197",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:29.197",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 3592,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:30 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/54E4F4F1-C875-3931-6ECB-891AC7C191B1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 2591
+		}
+	}
+}

@@ -1,0 +1,222 @@
+{
+	"header": {
+		"identifier": "8ADECA52-2D2F-2AB2-C1E9-1CD142215CEF",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "bj"
+		}
+	],
+	"title": "Projet de Partenariat  - Développement des activités de gestion et protection du Parc National W",
+	"timeFrame": null,
+	"projectAbstract": "The Parc National W is one of the largest transboundary nature reserves in the world, which is under serious threat from illegal hunting. The aim of this project is to develop monitoring programs and anti-poaching mechanisms that would strengthen the management and ensure the effective protection of the conservation area. Additionally, this project would facilitate the development of scientific research activities, such as ecological gap assessments which are non-existent at the present time.",
+	"description": "Le Parc National W n’est géré concrètement seulement depuis 2002 et un seul plan de gestion a été réalisé(ECOPAS), financé par l’Union Européenne en majeure partie. Ainsi la gestion de l’ensemble de ces aires protégées n’est pas encore adéquate, notamment en matière de lutte anti-braconnage, qui est la base même de la protection et conservation de celles-ci.<br/><br/>En effet les opérations irrégulières de lutte anti-braconnages ne sont pas encore assez satisfaisantes en vue de l’immensité des aires protégés et des pressions persistantes dû aux activités humaines (agriculture, déforestion, élevage/transhumance, chasse et pêche illégale, braconnage…).<br/>De nombreuses espèces protégées sont encore chaque jour victimes du braconnage dans le complexe du W (Éléphants, Buffles, Lions, Babouins, guib harnachés, varans, crocodiles, serpents ect…)",
+	"additionalInformation": "\n[participation]\nLe projet améliorera dans un premier temps, les revenus et conditions de travails des Eco-Gardes, donc de meilleures conditions de vie pour leurs familles (plus de 40) sont envisagées.<br/>De plus le CENAGREF, qui gère le Parc National W, doit redistribuer 30% de ses recettes aux populations riveraines (AVIGREF). Ainsi les retombées économiques de l’Écotourisme seront directement favorables aux populations autochtones.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Dans le souci de soutenir le CENAGREF, le Programme de Conservation et de Gestion des Parcs Nationaux (PCGPN) a été initié par le Gouvernement Béninois.<br/>Il comprend trois composantes : <br/>              - La composante \"actions Communes\" <br/>              - La composante \"Gestion du Complexe de la Pendjari\" <br/>              - La composante \"Aménagement du Complexe du W\"<br/><br/>De plus le Programme de Conservation et de Gestion des Ressources Naturelles (ProCGRN) a été institué par le gouvernement Béninois (Objectif global : « La population rurale tire davantage de bénéfices de l’exploitation durable des ressources naturelles).<br/><br/>Ainsi notre projet de développement des activités de gestion et protection du Parc National W  s’intègre parfaitement dans les planifications nationales pour la biodiversité et le développement durable."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Renforcement de la lutte anti-Braconnage",
+			"result": "- Augmentation des effectifs de la faune sauvage.\r\n- Parc Sécurisé.\r\n- Flore et Faune protégé et conservé\r\n- Augmentation des activités d’Éco-tourismes.\r\n- Améliorations des conditions de vie des populations riveraines.\r\n- Augmentation des recherches et études scientifiques (Amélioration des connaissances pour une meilleure gestion)",
+			"cost": 598
+		}
+	],
+	"financialStability": "Les mécanismes bilatéraux et multilatéraux de financement où des fonds sont créés pour financer des projets environnementaux, restent des sources importantes de financement pour l'amélioration des <br/>systèmes d'aires protégées. La mise en place de partenariats à long terme est en cours.<br/><br/>Les partenariats et jumelages (avec  le CENAGREF ainsi que des communes intégrantes et périphériques du Parc W) sont actuellement à l’étude par des Fondations, Communes, Parcs Naturels et Zoologiques français.<br/><br/>L’écotourisme qui tend à augmenter chaque année, sera alors en situation de se développer convenablement et fournira une source supplémentaire de revenus (d’après le plan d’affaire du Parc National de la Pendjari,  plus de 150 000 Euros de recette ont été perçues via le tourisme de vision et la chasse en 2009).",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "photos",
+			"url": "http://www.cbd.int/database/attachment/?id=826"
+		},
+		{
+			"title": "photos (faune)",
+			"url": "http://www.cbd.int/database/attachment/?id=827"
+		}
+	],
+	"maps": [
+		{
+			"title": "map 1",
+			"url": "http://www.cbd.int/database/attachment/?id=818"
+		},
+		{
+			"title": "map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=819"
+		},
+		{
+			"title": "map 3",
+			"url": "http://www.cbd.int/database/attachment/?id=820"
+		}
+	],
+	"attachments": [
+		{
+			"title": "annexes 1, 2, 3 et 4",
+			"url": "http://www.cbd.int/database/attachment/?id=828"
+		},
+		{
+			"title": "annexe 5 (photos flore)",
+			"url": "http://www.cbd.int/database/attachment/?id=829"
+		},
+		{
+			"title": "annexe 5 (photos faune)",
+			"url": "http://www.cbd.int/database/attachment/?id=830"
+		},
+		{
+			"title": "annexe 6 (budget prévisionnel)",
+			"url": "http://www.cbd.int/database/attachment/?id=831"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Benin/Expression d'interêt - Parc W final.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Benin/Expression d'interêt - Parc W final.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 2.315834,
+		"lat": 9.30769,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/8ADECA52-2D2F-2AB2-C1E9-1CD142215CEF/attachments/6209.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "8ADECA52-2D2F-2AB2-C1E9-1CD142215CEF",
+		"documentID": 203781,
+		"createdOn": "2015-03-27T19:46:07.773",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:07.773",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 6906,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:12 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/8ADECA52-2D2F-2AB2-C1E9-1CD142215CEF",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 6005
+		}
+	}
+}

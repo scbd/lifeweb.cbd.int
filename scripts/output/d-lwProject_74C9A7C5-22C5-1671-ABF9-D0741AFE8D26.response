@@ -1,0 +1,390 @@
+{
+	"header": {
+		"identifier": "74C9A7C5-22C5-1671-ABF9-D0741AFE8D26",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "3E9B6D22-F8BE-AFD4-132A-081A88E984A3"
+			},
+			"description": "ASEAN Centre for Biodiversity through Government of Philippines (in-kind), GIZ initiatives (Climate Change and Biodiversity Project and Blue Solutions) (aggregated total € 770,270)\n\nACB – Government of the Philippines as Host Country core support to ACB € 375,000\nGerman Cooperation – GIZ o Biodiversity and Climate Change Project (2010-2015) o Blue Solutions (2014-2015) o ProACB Project (new 2015-2019) € 80,000 € 20,000",
+			"funding": 770270,
+			"dateTime": "1398902400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "GEF-IW Scaling up Implementation of the Sustainable Development Strategy for the Seas of East Asia (SDS-SEA)",
+			"funding": 770270,
+			"dateTime": "1398902400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "Co-financing commitments of national governments of Cambodia, China, Indonesia, Philippines, Timor Leste, Thailand and Vietnam (aggregated) to support GEF/UNDP Scaling up SDS-SEA implementation Project with specific amounts of co-finance secured below for 2014-2019 to which national governments have committed: € 10,783,780 Cambodia € 775,150 China € 2,834,070 Indonesia € 674,040 Philippines € 4,241,060 Thailand € 689,160 Timor Leste € 38,300 Vietnam € 1,532,000.",
+			"funding": 10783780,
+			"dateTime": "1398902400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Name: Mr S. Adrian Ross, Executive Director Email: saross@pemsea.org Phone: +632922940 Organisation: PEMSEA Resource Facility (PRF)<br/><br/> Name: Ms. Clarissa C. Arida, Director. Programme Development and Implementation Email: ccarida@aseanbiodiversity.org Phone: +63 49 536-3989 local 506 Organisation: ASEAN Centre for Biodiversity (ACB)",
+	"countries": [
+		{
+			"identifier": "bn"
+		},
+		{
+			"identifier": "kh"
+		},
+		{
+			"identifier": "cn"
+		},
+		{
+			"identifier": "id"
+		},
+		{
+			"identifier": "my"
+		},
+		{
+			"identifier": "mm"
+		},
+		{
+			"identifier": "ph"
+		},
+		{
+			"identifier": "kr"
+		},
+		{
+			"identifier": "sg"
+		},
+		{
+			"identifier": "th"
+		},
+		{
+			"identifier": "tl"
+		},
+		{
+			"identifier": "vn"
+		}
+	],
+	"title": "ACHIEVING THE AICHI BIODIVERSITY TARGETS THROUGH INTEGRATED COASTAL MANAGEMENT",
+	"timeFrame": 5,
+	"projectAbstract": "This project will support government implementation of marine biodiversity conservation actions at the regional, national and local levels and scale-up the coverage and effectiveness of marine conservation areas and threatened species protection in South East and East Asia in support of implementation of Sustainable Development Strategy for the Seas of East Asia (SDS-SEA).",
+	"description": "The importance of effectively managed coastal and marine areas to food and energy security, biodiversity conservation, community health, climate change resilience, sustainable livelihoods and economic growth, is increasingly acknowledged. This is especially true of the South East and East Asia region, which hosts an immensely rich marine environment, including 30% of the world’s coral reefs, 35% of mangroves, about 18% of seagrass meadows. These ecosystems support the highest coastal marine biodiversity in the world along 234,000 kilometres of coastline, and provide the resource base and natural infrastructure which sustains a life support system for at least two billion people. <br/><br/>However, the ASEAN Biodiversity Outlook (ABO) confirms that the region failed to meet the target of significantly reducing biodiversity loss by 2010. Natural wealth continues to degrade at a relatively high rate, with loss of 26.46% of mangroves in Southeast Asia and 33.40% in East Asia from 1980 to 2005, or an annual change rate of 1.06% and 1.34% respectively (FAO, 2007). Coral reefs and seagrasses are also experiencing increased threats through habitat change, sea level rise and other impacts of climate change, over-exploitation and pollution. The Protected Areas Gap Analysis in ASEAN region (ACB, 2010), reports severe under-representation of marine habitats and ecosystems and absence of protection of 78%, or more than 6 million hectares, of the 82 identified marine Key Biodiversity Areas (mKBAs). For those protected mKBAs, management concerns remain an issue. Despite the increase in the proportion of MPA areas within the territorial waters of some countries, there have been notable declines in the quality and quantity of mangrove, seagrass and coral reef habitats within these MPAs. As a consequence, the population, health and resiliency of many threatened species, such as the Chinese White Dolphin, remain a matter of concern. <br/><br/>Although some coastal areas with sustained integrated management efforts have shown signs of environmental improvements, many threats to protecting and sustaining coastal and marine ecosystem services persist across the region, including: <br/>a. Land use transformation in coastal and upland areas <br/>b. Land reclamation in coastal and wetland areas <br/>c. Deforestation, erosion and sedimentation <br/>d. Degradation, destruction and over-exploitation of natural resources, including fisheries <br/>e. Continued trade in wildlife and endangered species <br/>f. Increasing populations and economic activities in coastal areas <br/>g. Conflicting uses and demands among users for limited coastal and marine resources, such as tourism, port development/marine transportation and fisheries <br/>h. Inequitable access to resources, resulting in food security and sustainable livelihood concerns, especially among fishing communities <br/>i. Marine pollution from land-based and sea-based sources <br/>j. Climate variation and change including extreme weather events.<br/><br/>The root causes for these continuing threats can be traced to one or more of the following: <br/>a. Lack of national policies on coasts and oceans and outdated national policies that conflict with the objectives of biodiversity conservation and sustainable development of coastal and marine resources <br/>b. Inadequate institutional mechanisms to facilitate coordination across communities, sectors, local and national governments, and their respective agencies and boundaries <br/>c. Inadequate legislation and the capacity to enforce regulations <br/>d. Insufficient mechanisms and incentives to engage local governments and the business sector in conservation investments <br/>e. Limited access to training and capacity building opportunities to build up human and financial capital to effectively manage protected areas <br/>f. Inadequate resources and capacity for scientifically sound environmental monitoring and reporting, coupled with lack of coordination of environmental monitoring efforts across agencies, programs and projects <br/>g. Inadequate funding for applied research on social and economic values of coastal and marine ecosystems and their contributions to sustainable development and security <br/>h. Limited knowledge or awareness of the value of coastal ecosystems services and the consequences of their degradation or loss <br/>i. Limited knowledge sharing on best practices and case studies within countries and across the region <br/>j. Limited buy-in by local governments and local stakeholders on the benefits of MPAs. In the face of complex threats to the globally important marine and coastal biodiversity in the East and Southeast Asia region, this project seeks to add value by applying a systematic approach to strengthening the management effectiveness of MPAs under a variety of political, social, economic and environmental conditions to implement the SDS-SEA.<br/><br/> The project will demonstrate the use of a conservation-focused integrated coastal management (ICM) framework and process to support and strengthen actions identified in national biodiversity strategies and action plans (NBSAPs). On-the-ground conservation actions will not only factor in the capacities and priorities of local communities, but also take into account critical issues such as climate change adaptation, disaster risk reduction, food security, alternative livelihoods and pollution reduction, and incorporate these into the development plans of local governments. A stepwise and iterative approach will be adopted to facilitate systematic and integrated policy making, planning and management decision-taking.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "While the information on poverty reduction strategies of the countries participating in this project is fragmented and incomplete, it would be safe to assume that countries a) acknowledge the need for good governance as the key to poverty reduction, b) need to better align sound natural resource management objectives with sound economic growth objectives, and ensure that mechanisms are in place to understand and assess various trade-offs, and, c) need to ensure that poverty reduction strategies are developed and implemented through processes that emphasis stakeholder inclusion. <br/><br/>The proposed project is consistent with the dual emphasis of increasing the number of protected areas, and addressing continued losses in biodiversity, as outlined in the Millennium Development Goals (MDG) annual reports (Goals 7A and 7B). Less than 1.5% of the total protected areas globally, are devoted to coastal and marine ecosystems. More specifically, the project seeks to assist governments in meeting commitments related to the Convention on Biological Diversity (or “Aichi Targets”), specifically Targets 10, 11 and 12 below: <br/><br/>Target 10 By 2015, the multiple anthropogenic pressures on coral reefs, and other vulnerable ecosystems impacted by climate change or ocean acidification are minimized, so as to maintain their integrity and functioning. <br/><br/>Target 11 By 2020, at least 17 per cent of terrestrial and inland water areas and 10 per cent of coastal and marine areas, especially areas of particular importance for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well-connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscape and seascape. <br/><br/>Target 12 By 2020, the extinction of known threatened species has been prevented and their conservation status, particularly of those most in decline, has been improved and sustained. <br/><br/>In relation to implementation of the SDS-SEA, PEMSEA Country and Non-Country Partners have adopted the SDS-SEA Implementation Plan (2012-2016) as a framework to coordinate the implementation of SDS-SEA and facilitate collaborative planning and resource mobilization (Changwon Declaration, 2012). Meanwhile, all PEMSEA Country Partners have taken steps to integrate ICM into their national programmes, with varying degrees of development. These are articulated in the individual national SDS-SEA Implementation Plans, and presented in more detail in the attached Project Narrative Document. Cambodia, Indonesia, Philippines, and Vietnam have developed UN-REDD national programmes and with Thailand, have signed on to the Forest Carbon Partnership Facility (FCPF). Countries are exploring application of more than one international safeguards framework in the design and on the path to implementation of national REDD+ strategies and action plans. There are a number of challenges which need to be addressed, particularly in view of the international commitments on REDD+ safeguards and biodiversity conservation.<br/><br/>To date, terrestrial forest landscapes have been the primary focus of REDD+ preparations, or “REDD+ readiness”. However, there is a growing body of evidence to show that mangrove forests in coastal swamps have significant carbon sequestration potential. Mangroves also help coastal communities, particularly in fisheries since they provide refugia for spawning species, among others. The problem is that very few carbon certification programmes under REDD+ consider mangrove forests since the carbon models and nature of the sediment, have not been sufficiently understood in relation to securing financial benefits. Among the constraining factors to the inclusion of mangroves in REDD+ is that the carbon stock assessment and accounting methodologies are not yet applicable to mangrove forest ecosystems, and not captured under existing certification schemes. <br/><br/>The project will take steps to assess the potential of mangrove forests, seagrasses and coral reefs under a ‘blue carbon strategy’, which is referred to below, and elaborated in the Project Narrative Document. Where appropriate, actions to develop and implement disaster risk reduction and management strategies and climate change mitigation / adaptation, will be considered."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "While the information on poverty reduction strategies of the countries participating in this project is fragmented and incomplete, it would be safe to assume that countries a) acknowledge the need for good governance as the key to poverty reduction, b) need to better align sound natural resource management objectives with sound economic growth objectives, and ensure that mechanisms are in place to understand and assess various trade-offs, and, c) need to ensure that poverty reduction strategies are developed and implemented through processes that emphasis stakeholder inclusion. <br/><br/>The proposed project is consistent with the dual emphasis of increasing the number of protected areas, and addressing continued losses in biodiversity, as outlined in the Millennium Development Goals (MDG) annual reports (Goals 7A and 7B). Less than 1.5% of the total protected areas globally, are devoted to coastal and marine ecosystems. More specifically, the project seeks to assist governments in meeting commitments related to the Convention on Biological Diversity (or “Aichi Targets”), specifically Targets 10, 11 and 12 below: <br/><br/>Target 10 By 2015, the multiple anthropogenic pressures on coral reefs, and other vulnerable ecosystems impacted by climate change or ocean acidification are minimized, so as to maintain their integrity and functioning. <br/><br/>Target 11 By 2020, at least 17 per cent of terrestrial and inland water areas and 10 per cent of coastal and marine areas, especially areas of particular importance for biodiversity and ecosystem services, are conserved through effectively and equitably managed, ecologically representative and well-connected systems of protected areas and other effective area-based conservation measures, and integrated into the wider landscape and seascape. <br/><br/>Target 12 By 2020, the extinction of known threatened species has been prevented and their conservation status, particularly of those most in decline, has been improved and sustained. <br/><br/>In relation to implementation of the SDS-SEA, PEMSEA Country and Non-Country Partners have adopted the SDS-SEA Implementation Plan (2012-2016) as a framework to coordinate the implementation of SDS-SEA and facilitate collaborative planning and resource mobilization (Changwon Declaration, 2012). Meanwhile, all PEMSEA Country Partners have taken steps to integrate ICM into their national programmes, with varying degrees of development. These are articulated in the individual national SDS-SEA Implementation Plans, and presented in more detail in the attached Project Narrative Document. Cambodia, Indonesia, Philippines, and Vietnam have developed UN-REDD national programmes and with Thailand, have signed on to the Forest Carbon Partnership Facility (FCPF). Countries are exploring application of more than one international safeguards framework in the design and on the path to implementation of national REDD+ strategies and action plans. There are a number of challenges which need to be addressed, particularly in view of the international commitments on REDD+ safeguards and biodiversity conservation.<br/><br/>To date, terrestrial forest landscapes have been the primary focus of REDD+ preparations, or “REDD+ readiness”. However, there is a growing body of evidence to show that mangrove forests in coastal swamps have significant carbon sequestration potential. Mangroves also help coastal communities, particularly in fisheries since they provide refugia for spawning species, among others. The problem is that very few carbon certification programmes under REDD+ consider mangrove forests since the carbon models and nature of the sediment, have not been sufficiently understood in relation to securing financial benefits. Among the constraining factors to the inclusion of mangroves in REDD+ is that the carbon stock assessment and accounting methodologies are not yet applicable to mangrove forest ecosystems, and not captured under existing certification schemes. The project will take steps to assess the potential of mangrove forests, seagrasses and coral reefs under a ‘blue carbon strategy’, which is referred to below, and elaborated in the Project Narrative Document. Where appropriate, actions to develop and implement disaster risk reduction and management strategies and climate change mitigation / adaptation, will be considered."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "As of March 24, 2014, 11 of the 12 participating countries have developed NBSAPs, while 8 countries have submitted revised NBSAPs. In addition, 5 countries have submitted their PoWPAs. Most of the NBSAPs have proposed priority coastal and marine ecosystems for designation as MPAs, and proposed measures and actions to address ecological representativity, connectivity and management effectiveness. Yet gaps to achieve these targets remain. NBSAPs have not sufficiently addressed the main drivers of biodiversity loss due to inability to achieve scale and integrate these into broader policies and programmes, as reported by UNU. Other areas of improvement in implementation of NBSAPs include effectiveness of coordination mechanisms, addressing major gaps in knowledge base, and more focus on addressing the root causes of biodiversity loss and reduction of threats as an ongoing, cyclical and participatory process. The concerns and challenges going forward are presented in detail in Project Narrative Document. ACB conducted an analysis of representation, ecological and management gaps, among other things, of protected areas within marine key biodiversity areas (MKBAs). Limited capacity to conduct assessments and manage MPAs, lack of a reserve system for fisheries and seagrass areas, designation of new MPAs within KBAs, absence of specific policies and legislation for MPAs with widened areas for protection of endangered species are some of the gaps identified in the PoWPAs that cut cross most countries. Long-term, sustainable financing of MPA management remains a serious challenge as funding levels are well below what is necessary for implementation. Gaps in PoWPA development and implementation on a country by country basis are presented in the attached Project Narrative Document.<br/><br/>This project will strengthen the institutions and implementation process of existing NBSAPs and PoWPAs through ICM as a comprehensive and systematic area-based approach for tangible on-the-ground social, economic and ecological results as embodied in Aichi Targets 10, 11 and 12. The Changwon Declaration toward an Ocean-based Blue Economy adopted by the 9 of the 12 participating countries and subsidiary SDS-SEA Implementation Plan (2012-2016), as attached, provides the regional platform to achieve Aichi Target 11 by operationalizing NBSAP through ICM program development and implementation in priority marine corridors and fishing grounds, providing the framework and process for aligning national and local priorities, programs and resources."
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. To scale up the geographic coverage and effectiveness of existing NBSAPs in addressing marine biodiversity conservation issues in South East and East Asia region, the project will: a) assess/determine the coverage and management status of existing MPAs identified in the NBSAPs of South East and East Asian countries b) identify and promote the expansion of protected coastal and marine areas in participating countries by selecting mKBAs that are ecologically representative and have high marine conservation success potential c) develop and demonstrate methodologies for delineating the importance of identified conservation areas, (i.e., socially, economically and ecologically), including the functional integrity of ecosystems, and benefits derived from their goods and services, strengthening their resilience to change, at the local, national and regional levels d) build a core team of competent individuals/institutions to facilitate continuing scientific input to and assessment of NBSAPs, their effectiveness, impacts and benefits derived.",
+			"result": "1. Science basis for identifying networks of Marine KBAs derived: a. Core team of competent individuals / institutions identified and scientific expert group convened (2x) b. Project management established, and steering committee created through national level CBD focal points c. NBSAP reviews conducted to determine proposed priority coastal and marine ecosystems for designation as MPAs, and proposed measures and actions to address ecological representativity, connectivity and management effectiveness. (It is noted that 11 of the 12 participating countries have developed NBSAPs, while 8 countries have submitted their revised NBSAPs. Details may be found in the Project Narrative Document) d. Project sites validated and prioritized e. mKBA, habitat relationships and threats data reviewed and information integrated with other secondary data to generate the list of select set of sites for MPA expansion, networking and on the ground ICM interventions (Provisionally - Verde Island Passage, Philippines; Tomini Bay, Indonesia; Pulau Kecil-Kuala Terrengganu, Malaysia; Hat Chao Mai National Park-Koh Ngai-Ko Muk, Thailand; Pearl River Estuary, China; others to be determined) f. Feasible MPA networks identified and included in WDPA to support conservation efforts, and g. MPA network performance and monitoring parameters / indicators defined/refined. 2. Launching of candidate MPA sites: a. Consensus-building processes conducted with local governments and stakeholders engaged / committed b. Geographic coverage of MPAs and MPA networks presented to stakeholders c. Number of hectares of proposed new coastal and marine areas validated d. Capacity-building, ecosystem assessments and other tools defined at site level e. Core set of project collaborators ( scientific group, local institutions /NGOs, universities, private sector, other stakeholders ) € 9,067,026\n6\nidentified and mobilized f. Surveys conducted and baselines established g. Resources allocated to support site-based activity h. Mechanics of implementation developed and shared at project implementation level, and i. Resulting methodology as well as lessons learned appropriately documented.",
+			"cost": 67026
+		},
+		{
+			"activity": "2. To develop and implement ICM programs focused on biodiversity conservation and sustainable use in priority areas across the South East and East Asia region, in partnership with national governments, local governments, coastal communities, businesses and other stakeholders, the project will: a) partner with national governments to scale up ICM practices and capacities with a particular focus on biodiversity conservation and sustainable use, and reinforcing them through national policy, legislation and incentives. b) work with a number of priority sites in each country to build and strengthen core capacities, knowledge, experience, stakeholder commitment and responsible governance, particularly at the local level c) demonstrate effectively and equitably managed coastal and marine areas of particular importance to marine biodiversity conservation, specifically those identified as priority locations in the NBSAPs of participating nations, through application of management tools, mechanisms, approaches and instruments; d) establish effectively managed MPA networks that will be the ecologically representatives and address ‘source to sink’ fisheries related issues, reduce ‘headlands to oceans’ threats, and support coastal livelihoods and other sustainable economic activities",
+			"result": "1. ICM implementation in nine (9) mKBAs or planning areas (as initially identified in the attached habitat maps) a) Action / management plans, trans-boundary/joint implementation plans, sustainable financing mechanism(s) and monitoring and reporting system in place and operational b) Ecosystem assessment tools and methods applied and evaluated for each mKBA, MPA or MPA network c) Local governments, MPA managers and practitioners capacitated in ICM implementation d) Number of MPAs/mKBAs integrated into coastal use zoning scheme and / or land use planning processes e) MPA/mKBA, climate adaptation and disaster risk reduction targets embedded into local coastal strategies and implementation plans f) Number of hectares of new coastal and marine area under improved management increased g) Improved sustainable fisheries development parameters (eg. stress reduction indicators, environmental status indicators, governance indicators, fish density, size, biomass etc) h) Improved water quality and measurable reductions in nutrient over enrichment in selected sites i) Number of local governments active and implementing ICM programs j) Areal extent of coastline covered by ICM programs k) Extent of biomes, ecosystems and habitats covered by ICM programs l) Site-level tracking tools developed and applied to monitor management effectiveness m) Coastal communities, including women, recognized and engaged in MPA management through participation, co-€ 18,190,268\n7\nmanagement and other community-based initiatives or benefit-sharing schemes for livelihood and income generation; n) Investment and other partnership opportunities, including corporate social responsibility, identified and packaged for prospective support",
+			"cost": 190268
+		},
+		{
+			"activity": "3. To develop and implement region-wide coastal and marine knowledge management (KM) strategies, applications and programs aimed at increasing awareness and mainstreaming increased political commitments and public and private sector investments in achieving the 2020 Aichi Targets",
+			"result": "1. Comprehensive KM strategy and implementation program developed and applied towards targeted groups: a) Knowledge, attitude and practice (KAP) of local government, private sector and other target groups assessed b) Outreach and public advocacy targets key constituencies c) Scientific and technical information / knowledge products packaged and disseminated to a range of constituencies, using multimedia approaches d) Business leadership and policymakers forums and site visits organized and conducted e) Responsible Ministers convened to report on need, progress, challenges and solutions. Leadership forums and site visits conducted f) National or regional network or association of local governments practicing ICM in support of biodiversity conservation established to advocate ICM practices and expansion, sharing of information and experiences, standardize methodologies and approaches in meeting international standards, and build capacities, and g) South East and East Asia region promoted as a working model for achieving biodiversity conservation through ICM. 2. Monitoring and evaluation data integrated into development of KM products, processes, sharing and using these as inputs to adaptive management: a. Local level data tracked, collected and managed through interoperable databases that feed into a region-wide knowledge-based M&E platform b. Targeted research identified and funded c. Appropriate skills, knowledge, approaches and technologies created at local levels to fill gaps in management effectiveness d. Gaps in scientific knowledge about marine key biodiversity areas and ecosystem services being provided by mKBAs/MPAs to local economies filled and quantified in € 10,067,026\n8\nspecific locations e. Experiences and good practices scaled up as national level policy, standards, criteria and incentives d. Good practices in application of tools, skills, knowledge, mechanism, approaches and technologies documented and disseminated in local languages for replication at national and region levels, and f. Incentive system for corporate sector participation in biodiversity conservation initiated, including a recognition system for good corporate practices and behaviour, partnerships with local government, etc.",
+			"cost": 67026
+		}
+	],
+	"financialStability": "Project level financing: It is anticipated that the project itself will be funded through a range of funding agencies, and supplemented by contributions from national and local governments, private foundations and other organizations. It will be leveraged by the current support received by a) PEMSEA Resource Facility for SDS-SEA implementation, and b) the ASEAN Centre for Biodiversity through its core funders and partners such as GIZ, KfW and other ASEAN Cooperation Partners (e.g. ASEAN-China, ASEAN-Korea). Project financing will also leverage, complement, or build upon the efforts of existing initiatives, both regional and national, supported by GEF, World Bank, Asian Development Bank, BMU/GIZ, USAID, JICA and other funding agencies. A detailed survey of donor initiatives has been undertaken, the results of which are presented in Appendix 4 of the Project Narrative Document. <br/><br/>Sustainable financing mechanisms: The project will support efforts to design and implement sustainable financing mechanisms at the local and national levels. Both PEMSEA and ACB, along with their network partners, will be able to bring significant best practice to bear. For example, the project will promote a greater systems-wide understanding of ecosystem valuation, and the various “trade-offs”, which need to be packaged and support decision-making processes. Sustainable financing plans will be developed and implemented which: a) streamline costs of MPA management, b) identify and qualify investment priorities; c) map potential sources of finance, d) increase revenue generation measures (eg user fees, leverage corporate social responsibility etc).",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "The ICM framework is inherently a climate change adaptation strategy. It is instrumental in establishing sustainable financing mechanisms which support conservation of resources and required environmental infrastructure improvements through public- and market-based sources, such as appropriation of annual budget allocations; user fees, tariffs, taxes, penalties and fines; and adoption of a corporate management approach to utilities and resource management. Applied ICM is used to reduce threats to biodiversity conservation, including those which impact on the regular supply of public goods and services generated through ecosystems, and are essential to coastal populations. It allows local governments and stakeholders to identify and define threats to sustainable coastal development, and put in place the appropriate management regimes to address these threats. These would include, but not be limited to a) natural and human-made disaster prevention and response management, b) natural coastal habitat protection, restoration and management, c) water use and supply management, pollution and waste reduction management, e) food security and livelihood management.<br/><br/> The project will build capacity of local governments and stakeholders to assess and mitigate/adapt to impacts of climate change. Given the prevalence of extreme weather events and international and national response mechanisms that have been formulated, there would be support for a suite of activities which range from data gathering on geohazards etc, establishment of early warning systems, risk and vulnerability assessments and formulation of disaster risk reduction and management strategies. There will also be an opportunity to collaborate with, and complement, other projects funded by bilateral and multilateral donor agencies (list of donor initiatives including GIZ in EAS region attached in Appendix 4 of Project Narrative Document)."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "There is some consensus in the scientific community, that the management of coastal “blue carbon” ecosystems, through conservation initiatives which avoid loss and degradation, restore and promote sustainable use, can serve as a “transformational tool” in effective management of natural carbon. There is today, a better scientific understanding of emissions from coastal ecosystems, and how carbon is sequestered, which will help to develop carbon management policies and related incentives, including financial incentives to support mitigation and adaptation through coastal blue carbon initiatives.<br/><br/>“Blue carbon sinks” can account for between 50% and 71% of all carbon storage in ocean sediments. They comprise only 0.05% of the plant biomass on land, but store a comparable amount of carbon per year, and thus rank among the most intense carbon sinks on the planet. While the estimated burial rates of these ecosystems are subject to continual scientific inquiry, there is evidence to suggest that this is more significant than the forest carbon equation.<br/><br/>To illustrate, a study conducted under the auspices of the IUCN, CI and Intergovernmental Oceanographic Commission (IOC), confirmed that seagrass meadows can store up to two times the amount of carbon as temperate and tropical forests. Seagrass beds are able to store up to 83,000 metric tons (MT) of carbon per square kilometre (mostly in the roots and soil), compared to terrestrial forest stores of about 30,000 MT per km2. There are estimates that seagrass meadows constitute only 0.2 per cent of the oceans, but are responsible for over 10% of carbon buried at sea on an annual basis. This is in contrast to the fact that almost 30% of the world’s seagrasses have been destroyed, with annual loss rates of 1.5% per annum. Destruction of seagrasses through dredging and water quality degradation contributes significantly to carbon emissions. Seagrasses provide important ecosystem services, and if properly restored, seagrass meadows can sequester carbon at a relatively fast rate.<br/><br/>The project will focus technical assistance to build national and local scientific and technical capacity to engage in this aspect of the carbon equation. More information on the approach is presented in the Project Narrative Document."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "Some sites may be adjacent or linked to UNESCO World Heritage Sites, or consistent with priority areas such as Important Bird Areas (IBAs), Alliance for Zero Extinction (AZE) sites, and Wetland of International Importance (RAMSAR) sites. This is elaborated in the Project Narrative Document."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "Sustainable fisheries, is both a target and an outcome of sustainable development. The fishing sector itself requires management and, in particular, the implementation of various codes of conduct. Activities in sustainable coastal and marine areas affect fisheries, and therefore a sustainable supply of fisheries can also be an outcome of good management of these other issues. It is also important to ensure the accessibility of the poor to fisheries resources, given its role as a major traditional source of animal protein for the coastal poor. Supplemental livelihood programs for coastal communities can also be set in place to reduce stresses on the fishery and to increase income and well-being from other forms of livelihood. Biodiversity conservation and sustainable use through MPA development and management addresses these concerns directly. Documentation on the outputs of strengthened MPA management suggests that: a) fish abundance and catch can increase significantly and b) fish size, biomass and reproductive potential can be enhanced. If MPA networks are appropriately designed, there can also be export of eggs, larvae and adults to other areas."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "Well-conceived water resource management programs are important elements of a sustainable development strategy, particularly in metropolitan areas where water supply shortages occur more frequently. Instruments include sound water use policy, tariff systems, water allocation/licensing, water conservation and reuse, protection of water sources (i.e., watershed or river basins; surface and ground water), and ensuring the quality, adequate supply and accessibility of water services to common citizens."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": "Among the critical challenges faced by cities and municipalities is the protection of land, air and water from various forms of waste and pollution, at sea or generated through land-based sources, which find their way into groundwater, rivers and coastal seas. Sustainable management programs include an understanding of the sources and characteristics of contaminants and waste materials entering the environment, what is required to change behaviors to reduce/ eliminate pollution, policy reforms, legislation, capacity development, market-based procurement and management instruments, awareness building, incentives and enforcement mechanisms to address these threats. Greater fish catches lead to higher protein intake in regular diets, and a perceived (and measurable) improvement in children’s health in particular. More incomes permit increased investments in health-related and preventive care expenditures at the household level. Local government investments other components of ecosystem management, such as solid waste, septage treatment and waste water management, will reduce effluent flowing into the MPA. There would be increase in awareness of the importance of good sanitation practices."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "Experience from other areas where MPAs have been strengthened, suggest that new jobs can be created in tourism sector. This will require collaboration with the local tourism authorities, and formulation of a destination development plan, which builds on or complements existing land-use, fisheries, coastal zone or other overarching management plans. Linked to this would be opportunities for alternative livelihoods, which would include aquaculture, seaweed farming, small scale fisheries and related value chain activities. In some cases, fishers who switch to new occupations in the tourist industry earn considerably higher incomes. Alternative livelihoods can also be created, but may be susceptible to market forces (e.g., commodity prices for seaweed). Larger, capital-intensive investments in tourism are more likely to lead to long-term gains in non-fishing income. In some cases, there could be diversified job creation, and widening of opportunities for women."
+		}
+	],
+	"aichiTargets": [
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-10"
+			},
+			"comment": "Placing coastal ecosystems under an effectively governed conservation regime such as a biodiversity-focused ICM approach will mobilize local action and result in reduced direct anthropogenic pressures (in the East and Southeast Asian region). These pressures include over and unregulated harvesting and the use of destructive fishing practices. Through implementation of the ICM technical approaches, participatory processes, governance-enriched tools and methods, in targeted sites, local stakeholders are expected to mobilize from their own initiative, activities such as land and sea use-zoning, coastal rehabilitation, sustainable livelihoods, and ecotourism – actions that will conserve coral reefs and associated ecosystems, making them healthy enough to withstand upcoming threats from climate change and ocean acidification."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-11"
+			},
+			"comment": "The Protected Areas Gap Analysis in the ASEAN Region presented at COP 10 indicated that not all critical habitats are appropriately protected with policy and practice. This proposed project will apply the ICM framework to build on these results. It will remove barriers to biodiversity conservation and increase the coastal areas allocated to marine ecosystems conservation. In addition, oceanographic connectivity information will be acquired to guide the identification of MPAs that have natural exchanges and benefit from mutual conservation. A functional and well connected MPA network in the South East and East Asian region will further increase areas for coastal and marine conservation. This will contribute towards 10 percent of coastal and marine areas that will be effectively and equitably managed to enable sustained ecosystem resilience to climate change and functions to support coastal livelihoods."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-12"
+			},
+			"comment": "Conserving habitats of threatened marine species including all areas critical to their life stages will enable the completion of their life cycles unharmed or with reduced threats exposure. Engaging all stakeholder levels from local, national and regional will increase the assurance that local destructive practices affecting critical habitats will be curbed, commitments to creating national legislation for the conservation of particularly sensitive species and areas will be met, and such species and areas when occurring in trans-boundary territories, are recognized for their conservation value."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-14"
+			},
+			"comment": "Effectively governed marine protected areas will provide resilience to coastal habitats and enable these to maintain their innate ecosystems services and thereby provide natural resources that form the base of livelihoods for local and indigenous communities. For example, conserving mangroves will a) provide protection from storm surges, b) provide filtration as ecosystem service, c) offer refugia for spawning species, d) support women’s livelihoods in small scale silviculture e) rebuild canopies that support a diversity of mammals and insects, f) support evolving ecotourism and other small scale industries."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-15"
+			},
+			"comment": "As a secondary outcome of this project, increase in mangrove restoration and seagrass conservation efforts will improve the carbon storage capacity of coastal ecosystems. Through ICM, local stakeholders and indigenous communities will be empowered to manage their coastal and marine resources and as a result, mobilize restoration in mangrove areas and seagrass habitats. Based on gap analysis studies, seagrass ecosystems are in need of conservation efforts at the local level, which is among the project objectives."
+		}
+	],
+	"attachments": [
+		{
+			"title": "Map of Existing MPAs in Participating Countries",
+			"url": "http://www.pemsea.org/sites/default/files/Map-of-Existing-MPAs-in-Participating-Countries.pdf"
+		},
+		{
+			"title": "Area with 3 Types of Marine Habitats (Map identifying seagrasses, coral reefs and mangroves)",
+			"url": "http://www.pemsea.org/sites/default/files/Area-with-3-Types-of-Marine-Habitats.pdf"
+		},
+		{
+			"title": "Planning Areas for Potential Project Sites (Powerpoint presentation on how KBA + Important Bird Areas (IBAs) data can define planning areas for potential MPAs and MPA networks)",
+			"url": "http://www.pemsea.org/sites/default/files/Planning-Areas-for-Potential-Project-Sites.pdf"
+		},
+		{
+			"title": "PEMSEA-ACB Partnership in Action (Collage of PEMSEA and ACB institutional images for purposes of ‘branding’)",
+			"url": "http://www.pemsea.org/sites/default/files/PEMSEA-ACB-Partnership.jpg"
+		},
+		{
+			"title": "Protected Aarea Gap Analysis in ASEAN Region",
+			"url": "http://www.aseanbiodiversity.org/index.php?option=com_content&view=article&id=172&Itemid=179&current=110"
+		},
+		{
+			"title": "ASEAN Biodiversity Outlook (The 2010 report provides an assessment of the current status of biodiversity in the ASEAN region)",
+			"url": "http://www.aseanbiodiversity.org/index.php?option=com_content&view=article&id=96&Itemid=114&current=110"
+		},
+		{
+			"title": "PEMSEA Sustainable Development Strategy for the Seas of East Asia (SDS-SEA)",
+			"url": "http://www.pemsea.org/publications/sustainable-development-strategy-seas-east-asia-sds-sea"
+		},
+		{
+			"title": "SDS-SEA Implementation Plan (2012-2016)",
+			"url": "http://www.pemsea.org/publications/sustainable-development-strategy-seas-east-asia-sds-sea-implementation-plan-2012-2016"
+		},
+		{
+			"title": "Changwon Declaration: Towards an Ocean-Based Blue Economy",
+			"url": "http://www.pemsea.org/publications/toward-ocean-based-blue-economy-moving-ahead-sustainable-development-strategy-seas-east"
+		},
+		{
+			"title": "Project Narrative Document",
+			"url": "http://www.pemsea.org/sites/default/files/14-04-28-Final-Project-Narrative-Document-Pemsea-ACB-Project-Proposal-v10.pdf"
+		},
+		{
+			"title": "GEF/UNDP Scaling up SDS-SEA Implementation Project",
+			"url": "http://www.pemsea.org/sites/default/files/1-29-14_-_Rev_Project_Doc.pdf"
+		},
+		{
+			"title": "Country Co-financing letters to GEF/UNDP Scaling up SDS-SEA Implementation Project",
+			"url": "http://www.pemsea.org/sites/default/files/LOC_PEMSEA-Country-Partners.pdf"
+		},
+		{
+			"title": "Letter of Endorsement Philippines",
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/LifeWeb_Philippine endorsement.pdf"
+		},
+		{
+			"title": "Letter of Endorsement Singapore",
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/LifeWeb_Singapore Endorsement.pdf"
+		},
+		{
+			"title": "Letter of Endorsement Timor-Leste",
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/Timor-Leste_LifeWebEndorsement_PEMSEA_ACB.pdf"
+		},
+		{
+			"title": "Letter of Endorsement Indonesia",
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/Indonesia-Endorsement - ICM-MoE_PEMSEA-ACB.pdf"
+		},
+		{
+			"title": "Letter of Endorsement Cambodia",
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/Cambodia_LifeWeb_Endorsement.pdf"
+		},
+		{
+			"title": "Letter of Endorsement Vietnam",
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/Vietnam-endorsement.pdf"
+		},
+		{
+			"title": "LifeWeb Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/ABC-PEMSEA/EOI%20LIfeWeb%20MKBAs%20ICM%20(FINAL)14May2014.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": 8.863,
+		"lat": 116.445,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/74C9A7C5-22C5-1671-ABF9-D0741AFE8D26/attachments/24003.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "1. PEMSEA Resou",
+			"info": "1. PEMSEA Resource Facility (PRF) \n2. ASEAN Centre for Biodiversity (ACB) \n\n\nThe ACB and PEMSEA have a) strong internal governance processes, management and technical capacity, b) similar mandates, c) complementary programmatic approaches, and together will provide significant and representative geographic coverage across the region. The alliance between PEMSEA and ACB is guided by a formal Letter of Commitment signed on 27 August 2009, which has supported a number of collaborative activities to date. The rationale for collaboration relevant to this proposal has been further reinforced in a “stocktaking” report commissioned by the GEF in September 2011, which observes that: “ACB and PEMSEA are two regional mechanisms for biodiversity conservation that are currently developing sustainable mechanisms for their respective mandates and, as such, any delineation of priority areas and coordination of activities particularly on marine protected areas and coastal zone management are necessary.”"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "74C9A7C5-22C5-1671-ABF9-D0741AFE8D26",
+		"documentID": 203700,
+		"createdOn": "2015-03-27T19:44:44.607",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:44.607",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 49858,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {
+			"en": "ACHIEVING THE AICHI BIODIVERSITY TARGETS THROUGH INTEGRATED COASTAL MANAGEMENT"
+		},
+		"summary": {
+			"en": "The importance of effectively managed coastal and marine areas to food and energy security, biodiversity conservation, community health, climate change resilience, sustainable livelihoods and economic growth, is increasingly acknowledged. This is especially true of the South East and East Asia region, which hosts an immensely rich marine environment, including 30% of the world’s coral reefs, 35% of mangroves, about 18% of seagrass meadows. These ecosystems support the highest coastal marine biodiversity in the world along 234,000 kilometres of coastline, and provide the resource base and natural infrastructure which sustains a life support system for at least two billion people. <br/><br/>However, the ASEAN Biodiversity Outlook (ABO) confirms that the region failed to meet the target of significantly reducing biodiversity loss by 2010. Natural wealth continues to degrade at a relatively high rate, with loss of 26.46% of mangroves in Southeast Asia and 33.40% in East Asia from 1980 to 2005, or an annual change rate of 1.06% and 1.34% respectively (FAO, 2007). Coral reefs and seagrasses are also experiencing increased threats through habitat change, sea level rise and other impacts of climate change, over-exploitation and pollution. The Protected Areas Gap Analysis in ASEAN region (ACB, 2010), reports severe under-representation of marine habitats and ecosystems and absence of protection of 78%, or more than 6 million hectares, of the 82 identified marine Key Biodiversity Areas (mKBAs). For those protected mKBAs, management concerns remain an issue. Despite the increase in the proportion of MPA areas within the territorial waters of some countries, there have been notable declines in the quality and quantity of mangrove, seagrass and coral reef habitats within these MPAs. As a consequence, the population, health and resiliency of many threatened species, such as the Chinese White Dolphin, remain a matter of concern. <br/><br/>Although some coastal areas with sustained integrated management efforts have shown signs of environmental improvements, many threats to protecting and sustaining coastal and marine ecosystem services persist across the region, including: <br/>a. Land use transformation in coastal and upland areas <br/>b. Land reclamation in coastal and wetland areas <br/>c. Deforestation, erosion and sedimentation <br/>d. Degradation, destruction and over-exploitation of natural resources, including fisheries <br/>e. Continued trade in wildlife and endangered species <br/>f. Increasing populations and economic activities in coastal areas <br/>g. Conflicting uses and demands among users for limited coastal and marine resources, such as tourism, port development/marine transportation and fisheries <br/>h. Inequitable access to resources, resulting in food security and sustainable livelihood concerns, especially among fishing communities <br/>i. Marine pollution from land-based and sea-based sources <br/>j. Climate variation and change including extreme weather events.<br/><br/>The root causes for these continuing threats can be traced to one or more of the following: <br/>a. Lack of national policies on coasts and oceans and outdated national policies that conflict with the objectives of biodiversity conservation and sustainable development of coastal and marine resources <br/>b. Inadequate institutional mechanisms to facilitate coordination across communities, sectors, local and national governments, and their respective agencies and boundaries <br/>c. Inadequate legislation and the capacity to enforce regulations <br/>d. Insufficient mechanisms and incentives to engage local governments and the business sector in conservation investments <br/>e. Limited access to training and capacity building opportunities to build up human and financial capital to effectively manage protected areas <br/>f. Inadequate resources and capacity for scientifically sound environmental monitoring and reporting, coupled with lack of coordination of environmental monitoring efforts across agencies, programs and projects <br/>g. Inadequate funding for applied research on social and economic values of coastal and marine ecosystems and their contributions to sustainable development and security <br/>h. Limited knowledge or awareness of the value of coastal ecosystems services and the consequences of their degradation or loss <br/>i. Limited knowledge sharing on best practices and case studies within countries and across the region <br/>j. Limited buy-in by local governments and local stakeholders on the benefits of MPAs. In the face of complex threats to the globally important marine and coastal biodiversity in the East and Southeast Asia region, this project seeks to add value by applying a systematic approach to strengthening the management effectiveness of MPAs under a variety of political, social, economic and environmental conditions to implement the SDS-SEA.<br/><br/> The project will demonstrate the use of a conservation-focused integrated coastal management (ICM) framework and process to support and strengthen actions identified in national biodiversity strategies and action plans (NBSAPs). On-the-ground conservation actions will not only factor in the capacities and priorities of local communities, but also take into account critical issues such as climate change adaptation, disaster risk reduction, food security, alternative livelihoods and pollution reduction, and incorporate these into the development plans of local governments. A stepwise and iterative approach will be adopted to facilitate systematic and integrated policy making, planning and management decision-taking."
+		},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:44:46 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "6786",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/74C9A7C5-22C5-1671-ABF9-D0741AFE8D26",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 47678
+		}
+	}
+}

@@ -6,9 +6,7 @@ define(['app', 'authentication'], function(app) {
                 $scope.roundtables = [];
 
                 for (var i = 0; i < data.length; i++) {
-                    if (data[i].type != "news") {
-                        $scope.roundtables.push(data[i]);
-                    }
+                    $scope.roundtables.push(data[i]);
                 }
                 
                 $scope.types = []
@@ -23,6 +21,11 @@ define(['app', 'authentication'], function(app) {
                 };
 
             });
+
+        $scope.properDate = function(date) {
+            var date = new Date(date);
+            return date.toDateString();
+        };
     });
 
     //##################################################################

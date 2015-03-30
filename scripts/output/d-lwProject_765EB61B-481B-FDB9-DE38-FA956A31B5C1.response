@@ -1,0 +1,151 @@
+{
+	"header": {
+		"identifier": "765EB61B-481B-FDB9-DE38-FA956A31B5C1",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "Match made prior to the establishment of the CBD LifeWeb Coordination Office.",
+			"funding": 3191675,
+			"dateTime": "1230768000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "et"
+		}
+	],
+	"title": "Climate protection and conservation of primary forests – Management models, example of wild coffee forests in Ethiopia",
+	"timeFrame": null,
+	"projectAbstract": "In the last 40 years Ethiopia has lost more than 90% of its forests.  Ethiopia's montane cloud forests not only constitute important carbon sinks, they also contain genetic resources of global importance as the origin and the centre of genetic diversity of Arabica coffee. Nevertheless, forests have been substantially decimated due to the local population's need for firewood and conversion into agricultural land. This project is geared to easing the pressure on the remaining forests by establishing a biosphere reserve, by reducing the need for firewood through the establishment of community forest plantations, by introducing wood-saving stoves and by supporting new income opportunities for the local population. Carbon storage is to be improved through afforestation and rehabilitation of fragmented forest areas and degraded land.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"coordinates": {
+		"lng": 40.489673,
+		"lat": 9.145,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/765EB61B-481B-FDB9-DE38-FA956A31B5C1/attachments/5980.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "765EB61B-481B-FDB9-DE38-FA956A31B5C1",
+		"documentID": 203709,
+		"createdOn": "2015-03-27T19:44:54.14",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:54.14",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 2184,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:44:55 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1023",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/765EB61B-481B-FDB9-DE38-FA956A31B5C1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 1792
+		}
+	}
+}

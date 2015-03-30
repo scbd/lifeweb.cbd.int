@@ -5,6 +5,11 @@ define(['app', 'authentication', 'URI', 'controllers/page', 'editFormUtility',],
 
       $scope.eventID = sID;
 
+        $scope.properDate = function(date) {
+            var date = new Date(date);
+            return date.toDateString();
+        };
+
       //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true })
       editFormUtility.load(sID)
           .then(function (data) {

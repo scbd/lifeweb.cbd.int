@@ -1,0 +1,279 @@
+{
+	"header": {
+		"identifier": "2E4CACAC-66B4-7EF8-9CEB-EC3C74FBF825",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "le gouvernement et les autres agences bilatérales (PNUD, FAO, UE, UEMOA, ONG\nCARTO-TOGO) sont sollicitées pour apporter une contribution globale de 3 000 000 $US.",
+			"funding": 3000000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "",
+			"funding": 1222200,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "tg"
+		}
+	],
+	"title": "Améliorer l’efficacité de gestion des aires protégées au Togo : Cas du Complexe  Togodo-Sud et Togodo-Nord",
+	"timeFrame": null,
+	"projectAbstract": "The aim of this project is to improve the management of the Togodo-South and Togodo-North Complex and strengthen the national system of protected areas in Togo. This is particularly important due to the poor management of protected areas in the country and lack of effective policies related to the creation and management of protected areas, which would improve the living conditions of the local population and contribute to income generation. As a result, the idea of conservation has been met with resistance from the local communities, while the management of the system of protected areas in Togo remains inadequate. For this reason, it is very important to improve the management of the existing protected areas in the Togodo-South and Togodo-North Complex and create new ones in a manner that involves the local communities and allows them to generate benefits from the protected areas.",
+	"description": "Les aires protégées du Togo connaissent des occupations humaines et physiques à partir des années 90 suite aux troubles sociopolitiques qu’a connus le pays. Le Complexe Togodo-sud et Togodo-Nord n’est pas épargné du fléau à l’origine de la mauvaise gouvernance des aires protégées, avec l’expropriation non concertée des terres pour la conservation de la faune, la gestion draconienne et non participative des ressources naturelles, le non balisage des limites et  la mise en valeur des aires protégées. <br/><br/>Ceci a eu pour conséquence la faible application des textes législatifs et réglementaires régissant la conservation des ressources biologiques mettant en péril les aires protégées. L’absence d’appui financier aux populations pour le développement  d’activités génératrices de revenus a accentué l’érosion des terres fertiles avec des pratiques  agricoles extensives fragilisant ainsi les conditions de vie des populations riveraines. <br/><br/>Aussi, le manque de capacités humaines ainsi que d’appui technique et financier, la vétusté de matériel de travail et d’équipement ont-ils fragilisé l’efficacité de gestion des aires protégées.<br/><br/>La combinaison des éléments ci-dessus a entrainé la dégradation de la biodiversité, les changements climatiques, le renforcement de la pauvreté et la misère généralisée des populations.<br/><br/>Ainsi donc la mise en œuvre de ce projet permettra d’améliorer les conditions de vie des populations riveraines, d’atténuer les menaces qui pèsent sur les aires protégées y compris le Complexe Togodo-Sud et Togodo-Nord et leurs ressources à travers une gestion durable de celles-ci, de contribuer non seulement à la  conservation durable de la biodiversité mais également de renforcer le système des aires protégées tant au niveau  national que global.",
+	"additionalInformation": "\n[participation]\nDans le cadre du programme de réhabilitation des aires protégées, un mécanisme de participation des populations locale a été mis en place sur la base de l’arrêté n°005/MERF/CAB /SG/DFC du 21 mai 2004. Ceci a permis de constituer autour de dix aires protégées prioritaires identifiées y compris le Complexe Togodo-Sud et Togodo-Nord des Associations de Gestion Participative des Aires Protégées (AVGAP) lesquelles sont structurées en une Union  des Association de Gestion Participative des Aires Protégées (UAVGAP).  Ces dispositions seront améliorées grâce à ce projet.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Le projet renforce les efforts développés par la Direction de la Faune et de la Chasse au niveau national pour la réhabilitation des AP, en particulier dans le cadre des processus de requalification en cours. Il repose sur une évaluation de l’efficacité de la gestion des aires protégées, conduite en 2008, avec l’appui de l’UICN. Le projet est en conformité avec les priorités définies dans le Document  Stratégique de Réduction de la Pauvreté (DSRP) du Togo, le Programme Conjoint de Réduction de la Pauvreté et de Localisation des OMD, ainsi que le Plan National d’Action pour l’Environnement (PNAE) adopté en juillet 2006. La traduction opérationnelle du PNAE est le Programme National de Gestion de l’Environnement (PNGE), qui inclut le Programme National d’Actions Décentralisées de Gestion de l’Environnement (PNADE) du Xème FED, dont le démarrage est prévu en 2010.<br/> <br/>En outre, l’adoption et la promulgation de la Loi cadre sur l’Environnement (Loi n°2008-005 du 30 Mai 2008) et du code Forestier (Loi n°2008-009) montrent  la volonté du gouvernement de prendre en compte les aspects environnementaux de façon transversale en intégrant la société civile à tous les niveaux du développement (national, régional, local). Ainsi, cette Loi-cadre établit la participation des populations, des ONG et des collectivités locales à l’élaboration et à la mise en œuvre des actions de gestion de l’Environnement (art. 24-26). Elle formalise le partenariat entre l’État et les autres acteurs non gouvernementaux en vue d’assurer une gestion durable de l’Environnement (art.27-29). Elle traite également de l’accès des populations à l’information et à l’éducation environnementale (art. 30). Enfin, ce projet reprend les résultats d’une étude conduite en 2001 dans le cadre du COM-STABEX/91-94 financé par l’Union Européenne concernant la stratégie globale de réhabilitation des AP au Togo. <br/>Ce projet est en conformité avec les Stratégies Nationales de mise en œuvre des conventions internationales environnementales (en particulier la Convention sur la Diversité Biologique), élaborées ces dernières années au Togo avec l’appui du PNUD/FEM. Il est également en conformité avec l’Objectif Stratégique 1 du FEM concernant la biodiversité"
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Améliorer la planification et la gestion du Complexe Togodo-Sud et Togodo-Nord",
+			"result": "-\tLe processus participatif associant les communautés locales et les parties prenantes est élaboré;\n\n-\tLes objectifs de conservation de la diversité biologique, des écosystèmes et des habitats, des communautés biotiques du site sont  déterminés;\n\n-\tUne analyse des contributions des sites à la conservation et à l’utilisation de la diversité biologique aux niveaux local et régional ainsi qu’une analyse des menaces et des moyens de les contrer est faite;\n\n-\tLe plan d’aménagement et de gestion des sites est élaboré et mis en œuvre.",
+			"cost": 70000
+		},
+		{
+			"activity": "Prévenir et/ou atténuer les impacts négatifs  des principales menaces dont les aires protégées cibles font face",
+			"result": "-\tLes mécanismes pour identifier, prévenir et atténuer les impacts négatifs  des menaces qui pèsent sur les aires protégées désignées sont mis en place;\n\n-\tSuivi des plans et projets susceptibles d’avoir des effets sur le complexe ainsi que les études d’impact sur l’environnement sont élaborés et diffusés;\n\n-\tLes approches nationales et  mesures de responsabilités et de réparation prenant en compte le principe pollueur-payeur ou autres sont élaborées;"
+		},
+		{
+			"activity": "Renforcer les capacités des acteurs pour une meilleure planification et gestion du complexe",
+			"result": "-\tLes programmes de renforcement des capacités à partir des évaluations pour l'organisation régulière de formations à la gestion du complexe sont élaborés;\n\n-\tLes mécanismes pour documenter le savoir et les expériences du savoir autochtone/traditionnel sont mis en place ;\n\n-\tLes mécanismes d’échange des leçons tirées, des informations et des expériences de renforcement des capacités entre les pays  notamment le Togo et le Bénin sont mis en place ;\n\n-\tLes capacités des institutions à mettre en place en vue d’une collaboration intersectorielle pour la gestion du complexe au niveau local sont renforcées;\n\n-\tLes capacités des institutions chargées des aires protégées à mobiliser les ressources nécessaires par le biais d'incitations fiscales des services environnementaux et d'autres instruments sont renforcées."
+		},
+		{
+			"activity": "Promouvoir l’utilisation durable des AP et la protection des stocks de carbone dans le cadre du mécanisme de la Réduction des Emissions dues à la Déforestation et à la Dégradation des forêts (REDD)",
+			"result": "-\tLa capacité de séquestration du carbone du système national des AP est évaluée;\n-\tLa cartographie/surveillance de zones principales d’émission de carbone du système national des AP avec l’appui des images satellites est établie;\n-\tLes capacités des principaux acteurs sur le mécanisme de REDD et la divulgation, auprès de toutes les communautés autochtones et tributaires des AP sont renforcées."
+		}
+	],
+	"financialStability": "Le Togo a apporté dans le cadre du projet de rationalisation et de renforcement du système national des aires protégées du Togo un  montant d’US $1 000 000 dont US $ 500 000 en nature et US $ 500 000 en espèce. Ce projet, dont certains axes sont transversaux, contribue à la réalisation du présent projet en terme de bonne gouvernance des aires protégées ainsi que les leçons tirées serviront d’une base d’expérience.<br/><br/>Aussi, la mise en valeur du Complexe Togodo-Sud et Togodo-Nord et les autres services environnementaux généreront-ils des fonds qui seront utilisés conformément à l’arrêté n°017/MERF/CAB du 13 mai 2005 fixant les droits de circulation  dans les aires protégées et les modalités de gestion. Au terme de cet arrêté, 35% des revenus seront mis à la disposition pour le maintien du complexe et le fonctionnement administratif.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "map 1",
+			"url": "http://www.cbd.int/database/attachment/?id=874"
+		},
+		{
+			"title": "map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=875"
+		},
+		{
+			"title": "Map 3",
+			"url": "http://www.cbd.int/database/attachment/?id=876"
+		}
+	],
+	"attachments": [
+		{
+			"title": "arrêté de classement",
+			"url": "http://www.cbd.int/database/attachment/?id=864"
+		},
+		{
+			"title": "carte-globale des AP du togo",
+			"url": "http://www.cbd.int/database/attachment/?id=865"
+		},
+		{
+			"title": "carte-présentation du complexe de togodo",
+			"url": "http://www.cbd.int/database/attachment/?id=866"
+		},
+		{
+			"title": "code forestier",
+			"url": "http://www.cbd.int/database/attachment/?id=867"
+		},
+		{
+			"title": "décret 2003",
+			"url": "http://www.cbd.int/database/attachment/?id=868"
+		},
+		{
+			"title": "lettre de motivation",
+			"url": "http://www.cbd.int/database/attachment/?id=869"
+		},
+		{
+			"title": "loi cadre environnement",
+			"url": "http://www.cbd.int/database/attachment/?id=870"
+		},
+		{
+			"title": "engagement des populations de togodo nord",
+			"url": "http://www.cbd.int/database/attachment/?id=871"
+		},
+		{
+			"title": "pv de délimitation consensuelle togodo nord",
+			"url": "http://www.cbd.int/database/attachment/?id=872"
+		},
+		{
+			"title": "pv de réunion constitutive uavgap togodo nord",
+			"url": "http://www.cbd.int/database/attachment/?id=873"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Togo/lifeweb project scale expression french Togo.docx"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/Togo/lettre de transmission.jpg"
+		},
+		{
+			"title": "Expression of interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Togo/lifeweb project scale expression french Togo.docx"
+		}
+	],
+	"coordinates": {
+		"lng": 0.824782,
+		"lat": 8.619543,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/95398"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/2E4CACAC-66B4-7EF8-9CEB-EC3C74FBF825/attachments/6267.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "2E4CACAC-66B4-7EF8-9CEB-EC3C74FBF825",
+		"documentID": 203784,
+		"createdOn": "2015-03-27T19:46:13.537",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:13.537",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 14066,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:16 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/2E4CACAC-66B4-7EF8-9CEB-EC3C74FBF825",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 12725
+		}
+	}
+}

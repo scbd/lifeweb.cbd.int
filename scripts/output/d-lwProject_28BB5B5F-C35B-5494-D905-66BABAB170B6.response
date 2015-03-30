@@ -1,0 +1,230 @@
+{
+	"header": {
+		"identifier": "28BB5B5F-C35B-5494-D905-66BABAB170B6",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "CACA2858-F011-3468-EAAD-A6671816C824"
+			},
+			"description": "",
+			"funding": 388800,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "361,658 USD - CSR Tullow Oil Society and RAPAC (Réseau des Aires Protégées d’Afrique Centrale) secured preliminary study (2007-2009); 137,285 USD - ECOFAC IV-Congo, Federation for International Nature Conservation, The Netherlands and Buffet Foundation anticipated funds to guarantee intermediate phase previous to LifeWeb funding.",
+			"funding": 498943,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cg"
+		}
+	],
+	"title": "Conservation, Natural Resources Management, and Social Ecology Development of the Odzala/Lossi Interzone, in Republic of Congo",
+	"timeFrame": null,
+	"projectAbstract": "The Lossi Fauna Reserve is a community-based conservation satellite of the Odzala-Kokoua National Park. The main goal of the project is to strengthen the participation of local communities in the management of the protected area, thus ensuring more effective conservation of the natural resources and ecosystems in the area. Additionally, the project seeks to contribute to the preservation of highly endangered gorilla species in support of the ECOFAC conservation program in the Odzala-Kokoua National Park.",
+	"description": "The Odzala-Kokoua National Park (OKNP) is located in the Congo Basin and is the second largest rainforest in the world after the Amazon. The Lossi Reserve of Fauna is a community-based conservation satellite of Odzala-Kokoua National Park, which aims to strengthen the participation of local communities in the preservation of natural resources and environment. The research program was complemented by the study of two focal gorilla groups to develop a pilot experience of “western lowland gorilla viewing” to support the ECOFAC conservation program in the Odzala-Kokoua National Park. The initiative creates an experience of a pioneer community-based conservation in central Africa. The Lossi Reserve (LR) was officially decreed in 2001, and becomes the first step to give local communities the authority of co-management of natural resources.<br/>This valuable experience was partially truncated by the epidemics of the Ebola virus in the region. The area has undergone at least three outbreaks of Ebola virus between 2002 and 2005; the latest hit OKNP. The study of the outbreaks impact and the mechanisms of disease transmission in the population of gorillas and chimpanzees have been complemented with the study of potential control measures (Research collaboration: University of Barcelona, CIRMF, WCS veterinary team, Max Planck, University of Rennes). At present, there is an “important” gorilla and chimpanzee populations non-affected by the epidemic located near human settlements in the interzone between OKNP and LR protected areas. These forests are currently dominated by logging concessions, however, and thus Ebola-orientated activities need to be accompanied by effective law enforcement and strategic zoning plans in order to protect remaining populations from poaching. (See attached document Bermejo LifeWeb Application Project Odzala-Lossi) <br/>Project challenges:<br/>1) Develop conservation enterprises that benefit local communities to increase connectivity between landscapes, ecosystems, habitats and maintenance of biodiversity and ecological processes; 2) Sponsor education and training for current and future protected areas scientists and staff; 3) Strengthen Lossi community-based conservation area, and its periphery at legal, policy, financial, institutional and community levels. 4) Work with governments to facilitate the official and effective management of the Odzala-Kokoua and Lossi Interzone considering local, national and international values, and support conservation policy;  <br/>5) Develop a regional platform (College of Central Africa Tracking Expertise) to preserve an endangered technique in central Africa. The “master” trackers performance will be a strong support for the studies of animal populations to establish the fluctuations in the number of individuals of a particular species, the stability of communities, the factors that affect it, and the influence of a particular component within a community. The education program will as well implement a skills-training project through a non-formal adult education programme following a participatory approach research. In the preliminary courses, the master trackers had began their training as Evaluators/Educators at international scale.  (See Odzala-Lossi Reserve Grasp funding activities outputs).<br/>Threats:  <br/>Biological Resource Use:  Hunting & Collecting Terrestrial Animals; and Logging & Wood, and Invasive & Other Problematic Species & Genes:  Problematic Native Species.",
+	"additionalInformation": "\n[participation]\nGovernance, Participation, Equity and Benefit Sharing:  The project involves a variety of community management efforts as explicit and declared intent to protect and maintain biodiversity that may also be recognised by government, and explicit measures (e.g. regulation) for the purposes of biodiversity conservation managed through legal or other effective means (including customary law); and have some of management body in place (community-based institutions).<br/>To promote equity and benefit-sharing: <br/>1) Recognize and promote protected area governance types related to their potential for achieving biodiversity conservation goals with full participation of local communities; 2) Facilitate the legal recognition and effective management of local community conserved areas; 3) Engage local communities and relevant stakeholders in participatory planning and governance.  <br/>To enhance and secure involvement of local communities and relevant stakeholders: <br/>1) Implement specific plans and initiatives to effectively involve local communities, with respect for their rights consistent with national legislation and applicable international obligations, and stakeholders with particular emphasis on identifying and removing barriers preventing adequate participation; 2) Support participatory assessment exercises among stakeholders to identify and harness the wealth of knowledge, skills, resources and institutions of importance for conservation that are available in society; 3) Promote an enabling environment for the involvement of local communities and relevant stakeholders in decision making, and the development of their capacities and opportunities to establish and manage protected areas.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Congo is a CBD and CPB Party<br/>The project presents linkages with the priorities identified through:<br/>1) National Biodiversity Action Plans: Biodiversity for Development; Ecosystem Approach; Impact Assessment; Protected areas; Biological biodiversity and Tourism; Traditional Knowledge, Innovations and Practices; 2) Poverty Reduction Planning (PRSPs): Improving the social environment (indigenous people); Promoting macroeconomic growth and stability (tourism); and 3) National Land-Use Planning:  Dja-Odzala-Minkébé (Tridom) Landscape, recommends to take into account its master plan, the peripheral zones of the protected areas, ecological connectivity needs, and natural limits, and the logging concession blocks in the periphery of the protected areas."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Scientific surveys of great apes and other wildlife populations and human impacts in the LR, and conservation planning of an important gorilla population located between the OKNP and the LR.",
+			"result": "Updated information on great apes demographic consequences of Ebola epidemic events and illegal human activities in the LR; Strategic conservation and management planning for the OKNP and LR interzone; Great ape population maintained in key habitats."
+		},
+		{
+			"activity": "Capacity building,in northern Congo and the Dja-Minkébé-Odzala Tri-National (TRIDOM) landscape.",
+			"result": "Ensure the security of habitats and wildlife within LR by implementing targeted anti-poaching efforts and preventing other illegal human activities; Facilitate the official and effective management of the OKNP and LR periphery; Found a Regional College to educate protected areas personnel for senior posts."
+		},
+		{
+			"activity": "Involve and empower local communities in increasing connectivity between landscapes, ecosystems, habitats and maintenance of biodiversity and ecological processes.",
+			"result": "Ensure the security of habitats and wildlife in and around the OKNP and LR by increasing communities’ representation; Improve the communities’ livelihood strategies; Improve the sense of ownership of the laws and regulations within the users of natural resources."
+		}
+	],
+	"financialStability": "The project is integrated in the African Parks Network (APN) and Leaderships for conservation in Africa (LCA) long term management and funding of the OKNP and LR. In February 2010, it was signed a protocol between the Republic of Congo (RC) and APN, led in the management and financing of the OKNP, and the communities adjacent to the Park. This Protocol aims to formalise the framework of collaboration among the RC and the APN to establish public-private partnerships agreement with Congo Government on a long term basis, by combining world class conservation practice with business expertise. In February 2009, it was signed a protocol between the RC and LCA relative to the management and development of the ecotourism of the OKNP and its periphery. Investment agreements are structured in a manner which protects the integrity of the park and its ecology, while also ensuring a positive socio-economic impact on the people in the region and an appropriate flow of income to the park. <br/>The carbon will be part in the African Parks Network (APN) business plan of Odzala as a success factor for long term sustainability.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "map 1",
+			"url": "http://www.cbd.int/database/attachment/?id=761"
+		},
+		{
+			"title": "map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=762"
+		},
+		{
+			"title": "map 3",
+			"url": "http://www.cbd.int/database/attachment/?id=764"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Focal Point Support Letter",
+			"url": "http://www.cbd.int/database/attachment/?id=767"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Congo/Odzala-Lossi/Odzala-Lossi lifeweb project scale expression.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 15.827659,
+		"lat": -0.228021,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/643"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/300342"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/28BB5B5F-C35B-5494-D905-66BABAB170B6/attachments/6180.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "28BB5B5F-C35B-5494-D905-66BABAB170B6",
+		"documentID": 203778,
+		"createdOn": "2015-03-27T19:46:04.38",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:04.38",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 12219,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:06 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/28BB5B5F-C35B-5494-D905-66BABAB170B6",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 11253
+		}
+	}
+}

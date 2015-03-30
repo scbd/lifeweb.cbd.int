@@ -1,0 +1,345 @@
+{
+	"header": {
+		"identifier": "229DCA65-38A3-1EE6-8EF2-4191D9497AE0",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "EAECF0BF-241F-A3E5-BBC6-52A84F43C1FC"
+			},
+			"description": "",
+			"funding": 534750,
+			"dateTime": "1325376000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "677DDD77-3C46-1335-8DFD-718F8C1C924C"
+			},
+			"description": "",
+			"funding": 1218643,
+			"dateTime": "1325376000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "za"
+		}
+	],
+	"title": "Reducing climate risk for vulnerable communities along South Africa's Garden Route",
+	"timeFrame": null,
+	"projectAbstract": "The Garden Route region of South Africa, within the Cape Floristic Region, is an area of outstanding global biodiversity importance - renowned for its species richness and endemism. The area, with its tall forests unique in the country, is also extremely vulnerable to climate change, with documented increases in recent years in flooding, drought, coastal erosion and fire that are occurring as a consequence of increased climate variability and inappropriate land use and management.",
+	"description": ". The Cape Floristic Region is one of South Africa’s three biodiversity hotspots, exhibiting extraordinary levels of endemism including c. 6,000 plant species. However, its biodiversity is threatened by urban development, agriculture, plantation forestry, and alien plant invasions; moreover, climate change is expected to have severe impacts (e.g. shrinking of the typical Fynbos biome by up to 65% by 2050).<br/><br/>. The project will operate in the “Garden Route” located in Eden District Municipality in the south-east of Western Cape Province. The Garden Route is comprised of the coastal strip of the District, extending over 390 km and averaging 50 km in width and bounded by mountains to the north. The region contains a unique mosaic of three of the country’s nine biomes – Fynbos, Thicket and Forest, including the country’s most outstanding extent of tall, natural forests (the Southern Cape Forests), as well as some of the country’s most important wetlands.<br/><br/>. The region has seen significantly increased climate variability over the past decade, with greater frequency and intensity of floods, droughts, storm surges, coastal erosion and fire. Major disasters including four “100 year floods” and the worst drought in 130 years caused local governments over EUR 33 million of damages. The insurance industry has been forced to re-evaluate its portfolio of assets in the region as claims have escalated. <br/><br/>. Water stress is compounded by infestation by water-intensive alien trees spreading from plantations into the critically important mountain catchments. Besides outcompeting indigenous vegetation, alien cover can reduce the water yield of a Fynbos catchment by up to 68% - which can be recovered following effective clearing. Alien clearing also reduces fire risk, predicted to increase with climate change. Preventing fires in turn reduces soil erosion, siltation of dams and estuaries, rainfall run-off and flooding.<br/><br/>. The area contains national and provincial protected areas, however these represent less than half of the habitat types and are not configured to promote connectivity or buffer climate change. To reduce the climate risk for human communities, enhance water provision and regulation services and support the resilience of biodiversity, the management of existing protected areas and private lands must be improved to eliminate invasive plants and allow regeneration of indigenous vegetation; connectivity must be recreated via landscape corridors including additional private and public conservation areas, enabling climate-induced relocation of plants and animals; and natural coastal defences like dune systems and estuarine mudflats need to be protected and rehabilitated.<br/><br/>. A number of stakeholders have begun taking proactive action: South Africa’s largest short term insurer Santam has assessed how better landscape management can reduce disaster risk; the national government now incentivises environmental rehabilitation by landowners; conservation agencies are committed to improving land management on private lands and on areas inherited from forestry; and the “Garden Route Initiative” formed by state and civil stakeholders has mapped unprotected Critical Biodiversity Areas and Ecological Support Areas requiring formal protection.<br/><br/>. However, the potential of functioning natural ecosystems in reducing disaster vulnerability is not yet recognised amongst local government, private businesses and landowners. The project’s partnership with the insurance company SANTAM and the Eden District government offers a unique opportunity to address this key barrier.",
+	"additionalInformation": "\n[participation]\nLocal community governments as well as private sector stakeholders are involved in project planning and implementation. Private land owners will be consulted and engaged in sustainable land management practices, through direct dialogues, formal consultation meetings and experience exchanges.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "• South Africa’s National Biodiversity Strategy and Action Plan (2005) currently under revision <br/>• National Protected Areas Expansion Strategy (2008) attached"
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "•\tNatural Resource Management Land Users Incentive (attached)<br/>The project contributes to the goals of the Natural Resource Management Programme of the national Department of Environmental Affairs with its five environmental public works programmes - Working for Water, Working for Wetlands, Working on Fire, Working for Land and Working for Forests. These programmes have both social and environmental objectives - aiming to create work opportunities, provide training and develop entrepreneurs, with an emphasis on women, youth and disabled people; and simultaneously to achieve invasive alien species management, integrated veld and forest fire management, restoration and rehabilitation of degraded land, restoration and rehabilitation of wetland systems and conversion of invasive jungles (deriving economic benefits from bush encroachment). The NRM programme recently launched a Land Users Incentive establishing a new way of working between the state and organised collectives of private landowners, through which the costs of alien clearing and other rehabilitation work can be subsidized."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "The proposed project is informed by the principles, strategies and policies described in SA’s National Climate Change Response White Paper (DEA, 2011), which states that ecosystem-based adaptation is “one of the key responses available to the country to adapt to climate change”, and that resilience to climate change-related extreme events, such as heat waves, floods, droughts, wildfires and storm surges, will be the basis for South Africa’s future approach to disaster management. It calls for “climate change response plans to address integrated coastal zone, water resources, agriculture, and land protection and rehabilitation” and commits government to “conserve, rehabilitate and restore natural systems that improve resilience to climate change impacts or that reduce impacts”. <br/>\t<br/>The Climate Change Strategy of Western Cape Province, in which the project will take place, does not have an explicit reference to Ecosystem Based Adaptation, but stresses the importance of maintaining and restoring wetland ecosystem services related to flood attenuation, stream-flow regulation, water purification and water storage, and states that managing invasive alien species in an integrated manner is critical to protecting the province’s delicate and unique natural habitats, which in turn protect water supply.<br/><br/>• National Climate Change White Paper (2011) attached<br/>• Western Cape Province Climate Change Strategy (2007) attached"
+		}
+	],
+	"budget": [
+		{
+			"activity": "1.\tTo expand protected areas on private and commercial plantation land, and to develop capacity for more effective and sustainable management of existing protected areas.",
+			"result": "EUR 1,000,000"
+		},
+		{
+			"activity": "2.\tTo reduce the vulnerability of communities to climate change-induced drought, flooding and erosion by undertaking ecosystem-based adaptation work in new and existing protected areas, rehabilitating critical water catchments and coastal systems",
+			"result": "EUR 2,700,000"
+		},
+		{
+			"activity": "3.\tTo develop public and private sector stakeholders’ capacity for ecosystem-based adaptation, embedding a strategic and sustained approach to reducing climate change risk through landscape management.",
+			"result": "EUR 800,000"
+		}
+	],
+	"financialStability": "The project is designed to develop adaptive capacity of public and private sector stakeholders, involving an insurance industry leader in highlighting the financial risks of failing to take action. This includes developing knowledge, demonstrating the effectiveness and cost-efficiency of EBA, and providing further resources. National government will continue to support rehabilitation through the Land Users Incentives Programme. Increased capacity of municipal and conservation staff and embedding of EBA in ongoing land use planning and management activities will also promote sustainability.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "Adaptation of communities in mountain catchments and the coastal zone will be facilitated by improving water infiltration, mitigating droughts and floods, and reducing fires and coastal erosion. Securing water supplies will enable adaptation of agriculture, forestry and tourism. Public and private sector adaptive capacities will increase, ensuring that EBA is integrated in local adaptation strategies. Demonstration results can be replicated nationally and globally, noting that South Africa is a model case in terms of its innovative approaches to landscape planning and management."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "The project is designed to address adaptation but will have mitigation benefits by reducing the scale and severity of uncontrolled fires and thus emissions of CO2. This will be achieved through removal of invasive alien vegetation and enhanced land management practices in at least two mountain river catchments. The increased fuel load in areas infested by aliens, combined with an anticipated 41% increase in high fire risk periods for 2020-2050 would otherwise likely result in intense fires that would turn these catchments from a carbon sink into an atmospheric carbon source."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "The Garden Route is an important holiday destination and provides recreation facilities for thousands of South Africans from all walks of life. It also contains important archaeological sites including caves, burial sites and fishing traps of ancient hunter-gatherer societies."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "One of the key activities in the project is more effective elimination of invasive species from the region, which are encroaching on both natural protected and agricultural habitats. Improved land management will reduce the fuel load available from invasive alien plants and hence fire risk, avoiding damage to agricultural lands. Together with improved water quality and supply, if not the wholesale avoidance of severe droughts and floods in the target area, this will result in huge benefits to local agricultural production and food security."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "The target region has faced a series of extreme water-related natural disasters over the past decade, including several 100-year droughts and floods, which are caused by climate change and inappropriate land management. Securing and restoring water supply and quality through the water regulating services provided by natural ecosystems in the region and particularly in the targeted river catchments, is one of the key objectives of the project. Conserving and rehabilitating natural vegetation will reduce water run-off as well as water consumption by alien plants, enhance groundwater storage, and distribute water supply more evenly over the year in both upland and coastal communities, benefiting private households, agricultural production and local industry likewise. Reducing fire risk at the same time will equally prevent desertification and soil erosion in both natural and agricultural landscapes."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": "Most importantly, the mitigation if not avoidance of floods, drought and fires will reduce exposure to diseases and disaster-related fatalities, as well as to loss of property."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "The project will directly provide livelihood opportunities in a poverty stricken region of South Africa, by providing employment in labour-intensive land management schemes that will demonstrate the viability, effectiveness and cost-efficiency of ecosystem management approaches to climate risk reduction; the project expects that the scheme will be continued consequently through investment by local and national government and private sector benefiting at the same time the protected areas with their biodiversity and the ecosystem services they provide for the long term. Moreover, the project offers a medium to long term solution to the water scarcity to which the local tourism industry has been exposed undermining its business model."
+		}
+	],
+	"images": [
+		{
+			"title": "Garden Route estuary – Salt River",
+			"url": "http://www.cbd.int/database/attachment/?id=1445"
+		},
+		{
+			"title": "Garden Route National Park – Tsitsikamma",
+			"url": "http://www.cbd.int/database/attachment/?id=1446"
+		},
+		{
+			"title": "Garden Route alien clearing – Working for Water",
+			"url": "http://www.cbd.int/database/attachment/?id=1447"
+		},
+		{
+			"title": "Flood",
+			"url": "http://www.cbd.int/database/attachment/?id=1458"
+		},
+		{
+			"title": "Flood damage",
+			"url": "http://www.cbd.int/database/attachment/?id=1459"
+		},
+		{
+			"title": "Wetland restoration",
+			"url": "http://www.cbd.int/database/attachment/?id=1460"
+		}
+	],
+	"maps": [
+		{
+			"title": "Map of Goukamma-Karatara catchment",
+			"url": "http://www.cbd.int/database/attachment/?id=1443"
+		},
+		{
+			"title": "Map of Keurbooms-Bietou catchment",
+			"url": "http://www.cbd.int/database/attachment/?id=1444"
+		},
+		{
+			"title": "Map of the garden route",
+			"url": "http://www.cbd.int/database/attachment/?id=1461"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Request for expression of Interest",
+			"url": "http://www.cbd.int/database/attachment/?id=1452"
+		},
+		{
+			"title": "National Climate Change Response White Paper",
+			"url": "http://www.cbd.int/database/attachment/?id=1453"
+		},
+		{
+			"title": "Climate Change Strategy and action plan for the Western Cape",
+			"url": "http://www.cbd.int/database/attachment/?id=1454"
+		},
+		{
+			"title": "South Africa's National Biodiversity and Action Plan (2005)",
+			"url": "http://www.cbd.int/database/attachment/?id=1455"
+		},
+		{
+			"title": "National Protected Area Expansion Strategy for South Africa (2008)",
+			"url": "http://www.cbd.int/database/attachment/?id=1456"
+		},
+		{
+			"title": "Garden Route (wikipedia)",
+			"url": "http://en.wikipedia.org/wiki/Garden_Route"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/South Africa/LifeWeb Template South Africa Garden Route Jan 2012 - REVISED_1.doc"
+		},
+		{
+			"title": "Expression of Interest ",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1451"
+		}
+	],
+	"coordinates": {
+		"lng": 22.43408203125,
+		"lat": -33.9433599465788,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/9061"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/32817"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/351348"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/32830"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/229DCA65-38A3-1EE6-8EF2-4191D9497AE0/attachments/6921.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Subcontrator. D",
+			"info": "Subcontrator. Develop and deliver training courses, and to design and implement a scheme to monitor changes in vulnerability.",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Mainstreaming P",
+			"info": "Mainstreaming Partner. SANParks manages the Garden Route NP, whose capacity will be developed to manage parks infested with IAS; also involved in the management of buffer zones, where negotiations will happen with landowners to protect and manage land falling into ecosystem corridors",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Mainstreaming P",
+			"info": "Mainstreaming Partner, represented on the Steering Committee. Funder of research in Karatara catchment on which the project is based, co-funder of parallel activities contributing to project objectives, funding a new study in the Keurbooms catchment, beneficiary of risk reduction.",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Implementing Pa",
+			"info": "Implementing Partner, represented on the Executive Committee of the Project Steering Committee. Manage the implementation structure for the rehabilitation activities involved in the project. It will also have a major role in the conceptual development of the project and oversight of the Project Coordinator’s work.",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Government Impl",
+			"info": "Government Implementing Partner, represented on the Executive Committee of the Project Steering Committee. The DEA-NRMP Head of Operations will act as overall project director ensuring government ownership of the project results, providing strategic oversight, ensuring regular communication with the DEA-Biodiversity and Conservation Programme, and integrating project results into local and national policy development for climate change adaptation and natural resource management.",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Submitting Part",
+			"info": "Submitting Partner, represented on the Executive Committee of the Project Steering Committee. Technical support to implementation, monitoring of project implementation and achievements, oversight of financial management and independent evaluators",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "229DCA65-38A3-1EE6-8EF2-4191D9497AE0",
+		"documentID": 203806,
+		"createdOn": "2015-03-27T19:46:39.04",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:39.04",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 20096,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:40 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/229DCA65-38A3-1EE6-8EF2-4191D9497AE0",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 18253
+		}
+	}
+}

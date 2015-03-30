@@ -1,0 +1,217 @@
+{
+	"header": {
+		"identifier": "B6D013F6-035E-880C-1A1B-3FCACDC163DB",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "la"
+		}
+	],
+	"title": "Improved management of the Nam Kading National Protected Area of Bolikhamxay Province, Lao PDR",
+	"timeFrame": null,
+	"projectAbstract": "The Nam Kading National Protected Area is the third largest in Lao PDR at over 1,600 square kilometers, and can likely support viable populations of many medium sized mammals under threat, including at least four Critically Endangered and Endangered primate species. These include the Northern White-cheeked Gibbon, the Southern White-cheeked Gibbon, Red-shanked Douc Langur and one or possibly two Leaf-monkey species in the taxonomically unclear (but clearly highly threatened) Trachypithecus complex.",
+	"description": "There are two broadly defined threats to the biodiversity of Bolikhamxay Province, including the Nam Kading National Protected Area – hunting and habitat loss.  Hunting threatens nearly all taxa of animals; species with larger body sizes are under particular threat.  Both local residents and outsiders hunt.  Some local residents are dependent on wildlife to fulfill a portion of their protein needs. This is particularly true of the rural residents of Bolikhamxay, who comprise 80% of the population. WCS works with these communities to harvest wildlife and non-timber forest products sustainably.  Other local residents hunt wildlife to sell to both national and international traders.  Southern China and Vietnam have a long- tradition of consuming wildlife as a luxury item; the growing middle class of these countries has lead to a dramatic surge in the demand for wildlife from all of Laos, including the wildlife of the Nam Kading National Protected Area.  WCS works with the Government of Lao PDR to stop this trade.<br/><br/>Habitat loss in Bolikhamxay Province impacts lands both inside and outside of protected areas, due primarily to three causes: 1) degradation that began in the late 1980’s with the overharvest of economically valuable eagelaria, a resin used for perfume, which shifted to rose wood in the early 2000’s.  Small bands of loggers enter the forest, live off the land (including hunting wildlife) and harvest these valuable trees.  Habitat loss and degradation have been greatest in Bolikhamxay’s Provincial Protected Areas due to little or no on-the-ground law enforcement; 2) confusion over the boundaries of all the protected areas, which contributes to encroachment; and 3) landscapes surrounding protected areas have seen rapid forest eucalyptus and rubber plantation establishment, particularly over the past five years.  The majority of these plantations have been established on degraded land that was logged in the 1980’s.  Most of the plantation establishment is done by reputable companies, however this is not always the case with some plantations failing as soon as the “salvage” logging is completed. Amongst their many negative impacts, the less-reputable companies encourage local people to “poach” logs within protected areas of Bolikhamxay Province. <br/><br/>An underlying indirect threat that contributes to all aspects of biodiversity loss in Laos is the low technical capacity of protected area staff and lack of resources to do the needed work.  Laos is still recovering from decades of conflict and consequently the education system in the country is still well below international standards. Over the past six years the Wildlife Conservation Society (WCS) has addressed this issue in its approach to conservation of Bolikhamxay Province by providing formal training to all provincial staff on Protected Area management.  The Integrated Ecosystem and Wildlife Management Project (IEWMP), established through a formal MoU between WCS and the Government of Laos, defines this partnership. This partnership has successfully implemented a series of interventions to address the threats, and the reduced levels of wildlife and forest loss suggest that these approaches are effective and should continue to be pursued with vigor. All the objectives and results delineated in this proposal to LifeWeb will be achieved through the IEWMP, which means the majority of the activities will be implemented by Government of Laos PDR staff.",
+	"additionalInformation": "\n[participation]\nThis project will support the continuation of the full and effective participation, as well as equitable sharing of costs and benefits, with indigenous and local communities, that characterizes IEWMP’s ongoing work. For example, IEWMP will undertake joint land-use planning with villages adjacent to protected area to determine the locations within protected area of the core-zones, in which no wildlife of any type may be hunted, and management zones, in which species such as wild pigs designated as “managed species” under Lao law can be legally hunted for consumption, but not for sale.  <br/><br/>As with WCS’ ongoing work in the Nam Et-Phou Louey National Protected Area and in our earlier work through the IEWMP in Bolikhamxay Province (primarily in the Nam Kading National Protected Area), equitable sharing of costs and benefits will be sought in all relevant aspects of the proposed work. Costs include the changed nature of access to natural resources in the Protected Area by local communities, which the IEWMP will strive to ensure is managed fairly. The IEWMP will continue to ensure that benefits are shared equitably, for example, by continuing to create fish harvesting zones that are accessible to all villagers and assist villages to negotiate fair price for other non-timber forest products with buyers.  At a larger scale, WCS will draw upon our experience in Cambodia and Madagascar to design mechanisms of equitable distribution of REDD revenues.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Lao PDR completed the Initial PoWPA Analysis and Priority Setting in December 2007, which identified three core areas for necessary action to move Lao PDR towards a more effective NPA system.  These three areas are: 1) Sustainable financing; 2) Capacity development; and, 3) improved governance.  The activities described in this proposal address each of these core areas.  Furthermore the activities of the IEWMP in the Nam Kading National Protected Area are held as a national model for protected area management (as demonstrated by the use of the Nam Kading NPA Management Plan as model for other National Protected Areas) in the country and thus advances made with funds from LifeWeb will impact the protected area at a national level. <br/><br/>The activities in this proposal will help the GoL meet objectives for Protected Area management set forth in the National Biodiversity Strategy and Action plan (2004) , National Forestry Strategy (2005)  and National Growth and Poverty Elevation Plan (2004) .<br/><br/>  Laos Government (2004). National Biodiversity Strategy to 2020 and Action Plan to 2010. Science Technology and Environment Agency, Vientiane, : 1-46.<br/>  Department of Forestry (2005). Forestry strategy to the year 2020 (FS 2020) of the Lao PDR, Ministry of Agriculture and Forestry: 1-108.<br/>  Government of Lao PDR  (2004). National Growth and Poverty Eradication strategy. Vientiane: 1-250."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Objective 1 - reduced levels of illegal hunting and illegal habitat conversion inside the Nam Kading National Protected Area.",
+			"result": "Law enforcement staff hired, trained and beginning field and road patrols and other law enforcement activities in the Nam Kading National Protected Area. Increased capacity of protected area staff to implement law enforcement activities."
+		},
+		{
+			"activity": "Objective 2 - Local communities aware of and benefiting from implementation of protected areas management activities.",
+			"result": "Outreach activities initiated in four districts of Bolikhamxay that are adjacent to the Nam Kading National Protected Area. Mapping of community-use zones and core zones for each protected area initiated.  Sustainable village-level financing mechanisms trialed."
+		},
+		{
+			"activity": "Objective 3 – Nam Kading National Protected Area management effectiveness monitored through indicator species population levels and assessments of the levels of habitat conversion",
+			"result": "To assess the effectiveness of the management of the Nam Kading National Protected Area, indicator species identified and population determination methodologies determined.  Baseline populations determined for many indicator species.  Baseline levels of habitat types within the Nam Kading National Protected Area determined through remote sensing analysis, and systems in place to periodically determine any changes to this baseline"
+		},
+		{
+			"activity": "Total",
+			"result": "-"
+		}
+	],
+	"financialStability": "Counterpart funding and institutional commitment<br/>The Government of Laos contributes to this effort primarily through paying the salaries of approximately 40 staff whose remit is the entire protected system of the Bolikhamxay Province, including the Nam Kading National Protected Area.  In 2010-2011, the Theun-Hinboun Power Company, who is planning construction of a second dam in the province, will contribute approximately $40,000 for outreach activities in communities in the Nam Kading landscape.  Bolikhamxay Province and the northern Annamite Mountains is a long-term priority for the WCS, and thus WCS will continue to provide resources towards their conservation through funding of senior managerial and technical staff.  WCS has also raised $200,000 from the John D. and Catherine T. MacArthur Foundation for 2009-2010, primarily focused on the management of the Nam Kading Protected Area, and is committed to raising additional funds for the conservation of this area. In the coming two years WCS is optimistic that at least $50,000 of funds from the USFWS-Asian Elephant Conservation Fund will be raised, most of which will be used to undertake elephant population surveys in the Nam Kading National Protected Area. <br/><br/>Sustainable Financing Mechanisms<br/>WCS and the Government of Laos have developed several pilot sustainable financing projects in the Nam Kading National Protected Area and its surrounding human landscape. These include village level fish conservation zones (no-take zones along several rivers that act as source sites for sustainable fishing in other regions of the river), sustainable harvest of certain non-timber forest products which are then sold at increased prices through provincial government sponsors, and village level rice banks.  These projects are still in early stages and thus they may be significantly altered as the Integrated Ecosystem and Wildlife Management Project (IEWMP, the formal entity under which WCS works with the Government of Laos in Bolikhamxay Province) discovers what works best, but it is this category of activity that WCS and the Government of Laos would pursue with funding from LifeWeb.   <br/><br/>WCS and the Government of Laos are also currently exploring several other approaches to sustainable financing of protected areas in Bolikhamxay Province, including the Nam Kading National Protected Area.  First there is scope for lands in the province to be a site for REDD-based funding as part of a comprehensive national REDD strategy.  WCS has prior experience demonstrating the value of protected areas as an effective emissions reduction tool in Cambodia and Madagascar.  This work has been reviewed by outside evaluators that have confirmed the verifiability and additionality of those emissions reductions. WCS is currently attempting to secure funding for generating baseline estimates of carbon stocks and deforestation rates in Bolikhamxay Province, two essential datasets for a REDD project.  WCS is also exploring ecotourism in the Nam Kading National Protected Area, particularly as tourism in general is a growing industry in Laos.  However at its maximum ecotourism will likely generate only a relatively small amount of the overall revenue needed to sustain the protected area and contribute to local economies.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Protected area boundary demarcation and patrolling in Nam Kading PA",
+			"url": "http://www.cbd.int/database/attachment/?id=227"
+		},
+		{
+			"title": "Camera trap of clouded leopards, possibly a mother and her cub, from the Nam Kading National Protected Area. ",
+			"url": "http://www.cbd.int/database/attachment/?id=228"
+		},
+		{
+			"title": "Wildlife monitoring (camera trap team returning from the field in Nam Kading).",
+			"url": "http://www.cbd.int/database/attachment/?id=229"
+		},
+		{
+			"title": "Village based natural resources management- fish conservation zone inauguration",
+			"url": "http://www.cbd.int/database/attachment/?id=230"
+		}
+	],
+	"maps": [
+		{
+			"title": "Namkading map",
+			"url": "http://www.cbd.int/database/attachment/?id=226"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Endorsement Letter",
+			"url": "http://www.cbd.int/database/attachment/?id=338"
+		},
+		{
+			"title": "http://atlas.wcs.org/globalconservation/Asia/laos",
+			"url": "http://atlas.wcs.org/globalconservation/Asia/laos"
+		},
+		{
+			"title": "http://www.dof.maf.gov.la",
+			"url": "http://www.dof.maf.gov.la"
+		}
+	],
+	"coordinates": {
+		"lng": 104.298248,
+		"lat": 18.365735,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/18896"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/B6D013F6-035E-880C-1A1B-3FCACDC163DB/attachments/4053.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "B6D013F6-035E-880C-1A1B-3FCACDC163DB",
+		"documentID": 203740,
+		"createdOn": "2015-03-27T19:45:26.15",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:26.15",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 14491,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:29 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/B6D013F6-035E-880C-1A1B-3FCACDC163DB",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 13645
+		}
+	}
+}

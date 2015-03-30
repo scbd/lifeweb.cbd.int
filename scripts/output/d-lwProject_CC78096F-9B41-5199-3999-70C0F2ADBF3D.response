@@ -1,0 +1,303 @@
+{
+	"header": {
+		"identifier": "CC78096F-9B41-5199-3999-70C0F2ADBF3D",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 4750000,
+			"dateTime": "1373846400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 9500000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "GTZ, TNC, WWF, Rare, GEF, AECID, IUCN, NCY, SUNY, CLIA, USFWS, US National Park Service, USAID, UNDP, JICA, DEFRA",
+			"funding": 188307692,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "mx"
+		}
+	],
+	"title": "Estrategia para el Fortalecimiento de las Áreas Naturales Protegidas de México",
+	"timeFrame": null,
+	"projectAbstract": "La Comisión Nacional de Áreas Naturales Protegidas (CONANP), encargada de la administración de las Áreas Protegidas de México, busca fortalecer y consolidar la conservación, aprovechamiento sustentable y restauración de las áreas protegidas mexicanas, reconociendo el papel estratégico que juegan para el desarrollo del país. Asimismo, explora alternativas para el manejo de los recursos naturales que permiten transitar hacia un desarrollo sustentable, a través de la implementación de una estrategia financiera diversificada y sostenible a largo plazo.  <br/><br/>El proyecto tiene como objetivo general implementar una estrategia financiera diversificada y sostenible, que contribuya a la conservación, aprovechamiento sustentable y restauración de los sistemas de áreas naturales protegidas mexicanas y que garantice la operatividad de las Áreas Protegidas en el largo plazo.",
+	"description": "El aumento de las presiones antropogénicas sobre la biodiversidad, en particular las que causan las elevadas tasas de cambio de uso de suelo, la modificación de los ecosistemas, la extracción ilícita y mal planeada de los recursos naturales, están conduciendo a una pérdida irreversible de especies o sus poblaciones y el deterioro de los ecosistemas. A nivel mundial, México es considerado el segundo país con mayores índices de deforestación, que varían de acuerdo al tipo de vegetación, periodo y escala del estudio. La desaparición de especies y poblaciones tiene profundos impactos en la estructura y función de los ecosistemas, así como en la provisión de los servicios ambientales. <br/><br/>Ante estos escenarios es apremiante diseñar estrategias más integrales para la conservación que favorezcan la calidad de vida de los habitantes de  las Áreas Naturales Protegidas y que garanticen el mantenimiento del patrimonio biológico del país En México, las Áreas Naturales Protegidas tienen un papel fundamental en los esfuerzos de conservación de la biodiversidad; no obstante, es necesario aumentar su cobertura y mejorar las capacidades de gestión y operación de la Comisión Nacional de Áreas Naturales Protegidas (CONANP).  En este sentido, la CONANP enfrenta diversos retos entre los que destacan la insuficiencia de recursos humanos, de infraestructura básica y de recursos financieros suficientes para instrumentar las estrategias de manejo y conservación. <br/><br/>Asimismo, se ha detectado que existe un desbalance entre el personal y las capacidades de infraestructura básica para la operación en el campo. Al respecto cabe mencionar que el promedio mundial de personas asignadas para el manejo de 100,000 hectáreas, es de 27 personas; mientras que en México la proporción es de 6 personas para la misma superficie. Además,  de las 174 Áreas Naturales Protegidas decretadas, 115 cuentan con personal y 48 poseen un Programa de Manejo publicado en el Diario Oficial de la Federación. Por lo tanto, es necesaria una alineación y pertinencia de las escalas de planeación, inventarios de recursos naturales y culturales, zonificación y diseño de planes de manejo de algunas Áreas Naturales Protegidas que no cumplen completamente con los objetivos de conservación.<br/><br/>Adicionalmente, el presupuesto asignado para el manejo y conservación de las Áreas Naturales Protegidas es insuficiente y su valor real ha venido en detrimento desde 2008 debido a las condiciones económicas mundiales. Asimismo, se reconoce que la inversión de fuentes externas en Áreas Naturales Protegidas mexicanas ha disminuido a partir de la crisis mundial. Actualmente se recibe de fuentes externas aproximadamente 87 millones de pesos anuales (8.2 millones de dólares).<br/><br/>Por lo tanto, es estratégico para la CONANP consolidar la cooperación y financiamiento nacional e internacional. En este sentido, es esencial contar con políticas, tales como una Estrategia de Financiamiento, así como información financiera sistematizada sobre ingresos y gastos de recursos, tanto propios (fiscales) como externos que apoyen el fortalecimiento del Sistema de Áreas Protegidas y de lineamientos de políticas internas y externas de cooperación para el financiamiento de las áreas protegidas.",
+	"additionalInformation": "\n[participation]\nLa operación y conservación de un área natural protegida requiere financiamiento estable a largo plazo a fin de  mantener una presencia continua que permita desarrollar el programa de manejo del área a través de una gama de actividades, desde vigilancia básica hasta programas productivos. Asimismo es importante conjuntar políticas e instrumentos encaminados a construir una visión del futuro de la conservación compartida con los pueblos indígenas y comunidades locales que viven en ellas y sus alrededores. Lo anterior con el objetivo de  fomentar la participación e involucramiento activos de los pueblos indígenas y comunidades locales en los diferentes programas de tal forma que se apropien de las actividades y programas de conservación y de esta forma puedan enfrentar los desafíos ambientales como el deterioro de los ecosistemas y su biodiversidad mitigar las condiciones de pobreza y marginación de las comunidades involucradas, y contribuir a situarlas en un horizonte de desarrollo sustentable.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "El marco en el que se desarrollo el proyecto comprende entre otros al Plan Nacional de Desarrollo 2007-2012 en el que se proponen cinco ejes de política pública, dentro de los cuales la Sustentabilidad Ambiental, es el eje a través del cual se deberá asegurar la participación responsable de los mexicanos en el cuidado, la protección, la preservación y el aprovechamiento racional de la riqueza natural del país, a fin de lograr el desarrollo económico y social, sin comprometer el patrimonio natural y la calidad de vida de las generaciones. Lo anterior se concreta en el Programa Nacional de Áreas Naturales Protegidas 2007-2012, en el que se plantea el reto de fortificar la agenda verde para transitar de mejor manera hacia la sustentabilidad ambiental. México signó el Convenio sobre la Diversidad Biológica (CDB) el 13 de junio de 1992 y lo ratificó el 11 de Marzo de 1993."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Fase III: Identificar, analizar y seleccionar los mecanismos financieros",
+			"result": "Identificación de las opciones financieras nacionales e internacionales más importantes para el apoyo de las áreas naturales protegidas.",
+			"cost": 20000000
+		},
+		{
+			"activity": "Fase IV: Formular la Estrategia Financiera y los Planes de Negocios para los Sistemas de Áreas Naturales Protegidas Mexicanas",
+			"result": "Establecimiento de la ruta a seguir para lograr captar las oportunidades financieras nacionales e internacionales para el apoyo en la operación de las áreas naturales protegidas federales.",
+			"cost": 201538461.53
+		}
+	],
+	"financialStability": "Los compromiso institucionales y/o mecanismos de financiamiento sostenible que apoyaran el proyecto son: <br/><br/>• Cobro de Derechos<br/>• Programa de Empleo Temporal<br/>• Programa de Conservación para el Desarrollo Sostenible<br/>• Pago por servicios Ambientales –CONAFOR<br/>• Compensaciones Ambientales",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "Consultar cifras con Andrew Rhodes sobre secuestro de carbono en AP (RB El Ocote, etc.)"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "Mapa areas protegidas de Mexico",
+			"url": "http://www.cbd.int/database/attachment/?id=927"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Annex 2: Statement CBD Executive Secretary Roundtable",
+			"url": "http://www.cbd.int/database/attachment/?id=930"
+		},
+		{
+			"title": "Annex 3: Proyecto LifeWeb CONANP ",
+			"url": "http://www.cbd.int/database/attachment/?id=931"
+		},
+		{
+			"title": "Annex 4: Análisis de Vacíos Terrestre",
+			"url": "http://www.cbd.int/database/attachment/?id=932"
+		},
+		{
+			"title": "Annex 5: Análisis de Vacíos Marítimo",
+			"url": "http://www.cbd.int/database/attachment/?id=933"
+		},
+		{
+			"title": "Annex 6: Estrategia de Cambio Climatico para AP",
+			"url": "http://www.cbd.int/database/attachment/?id=934"
+		},
+		{
+			"title": "Annex 7: Estrategia de Conservacion para el Desarrollo",
+			"url": "http://www.cbd.int/database/attachment/?id=935"
+		},
+		{
+			"title": "Annex 8: Valor de Bienes y Servicios des las ANP en Mexico",
+			"url": "http://www.cbd.int/database/attachment/?id=936"
+		},
+		{
+			"title": "Annex 9: Pago por Servicios Ambientales en ANP (2003-2008)",
+			"url": "http://www.cbd.int/database/attachment/?id=937"
+		},
+		{
+			"title": "Annex 10: Programa Nacional ANP 2007-2012",
+			"url": "http://www.cbd.int/database/attachment/?id=938"
+		},
+		{
+			"title": "Annex 11: Memoria Primera Reunión Mesas Redondas para el Fortalecimiento de las ANP",
+			"url": "http://www.cbd.int/database/attachment/?id=1427"
+		},
+		{
+			"title": "Brecha en el financiamiento de las áreas naturales protegidas federales de México Fases I y II",
+			"url": "http://www.cbd.int/database/attachment/?id=1519"
+		},
+		{
+			"title": "Download Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1428"
+		}
+	],
+	"coordinates": {
+		"lng": -102.552784,
+		"lat": 23.634501,
+		"zoom": 7
+	},
+	"links": [
+		{
+			"name": "Interactive Map: ecosystems in mexico",
+			"url": "http://www.biodiversidad.gob.mx/ecosistemas/mapas/mapa.html"
+		},
+		{
+			"name": "CONABIO website",
+			"url": "http://www.conabio.gob.mx/"
+		},
+		{
+			"name": "Publication: The natural capital of Mexico",
+			"url": "http://www.biodiversidad.gob.mx/pais/capitalNatMex.html"
+		},
+		{
+			"name": "Publication: National Strategy on Biodiversity of Mexico",
+			"url": "http://www.conabio.gob.mx/conocimiento/estrategia_nacional/doctos/pdf/ENB.pdf"
+		},
+		{
+			"name": "Mosaico Natura México | Fotógrafos de naturaleza",
+			"url": "http://www.mosaiconatura.net/"
+		},
+		{
+			"name": "Biodiversity Geoinformation Portal",
+			"url": "http://www.conabio.gob.mx/informacion/gis/"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/CC78096F-9B41-5199-3999-70C0F2ADBF3D/attachments/6341.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "International O",
+			"info": "International Organization for the Conservation of Biodiversity and Community Development",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for Rural Development Policy and the Promotion of Agriculture",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for the Promotion of Indigenous Peoples Rights",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for the Administration of Forest Resources",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for the Distribution and Allocation of Federal Resources",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for International Environmental Policy",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for Protected Areas Management in Mexico",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 500,
+	"body": {
+		"Message": "Document contains errors:Error.InvalidType, budget (#8B1)"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:17 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "71",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 12290
+		}
+	}
+}

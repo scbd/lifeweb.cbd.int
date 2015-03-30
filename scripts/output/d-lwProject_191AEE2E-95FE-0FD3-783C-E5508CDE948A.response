@@ -1,0 +1,315 @@
+{
+	"header": {
+		"identifier": "191AEE2E-95FE-0FD3-783C-E5508CDE948A",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 15000000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 3500000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "1D68E675-A276-E546-C8AB-9C7F1965C23E"
+			},
+			"description": "Government budget only (federal and participating states). GEF and bi-lateral financing to the submitted project are not accounted. *)\n*Currently there are several GEF financed projects under implementation with focus on ARPA (Amazon Protected Area Program), Sustainable Cerrado Initiative, Caatinga Conservation and Management and other initiatives, not directly linked to protected areas. Here are to be mentioned the ongoing bilateral technical and financial cooperation with Germany and the World Bank’s 1. Progammatic Development Policy Loan for Sustainable Environmental Management with disbursement conditioned to environmental progress. New GEF pledges to create and consolidate marine and terrestrial protected areas are under preparation. To illustrate the conservation challenges and efforts, the Annex 2 shows, by bioma, the brazilian protection targets and the respective conservation gap. \n\nAt Project stage there will be a coherent proposal for the institutional setup and a transparent and efficient flow of cash/ funds with social participation and control. The amounts planned are expressed in counterpart and external funds (see Annex 3). Counterpart funds are to cover recurrent costs, while external funds are used for investments, basically. The estimated financing needs are compatible with financial gap analysis and projections by the IMC – System, currently under actualization. The amounts on an annual basis for 1 to 5 years can be seen in Annex 4.",
+			"funding": 115000000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "br"
+		}
+	],
+	"title": "Consolidating the Brazilian National System of Conservation Units - SNUC",
+	"timeFrame": null,
+	"projectAbstract": "This proposal seeks to strengthen the Brazilian National System of Conservation Units (SNUC). Priority areas identified include: organizational strengthening and capacity building at all levels of the SNUC; strengthening of protected area management; building financial sustainability through the broad recognition by society; and the value of protected areas to the national economy and to the well-being of present and future generations. Communication and social outreach, accountability mechanisms and monitoring play key roles in this proposal in light of the necessity to establish effective climate change adaptation and mitigation strategies.",
+	"description": "According to estimates from the Brazilian Ministry of Environment (Annex 1), there is an overall financial gap of US$ 1 billion  in investments for the Brazilian PA system to achieve a basic level of consolidation. <br/><br/>When this level of implementation is reached, an amount of US$ 500 million annually (including wages, recurrent costs, maintenance and depreciation of infra-structure) will be necessary to maintain the Brazilian PA system (the current average public budget for the PA system is approximately half of this amount). We believe that this proposal is fundamental to mobilize funding from public and private sources to fill this gap to finance the Brazilian PA System.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "Annex 6 - map of the brazilian protected areas system",
+			"url": "http://www.cbd.int/database/attachment/?id=949"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Annex 1 - Pillars for the financial sustainability of the national system of conservation units of nature - 2nd edition updated and expanded",
+			"url": "http://www.cbd.int/database/attachment/?id=951"
+		},
+		{
+			"title": "Annex 2 - Graphic brazilian conservation targets",
+			"url": "http://www.cbd.int/database/attachment/?id=952"
+		},
+		{
+			"title": "Annex 3 - LifeWeb costs table",
+			"url": "http://www.cbd.int/database/attachment/?id=953"
+		},
+		{
+			"title": "Annex 4 - LifeWeb brazilian yearly estimates",
+			"url": "http://www.cbd.int/database/attachment/?id=954"
+		},
+		{
+			"title": "Annex 5 - List of Brazilian Protected Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=955"
+		},
+		{
+			"title": "Brazilian Database on Protected Areas (CNUC)",
+			"url": "http://www.mma.gov.br/sitio/index.php?ido=conteudo.monta&idEstrutura=119&idConteudo=9677&idMenu=9744"
+		},
+		{
+			"title": "Annex 7 - Prioritary Areas for the Conservation of Brazilian Biological Diversity",
+			"url": "http://www.cbd.int/database/attachment/?id=956"
+		},
+		{
+			"title": "Annex 8 - CONABIO Resolution 03/2006 National Targets for Biodiversity 2010",
+			"url": "http://www.cbd.int/database/attachment/?id=958"
+		},
+		{
+			"title": "Annex 9 - Law nº 9.985/2000 – Brazilian National System of Conservation Units - SNUC",
+			"url": "http://www.cbd.int/database/attachment/?id=959"
+		},
+		{
+			"title": "Annex 10 - Action plan for the prevention and control of deforestation in the Amazon",
+			"url": "http://www.cbd.int/database/attachment/?id=969"
+		},
+		{
+			"title": "Annex 11  - Action plan for prevention and control of fires and deforestation in Mato Grosso",
+			"url": "http://www.cbd.int/database/attachment/?id=970"
+		},
+		{
+			"title": "Annex 12 - Plan for prevention, control and alternatives to deforestation of Pará",
+			"url": "http://www.cbd.int/database/attachment/?id=971"
+		},
+		{
+			"title": "Annex 13 - State plan for prevention and control of deforestation in acre",
+			"url": "http://www.cbd.int/database/attachment/?id=972"
+		},
+		{
+			"title": "Annex 14- Interim Act no 2186-16, Access to genetic resources, protection and access to traditional knowledge, benefit sharing and access to technology",
+			"url": "http://www.cbd.int/database/attachment/?id=973"
+		},
+		{
+			"title": "Annex 15- Decree no 5.758, 2006 National strategic plan for protected areas",
+			"url": "http://www.cbd.int/database/attachment/?id=974"
+		},
+		{
+			"title": "Annex 16- National plan for the promotion of socio-biodiversity chain production",
+			"url": "http://www.cbd.int/database/attachment/?id=975"
+		},
+		{
+			"title": "annex 17 - Law nº 8.995, September 22, 2008 – Program of payments for environmental services - State of Espírito Santo",
+			"url": "http://www.cbd.int/database/attachment/?id=976"
+		},
+		{
+			"title": "Annex 18 - Decree no. 45.113, June 5, 2010, Establishing the green grant in Minas Gerais",
+			"url": "http://www.cbd.int/database/attachment/?id=977"
+		},
+		{
+			"title": "Annex 19 - How much does a federal conservation unit - A strategic vision for the financing of SNUC",
+			"url": "http://www.cbd.int/database/attachment/?id=978"
+		},
+		{
+			"title": "Annex 20 – Initial document national strategy for environmental education and communication under the SNUC",
+			"url": "http://www.cbd.int/database/attachment/?id=979"
+		},
+		{
+			"title": "Annex 21 - Preliminary implementation concept-1",
+			"url": "http://www.cbd.int/database/attachment/?id=1019"
+		},
+		{
+			"title": "Annex 22 - Preliminary implementation concept-2",
+			"url": "http://www.cbd.int/database/attachment/?id=1020"
+		},
+		{
+			"title": "Letter of endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/Brazil/carta.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Eastern Caribbean/EOI - My Island My Community.pdf"
+		},
+		{
+			"title": "expression of interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Brazil/LifeWeb Expression of Interest final version.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -51.92528,
+		"lat": -14.235004,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/191AEE2E-95FE-0FD3-783C-E5508CDE948A/attachments/6351.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "191AEE2E-95FE-0FD3-783C-E5508CDE948A",
+		"documentID": 203789,
+		"createdOn": "2015-03-27T19:46:19.147",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:19.147",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 9755,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:21 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/191AEE2E-95FE-0FD3-783C-E5508CDE948A",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 8109
+		}
+	}
+}

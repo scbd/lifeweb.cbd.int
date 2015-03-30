@@ -1,0 +1,285 @@
+{
+	"header": {
+		"identifier": "F62EDAB0-FBCB-EA84-A500-DB53108DB59C",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "BD2B7DFB-65E0-D8B4-884D-1C0156EF0160"
+			},
+			"description": "",
+			"funding": 150000,
+			"dateTime": "1322697600000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "Co-funding arrangement between the UNDP and GEF ",
+			"funding": 1500000,
+			"dateTime": "631152000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "A8C0C952-6346-CA1F-8A6D-31215C5A0F59"
+			},
+			"description": "Co-funding arrangement between the United Nations Development Programme and the Global Environment Facility ",
+			"funding": 300000,
+			"dateTime": "631152000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "mn"
+		}
+	],
+	"title": "Strengthening of the Protected Area Network (SPAN)",
+	"timeFrame": null,
+	"projectAbstract": "The SPAN project is a national level project aimed at improving the management effectiveness and financial sustainability of Mongolia’s existing protected areas system. Currently, there are 74 protected areas in Mongolia covering a total of over 22 million hectares, which equates to approximately 14% of the country’s surface. Mongolia’s 74 protected areas include Strictly Protected Areas, National Parks, Nature Reserves and National Monuments, covering IUCN categories Ia, Ib, II and III.",
+	"description": "Being the most sparsely populated country in the world and characterised by a nomadic lifestyle with a traditional respect for nature, Mongolia has been able to preserve a lot of valuable biodiversity that has disappeared elsewhere in the region. <br/><br/>Mongolia hosts globally-significant populations of a number of critically endangered species, such as the Mongolian Saiga antelope (Saiga tatarica mongolica; 100% of global population), the Gobi bear (Ursus arctos gobiensis; 100%), the Bactrian camel (Camelus bactrianus; approximately 37%) and the re-introduced Przewalski's horse (Equus ferus przewalskii; 95%), as well as globally endangered species like the snow leopard (Uncia uncial; approximately 12%), the long-eared jerboa (Euchoreutes naso) and the Mongolian three-toed jerboa (Stylodipus sungorus).<br/><br/>In the past 20 years, many species have sharply declined, facing increasing threats from poaching, mining, habitat fragmentation, overfishing and habitat loss. After the country embarked on a transition from its former socialist system to a more open market oriented model, the mining sector experienced a boom and the number of livestock grew dramatically. This has lead to severe damage of ecosystems while new infrastructure development further fragments the open steppe landscape.<br/> <br/>The Government has rapidly expanded its protected area system to counter these losses. Since the 1990s, the area of Mongolia designated as protected area grew from less than 10 to the current total of 74 protected areas, which now cover over 25 million hectares, 16% of the country’s surface. Capacities and resources for protected area management have not kept pace with the expansion of the protected area network, resulting in a situation where most protected areas in Mongolia suffer from inadequate resources to conserve important species and habitats. <br/><br/>Of Mongolia’s 74 protected areas, there are:<br/>(1) 14 Strictly Protected Areas (IUCN categories Ia and Ib) covering an area of 11,887,758 ha<br/>(2) 26 National Parks (IUCN category II) covering an area of 11,418,886 ha<br/>(3) 24 Nature Reserves (IUCN category III) covering an area of 2,239,616ha<br/>(4) 10 National Monuments (IUCN category III) covering an area of 116,567 ha.<br/><br/>Mongolia’s Law on Buffer Zones requires the establishment of Buffer Zones outside Protected Areas and also allows for their establishment either outside or overlapping with the Limited Use Zone of National Parks. In addition, local government may establish Buffer Zones around Nature Reserves and Natural Monuments.<br/><br/>In addition to Mongolia’s national protected area system, there is a local protected area system. Mongolia’s Law on Special Protected Areas empowers Governments at the provincial and local level to designate local protected areas. To date, approximately 937 local protected areas have been established in Mongolia, covering over 16.5 million ha (equivalent to over 10% of the country); however, few (if any) receive financial or human resources necessary to achieve their conservation objectives. These local protected areas are not considered to be part of the Mongolian national protected area system.<br/><br/>As part of its commitment to the Convention on Biodiversity, the Government of Mongolia set a formal target to conserve 30% of the country (46.9 million ha) in protected areas by 2030.<br/><br/>The key challenges for management of the existing protected area system are:<br/><br/>(1) The current legal framework and guidelines on Protected Area management planning and decision making systems do not enable the protected area management at the national and local level to generate sufficient resources to address biodiversity threats. <br/><br/>(2) Operational and capacity weaknesses prevent cost-effective protected area management. The capacity building needs of protected area staff to perform protected area functions are not systematically assessed and there are neither long term capacity building plans nor adequate allocation of resources for such activities. This leads to ineffective use of existing protected area resources – both human and financial - to achieve meaningful biodiversity conservation impacts.<br/><br/>There is also a lack of comprehensive budget plans and business plans for revenue generation and therefore protected areas are under-resourced to protect biodiversity and are not equipped to develop new funding sources.",
+	"additionalInformation": "\n[participation]\nLocal communities are an essential part of any conservation programme in Mongolia. Being so sparsely populated, the Government cannot reach out to the remote areas where important ecosystems are located. <br/><br/>Local communities within and adjacent to protected areas are also dependent on resource use inside the protected areas. They are largely nomadic herding communities and have for some time prior to the gazettal of the protected areas been using land now designated as protected areas. These communities can potentially play a significant role in effective protected area management if given the opportunity; however, existing protected area legislation lacks specific reference to the roles, responsibilities and benefits of local communities in relation to protected area management.<br/><br/>The SPAN Project will contribute to better local livelihoods through increased resilience of ecosystems in protected areas that underpin the livelihoods of several households living inside and around protected areas.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "The project is consistent with National Program on Protected Areas (1998), Biodiversity Action Plan (1995), The Action Plan for Implementation of the National Programme on PAs and the Action Plan for Development of Tourism in PAs (2009). These programmes include clear goals on sustainable financing of PAs through defining possible funding instruments and creating a favourable legal framework, human capacity development, effective management, public awareness and participation and funding. <br/><br/>The project’s activities will strengthen the overall policy, legal and institutional arrangements to better address threats to biodiversity of global value. Other benefits of the project will be through extensive capacity building from national to local levels. The project has been designed to improve financial sustainability of the  PA network in Mongolia. A key aspect is to strengthen local stakeholder’s involvement in PA management, including local communities, Buffer Zone Councils, local government, and the private sector."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The MDG-based Comprehensive National Development Strategy, which is the highest level planning document in the country, clearly states that the PA network needs to be expanded and that management of the existing network requires substantial upgrading. Mongolia has adopted a specific MDG target to cover the country for 30% with protected areas. The project will help improve the management of those areas that have been gazetted. The Master Plan for Land Use (2003) provides the legal basis for establishment of PAs for the next 16-20 years."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "The National Action Program on Climate Change (2011) supports climate change adaptation approaches to protect and conserve biological diversity in special protected areas. One of the major activities under Output 1.1 of SPAN project is to revise and develop PA management planning guidelines which includes climate change adaptation strategies. The demonstration sites will function as pilot areas to adapt their management plans. Based on the results, a methodology will be developed to integrate climate change adaptation into the protected area management system. One of the main points of Mongolia’s NAPCC is to develop adaptation strategies for all sectors."
+		}
+	],
+	"budget": [
+		{
+			"activity": "A refined policy framework and institutional arrangements for sustainable management and financing of the national protected area system.",
+			"result": "US$ 400,000"
+		},
+		{
+			"activity": "Increased capacity of government department management and staff (and their partners) to effectively manage and govern the national protected area system.",
+			"result": "US$ 800,000"
+		},
+		{
+			"activity": "Design and implementation of sustainable financing mechanisms and innovative collaborative approaches resulting in increased funding and management effectiveness to ensure the long term sustainability of the protected area system.",
+			"result": "US$ 1,150,000"
+		}
+	],
+	"financialStability": "The key focus of the project will be on sustainable financing mechanisms. Already an assessment has been carried out that identified a wide range of options to improve revenue generation for Mongolia’s Protected Areas. The project is now supporting their implementation. It has been estimated that the budget of the PA system can be tripled within 5 years. These financing mechanisms will help generate additional funding for the PA System, which will help to increase the PA system budget. The project will also help to revise Mongolia’s PA policies to unlock further potential revenue sources for protected areas.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "The UNEP/IPCC climate change assessment (AIACC) noted that over 80% of Mongolia is highly vulnerable to climate extremes. For example, over the last decades, autumn and winter precipitation has increased by almost 9%, while spring and summer precipitation has decreased by almost 10%. The permafrost zone of Lake Khovsgol National Park in northern Mongolia, where the annual air temperature has increased by 1.44°C since 1963, is showing signs of rapid change. Extended droughts that are likely to be related to climate change have caused the drying-up of an estimated 500 rivers and lakes, including those in protected areas. These changes undermine ecosystem resilience and the highly vulnerable biodiversity in Mongolia. This is particularly critical for globally threatened species that live in the most marginal areas, such as the Gobi Desert and Altai Mountains.<br/><br/>Mongolia’s National Climate Change report states that 78.2% of land in Mongolia affected somehow by desertification and land degradation. Various reports estimate that majority of grasslands, including protected areas, is degraded to some extent. With the exception of Strictly protected areas, livestock grazing is allowed within Protected areas. PAs include land that has traditionally been used by herder families. These areas are important for the animal husbandry industry, a key economic resource, which directly depends on the vegetation and climate conditions. In some areas, rangeland conditions within last several years have deteriorated rapidly because of extreme weather events (drought and blizzards), an increasing livestock population and a greater concentration of people. However, the project will largely deal with local communities, local authorities and the Protected Area Administration to re-introduce seasonal grazing in line with new innovative management practices to respond and adapt to these changes.  <br/><br/>An important activity that the project intends to carry out with additional funding is to integrate climate change adaptation into protected area management guidelines. The project would start by reviewing the management plants of the 3 target sites and revise their management plans to integrate climate change adaptation considerations. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "As the target area is among the most sparsely populated in the world, the main contribution towards mitigating climate change is through better forest protection. Illegal logging has caused the forests to shrink in recent years, although they still cover around 7% of the country. Better protection is the only way to preserve more of the forests located in the protected areas. The project will be linked to the UN-REDD Programme, which supports the Mongolian Government to develop a national REDD+ Action Programme."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "The majority of the national sacred sites has been designated as national protected area and fall under the National PA System. With sufficient resources a sound management system can be put in place to preserve these sites. Resources are also needed to advocate for keeping these areas in the system due to the ever growing pressure of mining interests. <br/><br/>Through improving the legal and policy framework for sustainable financing of PAs in Mongolia and strengthening skills and capacity of the staff at the national and local level,the SPAN project will greatly contribute to the protection of natural sacred sites and culturally important species, especially in the  project target sites."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "So far, the number of invasive species in Mongolia is limited. A lot of fish species, fruits and crops are located in the protected areas. These areas play an important role to conserving these stocks, as most of the remaining country is affected by the growing mining boom, the unregulated livestock policy and a steady expansion of major settlements and large scale infrastructure. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "The PA system includes Mongolia’s largest lakes such as Uvs Lake and Khuvsgul Lake, which provides water into the Selenge-Bajkal Water Sytem. A recent World Bank Study pointed out that the Terelj Khan Khentii PA system provides most of fresh drinking water for Mongolia’s capital, Ulaanbaatar, where over a third of Mongolians live. The PAs also include most part of the Altai and Khangai Mountains, which are a main source of water for drinking, grazing and irrigation in Western Mongolia. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": "Due to Mongolia’s sparse population levels, the impact on human health will be limited. The main role in people’s wellbeing is through the provision of ecosystem services such as freshwater, clean air and grazing land. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "Besides mining and pastoralism, tourism is the only source of livelihood in Mongolia that has the potential to create additional jobs in rural Mongolia, where over 45% of the population is living below the national poverty line. Almost all major tourist destinations are located in the protected areas, including the Khovsgol Lake in the North, the Altai Mountains in the West and the sand dunes of the Gobi in the South. <br/><br/>One of the project target areas is Orkhon Valley National Park, which is one of the most important tourism destinations in Mongolia. Unplanned tourism development is already overwhelming the area. However, the project will focus to develop the exemplary Tourism Plan for 2 target sites and assist in the implementation in a manner that explore full potential of local community and private sector engagement in both responsible tourism and biodiversity conservation in PAs. "
+		}
+	],
+	"images": [
+		{
+			"title": "Ikh Nart is home to the globally threatened Argali sheep",
+			"url": "http://www.cbd.int/database/attachment/?id=1501"
+		},
+		{
+			"title": "Hkyargas lake in the Uvs Lake Basin National park",
+			"url": "http://www.cbd.int/database/attachment/?id=1502"
+		}
+	],
+	"attachments": [
+		{
+			"title": "annex 1 - map of existing protected areas",
+			"url": "http://www.cbd.int/database/attachment/?id=1193"
+		},
+		{
+			"title": "annex2 - list of existing protected areas - 2012",
+			"url": "http://www.cbd.int/database/attachment/?id=1505"
+		},
+		{
+			"title": "Assessment of Implementation National Program on Protected Areas in Mongolia",
+			"url": "http://www.cbd.int/database/attachment/?id=1507"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Mongolia/SPAN/Mongolia EOI 6580 REVISED- 03142012.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Mongolia/SPAN/Mongolia EOI 6580 REVISED- 03142012.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 103.846656,
+		"lat": 46.862496,
+		"zoom": 7
+	},
+	"links": [
+		{
+			"name": "News Headlines >> Human Development and Poverty Reduction",
+			"url": "http://www.undp.mn/news-snrm170511.html"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/F62EDAB0-FBCB-EA84-A500-DB53108DB59C/attachments/6580.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Implementing pa",
+			"info": "Implementing partner",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Lead Agency",
+			"info": "Lead Agency",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "F62EDAB0-FBCB-EA84-A500-DB53108DB59C",
+		"documentID": 203798,
+		"createdOn": "2015-03-27T19:46:27.96",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:27.96",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 19466,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:30 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/F62EDAB0-FBCB-EA84-A500-DB53108DB59C",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 18057
+		}
+	}
+}

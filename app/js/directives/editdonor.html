@@ -1,6 +1,6 @@
     <link href="/app/css/lifeweb_admin.css" rel="stylesheet">
     <button type="button" ng-show="!alwaysEditing" ng-click="toggleShowEdit()">[{{showHideButtonText}}]</button>
-    <div ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}" style="position: absolute; margin-left: -10px; width: 1200px; z-index: 10; border: solid 5px white;" ng-show="showEditDonor || alwaysEditing">
+    <div ng-class="{green: isNew, blue: !isNew && !isDirty, yellow: isDirty}" style="position: absolute; margin-left: -10px; width: 1200px; z-index: 10; border: solid 5px white;" ng-show="(showEditDonor || alwaysEditing) && !loading">
         <h3 ng-if="!isNew">Edit Donor</h3>
         <h3 ng-if="isNew">Create Donor</h3>
         <div class="row form-group">
@@ -42,4 +42,7 @@
                 <projecttable projects="matches"></projecttable>
             </div>
         </div>
+    </div>
+    <div ng-show="loading">
+        <img src="/app/images/loading.gif" style="height: 80px;" />
     </div>

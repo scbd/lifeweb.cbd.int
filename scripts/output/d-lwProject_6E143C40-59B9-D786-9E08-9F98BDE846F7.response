@@ -1,0 +1,216 @@
+{
+	"header": {
+		"identifier": "6E143C40-59B9-D786-9E08-9F98BDE846F7",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cr"
+		}
+	],
+	"title": "Improving ecological integrity of coastal and marine biodiversity in MPAs as adaptation measures for climate change",
+	"timeFrame": null,
+	"projectAbstract": "The region including the exclusive marine economic zones of Ecuador, Colombia, Panama and Costa Rica is one of the most productive areas of the Eastern Tropical Pacific and belongs to one of the biogeographical provinces with one of the highest index of endemism in the world.",
+	"description": "The region including the exclusive marine economic zones of Ecuador, Colombia, Panama and Costa Rica is one of the most productive areas of the Eastern Tropical Pacific and belongs to one of the  biogeographical provinces with one of the highest index of endemism in the world. This area has a high ecological interconnection level and complex oceanographic properties, given mainly to the multiple marine convergence currents, which facilitates the dispersion of marine larvae (corals, crustaceans, equinoderms, mollusks, fish), affecting migrations, movements and distribution of many regionally and globally important species, such as: tuna fish, sharks, marine turtles, whales and marine birds.<br/><br/>The region including the exclusive marine economic zones of Ecuador, Colombia, Panama and Costa Rica is one of the most productive areas of the Eastern Tropical Pacific and belongs to one of the biogeographical provinces with one of the highest index of endemism in the world. This area has a high ecological interconnection level and complex oceanographic properties, given mainly to the multiple marine convergence currents, which facilitates the dispersion of marine larvae (corals, crustaceans, equinoderms, mollusks, fish), affecting migrations, movements and distribution of many regionally and globally important species, such as: tuna fish, sharks, marine turtles, whales and marine birds.<br/><br/>Golfo Dulce is home to a great diversity of marine life including dolphins, sea turtles, tropical fish including marlin, parrotfish, dorado, red snapper, over 87 species of stomatopods and decapods, and is an important place for humpback whales and whale sharks to breed. The beaches surrounding Golfo Dulce serve as nesting grounds for hawksbill, Olive Ridley and leatherback ocean turtles. This area is the most pristine and conserved area of the country. Many of the surrounding forests (Golfo Dulce Forest Reserve, Piedras Blancas National Park and the Esquinas Sector) guard thousands of hectares of primary forest. The Coco Island is located in the central part of the Eastern Pacific Ocean, at 532 km from south western pacific mainland of Costa Rica across the Panama Gulf, at 5° N and 87° W. The terrestrial area of the island is 23,85 km² and 1.997 km² of marine protected ecosystems. This island is of enormous importance for biodiversity as there has been 1,142 reported marine species (25% of the pacific ocean species), it is the place of most endemism in Costa Rica (42.5%). The Coco Island is the only oceanic island of Costa Rica, and is the breeding and feeding site for marine birds and contains one of the most developed coraline formations in the Costarrican ocean.",
+	"additionalInformation": "\n[participation]\nThe coastal human populations that use these resources will participate in biodiversity conservation through the design of the MPAs. The MPAs should have a zoning design that respond to the needs of the maintenance and improvement of wildlife and human populations.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The project is consistent with the Environment Law No. 7554 (1995) and the Biodiversity Law No. 7788 (1998), which seeks to conserve biodiversity and the sustainable use of the country’s resources and promote the fair distributions of costs and benefits. Also, the project is consistent with Costa Rica’s National Strategy for Biodiversity Conservation and Sustainable Use (1999) and the National Development Plan (2006-2010), which provide the framework for ecosystem marine conservation and sustainable use. Similarly, the project is consistent with the National Marine Strategy (2008), which highlights the need for incorporating the conservation and sustainable use of marine resources as part of Costa Rica’s development needs."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Objective 1. By 2012, SINAC improves representation and ecological integrity of coastal and marine biodiversity, incorporating 1 new and expanded MPAs, using an ecosystem approach and consolidating the protection of 1 ocean site.",
+			"result": "Result 1.1. Coastal marine biodiversity representation and ecological integrity of MPAs has been improved. Result 1.2. 100 % of the surface area of the Oceanic site of world importance (Coco Island World Patrimony site). Result 1.3. New MPAs in their terrestrial portions have been marked with boundary stones."
+		},
+		{
+			"activity": "Objective 2. By 2013, 2 MPAs recently created or expanded have official management plans",
+			"result": "Result 2.1. Newly created or expanded MPAs have new or updated official management plans"
+		},
+		{
+			"activity": "Objective 3.By 2015, 3 MPAs of existing MPAs in 2009, that are being monitored receive a score of acceptable or higher to maintain and improve protected biodiversity representation and ecological integrity",
+			"result": "Result 3.1. The MPAs have reached a score of at least \"acceptable\" in the monitoring of Effective Management"
+		},
+		{
+			"activity": "Objective 4. By 2012, 2 new or expanded MPAs have control and surveillance plans",
+			"result": "Result 4.1.MPAs have finished and official Control and Surveillance Plans"
+		}
+	],
+	"financialStability": "The proposed project is part of a larger project called Forever Costa Rica, which seeks to help Costa Rica become the first developing country to meet the goals of the Convention on Biological Diversity’s Program of Work on Protected Areas (PoWPA), and in doing so creates a unique potential model for other developing countries. Forever Costa Rica contains, as a centerpiece, the definition of stable funding to achieve the nation’s goals under the CBD and to cover recurring associated expenses. A private trust will be established with the beneficiary defined as “the public protected areas of Costa Rica”. The trustee will be the Asociación Costa Rica por Siempre, a civil, private, nonprofit association domiciled in Costa Rica. This association has the objective of providing the goods and services needed to allow Costa Rica’s implementation of its national and international commitments for the conservation of biodiversity, especially those included in the Program of Work on Protected Areas under the Convention on Biological Diversity.<br/><br/>The total fundraising goal is US$50 million. Interest income from the US$42 million (or annual flows from bilateral and multilateral funding sources) will be used to finance recurring costs originated by the project. In addition, a sinking fund of US$8 million will be used for expanding and improving the marine protected area system during the life of the project.<br/><br/>The Nature Conservancy, the Linden Trust for Conservation and the Gordon and Betty Moore Foundation will raise at least US$34 million from individual donors and nonprofit foundations, and the project will raise at least US$17 million from bilateral and multilateral donors. As of 9/23/09 detailed costing exercises and the donor list are available upon request.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "map1",
+			"url": "http://www.cbd.int/database/attachment/?id=303"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/database/attachment/?id=298"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=299"
+		},
+		{
+			"title": "Estrategia Nacional Marina 2008",
+			"url": "http://www.tncinfocostarica.net/content/publicaciones/ambientes_marinos/Estrategia_Nacional_Marina.pdf"
+		},
+		{
+			"title": "Ambientes Marinos Costeros de Costa Rica 2006",
+			"url": "http://www.tncinfocostarica.net/content/publicaciones/ambientes_marinos/Infome_ambientes_marino_costeros_Costa_Rica.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Costa Rica/Improving ecological integrity/costa_rica_carismaticas_lifeweb_expression_of_interest_.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": -83.20701599121094,
+		"lat": 8.525342496178993,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/115168"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/166740"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/11849"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/6E143C40-59B9-D786-9E08-9F98BDE846F7/attachments/4673.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "6E143C40-59B9-D786-9E08-9F98BDE846F7",
+		"documentID": 203745,
+		"createdOn": "2015-03-27T19:45:33.87",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:33.87",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 9865,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:36 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1023",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/6E143C40-59B9-D786-9E08-9F98BDE846F7",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 9017
+		}
+	}
+}

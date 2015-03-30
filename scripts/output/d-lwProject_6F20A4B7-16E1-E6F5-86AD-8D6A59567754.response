@@ -1,0 +1,241 @@
+{
+	"header": {
+		"identifier": "6F20A4B7-16E1-E6F5-86AD-8D6A59567754",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "fm"
+		}
+	],
+	"title": "Utilizing Effective Remote Management Mechanisms to Enhance the  Federated States of Micronesia’s Landscape and Seascape Connectivity",
+	"timeFrame": null,
+	"projectAbstract": "The Federated States of Micronesia (FSM) 1 is the largest and most diverse part of the greater Micronesian sub-region of the vast Pacific region.",
+	"description": "The Federated States of Micronesia (FSM) 1 is the largest and most diverse part of the greater Micronesian sub-region of the vast Pacific region. It is a federation of four semi-autonomous island States, in geographic sequence from east to west - Kosrae, Pohnpei, Chuuk and Yap - comprised of 607 islands with land elevation ranging from sea level to the highest elevation of about 2,500 feet (760 m). FSM’s total landmass is 438 square miles (702 km²), with a declared Exclusive Economic Zone covering over 1 million square miles (1.6 million km²). Traditional, social and cultural institutions are still very strong in Micronesia. Micronesian society is based on the extended family, which is responsible for the family welfare, especially in relation to customary family land. The indigenous population is Micronesian with most of the people residing on the main islands of the State capitals. Its marine and terrestrial biodiversity are the nation’s living wealth in which species endemism is high among the terrestrial biota. The high endemism within the nation is a direct result of the isolation of the islands to one another and to other landmasses in the greater Micronesian region. Land and aquatic tenure varies between States where the two most Eastern States – Kosrae and Pohnpei, land is both privately and State owned, while aquatic areas are managed by the State as public trusts. In Chuuk, most land and aquatic areas are privately owned and acquired through inheritance, gift or, recently, by purchase. In Yap, almost all land and aquatic areas are owned or managed by individual estates and usage is subject to traditional control. In all States, land cannot be sold to non-citizens of the FSM, thus these land and aquatic ownership patterns greatly influence the strategies and actions required to sustainably manage the biodiversity of the nation. Thus a necessity in engaging these local stakeholders to raise their awareness on and address certain threats which include explicit increasing pressures from climate change, resource over-harvest, non-application of efficientselective technology and land-based sources of pollution. <br/><br/>The responsibility for environmental issues is shared between the FSM National Government and the individual FSM State governments. The sharing of responsibility has at times resulted in legislation that appears duplicated at the State and National levels. It has also resulted in gaps in legislation and areas in which the location of responsibility between the State and National Governments has been less than clear. Each State has made efforts to control development and manage natural resources through the creation of land use plans, coastal zone plans, legislation and regulations. The National Government provides guidance and technical assistance to the States when needed and requested on matters related to planning, economic development, natural resources, fisheries, and the environment. The Federated States of Micronesia Protected Areas Network (FSM-PAN) Project <http://www.protectedareas.org/> has been developed to address the Convention on Biological Programme of Work on Protected Areas in which the project’s four outcomes set the foundation of establishing a protected areas network to address the above mentioned natural resource management issues in a systematic framework. Most of the FSM’s existing PAs use a combination of traditional and legislative controls. This dual authority approach has been quite successful, and it is locally perceived to 1 http://www.lib.utexas.edu/maps/islands_oceans_poles/statesmicronesia.jpg be an effective way of establishing protected areas. The development of a national protected areas network offers a major opportunity to provide a framework for the FSM’s national and state governments to collaborate on the dual objectives of protecting the country’s terrestrial and marine biodiversity and assisting with local management of natural resources through establishing an interconnected network of protected areas. <br/><br/>The decentralized political situation in the FSM and the prevalence of private and/or traditional control of lands and waters throughout the nation necessitates broad public consultations to build public understanding of and will toward the importance of conservation and the role of protected areas. In addition, many of the nation’s areas of biodiversity significance are remote and isolated, requiring a significant management role by local communities and land-owners. It is envisioned that most protected areas will be initiated at the community level, where they will be well-supported locally and address local resource over-exploitation concerns. Involving as many stakeholders as possible in the development of the national protected areas network will ensure eventual success.",
+	"additionalInformation": "\n[participation]\nDesigning and developing a nationwide network of protected areas is a complex, iterative process which takes place over many years. It integrates ongoing scientific research on biodiversity values, resilience and connectivity, and evolving socio-economic, cultural, political factors. While some elements of the design process are precursors for others, many can and should be developed concurrently. The FSM NISP partners have identified and agreed on actions to advance conservation priorities within the framework of a nationwide protected areas network. The vast majority of protected areas and potential sites for new PAs that will comprise the PAN are community-led, and site-based management planning processes have been conducted in coordination with local communities who are compromised of indigenous Micronesians.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The conservation and preservation of areas of biological significance and associated keystone/endemic species is of particular importance to the FSM’s natural heritage and globally significant. The marine and terrestrial significance are the foundation of the country’s long term economic self-sufficiency as articulated in its National Biodiversity Strategic Plan (NBSAP) <http://www.fsmgov.org/biodiv02.pdf> and subsequently its Strategic Development Plan 2004-2023 (SDP). Maintaining the habitats and ecosystems that nurture this diversity is crucial to sustaining the country’s rich ethnobiological traditions while improving Micronesians’ quality of life since sixty percent (60%) of its population is dependent on subsistence livelihoods (ADB, 2004). Further inventory and monitoring of the FSM terrestrial and marine biodiversities are integral and priority to a thorough understanding and appreciation of the islands’ biodiversity. The spread of invasive species is a continual threat due to increased movement of people and machinery between the islands, and needs to be carefully monitored and controlled. The project will give guidance to the FSM Second National Communication to UNFCCC, FSM Sustainable Land Management Project and beneficiaries, and other similar national and sub-national environmental planning exercises/projects/programs."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Strengthening existing and garnering more social and political support on national and subnational remote management schemes through existing effective and innovative engagement mechanisms",
+			"result": "• Increased Organizational Signatories to the FSM National Implementation Support Partnership Agreement for Implementation of COP-7 Program of Work (FSM-NISP) and institutional commitment \r\n• Enabling environment for enhanced protected areas network incorporating landscape and seascape connectivity • Proactive integrative traditional, subnational and national governance system on a remote management network \r\n• Contributing to the Micronesia Challenge targets",
+			"cost": 405
+		},
+		{
+			"activity": "2. Promoting connectivity and creating appropriate linkages amongst the targeted remote sites within FSM Protected Areas Network (FSM-PAN) coverage to enhance climate change adaptation and/or resiliency",
+			"result": "• Demonstrating landscape and seascape linkages within a national context \r\n• Food Security vulnerability and adaptive baseline set through an integrative atoll ecosystem assessment of targeted FSM outlying atolls \r\n• Expanding on adaptive management measures in response to climate change adaptation and/or resiliency",
+			"cost": 392
+		},
+		{
+			"activity": "3. Enhancing remote management capacity and coordination through key capacity building measures",
+			"result": "• Enhanced remote management capacity and coordination amongst FSM-NISP Signatories • Improving on remote sensing capacity by aligning a standardized monitoring protocol scheme to a national geodatabase mechanism"
+		},
+		{
+			"activity": "4. Contributing to local achievements and targets under the Micronesia Challenge Framework",
+			"result": "• Achieving local-level Micronesia Challenge targets \r\n• Sharing lessons learned and achievements in the Micronesia Challenge Framework and Collaboration"
+		}
+	],
+	"financialStability": "I. Counterpart Funding: <br/><br/>• FSM States Natural Resource Managers and Enforcers - 10% of FTE2: annual estimate USD $56,732 <br/>• Forum Fisheries Agency – FSM Matching Grant for Integrated Atoll Food Security Rapid Assessment: USD $19,966 <br/>• US Department of Agriculture – Forest Service State-wide Assessment and Resource Strategies FY09 Grant: USD $63,644 <br/>• NOAA Coral Reef Ecosystem Monitoring Grant to FSM: annual allocation estimate USD $120,000 <br/><br/>II. Institutional Commitment: <br/><br/>• FSM-NISP Signatories (refer to institutional context table) <br/>• Micronesia Challenge Declaration <br/>• Micronesia Challenge Support Office and Team Members <br/>• Pacific Regional Organizations (e.g. Secretariat of Pacific Community, Locally Marine Managed Areas Network, etc.) <br/><br/>III. Sustainable Financing Mechanisms: <br/><br/>• FSM Protected Areas Network Sustainable Financing Options Draft Plan <br/>• Micronesia Challenge Financial Mechanism Plan",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Chuukese youngsters showing their local harvest",
+			"url": "http://www.cbd.int/database/attachment/?id=550"
+		},
+		{
+			"title": "Practicing island resiliency through traditional navigation",
+			"url": "http://www.cbd.int/database/attachment/?id=551"
+		},
+		{
+			"title": "Traditional closure marker of a reef",
+			"url": "http://www.cbd.int/database/attachment/?id=552"
+		},
+		{
+			"title": "Traditional Micronesian atoll “long-term” food security crop – swamp taro (Cyrtosperma spp.)",
+			"url": "http://www.cbd.int/database/attachment/?id=553"
+		}
+	],
+	"maps": [
+		{
+			"title": "Federated States of Micronesia",
+			"url": "http://www.cbd.int/database/attachment/?id=543"
+		}
+	],
+	"attachments": [
+		{
+			"title": "http://www.visit-fsm.org/",
+			"url": "http://www.visit-fsm.org/"
+		},
+		{
+			"title": "Federated States of Micronesia National Government Web page",
+			"url": "http://www.fsmgov.org"
+		},
+		{
+			"title": "attachments and references",
+			"url": "http://www.cbd.int/database/attachment/?id=548"
+		},
+		{
+			"title": "Institutional Context - partners and roles",
+			"url": "http://www.cbd.int/database/attachment/?id=549"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Micronesia/FSM-PEoI_Lifeweb.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Micronesia/FSM-PEoI_Lifeweb.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": 150.550812,
+		"lat": 7.425554,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/6F20A4B7-16E1-E6F5-86AD-8D6A59567754/attachments/4944.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "6F20A4B7-16E1-E6F5-86AD-8D6A59567754",
+		"documentID": 203764,
+		"createdOn": "2015-03-27T19:45:49.697",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:49.697",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 13437,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:51 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/6F20A4B7-16E1-E6F5-86AD-8D6A59567754",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 12388
+		}
+	}
+}

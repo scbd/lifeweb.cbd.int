@@ -1,0 +1,261 @@
+{
+	"header": {
+		"identifier": "6D10C95C-B15B-BD8F-B0BB-A0BAF83AA8D0",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "kh"
+		}
+	],
+	"title": "Commune-based Protected Area Management - Piloting an alternative approach in Cambodia",
+	"timeFrame": null,
+	"projectAbstract": "The project is introducing an alternative approach that aims to make the commune the basic management unit for implementing protected area policies. The project is designed as a pilot with two main areas of operations, the unprotected Prey Long forest block and the Phnom Aural Wildlife Sanctuary. The project has four components: the establishment of commune development plans for natural resources management; legal and technical training to enable the commune councils to take on this new role; practical training and equipment support for field activities; and a biodiversity value awareness campaign in the targeted communes.",
+	"description": "Cambodia's biodiversity and natural resources are in crisis. Despite some positive interventions over the last ten years, for example the delineation of several new (forest) areas under protection status, a moratorium on industrial logging and capacity-building efforts by international organisations, recent developments in Cambodia are increasingly threatening the integrity of the protected area system in the country. Cambodia still harbours forest and inland water ecosystems on a landscape level, mainly where there is a relatively low population density and where the civil war prevented large-scale transformation and conversion. During the nineties Cambodia was the target of excessive logging which resulted in degradation of ecosystem services as the country opened up its resources to the international market. Particularly, a forestry reform process, starting in 1999, has addressed some of the ineffective management in the sector and had some positive results. However, increasing foreign investment, systemic bureaucratic process and the lack of coherent policy over the last six years has led yet again to a semi-anarchic situation over the use of natural resources. Land-grabbing for plantation development, organised illegal logging, road and dam constructions and mining are overwhelming the already weak protected area management structures. Even areas until recently protected by their remoteness are under pressure. Over the last ten years several projects were set up by international organisations to strengthen biodiversity conservation in Cambodia, with varying success. Almost all of them were based in the lead agencies, aiming to increase capacity and strengthen oversight. While some of these measures were successful, it now becomes apparent that they fall short of guaranteeing the existence of protected areas in Cambodia. The contradicting or general lack of, land-use planning is creating conflicts between local people, \"developers\" and governments with the concept of a protected area being more and more eroded, losing its authority and meaning. It is becoming increasingly obvious that protected areas in Cambodia require a broader alliance of stakeholders to address these problems, which are beyond the capacity of an often marginalised line ministry.<br/><br/>The project is introducing an alternative approach, building on experiences made over the last ten years. It aims to make the commune the basic management unit for implementing protected area policies. The Cambodian government and donor agencies are taking steps towards general decentralization of government structures, delegating more authorities to the provincial and local level.  The Natural Resource Protection Group (NRPG) has been providing resources, training and capacity-building to local communities and commune councils in different parts of the country to take up greater responsibility for natural resource management in their areas. A more structural involvement of local stakeholders, beyond community forestry approaches, is the best chance to implement biodiversity conservation and protected area policies, since the local population is directly affecting the outcome of these policies in any scenario and furthermore, because land-use planning at the commune and district level has better chances for successful implementation than the non-transparent, contradicting allocations currently practised at the central level. Although the concept of integrating natural resources management into development plans at different levels in government is not new, the project aims to implement a more fundamental approach, going beyond informing and \"consulting\" local stakeholders and shifting real decision-making powers to the local level in line with the legal framework. Direct support for field activities conducted by local groups is a key component. <br/><br/>The project will increase oversight capacity of the commune councils. It introduces a set of measures at the commune level to enable local governments to take greater responsibility and address natural resources in their areas more effectively. In addition to general land-use planning, the focus is on capacity-building for monitoring and law enforcement related activities. Effective and \"fair\" enforcement of protected area regulations, forestry laws etc. is a crucial element to successfully shifting decision-making power to local structures. By demonstrating the ability to protect a resource within their boundaries, local communities, especially indigenous communities, can also claim a greater role and responsibility in managing and utilizing it in the future. <br/><br/>The project, jointly implemented by NRPG and the General Department of Administration for Nature Conservation and Protection (GDANCP), and has four components: the establishment of commune development plans for natural resources management as an agreed baseline including the introduction of new functions within commune councils; legal and technical training to enable the commune councils to take on this new role; practical training and equipment support for field activities; and a biodiversity value awareness campaign in the target communes.<br/><br/>Activities include legal reviews and outreach, development and dissemination of training materials and standardized procedures, field exercises and training workshops, patrol and documentation training, creation a designated stakeholder network, establishing of outposts and information centers, basic boundary demarcation, setting up of a conflict resolution mechanism, commune-based ecological surveys. The project will have a strong focus on field activities with NRPG participating in commune-based operations to provide technical and political support.<br/><br/>The overall goals of this initiative are to significantly reduce the degradation of two high-biodiversity areas and to pilot a new management structure which could provide a framework for potential future implementation of carbon, PES, ABS schemes. To enable greater benefit-sharing the project aims to increase the management capacity and awareness of biodiversity values amongst local communities, MoE staff and local government.<br/><br/>The project is designed as a pilot. As such it has two main areas of operations, the, so far, unprotected Prey Long forest block, particular its northern zone, and the Phnom Aural Wildlife Sanctuary, an area protected by Royal Decree since 1994. Both areas are under threat of severe degradation in the near to medium future and the differences in official protection status should help identifying key obstacles and opportunities for a commune based management model. NRPG has developed a network in both areas and has laid the groundwork to further develop this model. The feasibility and application of Indigenous and Community Conserved Area (ICCA) principles and structures will be tested.<br/><br/>In addition to the commune-based activities the project will facilitate the update and completion of the Protected Area GAP Analysis started by the World Bank supported Biodiversity and Protected Area Management Project (BPAMP).  An analysis of financial needs to implement the CBD programme on protected areas in Cambodia will also be conducted.",
+	"additionalInformation": "\n[participation]\nThe project is centered around empowering local structures to take on more management responsibility for natural resources, esp. for resource conservation. Effective participation and ownership is essential and a core component of the project. A large percentage of the population in the project areas is from indigenous minorities.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The National Biodiversity Strategy and Action Plan for PAs outlines amongst others, the following objectives and options:<br/># Increase and strengthen surveillance activities<br/># Supply equipment and funds to communities<br/># Give priority to local community members participating in protected areas management<br/>   for development programs<br/># Create a monitoring group on illegal activities and illegally exploiting in PA's.<br/>The National Biodiversity Strategy and Action Plan for Forests and Plant Resources includes:<br/># Involve local communities in forest protection, management and improvement"
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Integrating protected area management guidelines and related legislation into commune\r\ngovernance structures and natural resource related development plans.",
+			"result": "1. More effective implementation and management of the national protected area system and communities conserved area."
+		},
+		{
+			"activity": "2. Enabling commune councils to implement development plans",
+			"result": "2. An effective new management model and a new network amongst local and national stakeholders are established and implemented."
+		},
+		{
+			"activity": "3. Strengthening commune councils to implement natural resource legislation (i.e. training on relevant legislation, establishing of a monitoring system, conflict resolution mechanism).",
+			"result": "3. Networking, coordination, and participation with local, and national stakeholders in law enforcement on PA’s system management are implemented."
+		},
+		{
+			"activity": "4. Capacity-building for rangers commune- and community-based biodiversity management activities, i.e. land-use planning, monitoring and law-enforcement related issues",
+			"result": "4. Rangers, commune councils, local community have the technical skills, tools and equipped to take  responsibility for effectiveness of natural resource conservation in their administrative areas."
+		},
+		{
+			"activity": "5. Capacity-building and biodiversity awareness campaign in selected communes to increase outreach.",
+			"result": "5. Biodiversity values are widely understood, supported, and protected."
+		},
+		{
+			"activity": "6. Finalize a national-scale ecological gap analysis, including analysis of protected area connectivity, to identify further sites for implementation.",
+			"result": "6. Completed ecological gap assessment with identified priority sites and sites of importance for connectivity."
+		},
+		{
+			"activity": "7. Conduct an analysis of financial needs for implementation of the Programme of Work on Protected Areas.",
+			"result": "7.  Completed financial plan outlining funding needs for implementation of the Programme of Work on Protected Areas."
+		}
+	],
+	"financialStability": "The project aims to operate within an existing, though weak and often ineffective local management structure. The goal is to strengthen these structures to enable them to function independently within the timeframe of the project. The project will provide training, necessary equipment and support initial networking and coordination efforts. If successful, follow-up costs after the duration of the project should be minimal, since the institutions involved, the commune councils, are independently funded by government structures. Costs for field activities by local stakeholders remain, but should be manageable as the initial bigger investments will be covered by the project.<br/>Arbeitsgemeinschaft Regenwald & Artenschutz (ARA) is helping to secure financial support from private donors in Germany for additional activities closely related to the proposed activities and objectives.<br/><br/>collaborating institutions:<br/>- cooperation agreement # 618 SCN dated July 06, 2005 from Ministry of Interior<br/>- cooperation agreement  # 441 S.N B,Sth.KOTh dated April 04, 2005 from Ministry of Environment<br/>- cooperation agreement # 912 KYRVN/07 dated June 25, 2007 from Ministry of Justice<br/>- cooperation agreement # 977 P.M dated September 15, 2008 from Ministry of Information<br/>- cooperation agreement # 128 S.C.N/2001 dated March 12, 2001 from Ministry of National Defense<br/>- cooperation agreement # 279/OYS/2005 dated May 12, 2005 from Ministry of National Defense<br/>- cooperation agreement from H.E Hok Landy, August 4, 2005, General in Chief of National Police Commissioner General <br/>- cooperation agreement # 2212, dated December, 2, 2009 with the Governor of Kratie Province on implementation of project activities",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "The proposed new management model - if successful - could provide a blueprint for designing REDD projects in the future. It would establish a potential framework for equitable and transparent benefit-sharing and enable the local government and the local community to establish a stronger position in project design and implementation, esp. because of a stronger legal position and a better understanding of the resources in their area."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "aural 1",
+			"url": "http://www.cbd.int/database/attachment/?id=692"
+		},
+		{
+			"title": "aural 2",
+			"url": "http://www.cbd.int/database/attachment/?id=693"
+		},
+		{
+			"title": "prey long 1",
+			"url": "http://www.cbd.int/database/attachment/?id=695"
+		},
+		{
+			"title": "prey long 2",
+			"url": "http://www.cbd.int/database/attachment/?id=696"
+		},
+		{
+			"title": "prey long 3",
+			"url": "http://www.cbd.int/database/attachment/?id=697"
+		}
+	],
+	"maps": [
+		{
+			"title": "Map of Phnom Aural Wildlife Sanctuary",
+			"url": "http://www.cbd.int/database/attachment/?id=703"
+		},
+		{
+			"title": "Map of Prey Long Forest Landscape",
+			"url": "http://www.cbd.int/database/attachment/?id=704"
+		}
+	],
+	"attachments": [
+		{
+			"title": "National Biodiversity Strategy and Action Plan",
+			"url": "http://www.cbd.int/database/attachment/?id=701"
+		},
+		{
+			"title": "Cambodia Fourth National Report to the CBD",
+			"url": "http://www.cbd.int/database/attachment/?id=702"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/lifeweb_project_Cambodia.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/lifeweb_project_Cambodia.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": 105.380859375,
+		"lat": 13.025965926333539,
+		"zoom": 7
+	},
+	"links": [
+		{
+			"name": "High priority conservation sites identified by cambodia protected area gap analysis",
+			"url": "http://www.cbd.int/database/attachment/?id=699"
+		},
+		{
+			"name": "Map of Protected Areas of Cambodia",
+			"url": "http://www.cbd.int/database/attachment/?id=700"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/6D10C95C-B15B-BD8F-B0BB-A0BAF83AA8D0/attachments/6090.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "6D10C95C-B15B-BD8F-B0BB-A0BAF83AA8D0",
+		"documentID": 203773,
+		"createdOn": "2015-03-27T19:45:59.397",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:59.397",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 16608,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:01 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/6D10C95C-B15B-BD8F-B0BB-A0BAF83AA8D0",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 15418
+		}
+	}
+}

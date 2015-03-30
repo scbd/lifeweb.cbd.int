@@ -13,7 +13,7 @@
     </thead>
     <tbody>
         <tr ng-repeat-start="donor in donors | filter:quickFilter" >
-            <td><img ng-src='{{donor.body.logo.url | thumbnail}}' ng-click="showingDonor[$index] = !showingDonor[$index]" style="height: 40px;"></img></td>
+            <td><img ng-src='{{donor.body.logo.url}}' ng-click="showingDonor[$index] = !showingDonor[$index]" style="height: 40px;"></img></td>
             <td ng-click="showingDonor[$index] = !showingDonor[$index]">{{donor.body.name}}</td>
             <td><span ng-click="showingDonor[$index] = !showingDonor[$index]">{{fullCountryName(donor.body.country.identifier)}}</span> <button type="button" ng-click="deleteDonor(donor)">X</button></td>
         </tr>

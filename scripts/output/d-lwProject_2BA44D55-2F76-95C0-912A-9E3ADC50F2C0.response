@@ -1,0 +1,298 @@
+{
+	"header": {
+		"identifier": "2BA44D55-2F76-95C0-912A-9E3ADC50F2C0",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "DF2EC3E0-D61A-7341-B482-4F1BB61C5AAA"
+			},
+			"description": "",
+			"funding": 20000,
+			"dateTime": "1325376000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "27B702D1-3D20-09EA-29F4-4CD942CB9B37"
+			},
+			"description": "",
+			"funding": 133728,
+			"dateTime": "1325376000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "bz"
+		}
+	],
+	"title": "Development  of a National  Ranger Training Academy and Conservation Training Centre",
+	"timeFrame": null,
+	"projectAbstract": "This project will increase the capacity of Belize’s National Protected Areas System to sustain globally important biodiversity and delivery of ecosystem services by professionalising and standardising protected area ranger practices.  This specialized training academy will raise the bar for protected area law enforcement, biodiversity monitoring and adaptive protected areas management.  This will contribute towards the conservation of biodiversity and maintenance of ecosystem services important in underpinning livelihoods of the rural poor.  In partnership with the University of Belize the training academy will provide formal accreditation for rangers with recognized qualifications providing a pathway to higher education for exemplary students, and a means for rangers to progress professionally into senior protected area management roles.  The longer term goal is for the training academy to become a regional centre contributing to the improvement of protected areas management across the Central America and Caribbean region.",
+	"description": "<h4>Regional context</h4><br/>While the Mesoamerican isthmus represents a mere 0.7% of the earth’s land mass, it contains a staggering 9.4% of the world’s terrestrial species (Barry 2006, CI 2009).  Mesoamerica is second only to the tropical Andes in terms of biodiversity and endemism and, with its large extent of intact tropical forests, rolling mountains, open savannas, and lagoons, linking to the second largest barrier reef system in the world, its protection is of the utmost importance.  However, threats to biodiversity are increasing both in frequency and magnitude due to increasing human footprint and unsustainable resource use.  Protected Areas (PAs) are widely used in the region to conserve biodiversity and ensure that flows of ecosystem goods and services that benefit society, secure livelihoods, and contribute to the achievement of Millennium Development Goals continue in perpetuity.<br/><br/><h4>National context and threats to biodiversity in Belize</h4><br/>Belize provides a critical function within the Mesoamerican region both on land and marine.  Belize lies at the heart of La Selva Maya, a macrobiological forest corridor connecting Mexico and Guatemala with Honduras, which is in turn the second largest contiguous block of tropical forest in the Americas, after the Amazon.  The Belize Barrier Reef, a UNESCO World Heritage site further constitutes 79% of the Mesoamerican barrier reef complex, thus making a significant contribution to the conservation of the region’s reef ecosystems.  These attributes place Belize as one of the most important biodiversity refuges remaining in Mesoamerica, and indeed in the World; critical for maintenance of biodiversity nationally, as well as at regional and global scales.  <br/><br/>However, Belize’s natural ecosystems are threatened. Excessive coastal development, mangrove cutting, overfishing aquaculture and agricultural runoff are directly impacting the integrity of the Belize Barrier Reef Reserve System – now categorised as a UNESCO World Heritage Site ‘in danger’ (http://whc.unesco.org/en/list/764/). In the terrestrial environment, poorly planned development, oil exploration and extraction, hydroelectric development, agricultural expansion and unsustainable practises, overharvesting and wildfires are putting increasing pressure on Belize’s natural resources, with deforestation and forest degradation, particularly along the Belize-Guatemala border, have severe implication of the maintenance of biodiversity and ecosystem services in the country.  <br/><br/>Belize’s PAs form an important strategy for maintaining regionally and globally important biodiversity and the ecological processes that underpin delivery of ecosystem services in the face of a growing suite of threats.  In this regard, Belize has long been considered a leader in conservation within the Mesoamerican region, with over a million hectares (36% of terrestrial and 13% of marine area) under protection for conservation and/or sustainable resource use (timber, sustainable fisheries).  Overseeing this extensive network of protected areas is the National Protected Areas System (NPAS). This system, currently being rationalized by the NPAS secretariat, is intended to conserve the natural and  cultural  heritage  of  the  country.  Within this system Belize has an impressive range of globally recognized sites including the Belize Barrier Reef UNESCO World Heritage Site, 2 Ramsar sites, 15 Key Biodiversity Areas and 6 Important Bird Areas. Belize’s PAs also maintain viable populations of threatened species, including at least 12 amphibians, 46 birds, all coral anthozoan and hydrozoan species, 19 fish, 15 sharks, 28 mammals, 8 plants and 10 reptiles.  <br/><br/>The network of PAs collectively contribute to the continued delivery of supporting ecosystem services (e.g. clean air, carbon sequestration and storage, and climate regulation) that are of global benefit. They also provide ecosystem services, vital for the human population of Belize, including provisioning services (e.g. food, water and medicine); regulating services (e.g. flood, pest, pollutant and disease control, and crop pollination) and cultural services (e.g. educational, recreational, spiritual, cultural benefits).  Of particular importance in today’s rapidly changing climate is the physical protection that Belize’s protected areas and intact ecosystems provide against natural disasters such as hurricanes (reefs and mangroves), landslides (forested slopes) and drought (forest moisture retention and watershed protection).  Intact ecosystems have also been identified as critical to Belize’s capacity for climate change adaptation. <br/><br/>The total value of these ecosystems cannot be fully captured by economics alone. However, studies of some ecosystems within Belize have tried to quantify their value for livelihoods and the economy. The combined contribution of mangroves and reefs for shoreline protection (avoided damages), fisheries and tourism, for example, has been estimated at up to US$559 million per year in Belize (WRI, 2008). A more recent analysis of coastal fisheries, carbon, timber, non-timber forest products, tourism and minerals in the Maya Mountains Massif and Maya Mountain Marine Corridor estimated their combined value at approximately US$680 million over a 30 year timeframe (NPAC, 2011).<br/><br/>These studies highlight the important contribution of Belize’s natural ecosystems at local and national level. Maintaining their integrity is paramount.<br/><br/><h4>Gaps and Challenges for Protected Areas in Belize</h4><br/>There is no question that Belize has made significant advances to protecting critical biodiversity and ecosystem services through an extensive network of PAs. However, a series of recent NPAS assessments (NPASP 2005, Walker and Walker 2009) and the preliminary findings of the Rationalization of the NPAS (Wildtracks, 2012 in progress,) have identified key gaps and challenges that need to be addressed to achieve Belize’s biodiversity conservation goals:<br/><ol><br/>  <li>Lack of coordination between the agencies involved in PA management across the country has led to inefficiencies in enforcement of protected area laws, while poor information sharing has reduced effectiveness in preventing illegal logging, hunting and fishing. </li><br/>  <li>Lack of standardised operating practises in management, particularly in enforcement, and biodiversity monitoring prohibits consistency in addressing incompliance to PA laws and constrains the practice of science-based natural resource management. </li><br/>  <li>High proportion of ‘paper parks’ which do not effectively patrol, conduct monitoring, or implement environmental education and interpretation activities in Belize. </li><br/>  <li>Low levels of capacity exist at a number of levels within the Belize NPAS. Furthermore, management effectiveness assessments have highlighted the lack of a capacity building strategy.  In the absence of capacity development the threats facing the NPAS will continue to intensify with impacts for the rich biodiversity they contain. </li><br/>  <li>High PA staff turnover due to limited career development opportunities results in a tendency for transient employees rather than long-term, career staff.</li><br/></ol><br/>The lack of sustainable financing presents further challenges for the long-term security of NPAS.<br/><br/><h4>Strengthening Capacity for Protected Areas Management</h4><br/>In order to qualify capacity gaps within the NPAS (point 4 above), the CBD Programme of Work on Protected Areas called on its Parties to “complete national protected-area capacity needs assessments and establish capacity building programmes” (IUCN, 2011).  A highly interactive, collaborative and consultative national capacity needs assessment was carried out for Belize’s NPAS in 2011 involving Government departments, NGOs, CBOs, private sector and academic institutions.  The assessment was led by the Environmental Research Institute (ERI) at the University of Belize (UB), in partnership with Belizean NGO Ya’axché Conservation Trust (Ya’axché) and the Center for Protected Areas Management at Colorado State University (CPAM-CSU). <br/><br/>This National Protected Areas Capacity Needs Assessment (2011), identified three priorities for action:<br/><ol><br/>  <li>research and monitoring for protected area management, </li><br/>  <li>ranger training, and </li><br/>  <li>institutional capacity and strengthening.</li><br/></ol><br/>For each priority area a curriculum, lesson plans, teaching materials and assignments were developed.  <br/><br/>Ya’axché Conservation Trust and the proposed development of a National Ranger Training Academy<br/>Ya'axché is an award winning Belizean NGO which aims to maintain healthy forests, rivers and reefs for the benefit of all. Through protected area management, advocacy, and working hand in hand with communities Ya'axché strives to develop capacity for the wise use of land and natural resources in and around the Maya Golden Landscape in Toledo. Over the 14 years since its inception Ya’axché has developed its PA management experience and an expanding portfolio of coverage which includes the Bladen Nature Reserve, one of the largest and most strictly protected PAs in Belize.  Ya’axché has consistently demonstrated its adaptability, stability and innovation in achieving its strategic objectives for conservation and sustainable development.  As a leading NGO in Belize Ya’axché has played a particularly significant role in influencing national policy and strengthening the NPAS through increasing management effectiveness.  This has been achieved through a commitment to capacity building, in particular through training of the ranger team.  Ya’axché has also strived to maximise collaboration with PA stakeholders, conducting a needs assessment for Toledo-based PA managers, identifying gaps and subsequently organizing trainings and workshops. <br/><br/>Responding to the need for ranger training in Belize, Ya’axché has embarked on a pioneering initiative to develop a National Ranger Training Academy (NRTA). The concept has been the subject of extensive consultation with a broad range of stakeholders and potential collaborators and has received an unprecedented levels of support with consensus among stakeholders that it will be key to raising the bar for PA management in the NPAS through standardisation of practices leading to greater efficiency and effectiveness.  In addition to progress in identifying priority capacity needs nationally and generating broad stakeholder support, recent changes in the Government present a unique opportunity for advancing ranger training in Belize to support the country’s biodiversity conservation goals and commitments.<br/><br/>At the March 2012 national general election the incumbent government retained power and, in response to a growing number environmental and natural resource issues, took the unprecedented and bold step of splitting the Ministry of Natural Resources.  Recreated as the Ministry of Forestry, Fisheries, and Sustainable Development, the government has shown clear intent for prioritising environment and sustainable development in Belize and has appointed an award winning leader in conservation and sustainable development as Minister.  Ya’axché has a strong working relationship with the Ministry and has been a significant influence in lobbying for the strengthening of PA legislation through its advocacy.  With such strong support from Government and a supportive enabling environment for innovative and collaborative initiatives such as the Training Academy, now is a pivotal time for furthering development of the NRTA.<br/><br/><h4>Long-term Sustainability</h4><br/>The failure of PA management training programs that have been piloted in Latin America to date has been attributed to poor sustainability.   Sustainability in this context is related to institutional capacity, long-term commitment, presence of trained specialists, long term financial viability and institutional support of key stakeholders  Of these, the lack of an effective long term sustainable financing mechanism has been the most common cause of failure for initiatives in the region (Jim Barborak, CPAMT - CSU).<br/><br/>Ya’axché has the institutional capacity to develop the project with committed support from key stakeholders, authorities and long term partners including:<br/><ul><br/>  <li> Ministry of Forestry Fisheries and Sustainable Development </li><br/>  <li> University of Belize – Environmental Research Institute</li><br/>  <li> Association of Protected Areas Management Organizations (APAMO)</li><br/>  <li> Belize Coastguard</li><br/>  <li> Fauna and Flora International </li><br/></ul><br/>To overcome the challenge of securing financial sustainability for the Training Academy, Ya’axché has undertaken an extensive assessment of potential revenue sources available to the organization and the NRTA.  Educational eco-tourism was identified as a viable source of income for the NRTA with three main target markets:<br/><ol><br/>  <li> Paying volunteers/interns, </li><br/>  <li> partnerships with academic institutions, and </li><br/>  <li> day trip ecotourists. </li><br/></ol><br/>A rigorous market survey  was undertaken to determine their viability and potential in meeting the projected running costs of the NRTA.   The results of this survey were positive and all three markets were considered viable with the paying volunteer/intern market as the most appropriate and promising. <br/><br/>To maintain a functional separation between the sustainable financing program and the NRTA, the Ya’axché Institute for Conservation Education (YICE) will be established on the same site and will utilize the facilities and educators outside of the ranger training season which falls in the wet season (between July – September) which is generally the quietest time for PA managers due to low tourist season, reduced illegal hunting and low fire risk.  100% of the revenue generated from the YICE will be used to fund the operational costs of the NRTA and YICE and will contribute towards PA management in southern Belize where the Academy is to be hosted.  A fully elaborated business plan for the NRTA and YICE has been completed confirming the viability of these ventures and their financial sustainability.<br/><br/>There is a clear and urgent need for the establishment of a fully functional and financially sustainable National Ranger Training Academy in Belize to raise the bar of PA management across the country and to support Belize’s conservation goals and commitments. Ya’axché is in a unique position to lead the development of the NRTA, with support from all partners, and to ensure its long term sustainability and success.  Ya’axché is therefore seeking funding to finance the construction, development, marketing and start up of the NRTA and YICE over a 4 year period. After this period the Training Academy will be financial sustainability and able to continue building the individual and institutional capacity to protect biodiversity and ecosystem services for Belize over the long term.",
+	"additionalInformation": "\n[participation]\nYa’axché Conservation Trust<br/>Ya’axché was founded as a community oriented organization and remains committed to maintaining healthy forests, rivers and reefs for the benefit of all. Through protected area management, advocacy, and working hand in hand with communities Ya'axché strives to develop capacity for the wise use of land and natural resources in and around the Maya Golden Landscape in Toledo. Community leaders sit on Ya’axché’s Board of Directors and are supportive of the development of the NRTA and YICE. These community leaders act as representatives from the indigenous Maya communities buffering the PAs and their participation in the further development of the NRTA and YICE will be important.    <br/><br/>National Ranger Training Academy<br/>The NRTA will help professionalize the job of the PA ranger and this is expected to bring better remuneration and increase employability through the development of transferrable skills. At present the majority of PA rangers employed in within the NPAS are from communities buffering those respective PAs.  Furthermore, the majority of PAs lie in the rural areas of Belize and thus the local communities are often indigenous, particularly buffering the Maya Mountains.  <br/><br/>A further key expectation of the NRTA is that it will provide a pathway for the more proficient rangers to advance their education and capacity in a structured, accredited and logical progression toward more technical and management positions in the NPAS.<br/><br/>The improved PA management effectiveness of the NPAS will lead to sustainable use of natural resources and therefore maintains the provision of life sustaining ecosystem services for present and future generations.<br/><br/>Ya’axché Institute for Conservation Education<br/>The YICE will seek every opportunity to employ local staff from the predominantly indigenous Mayan villages buffering the PAs that Ya’axché is responsible for managing.  There will be employment opportunities for teaching staff and the opportunity to build capacity through the training of the trainers component.  There will also be opportunities for guides, maintenance, catering and construction.  Through the YICE there will also be opportunities for ecotourism ventures, homestays and cultural demonstrations.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "Belize NBSAP began development in 1997, the plan was submitted by the Forest Department in 1998.  The goals were to promote the sustainable use of Belize’s biological and cultural resources by educating society<br/>to properly conserve biological diversity in order to maintain and enhance the quality of life for all Belizeans. To achieve this the goal was to ensure local participation and equitable access to benefits, through adequate institutional and human capacity building and collaborative research and development.  The proposed project satisfies these objectives and goals, in particular “institutional and human capacity building and collaborative research and development”.<br/><br/>Jacobs, Noel D. and Castaneda, Anselmo (1998) Belize National Biodiversity Strategy. National Biodiversity Committee, Ministry of Natural Resources and the Environment, Belmopan.<br/><br/>The CBD PoWPA called on its Parties to “complete national protected-area capacity needs assessments and establish capacity building programmes” (IUCN, 2011).  A highly interactive, collaborative and consultative national capacity needs assessment was carried out for Belize’s NPAS in 2011 involving Government departments, NGO’s, CBO’s, private sector and academic institutions.  The proposed project directly addresses the need for ranger training that was identified as one of three priority areas for action in the 2011 National Protected Areas Capacity Needs Assessment. <br/><br/>Almandarez et al. (2011) National Protected Areas Capacity Assessment. Universtiy of Belize Environmental Research Insititute, UNDP – GEF “Strengthening National Capacities” Medium Sized Project."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The development of the National Ranger Training Academy (NRTA) is relevant to the following national development strategies:<br/><br/>1)\tThe National Landuse Policy (NLUP) and integrated planning framework was officially adopted by the Government of Belize in 2011. The NLUP demands a proactive approach to sustainable land management based on equity, efficiency, practicability, development and sustainability. The NLUP includes strategies related to natural resources, conservation, and climate change, recognising that Belize is a natural resource based economy. Specific NLUP strategies that this submission is of relevance to include: <br/>•\tMaintaining the integrity of key watersheds owing to their role in the delivery of ecosystem goods and services (Natural Resources and Conservation Strategy 2).<br/>•\tMaintaining the integrity of protected areas within the NPAS, marine reserves under the Fisheries Act and forest reserves that fall under the Forests Act (Natural Resources and Conservation Strategy 5).<br/>•\tThe laws to protect land resources outside the NPAS and the Forests Act will be enforced (Natural Resources and Conservation Strategy 15).<br/>•\tEnhance and expand forest management systems to enable effective schemes for controlling deforestation and forest fires, and undertaking reforestation, afforestation in appropriate areas (Climate Change Strategy 15).<br/>The Policy also stresses principles including the integration of ecosystem service values in land use planning decision-making, which will be an integral part of the training delivered through the NRTA.<br/><br/>Meerman J, McGill J, Cayetano M, (2011). National Land Use Policy for Land Resource Development, Government of Belize, Belmopan, Belize<br/><br/><br/>2)\tThe National Protected Areas System Plan (NPASP) (2005) was produced with the goal of creating a National Protected Areas System in which all important sites are included in one coherent framework and that meets all obligations under international agreements to which Belize is signatory.  The NPASP identified the need to strengthen management and monitoring recognizing the high variability of management effectiveness between individual sites within the system.  The NPASP specifically identified  the following capacity weaknesses:<br/>•\tLack of biodiversity evaluation and monitoring capability<br/>•\tLack of enforcement capability<br/>The proposed NRTA will directly address these weaknesses through building the capacity of PA rangers to collect standardised monitoring data  and increase the standards and effectiveness of PA enforcement across the NPAS.<br/><br/>Meerman J., Wilson J.R., 2005, The Belize National Protected Areas System Plan (http://biological-diversity.info/Downloads/NPAPSP/NPAPSP_2005.pdf)<br/><br/><br/>3)\tHorizon 2030 is Belize’s national development framework which establishes long‐term development goals and objectives, intended to strategically guide Belize’s development over the next 20 years. The approach is cross-sectoral and highlights the need to adopt and implement the National Protected areas policy and system plan, in addition to international and regional obligations such as the Millennium Development goals.  Horizon 2030 aims to strengthen protected areas management through the implementation of the National Protected Areas Systems Plan and by strengthening the legal and administrative framework for protected areas. It also addresses the need to enforce environmental protection laws in a fair and just manner.<br/><br/>Barnett and Company Ltd, 2011, Horizon 2030 – Planning our future together (http://www.belize.gov.bz/public/Attachment/2598371571.pdf)<br/><br/><br/>4)\tThe Belize Millennium Development Goals Scorecard. This document  outlines (i) the progress that has been achieved to date; and (ii) the prospects for achievement of agreed targets (for 2015) in the light of existing and anticipated policies and programmes.  Belize committed to achieving the eight goals and the goal that pertains to this project is goal 7, Ensure Environmental Sustainability.  Given increasing pressures on biodiversity and natural habitats, Belize faces significant challenges in achieving its MDG7 targets with respect to biological diversity conservation.  It makes the following recommendations:<br/>•\tBelize has policy and legislative instruments in place to combat the decline in biodiversity and this would further require better coordination, management and enforcement among national implementing bodies.<br/>•\tImprove development and application of robust monitoring frameworks and maintain impartial enforcement of all regulations<br/>•\tBelize would also need to address the issues of species extraction, especially regarding those species that are directly affected by cross-border movements over which the Belize Government has limited control and legislative impact.<br/>•\tIncrease community participation in environmental management initiatives as one of the main strategies to reverse loss of resources.<br/>These recommendations are directly addressed by the proposal for the NRTA, in the following ways:   <br/>•\tOne of the primary goals of the NRTA is to improve coordination, management and enforcement from the grass roots level in the NPAS.  <br/>•\tThe NRTA will work together with UB-ERI and the National Protected Areas Commission to build the capacity of PA rangers to collect valuable monitoring data and taking advantage of the amount of time they spend in the field.  <br/>•\tPreventing the Illegal extraction of species is one of the main tasks of the PA ranger and the NRTA will increase patrol effectiveness and PA law enforcement to mitigate this threat.  <br/>•\tPA rangers are often members of the stakeholder communities to PAs, recognizing this the NRTA has a specific unit dealing with community participation in PA management and conflict resolution. <br/><br/>Belize MDG Scorecard and outlook report – 2010 (http://www.undp.org.bz/wp-content/uploads/2012/01/Belize-MDG-Report-2010.pdf)"
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "The following national climate strategies are of relevance in the context of this proposal:<br/>•\tBelize is a signatory to UNFCCC <br/>•\tBelize is currently developing its National REDD+ Strategy under the regional initiative: “Program for the Reduction of Emissions from Deforestation and Forest Degradation in Central America and the Dominican Republic” (REDD-CCAD/GIZ) <br/>•\tClimate  Change and the Caribbean : A regional  Framework for achieving development resilient to climate change (2009-2015)<br/>Furthermore, the National Landuse Policy (NLUP) and integrated planning framework includes climate change strategies that this proposed project will contribute to addressing including: <br/>•\tEnhancement of forest management systems to enable effective schemes for controlling deforestation and forest fires, and undertaking reforestation, afforestation in appropriate areas (Climate Change Strategy 15).<br/><br/>A key component of the NRTA training curriculum is focused on fire management such as use of prescribed fire and prevention of wildfire.  The training provided through the NRTA will also increase patrol effectiveness and coverage in the NPAS therefore enabling the discovery of and prevention of illegal forest degradation and deforestation. In this way the NRTA will build capacity to address key drivers of forest loss in Belize and in turn support forest conservation, climate change mitigation and ecosystem-based adaptation."
+		}
+	],
+	"budget": [
+		{
+			"activity": "1.\tNational Ranger Training Academy and Ya’axché Institute for Conservation Education established and operational in the Golden Stream Corridor Preserve (a 15,000 acre private protected area, owned and managed by Ya’axché) by end of Yr 1",
+			"result": "NRTA and YICE fully constructed with maintenance program established by end Yr 1 and is operational and accepting trainees by Yr 2",
+			"cost": 302210
+		},
+		{
+			"activity": "2.\tNational Ranger Training Academy and Ya’axché Institute for Conservation Education are financially viable from Yrs 1-3 and are sustainable from Yr 4 through income generated by the Ya’axché Institute for Conservation Education.",
+			"result": "Running costs, including staff salaries, are covered through grant support and investments until Yr 3 and\nincome of YICE is equal to or exceeds essential expenditure of NRTA and YICE from Yr 4",
+			"cost": 589944
+		},
+		{
+			"activity": "3.\t4 full time and 3 part time educators have the knowledge and skills to deliver curriculum to National Ranger Training Academy students by end of Year 3",
+			"result": "All 7 trainers can independently deliver training to high standard as assessed by UB-ERI provost",
+			"cost": 40000
+		},
+		{
+			"activity": "4.\tCapacity for protected area management increased with 36 Belizeans accredited as University of Belize/National Protected Areas Commission qualified rangers by end Yr 3",
+			"result": "36 trainees complete and pass the ranger training course",
+			"cost": 32870
+		},
+		{
+			"activity": "5.\tNational Ranger Training Academy and Ya’axché Institute for Conservation Education meets the highest criteria of operational and financial credibility.",
+			"result": "A full external assessment and audit of the NRTA and YICE confirms its operational and financial credibility and standards.",
+			"cost": 12000
+		}
+	],
+	"financialStability": "The sustainable financing of the NRTA has been thoroughly considered and well researched during the feasibility assessment phase of this project.  It is recognized that the NRTA alone cannot achieve financial sustainability. To avoid the fate of similar initiatives in Latin America, a sustainable financing arm of the NRTA is necessary.<br/><br/>An analysis of the potential markets that Ya’axché could access given the facilities and expertise that it has at its disposal was undertaken by a consultant.  The consultant based the subsequent market survey on three identified markets 1) Paying volunteers, 2) Student groups, 3) Day trippers.  Upon completion of the survey each of the three markets was confirmed to have enough potential to provide the necessary financial sustainability for the NRTA.  The marketing strategy for each group has been detailed in the business plan.<br/><br/>The financing arm of the NRTA is the Ya’axché Institute for Conservation Education (YICE) and the marketing and business plan project that financial sustainability will be achieved by the end of Yr 3.   The start up financing requested will cover construction costs, marketing, staff costs and training of trainers.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "The project will build capacity for PA management and ultimately contribute towards improved effectiveness of PA management across Belize’s NPAS thereby helping to maintain the integrity of important forest habitat, watersheds, biological corridors and biological diversity. Healthy and intact ecosystems play an important role in delivering services that help people adapt to climate change and to support the maintenance of resilient landscapes. <br/><br/>The project will thus contribute towards Belize’s capacity for ecosystem-based adaptation in some of the following ways: <br/>•\tClimate change impacts are expected to increase the size, intensity and frequency of wildfires, exacerbated by an increase in uncontrolled human-induced fires. The NRTA will build capacity for more effective, ranger led wildlife management. With many rangers coming from within communities buffering the PAs, improved fire management capacity can help to promote more effective community-based wildfire management.<br/>•\tCapacity for watershed management will be improved through the NRTA thereby helping to secure future delivery of important ecosystem goods and services upon which natural resource based livelihoods, particularly among rural communities and those considered ‘cash-poor’,  in Belize depend. <br/>•\tImproved capacity for the maintenance of mangrove and other coastal habitats that are crucial for mitigating the impacts of hurricanes and tropical storms along the coastline.<br/>•\tImproved capacity to protect the biological diversity contained within the NPAS will contribute to community resilience through protection of medicinal biodiversity.<br/>•\tImproved capacity to protect and maintain ecosystem function of PAs and corridors between them will contribute to ecosystem resilience.<br/>The NRTA project will further raise awareness of the threats facing PAs, their implications for biodiversity, ecosystem services and local people, and the importance of PA’s for ecosystem-based adaptation in a changing climate. It will promote management actions that consider and build on the principles of ecosystem-based adaptation to climate change.<br/>"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "One of the primary recipients of the training provided by the NRTA will be the Institute of Archaeology (IoA) park wardens. These wardens protect the many ancient Mayan archaeological sites across Belize from unsustainable tourism practices, vandalism and looting.<br/><br/>In addition the IoA is mandated to protect the cave systems across Belize, many of which are located within PAs.  These caves hold cultural and spiritual significance to the modern Maya people and in many PAs these sites are specially zoned to provide access for these practices.  The protection of the caves and archaeological sites is expected to be improved with increased park warden and park ranger effectiveness and capacity.<br/>"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "The NPAS thus form a critical strategy for maintaining the integrity of key watersheds across Belize. These watersheds perform a wide variety of ecosystem services including the supply and purification of fresh water. <br/><br/>The extensive protected area network in the Maya Mountains Massif and Marine Corridor, for example, has been the subject of the following study: Economic Valuation of the Environmental Goods and Services of the Maya Mountain Massif and the Maya Mountain Marine Corridor (Terrestrial Area).  This looked at a variety of ecosystem services including the provision of hydrologic services (HS) in particular potable water.  The value of HS to maintaining potable water supply was estimated at US$2.3m NPV.  This report did not consider nonuse values (e.g., habitat value, biodiversity value, existence value, and option value, among others) and so this should be considered a minimum value.<br/><br/>The proposed project ultimately seeks to improve management effectiveness across the NPAS thus helping to secure the protection of critical watersheds across Belize.<br/><br/><br/>Food security (e.g. mitigating spread of invasive alien species, increasing fish stocks, increasing variety of local foods, etc.)<br/>The watersheds encompassed within the NPAS contribute to the provision of habitat that safeguards fisheries and biological diversity, including a variety of local foods. Many of Belize’s rural communities rely on forest (fruits, seeds, nuts, tuba etc.) and marine (fish, crustaceans, seaweed etc.) products for a significant portion of their nutrition.  Mangrove habitats along the coast in particular serve as important nurseries for many economically important marine species. <br/><br/>The proposed project ultimately seeks to improve management effectiveness of protected areas across the country thus helping to secure the protection of critical watersheds throughout Belize.<br/>"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": "The practical field skills module of the NRTA includes a component on survival skills which will involve traditional Mayan medicinal healers from the Itzam-ma Institute. Through this the NRTA trainees will play an active role in ensuring the transfer of this valuable knowledge in perpetuity whilst learning about the fauna and flora of the forests and in particular their individual uses.  "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "Forest reserves within the NPAS provide important income generating opportunities through the sustainable supply of timber and non-timber resources, making an important contribution to the national and rural economy. Improving management regimes through development of a pool of highly trained protected areas management staff will contribute to sustainable use of natural resources within those parts of the NPAS where natural resource use is permitted.  The proposed project seeks to promote socially and environmentally sensitive tourism-related opportunities as part of the sustainable financing strategy for the National Ranger Training Academy. "
+		}
+	],
+	"images": [
+		{
+			"title": "PA ranger on bird transect monitoring",
+			"url": "http://www.cbd.int/database/attachment/?id=1727"
+		},
+		{
+			"title": "Rangers out on patrol, recording GPS location ",
+			"url": "http://www.cbd.int/database/attachment/?id=1728"
+		},
+		{
+			"title": "Rangers fire",
+			"url": "http://www.cbd.int/database/attachment/?id=1729"
+		}
+	],
+	"maps": [
+		{
+			"title": "Protected Areas of Belize",
+			"url": "http://www.cbd.int/database/attachment/?id=1723"
+		},
+		{
+			"title": "Map of Belize’s National Protected Areas System",
+			"url": "http://www.cbd.int/database/attachment/?id=1724"
+		},
+		{
+			"title": "Map of proposed site of NRTA and YICE and environmental context",
+			"url": "http://www.cbd.int/database/attachment/?id=1725"
+		},
+		{
+			"title": "Map of Belize’s Private Protected Areas in context with the NPAS",
+			"url": "http://www.cbd.int/database/attachment/?id=1726"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Progress Report Development of a National Training Program for Protected Areas Management",
+			"url": "http://www.cbd.int/database/attachment/?id=1736"
+		},
+		{
+			"title": "Letter of Endorsement from the Ministry of Forestry, Fisheries & Sustainable Development",
+			"url": "http://www.cbd.int/doc/lifeweb/Belize/Ranger training Academy/MFFSD letter of support.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Belize/Ranger training Academy/Ya'axche Lifeweb_FINAL for submission.docx"
+		},
+		{
+			"title": "Download this Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1734"
+		}
+	],
+	"coordinates": {
+		"lng": -88.49765,
+		"lat": 17.189877,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/2BA44D55-2F76-95C0-912A-9E3ADC50F2C0/attachments/21533.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Ongoing develop",
+			"info": "Ongoing development of curriculum content and strategic priorities",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Ongoing develop",
+			"info": "Ongoing development of curriculum content and strategic priorities, delivery of some training units",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Training of the",
+			"info": "Training of the trainers, official accreditation",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Technical insti",
+			"info": "Technical institutional and operational support - FFI has invaluable experience in establishing training programmes around the world. Advisory role in the sustainable financing mechanism and marketing of the NRTA.",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "2BA44D55-2F76-95C0-912A-9E3ADC50F2C0",
+		"documentID": 203810,
+		"createdOn": "2015-03-27T19:46:42.43",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:42.43",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 41885,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:43 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/2BA44D55-2F76-95C0-912A-9E3ADC50F2C0",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 40386
+		}
+	}
+}

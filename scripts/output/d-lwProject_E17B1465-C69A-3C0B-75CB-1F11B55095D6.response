@@ -1,0 +1,237 @@
+{
+	"header": {
+		"identifier": "E17B1465-C69A-3C0B-75CB-1F11B55095D6",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 8500000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "Govt. of Aceh Province - 2,500,000; Indonesian Govt - 3,000,000; Private donors - 1,500,000; Private sector revenues - 8,000,000",
+			"funding": 15000000,
+			"dateTime": "631152000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "id"
+		}
+	],
+	"title": "Progressing toward Sustainable Conservation of the Leuser Ecosystem",
+	"timeFrame": null,
+	"projectAbstract": "The Leuser Ecosystem, situated near the northern tip of the island of Sumatra, is the largest conservation area in Southeast Asia, and arguably one of the richest in biological diversity. Its wide range of habitats, ranging from coastal beaches and lowland forests to alpine meadows, together with its large size (almost 3 million hectares) makes it the best hope of conserving such rare Sumatran species as the Sumatran rhino, orangutan, tiger and elephant. The Leuser Ecosystem is also the focus of a new approach for conservation in Indonesia, in which the management of a given part, which lies in Aceh (about 90% of the total), is the responsibility of the Government of Aceh; more specifically, a professionally staffed management authority known by its acronym  BPKEL. This highly dedicated team of about 200 people has shown its effectiveness in reversing the forest destruction caused by illegal palm oil development, illegal logging, and inappropriate infrastructure. The Leuser Ecosystem is also a major carbon sink and has a mitigating impact on local climate. Enhancing this service, along with other environmental services such as natural beauty (for tourism) and fast flowing water (for run-of-river hydropower). This project aims to strengthen the management and financing of the Leuser Ecosystem while making its financing more sustainable.",
+	"description": "The Leuser Ecosystem is the largest conservation area in SE Asia. At almost 3 million hectares, it encompasses a great diversity of habitats from coastal beaches, peat swamps, lowland forests, montane forests and alpine meadows. It is this mix of habitats that may account for its rich biodiversity and the fact that its is the last place remaining that has viable populations of Sumatran rhino, orangutan, tiger, elephant and clouded leopard in the same geographic area.  <br/><br/>Much has been achieved since the Leuser Ecosystem was designated by Presidential Decree in 1998, including the demarcation of boundaries in the field, the termination of all logging concessions and the development of a broad public constituency of support. But now the expansive and fertile lowlands (totalling some 500,000 hectares) are under severe threat from oil plantation interests and sponsored settlement along with the enabling infrastructure such as roads. In some areas local communities are encroaching into the steep foothills of the mountainous core. <br/><br/>Almost 90% of the Leuser Ecosystem lies in the province of Aceh which until 2005 suffered from civil war. As part of the peace accord the management of the Leuser Ecosystem in Aceh was delegated to the provincial government, and the Aceh government in turn established a special management authority (BPKEL) to undertake this work. This is the first time in Indonesia where the management of a conservation area has been fully delegated to the provincial level, and it marks a very positive opportunity to build on local support and to utilise professionals (as opposed to civil servants) to undertake conservation management. The decree under which BPKEL was established also allows the organization to acquire funds from both private and public sources and in this way to become sufficiently capitalised to do a proper job. In the three years since its formation BPKEL has focused on building up its manpower with dedicated and skilful staff. It is clear now however that to deal with the growing significant funding gap is an urgent priority.<br/><br/>This project, if approved, would not only significantly develop the capacity of BPKEL in undertaking its conservation management responsibilities but would also address the growing challenges of integrating development with conservation, restoring essential wildlife corridors, and moving towards sustainable financing with a mixture of government allocations, and revenues generated from partnerships with the private sector. If successful the contribution to the mitigation of climate change would be significant.",
+	"additionalInformation": "\n[participation]\nCurrently BPKEL employs 190 people drawn from communities situated near the boundary of the Leuser Ecosystem. The Project intends to build this number to at least 800 over the next two years. So there are direct employment opportunities. In addition, local people will be involved in all conservation activities such forest restoration, fire prevention (during the dry season), awareness generation events, research studies and censuses, and specific protection operations. BPKEL works with more than 40 local NGOs in its efforts to build a solid constituency of support for the conservation of the Leuser Ecosystem.<br/><br/>As a matter of fact all planning involves local community leaders as well as local government officials. The Leuser Ecosystem Management Plan took two year years to complete on account of spending considerable time with local communities, local officials, and informal leaders. <br/><br/>As stated above, the Project will promote the participation of the private sector and will ensure that the benefits of this partnership will benefit the local communities. This will however not involve providing regular cash gifts to individuals (there are at least two million people living around the Leuser Ecosystem). Neither will it hand out cash gifts to communities – there are more than 2000 villages near the borders of the Leuser Ecosystem. Instead, the benefits from REDD credits (if in fact a market develops), ecotourism, sustainable energy and agricultural product processing, will create employment opportunities for local people and contribute to a growing regional economy. Of course the indirect benefits from ecological services can not be underestimated and it has been calculated that, if Leuser Ecosystem is properly protected, 60% of the value of its services accrue to local communities.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "In 2007 the Act No 27/2007 concerning Spatial Planning was passed. This law outlined very specific actions for implementing the national spatial plans and both these and the accompanying maps are the guidelines for provincial and sub-provincial (district) detailed spatial plans. It also spells out how special areas of national importance are to be managed. In a follow up Government Regulation (PP 27 2008) The Leuser Ecosystem in Aceh is identified as one of these areas and is given the highest rating – as a National Strategic Area – on account of its biodiversity and its importance as a water source. All future planning and activities in the Leuser Ecosystem (in Aceh) must follow these regulations. <br/><br/>The legal framework for REDD in Indonesia is still in flux with no final legislation being created. Aceh will conform to the National procedures and will of course register any credits generated. In the meantime Aceh will undertake a sub national approach including generating a provincial baseline – which would be an activity anticipated for this project.<br/><br/>This project will also (and has already done so) follow the guidelines set out in the National Biodiversity Action Plan for Indonesia."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Strengthen the capacity of BPKEL (Leuser Ecosystem Management Authority) to carry out  its duties.",
+			"result": "•\tBPKEL (Leuser Ecosystem Management Authority) has the trained manpower and resources to effectively manage almost 3 million hectares of forest"
+		},
+		{
+			"activity": "Ensure that development plans are harmonized with conservation",
+			"result": "• Current road plans through Leuser substituted for alternatives that have negligible environmental impact.\r\n• Aceh adopts low carbon development plans\r\n• Legal basis for Leuser Ecosystem and conservation areas in Aceh upgraded"
+		},
+		{
+			"activity": "Protect and restore the Leuser Ecosystem",
+			"result": "• Four (4) wildlife corridors restored\r\n• Twelve (12) illegal plantations cancelled and restored to regenerating forest\r\n• Six (6) semi-legal plantations in peat swamp forests closed down.\r\n• Sumatran Rhino population continues to breed and build up its number.\r\n• Elephant, Tiger and Orangutan populations hold at current population levels or increase\r\n• 15,000 hectares of degraded forest rehabilitated"
+		},
+		{
+			"activity": "Achieve Sustainable Financing",
+			"result": "• Economic studies and provincial carbon baseline completed\r\n• Agreements reached on the sustainable exploitation of Carbon Sequestration, Eco-tourism, and renewable energy (run-of-river hydro power), which provide revenues for the conservation of Leuser Ecosystem.\r\n• Aceh Parliament approve long term funding for routine operations and staffing of field teams for BPKEL."
+		}
+	],
+	"financialStability": "Under the Indonesian Law No 11, 2006 and by virtue of the decree of the Government and Parliament of Aceh establishing the Leuser Ecosystem Management Authority, BPKEL is given the responsibility of promoting and regulating the sustainable utilisation of the Leuser Ecosystem’s services. The Decree also provides for BPKEL to derive fees, royalties and/or revenues from such commercial activities.  <br/><br/>Under a Joint Venture Agreement signed in 2008, the Government of Aceh and the private sector partner will develop businesses in the fields of Eco-tourism, renewable energy, and REDD to derive commercial returns. The costs of undertaking such business will include an agreed fee (in the order of two million dollars per year) to ensure the protection of the source of these services – namely the Leuser Ecosystem. The profits from these enterprises will be mainly reinvested in developing new sustainable enterprises with an aim to developing the local economy rather than providing direct payments to local communities. The current private sector partner is currently under review on account of questions concerning the ability to fully capitalise the joint venture company. <br/><br/>In addition to revenues and fees, the Government of Aceh and the National Government are both obliged by law (Act No 11, 2006) to provide regular budget allocations. At the moment these allocations total around 500,000 US dollars per year but this is inadequate to cover even routine expenses. BPKEL is working with the Aceh parliament to consider much more realistic funding in the future.<br/><br/>To give confidence to some future donors – both private and institutional – the project will propose the establishment of a Purpose Trust in which funds for the conservation of Leuser might be held and disbursed as appropriate.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Besitang ",
+			"url": "http://www.cbd.int/database/attachment/?id=1148"
+		},
+		{
+			"title": "Elephants sparring for e",
+			"url": "http://www.cbd.int/database/attachment/?id=1149"
+		},
+		{
+			"title": "Mountains from Aras Napal",
+			"url": "http://www.cbd.int/database/attachment/?id=1150"
+		},
+		{
+			"title": "Orang thinking for e",
+			"url": "http://www.cbd.int/database/attachment/?id=1151"
+		},
+		{
+			"title": "Rhino unblinded at close range ",
+			"url": "http://www.cbd.int/database/attachment/?id=1152"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Indonesia/Leuser Ecosystem/Leuser lifeweb project EoI Revised.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Indonesia/Leuser Ecosystem/Leuser lifeweb project EoI Revised.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 95.888671875,
+		"lat": 5.00339434502215,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/E17B1465-C69A-3C0B-75CB-1F11B55095D6/attachments/6451.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "E17B1465-C69A-3C0B-75CB-1F11B55095D6",
+		"documentID": 203791,
+		"createdOn": "2015-03-27T19:46:20.727",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:20.727",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 13633,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:22 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/E17B1465-C69A-3C0B-75CB-1F11B55095D6",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 12601
+		}
+	}
+}

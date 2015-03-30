@@ -1,0 +1,252 @@
+{
+	"header": {
+		"identifier": "C0DE4D6A-9F1A-61FE-2660-578D5FAE37A9",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "CACA2858-F011-3468-EAAD-A6671816C824"
+			},
+			"description": "Funded through the Spain-UNEP LifeWeb Partnership\n\n",
+			"funding": 304365,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "USFWS: 72,000 USD; Private Donors: 60,000 USD;",
+			"funding": 132000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cg"
+		}
+	],
+	"title": "Protecting Wildlife and support of Nouabalé-Ndoki National Park",
+	"timeFrame": null,
+	"projectAbstract": "The Nouabalé-Ndoki National Park (NNNP) harbours the world’s most important populations of forest elephants, red river hogs, bongo antelope, and is one of the last remaining strongholds for western lowland gorillas and chimpanzees in Africa. The main goal of the Nouabalé-Ndoki Project is to effectively protect the biodiversity of the Nouabalé-Ndoki National Park and strengthen its management through a site-based, landscape management approach.",
+	"description": "The Nouabalé-Ndoki National Park (NNNP) covers an area of approximately 4,200km2 in the northern Republic of Congo.  Combined with the Lobéké National Park (2,700 km2) in Cameroon, the Dzanga-Ndoki National Park (1,600 km2) in Central African Republic, and adjacent logging concessions, the Sangha River Trinational protected area extends over approximately 35,000 km2 and harbours the world’s most important populations of forest elephants, red river hogs, bongo antelope, and is one of the last remaining strongholds for western lowland gorillas and chimpanzees in Africa. WCS’s latest great ape surveys described some of the highest known densities of gorillas in Africa and Nouabalé-Ndoki National Park is a key protected area in the landscape that harbors the recently reported population of 125,000 gorillas. The park is also home to some of the last populations of “naïve” chimpanzees which reside in the Goualouago Triangle and display a certain curiosity towards human observers encountering them for the first time.<br/>     For the last 18 years the Wildlife Conservation Society and the Congolese Ministry of Forestry Economy (MEF) have forged a partnership through the Nouabalé-Ndoki Project and jointly manage the Nouabalé-Ndoki National Park. The principle goal of the Nouabalé-Ndoki Project is to effectively protect the biodiversity of the Nouabalé-Ndoki National Park through a site-based, landscape management approach, in collaboration with the buffer zones (PROGEPP) and contiguous protected areas in the region (Sangha River Trinational). Key site-based activities, in addition to law enforcement, include biological monitoring, research, training education and awareness raising, and eco-tourism development.  The program uses the ecological needs of and threats to a complementary suite of wide-ranging landscape species to efficiently target conservation efforts, and research and monitoring programs currently being conducted within the national park enable project management to evaluate the success of their conservation efforts in terms of meeting these needs and mitigating the threats. <br/>     Capacity building is an important element of this effort, and WCS personnel within the project work closely with: a) staff from MFEE responsible for wildlife protection and Park management, b) local and regional stakeholders in the landscape, and c) Congolese graduates (as both research assistants and administrators) to develop national capacity for natural resource management. <br/>     The Nouabalé-Ndoki Project also serves as a platform for protected area Policy development. Project staff worked closely with government, trinational and NGO partners to help develop the Sangha Trinational Trust Fund, which was launched in March 2007. This is the first such initiative in the region, and will provide stable, long-term funding for the management of the region’s protected areas. Nouabalé-Ndoki project staff have also worked to develop alternative funding strategies such as ecotourism, and steps are being taken in association with WCS’ Conservation Finance Program to develop private sector partnerships with tour operators that are willing to invest in tourism development at the site.<br/>     WCS is also developing a wildlife-human health program including the construction and operation of a laboratory in Bomassa.  This program and laboratory involves multiple collaborations with analyses and research shared between CIRMF laboratory in Gabon, the Robert Koch Institute in Germany and other international and national institutions collaborating is the Great Ape Health monitoring efforts. A strong cooperation with the Government of Congo’s Ministry of Health is being developed regarding Ebola issues and WCS is working with international collaborators to develop a vaccine and strategy that will protect great apes in and around the Nouabalé-Ndoki National Park.",
+	"additionalInformation": "\n[participation]\nLocal communities are the primary natural resource exploiters and those with the greatest interest in sustainable management of forests. The demand people place on natural resources will vary in part depending on gender and ethnicity. To ensure that all sectors of communities are fully engaged in land use planning and natural resource management, they must all have direct input into these processes. The integration of communities into the land use planning process will entrench the understanding that these natural resources belong to them and thus encourage sustainable use. <br/>In ROC, semi-nomadic people live mostly in the southern and western peripheral zones of the NNNP (the Kabo and Loundougo forestry concessions) where they engage in seasonal hunting and gathering of other NTFPs. Special exclusive access rights have been and will continue to be negotiated for BaKa and BaAka as well as other disadvantaged minority groups to exploit certain forest resources and/or areas. Central to the LUP is promoting integration of indigenous forest peoples and other minority groups in decision making processes and management institutions through the PIC (Prior Informed Consent) principle. WCS works with these communities, not only employing significant numbers of their members as trackers, porters and forest guides but also regularly consulting them during the development and modification of management plans.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Broaden and deepen scientific surveys of large mammal populations in the park and its periphery",
+			"result": "Updated density and distribution estimates for great apes and elephants in the landscape, information of wildlife and human impact change between 2006 and 2011 across the NNNP and its peripheral zones, updated information on illegal human activities in the landscape providing strategic information for protection planning by Congolese wildlife authorities"
+		},
+		{
+			"activity": "Capacity building and park protection in northern Congo and the TNS landscape",
+			"result": "Poaching reduced and deterred from Noubale-Ndoki National Park and its peripheral zones, and important great ape and elephant populations maintained in key habitats"
+		},
+		{
+			"activity": "Wildlife health monitoring and conservation health planning for the gorillas and chimpanzees including better understanding of their vulnerability to human diseases",
+			"result": "Improved understanding and mitigation of the impact of deadly infectious diseases that are threatening the survival of gorillas and other wildlife in and around NNNP"
+		}
+	],
+	"financialStability": "The Congolese government and WCS have been improving the management of NNNP since its creation in 1993. Our commitments have strengthened a long-term program that focuses on developing sustainable approaches to management and conservation through research, capacity building, protection and monitoring programs. Sustainability will be ensured where possible by government and NGO commitment to employing only properly trained monitoring, health and protection staff.   WCS has a Memorandum of Understanding with the Congolese government to partner with them in national wildlife conservation in general and protected area management in particular. Although the level of governmental support is not ideal at this time, WCS itself has a long history of global conservation success, enabling it to seek funding support for protection activities from a wide range of sources.  Activities proposed in this program complement, and in many cases implicate, core WCS activities in the Park and its peripheral zone under CARPE Phase II funding and other WCS funds including two large private donations spread across three years that have recently been given to WCS to support anti-poaching and sustain this crucial activity.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "picture 1",
+			"url": "http://www.cbd.int/database/attachment/?id=753"
+		},
+		{
+			"title": "picture 2",
+			"url": "http://www.cbd.int/database/attachment/?id=756"
+		},
+		{
+			"title": "picture 3",
+			"url": "http://www.cbd.int/database/attachment/?id=758"
+		}
+	],
+	"maps": [
+		{
+			"title": "map",
+			"url": "http://www.cbd.int/database/attachment/?id=746"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Endorsement Letter",
+			"url": "http://www.cbd.int/database/attachment/?id=768"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Congo/Protecting Wildlife/NNNP lifeweb project scale expression.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Congo/Protecting Wildlife/NNNP lifeweb project scale expression.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 15.827659,
+		"lat": -0.228021,
+		"zoom": 7
+	},
+	"links": [
+		{
+			"name": "Nouabale-Ndoki National Park, Republic of Congo",
+			"url": "http://www.spain-unepforpas.org/-nouabale-ndoki-national-park-republic-of-congo-.html"
+		}
+	],
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/72332"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/C0DE4D6A-9F1A-61FE-2660-578D5FAE37A9/attachments/6178.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "C0DE4D6A-9F1A-61FE-2660-578D5FAE37A9",
+		"documentID": 203775,
+		"createdOn": "2015-03-27T19:46:01.583",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:01.583",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11650,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:06 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/C0DE4D6A-9F1A-61FE-2660-578D5FAE37A9",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10521
+		}
+	}
+}

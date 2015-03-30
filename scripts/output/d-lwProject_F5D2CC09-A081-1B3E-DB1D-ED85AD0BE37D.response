@@ -1,0 +1,203 @@
+{
+	"header": {
+		"identifier": "F5D2CC09-A081-1B3E-DB1D-ED85AD0BE37D",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "$249 433 from Ministry of Agriculture and Fisheries, National Directorate of Forestry\n\n\n",
+			"funding": 249433,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "tl"
+		}
+	],
+	"title": "Establishment of Effective Management System for Protected Areas in Timor-Leste",
+	"timeFrame": null,
+	"projectAbstract": "This project targets 8 of 30 protected areas in Timor Leste. These areas were selected because they contain high levels of biodiversity and threatened species, their boundaries are still unclear, and there is a lack of alternative livelihoods in those protected areas which drives deforestation, coral reef destruction and over-exploitation of wildlife. Specifically, the project seeks to create management plans for these protected areas, develop alternative livelihood for the communities living in and around these protected areas, increase staff capacity to manage these protected areas, and build geographic information systems (GIS) capacity to provide up-to-date information on the protected areas.",
+	"description": "Introduction<br/>East Timor is located in the Lesser Sunda Islands (part of the Australian continental plate), and includes the eastern end of the island of Timor, the Oecussi enclave in West Timor, and the islands of Atauro and Jaco. The total area encompassed is approximately 1,460,937 ha or 14,874 km2 (Sandlund et al., 2001).<br/>The total length is approximately 265 km, with a maximum width of 97 km. The bedrock is primarily sedimentary calcareous rock, with fossil coral reefs found at high altitudes (up to 2000 m) (Monk et al., 1997). Soils are generally thin, with poor water holding capacity (Carson, 1989). The topography is quite dramatic, with mountain peaks reaching as high as 2964 m. Steep slopes (incline over 40%) characterize as much as 44% of the total area (Monk et al, 1997). Lakes are relatively few and small, apart from the Iralalaru lake basin. Few of the approximately one hundred rivers flow regularly throughout the year. The largest river system (80 km in length) is the Lois River, on the north side of the mountains.  Climate varies greatly across East Timor. The South coast is “permanently moist” with more than 2000 mm of rain for 9 to 12 months per year. The northern part is “permanently dry” with rainfall of 500 to 1000 mm or more occurring in only four months or less. Hard torrential rain is common, with maximum daily rainfall recorded as high as 398 mm. This causes a high degree of surface runoff and increased soil erosion. The mean annual temperature at sea level is 27.5 o C and 19.8 o C at 1432 m above sea level (Keefer, 2000).<br/><br/>Natural Ecosystems<br/>East Timor contains six major ecosystem types (adapted from Sandlund et al., 2001). These are the:<br/>1. Marine and coastal zone<br/>2. Arid lowland areas<br/>3. Moist lowland areas<br/>4. Mountainous areas<br/>5. Highland plains<br/>6. Wetlands and lakes<br/><br/>Problems<br/>There are at least 6 major problems identified by the DPANP which are defined as major problems for developing the Protected Areas and National Park network in Timor-Leste, which also contribute to loss of biodiversity:<br/>1. No management system for protected areas (except NKSNP)<br/>2. Lack of alternative livelihoods for communities within protected areas and the national park; which leads to extensive shifting cultivation, resulting in the fragmentation and loss of forests and woodlands as they are converted to fields and agricultural land, and the unsuitable cultivation of steep hillsides, which results in sedimentation in aquatic habitats. In addition, illegal logging for high-value trees such as sandalwood and red wood is a major contributor to the degradation of forests and woodlands.<br/>3. Insufficient policies and laws on protected areas and national parks. There is only the UNTAET Regulation 2000/19 available which needs to be amended. The need for policies, laws and regulations, including enforcement of existing regulation, is urgent for the DPANP to work properly.    <br/>4. Lack of data, including GIS information for all protected areas; <br/>5. Lack of human capacity (skills and number of staff) and<br/>6. Lack of funding to develop 30 protected areas",
+	"additionalInformation": "\n[participation]\nThe National Directorate of Forestry, Department for Protected Areas and National Park will create community groups to involve the local community from each protected area to ensure that they actively participate in the development of the protected areas. Members of the groups will make decisions regarding the protected areas, including what activities they want to implement in their area.  The groups will be trained to increase their capacity and skills by government and NGOs, including for monitoring and evaluation of the project.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The National Development Plan (NDP) of Timor-Leste assigns the Ministry of Agriculture and Fisheries as the Government agency with prime responsibility for the development of agriculture, forestry, and fisheries sub-sectors.  The vision, as laid down in the NDP, is to achieve by 2020 sustainable, competitive and prosperous agricultural, forestry and fisheries industries that support improved living standards for the Nation’s people. MAF’s mission is to efficiently deliver to agricultural, forestry and fishing communities services that support improved productivity, income earning potential and export, thus supporting improved social welfare in the rural areas of the Nation and taking into account MAF’s human, capital and financial resources<br/>Link to the MDG Timor-Leste.<br/>Goal 3; Promote gender equality & empower women<br/><br/>Goal 7; Ensure environmental sustainability; <br/>The proportion of land area covered by forest should be at least 35%, and land area protected to maintain biological diversity should be at a reasonable level. The GDP per unit of energy use should also be augmented."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Develop management plans for the 8 Protected areas; including finalize demarcation, flora and fauna data collection and development of eco-tourism site.",
+			"result": "Management plans for 8 protected areas established and functioning including boundary demarcation, flora and fauna survey and development of eco-tourism site."
+		},
+		{
+			"activity": "2. Develop alternative livelihood for community living around protected areas; including to increase capacity of local community (especially woman and youth), increasing income generation for community and to maintain food security",
+			"result": "Communities in 8 PAs are trained and pilot project for alternative livelihood established. Food security guarantee for community living around 8 PAs."
+		},
+		{
+			"activity": "3. Increase DPANP staff capacity and include the local community",
+			"result": "-"
+		},
+		{
+			"activity": "4. Build GIS capacity to sustain data quality and provide up to date information on protected areas and the national park.",
+			"result": "-"
+		}
+	],
+	"financialStability": "In terms of setting up management plans for the 8 protected areas; including finalizes demarcation, flora and fauna data collection and development of eco-tourism site, co-financing by government will be provided in-kind to a value of 5,000 USD and 129,433.00 in co-financing.  In terms of developing alternative livelihood for communities living around protected areas, co-financing will be provided by government for 120,000 USD and an in-kind contribution of 2,500 USD.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"attachments": [
+		{
+			"title": "List of Protected Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=623"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Timor-Leste/expression of interest Timor-Leste_final.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Timor-Leste/expression of interest Timor-Leste_final.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 125.727539,
+		"lat": -8.874217,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/F5D2CC09-A081-1B3E-DB1D-ED85AD0BE37D/attachments/6004.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "F5D2CC09-A081-1B3E-DB1D-ED85AD0BE37D",
+		"documentID": 203767,
+		"createdOn": "2015-03-27T19:45:52.103",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:52.103",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 9334,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:54 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/F5D2CC09-A081-1B3E-DB1D-ED85AD0BE37D",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 8565
+		}
+	}
+}

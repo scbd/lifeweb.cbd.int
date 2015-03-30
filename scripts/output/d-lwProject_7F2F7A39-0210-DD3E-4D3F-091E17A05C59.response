@@ -1,0 +1,241 @@
+{
+	"header": {
+		"identifier": "7F2F7A39-0210-DD3E-4D3F-091E17A05C59",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 7000000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "1,200,000 euros will be provided from various sources: WWF Germany, EC, Darwin Initiative, CEPF, SDC, Seco, the government of Vietnam and the government of Laos",
+			"funding": 1200000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "la"
+		},
+		{
+			"identifier": "vn"
+		}
+	],
+	"title": "Decreasing Deforestation and Forest Degradation in the Border Area of Central Vietnam and Southern Laos",
+	"timeFrame": null,
+	"projectAbstract": "As a result of the growing timber needs of the booming timber industry and Vietnam’s forest protection measures, deforestation is shifting to neighbouring forest‐rich countries, particularly Laos. This cross‐border leakage is a challenge for REDD‐Readiness in Vietnam. While Laos is considered one of the richest southeastern Asian countries in terms of forest resources, it also has one of the highest deforestation rates.  Deforestation accounts for approximately 70% of the national GHG emissions.<br/><br/>The objectives of the project are thus to reduce GHG emissions that stem from forest degradation and loss through improved protected areas management for 4 protected areas and two ecological corridors in Southern Laos and Central Vietnam and to address the “leakage” caused by transborder trade of illegally cut timber from Laos to Vietnam through Forest Law Enforcement Governance and Trade instruments.",
+	"description": "Vietnam is one of the less forested countries that is currently witnessing advances in reforestation and regrowth. However, unnatural forests, deforestation and degradation of forests continues to be poorly controlled, mainly driven by illegal logging for the local market and often by the impoverished local communities. As a result of the growing timber needs of the booming timber industry and Vietnam’s forest protection measures, deforestation is shifting to neighbouring forest‐rich countries, particularly Laos. A report from the Environmental Investigation Agency from 2008 showed that in Protected Areas of Laos, timber is taken for illegal export. For 2006, it is estimated that 600,000 cubic meters of illegally cut wood stems from Laos alone. This cross‐border leakage is a challenge for REDD‐Readiness in Vietnam. Laos is still considered one of the richest southeastern Asian forested countries and at the same time has one of the highest deforestation rates (134,000 ha p.a.) that is responsible for approximately 70% of the national GHG emissions. The Annamites mountain chain in central Vietnam and southern Laos is recognized as a carbon sink and has globally one of the highest rates of endemism in a continental setting. It is here that five large mammals new to science have been discovered since 1992. The area is one of WWF’s global<br/>biodiversity eco‐regions.<br/><br/>Southern Laos harbors one of the largest connected natural forest areas in continental Asia and at the same time is a core area of deforestation and illegal logging.<br/><br/>Both countries are engaged in national and international REDD processes to protect the natural forests and forest biodiversity, while also limiting the release of GHG emissions.",
+	"additionalInformation": "\n[participation]\nThe project will lead to securing of alternative income sources through the following measures:<br/>1. Compensation of local communities for their responsibility in reforestation and local forest protection;<br/><br/>2. Protected areas patrolling will be conducted with the involvement of villagers;<br/><br/>3. Mechanisms for financial compensation from restricted and prohibited uses are being developed;<br/><br/>4. REDD mechanisms to support local communities through compensation for non‐use and controls will be supported on a national level.<br/><br/>The project will also lead to the strengthening of ethnic groups: indigenous groups and local communities will be actively involved in the project and play a key role in conflict management and in enforcing rights. The project will thus contribute to strengthening the economic, social, and political status of indigenous people residing in the project area.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Both in Vietnam and Laos the project contributes to implementation of the National Biodiversity Action Plans.<br/>In both countries the project's capacity building and method testing is seen as an important contribution to the government’s REDD‐readiness. The project proposal provides added value to R‐PIN and the \"Forest Carbon Partnership Facility\" as well as the UN‐REDD measures. In Vietnam WWF is responsible within the national REDD network for the thematic focus \"International Leakage\". Hence the project provides a substantial contribution to the implementation of the new Lao‐Vietnamese agreement on crossborder illegal timber and wildlife trade control (signed in May 2009). Furthermore the project supports the Vietnamese forest development strategy (2006 – 2020), which aims at strengthening “the position of national parks such as Bach Ma and other protected areas\" in the project's target region. MARD as well as the forest protection departments of Thua Thien Hue and Quang Nam provinces have officially expressed their support for the project (see letters of support attached).<br/>The project contributes to the implementation of the Lao forest strategy 2020. The Lao forest administration and the team in charge of the implementation of the forest strategy 2020 have also expressed their support in writing. The national Vietnamese programme for adaptation to climate change (National Target Programme ‐ NTP) envisions especially the conservation and extension of the cover of watershed areas of regional forests in Central Vietnam. The project therefore contributes  directly to the implementation of the NTPs in one of the region’s most vulnerable areas."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Reduce GHG emissions that stem from forest degradation and loss by 1,800,000 t CO2 in 5 years through improved protected areas management 50% by project end, measured through a combination of recognized instruments, such as the application of tracking tools from the World Bank/WWF) and forest regeneration in corridors",
+			"result": "GHG emissions reduced by 1,800,000 t CO2 in 5 years",
+			"cost": 272
+		},
+		{
+			"activity": "Develop and implement a more  sustainable management of a species-rich, trans‐border forest complex of our protected areas (in total 220,000 hectares) and two connected corridors (together totaling 100,000 hectares)",
+			"result": "More sustainable management of 320,000 hectares of forests",
+			"cost": 8343
+		},
+		{
+			"activity": "Reduce the “leakage” caused by transborder trade of illegally cut timber in Laos to Vietnam by 60% in the project region (measure/estimation of volume) through Forest Law  Enforcement Governance and Trade (FLEGT)instruments and trans‐border cooperation between agencies",
+			"result": "Trans‐border trade of illegally cut timber in Laos to Vietnam reduced by 60%",
+			"cost": 1385
+		}
+	],
+	"financialStability": "1. Business/Financial plans (10 years) for the operationalization and securement of sustainable financial action will be produced. This allows the governments to win and effectively integrate a long‐term financing of the protected areas management and gives the role of REDD financing special attention.<br/><br/>2. The construction of infrastructure for the four protected areas and the strengthened capacities of their management will remain effective in the mid‐term.<br/><br/>3. Informal structures will be built that will also help to protect these forests through intensive cooperation with the local populations around the protected areas and the forest corridors.<br/><br/>4. Strengthened capacity-building and education of responsible authorities in Vietnam and Laos on forest protection and the control of logging and trade, as well as the trans‐boundary agreement between Vietnam and Laos, will continue to lead to reductions in leakage after the official end of the project.<br/><br/>5. WWF works with the governments on a regional agreement in the area of climate change adaptation, with a particular emphasis on forest landscapes (central Vietnam), that could be on its way by 2011. A finance mechanism is supposed to be tied to this for the preservation of carbon sinks and the sustainable securing of management efficiency for the protected areas and forest<br/>corridors.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "Sequestration of 1,800,000 t CO2 in 5 years."
+		}
+	],
+	"maps": [
+		{
+			"title": "Map of target area",
+			"url": "http://www.cbd.int/database/attachment/?id=740"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Letter of Endorsement POWPA Focal Point Vietnam",
+			"url": "http://www.cbd.int/database/attachment/?id=735"
+		},
+		{
+			"title": "Letter of Endorsement Forest Protection Department Vietnam",
+			"url": "http://www.cbd.int/database/attachment/?id=736"
+		},
+		{
+			"title": "Letter of Endorsement Department of Forestry Lao PDR",
+			"url": "http://www.cbd.int/database/attachment/?id=737"
+		},
+		{
+			"title": "Letter of support Forest Protection Department Quang Nam Province",
+			"url": "http://www.cbd.int/database/attachment/?id=738"
+		},
+		{
+			"title": "Letter of Endorsement Forest Protection Department Thua Thien Hue",
+			"url": "http://www.cbd.int/database/attachment/?id=739"
+		},
+		{
+			"title": "Detailed Calculation of REDD and Sequestration Effects",
+			"url": "http://www.cbd.int/database/attachment/?id=741"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Laos and Vietnam/Central Vietnam_Southern Laos_April 2010.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Laos and Vietnam/Central Vietnam_Southern Laos_April 2010.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": 107.435302734375,
+		"lat": 16.003575733881323,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/7F2F7A39-0210-DD3E-4D3F-091E17A05C59/attachments/6148.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "7F2F7A39-0210-DD3E-4D3F-091E17A05C59",
+		"documentID": 203776,
+		"createdOn": "2015-03-27T19:46:02.303",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:02.303",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11534,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:04 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/7F2F7A39-0210-DD3E-4D3F-091E17A05C59",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10473
+		}
+	}
+}

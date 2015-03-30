@@ -1,0 +1,273 @@
+{
+	"header": {
+		"identifier": "F2056A70-5C3F-4A8F-B73C-82D7FF92CAA6",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "970DB923-9D67-245D-D626-7B9FB66D6E04"
+			},
+			"description": "",
+			"funding": 20000000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "41779BED-D34F-59C0-0D4F-A1E6BDE2AD2B"
+			},
+			"description": "",
+			"funding": 3100000,
+			"dateTime": "1301443200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "89,8% of this amount will be covered by the National budget and 10,2% by National and international cooperation partners.\nOf the total funding gap** 5,284,000 will be covered by domestic sources while 47,558,000* is requested from international donors.\n*  117.559.000 COP, 1 EUR = 2.471,91 COP.  Currency rate at 13th October 2010.\n**Gap does not include pending land titling issues in 12 prioritized high mountain PA, requiring funding for 89.000.000 euros.",
+			"funding": 87697000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "F465FC41-A2DC-3850-A1E2-176DCB887C79"
+			},
+			"description": "The government of the Netherlands was recognised for supporting a total of €7,000,000 for biodiversity conservation in Colombia. Of this, €5,000,000 is for REDD+ preparation in protected areas and buffer zones in the Colombian Amazon, consistent with Colombia’s system-scale Expression of Interest submitted to the CBD LifeWeb. An additional €2,000,000 is for in situ biodiversity as part of broader support to the environment sector. This support was facilitated in part by a national financing roundtable process that was launched on in June 2010 (click here for more information).",
+			"funding": 5000000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "co"
+		}
+	],
+	"title": "Strengthening Colombia’s National Protected Areas",
+	"timeFrame": null,
+	"projectAbstract": "This comprehensive national scale project will seek to strenghthen all of the protected areas of which Colombia's National Parks System is currently comprised. At present, this includes 56 protected areas, covering 12.602.320 ha, equivalent to 9.3% of Colombia's terrestrial area and 1.98% of its marine area.",
+	"description": "Threats to biodiversity in Colombia's National Parks System (SPNN) are numerous, complex and include: <br/>- Illegal timber and faunal extraction and trade.<br/>- Governance, as most PA areas present conflicts over land ownership, overlap with indigenous and Afro-Colombian communities, and constant pressures from unsustainable productive systems.<br/>- Economic development mega-projects, planned for Colombia´s developing economy, including mining projects.<br/>- Climate change, mainly threatening the Amazon PA, high mountain PA, dry forests (currently under-represented in the system), and coastal and marine PA.<br/> <br/>The System main challenges to be addressed by the project are:<br/>- The consolidation and coordination of the National System of Protected Areas (SINAP):<br/>1.\tIncreasing the ecosystem representativeness of the National Parks System (SPNN).<br/>2.\tEstablishing the financial sustainability of the National Parks System based on its ecological and environmental values and services.<br/>3.\tUpdating the inventory of all the National System of Protected Areas and their classification to IUCN categories.<br/>4.\tDeveloping the policy, administrative, and intersectoral strategies established for the SINAP.<br/>5.\tPromoting, at local, regional, national and international levels, awareness and active involvement of PAs’ stakeholders.<br/><br/>- The improvement of governance and management effectiveness at the National Parks System (SPNN):<br/>1.\tIncrease representativeness and connectivity of under-represented Colombian ecosystems. <br/>2.\tSolving land titling issues for PAs.<br/>3.\tUpdating boundary marking for at least 20 PAs.<br/>4.\tIncreasing and improve PAs’ control and surveillance.<br/>5.\tUpdating and improving information management tools.<br/>6.\tImproving implementation and effective monitoring of PAs.<br/>7.\tActively involving local communities on ecological restoration activities at  least in seven PA(Alto Fragua Indi Wasi, Catatumbo Bari, Farallones, Munchique, Nevados, Orquídeas, Paramillo).<br/>8.\tImplementing and developing management agreements with communities from overlapping indigenous reserves and neighboring Afro-Colombian territories (signed and in implementation: Catatumbo, Utría, Los Flamencos, Farallones, Paramillo, Cahuinarí; to be signed: Nevado del Huila, Puracé, Macuira, Las Orquídeas, Sierra Nevada de Santa Marta, Cocuy, Los Katíos, Gorgona, Sanquianga, Old Providence & Mc Bean Lagoon). <br/><br/>SEE ANNEX 3: PoWPA Progress Report for National Park System of Colombia, 2009",
+	"additionalInformation": "\n[participation]\nThe National Parks Authority has developed important policy guidelines, tools and participatory processes which will continue to be implemented and strengthened through this project including:<br/><br/>• Special Management Regimes (REM)* with indigenous authorities from reserves overlapping with National Parks: four signed, 13 in development.<br/>• Participatory use and management agreements with Afrocolombian boundary territories: six agreements signed.<br/>• Participatory Ecological Restoration (REP) with local communities: 5300 ha in the area of influence of 19 PA.<br/>• Community-based ecotourism: contracts signed in 4 PA, processes under development in 3 more.<br/>• Social Participation Analysis of Protected Areas Management Effectiveness (AEMAPPS): 43 PA applied the tool in 2004, 46 in 2006.<br/><br/>*REM are agreements between the National Parks Authority and indigenous territorial authorities, about use, control and co-management of the natural resources in overlapping areas for mutual benefits in conservation, social and cultural terms.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "This project implements a great part of the National System of Protected Areas (SINAP) Action Plan.  The SINAP includes the National Parks administered by the SPNN, Regional areas administer by regional authorities, local PA administered by local authorities and private PA.  The National Park System main functions include management of the national PA and coordination of the SINAP.  SINAP priorities are explicit part of most of the objectives established by this project.<br/>Attachement 9: SINAP Action Plan"
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"financialStability": "Current financing sources for the next five years (estimated):<br/>• National budget: 75%<br/>• Bi- and multilateral cooperation: 8%<br/>• Current environmental services (water tax + ecotourism): 17%<br/><br/>If requested funding is approved, cooperation sources for the next five years will sum up to 20%. Part of the project is to implement the Strategy for Economic and Financial Sustainability of the SPNN, while the contribution of ecotourism is expected to continue to rise following recent trends and planned investments in infrastructure.<br/><br/>Attachment 5:  Basis for an Financial Strategy of Colombia’s National Parks System <br/>Attachment 6:  Fondo Patrimonio Natural Financial Strategy ( Fund created to administers resources for the financial sustainability of the SINAP, including resources given to the National Park Service)",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "2.\tClimate Change Adaptation:<br/>a.\tPA regulate local climate, reduce risks and impacts from storms, droughts, fires, landslides, floods and rising sea levels.<br/><br/>Recent maps published by UNEP and WCMC show that Colombia, at a global scale, has areas of high levels of carbon storage in terrestrial ecosystems, and furthermore of areas of both high biodiversity and high carbon stocks, for which several protected areas included in this project are representative (attachments 2, 7 and 8).<br/><br/>Attachment 7: Updated Carbon Map – UNEP, WCMC <br/>Attachment 8: Carbon and Biodiversity – UNEP, WCMC<br/>"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "1.\tClimate Change Mitigation: <br/>a.\tSuccessful conservation of mountain PA contributes to conserve water supply.  PA contributes to 31% of the national domestic and industrial water demand and to 20% of the national hydroelectrical operation, and indirectly to the demands of 50% of the overall country population. <br/>b.\tAs shown in recently published maps of terrestrial carbon stocks*, National PA in Colombia cover most ecosystem with large carbon storage and overlapping with high biodiversity sites.  As 20% of climate change gases come from deforestation and anthropic uses of soil, effectively managed PA would prevent loss of carbon stocks present in soil and vegetation in unique ecosystems with high biodiversity. <br/>c.\tActive restoration activities with local communities, as proposed for the PA, will contibute to mitigation in the wide range of ecosystems included in the SPNN: rainforests, mountain ecosystems, savannahs, mangroves and estuaries.<br/>d.\tNew protected areas will cover currently un- and under-represented ecosystems (such as dry forests and continental wetlands) which will otherwise transform, under current anthropic pressures, from carbon sequestration areas to carbon sources. Natural regeneration as the PA will further improve sequestration and mitigation.  <br/>"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "for more information see: http://www.parquesnacionales.gov.co/PNN/portel/libreria/pdf/Mapa_Parques.pdf",
+			"url": "http://www.cbd.int/database/attachment/?id=349"
+		},
+		{
+			"title": "map2.png",
+			"url": "http://www.cbd.int/database/attachment/?id=351"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Annex 2 Map of Protected Areas of Colombia (in Spanish)",
+			"url": "http://www.parquesnacionales.gov.co/PNN/portel/libreria/pdf/Mapa_Parques.pdf"
+		},
+		{
+			"title": "Annex 5 - Basis for an Financial Strategy of Colombia’s National Parks System (in Spanish)",
+			"url": "http://www.cbd.int/database/attachment/?id=344"
+		},
+		{
+			"title": "Annex 9 - SINAP Action Plan (in Spanish)",
+			"url": "http://www.cbd.int/database/attachment/?id=345"
+		},
+		{
+			"title": "Annex 3 - PoWPA Progress Report for Colombia, 2009 ",
+			"url": "http://www.cbd.int/database/attachment/?id=346"
+		},
+		{
+			"title": "Annex 6- Fondo Patrimonio Natural Financial Strategy (in Spanish)",
+			"url": "http://www.cbd.int/database/attachment/?id=347"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=348"
+		},
+		{
+			"title": "Annex 1 WDPA list for Colombia",
+			"url": "http://www.cbd.int/database/attachment/?id=1075"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Colombia/Strengthening PAs/lifeweb_project_expression_of_interest_colombia_amazonas (2).doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Colombia/Strengthening PAs/lifeweb_project_expression_of_interest_colombia_amazonas (2).doc"
+		}
+	],
+	"coordinates": {
+		"lng": -73.927001953125,
+		"lat": 4.203986450382895,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/F2056A70-5C3F-4A8F-B73C-82D7FF92CAA6/attachments/4683.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "F2056A70-5C3F-4A8F-B73C-82D7FF92CAA6",
+		"documentID": 203751,
+		"createdOn": "2015-03-27T19:45:39.187",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:39.187",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 12898,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:41 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/F2056A70-5C3F-4A8F-B73C-82D7FF92CAA6",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 11558
+		}
+	}
+}

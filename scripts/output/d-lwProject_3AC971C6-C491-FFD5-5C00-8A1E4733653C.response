@@ -1,0 +1,151 @@
+{
+	"header": {
+		"identifier": "3AC971C6-C491-FFD5-5C00-8A1E4733653C",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "Match made prior to the establishment of the CBD LifeWeb Coordination Office.",
+			"funding": 527000,
+			"dateTime": "1230768000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "id"
+		}
+	],
+	"title": "Adaptive and carbon-financed forest management in the Tropical Rainforest Heritage of Sumatra",
+	"timeFrame": null,
+	"projectAbstract": "The Tropical Rainforest Heritage of Sumatra (THRS) was inscribed in the World Heritage List in 2004. The site comprises three national parks (Gunung Leuser, Kerinci-Seblat and Bukit Barisan Selatan) and is of outstanding biological value, covering a forested area of over 2.5 million ha and offering the last refuge for globally threatened species including tigers, sumatran rhino, elephants and orang-utan. The constituent parks are surrounded by a mosaic of forested areas that double the total area of natural forest. These surrounding forests include a variety of different utilization purposes, have a high intrinsic value for biodiversity and create a buffer for the world heritage sites.<br/>Despite the protected status, this globally important forest resource is under considerable threat. The extremely high pressure from direct threats is reducing the natural resilience of the forests to climate change. This project will take the globally important natural world heritage sites of Sumatra and pilot an approach to predict climate change impacts and incorporate adaptation into management plans. The project will also develop and pilot REDD schemes in buffer areas to mitigate climate change and to provide a mechanism to alleviate direct threats.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"coordinates": {
+		"lng": 101.343106,
+		"lat": -0.589724,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/3AC971C6-C491-FFD5-5C00-8A1E4733653C/attachments/5976.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "3AC971C6-C491-FFD5-5C00-8A1E4733653C",
+		"documentID": 203707,
+		"createdOn": "2015-03-27T19:44:53.39",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:53.39",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 2581,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:44:55 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1023",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/3AC971C6-C491-FFD5-5C00-8A1E4733653C",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 2189
+		}
+	}
+}

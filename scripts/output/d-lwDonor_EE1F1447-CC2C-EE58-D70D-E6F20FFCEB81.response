@@ -1,0 +1,64 @@
+{
+	"header": {
+		"identifier": "EE1F1447-CC2C-EE58-D70D-E6F20FFCEB81",
+		"languages": [
+			"en"
+		],
+		"schema": "lwDonor"
+	},
+	"name": "The Linden Trust for Conservation",
+	"socialMedia": [
+		{}
+	],
+	"acronym": "Linden",
+	"logo": {
+		"url": "http://www.cbd.int/database/attachment/?id=1133"
+	},
+	"country": {
+		"identifier": "um"
+	}
+}
+
+{
+	"statusCode": 500,
+	"body": {
+		"Message": "Document contains errors:Error.UnexpectedTerm, country (#8EF)"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:43:58 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "75",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwDonor",
+			"query": "schema=lwDonor",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwDonor",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwDonor"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 278
+		}
+	}
+}

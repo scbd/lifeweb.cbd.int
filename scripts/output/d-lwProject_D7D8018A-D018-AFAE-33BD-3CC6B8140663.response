@@ -1,0 +1,219 @@
+{
+	"header": {
+		"identifier": "D7D8018A-D018-AFAE-33BD-3CC6B8140663",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cm"
+		}
+	],
+	"title": "Savoir traditionnel autochtone et promotion de la gestion communautaire des aires protégées dans un contexte de changement climatique autour du  Parc national de la Bénoué (CAMEROUN)",
+	"timeFrame": null,
+	"projectAbstract": "Les aléas climatiques  ont provoqué des migrations spontanées des populations des zones à aridité climatique remarquable de l’extrême-Nord du Cameroun  en direction des aires protégées du bassin de la Bénoué.  Ces populations qui arrivent dans un environnement autre que le leur adoptent une stratégie d’occupation et d’exploitation des ressources naturelles incompatibles avec la préservation de la  biodiversité. Cette situation nécessite d’augmenter l’intensité des mesures de protection des ressources naturelles d’où l’objectif de réduire la pression des populations riveraines sur la riche diversité biologique autour du Parc par la vulgarisation du savoir local autochtone en matière de gestion durable des ressources.",
+	"description": "-Fortes croissance  démographique  résultant des migrations spontanées et semi contrôlées sous l’effet de l’instabilité climatique;<br/>-Oppositions entre populations autochtones et populations allogènes;<br/>-Occupation anarchique des aires protégées;<br/>-Surexploitation des ressources naturelles (terre, flore, faune…).",
+	"additionalInformation": "\n[participation]\nAider les populations locales et les dépositaires des connaissances autochtones à valoriser leurs connaissances traditionnelles, et à bénéficier et faire bénéficier  des avantages liés à l’exploitation durable des ressources naturelles.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "La gestion durable des ressources naturelles a pour but de pérenniser lesdites ressources et d’optimiser leur valeur économique. Le projet  contribue à l’atteinte des objectifs de l’OMD à l’horizon 2015 à travers la promotion de l’écotourisme, qui participe de la conservation de la biodiversité, et contribue effectivement au développement des produits touristiques intégrés ; et par conséquent à l’accroissement de la part du tourisme dans le PIB national.<br/>Le capital social et humain est un facteur clé de la gestion du capital naturel. Le projet, en prenant en compte l’aspect genre s’intègre parfaitement dans processus nationaux de planification du développement durable. Il contribue ainsi à l’opérationnalisation de ce dernier sur le plan du développement humain."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "-Amener les communautés à une gestion rationnelle des ressources;\r\n-Impliquer les populations locales dans la protection et la préservation de la biodiversité\r\n-Favoriser la régénération des espèces naturelles\r\n-Renforcement des capacités des acteurs locaux (allogènes et autochtones) dans la gestion durable des ressources naturelles.",
+			"result": "- La biodiversité est améliorée et enrichie;\r\n-Des capacités des acteurs locaux (allogènes et autochtones) dans la gestion durable des ressources naturelles sont renforcées."
+		},
+		{
+			"activity": "-Développer l’écotourisme;\r\n-Adapter les activités agropastorales aux changements climatiques;\r\n-Promouvoir des activités alternatives génératrices des revenus à l’œuvre des changements climatiques.",
+			"result": "-Les conditions de vie des populations riveraines sont améliorées;\r\n-Les activités génératrices de revenus sont diversifiées;\r\n-Les activités alternatives porteuses de revenus identifiées et valorisées."
+		},
+		{
+			"activity": "-Renforcer la capacité d’action des communautés locales;\r\n-Sensibiliser et éduquer la population sur le rôle des Aires Protégées dans le développement de la localité.",
+			"result": "-Permettre aux communautés de se prendre en charge;\r\n-Les acteurs locaux  de gestion des Aires Protégées  sont sensibilisés."
+		}
+	],
+	"financialStability": "Correspondance signée du Ministère de l’environnement relative à l’engagement du Ministère à soutenir le projet (joint en annexe).",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "Séquestration de carbone: L’évaluation des émissions est en cours suivant la méthode MRV. Elle se calque sur la stratégie nationale REDD+ en cours d’élaboration."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "carte de localisation de la zone d'etude ",
+			"url": "http://www.cbd.int/database/attachment/?id=919"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/Lettre_Ministre_Cameroun.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/ProjetLifeweb_Cameroun.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/ProjetLifeweb_Cameroun.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 13.833333,
+		"lat": 8.333333,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/607"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1241"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/D7D8018A-D018-AFAE-33BD-3CC6B8140663/attachments/6331.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "D7D8018A-D018-AFAE-33BD-3CC6B8140663",
+		"documentID": 203788,
+		"createdOn": "2015-03-27T19:46:16.177",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:16.177",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 6549,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:18 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/D7D8018A-D018-AFAE-33BD-3CC6B8140663",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 5667
+		}
+	}
+}

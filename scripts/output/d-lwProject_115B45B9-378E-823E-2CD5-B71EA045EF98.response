@@ -1,0 +1,228 @@
+{
+	"header": {
+		"identifier": "115B45B9-378E-823E-2CD5-B71EA045EF98",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "mn"
+		}
+	],
+	"title": "Herder Pasture Management in Protected Areas",
+	"timeFrame": null,
+	"projectAbstract": "The project area is situated in one of the largest remaining grassland areas on earth, the Mongolian Manchurian Steppe.  The Mongolian Gazelle antelope herds represent the third-largest land animal migration in the world.  The migration does not follow fixed routes, however, it can be disturbed by human activity such as domestic herding, mining and other industrial activity (more than half of the country is at least nominally designated for minerals exploitation).   Effective contiguity among the three protected areas that comprise the project area will be essential for future North-South migrations.  The grassland types effected in the project are underrepresented in protected areas both in Mongolia and worldwide.  Their preservation and that of the animal species that reside there are recognized as priorities in the current draft national ecological gap analysis.",
+	"description": "Mongolia has benefitted from extensive planning for biodiversity and protected areas, including through the generous support of multiple partners.  Key documents describing the country’s context and challenges include:<br/><br/>Assessment of Implementation of First Phase of Mongolia Protected Areas Program of Work, MNET with WWF, April 2009<br/><br/>Strengthening of the Protected Areas Network in Mongolia, UNDP<br/><br/>Briefly, Mongolia faces many challenges of the commons when addressing protected areas management.  Under the socialist era, there were approximately 25 million livestock.  Now, with the opportunities presented by the market economy, especially the demand for cashmere wool, there are over 40 million livestock being herded in Mongolia.  To date, neither the government nor others have been able to find a formula to address the reality of overgrazing while also properly addressing herder interest in enhanced economic returns. Climate change is another major factor.  Some estimates state that temperatures in Mongolia have risen three times faster than those in comparable geographies over the past ten years.  Many lakes and rivers essential to herds and to grasslands health have dried up.<br/><br/>This project will focus on such macro concerns as they are experienced by local communities and in specific protected areas.  The three areas collectively comprising the project site have different degrees of PA management along with varied community circumstances.  The Toson Khulstai Nature Preserve benefits from an anti-poaching strategy, the first protected area co-management committee in Mongolia, international NGO support, and a proportionally greater government funding commitment to PA administration which has followed the step by step progress at the preserve.  The resident herder community consists of 200 families with approximately 91,000 livestock.  Other traditional herders and commercial operations have brought additional livestock to the preserve in recent years in response to overgrazing and drought affecting their usual grazing areas.    Ugtam has an established herder community which is engaged with local NGOs concerned about preservation issues.  Khar Yamaat does not have a strong resident herder community.  There is grazing at both Khar Yamaat and Ugtam and PA management is rudimentary at best at both PA’s.<br/><br/>The projected project area covers three provinces and a half dozen soum, the next largest government jurisdiction below the province level.  One soum has much of its territory within Toson Khulstai, and the national government may soon establish a new PA in that same soum, bringing issues of income sourcing to the fore for local government operations.",
+	"additionalInformation": "\n[participation]\nThe two local NGO’s named above, People Centered Conservation and the Eastern Mongolian Community Conservation Association, have already engaged extensively with the indigenous and local communities living in or otherwise serviced by the protected areas envisioned for this project.  The tangible costs to those communities will be largely their participation in project processes.  Those communities may well perceive other costs, such as lack of unlimited grazing access to PA’s.  This project will allow for a full conversation, the first of its sort in the country’s history, to take place between local beneficiaries’ perceived needs and those responsible for or concerned with the preservation of Mongolia’s nature resources, both for their biodiversity value per se and also their viability as providers of ecosystem services to future generations.  Ultimately the local communities will benefit from the sustainability mechanisms which emerge from the project-generated models.  Without the engaged conversation and resulting agree-upon mechanism(s), local and indigenous would suffer in future through the collapse of unmanaged PA’s and loss of their services essentially to longer-term development and associated livelihoods.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Mongolia’s biodiversity action plan highlighted the need to preserve protected areas as a key element in the country’s sustainable development, as have statements at the UN and to the successive sustainable development conferences and other reports since the original action plan.  The national plan of action to combat desertification stated that 90% of the country was vulnerable and said that grazing was at its maximum sustainable point at the time of publication of the report.  Since then, total herd sizes have continued to grow.    The ADB has noted that Mongolia’s recent economic growth has unfortunately been linked with degradation of the natural resource base."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Create partnerships with herder communities which allow for sustainable livelihoods while conserving designated protected areas\r\n\r\n\r\n\r\n\r\nIdentify feasible/sustainable ecosystem services to\r\n permanent and intermittent residents of PA’s\r\n\r\n\r\n\r\n\r\n\r\nConsider and evaluate compensation mechanisms, e.g. marketing services in exchange for herd limitation\r\n\r\n\r\n\r\n\r\nDocument local government development concerns related to protected areas, along with strategies to address those \r\n\r\n\r\nIdentify policy options to address the project-level challenges at national level",
+			"result": "Comprehensive engagement with usually resident and non-resident herders in the project PA’s, including understanding of long term sustainability issues and creation of forums to address stakeholder concerns, create workable approaches, and maintain those over time \r\n\r\nDraw from the above community/herder/NGO/government engagement to realistically identify what herders should and should not expect from PA’s, in terms of grazing accessibility and other services\r\n\r\nRecommendations for practical ways to deal with reality of almost unlimited demand for animal products, especially cashmere, but demand for meat as well, which address herder profit motives and grazing limits of sustainable PA’s\r\n\r\nDocument and address local government loss of income streams from protected areas and recommend ways to deal with those\r\n\r\n\r\nProject the project-level process and findings onto challenges of national level landscapes to provide the Government of Mongolia with basis for addressing related threats to biodiversity, in this case largely overgrazing as well as the administrative oversight of commons rangelands"
+		}
+	],
+	"financialStability": "This project, as a test case, will be a priority effort for the national government, regional administration, the three provinces involved and the soum jurisdictions.  Earlier efforts have sensitized the local communities to PA concerns and herders and others will willingly engage in project processes.  The single participating international NGO, The Nature Conservancy, will provide counterpart funding in the project area in excess of what it would receive under this proposal.  The Government of Mongolia is involved in a major analytical effort along with political and legislative processes to determine what degree of sustained funding can be provided for PA management and any related compensation issues.  This test case will be important in informing those processes.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "camel[1].jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=529"
+		},
+		{
+			"title": "gazelle[1].jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=530"
+		},
+		{
+			"title": "grassland.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=531"
+		},
+		{
+			"title": "horseman.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=532"
+		},
+		{
+			"title": "livestock.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=533"
+		}
+	],
+	"maps": [
+		{
+			"title": "Protected Area locations.png",
+			"url": "http://www.cbd.int/database/attachment/?id=526"
+		},
+		{
+			"title": "Protected Area network.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=527"
+		},
+		{
+			"title": "Mongolia Ecoregions.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=528"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Letter of Endorsement 2",
+			"url": "http://www.cbd.int/database/attachment/?id=534"
+		},
+		{
+			"title": "Letter of Endorsement 1",
+			"url": "http://www.cbd.int/database/attachment/?id=535"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Mongolia/Herder Pasture/lifeweb_project_expression_of_interest - english.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Mongolia/Herder Pasture/lifeweb_project_expression_of_interest - english.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 115.3927119,
+		"lat": 47.4658154,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/166794"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/115B45B9-378E-823E-2CD5-B71EA045EF98/attachments/4943.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Technical Coord",
+			"info": "Technical Coordinator"
+		},
+		{
+			"partner": "Lead Agency",
+			"info": "Lead Agency"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "115B45B9-378E-823E-2CD5-B71EA045EF98",
+		"documentID": 203763,
+		"createdOn": "2015-03-27T19:45:48.51",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:48.51",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11237,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:50 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/115B45B9-378E-823E-2CD5-B71EA045EF98",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10314
+		}
+	}
+}

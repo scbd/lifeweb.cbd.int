@@ -1,0 +1,319 @@
+{
+	"header": {
+		"identifier": "9C73C033-E70B-25C9-56C0-FB217129DA7E",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "The Government of  Germany, through  the  KfW Development Bank, is investing €5 million in a \ncontinuing partnership with the Caucasus Nature Fund and the Governments of Georgia and Armenia. Eva \nWitt, First Vice-President of KfW—Eastern Europe, Caucasus, Central Asia—emphasized the long-term \nnature of Germany's funding, which can be spent flexibly over 20 years, depending on the needs and the \ndevelopment of other funding sources for Caucasus nature.",
+			"funding": 5000000,
+			"dateTime": "1302566400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "E23DD2C2-409D-4ECD-9A8C-FF32A1D24A10"
+			},
+			"description": "The Bank of Georgia, in partnership with the Caucasus Nature Fund, was recognised for providing US$150,000 to Georgia’s Borjomi-Kharagauli National Park.",
+			"funding": 150000,
+			"dateTime": "1270944000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "am"
+		},
+		{
+			"identifier": "ge"
+		}
+	],
+	"title": "Sustainable Financing and Improved Management Effectiveness for Protected Areas in the South Caucasus",
+	"timeFrame": null,
+	"projectAbstract": "The Caucasus forms an ecoregion that has been identified by environmental scientists as having the highest level of biodiversity in a temperate climate zone in the world. It is one of only 34 so-called “biodiversity hotspots” worldwide according to Conservation International.",
+	"description": "The Caucasus forms an ecoregion  that has been identified by environmental scientists as having the highest level of bio-diversity in a temperate climate zone in the world. It is one of only 34 so-called “bio-diversity hotspots” worldwide according to Conservation International.  <br/><br/>Broadly, the ecoregion includes, from north to south, the Caucasus republics of Russia descending from the northern slope of the greater Caucasus mountain range, and the countries of Georgia, Azerbaijan and Armenia, as well as relatively small corners of Turkey and Iran to the south. The entire ecoregion is about the size of France. The recently independent countries of Armenia, Azerbaijan and Georgia are at the region’s core and form about 40% of its land mass, and the CPAF's priority is to support those three countries.  Armenia and Georgia have confirmed their commitments to work with the CPAF.  Since confirmation from Azerbaijan is still outstanding, this profile refers principally to Armenia and Georgia.<br/><br/>The main strategy of both countries for conserving the world class biodiversity is their protected areas (PA) network, which provides significant environmental and economic benefits to the region’s people. These include watershed maintenance and carbon storage in its old growth forests, which are among the largest in a temperate zone and are home to most of the unique flora and fauna.  <br/><br/>The two counties also recognize that their conservation agendas go hand in hand with sustainable development. Ultimately, conservation goals will not be reached unless the rural communities surrounding protected areas benefit. The main potential the countries’ PA networks to generate revenue for local communities lies in the possibility of showcasing the natural beauty through tourism and related natural resource management (NRM) opportunities such as sustainable hunting.  <br/><br/>The PAs in both countries are significantly underfunded. Recent Protected Area Financial Scorecards prepared in connection with Global Environment Facility (GEF) projects in Armenia and Georgia indicate gaps in the annual funding of the PA systems of at least $3 million per country. Proposals for CPAF pilot financing projects in both Armenia and Georgia indicate that basic equipment for managing the target PAs is lacking, and, in one case, salaries of PA personnel are woefully inadequate.<br/><br/>Further, at this stage in the development of the three countries, the financing and management of the PA networks are lacking in transparency and efficiency. Business planning, expense control and budgeting at the PA level are works in progress. Programs to inventory and monitor bio-diversity are non-existent or ineffective. Tourism and natural resources management (NRM) provide basically no revenue to the system today. Maintenance of PA infrastructure is hit or miss depending on the availability of funding.    <br/><br/>In sum, the asset represented by the region’s nature and bio-diversity is not being sustainably used, and the threats posed by poaching, illegal logging and unsustainable development generally persist, with potentially irremediable consequences.",
+	"additionalInformation": "\n[participation]\nEach supported PA is required to develop a management plan prepared with local community participation; in addition to the beneficial effects locally of the incremental direct investment in the PAs effected with project funding, tourism development and natural resouerce management programs implemented under agreed business plans with PAs supported will lead to benefit sharing with the local communities",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The Government of Georgia adopted the law on Protected Areas System in 1996, putting the PA network under a firm legal footing. Furthermore, the National Biodiversity Strategy and Action Plan (NBSAP) adopted in 2005 defined 10-year strategic goals and objectives for Georgia in the area of biodiversity protection and identified actions to achieve those goals and objectives. Among others, development of protected areas system in order to ensure conservation and sustainable use of biological resources is considered as one of the strategic goals of the NBSAP with a number of specific objectives ranging from establishment of effective protected areas system, improvement of planning, management and financing of PAs to increasing of education and awareness on PAs. The Georgian Basic Data and Directions (BDD), setting-up the government medim-term expenditure framework for the period of 2006-2010 also considers the development of protected areas system and ecotourism as one of the top priority areas for the Ministry of Environmental Protection and Natural Resources of Georgia. Georgia now has a system of protected areas covering about 482,842 ha of land or 7% of the country’s territory. The system is composed of 39 protected areas (PAs) of the different management categories presented in the table below. The PA network has grown to include 21 nature reserves, four national parks, three national monuments, eleven managed reserves and one protected landscape. Until 2008, all protected areas were managed by the Department of Protected Areas (DPA). The DPA was replaced in January 2008 by the newly created parastatal, the Agency for Protected Areas (APA), under the oversight of the Ministry of Environment. The APA has begun the process of developing its own internal management policies and systems. Protected areas represent the cornerstone of Georgia’s biodiversity conservation strategy, as reflected in the government’s commitment to achieve a 20.2% coverage (1,417, 522 ha) by 2010 by establishing new protected areas and enlarging some of the existing ones. For this purpose, Georgia has developed a very comprehensive programme on protected areas and strong partnerships with numerous international organizations, such as the World Bank, the EU, BMZ/KfW/GTZ, Governments of US and Norway, IUCN, WWF, Conservation International, etc.<br/><br/>The Government of Armenia has established a network of protected areas which covers about 337,000 ha or 11.3% of the territory of Armenia. If Lake Sevan is excluded, the total percentage drops to 7.1%. The existing network is underfunded. Four types of protected areas are recognised under the “Law on Specially Protected Natural Areas (2006) – State Reserves (equivalent to IUCN category Ia) of which there are three (total area 36,104 ha), National Parks (equivalent to IUCN category II) of which there are three (total terrestrial area 86,165 ha and surface area of Lake Sevan 125,200 ha), Sanctuaries (equivalent to IUCN category IV) of which there are 25 (total area 89,526 ha), and Natural Monuments (equivalent to IUCN category III) for which the list is under revision (see Map 1). In the recent years the Government has created a number of legal and institutional prerequisites for increasing the financial sustainability of the PA system, which serve a positive baseline for the project. Thus, there is a Strategy on Developing Specially Protected Areas and National Action Plan (2003) which contains a PA financing part. The Protected Area Law was most recently amended in 2006 with support from a World Bank project.<br/><br/>Both countries have National Action Plans for biodiversity conservation."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Close the funding gap for operating and ongoing investment costs in priority PAs in Armenia and Georgia",
+			"result": "Sustainably financed PA system"
+		},
+		{
+			"activity": "Improve the Management Effectiveness of PAs in Armenia and Georgia",
+			"result": "Effectivley managed PA system"
+		},
+		{
+			"activity": "Implement the eco-regional conservation plan – the ECP – by:\r\n\r\na) \tPromoting integration of the existing PAs in the South Caucasus into trans-boundary network of PAs with connecting corridors;\r\nb)   Supporting operating funding for 5 newly created PAs;",
+			"result": "The Eco-regional conservation plan is more effectively implemented"
+		},
+		{
+			"activity": "Develop and promote ecotourism in the network of South Caucasus PAs, thus generating revenues for local communities and ensuring sustainable financing of the PAs network",
+			"result": "Improved livelihoods and support for PAs from local communities, as well as improved financing for PAs"
+		},
+		{
+			"activity": "Strengthen the management transparency and efficiency of the trans-boundary network of PAs",
+			"result": "Better planning and more efficient resource utilization in the trans-boundary network of PAs in the region"
+		},
+		{
+			"activity": "Enhance the capacity of the local population to effectively manage the network of PAs by addressing the problem of inadequate equipment and low PA personnel salaries",
+			"result": "The local population has a greater capacity to manage the PAs"
+		},
+		{
+			"activity": "Develop biodiversity monitoring programs",
+			"result": "Fully developed biodiversity monitoring programs"
+		},
+		{
+			"activity": "Improve the overall management of PAs infrastructure in the region",
+			"result": "Improved PAs infrastructure and management thereof"
+		}
+	],
+	"financialStability": "Initial Sponsors: German BMZ & KfW; Conservation International; WWF; Critical Ecosystems Partnership Fund (CEPF);<br/>Current Commitment: Global Environment Facility (GEF)",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "landscape1",
+			"url": "http://www.cbd.int/database/attachment/?id=246"
+		},
+		{
+			"title": "landscape2",
+			"url": "http://www.cbd.int/database/attachment/?id=247"
+		},
+		{
+			"title": "landscape3",
+			"url": "http://www.cbd.int/database/attachment/?id=248"
+		},
+		{
+			"title": "landscape4",
+			"url": "http://www.cbd.int/database/attachment/?id=249"
+		},
+		{
+			"title": "landscape5",
+			"url": "http://www.cbd.int/database/attachment/?id=250"
+		},
+		{
+			"title": "fauna1",
+			"url": "http://www.cbd.int/database/attachment/?id=251"
+		},
+		{
+			"title": "fauna2",
+			"url": "http://www.cbd.int/database/attachment/?id=252"
+		},
+		{
+			"title": "fauna3",
+			"url": "http://www.cbd.int/database/attachment/?id=253"
+		},
+		{
+			"title": "fauna4",
+			"url": "http://www.cbd.int/database/attachment/?id=254"
+		},
+		{
+			"title": "fauna5",
+			"url": "http://www.cbd.int/database/attachment/?id=255"
+		}
+	],
+	"maps": [
+		{
+			"title": "Ecoregional map",
+			"url": "http://www.cbd.int/database/attachment/?id=245"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Ecoregional Plan",
+			"url": "http://www.cbd.int/database/attachment/?id=256"
+		},
+		{
+			"title": "Caucasus Protected Areas Fund",
+			"url": "http://www.caucasus-naturefund.org"
+		},
+		{
+			"title": "Letter of Endorsement Georgia",
+			"url": "http://www.cbd.int/database/attachment/?id=401"
+		},
+		{
+			"title": "Letter of Endorsement Armenia",
+			"url": "http://www.cbd.int/database/attachment/?id=499"
+		}
+	],
+	"coordinates": {
+		"lng": 45.038189,
+		"lat": 40.069099,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/1630"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1631"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/67761"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/20679"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1652"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/61588"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1662"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1653"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1666"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313053"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1660"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/67760"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/9C73C033-E70B-25C9-56C0-FB217129DA7E/attachments/4105.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "9C73C033-E70B-25C9-56C0-FB217129DA7E",
+		"documentID": 203743,
+		"createdOn": "2015-03-27T19:45:28.847",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:28.847",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 14808,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:30 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/9C73C033-E70B-25C9-56C0-FB217129DA7E",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 13201
+		}
+	}
+}

@@ -1,0 +1,238 @@
+{
+	"header": {
+		"identifier": "0F6D15BC-D5C8-7775-B1F2-8B69CD439E92",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "hn"
+		}
+	],
+	"title": "Sustainable Management of Coastal Marine Resources of 6 Protected Areas of the Honduran Caribbean",
+	"timeFrame": null,
+	"projectAbstract": "The region's Caribbean coast is under intense anthropogenic pressure, as the populations of the five provinces that comprise the region, reach a total of just over 1. 7 million inhabitants, which represents 28% of the total population. Most of the population are Garifunas and Miskito (ethnic groups), which are located along the coastal area of the country. These ethnic communities are highly vulnerable, living in poverty and are seriously threatened by the degradation of natural resources. Project objectives include strengthening the governance of the region through institutional strengthening of NGOs and government institutions involved, improving the technical, financial regulation and management of coastal marine resources, accomplishing sustainable management and recovery of marine ecosystems through implementation of best fishing practices, tourism and infrastructure for economic development in the area, designing and implementing monitoring programs and research for decision makers by key stakeholders and implementing environmental education programs that promote good practices and sustainable development.",
+	"description": "The region's Caribbean coast is under intense pressure from anthropogenic order, as the populations of the five departments that comprise the region, reach a total of just over 1. 7 million inhabitants which represents 28% of the total population. Most of the population are Garifunas and Miskito (ethnic groups), which are located along the coastal area of the country. These ethnic communities are highly vulnerable, living in poverty and are seriously threatened by the degradation of natural resources. The area also is considered one of the most vulnerable regions of the country and receiving impacts from hurricanes and tropical storms, which left large footprints each year. The Honduran Caribbean is one of the most vulnerable regions in Central America, related to storms, floods and hurricane impacts.<br/>The Caribbean region of Honduras covers an approximate length of 671 km of coastline in addition to 193 km long coast of the Bay Islands. Includes a total of 13 protected areas established and 16 in the process of being declared. The region encompasses a wide range of ecosystems, from coral reefs, coastal lagoons, broadleaf forests, mangrove forests and wetlands, among others. Honduras is part of the Mesoamerican Coral Reef System, the second largest coral reef in the world.<br/>The expression of interest for this project includes 6 protected areas located in the coastal area of Honduras and Honduran Caribbean.<br/>The strategic and thematic lines of intervention for strengthening these marine protected areas are aimed at strengthening the mechanisms and planning tools, management and coordination of protected areas, based on the results of biological monitoring and administration, self-sustainability and visibility of community development opportunities, local participation and socioeconomic development and the professionalization and implementation of services and protected area management capacity building human and equipment (staff and partners and infrastructure surveillance, materials and equipment).",
+	"additionalInformation": "\n[participation]\nThis project will contribute with the consolidation of co-management, advisory councils, elaboration and implementation of management plans based on the conservation agenda of the Marine Protected Areas that promote sustainable economic activities (fishery, tourism, etc..) and conservation of marine biodiversity, in ways to contribute poverty reduction and accomplish the millennium goals.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Various institutions have a mandate on protected areas of the country. The Ministry of Natural Resources and Environment (SERNA) is leading the environmental sector and is a focal point for the Convention on Biological Diversity, Ramsar, Climate Change Convention, and other related conventions. The National Institute of Forest Conservation, Protected Areas and Wildlife (ICF) is the body responsible for regulating the management and use of forest resources, administration and management of protected areas and wildlife of the country.<br/>The Directorate of Biodiversity (DiBio/SERNA), in close coordination with the Department of Protected Areas (DAP/ICF), have been working in themes related to the Work Program on Protected Areas of the Convention of Biological Divertsity and other related conventions. The Department of Agriculture and Livestock (SAG) formulates, coordinates, implements and evaluates policies of fisheries areas, aquaculture and agricultural production and conservation in general. The Directorate General of Fisheries (DIGEPESCA) in conjunction with the SAG is Dibio / SERNA and DAP / ICF accountable for the commitments related to the Ramsar Convention.<br/>Moreover, the Honduran Institute of Tourism (IHT) encourages and promotes tourism as an alternative economic activity to promote national development through the conservation, production and rational use of natural resources and promotion of tourist revenue for community residents within the protected area in the zone."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "a) Strengthening the governance of the region through institutional strengthening of NGOs and government institutions involved, improving the technical, financial regulation and management of coastal marine resources.\nb) Accomplish sustainable management and recovery of marine ecosystems - coastal through implementation of best fishing practices, tourism and infrastructure for economic development in the area.\nc) Design and implement monitoring programs and research to decision making by key stakeholders.\nd) Implement environmental education programs that promote good practices and sustainable development.",
+			"result": "a)Legal basis establishment \nb)Core areas bounded \nc)Demarcation of protected area \nd)Management Plan prepared \ne)Co-management agreements signed \nf)Basic cartography established. \ng)Implementation of management plans \nh)Technical staff and local communities  trained\ni) Key sites for conservation (sites of mangroves, coral reefs, and sites located in priority watersheds) are incorporated into the network of protected areas to ensure adequate levels of protection of sites that are resident to climate change.\nj) Monitoring programs and research to decision making by key players, are designed and implemented. k) Community organizations are strengthened in technical and advocacy work to promote sustainable fisheries and increase the participation of fishermen and grassroots organizations in decision making and management and conservation activities.\nk) Increase public awareness of the importance and sustainable use of coastal marine resources, to develop and establish models of management to promote good management practices. m) Provision of various equipment (boats, diving equipment, tools, GIS, etc.)"
+		}
+	],
+	"financialStability": "Public funds in the budget for the ICF, Reforestation Fund, Forest Reinvestment Fund, The Nature Conservancy, GTZ, municipal governments, NGO’s, WWF, Global Environmental Facility  (GEF)",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Honduran marine protected areas1",
+			"url": "http://www.cbd.int/database/attachment/?id=188"
+		},
+		{
+			"title": "Honduran marine protected areas2",
+			"url": "http://www.cbd.int/database/attachment/?id=189"
+		},
+		{
+			"title": "Honduran marine protected areas3",
+			"url": "http://www.cbd.int/database/attachment/?id=190"
+		},
+		{
+			"title": "honduran marine protected areas4.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=191"
+		}
+	],
+	"maps": [
+		{
+			"title": "Map of the Project - Marine Protected Areas ",
+			"url": "http://www.cbd.int/database/attachment/?id=187"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Libreta de Calificaciones del Sistema Arrecifal Mesoamericano",
+			"url": "http://www.cbd.int/database/attachment/?id=192"
+		},
+		{
+			"title": "Programa Nacional forestal, areas protegidas y vida silvestre pronafor 2010-2030",
+			"url": "http://www.cbd.int/database/attachment/?id=369"
+		},
+		{
+			"title": "República de Honduras Vision de Pais 2010-2038",
+			"url": "http://www.cbd.int/database/attachment/?id=372"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Honduras/6 Marine PAs/Lifeweb project expression of interest  - Marine Protected Areas.doc"
+		},
+		{
+			"title": "lifeweb project expression of interest  - marine protected areas.doc",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=12110"
+		}
+	],
+	"coordinates": {
+		"lng": -85.58349609375,
+		"lat": 16.003575733881323,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/41003"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/41007"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/41004"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/30622"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/0F6D15BC-D5C8-7775-B1F2-8B69CD439E92/attachments/4047.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "<br><strong>\nNa",
+			"info": "<br><strong>\nNational Institute of Conservation and Development of Forests, Protected Areas and Wildlife (ICF)</strong>\t\nArnulfo José Messen Fajardo. \nDeputy Minister, Deputy Director of Protected Areas and Wildlife.\nTelephone (504) 223-7387\nMobile: (504) 9985-3680\nEmail: damni_2002@yahoo.es\t\nwww.icf.gob.hn\n\n<br><strong>\nThe Nature Conservancy (TNC)</strong>\nJulio Cárcamo\nDirector Honduras Conservation Program\nTelephone (504) 239-5286\n(504) 239-4014\nEmail: jcarcamo@tnc.org\t\nwww.nature.org\n\n<br><strong>\nGTZ Honduras\t</strong>\nWolfgang Lutz \nMission Leader GTZ (Germany Cooperation)\nTelephone: (504) 235-5251\nEmail: wolfgang.lutz@gtz.de\n\n<br><strong>\nNational Fishing Directorate (DIGEPESCA) Agricultural Secretariat</strong>\nGabriela Pineda  de Arias\nDirectora /DIGEPESCA\nTel office: (504) 239-09-08 /239-1994\nmobile (504) 9988 1826\ne-mail: mpao02@hotmail.com\n\n<br><strong>\nWorld Wild Fund (WWF)\t</strong>\nPartner\tAlicia Medina\nWWF Marine Conservation Manager \nTelephone: (504)4403262\nMobile:  (504) 9995-9370\nEmail: amedina@wwfca.org\thttp://www.worldwildlife.org/",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "0F6D15BC-D5C8-7775-B1F2-8B69CD439E92",
+		"documentID": 203735,
+		"createdOn": "2015-03-27T19:45:21.013",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:21.013",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11729,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:22 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/0F6D15BC-D5C8-7775-B1F2-8B69CD439E92",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10726
+		}
+	}
+}

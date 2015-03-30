@@ -1,0 +1,243 @@
+{
+	"header": {
+		"identifier": "7779AF96-8DA0-C0C2-F79F-AF8BA02F95A1",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "The Government of Antigua and Barbuda has committed $USD 3.610 million for this project.",
+			"funding": 3610000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "ag"
+		}
+	],
+	"title": "Ensuring Biodiversity Protection and Sustainability through the development of Protected Areas in Antigua and Barbuda",
+	"timeFrame": null,
+	"projectAbstract": "A number of areas have recently been identified through various projects as important biodiversity hotspots that harbour a number of species of fauna and flora and face various threats including inappropriate development, invasive species and species removal.  The objective of this project is to designate one new area as a national park and to manage this along with an existing national park in a manner that addresses these threats and begin the process of establishing a system of protected areas in Antigua and Barbuda.",
+	"description": "Like most areas of environmental importance in Antigua and Barbuda, the biodiversity hotspots that have been identified have a number of species of fauna and flora that are facing extinction. Threats to their survival include inappropriate development, lack of legislation and appropriate management systems, natural disasters, invasive species, species removal and agriculture. The project aims at addressing these issues firstly by ensuring that at least one additional area is declared as protected and secondly, through enhancing the management of a protected area that has already been declared. Additionally, the intention  is to review the development of the area so that the existing conflicts between farmers and other users of both areas and the species that need to be protected can be resolved.",
+	"additionalInformation": "\n[participation]\nThe project is designed so that the Technical Advisory Group that will lead the implementation of the project will be comprised of a wide and representative group of stakeholders.  The composition will include representation from community groups, government agencies and NGOs.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "Antigua and Barbuda seeks to meet its requirements under the convention on biological diversity, particularly as it relates to the program of work on protected areas. As such the country has begun to work at increasing the number of protected areas that have been declared. As mentioned previously therefore the project is highly relevant to the national strategy and action plan for biodiversity especially as it relates to protected areas."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "This project is directly linked to the National Environmental Management Strategy (NEMS) for Antigua and Barbuda.  It is also directly linked to the country’s plan for the development of a system of protected areas. Furthermore, it is directly linked to the national environmental management strategy which has the protection of critical biodiversity areas as one of its major outcomes. With specific reference to how the project relates to protected areas for example, the sites that are being considered as part of this project have been identified as areas critical to the effective development of a system of protected area for Antigua and Barbuda. These areas, one in Barbuda and one in Antigua, both host a number of species of flora and fauna that are endangered or are being threatened in some way. Additionally, the project will help to make the objectives of the National Biodiversity Strategy a reality as it undertakes the designation of a new, key protected area in the country and also will see the development of more appropriate management options for the next."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "The project also focuses on the priorities of Antigua and Barbuda in relation to climate change. As brought out in the second national communication on climate change, the country would like to embark on the process of utilizing renewable energy as a way forward. In this project the use of renewable energy will be integrated with biodiversity protection where the use of renewable energy will be explored as a means of financing protected areas in the country."
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. The overarching objective of the project is to ensure the sustainability and maintenance of island ecosystem integrity and function through the designation of more protected areas in Antigua and Barbuda as part of the country’s move to establish effective systems of protected areas and efficiently manage them.",
+			"result": "• New national park legally declared\r\n• Improved management system implemented for an existing national park"
+		},
+		{
+			"activity": "2. Ensure adequate management of both national Parks",
+			"result": "• Park personnel trained, certified and employed\r\n• Research on park needs conducted and recommendations made\r\n• Development and implementation of a management plan\r\n• Park infrastructure planned and installed  \r\n• Management programs identified, with implementation strategies"
+		},
+		{
+			"activity": "3. Ensure sustainable financing for the park through the use of renewable energy",
+			"result": "• Development of a financial strategy for the National Park \r\n• Explore and test the use of  renewable energy as a viable option for financing the park"
+		},
+		{
+			"activity": "4. Raise awareness of protected area benefits from the establishment and effective management of the National Park",
+			"result": "• Public relations, communications and awareness   strategy established and implemented"
+		}
+	],
+	"financialStability": "The Government of Antigua and Barbuda has committed $USD 3.610 million for this project. As part of this project, and to ensure its sustainability, a financial strategy is being developed. This will include research into the use of renewable energy technology as a source of financing for the national park. The project is being designed in such a way that wind energy will be used to power the operations of the national park as well as ensure the production of adequate excess power for re-sale to the national grid. The money collected from the sale of this power will be used in the continuous operation of the national park.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "One of the aims of this project is to improve the management of the national park of Codrington Lagoon in Barbuda. It is the intension of this project to help the national park to adapt to the problems that climate change has been causing in the park. A number of areas have been inundated with sea water that has encroached on various habitats previously unaffected by flooding and sea level rises. The project will develop solutions that will help to minimize the impact of sea level rise on the park through the construction of infrastructure that will lead to access to all areas of the park as well as the protection of the species in the park. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "The specific figures are not available; however, this area surrounds one of the last forested regions in Antigua and Barbuda. It is the intent of this project to preserve and ensure the reforestation of the area once it has been declared."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "One of the sites that will be assessed under this project has a significant historical and cultural significance, for the activities of runaway slaves or Maroons.   Historical accounts describe a Maroon as a runaway slave who escaped the “social order of the plantation to live, actually free, but as an outlaw, in areas (generally in the woods or in the mountains) where he (or she) could escape the control of the colonial power and the plantocratic establishment”.   <br/>In 1684 a number of fugitives set up a Maroon Camp in the Sherkerley Hills, part of the sites to be assessed under this project, and as such there is a great deal of history waiting to be unearthed in this area. It is the intent of the project to protect the site and allow for the effective preservation of the history of the area. Additionally, the site has been found to have a significant amount of culturally important plant species traditionally used by the population. The preservation of these plants are paramount if their uses are to be effectively assessed and their integrity preserved.   "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "The issue of invasive alien species is a serious problem for Antigua and Barbuda. For both of the demonstration sites, invasive species will be addressed in relation to how they currently impact the food production and other livelihood operations at the sites. The project will help to mitigate impacts of invasive alien species on the agricultural sector.   One of the targeted sites contains extensive areas of fringing mangroves and seagrass beds considered of vital importance to commercial fisheries.  Mangroves of this site serve other key functions, such as habitat for one of the largest populations of the Magnificent Frigate bird and protection of coastal areas from storm surge associated with severe weather events; thus providing additional justification for its protected area status and need for effective management.  The other site contains an area zoned for agricultural research and an invasive species, the African Snail, poses a threat to plant material being produced for farmers.     "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "One of the areas targeted by the project contains a significant ground water aquifer whose fresh water supply levels is critical to current and future demands for potable water in the country by households, commercial establishments, and farms. The project is designed to assist in reducing the incidences of indiscriminate land clearing in the watershed that supports and recharges the aquifer.  By so doing it will address the critical issue of fresh water security in the protecting of one of the largest watersheds in Antigua.   Currently, there are situations where areas at the demonstration sites are cleared without any consideration for the impact this has on the rate of surface water runoff and reduced water infiltration into soils containing sources of ground water.   Protection of upland forests, particularly in one of the targeted sites, will lead also to the conservation of native plants, birds and a number of other species of fauna.     "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "The project aims to help in the strengthening of the protected areas system for both Antigua and Barbuda, this will assist in improving the livelihood of the persons currently having business interests in the areas that will be addressed. Additionally, the work to be done will help to create new job opportunities that will assist in income generation at the site level and for the country overall.  In one of the demonstration sites, residents of adjacent communities will be trained and engaged as tour guides, while persons involved with small scaled agro-processing of wines, jams, jellies and related activities will be able to  sell their products to park visitors.   Income generating activities will also benefit tour and taxi operators.    "
+		}
+	],
+	"attachments": [
+		{
+			"title": "Mount Obama detailed project description",
+			"url": "http://www.cbd.int/database/attachment/?id=605"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Antigua Barbuda\\Protected Areas Project/Mt obama application_comments.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Antigua Barbuda/Mt obama application_comments.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -61.798095703125,
+		"lat": 17.12241736704665,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/31531"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/7779AF96-8DA0-C0C2-F79F-AF8BA02F95A1/attachments/6024.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Responsible for",
+			"info": "Responsible for the Distribution and Allocation of Federal Resources",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Key Implementin",
+			"info": "Key Implementing Agency"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "7779AF96-8DA0-C0C2-F79F-AF8BA02F95A1",
+		"documentID": 203768,
+		"createdOn": "2015-03-27T19:45:54.54",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:54.54",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 13457,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:57 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/7779AF96-8DA0-C0C2-F79F-AF8BA02F95A1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 12383
+		}
+	}
+}

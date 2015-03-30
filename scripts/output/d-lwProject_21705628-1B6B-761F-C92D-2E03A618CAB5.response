@@ -1,0 +1,328 @@
+{
+	"header": {
+		"identifier": "21705628-1B6B-761F-C92D-2E03A618CAB5",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "B96CACB4-E08C-DC4C-DC0D-C6E76EFA840D"
+			},
+			"description": "",
+			"funding": 6590000,
+			"dateTime": "1324339200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "09B47045-F2F2-C6B6-9642-3022B7426F1E"
+			},
+			"description": "",
+			"funding": 27500,
+			"dateTime": "1324339200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "",
+			"funding": 975000,
+			"dateTime": "1324339200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "E9A567F9-344A-3D7F-29A2-A1D75B639793"
+			},
+			"description": "cash and in-kind contributions",
+			"funding": 56000,
+			"dateTime": "1324339200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "3E6D8FA7-F779-8C8C-15C2-A4F17151E99D"
+			},
+			"description": "In-kind contributions ",
+			"funding": 76500,
+			"dateTime": "1324339200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "27B702D1-3D20-09EA-29F4-4CD942CB9B37"
+			},
+			"description": "",
+			"funding": 585000,
+			"dateTime": "1324339200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "bz"
+		}
+	],
+	"title": "Strengthening Belize’s national protected areas system by integrating landscape and seascape management approaches, ecosystem based adaptation for climate change and improving social and ecosystem resilience to climate change",
+	"timeFrame": null,
+	"projectAbstract": "This project will enable mechanisms to provide critical financing to ensure effective protected areas management, long term functionality and resiliency of the Belize’s National Protected Areas System. Additionally, the integration of significant components, such as marine and terrestrial-based ecosystem adaptation for climate change, coral reef resilience, forest resilience and opportunities to increase social resilience among vulnerable populations will enable an expanded role for protected areas to meet new challenges emanating from climate change.",
+	"description": "This project is designed to give continuity and ensure successful implementation of key outstanding activities identified in the National Protected Areas System Plan (NPASP). It is based on the results of a consultative prioritization process to develop the Operational Framework, which sets out the priority areas of actions for NPASP implementation. <br/><br/>The National Protected Area Policy, developed in 2005, is the key statement on the role and management of protected areas in Belize, whereas the National Protected Area System Plan (NPASP) has been designed to implement the policy. The NPASP emphasises specific strategic actions to create a National Protected Area System in which all important sites are included in one coherent framework that meets all obligations under international agreements to which Belize is signatory.<br/><br/>In January 2006, the Belize National Protected Areas Policy and System Plan were presented to the Belizean public/stakeholders at a national stakeholder forum, which involved a total of 49 groups representing a cross-section of non-government, government, civil society, private interests, regional and international organizations and protected area managers. Additionally, stakeholders planning retreats have been conducted to prioritize principal themes, to identify concrete objectives, to develop action areas and to define measurable results for implementation of the NPASP. Participants of the stakeholder planning retreats included over 50 different national governmental, non-governmental, community-based, and private sector organizations, as well as all the international conservation non-governmental organizations that operate within Belize.<br/><br/>The NPASP development and the thematic prioritization have involved extensive studies and widespread consultations.  As such this project, which is based on the results of the NPASP thematic prioritization, represents the consensus view among those people directly involved or affected by protected areas in Belize. Throughout project design and implementation, the project envisages adopting similar consultative processes. However, to ensure continued representation across sectors, the Minister of Natural Resources in November 2007 appointed the National Protected Areas Commission (NPAC) to oversee the implementation of the NPASP. However, the NPAC based on recommendation from the NPAC Technical Review Committee set up in 2010, which was appointed by the Minister of Natural Resources to streamline the functionality and operations of NPAC, was renamed the National Protected Areas Technical Committee (NPATC). The NPATC is comprised of representatives from the various governmental protected areas agencies, as well as representatives from the following sectors: NGO’s, community-based organizations, indigenous groups and vulnerable peoples, and the private sector.  In October 2010, the Ministry of Natural Resources instituted the National Protected Areas Secretariat, housed in the Ministry of Natural Resources, to coordinate the implementation of the NPAPSP. <br/><br/>The general aim is for the national protected areas system to be comprehensive, with representative examples of all ecosystems in the country and including areas providing important environmental services, possessing exceptional scenic values and providing critical habitat for species of conservation concern or economic importance. Overall, this project will contribute toward the implementation of the Convention on Biological Diversity’s Programme of Work on Protected Areas and is consistent with meeting the 2012 objective of the establishment and maintenance for marine areas of comprehensive, effectively managed, and ecologically representative national and regional systems of protected areas.<br/><br/>However, with a wide range of increasing pressures and threats that include climate change, unsustainable resources extraction practices, increasing development impacts, and impacts from tourism, effective management of these protected areas is becoming more and more urgent if Belize is to continue to maintain its natural resources for critical environmental services, sustainable use, economic contribution to the nation, and to meet its international commitments. Climate change poses significant and varied threats to the protected area system, has already resulted in severe coral bleaching events, and has arguably been responsible for increased storm events and associated damage to the reef, forest structure, agricultural areas and loss of life. Despite accepted theory and evidence, protected area managers (both marine and terrestrial) remain largely unprepared for the implementation of adaptation and mitigation strategies and actions (The Status of Protected Areas in Belize, 2009).",
+	"additionalInformation": "\n[participation]\nThe NPASP development and the thematic prioritization have involved extensive studies and widespread consultations.  As such this project, which is based on the results of the NPASP thematic prioritization, represents the consensus view among those people directly involved or affected by protected areas in Belize. Throughout project design and implementation, the project envisages adopting similar consultative processes. However, to ensure continued representation across sectors, the Minister of Natural Resources in November 2007 appointed the National Protected Areas Commission (NPAC) to oversee the implementation of the NPASP. However, the NPAC, based on recommendation from the NPAC Technical Review Committee set up in 2010, which was appointed by the Minister of Natural Resources to streamline the functionality and operations of NPAC, was renamed the National Protected Areas Technical Committee (NPATC). The NPATC is comprised of representatives from the various governmental protected areas agencies, as well as representatives from the following sectors: NGO’s, community-based organizations, indigenous groups and vulnerable peoples, and the private sector.  In October 2010, the Ministry of Natural Resources instituted the National Protected Areas Secretariat, housed in the Ministry of Natural Resources, to coordinate the implementation of the NPAPSP.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "The guiding principle of the NPAPSP is to ensure that the contribution of the protected areas system to national development and poverty alleviation is maximized, thereby putting it on a sound and rational footing. Furthermore, the NPAPSP is consistent with the environmental protection principles enshrined in the Constitution of Belize and is founded on the need to ensure that biodiversity conservation becomes an important and integral part of national social and economic development.  <br/><br/>Through this project, support will be garnered for the development of Belize’s National Climate Change Strategy and Action Plan, which will include the development of a sub-strategy and action plan for the seascape and landscape environments. Additionally, this project will provide critical support for key activities integral to biodiversity planning in Belize and includes support for the updating of the National Biodiversity Action Plan and a National Forestry Plan. Both of which will foster sustainable forest management approach in tropical forest to ensure the maintenance of biodiversity.  Furthermore, the project will assist in promoting Agroforestry and Silvipastoral systems as a landscape management approach to ensure harmonization of agricultural development and environmental conservation."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The Horizon 2030 is Belize’s national development framework which establishes long‐term development goals and objectives, intended to strategically guide Belize’s development over the next 20 years. The approach is cross-sectoral and takes into account the National Protected areas policy and system plan, in addition to international and regional obligations such as the Millennium Development goals.   The report states: \"Belize is a natural resource based economy. Components of the natural resources, in especially timber producing ecosystems, areas with a high biological value, cultural and historically important sites, and spawning sites are located on National Lands with a protected status.\"<br/><br/>Horizon 2030 outlines strategies to achieve the priority environment and sustainable development goals by the year 2030 which include incorporating environmental sustainability into development planning and more importantly, strengthening protected areas management through the implementation of the National Protected Areas Systems Plan and by strengthening the legal and administrative framework for protected areas. <br/><br/>In addition, the current draft national land use policy comprehensively addresses the use, management, conservation and distribution of Belize’s land-based resources in the national context, and in every case possible, takes into consideration international standards and approaches. The guiding principles of Belize’s National Land Use Policy are based on a holistic approach that incorporates considerations on equity, efficiency and practicability, development and sustainability. It recognizes that there are certain lands where the best use is conservation due to a variety of factors ranging from watershed protection, to landscape values, to habitat importance."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "A consultancy is currently under way to develop Belize’s National REDD+ strategy that will be based on the World Bank's Forest Carbon Partnership Facility template. The strategy is expected to be concluded by mid-March 2012 and will form the basis of future REDD + activities.<br/><br/>The Ministry of Natural Resources and the Environment is participating in a REDD+ project in collaboration with Central American Commission for Environment and Development (CCAD) and German technical cooperation agency (GIZ).  Consequently, a REDD+ Technical Expert Group has been established to guide and oversee the execution of the REDD+-CCAD-GIZ project in Belize and was recently subsumed under the Mitigation Sub-committee of the Belize National Climate Change Committee (BNCCC). Thus, activities will not only include oversight and guidance for the GIZ project but all REDD+ related activities in Belize, as well as those related to Land Use, Land Use Change and Forestry and more broadly forests and climate change.<br/><br/>Furthermore, a national workshop for the development of a National Monitoring Framework for changes in forest cover and carbon stocks in Belize was recently concluded. This framework will guide the development of a national monitoring and reporting system for REDD+ in Belize."
+		}
+	],
+	"budget": [
+		{
+			"activity": "Establish  recommended governance arrangements for Belize’s  national protected areas system",
+			"result": "$2,000,000"
+		},
+		{
+			"activity": "Complete implementation of activities outlined in Belize’s national protected  areas system plan",
+			"result": "$5,000,000"
+		},
+		{
+			"activity": "Enhance institutional capacity to realize improved management effectiveness  of protected areas and increased delivery of ecosystem services",
+			"result": "$5,000,000"
+		},
+		{
+			"activity": "Support and improve climate change adaptation mechanisms in the national protected areas system",
+			"result": "$5,000,000"
+		},
+		{
+			"activity": "Increase resilience in the seascape and landscape environments",
+			"result": "$5,000,000"
+		},
+		{
+			"activity": "Increase the social resilience of resource users",
+			"result": "$5,000,000"
+		}
+	],
+	"financialStability": "The Government of Belize, through the National Protected Areas Secretariat (NPAS) in collaboration with the Forest Department, Ministry of Natural Resources and the Environment, is currently implementing the project “Sustainable Finance for the Implementation of the Belize National Protected Areas System Plan, Cost of the System and Economic Valuation” with the financial support of the Global Environment Facility (GEF) Trust Fund executed through the United Nations Office for Project Services (UNOPS). <br/><br/>A major expected outcome of the project is for the National Protected Areas System to be supported by a Sustainable Financing Strategy/Plan along with relevant tools and mechanisms that contribute to effective management of financial resources.<br/><br/>Specific objectives  of the Sustainable Financing Strategy/Plan include:<br/><br/>1. Identify and analyze funding levels and shortfalls for the NPA system management and for the NPASP implementation.<br/>2. Train co-managers and relevant government agencies in the use of and completion of the financial sustainability scorecard.<br/>3. Conduct screening and feasibility analysis, including review PA legislation, for potential financial mechanisms for the NPA System.<br/>4. Conduct Standardization of Cost reporting accounting of PA.<br/>5. Prepare a comprehensive financial sustainability plan for ensuring long-term financial support for the system of protected areas.<br/><br/>Institutional commitments include funding contribution from the Global Environment Facility for the project \"Strengthening National Capacities for the Operationalization, Consolidation, and Sustainability of Belize’s Protected Areas System\".",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "Protected areas also contribute to climate change mitigation since carbon sequestration is one of the natural ecosystem services of protected areas. Additionally, protected areas often act as important barriers for land conversion. More importantly, they are enormous natural carbon sinks and play a key role in global climate regulation and in preventing further carbon emissions caused by land conversion and degradation. <br/><br/> A recent valuation of the primary environmental goods and services (EGS) produced by the Maya Mountain Massif (MMM) and Maya Mountain Marine Corridor (terrestrial area) shows that the net present value of carbon storage for the study area is US $ 9-165 million, discounted over a 30 year period. The values of forest cover, when considering both timber and carbon sequestration, is very high relative to the other EGS in the study area. For this reason, managing forest value is largely equivalent to managing for the suite of EGS from an economic perspective.<br/><br/>Additionally, there is the potential to use secure, well-managed forest protected areas as a basis for REDD funding as protected areas provide ideal delivery mechanisms for both sequestration and ecosystem based adaptation."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "Protected areas are the cornerstones of biodiversity conservation and constitute an important stock of natural, cultural and social capital, yielding flows of economically valuable goods and services that benefit society and secure livelihoods. <br/><br/>More specifically, protected areas in Belize play a key role in climate change adaptation and mitigation through a range of ecosystem services and functions that maintain productivity and buffer impacts of climate change. <br/><br/>The estimates of carbon stocks (207 metric tonnes of carbon per ha of forest) are preliminary and more definitive estimates are forthcoming under the scope of the CCAD-GTZ-REDD project in Belize. These estimates will be based on a combination of remote sensing data and on the ground estimates by forest type and soil type (consistent with IPPC guidelines at the Tier 2 level initially). Of the total area of Belize, approximately 62.7% is forested (~1.7 mil ha) and of that 43% (~728434 ha) is under conservation legislation, this evidences the fact that the Government of Belize is committed to the objectives of REDD. Forests in Belize are protected as national parks, forests reserves, nature reserves, and private reserves each with varying levels of protection from strict conservation to extractive use. Furthermore, the terrestrial protected areas also offer a range of ecosystem services including erosion and flood control, sediment retention, and carbon storage.<br/><br/>Marine protected areas, comprising various coastal and marine ecosystems, which include coral reef, sea grass and mangrove offer a variety of coastal and marine services, such as providing critical protection against erosion and wave-induced damages from tropical storms, protection against sea-level rises and the increased frequency of natural disasters, rising temperatures and extreme weather events due to climate change. Natural features, such as coral reefs and mangroves, are the most cost-effective options for maintaining coastal integrity. The value of mangroves as coastal protection in Belize has been estimated to be US$174–$249 million, some independently and some through their supporting role for nearby coral reefs. Furthermore, the Belize Barrier Reef can mitigate over ¾ of wave energy and provide an estimated US$120–$180 million in avoided damages per year while coastal mangroves offer protection worth an additional US$111–$167 million per year."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "The marine ecosystems in Belize support the complexity of marine food webs and the diversity of terrestrial food webs, in addition to services such as nutrient recycling, and maintaining water quality and clarity. <br/><br/>Ecosystem goods from the marine environment which contribute to food security include the diversity of fish species that are commercially important, in addition to those traditionally species harvested for local use."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "The idea of freshwater security and the provision of hydrologic services by protected areas or those important waterways associated with protected areas have been shown to be valuable in other contexts, but may be less so in the MMM area and for other areas in Belize. This is primarily due to the fact that water availability far outstrips current or anticipated demand, eliminating the scarcity value of this resource. However, the importance of determining how key rivers and other waterways could be included into the national Protected Areas (PA) system is highlighted in the activities to be supported through this project. <br/><br/>As supported in the MMM valuation study, only a small fraction of the Moho River catchment has protected status. Thus, one of the activity to be included under this project will address confirming the actual or potential importance of the Moho River, and parts of the Rio Hondo, New, Belize and Temash Rivers to the system through detailed feasibility studies, and to assess what form(s) of protected area category out of the full range to be allowed for under the NPASA would be most appropriate."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "The marine protected areas of Belize have supported artisanal fishing communities for generations and, more recently, they stand at the centre of a vibrant tourism industry, drawing snorkelers, divers and sport fishermen from all over the world. Belize also boasts the longest barrier reef in the Western Hemisphere, part of the biologically rich Mesoamerican Reef complex, stretching from Mexico to Honduras. In total, the value of reef- and mangrove-related fisheries, tourism, and shoreline protection services in Belize is estimated to be US$395–$559 million per year.<br/><br/>Approximately 115,000 visitors were recorded by marine protected areas (MPAs) in 2007, spending an estimated US$17 million on accommodation, recreation, food, and other expenses on days that they visited a reserve. Actual spending may be up to 30 per cent higher as visitor numbers to most of the reserves is significantly under-recorded.<br/><br/>The economic analysis in the Coastal Capital (WRI, 2009) indicates that reef-related tourism and fisheries at just one park - Glover’s Reef Marine Reserve - contributed an estimated US$4.9 to $7.3 million per year to the national economy. Ecosystem goods include the diversity of fish species, especially the commercial species such as lobster, conch and shrimp. <br/><br/>A recent economic valuation of the EGS of the Maya Mountains Massif and Marine Corridor (terrestrial) area (Hammond et al. 2011) shows that the highest net present value is for ‘coastal tourism and fisheries’, which is estimated at US $ 24-40 million, discounted over a 30 year period.<br/><br/>Thus strengthened management of the marine protected areas, as a part of the national protected areas will continue to allow these and more benefits to the Belizean society from its coastal and marine resources."
+		}
+	],
+	"attachments": [
+		{
+			"title": "Final NPASP Operational Framework Belize",
+			"url": "http://www.cbd.int/database/attachment/?id=1484"
+		},
+		{
+			"title": "Annex 1 - Outline of objectives and activities",
+			"url": "http://www.cbd.int/database/attachment/?id=1481"
+		},
+		{
+			"title": "Annex 2 - PoWPA goals addressed ",
+			"url": "http://www.cbd.int/database/attachment/?id=1485"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/Belize/Strenghtening PAs/Endorsement letter.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Belize/Strenghtening PAs/Belize EOI revised final - 090212.doc"
+		},
+		{
+			"title": "Belize Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1473"
+		}
+	],
+	"coordinates": {
+		"lng": -88.7669444,
+		"lat": 17.2513889,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/12227"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/19553"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/342385"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/301913"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/342394"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/342384"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/21705628-1B6B-761F-C92D-2E03A618CAB5/attachments/6950.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Executing Entit",
+			"info": "Executing Entity / Implementing Partner",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Executing Entit",
+			"info": "Executing Entity / Implementing Partner",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Coordinating En",
+			"info": "Coordinating Entity",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "21705628-1B6B-761F-C92D-2E03A618CAB5",
+		"documentID": 203808,
+		"createdOn": "2015-03-27T19:46:39.947",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:39.947",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 26171,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:41 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/21705628-1B6B-761F-C92D-2E03A618CAB5",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 24419
+		}
+	}
+}

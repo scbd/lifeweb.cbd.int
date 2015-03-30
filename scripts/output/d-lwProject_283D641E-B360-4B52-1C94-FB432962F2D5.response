@@ -1,0 +1,240 @@
+{
+	"header": {
+		"identifier": "283D641E-B360-4B52-1C94-FB432962F2D5",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "Soumis par le Gouvernement et les Communautés locales en nature, équipements, etc.   ",
+			"funding": 100000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "km"
+		}
+	],
+	"title": "Aménagement et renforcement de l’acceptabilité sociale de l’aire protégée du Karthala sur l’île de la Grande Comore",
+	"timeFrame": null,
+	"projectAbstract": "Ce projet d’aménagement  et de renforcement  de l’acceptabilité sociale du PARC  NATIONAL DU KARTHALA (en cours de création officielle), contribue à concrétiser ce chantier et à favoriser son acceptabilité sociale par les communautés locales issues des 16 villages environnant  et exploitant la zone forestière concernée.  Il vise  à concrétiser une matérialisation de la délimitation physique sur le terrain ainsi que le zonage de la première aire protégée terrestre et  deux réserves communautaires riveraines pour faciliter les aménagements internes.  Par ailleurs, il permettra de conforter les communautés locales  en  leurs apportant un appui technique et matériel pour le développement de la filière « apiculture améliorée (cf. rapport apiculture)»  déjà initiée dans les villages de la zone de l’aire protégée, en tant qu’activité de substitution et génératrice de revenus pour les groupes  vulnérables vis-à-vis de la nouvelle  réglementation adoptée dans la zone. Cette activité s’inscrit dans la visée de la Stratégie Nationale sur la Biodiversité, notamment une des mesures pertinentes prévues et portant  sur l’identification  et la promotion des activités de substitution génératrices de revenus qui en font du développement des activités alternatives, une mesure essentielle pour l’acceptabilité sociale des aires protégées.",
+	"description": "La zone forestière du Karthala, est la plus grande forêt naturelle des Comores, par sa superficie ainsi que sa richesse en biodiversité d’importance mondiale par la diversité des espèces endémiques; notamment  des plantes, oiseaux, papillons, et reptiles. Cette zone est soumise à une pression anthropique importante et multiforme liée aux activités jugées indispensables pour satisfaire les besoins fondamentaux d’une part importante de la population.  Elle est retenue comme étant une zone prioritaire de développement durable et de création de la première aire protégée terrestre aux Comores (cf. étude écologique de la forêt du Karthala). <br/><br/>Pour renverser la tendance actuelle de surexploitation, un important travail de base a été réalisé  par le projet « OCB » financé par le PNUD et le programme des Volontaires des Nations Unies. Ce travail a été axé sur :  (i) le développement des capacités des organisations communautaires de base des villages riverains à travers la mise en œuvre d’un plan de formation spécifique destiné à toutes les communautés locales des zones prioritaires de conservation de la biodiversité à l’échelle nationale, y compris les villages de la zone de la forêt du Karthala;  permettant une meilleure compréhension des enjeux liés à la gestion des ressources biotiques,  (ii) l’organisation des communautés locales par : la mise en place d’un Comité local d’orientation de développement durable au niveau de chaque village, un Comité de développement durable pour toute la zone (CODD), l’élaboration d’un plan de développement durable au niveau de chaque village, (iii) une cartographie participative illustrant les modes d’exploitation de la zone, (iv) une étude écologique qui a permis de déboucher à une proposition de délimitation et de zonage du site en aire protégée, (v) une étude d’impact socio économique et biophysique qui permet d’orienter les activités dans cette zone (cf. rapports), (vi) des accords de cogestion en cours de validation  entre chaque village et la direction de l’environnement, (vii) un projet de décret présidentiel encours d’élaboration pour soumission par les communautés locales avec l’appui du Ministère en charge de l’environnement. <br/><br/>Malgré tous ces efforts, le processus de création de l’aire protégée en question se trouve confronté à plusieurs problèmes financiers et techniques  parmi lesquels  (i) la matérialisation de la délimitation physique et le zonage de l’aire protégée  en vue d’inciter objectivement des aménagement internes, (ii) l’acceptabilité sociale par les groupes les plus vulnérables en l’absence d’activités de substruction et génératrice de revenue en vue d’une adoption effective de la nouvelle réglementation. <br/><br/>Ainsi, ce projet va permettre de matérialiser la délimitation physique et le zonage  ainsi que le développement de la filière apicole au profit des communautés locales en tant que source de complément d’aliment et de création de revenu non négligeables.",
+	"additionalInformation": "\n[participation]\nLes villages concernés sont organisées avec des Comités locaux d’orientation de développement au niveau des villages, ainsi qu’un Comité D’Orientation de Développement Durable (CODD) pour toute la zone. Les groupes socio professionnels sont impliqués dans les formations, les négociations d’accords de cogestion et dans l’élaboration des plans de développement durable. Les actions menées localement sont la traduction des volontés des communautés, qui ont compris l’importance de gégèner durablement les ressources naturelles de  cette zone, à travers d’un nouvel outil de conservation de la biodiversité qui est le Parc national du Karthala, en cours de création officielle. Ces communautés travaillent en groupement (hommes et femmes) dans leurs activités et ont des modalités de répartition des ressources issues de leurs activités dans la transparence absolue.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "• La loi –cadre n° 94-018 relative à l’environnement stipule en son article 46 ; la nécessité de consacrer une partie de l’espace national pour la création d’aires protégées.<br/> <br/>• Le présent projet s’inscrit dans la visée de l’axe stratégique VI de la  Stratégie de Croissance et de Réduction de la Pauvreté (SCRP 2010-2014) en ciblant la création et la mise en valeur d’un réseau national d’aires protégées qui seront cogérées avec les communautés locales. De plus,  le programme  prioritaire 2.6.1 de la SCRP, prône pour la  « conservation de la biodiversité et le partage équitable des avantages qui en découlent ».<br/><br/>• Un des objectifs de la Stratégie nationale pour la conservation de la diversité biologique concernant les aires protégées est de: «Définir et adopter un cadre de gestion pour les aires protégées qui reconnaît l’implication primordiale des communautés dans la mise en place et la gestion des aires protégées».   <br/><br/>• Le Plan stratégique national  2010-2015 : Pilier thématique 2 : Conservation de la Biodiversité et Axe stratégique 2.1. prône  pour assurer la conservation et la valorisation des écosystèmes marins et terrestres. <br/><br/>• L’Objectif 7 du Millénaire pour le Développement (OMD7) portant : (« assurer un environnement durable »).  <br/><br/>• La création d’aires protégées fait parti des recommandations du  Colloque International sur le Karthala. Ainsi, le programme Unique du Système des Nations Unies en Union des Comores,  a retenu la création des aires protégées comme étant le projet phare dans le domaine de l’environnement et développement durable."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Assurer et concrétiser la délimitation physique du Parc National du karthala et les 2 réserves Communautaires riveraines associées",
+			"result": "Des panneaux signalétiques, des bornes et autre matériel de délimitation physique sur le terrain sont adoptés pour matérialiser la délimitation du parc ainsi que 2 réserves communautaires riveraines, en vue de faciliter les aménagements internes et le respect de la réglementation pour une gestion durable."
+		},
+		{
+			"activity": "Développer la filière apicole dans la zone forestière du Karthala",
+			"result": "La filière apicole est développée et des revenus monétaires sont générés  et partagés équitablement entre les communautés locales en vue de contribuer à réduire la faim et la pauvreté monétaire pour les groupes concernés."
+		}
+	],
+	"financialStability": "Avec les accords de cogestion entre les communautés locales et la direction de l’environnement,  les droits à percevoir au parc à travers l’accès, le circuit éco touristique, les permis d’exploitation de certaines ressources naturelles vont permettre d’assurer la pérennisation des outils de délimitation (panneaux signalétiques, bornes, …).  De plus, l’agroforesterie et les autres activités durables qui seront maintenues dans les zones adjacentes, vont permettre de générer des revenues  pour les contributions des communautés bénéficiaires.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "photo ceremonie lancement projet",
+			"url": "http://www.cbd.int/database/attachment/?id=1184"
+		},
+		{
+			"title": "photo ceremonie lancement projet",
+			"url": "http://www.cbd.int/database/attachment/?id=1185"
+		},
+		{
+			"title": "photo ceremonie lancement projet ",
+			"url": "http://www.cbd.int/database/attachment/?id=1186"
+		},
+		{
+			"title": "photo ceremonie lancement projet",
+			"url": "http://www.cbd.int/database/attachment/?id=1187"
+		}
+	],
+	"maps": [
+		{
+			"title": "andy lac deli",
+			"url": "http://www.cbd.int/database/attachment/?id=1190"
+		},
+		{
+			"title": "carte ngnubadju",
+			"url": "http://www.cbd.int/database/attachment/?id=1191"
+		},
+		{
+			"title": "délimitation",
+			"url": "http://www.cbd.int/database/attachment/?id=1192"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Reserves communutaires karthala",
+			"url": "http://www.cbd.int/database/attachment/?id=1188"
+		}
+	],
+	"coordinates": {
+		"lng": 43.3680788,
+		"lat": -11.7167338,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/283D641E-B360-4B52-1C94-FB432962F2D5/attachments/6566.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "283D641E-B360-4B52-1C94-FB432962F2D5",
+		"documentID": 203797,
+		"createdOn": "2015-03-27T19:46:27.477",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:27.477",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11768,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:29 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/283D641E-B360-4B52-1C94-FB432962F2D5",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10722
+		}
+	}
+}

@@ -11,7 +11,10 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         $scope.document.location = $scope.document.location || {};
         $scope.document.location.address = $scope.document.location.address || 'x';
         $scope.document.coverImage = $scope.document.coverImage || {};
-        $scope.document.name = "add name to form...";
+        if($scope.document.startDate)
+            $scope.document.startDate = new Date($scope.document.startDate);
+        if($scope.document.endDate)
+            $scope.document.endDate = new Date($scope.document.endDate);
     });
 
     $scope.$on('documentDraftSaved', function(event, draftInfo) {
@@ -24,6 +27,14 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       });
     }
 
+    $scope.addOrganization = function() {
+        if(!$scope.document.organizations)
+            $scope.document.organizations = [];
+
+      $scope.document.organizations.push($scope.newOrganization);
+      $scope.newOrganization = '';
+    };
+
     function addValueAndSort(arr, key) {
         for(var i = 0; i != arr.length; ++i)
           arr[i].__value = arr[i][key];
@@ -34,6 +45,15 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         return arr;
     }
 
+    $scope.$watch('document.documents', function() {
+        if($scope.document.documents && !$scope.document.documents.length)
+            $scope.document.documents = null;
+    });
+
+    $scope.$watch('document.images', function() {
+        if($scope.document.images && !$scope.document.images.length)
+            $scope.document.images = null;
+    });
 
     $scope.$watch('document.startDate', function() {
         if(!$scope.document.endDate)

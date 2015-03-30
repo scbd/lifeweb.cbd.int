@@ -1,0 +1,300 @@
+{
+	"header": {
+		"identifier": "145B269A-F0F8-AE49-A0C8-9778B8B3CE24",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "0BA535F0-BBD0-DA19-7816-E4B578C841BA"
+			},
+			"description": "",
+			"funding": 500000,
+			"dateTime": "1356998400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "et"
+		}
+	],
+	"title": "Yayu Coffee Forest Biosphere Reserve:  Model site for integration of research-based conservation and development",
+	"timeFrame": null,
+	"projectAbstract": "Yayu forest is one of the priority forest areas in Ethiopia.  Over 450 higher plants, 50 mammal, 200 bird, and 20 amphibian species have been recorded in the area. The forest is also one of the few remnant habitats for coffee (Coffea arabica). Ethiopia is the only center of origin and diversity for C. arabica and hence is important for in situ conservation of genetic diversity. The Yayu coffee forest is also important for the livelihoods of local households and stakeholders at different levels. This project aims to reduce deforestation and forest degradation while contributing to the improvement of local livelihoods through adaptive conservation-development integration activities. To achieve this, the UNESCO Biosphere Reserve approach will be adopted. This project’s specific objectives are to strengthen the capacity of government agencies and community-based organizations responsible for biosphere reserve establishment and management, brand, promote and market coffee forest products, rehabilitate degraded parts of the forest area and establish protocols for the monitoring of forest conditions.",
+	"description": "Yayu forest is one of the important forest priority areas in Ethiopia. It has a high number of plant and animal species. Over 450 higher plants, 50 mammal, 200 bird, and 20 amphibian species have been recorded in the area. The forest is also one of the few remnant habitats for wild coffee (Coffea arabica). Ethiopia is the only center of origin and diversity for C. arabica and hence is important for the in situ conservation of the genetic diversity of the natural coffee. Additionally, the forest area is vital for its ecological services such carbon sequestration and watershed protection for human health and hydropower generation. As part of the Eastern Afromontane Biodiversity hot spot area, the forest is important for the conservation of biodiversity at both regional and global level.<br/><br/>The Yayu coffee forest is also important for the livelihoods of local households and stakeholders at different levels. It is a source of income for the locals and also a safe guard in difficult times such as during extreme weather events or poor harvest. the forest is a major source of Non-Timber Forest Products (NTFPs) and other products of local use such as construction material, fuel wood, and farm implements.  The most common NTFPs include coffee, honey, medicinal plants, spices and game. Forests and semi-forest coffee contributes to about 46% of households’ income in the area, while plantation coffee in transition areas contributes to about 21% of the households’ income. <br/><br/>Even though the forest is important for both conservation and the livelihoods of local people, it faces severe threats of deforestation. Major causes of deforestation are conversion to agricultural land and large scale monoculture plantation as well as over-grazing by livestock. Over the past 30 years alone, more than 60 % of the forest in the region has been converted to other land uses. Most of the remaining forest area is highly degraded due to intensive management for coffee production and selective logging. In spite of these facts, none of the forest area in the country is represented in the protected area system of the country. With the high rates of deforestation and forest degradation several species unique to this forest habitat are lost. Particularly, the loss of the genetically highly diverse wild populations of coffee might have far-reaching economic consequences. The wild coffee populations are an irrecoverable genetic resource for coffee production both nationally and internationally. <br/><br/>This project, therefore, aims at reducing deforestation and forest degradation while contributing to the improvement of local livelihoods through adaptive conservation-development integration activities. To achieve this, the UNESCO Biosphere Reserve approach is adapted.  The Yayu Coffee Forest Biosphere Reserve has been nominated by the government of Ethiopia in September 2009 and expected to be approved by UNESCO in mid-2010.",
+	"additionalInformation": "\n[participation]\nThe project will build the capacity of local communities and organizations through education, training, awareness creation and technology transfer. Through participation in the project activities local communities will develop the skills in conservation planning and implementation, monitoring, sustainable forest product harvesting. The beneficiaries include all different groups and strata of society with special consideration to gender, age and social status.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The activities of this project are complementary to the priorities identified by the National Biodiversity Action Plan, Poverty Reduction plan, Nation climate adaptation plan, national and use plan and MDGs which support the sustainable use of natural resources for development."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Strengthening the capacities of government agencies and community-based organizations responsible for biosphere reserve establishment and management",
+			"result": "-CBOs established\n-Biosphere reserve (BR) management and monitoring capacity built\n-Ecotourism system developed  in the area \n-BR office established and functioning\n-BR management plan prepared and implemented\n-Public awareness raised at all levels\n-Conservation education and research center established\n-Various skills development trainings"
+		},
+		{
+			"activity": "Branding, promotion and marketing of coffee forest products",
+			"result": "-Coffee, honey and other NTFPs branded\n-Market linkages for local products\n-Various promotions and value adding activities conducted\n-Coffee and tree nursery established"
+		},
+		{
+			"activity": "Rehabilitation of degraded parts of the forest area",
+			"result": "-Degraded areas reforested with trees and coffee"
+		},
+		{
+			"activity": "Establishing protocols for the monitoring of forest conditions",
+			"result": "-Capacity to use GIS and remote sensing tools for monitoring acquired\n-Capacity of CBOs and BR management to monitor changes every 2 years built\n-Monitoring protocols and tools in place"
+		}
+	],
+	"financialStability": "During the implementation of this project, additional activities on development shall be co-financed by other donors. A GEF grant on mainstreaming agrobiodiversity is being implemented. One of the partners from Germany, BfN, is supporting a project on mainstreaming biodiversity conservation and community benefits. BY the end of the project, the Biosphere Reserve shall be able to generate income from proceeds of sale of newly branded local products, carbon finance (REDD), government budget and income from ecotourism. Furthermore, the applicant organizations (ECFF, IBC, OFWE) are dedicated to forest conservation and management and shall ensure sustainable financing for the area.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "genetic resource for breeding of drought-tolerant coffee cultivars"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "By preventing deforestation and forest degradation in the Yayu forest and its surrounding areas the estimated savings in carbon emission are roughly 27.4 Mt CO2 within 20 years. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"attachments": [
+		{
+			"title": "Yayu Coffee Forest Biosphere Reserve Nomination Form- Part 2",
+			"url": "http://www.cbd.int/database/attachment/?id=555"
+		},
+		{
+			"title": "Yayu Coffee Forest Biosphere Reserve Nomination Form- Part 1",
+			"url": "http://www.cbd.int/database/attachment/?id=556"
+		},
+		{
+			"title": "Biodiversity and ecology of Afromontane rainforests (Senbeta 2006)",
+			"url": "http://www.cbd.int/database/attachment/?id=557"
+		},
+		{
+			"title": "Genetic diversity of wild Coffea arabica populations (Vlek 2006)",
+			"url": "http://www.cbd.int/database/attachment/?id=558"
+		},
+		{
+			"title": "Genetic diversity of wild Coffea arabica populations (Gole et al. 2002)",
+			"url": "http://www.cbd.int/database/attachment/?id=559"
+		},
+		{
+			"title": "Genetic diversity of wild Coffea arabica populations (Vlek 2003)",
+			"url": "http://www.cbd.int/database/attachment/?id=560"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Ethiopia/Ethiopia LIFEWEB PROJECT EXPRESSION OF INTEREST-final Updated 1-30-2013.doc"
+		},
+		{
+			"title": "Download this Expression of Interest (Updated 30 JAN 2013)",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1754"
+		}
+	],
+	"coordinates": {
+		"lng": 35.0244140625,
+		"lat": 8.624472107633936,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/29086"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/145B269A-F0F8-AE49-A0C8-9778B8B3CE24/attachments/4945.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Capacity buildi",
+			"info": "Capacity building",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Regulatory",
+			"info": "Regulatory",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Implementation",
+			"info": "Implementation",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Capacity buildi",
+			"info": "Capacity building",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Capacity buildi",
+			"info": "Capacity building",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Capacity buildi",
+			"info": "Capacity building",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Policy support,",
+			"info": "Policy support, regulatory",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Coordination an",
+			"info": "Coordination and implementation",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "145B269A-F0F8-AE49-A0C8-9778B8B3CE24",
+		"documentID": 203765,
+		"createdOn": "2015-03-27T19:45:51.71",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:51.71",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11863,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:53 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/145B269A-F0F8-AE49-A0C8-9778B8B3CE24",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10347
+		}
+	}
+}

@@ -1,0 +1,217 @@
+{
+	"header": {
+		"identifier": "8B459818-EFEC-A326-4829-4ACCD1451090",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "36DD5F13-2C57-D2F0-ED01-4DFD846B992A"
+			},
+			"description": "KWS Internal US $ 17,500,000;\nGoK – KWS operations US $ 12,000,000;\nGoK KWS Fund US $ 13,000,000;\nCorporates& NGO US $ 3,500,000;",
+			"funding": 45000000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "ke"
+		}
+	],
+	"title": "Kenya Wildlife Service System Scale Expression of Interest",
+	"timeFrame": null,
+	"projectAbstract": "This national scale Expression of Interest primarily aims to: 1) secure wildlife migratory corridors and strengthen law enforcement which includes addressing poaching, encroachment and illegal trade problems as well as enhancing problem animal control units; 2) strengthen governance of the wildlife industry including community based wildlife conservation initiatives, sustainable management, policy direction, capacity-building initiatives and infrastructure in parks and reserves; and 3) attain financial sustainability. The financial sustainability of KWS will be addressed through strategies aimed at resource mobilization, diversification of revenue streams and growth as well as effective and efficient management of resources.",
+	"description": "Wildlife has an intrinsic environmental value, as well as its present and potential revenue generation, contributing 75% of the 10% earnings in GDP from Tourism activities. Kenya’s wildlife is one of the richest and most diversified in Africa, with several of its protected areas and wetlands internationally renowned as World Heritage Sites and RAMSAR sites. Protected areas have long been seen as successful in conservation of wildlife and environmental sustainability. Wildlife covers an area of about 8% of Kenya’s landmass. The major concern in wildlife is the loss of corridors, habitat degradation, security, seasonability of tourism and infrastructure.<br/> <br/>Climate Change poses major challenges in the economy, human life and wildlife and on environment thereby affecting Kenya’s social and economic development. While Kenya’s contribution to the Green House Gases (GHGs) is minimal in comparison to developed countries, it is adversely affected by effects of Climate Change. There is need to develop appropriate, detection, prediction, adaption and mitigation measures to reduce the negative impact of the adverse effects. <br/><br/>Kenya has 53 protected areas with 6 marine and the rest are terrestrial parks. The national parks and reserves act as important carbon sinks in the country. The protected areas represent 8% of Kenya’s landmass. <br/><br/>The Marine Protected Areas (MPAs) have been identified by the Convention on Biological Diversity (CBD), the RAMSAR Convention, the Nairobi Convention and the International Coral Reef Initiative (ICRI) as key tools in the conservation and management of marine and coastal biodiversity. The MPAs of Kenya harbor coral reefs and associated ecosystems such as mangroves and seagrasses that are among the most biologically diverse and economically important ecosystems in the Earth’s oceans. Taken collectively, these ecosystems support important finfish and shellfish fisheries, play a key role in biodiversity protection, sediment catchment and shoreline protection, and directly or indirectly support coastal tourism which represents an important source of foreign exchange. These marine ecosystems are also particularly vulnerable to overexploitation, and suffer the impacts of destructive exploitation, siltation, pollution, unplanned tourism and urban development, all of which are aggravated by climate change and an ever-increasing human population. Because Kenyan MPAs only cover ~ 8.7% of the coastal shelf area and 3.1% (~ 925 km2) of the total protected area surface in Kenya, they are of crucial importance to the protected area system and were prioritized by the national protected area agency the Kenya Wildlife Service (KWS) within a network of coastal PA. These MPAs are effectiveness in protecting coral reef biodiversity as evidenced by significantly higher diversity, abundance and biomass of coral reef fish, coral species diversity and cover and lower densities of sea urchins within MPAs than reefs outside the MPAs as well as endemic species of fish and coral. <br/><br/>Additional important attributes that have not been evaluated include carbon sequestration by coral reefs, mangroves and seagrass beds, the potential for medicinal products and the recreational and aesthetic value of these areas. Although no country-wide geographical prioritization of biodiversity has been carried out in Kenya, the high dependence of coastal communities on marine resources, the importance of MPAs for tourism (the mainstay of the Kenyan economy), fisheries and biodiversity and other ecosystem services, and the serious threat of climate change on coral reefs and associated ecosystems increase the urgency for strengthening the management of Kenyan MPAs. The effect of climate change were particularly manifested during the 1998 El Niño Southern Oscillation bleaching event that caused widespread hard coral mortality across the WIO region.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1.1 Secure wildlife migratory corridors and Strengthen Law Enforcement(patrols, Intelligence etc)",
+			"result": "- Securing wildlife corridors and dispersal areas is critical to the survival of wildlife in Kenya. The corridors have been identified and mapped. KWS requires support to develop and inventory, then procure and or lease and engage communities for wildlife conservation. \n- The Poaching and encroachment of wildlife in protected areas has been a major problem. Require support to enhance security to visitors, wildlife and park boundaries. \n- Combat illegal trade in wildlife species and their products. \n- Procure equipment support the operation teams in the 52 protected areas. \n- Enhance problem animal control units to quickly respond to human wildlife conflict challenges."
+		},
+		{
+			"activity": "1.2 Wildlife Industry Governance",
+			"result": "- Support conservation, management and maintenance of national parks, reserves and sanctuaries.\n- Support developing policy direction, guidelines and technical support for wildlife management outside National Parks, Reserves and Sanctuaries;\n- Ensure sustainable management of critical habitats outside National Parks, Reserves and Sanctuaries;\n- Enlist community support for wildlife conservation through provision of incentives;\n- Promote the establishment and the maintenance of wildlife corridors and dispersal areas and biodiversity hot spots to ensure continuity of viable ecosystems and Capacity building for natural resource management.\n- Conservation education and extension services to engage and inform the public, schools and communities.\n- Capacity building for development of management plans.\n- Facilitation of community wildlife-community based wildlife conservation initiatives.\n- Infrastructure in parks and reserves"
+		},
+		{
+			"activity": "1.3 Attain financial sustainability",
+			"result": "KWS Financial sustainability will be addressed through strategies aimed at resource mobilization, diversification of revenue streams and growth as well as effective and efficient management of resources. There is need for support to: \n- Capitalise the Kenya Wildlife Service Fund to attain the target of US$ 100 million to support wildlife conservation in Kenya.\n- International marketing of parks and reserves.\n- Enhancing public private sector partnership in developing facilities in the protected areas.\n- Support the devolution of financial management into the 8 conservation areas."
+		},
+		{
+			"activity": "1.4 Maintain Ecological Integrity",
+			"result": "- Ecological integrity is a key pillar in wildlife management. On continuous basis, all efforts must be directed at healthy wildlife habit and ecosystems.\n- There is a need for proper inventories of endangered species as well as cropping of other wildlife populations to ensure optimal levels are maintained.\n- Equally through research and monitoring, KWS will manage to determine threatened Eco-systems and suggest remedial measures including propositions for securing additional conservation areas.\n- Support for different management tools including translocation as an option for degraded habitats.\n- Maintaining viable and sustainable barriers as well as encouraging income-generating activities in areas of intense human-elephant conflicts.\n- Climate change which is augmenting drought in much of our country and floods in other areas."
+		}
+	],
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"attachments": [
+		{
+			"title": "annex 1 budget",
+			"url": "http://www.cbd.int/database/attachment/?id=1161"
+		},
+		{
+			"title": "annex 2 map of conservation areas",
+			"url": "http://www.cbd.int/database/attachment/?id=1162"
+		},
+		{
+			"title": "annex 4 final strategic plan 2009-2012",
+			"url": "http://www.cbd.int/database/attachment/?id=1163"
+		},
+		{
+			"title": "annex 5 kenya wildlife fund profile",
+			"url": "http://www.cbd.int/database/attachment/?id=1164"
+		},
+		{
+			"title": "trust fund",
+			"url": "http://www.cbd.int/database/attachment/?id=1165"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/kenya/Kenya Wildlife Service system_level_expression_english Proposal.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/kenya/Kenya Wildlife Service system_level_expression_english Proposal.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 36.813106,
+		"lat": -1.274359,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/8B459818-EFEC-A326-4829-4ACCD1451090/attachments/6516.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "8B459818-EFEC-A326-4829-4ACCD1451090",
+		"documentID": 203794,
+		"createdOn": "2015-03-27T19:46:24.303",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:24.303",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 10836,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:26 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/8B459818-EFEC-A326-4829-4ACCD1451090",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 9957
+		}
+	}
+}

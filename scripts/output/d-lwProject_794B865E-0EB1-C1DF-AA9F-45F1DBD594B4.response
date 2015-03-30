@@ -1,0 +1,284 @@
+{
+	"header": {
+		"identifier": "794B865E-0EB1-C1DF-AA9F-45F1DBD594B4",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "0BA535F0-BBD0-DA19-7816-E4B578C841BA"
+			},
+			"description": "",
+			"funding": 431000,
+			"dateTime": "1356998400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "bd"
+		}
+	],
+	"title": "Establishing a Protected Area Network for Threatened Freshwater Dolphins in Waterways of the Sundarbans Mangrove Forest, Bangladesh",
+	"timeFrame": null,
+	"projectAbstract": "The Sundarbans of Bangladesh are already experiencing the ecological effects of global climate change and declining freshwater supplies: seawater is encroaching farther into the mangrove forest and sedimentation is increasing in areas of key biological importance. At the same time, freshwater cetaceans in Bangladesh are threatened by increasing incidental kills, primarily from entanglement in gillnets but also from long lines and trawl fisheries. The Government of Bangladesh (GoB) and the Wildlife Conservation Society (WCS) seek to ensure the protection of freshwater cetaceans while concurrently safeguarding the well-being of local fishermen who depend on the same aquatic resources. The project will strengthen an existing national system of protected areas, promote participation, equity and benefit sharing within the context of protecting threatened species and a vulnerable aquatic ecosystem, establish a sustainable program of enabling activities including capacity building, policy support, awareness raising, and targeted research, and provide a rigorous mechanism for assessment and monitoring in support of management goals.",
+	"description": "The Sundarbans of Bangladesh are already experiencing the ecological effects of global climate change and declining freshwater supplies: seawater is encroaching farther into the mangrove forest and sedimentation is increasing in areas of key biological importance. Current understanding of the physical processes and details of ecological effects on this region and its wildlife are insufficient to develop the management strategies needed to protect this global “hotspot” of cetacean diversity and abundance. The sensitivity of dolphins in waterways of the Sundarbans in Bangladesh to physical and ecological changes related to freshwater inputs and sea-level rise led to a recommendation by the International Whaling Commission’ Scientific Committee that they be used as a case study for understanding the impacts of climate change on cetaceans (Smith et al. 2008). <br/><br/>At the same time, freshwater cetaceans in Bangladesh are threatened by increasing incidental kills, primarily from entanglement in gillnets but also from long lines and trawl fisheries. Bycatches occurring in these fisheries may also be undermining their sustainability. There is an urgent need to develop and promote less destructive fishing gear and practices and to establish time-area closures, both for protecting biodiversity and for ensuring the sustainability of fisheries vital to the economy and food security of local communities.<br/><br/>The Government of Bangladesh (GoB) and the Wildlife Conservation Society (WCS) seek to ensure the protection of freshwater cetaceans in Bangladesh now, while the population sizes of two species at risk are known to be sufficient for long-term persistence if threats can be reduced, while concurrently safeguarding the well-being of local fishermen who depend on the same aquatic resources. These aims have vital conservation and social-economic significance due to the sensitivity of the Sundarbans mangrove forest to the realized and projected impacts of climate change, and the role of its waterways in providing essential ecosystem services to local communities, including serving as a buffer to minimize the effects of extreme climate events. This project will fundamentally connect the welfare of fishermen and cetaceans, and engage local communities in the development of sustainable strategies for managing aquatic resources and adapting to climate related changes through the establishment of a protected area network that specifically addresses aquatic needs within the existing multiple-use Eastern Sundarbans Reserved Forest, and is focused on managing the mangrove forest and terrestrial wildlife.  The project addresses all four interlinked elements of the Convention on Biodiversity (CBD) Program of Work on Protected Areas (PoWPA) in that it (1) strengthens an existing national system of protected areas as a contribution to globally recognized goals for species conservation, (2) promotes participation, equity and benefit sharing within the context of protecting threatened species and a vulnerable aquatic ecosystem, (3) establishes a sustainable program of enabling activities including capacity building, policy support, awareness raising, and targeted research, and (4) provides a rigorous mechanism for assessment and monitoring in support of management goals.  The project is also consistent with the Bangladesh Climate Change Strategy and Action Plan, and National Adaptation Programme of Action (see attachments).<br/><br/>Based on conservation research and educational outreach conducted by WCS, on January 29, 2012 the Government of Bangladesh declared three new Wildlife Sanctuaries for the protection of freshwater dolphins in the Eastern Sundarbans Reserved Forest. These wildlife sanctuaries (Dhangmari, Chandpai, and Dudhmukhi) safeguard 19.4 mi (31.4 km) of channels. However, no management plan is in place and efforts to realize the new legislation into effective conservation tools are pending on financial support.",
+	"additionalInformation": "\n[participation]\nA strong emphasis on capacity building will create the competence within partner organizations and institutions required for conducting conservation science and educational outreach activities in support of aquatic resource management. Sustainable development in local communities adjacent to the protected area sites will be promoted by the potential enhancement of fisheries in surrounding waters of the proposed protected area network. This project will provide fundamental insights on the nature and magnitude of ecological effects of global climate change in the Sundarbans. This will in turn serve as a basis for developing adaptive management responses that connect the well-being and welfare of fishermen and freshwater cetaceans to the development of sustainable management strategies for local fisheries. The involvement of women in all aspects of the project, including key roles in conducting research and educational outreach activities, and consideration of their needs in local communities will ensure gender equity.  Continued coordination with other institutions working in the area, such as UNDP, will ensure the full and effective participation of local stakeholders.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "This project strengthens efforts of the Integrated Coastal Zone Management (ICZM) Program for creating conditions to reduce poverty, develop sustainable livelihoods, and integrate coastal zone considerations into national planning. The ICZM is a multi-ministerial and multi-sectoral arrangement led by the Ministry of Water Resources (MoWR) and the Water Resources Planning Organization (WARPO). Furthermore, the project is integrated into the vision of the Bangladesh Climate Change Strategy and Action Plan (BCCSAP, 2008) and the National Adaptation Programme of Action (NAPA) to reduce poverty and achieve economic and social well-being within the context of climate related changes to the natural environment. The proposed activities of this project provide an ideal platform for integrating key protected area, biodiversity conservation, and sustainable use goals, as established by the CBD of which Bangladesh is an active member, into human development and climate change mitigation of the ICZN, BCCSAP, and NAPA. The project follows on the successful integration by the Bangladesh Forest Department of protected area, biodiversity conservation, and sustainable use goals of the CBD PoWPA under the auspices of Nishorgo, a community co-management program for terrestrial protected areas in Lawachara, Rema-Kalenga, Satchari, Sitakund, Chunati and Teknaf. Policies will be developed in close collaboration with the United Nations Development Program (UNDP) / Department of Environment (DoE) Coastal and Wetland Biodiversity Management Project."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Through WCS-led meetings and coordinated actions with government officials, local communities and partner NGOs, develop and support implementation of a science-based, community-informed management plan for three wildlife sanctuaries established by the Government of Bangladesh in the Eastern Sundarbans.",
+			"result": "Ganges and Irrawaddy dolphins effectively protected and the well-being of local communities improved within a spatially-explicit, ecologically-defined, and legally-mandated mechanism in waterways of the Sundarbans mangrove forest.",
+			"cost": 264000
+		},
+		{
+			"activity": "Build capacity of national scientists, government officials, and local communities in cetacean conservation and fisheries management.",
+			"result": "A measurable increase in the competence of local scientists and resource managers to develop and implement effective interventions in support of protected area management, and in local awareness of the conservation needs of freshwater dolphins and practical solutions for ensuring the sustainability of local fisheries.",
+			"cost": 167000
+		}
+	],
+	"financialStability": "The financial sustainability of a protected area network for cetaceans is based in part on the integration of nature tourism activities into conservation plans, which could provide funds and logistical support for management activities (e.g., educational outreach, patrolling and enforcement) and community development initiatives (e.g., training nature guides), and serve as a platform for monitoring cetacean populations and their habitat. The declared protected area network is located within the Eastern Sundarbans Reserved Forest, with each site situated in close proximity to an existing Forest Department Station, thus providing an existing infrastructure for management support.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "ganges river dolphin",
+			"url": "http://www.cbd.int/database/attachment/?id=580"
+		},
+		{
+			"title": "close up of ganges river dolphin surfacing in a heavily fished area of the proposed pa network",
+			"url": "http://www.cbd.int/database/attachment/?id=594"
+		},
+		{
+			"title": "the collection of fish fry with fine-mesh mosquito nets and resulting bycatch is a major threat in the pa network",
+			"url": "http://www.cbd.int/database/attachment/?id=595"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Map of the waterway segments ",
+			"url": "http://www.cbd.int/database/attachment/?id=581"
+		},
+		{
+			"title": "Fahrni  et al. 2008",
+			"url": "http://www.cbd.int/database/attachment/?id=582"
+		},
+		{
+			"title": "Hot spots Smith 2010",
+			"url": "http://www.cbd.int/database/attachment/?id=583"
+		},
+		{
+			"title": "Smith et al. 2008",
+			"url": "http://www.cbd.int/database/attachment/?id=584"
+		},
+		{
+			"title": "Smith et al. 2009",
+			"url": "http://www.cbd.int/database/attachment/?id=585"
+		},
+		{
+			"title": "Smith et al. in press",
+			"url": "http://www.cbd.int/database/attachment/?id=586"
+		},
+		{
+			"title": "Smith et al. 2006",
+			"url": "http://www.cbd.int/database/attachment/?id=587"
+		},
+		{
+			"title": "Bangladesh Climate Change Strategy and Action Plan 2009",
+			"url": "http://www.moef.gov.bd/climate_change_strategy2009.pdf"
+		},
+		{
+			"title": "National Adaptation Programme of Action (NAPA) - Bangladesh",
+			"url": "http://unfccc.int/resource/docs/napa/ban01.pdf"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=590"
+		},
+		{
+			"title": "Bangladesh PA network bounded in yellow",
+			"url": "http://www.cbd.int/database/attachment/?id=591"
+		},
+		{
+			"title": "The Guardian: Thousands of rare Irrawaddy dolphins found along Bangladesh coast",
+			"url": "http://www.guardian.co.uk/environment/2009/apr/01/irrawaddy-dolphin"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Bangladesh/WCS EOI.doc"
+		},
+		{
+			"title": "EOI",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Bangladesh/WCS EOI.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 89.68276977539062,
+		"lat": 21.85894964541745,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/67808"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/794B865E-0EB1-C1DF-AA9F-45F1DBD594B4/attachments/5989.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "government lead",
+			"info": "government leadership, policy coordination, implement management interventions",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "technical and l",
+			"info": "technical and logistical support",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "794B865E-0EB1-C1DF-AA9F-45F1DBD594B4",
+		"documentID": 203766,
+		"createdOn": "2015-03-27T19:45:51.743",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:51.743",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 14504,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:54 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/794B865E-0EB1-C1DF-AA9F-45F1DBD594B4",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 13132
+		}
+	}
+}

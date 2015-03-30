@@ -1,0 +1,294 @@
+{
+	"header": {
+		"identifier": "3BA8A051-6D1A-2056-74B6-9FAC2248F271",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 9000000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "Requested from international donors: Total = $10,481,520 broken down \nas follows:   \n                                     \n$4,171,090 (Rare Foundation) \n\n$6,310,430 from other Foreign Assisted Projects funded by ADB, UNDP  \nand GTZ i.e. Integrated Coastal Resources Management Project (ADB); \nBiodiversity Partnership Program (UNDP); and GTZ (application in \nprogress for climate resilience and adaptive capacity for fisheries & \nmarine biodiversity in municipal MPAs.",
+			"funding": 10481520,
+			"dateTime": "631152000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "$5,179,029 annually, over 5 years, from PA revenues (e.g. user fees), Philippine Government & multilaterals (i.e. UNDP, etc.)",
+			"funding": 25895145,
+			"dateTime": "631152000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "ph"
+		}
+	],
+	"title": "Philippines Protected Area System",
+	"timeFrame": null,
+	"projectAbstract": "This Expression of Interest seeks support for the Philippine National Protected Areas and Wildlife Bureau (PAWB) to build upon existing gap and strategy assessments in an effort to complete a comprehensive strategic plan for the national protected area system, and to make a significant progress towards implementing the strategic plan. The gap assessment and strategic plan will guide the future growth and institutional development of both the national protected areas agency (Protected Areas and Wildlife Bureau - PAWB) and its component protected areas, thereby advancing the security of the manifold economic and social benefits that the national protected areas system provides to humanity.",
+	"description": "The CBD Programme of Work on Protected Areas (POWPA) essentially provides the following framework for advancing the effectiveness of a national system of protected areas. A national system and its component protected area sites should strive to be:<br/>1.\tEcologically representative: Broadly, the national PA system covers adequate proportions of the nation’s (and neighbouring trans-boundaries) that cover various biodiversity and habitat types;<br/>2.\tEffectively managed: The management capacity of institutions at the national agency and local protected area level is sufficient for the protected areas system to meet its conservation and other objectives, and to yield its social, economic, climate management and biodiversity benefits for society.<br/>3.\tSupported by key stakeholders and communities: The national population understands and supports the mission of the national protected areas system and its component sites. Communities surrounding and within individual protected areas understand the value of those protected areas, are engaged in their management, and perceive themselves to have adequate access, benefits sharing and participation in the protected areas.<br/>4.\tSustainably funded: The economic, social and climate benefits of the National Protected Areas system are understood and the national protected areas agency and system has adequate, diverse sustainable funding to meet its objectives and to secure those benefits.<br/>5.\tManaged for climate adaptation and mitigation: Since the original POWPA was ratified in 2004, the global protected areas community has come to recognize that the above four themes should be implemented so that they maximize the value of individual protected areas and systems of protected areas in sequestering and storing carbon and in supporting the adaptation of communities and economies to the likely impact of climate change through enhancing the resiliency of ecosystem services provided by protected habitats.  Thus, a thorough understanding of the inter-relationship between biodiversity protection and climate change adaptation and mitigation should be imbued into any protected areas system planning and management program.<br/>According to national commitments to the POWPA, each national protected areas agency should know the status of each of these four elements and have a plan to strengthen each of them to an adequate level.  Similarly, following the Bali and Copenhagen Climate conventions, it is understood that each nation should be developing national climate change adaptation plans, which should include the role of the national protected areas system in climate change mitigation and adaptation.<br/><br/>The purpose of this proposal is to seek funds to:<br/><br/>1.\tComplete the establishment of the baseline for each of these five program elements, and to <br/>2.\tDevelop a strategic action plan for the Philippines National Protected Areas System to strengthen each of them, and to<br/>3.\tAchieve implementation of key milestones of the strategic action plan.<br/>In essence, this concept note proposes to  fulfil the ambitions for the POWPA in the Philippines with associated carbon sequestration, biodiversity conservation, climate adaptation, cultural and economic benefits for the people of the Philippines and globally.",
+	"additionalInformation": "\n[participation]\n•\tGender Equity:  The community PA governance work undertaken through this program will engage all segments of the local population. Further, the role of PAs on food security noted above often greatly affects women in their role as providers of food for the family and often as vendors of forest products harvested, fish and seafood, as well as supporting food sources for the most marginalized community members. This project recognizes important differences in how women and men use, manage, and conserve biological resources. Program planning integrates the understanding of gender-based differences and their implications for natural resources management and biodiversity conservation into conservation programs and policies. By giving women a clear role in biodiversity decision-making, the social acceptability and sustainability of Protected Area conservation and management efforts can be enhanced. Involving women is often the most effective avenue for generating behavioural change. Women and children are often the ones found gleaning in the buffer zones Marine Protected Areas and harvesting non-timber forest products in terrestrial protected areas around the country.<br/><br/>•\tCultural and spiritual access: By engaging local communities in the planning and management of their protected areas, especially under proposed program element 3 (stakeholder engagement, access and benefit sharing) the process of this project will capture and account for community, cultural and spiritual associations with their protected land and sea-scapes.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1.\tComplete national ecological gap assessment for protected areas",
+			"result": "Completed national ecological gap assessment for protected areas",
+			"cost": 850000
+		},
+		{
+			"activity": "2.\tComplete national protected areas management effectiveness assessment",
+			"result": "Completed national protected areas management effectiveness assessment",
+			"cost": 380000
+		},
+		{
+			"activity": "3.\tDevelop assessment and action plan for stakeholder engagement for key national PAs",
+			"result": "Fully developed action plan for stakeholder engagement for key national PAs",
+			"cost": 450000
+		},
+		{
+			"activity": "4.\tConduct national PA system sustainable funding gap analysis",
+			"result": "Completed national PA system sustainable funding gap analysis",
+			"cost": 200000
+		},
+		{
+			"activity": "5.\tManage for climate",
+			"result": "Implemented climate regulation strategies",
+			"cost": 700000
+		},
+		{
+			"activity": "6.\tProject oversight",
+			"result": "Strengthened management of national PAs",
+			"cost": 50000
+		}
+	],
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "Map 1",
+			"url": "http://www.cbd.int/database/attachment/?id=783"
+		},
+		{
+			"title": "Map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=784"
+		},
+		{
+			"title": "Map 3",
+			"url": "http://www.cbd.int/database/attachment/?id=786"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Philippines/Philippines LifeWeb_System level expression_v08July.doc"
+		},
+		{
+			"title": "Key Biodiversity Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=778"
+		},
+		{
+			"title": "National Integrated Protected Areas Systems Act",
+			"url": "http://www.cbd.int/database/attachment/?id=779"
+		},
+		{
+			"title": "Criteria and Guidelines for the Categorization of Protected Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=780"
+		},
+		{
+			"title": "Wildlife Act",
+			"url": "http://www.cbd.int/database/attachment/?id=781"
+		},
+		{
+			"title": "Critical Habitat Guidelines",
+			"url": "http://www.cbd.int/database/attachment/?id=782"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/Philippines/LifeWeb_Philippines_PA System.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Philippines/Philippines LifeWeb_System level expression_v08July.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 121.774017,
+		"lat": 12.879721,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/3BA8A051-6D1A-2056-74B6-9FAC2248F271/attachments/6181.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "3BA8A051-6D1A-2056-74B6-9FAC2248F271",
+		"documentID": 203777,
+		"createdOn": "2015-03-27T19:46:04.18",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:04.18",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11336,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:06 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/3BA8A051-6D1A-2056-74B6-9FAC2248F271",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 9843
+		}
+	}
+}

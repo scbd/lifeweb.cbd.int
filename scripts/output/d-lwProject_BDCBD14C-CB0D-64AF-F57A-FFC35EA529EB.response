@@ -1,0 +1,257 @@
+{
+	"header": {
+		"identifier": "BDCBD14C-CB0D-64AF-F57A-FFC35EA529EB",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "tz"
+		}
+	],
+	"title": "Island Life - A National Protected Area Network for the Zanzibar Archipelago",
+	"timeFrame": null,
+	"projectAbstract": "The aim of the project is to ensure the preservation of viable populations of all of Zanzibar endangered endemics in a cohesive and well-managed network of government and community protected areas. These will be linked by functional habitat corridors and supported by local communities that benefit economically, environmentally and culturally from the conservation of their natural heritage.",
+	"description": "Zanzibar currently has six government protected areas totaling 11, 960 ha, 828 ha of protected mangroves, and 14,247 ha designated as high protection zones under 36 Community Forest Management Agreements (CoFMA).  Thus, over 10% of Zanzibar’s total land area (245,000 ha) and 4% of its mangroves (20,000 ha) under some form of protection.  These areas are biologically important and economically vital for water catchment, carbon sequestration, traditional medicines and other non-timber forest products, soil fertility, and protection from coastal erosion (which is predicted to increase dramatically with climate change).  In addition, ecotourism is growing in Jozani-Chwaka Bay National Park (JCBNP), Kiwengwa-Pongwe Forest Reserve (KPFW) and Ngezi-Vumawimbi Nature Forest Reserve. Revenue sharing schemes are in place to ensure that revenues are both recycled back into the PAs for management purposes and shared with local communities.   <br/><br/>The main threats to these PAs and Zanzibar’s biodiversity are forest destruction and degradation due to cutting for firewood, charcoal production and building poles, and agricultural encroachment.  With its very high human population density (400 individuals/km2) which is increasing at an estimated rate of 3.1% per year, Zanzibar is currently losing approximately 1,000 ha (or 1.2%) of its remaining natural vegetation annually (DCCFF 2008).  Concomitant with forest loss is depletion in faunal biodiversity; for example, the Aders’ duiker population declined an estimated 88% in the 17 years between 1983 and 1999 (Swai 1983, Williams et al. 1996, Kanga 1999). Similarly, there have been sharp decreases in endemic bird populations such as Fischer’s Turaco, the Brown-Headed Parrot and the Pemba Owl.  Although some government and community managed forests have been established, they are ineffectively managed due to modest resources and low human capacity. They are increasingly threatened by fragmentation and isolation by a human population with limited alternative livelihood options.  <br/><br/>Our goal for Zanzibar is the persistence of viable populations of all of Zanzibar endangered endemics in a cohesive and well-managed network of government and community protected areas. These will be linked by functional habitat corridors and supported by local communities that benefit economically, environmentally and culturally from the conservation of their natural heritage.  To realize this goal we propose to implement effective management across a network of government and community managed PAs, expand the number of PAs to include all remaining forest patches that are important for the continued survival of Zanzibar’s natural heritage, restore connectivity among the PAs, build the capacity of communities and the forestry sector to manage PAs, explore sustainable financing mechanisms, and build public understanding of and support for PAs.",
+	"additionalInformation": "\n[participation]\nThe overall goal of this project is to develop an effective and nationwide PA network that combines both community and government PAs.  Communities will be involved in all steps of this process from zoning of forests into use zones, to drafting and implementing Community Forest Management Agreements (CoFMA), and monitoring their success.  Communities will benefit by the establishment of CoFMAs as this is a legally binding process, giving them the right to manage their lands.  They will further benefit from the sharing of tourism revenues from the adjacent government PAs. In addition, they will benefit from extensive capacity building to develop the skills necessary to develop and effectively manage PAs.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The proposed project coincides with the new Zanzibar National Forest Resources Management Plan (2009-2020) which emphasizes the conservation of forest PAs and establishment of a PA system to contribute to the welfare of communities while safeguarding biodiversity.  The proposed project also links with priorities identified in the Strategic Plan of the Zanzibar Ministry of Agriculture, Livestock and Environment (2005-2010) which emphasizes good governance to promote management of forest resources and lands in order to preserve soil, groundwater and improve fertility, and to enhance agricultural productivity.  In addition, the project will support the Zanzibar Vision 2020 which emphasizes the need to maintain and improve forest conservation with the aim of promoting and diversifying economic activities of the local community such as ecotourism in forest areas."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1.  A Zanzibar-wide PA network that incorporates all remaining conservation-priority forests into sustainably-managed government and community PAs linked by functional corridors.",
+			"result": "1.1  All remaining upland and mangrove forests important for biodiversity conservation identified, surveyed, mapped and placed under government or community management\r\n1.2  All corridors identified, surveyed, mapped and placed under government or community management"
+		},
+		{
+			"activity": "2.  Effective planning and management of the PA network to halt the loss of Zanzibar’s unique biodiversity.",
+			"result": "2.1  Management plans for all PAs developed or revised \r\n2.2  PAs managed as a connected system, and integrated into island-wide land use planning\r\n2.3  All PAs sufficiently staffed; staff trained and equipped \r\n2.4  Communities benefitting from PAs through employment and  ecotourism revenue sharing\r\n2.5  Effective law enforcement implemented\r\n2.6  Ecotourism management strengthened\r\n2.7  Potential additional sustainable finance mechanisms identified and evaluated",
+			"cost": 200
+		},
+		{
+			"activity": "3.  Standardized long-term ecological monitoring programs across the entire network of government and community PAs, that produce reliable, quantitative, scientific data on which to base and evaluate effective conservation management plans.",
+			"result": "3.1  An island-wide, standardized ecological monitoring program that covers all of the major remaining forests and wildlife populations on Zanzibar\r\n3.2  Sound scientific data used to evaluate and if necessary revise management (adaptive management)"
+		},
+		{
+			"activity": "4.  Improved community forest management through Community Forest Management Agreements (CoFMA), and equitable benefit sharing from government and community PAs.",
+			"result": "4.1  CoFMAs developed and implemented for all community forests \r\n4.2  Tourism revenue sharing continued and expanded to support effective management of community forests\r\n4.3 A few select environmentally friendly livelihood options supported and adopted\r\n4.4  Development of community woodlots supported\r\n4.5  Forest policies reformed to support community and joint management governance systems  (including, the Forest Resource Management and Conservation Act #10, 1996; and Forestry Policy Act, 1995)",
+			"cost": 200
+		},
+		{
+			"activity": "5.  Sufficient government and community capacity to design, implement, monitor and effectively manage a PA network; and heightened awareness of the importance of PAs for the long term survival of Zanzibar’s natural heritage, poverty reduction and sustainable development.",
+			"result": "5.1  Government and community PA capacity needs assessment completed\r\n5.2  Government staff  and community members trained in PA management,  ecological monitoring, and law enforcement\r\n5.3  All appropriate PA management technology transferred\r\n5.4  Increased understanding of and support for PAs among communities\r\n5.5  Increased public support for the adoption of alternatives to wood fuels particularly in the urban district.",
+			"cost": 900
+		}
+	],
+	"financialStability": "DCCFF and WCS are committed to a long-term partnership to fund and implement an island-wide PA network.  WCS currently funds and conducts ecological monitoring programs in JCBNP, KPFR and in 16 community forests, and is developing an Unguja Island PA network proposal (WCS-Tanzania Strategic plan 2002-2013).  DCCFF and WCS will continue to fundraise both individually and in partnership to achieve the goals outlined in this “Expression of Interest.”  In addition, this project will strengthen the management of the currently active sustainable finance scheme, ecotourism; and will explore the potential to develop additional PES projects, such as REDD.  Currently ecotourism revenue from the existing government PAs are (1) used in the management of the PA in which it was raised and (2) shared with local communities to help with implementation of CoFMAs.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "zanzibar picture 2",
+			"url": "http://www.cbd.int/database/attachment/?id=722"
+		},
+		{
+			"title": "zanzibar picture 3",
+			"url": "http://www.cbd.int/database/attachment/?id=723"
+		}
+	],
+	"maps": [
+		{
+			"title": "zanzibar map 1",
+			"url": "http://www.cbd.int/database/attachment/?id=726"
+		},
+		{
+			"title": "zanzibar map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=727"
+		},
+		{
+			"title": "zanzibar map 3",
+			"url": "http://www.cbd.int/database/attachment/?id=728"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Ecosystem Profile",
+			"url": "http://www.cbd.int/database/attachment/?id=717"
+		},
+		{
+			"title": "Strategic Framework",
+			"url": "http://www.cbd.int/database/attachment/?id=718"
+		},
+		{
+			"title": "Wildlife Conservation Society Tanzania Program: Strategic Plan 2009-2013",
+			"url": "http://www.cbd.int/database/attachment/?id=719"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=720"
+		},
+		{
+			"title": "Zanzibar agriculture strategic plan 2004",
+			"url": "http://www.cbd.int/database/attachment/?id=724"
+		},
+		{
+			"title": "Background Information",
+			"url": "http://www.cbd.int/database/attachment/?id=725"
+		},
+		{
+			"title": "Tanzania National Forest Management Plan",
+			"url": "http://www.cbd.int/database/attachment/?id=742"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Tanzania (United Republic)/LifeWeb Project Expression of Interest_Zanzibar_DCCFF_WCS_Aug09.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Tanzania (United Republic)/LifeWeb Project Expression of Interest_Zanzibar_DCCFF_WCS_Aug09.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": 39.416485,
+		"lat": -6.228855,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/350036"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/BDCBD14C-CB0D-64AF-F57A-FFC35EA529EB/attachments/4049.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "BDCBD14C-CB0D-64AF-F57A-FFC35EA529EB",
+		"documentID": 203736,
+		"createdOn": "2015-03-27T19:45:23.2",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:23.2",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 12527,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:25 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1022",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/BDCBD14C-CB0D-64AF-F57A-FFC35EA529EB",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 11368
+		}
+	}
+}

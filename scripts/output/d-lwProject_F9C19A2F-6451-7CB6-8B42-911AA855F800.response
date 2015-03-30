@@ -1,0 +1,293 @@
+{
+	"header": {
+		"identifier": "F9C19A2F-6451-7CB6-8B42-911AA855F800",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "Government of Burkina Faso (in-kind contribution) $US 200,000\nNational Office of Protected Areas (OFINAP) $US 150,000 \n",
+			"funding": 350000,
+			"dateTime": "1311897600000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "GEF-5 (STAR allocation)",
+			"funding": 200000,
+			"dateTime": "1311897600000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "bf"
+		}
+	],
+	"title": "Capacity Development of Territorial Collectivities for Sustainable Management of Protected Areas in the Context of Decentralization in Burkina Faso.",
+	"timeFrame": null,
+	"projectAbstract": "The implementation of the Programme of Work on Protected Areas (PoWPA) is expected to contribute to a deep analysis of the national protected areas (PAs) system in order to improve its participatory management, a political option set by the government for the conservation and sustainable use of natural resources.",
+	"description": "Burkina Faso is a Sahelian and Landlocked country, located in Western Africa in the Niger belt and at the border of the Sahara. The country covers an area of 273.187 sq km, bordering Mali in the North and West, Ivory Cost, Ghana, Togo and Benin in the South, and Niger in the East. Although the country does not have direct access to sea, it is deeply streamed in the Regional space, its territory being shared between the hydro graphic landscapes of Comoé, Niger, Nakambé and Mouhoun. <br/><br/>In terms of economy, the population well-being indicators are below the average vales of Africa. The Human Development Indicator is estimated at 0.342 (UNDP 2006) and the net income per capita is $400 dollars. It is ranked as a Least Developed Country.<br/><br/>In terms of  agro-climate, there are two (02) domains and four (04) sectors:<br/>The Sudanian domain includes:<br/>- The South Sudanian sector characterized by an average annual rainfall more than 900 mm. It is the most humid zone of the country, covering 36% of the total area and having 20 inhabitants per sq Km. It is also considered to be the destination area of migrants, mainly the Mossi and Fulani coming from the Northern part of the country. In these areas, the environment is threatened by the migration pressure and the extensive production systems;<br/>- The North Sudanian sector covering 33.7% of the total area with an annual rainfall varying from 750 to 900 mm. It represents 32% of the potential crop land with  50% of the population;<br/><br/>The Sahelian domain includes:<br/>- The strict Sahelian sector in the extreme North of the country characterized by an annual rainfall varying from 400 to 600 mm. It covers 11% of the country area. The population density is estimated at 5 inhabitants per sq km. It is mainly a pastoral zone;<br/>- The sub sahelian sector located between the North Sudanian and the Strict Sahelian sectors; its rainfall varies from 600 to 750 mm. The population density is estimated at 36 to 50 inhabitants per sq km, .corresponding to 19% of the total population. <br/><br/>Aware of the importance of the biodiversity conservation, the country ratified the Convention on Biological Diversity (CBD) in September 1993 and has set necessary instruments facilitating its implementation. Burkina Faso confirmed its perception of the importance of PAs as strategic areas for the conservation and sustainable use of biodiversity through its commitment to the Programme of Work on Protected Areas (PoWPA). This programme, hence, strengthens the country’s capacity in implementing its Strategy and Actions Plan on biodiversity. In addition the Project is in harmony with the general principles on decentralization, in particular the decentralization law N° 055-2004/AN of 2004 of December 24 adopted General Code of Territorial Collectivities in Burkina Faso, which sanctions the right of the territorial collectivities (areas and communes) to manage and manage freely their own businesses, in particular those linked to natural resources. <br/><br/>Despite the important efforts initiated with the support of its technical and financial partners, the civil society, the private and research sectors, the country is still facing a rapid population growth (2,4% per year), the current population (2006) being estimated at more than 13 millions  increasing pressure on land and related resources. The economy is mainly based on the exploitation of natural resources (agriculture, livestock, mining, traditional energy, etc.). This, in turn generated high pressure on these resources, which added to the climatic change cause an increasing erosion of the natural capital. Burkina Faso is facing important threats including land degradation, vegetation and forests degradation, climate change, reduction of the biodiversity capital and the accelerated development of urban environmental problems. The protected areas (PA) represent more than 16% of the territory, and constitute the biodiversity concentration areas in terms of species (fauna and flora) as well as ecosystems. The national PA system is a network of parks, total and partial reserves, gazetted forests and community reserves. The wildlife is composed of more than 128 mammalian species including more than 477 bird species and 60 reptiles and amphibians. Including, some emblematic ones such as Elephant (Loxodonta africana), lion (Panthera leo), buffalo (Syncerus caffer brachyceros) and roan antelope (Hippotragus equinus) are well represented. Forest land covers more than 16.620.000 Ha, including 880.000 Ha represent gazetted forests   (Parkan, 1986) which contribution to the GDP is estimated at 1%.<br/><br/>The threats and constraints to PA management system were identified and described in the PCGRFF and the CPP Documents. They are summarized in this section with reference to the results of the initial analysis PoWPA. There are three categories:<br/><br/>Threat 1: Agricultural encroachments <br/>More of 80% of the population of Burkina Faso lives on agriculture. The majority of PAs are located in the most agricultural endowed zones (East, South, South-West and West), and consequently are facing high pressure of agricultural land demand. The introduction of cash crops such as cotton using large areas has contributed to increase this deficit of cropland. The consequence is permanent risks of forests clearing for agriculture in the vicinity and more often within the PAs.<br/><br/>Farmers are still using extensive production systems and fire clearing while pastoralism remains the major livestock traditional production system. These production systems bring about erosion and land degradation around the PAs, hence increasing the vulnerability of the giving ecosystems. <br/><br/>Threat 2: Fragmentation of ecosystems by illegal and/or non rational exploitation, even excessive exploitation of natural resources <br/><br/>(Siltation) silting and pollutions of water resources:<br/>We noticed the utilization of more and more chemical products in some crops production (cotton and legumes) and non rational exploitation of lowlands and rivers during the dry season. These practices induce siltation and pollutions of water resources considered as the central points of the ecosystems balance in the PAs. <br/><br/>Transhumance and settlements:<br/>The migration of population to the vicinity of PAs is associated with important move of flocks and herds through transhumance or settlements. The majority of PAs are also located at borders of the country. Hence, they are continuously facing the consequences of transnational transhumance. This co-existence represents an important threat to PAS (disturbance of wildlife, competition over the use of feed resources, risks of zoonosis contamination, risks of poisoning of wild carnivores by herders, poaching, etc.).<br/><br/>Poaching:<br/>Poaching is still an important threat as favored by low operational capacity of the institutions in charge of PA management and also by the low income and limited alternatives among surrounding populations. Other factors like the easy availability of firearms, the development of numerous channels for the marketing of hunting products (bushmeat, wildlife by-products), and the high level of demand for bushmeat are also contributing. As a consequence, several species are threatened or disappeared.<br/><br/>Over exploitation of forest products: <br/>The excessive wood cutting continues to threaten severely the biodiversity of the PAs. The forest products concerned are wood, charcoal, and non timber products (fruits, leaves, roots, etc.) used for human, livestock feeding and handcraft. Several endemic species of the PAs are threatened by these exploitations. <br/><br/>The uncontrolled bush fires:<br/>Despite the efforts made by government to sensitize and raise awareness of all the population since 1980’, uncontrolled bush fires are still reported. Most of them occur towards the end of the dry season when vegetation is too dry. These types of fires have severe consequences of the capacity of resilience of biotopes and species and contribute to the destruction of a major part of small wildlife and micro fauna. <br/><br/>Threat 3: Acceleration of the degradation of the climate conditions  <br/>The climate change and variability add up to the consequences of unsustainable practices related to natural resources exploitation by local communities. The recurrent droughts, flooding decreasing rainfall and increasing temperature are threatening the populations’ livelihoods, species and ecosystems.<br/> <br/>The support of LifeWeb Initiative is expected to contribute to a deep analysis of the national PA system in order to improve its participatory management, a political option set by the government for the conservation and sustainable use of natural resources. The priority activities identified by stakeholders for this application are 3.1.2, 3.1.1, 1.1.4, 4.1.2, 2.1.2, 2.2.3, 2.2.4. It is expected that their effective implementation will contribute significantly to the management of forest and wild life resources as stated in the National Framework Programme (PCGDRFF, 2006-2015), and also the Institutional and legislative reform for the decentralized management of Natural resources (PRIJD-SF, 2006).",
+	"additionalInformation": "\n[participation]\nEconomic activities of more than 84% of the population depend on natural resources such as agriculture, livestock, forest products (traditional energy, non timber products), etc. In addition, the decentralization law confers to local community the responsibility to manage, conserve and sustainably use the natural resources of their territories. The sacred forests are initiated by the local communities and the project will help them to manage and conserve them. So, the local communities will not hesitate to participate in the activities of the best management of the protected areas for their interest, as the benefits arising from the project belong to them. For example, such benefits are among others :<br/>- The increase of the number of wild animals in the protected areas will make it possible for bordering populations to practice profitable village hunting,<br/>- The potentialities of non-wood products are many in the protected areas and the mobilization of the actors to develop them.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "This project is strongly linked with following development planning instruments:<br/><br/>- National Biodiversity Strategy and Action Plans ;<br/>- National strategy of accelerated growth and sustainable development ;<br/>- Priority actions of the strategic framework of fight against poverty ;<br/>- National policy of good governance ;<br/>- Law on Code of territorial collectivities ;<br/>- Guide for the creation of communal protected areas ;<br/>- National adaptation programme to climate change ;  <br/>- National action plan to combat desertification ; etc."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "3.1.2 Assess PA contributions to national economy",
+			"result": "Outcome 1: The important data on the contribution (current and potential) of PA to national economy and poverty reduction are available. This evaluation will be done in the most representative PAs types, specifically where detailed information exist already. This includes Park W, Hunting Zones of the East, ranching zones and Forest mainly managed for firewood provision."
+		},
+		{
+			"activity": "3.1.1 Identify enabling environment gaps",
+			"result": "Outcome 2:  All the protected areas have appropriate legal status. This focuses on protected areas which status are not conform to their current management regime. Examples are (i) Arly reserve which is actually managed as national park while having a legal status of total reserve, (ii) Tagou-Tandangou is a hunting zone integrated in the Arly complex while managed as official protected area, (iii) Sahelian sylvopastoral zone tailored for concessionaires (without,), village forests, sacred forests, ZOVIC, sanctuaries, refuges, etc"
+		},
+		{
+			"activity": "1.1.4 Assess governance types",
+			"result": "Outcome 3: New Communal PAs are set-up and effectively managed by decentralized local authorities (Regions and communes). It should be pointed out that the new decentralization law encourages every municipality to promote “municipal or regional protected areas”. But the local authorities have not capacity to perform such ambitions."
+		},
+		{
+			"activity": "2.2.2 Increase the participation of the local communities in protected areas management",
+			"result": "Outcome 4: Management of existing protected areas, such buffer zones, Communal PAs and, sacred forests ZOVIC, sanctuaries, refuges, is Strengthen"
+		},
+		{
+			"activity": "2.2.4 \nPromote an enabling environment (legislation, administrative and technical capacities) for the effective involvement of local communities and relevant stakeholders in decision making, and the development of their capacities and opportunities to establish and manage protected areas, including community-conserved and private protected areas.",
+			"result": "Outcome 5: The regulatory and technical capacity of political, administrative, leaders and actors of 13 administrative regions are developed for PAs (buffer zones, communal forests, sacred forests, ZOVIC) management"
+		},
+		{
+			"activity": "3.1.6 :  Identify and establish positive incentives that support the integrity and maintenance of protected areas and the involvement of local communities and stakeholders in conservation",
+			"result": "Outcome 6: The contribution of the protected areas to the means of subsistence of the populations living along the protected areas is increased through the effective management of the areas of conservation and the sustainable use of the biological resources (non wooden product, faunal and the development of the beekeeping"
+		}
+	],
+	"financialStability": "The national PA system (NPAS) covers an area of 4.3 million ha, representing nearly 16% of the territory. <br/><br/>There are developed setting-up sites managed by local populations, which contribute significantly to the conservation of biodiversity. They are known as village forests, sacred forests, ZOVIC, sanctuaries, refuges, etc. These areas are part of village or communes territories not totally identified nor gazetted. <br/><br/>In response to the insufficiency of financial resources to conduct an appropriate management of PAs, Burkina Faso has initiated an important political and legal reform which improved the involvement of private sector and local communities around the PAs. Twelve Unities of Wildlife Conservation (UCF) were identified in 1996  and a forestry code adopted in 1997. The forestry code defines the conditions of access and gives the legal background for the participation of private sector to PAs management contracts (Concessions). These UCF evolved recently into Unities of Protection and Conservation of Wildlife (UPC). Each UPC comprises one or several linked PAs. As such UPC are monitored and managed by a Conservator appointed by the government. However the effective management and commercial exploitation of the PAs are contracted to private companies (Concessionaries) which in return share the earnings with the government and local communities. <br/><br/>These reforms stress also the effective participation of all categories of stakeholders, specifically private sector and local communities based on the principles of equity and accountability regarding benefits sharing. In 2006, Burkina Faso has drafted a new programme (PCGDRFF) to more put the stress on practical orientations for the development of partnership “Government-Local communities-private sector”. <br/><br/>In 2008, a National Office for PAs was created (OFINAP). It is a public company set to contribute to ensure an effective management of the NPAS. The specific mandate of the OFINAP is to contribute to the implementation of the orientations from the National Forest Policy as stated in the PCGDRF. Its specific missions include :<br/>- To ensure the sustainable management of the forests Owned either by State or decentralized territories. <br/>- To enhance the participatory management of wildlife and forest resources,<br/>- To develop the partnership between Government, municipalities (decentralized territories bodies)and private sector,<br/>- To promote all type of wildlife and  forest management aiming at the reduction of poverty,<br/>- To establish a financial system adapted for the accomplishment of its missions.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "Carbon sequestration : by basing on studies done in Burkina Faso the capacity of detention of the carbon, which the project will generate on the whole territory will be of the order from 23 thunder / ha to 83 thunder / ha depending on climatic zones."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "The project will preserve and increase the socio-cultural manners of the protected areas and the products that they supply, in particular the tales and the legends, songs and poetries, masks, small business sector(crafts), customary utililasation of forests, etc.\t"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "The contribution of biological resources to the food safety (fruits, others comestibles organs of the trees, meat, fishes) to the nutrition will be safeguarded and increased."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "Fresh water stocks and flow will be protected and preserved by forests galleries."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": "The preservation of the biological variety of the protected areas will more allow the populations to insure their care with medicinal plants and medical products from animals."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "The tourism of vision and the sport tourism will be developed because of in the health found by the ecosystems and the diversity and the abundance of the wild fauna."
+		}
+	],
+	"images": [
+		{
+			"title": "Niangoloko Forest | Stefan Dressler                              ",
+			"url": "http://www.cbd.int/database/attachment/?id=1357"
+		},
+		{
+			"title": "Nahouri forest | Marco Schmidt ",
+			"url": "http://www.cbd.int/database/attachment/?id=1358"
+		},
+		{
+			"title": "Pama reserve | Marco Schmidt",
+			"url": "http://www.cbd.int/database/attachment/?id=1359"
+		}
+	],
+	"maps": [
+		{
+			"title": "The map below shows the latitude and the longitude coordinates of forest areas (green color) of Burkina Faso",
+			"url": "http://www.cbd.int/database/attachment/?id=1360"
+		},
+		{
+			"title": "situation des aires protegees ",
+			"url": "http://www.cbd.int/database/attachment/?id=1361"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Table I: Expected outcomes, indicators, risk and mitigation measures",
+			"url": "http://www.cbd.int/database/attachment/?id=1362"
+		},
+		{
+			"title": "Annex 1: PoWPA Initial Analysis in Burkina Faso",
+			"url": "http://www.cbd.int/database/attachment/?id=1356"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Burkina Faso/FINAL EOI Burkina Faso - 27-07-2011.pdf"
+		},
+		{
+			"title": "EOI 6754 - Burkina Faso - 27-07-2011",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1355"
+		}
+	],
+	"coordinates": {
+		"lng": -1.561593,
+		"lat": 12.238333,
+		"zoom": 7
+	},
+	"links": [
+		{
+			"name": "Wikipedia: List of protected areas of Burkina Faso",
+			"url": "http://en.wikipedia.org/wiki/List_of_protected_areas_of_Burkina_Faso"
+		},
+		{
+			"name": "Country study Burkina Faso  Biodiversity",
+			"url": "http://bch-cbd.naturalsciences.be/burkina/bf-eng/implementation/doc/monography/monography.htm"
+		},
+		{
+			"name": "Ministère de l'Environnement et du Cadre de Vie -Burkina Faso",
+			"url": "http://www.environnement.gov.bf/SiteEnvironnement/potentialites/airesconservation.html"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/F9C19A2F-6451-7CB6-8B42-911AA855F800/attachments/6754.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "F9C19A2F-6451-7CB6-8B42-911AA855F800",
+		"documentID": 203804,
+		"createdOn": "2015-03-27T19:46:36.853",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:36.853",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 22564,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:38 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/F9C19A2F-6451-7CB6-8B42-911AA855F800",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 21108
+		}
+	}
+}

@@ -1,0 +1,405 @@
+{
+	"header": {
+		"identifier": "96EE649F-CA1B-37C3-746A-1C2E12FD6AE6",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "ug"
+		}
+	],
+	"title": "Development of an independent Conservation Trust Fund supporting Uganda's protected area system",
+	"timeFrame": null,
+	"projectAbstract": "A coalition of Government, NGOs, and civil society organizations have come together to discuss the need to develop a mechanism for long-term financing of Uganda’s protected areas.  The group has recommended the creation of the Uganda Conservation Trust Fund (UCTF) that is independent of Government and which can generate the financial resources necessary to support the management of protected areas in Uganda.",
+	"description": "Since 1996, when the Uganda Wildlife Authority (UWA) was established, the management of the parks and reserves has significantly improved with contributions from donors in the form of technical and financial services.  Animal numbers are increasing steadily, particularly those species that were heavily poached in the late 1970s. Elephant numbers in Queen Elizabeth Park have recovered to their 1960s levels when they were at their highest. However, poaching remains a problem and as the animal numbers rise so does the illegal hunting. Conflicts between the animals and local people are also increasing as a result of rising animal numbers and greater demand for land. UWA needs to work with local communities to find adequate solutions to the conflicts while helping to improve local livelihoods. <br/><br/>UWA has begun to improve its revenue generating capability. Increased tourism investment and demand has raised tourism to the number one foreign exchange earner, resulting in higher levels of income that allow UWA to cover a greater portion of its operating expenses. Despite these advances, UWA is still not financially sustainable. About 75% of current operating costs are covered from gate receipts and concessions, however, current expenditures fall below the optimum required to achieve conservation success in accordance with the spending plans developed as part of the organization’s business plan. There is a need to ensure that past investment in the parks and reserves is not lost and that UWA has sufficient financial resources to continue to effectively manage the country’s protected areas. <br/><br/>The tourism market is fickle and can drop very quickly if there are any signs of insecurity or political instability both globally and nationally. There is a need for diverse sources of financial support that provide financial stability. The proposed UCTF would address this need by creating a financial source separate from UWA, but dedicated entirely to ensuring the financing of the protection of Uganda’s biodiversity.<br/><br/>The design of an independent trust fund that will help mobilize funds and provide financing for the entire protected area network follows effective models developed in other countries.  For example, Madagascar has recently established a trust fund to support the financing of the country’s PA system and trust funds such as PROFONANPE and the Bhutan Trust have for years directed their funding on a PA system wide basis, working in close collaboration with government agencies.  More than 50 independent trust funds (with boards independent of government but with government representation) currently operate to finance biodiversity conservation.  WCS has been involved in helping establish a variety of these, including the recently established Tri-National Sangha Fund (Cameroon, CAR and Congo) to finance protected area management in the tri-country region. These conservation funds finance strategic gaps and help PA managers invest and deliver better conservation outcomes.  Donors, private sector, and civil society prefer the accountability and transparency of these independent trusts, which allows them to attract funds and develop innovative financing schemes.",
+	"additionalInformation": "\n[participation]\nThe Trust Fund's main objective is to strengthen protected area management across the entire Uganda protected area system, and as such it aims to work actively with the communities surrounding the protected area network. Effective management of protected areas demands equitable sharing of costs and benefits with local communities. The business plans developed by UWA identify community-level investments that can ultimately benefit long-term conservation objectives. Specifically, the Trust Fund will support a diverse set of activities benefiting communities, such as:<br/><br/>- Improving management of existing Community Wildlife Areas<br/>- Promoting and co-financing of community-owned tourism enterprises<br/>- Addressing human-wildlife conflict (such as promoting animal-friendly agricultural practices, land use planning, alternative livelihoods)<br/>- Addressing human-wildlife disease issues, such as prevention, vaccinations, and disease treatment, monitoring<br/>- Promoting sustainable use of natural resources through better use and planning",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The initiative to establish and operate UCTF fits into various national planning strategies and links with priorities identified through other national sustainable development planning processes.<br/><br/>1. Uganda and CBD Programme of Work on Protected Areas (PoWPA): <br/>Aware of its commitment towards meeting the 2010 global target of significantly reducing the current rate of biodiversity loss, the government of Uganda has set aside 732 protected areas covering 32,067 km2 or 16.3% of the total land area. The National Biodiversity Strategy and Action Plan consolidates the initiatives taken this far and focuses future actions on the realization of the objectives of the Convention on Biological Diversity. <br/><br/>Uganda has submitted two proposals for the CBD Programme of Work on Protected Areas (PoWPA); these focus on assessing protected area governance (Activity 1.1.4) in Phase I, and on assessing protected area values (Activity 3.1.2) in Phase II. The consensus from the stakeholder consultations was that two issues stand out as the  most important – the need to promote the most suitable PA conservation approaches and corresponding governance types as well as valuation of the contribution of PA resources to national socio-economic development. Funding for the former was sought and has recently been approved by UNDP-GEF PoWPA Country Action Grants Programme (Phase I). The stakeholders who participated in the national workshop felt that, in order not to lose focus, the socio-economic valuation of the PA resources to national socio-economic development needed to be treated as a separate project with additional funding, which is the focus of Phase II. Hence, the LifeWeb proposal fills an important role in focusing on Sustainable Financing Mechanisms. <br/><br/>2. Uganda's other national planning and conservation context:<br/>Uganda has made great efforts to address biodiversity loss and ensure an effective national system of protected areas and natural resource management, for example through the National Biodiversity Strategy and Action Plan (NBSAP), Wildlife Protected Area System Plan, the National Forest Plan, the Wetlands Sector Strategic Plan and Forestry Nature Conservation Master Plan. These plans provide a framework to guide the setting of conservation priorities, channeling of investments and building of the necessary capacity for the conservation and sustainable use of biodiversity in the country."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Objective: Create the legal, governance and management structure for the Uganda Conservation Trust Fund.",
+			"result": "Effective legal and governance structures in place."
+		},
+		{
+			"activity": "2. Objective: Establish the fundraising, management and investment capacity to operate the UCTF.",
+			"result": "Effective management, grant making, and operations capacity in place."
+		},
+		{
+			"activity": "3. Objective: Establish the UCTF's granting procedure with an initial set of small grants.",
+			"result": "Small grants awarded and projects initiated."
+		}
+	],
+	"financialStability": "1. Counterpart funding and institutional commitment:<br/>The creation of the UCTF is spearheaded by the UWA with the Wildlife Conservation Society (WCS) playing key advisory role in the process. Both of these institutions have committed financial resources to fund UCTF start up expenses. A total of about $95,500 has been allocated for this project ($33,000 from UWA and $62,500 from WCS). Other entities (such as Uganda Investment Authority, Uganda Tourism Board, Bwindi Trust, Ecotrust and others) are being consulted or will become members of the Steering Committee to ensure broad stakeholder support.<br/><br/>2. Sustainable financing mechanism<br/>The UCTF will operate under a prudent financing scheme ensuring its long-term sustainability. While the initial management and administration costs will be funded by grants (such as LifeWeb), in the long term these expenses will be paid from the income generated by the Trust Fund’s return on investment, and the development of income generating activities that will allow resources to flow into the UCTF’s accounts and be managed for specific and targeted conservation activities. <br/><br/>Capitalization of the Trust Fund through donor outreach will be the UCTF’s major objective, so that it can generate the conservation funds needed from its investment income.  The income to UCTF will come not only from the investment of donor funds (both from public and private sources) but also through various entrepreneurial conservation finance mechanisms linked to Uganda's protected areas. Currently, UWA in collaboration with WCS is undertaking extensive business planning activity for its protected areas, which would assess these revenue-generating opportunities for each protected area. <br/><br/>Some examples and priorities are:<br/>- Additional user fees or taxes, that are earmarked for conservation of protected areas.<br/>- Conservation concessions which allow for a concessionaire to co-manage a designated protected area or a part of it.<br/>- Carbon finance projects that generate income from sales of credits to protect or rehabilitate forests in/around Uganda protected areas.<br/>- Biodiversity offset projects (e.g. oil industry in Uganda) whereby business pays to compensate for the impact on biodiversity, channeling those payments through the trust fund. <br/>- Biodiversity enterprises in or around protected areas (e.g., ecotourism).<br/>- Payments for ecosystem services, such as income from protecting watershed services, climate control and agricultural services. <br/>- Other options, such as biodiversity prospecting and debt-for-nature swaps will also be explored. <br/><br/>The UCTF structure will allow for flexibility to assure that the administration and management costs are transparent, optimal, and efficient so that UCTF realizes its mission with low administrative costs. For example, a donor may be willing to capitalize a separate endowment sub-account for the specific purpose of covering 100% of the Trust Fund's administrative and overhead costs, which would enable the Trust Fund to attract more donations by guaranteeing to future potential donors that none of their donations to the fund would be used to pay for its administrative costs. Sub-accounts may be set up to cover the costs in perpetuity for a specific protected area, allowing UWA to focus its resources on other areas.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "photo1",
+			"url": "http://www.cbd.int/database/attachment/?id=208"
+		},
+		{
+			"title": "photo 2",
+			"url": "http://www.cbd.int/database/attachment/?id=209"
+		},
+		{
+			"title": "photo 3",
+			"url": "http://www.cbd.int/database/attachment/?id=210"
+		},
+		{
+			"title": "photo 4",
+			"url": "http://www.cbd.int/database/attachment/?id=211"
+		},
+		{
+			"title": "photo 5",
+			"url": "http://www.cbd.int/database/attachment/?id=212"
+		},
+		{
+			"title": "photo 6",
+			"url": "http://www.cbd.int/database/attachment/?id=213"
+		},
+		{
+			"title": "photo 7",
+			"url": "http://www.cbd.int/database/attachment/?id=214"
+		},
+		{
+			"title": "photo 8",
+			"url": "http://www.cbd.int/database/attachment/?id=215"
+		},
+		{
+			"title": "photo 9",
+			"url": "http://www.cbd.int/database/attachment/?id=216"
+		},
+		{
+			"title": "photo10",
+			"url": "http://www.cbd.int/database/attachment/?id=217"
+		},
+		{
+			"title": "photo11",
+			"url": "http://www.cbd.int/database/attachment/?id=218"
+		},
+		{
+			"title": "photo12",
+			"url": "http://www.cbd.int/database/attachment/?id=219"
+		}
+	],
+	"maps": [
+		{
+			"title": "map1",
+			"url": "http://www.cbd.int/database/attachment/?id=206"
+		},
+		{
+			"title": "map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=207"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=204"
+		},
+		{
+			"title": "http://www.ugandawildlife.org",
+			"url": "http://www.ugandawildlife.org"
+		},
+		{
+			"title": "http://www.wcs.org/africa/uganda",
+			"url": "http://www.wcs.org/africa/uganda"
+		}
+	],
+	"coordinates": {
+		"lng": 32.660522,
+		"lat": 1.508249,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/1445"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313096"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1436"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1438"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9188"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/18437"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9187"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9181"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9190"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/7930"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313105"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313110"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9186"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313107"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1439"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9185"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9180"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1444"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/7934"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/40002"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/958"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1443"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1446"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1441"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9182"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313112"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/7932"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1437"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313109"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/28175"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/40630"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/956"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9177"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9189"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/354017"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/354016"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/64700"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1435"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/957"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/313108"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/18438"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9179"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9184"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/40042"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9178"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/1440"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9183"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/96EE649F-CA1B-37C3-746A-1C2E12FD6AE6/attachments/4051.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "96EE649F-CA1B-37C3-746A-1C2E12FD6AE6",
+		"documentID": 203739,
+		"createdOn": "2015-03-27T19:45:24.87",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:24.87",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 18154,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:26 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/96EE649F-CA1B-37C3-746A-1C2E12FD6AE6",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 15955
+		}
+	}
+}

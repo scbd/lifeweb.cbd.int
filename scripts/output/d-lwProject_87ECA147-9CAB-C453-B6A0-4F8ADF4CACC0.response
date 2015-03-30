@@ -1,0 +1,251 @@
+{
+	"header": {
+		"identifier": "87ECA147-9CAB-C453-B6A0-4F8ADF4CACC0",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "",
+			"funding": 500000,
+			"dateTime": "1319587200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "ci"
+		}
+	],
+	"title": "Renforcement du réseau d’aires protégées",
+	"timeFrame": null,
+	"projectAbstract": "Le présent projet est une contribution au renforcement du patrimoine des parcs et réserves notamment à travers, d’une part, l’amélioration de la gestion des parcs d’Azagny et des Ils Ehotilés de même que de leur érection en Aire Marine Protégée (AMP) et d’autre part, le classement des forêts sacrées en réserves naturelles volontaires.<br/><br/>Le Parc National d’Azagny (19.400 ha protection intégrale et zone tampon de 2.400 ha) et le Parc National des Iles Ehotilés 550 ha) sont situés en zone littoral incluant des lagunes adjacentes aux étendues marines. Le projet vise à renforcer les moyens et systèmes de gestion de ces parcs situés dans zone de fortes pressions anthropiques mais également, à les étendre en y intégrant les milieux marins indispensables au fonctionnement biologiques de plusieurs espèces (vivent dans la lagune ou la mer en fonction de certaines évolutions). Ceci permettra non seulement d’assurer la représentation effective tous les écosystèmes du pays dans le réseau de parcs et réserves mais aussi, d’accroître la superficie des aires protégées conformément aux objectifs assignés dans le contexte des OMD et de la stratégie nationale sur la diversité biologique. <br/><br/>5.549 aires sacrées pour une superficie de 96.434 ha ont été recensées en Côte d’Ivoire. Ces aires sont protégées par les populations locales généralement pour des pratiques cosmogoniques. Les inventaires fauniques et floristiques au révélé quelles abritent une biodiversité exceptionnelle. C’est pourquoi il parait essentiel aujourd’hui de les intégrer dans le réseau de parcs et réserves, à titre de réserves volontaires sous la responsabilité des populations qui les ont préservées. <br/><br/>Le projet permettra de mettre en œuvre, avec les populations, le dispositif idoine pour les intégrer dans le réseau officiel.",
+	"description": "Le projet de renforcement du réseau d’aires protégées vise à trouver des solutions durables à deux problématiques  majeures.<br/>La première concerne la protection des habitats marins. En effet, le littoral de la Côte d’Ivoire, densément peuplé, est particulièrement affecté et vulnérable. Les écosystèmes disparaissent du fait de la perturbation de processus naturels consécutive à l'exploitation anarchique des ressources (braconnage, exploitation forestière abusive, surpêche, pêche à l’aide de produits toxiques, etc.), à l'intensification de l'agriculture, à l'urbanisation, à la pollution, à l’aménagement inadapté des systèmes en amont (aménagement des cours d’eau, déboisement, rejets industriels et domestiques, etc.). <br/>La dégradation des habitats, la mauvaise utilisation des terres et les perturbations de la stabilité du substrat qui en résultent, sont le lot des problèmes inhérents à la zone littorale.  Les problèmes environnementaux majeurs identifies sont:<br/><br/>- Déclin qualitatif et quantitatif de l’ichtyo faune et l’exploitation anarchique des ressources biologiques;<br/>- Incertitudes concernant l’état de l’écosystème, son intégrité (variation dans la composition des communautés, vulnérabilité des espèces, introduction d’espèces étrangères), et son rendement dans un environnement hautement variable incluant les effets des changements climatiques;<br/>- Détérioration de la qualité de l’eau (chronique et catastrophique) due aux activités telluriques et marines, eutrophisation et proliférations algales;<br/>- Destruction et altération des habitats qui incluent entre autres les modifications des fonds marins et de la zone côtière, dégradation des paysages côtiers et l’érosion côtière.<br/><br/>Ces menaces qui pèsent sur les espèces et les écosystèmes n’ont cessé de prendre de l’ampleur. La disparition des espèces du fait des activités de l’homme se poursuit à un rythme alarmant. <br/><br/>Par ailleurs, l’on assiste, ces dernières années, à d’intenses activités d’exploration et d’exploitation pétrolière et gazière tout le long du littoral ivoirien, qui a intégralement fait l’objet de délimitation en blocs pétroliers de la part des services compétents du secteur des mines et de l’énergie ; toutes choses qui incitent à la définition en urgence d’un espace marin protégé pour la protection de la diversité biologique marine.<br/><br/><br/>La deuxième est relative à la sauvegarde de la biodiversité des forêts  sacrées.  A ce sujet, il faut préciser que la Côte d’Ivoire possède plus de 2000 forêts sacrées, réparties sur toute l’étendue du territoire. Malheureusement, celles-ci ne disposent pas de statut juridique de protection. Elles sont donc sujettes à diverses agressions et menaces: <br/><br/>- Exploitation forestière frauduleuse et agriculture extensive;<br/>- Conflits fonciers intercommunautaires;<br/>- Profanation;<br/>- Destruction des ressources naturelles;<br/>- Perte des valeurs culturelles;<br/>- Feux de brousse; etc.",
+	"additionalInformation": "\n[participation]\nCe projet sera un cadre d’échange et de collaboration entre les différents acteurs. Les populations locales seront particulièrement associées à la mise en œuvre du projet. Il permettra une meilleure intégration des préoccupations des populations locales dans la gestion des aires protégées en Côte d’Ivoire. L’ensemble des réserves volontaires créées à partir des forêts sacrées seront des réserves communautaires et donc  gérées directement par les populations autochtones.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Ce projet s’inscrit dans le cadre du Plan National d’Actions Environnementales (PNAE), de la politique forestière, de la Gestion Intégrée des Ressources en Eaux et du Programme Cadre de Gestion des Aires Protégées (PCGAP), la stratégie de gestion durable du littoral, le Plan d’action et la stratégie de gestion durable des éléments constitutifs de la diversité biologique (NBSAP), etc. Il est convergent avec la stratégie de Réduction de la Pauvreté (DSRP) et les OMD."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Études scientifiques et consultations des populations pour la délimitation consensuelle des l’aire marines protégées",
+			"result": "Les limites sont convenues avec toutes les parties prenantes et matérialisées sur le terrain",
+			"cost": 1000000
+		},
+		{
+			"activity": "Le statut juridique est adopté et partagé avec toutes les parties prenantes y compris tous les villages alentours",
+			"result": "Le décret portant statut et délimitation des l’aires protégées est disponible et connu des parties prenantes",
+			"cost": 100000
+		},
+		{
+			"activity": "Définition de plans d’aménagement des AMP et modalités de gestion avec les acteurs locaux, notamment ceux dont la survie est liée aux ressources biologiques",
+			"result": "Plan de gestion et modalités de gestion multipartites disponibles",
+			"cost": 200000
+		},
+		{
+			"activity": "Le personnel est formé et dispose de l’équipement  de base pour surveiller et mettre en œuvre les plans d’aménagement",
+			"result": "Le personnel est formé à la gestion d’une AMP\nL’équipement de base disponible les structures sont opérationnelles",
+			"cost": 1000000
+		},
+		{
+			"activity": "Classer les forêts sacrées en réserves  naturelles volontaires",
+			"result": "Les forêts sacrées sont classées en réserves naturelles volontaires",
+			"cost": 500000
+		},
+		{
+			"activity": "Élaborer avec les communautés concernées des plans de gestion",
+			"result": "Des modalités de gestion sont convenues",
+			"cost": 1200000
+		},
+		{
+			"activity": "Les agents des services déconcentrés des zones abritant les aires sont formés pour le dialogue et la cogestion avec les populations",
+			"result": "Les agents sont formés",
+			"cost": 200000
+		},
+		{
+			"activity": "Les aires protégées sont intégrés dans les plans de développement  des territoires concernés",
+			"result": "Les forêts sacrées disposent de plan de gestion",
+			"cost": 200000
+		}
+	],
+	"financialStability": "L’État de Côte d’Ivoire, à travers le Ministère de l’Environnement et du développement durable, est garante de la bonne conduite de ce projet. Il mettra à la disposition du projet, les ressources humaines nécessaires et contribuera à leur prise en charge.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "Les mangroves des Ils Ehotiles et du parc d’Azagny  favorisent la protection des berges contre l’érosion côtière et le contrôle des inondations."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "La mangrove contribue à la régulation de frayère et favorise l’approvisionnement en produits halieutiques;<br/>Les lagunes des différents parcs communiquent  avec la mer ce qui permet les migrations saisonnières/ journalières de la faune et, la régulation des végétaux aquatiques envahissants.<br/>"
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "Redynamisation des activités touristiques."
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Cote d'Ivoire/EOI Cote dIvoire - final 261011.doc"
+		},
+		{
+			"title": "EOI Côte d'Ivoire",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1487"
+		}
+	],
+	"coordinates": {
+		"lng": -4.8520636,
+		"lat": 5.2496695,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/145528"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/87ECA147-9CAB-C453-B6A0-4F8ADF4CACC0/attachments/6975.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Exécution",
+			"info": "Exécution",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Exécution",
+			"info": "Exécution",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Coordination",
+			"info": "Coordination",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "87ECA147-9CAB-C453-B6A0-4F8ADF4CACC0",
+		"documentID": 203809,
+		"createdOn": "2015-03-27T19:46:41.463",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:41.463",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11453,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:43 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/87ECA147-9CAB-C453-B6A0-4F8ADF4CACC0",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10317
+		}
+	}
+}

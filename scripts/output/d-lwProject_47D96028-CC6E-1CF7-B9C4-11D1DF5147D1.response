@@ -1,0 +1,317 @@
+{
+	"header": {
+		"identifier": "47D96028-CC6E-1CF7-B9C4-11D1DF5147D1",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 7000000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "1,000,000 (Conservation International Global Marine Fund - USD 0.463 million); Sabah Parks Core Funds (USD 0.417 million); Marine Research Foundation (USD 0.120 million)",
+			"funding": 1000000,
+			"dateTime": "631152000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Please note this Expression of Interest has been endorsed by the National Focal Points of Philippines and Malaysia.",
+	"countries": [
+		{
+			"identifier": "my"
+		},
+		{
+			"identifier": "ph"
+		},
+		{
+			"identifier": "id"
+		}
+	],
+	"title": "Promoting resiliency and sustainability, and protecting livelihoods in the Sulu Sulawesi Network of Protected Areas",
+	"timeFrame": null,
+	"projectAbstract": "This project will provide greater capacity at the local level to harmonise management interventions, develop effective communication strategies, and enable a broad spectrum of social and natural sciences research and monitoring activities in the Sulu Sulawesi Network of marine protected areas. The project will be strongly based on scientific and historic aspects of biodiversity encompassed within the Network of protected areas. At the same time, the strengthened capacity to effectively manage the protected areas, develop private-public partnerships to promote ecotourism, and carry out activities related to climate change adaptation and mitigation will safeguard livelihoods and culture across a wide geographical range. The project will design and adopt sustainable financing and business plans for the Network of protected areas, based on financing options that will consider payments for ecosystem services, such as business and biodiversity carbon offsets.",
+	"description": "The Sulu-Sulawesi marine eco-region is home to approximately one million people and provides income for over 30 million people at a greater regional level, with over one billion USD generated annually through extractive coastal fisheries. Tourism is the second largest revenue earner, particularly the ecologically-based, wildlife and seascape-dependent sectors. This marine region supports approximately 600 species of corals, over 1200 species of fish and most importantly five of the world’s seven species of sea turtles – the green, hawksbill, loggerhead, olive ridley and leatherback. Of these, the green and hawksbill turtles are by far the most abundant, with significant nesting and foraging assemblages. The region is also home to the endangered large herbivorous mammal, the dugong. The network of protected areas is situated at the western extreme of the Coral Triangle, creating suitable bio-geographical conditions within the region for maintenance and regulation of productivity in light of future impacts of climate change, making it one of the most important marine regions in the world.<br/><br/>Marine resources in the Sulu-Salawesi Seascape (SSS) are threatened through exhaustive fisheries, extensive and illegal unreported harvests of endangered species (including direct poaching of adults for the meat and curio trades – an alarmingly emerging trade link to China and Vietnam), habitat loss and degradation resulting from anthropogenic impacts and climate change, and coastal development. Recent estimates from Sabah alone demonstrate an annual by-catch of turtles of approximately >1000 turtles per annum. Importantly, livelihoods are threatened by decreasing returns in fisheries, impacted ecosystems and a loss of resiliency to climate change impacts.<br/><br/>Over the past several years concerted efforts have been made by the proposing project partners to substantially advance the conservation agenda in the SSS eco-region, resulting in the development of joint enforcement agreements and sustained monitoring and research activities. These activities have promoted cultural exchanges and capacity-building opportunities, and have introduced sustainable fishery methods in a limited geographical context. They have been supported by the Protected Areas Wildlife Bureau (DENR), WWF – Philippines, Conservation international – Philippines Sulu-Sulawesi Seascape Project, Sabah Parks, the National Plans of Action (NPOA) in the Philippines and Malaysia, and the Marine Research Foundation’s marine turtle programme, amongst others. Institutionally, regional conservation initiatives are enabled through the Turtle Islands Heritage Protected Area, the Coral Triangle Initiative RPOA, the Sulu-Sulawesi Marine Eco-region programme, BIMP-EAGA and the Joint Commission on Border Control. With the sheer number of people impacted by the declining environmental health and ecosystem values represented by the networked areas, the time is ripe for building on the successes of the past and promoting conservation of biological diversity through enhanced protected area networking. <br/> <br/>There is a pressing need for support to strengthen the management capacity of local authorities and communities, and to promote the management and understanding of biological resources based on a strong foundation of science and natural history. Protecting one aspect of a resource’s life cycle only to see it depleted elsewhere is counterproductive, much like unproductive farming. Indeed, the current network of protected areas, which has been developed for the Sulu Sulawesi and endorsed by the Tri-National Committee, was entirely designed based on the natural history of its biological resources, rather than management or convenience factors. <br/><br/>The benefits of this project will lead to greater conservation financing, improved protection of natural resources, sustainable resource utilisation, improved community well-being through jobs creation, improved living conditions (social infrastructure) and poverty alleviation. The project aims to increase government investment in the networked protected areas, to be a showcase for effective conservation and development through non-consumptive uses, and to improve security conditions in the region.",
+	"additionalInformation": "\n[participation]\nNot all protected areas within the Network have indigenous / local communities. Only the Turtle Islands Wildlife Refuge and the El Nido Tay-Tay Protected Area have local communities, which participate in the decision-making. The Tun Sakaran Marine Park in Malaysia has a local community, but management is mostly government-led. Elsewhere in Malaysia the protected areas are completely government driven. This project will adhere to provincial and municipal governance schemes in the Philippines, and include local communities in the planning and implementation of individual project components, as well as benefit-sharing. These may include participation in public-private tourism initiatives, resource access, alternative livelihood schemes and sustainable fisheries.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "This project supports the Vision and Policy of Malaysia’s NBSAB through conserving biological diversity and ensuring that its components are utilised in a sustainable manner for the continued progress and socio-economic development of the Nation. More specifically, the project addresses Objective 1 (optimising economic benefits through sustainable utilisation of biodiversity), Objective 3 (ensuring environmental stability and proper functioning of ecosystems), Objective 4 (preservation of environmental heritage) and Objective 5 (enhancing scientific and technical knowledge).<br/><br/>Similarly, it reflects key strategies of the Philippines NBSAP, particularly Strategy I (expanding and improving knowledge on the characteristics, uses and values of biological diversity), Strategy II (enhancing and integrating existing and planned biodiversity conservation efforts), Strategy IV (strengthening capacities for integrating and institutionalizing biodiversity conservation and management, Strategy V (mobilising and integrated information, education and communication), and Strategy VI (advocating stronger international cooperation)."
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "This project supports the Vision and Policy of Malaysia’s NBSAB through conserving biological diversity and ensuring that its components are utilised in a sustainable manner for the continued progress and socio-economic development of the Nation. More specifically the project addresses Objective 1 (optimising economic benefits through sustainable utilisation of biodiversity), Objective 3 (ensuring environmental stability and proper functioning of ecosystems), Objective 4 (preservation of environmental heritage) and Objective 5 (enhancing scientific and technical knowledge).<br/><br/>Similarly, it reflects key strategies of the Philippines NBSAP, particularly Strategy I (expanding and improving knowledge on the characteristics, uses, and values of biological diversity), Strategy II (enhancing and integrating existing and planned biodiversity conservation efforts), Strategy IV (strengthening capacities for integrating and institutionalizing biodiversity conservation and management,, Strategy V (mobilising and integrated information, education and communication), and Strategy VI (advocating stronger international cooperation)."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Conduct economic sustainability and climate change vulnerability assessments to formulate appropriate ecosystem-based adaptation plans (a climate-smart approach)",
+			"result": "The vulnerability assessment will help to identify people, property and resources that are at risk of injury, damage or loss from hazardous anthropogenic incidents or climatic change. Results from this process will help to determine and prioritise precautionary measures, ensuring that communities and habitats are more resilient and disaster-resistant. The process will include hazard identification, critical resources, societal, economic and environmental vulnerability, and mitigation opportunities.",
+			"cost": 640000
+		},
+		{
+			"activity": "Develop and implement an effective knowledge management and communication strategy within the Network of Protected Areas",
+			"result": "Effective management and coordination of information flows and storage, which are crucial to the success of the Protected Areas network, both in terms of achieving individual milestones and outcomes, in relation to biodiversity monitoring effectiveness, enforcement and streamlining management practices.",
+			"cost": 850000
+		},
+		{
+			"activity": "Identification and categorisation of ecosystem good and services (EGS)",
+			"result": "The marine ecosystems encompassed by this network provide hundreds of thousands of people with ecosystem goods and services (EGS), which directly or indirectly contribute to their well-being. This aspect of the project will assess the type and value of these ecosystem services and the natural assets that provide them, which in turn will highlight the opportunities for enhanced governance and use.",
+			"cost": 760000
+		},
+		{
+			"activity": "Building capacity amongst sites for enhanced enforcement effectiveness",
+			"result": "Sites are financially sustainable, resource-equipped, linked in with domestic enforcement agencies and able to address domestic and international enforcement issues.",
+			"cost": 460000
+		},
+		{
+			"activity": "Develop baseline data sets and protocols for monitoring impacts of climate change on coral reefs and marine turtle populations",
+			"result": "The developed mechanisms will enable each site to effectively monitor biological indicators, which reflect the impacts of climate change on climate-dependent biodiversity, such as marine turtles (temperature-dependent sex) and coral reefs (bleaching).",
+			"cost": 380000
+		},
+		{
+			"activity": "Refine and, where appropriate, develop and implement standardised research and monitoring protocols to ensure adequate biological resource information needs for effective and appropriate management interventions",
+			"result": "Sites are able to conduct periodic and timely (cost and resource-efficient) monitoring of biological attributes, which are relevant to current management needs based on sound biology and science, and the life history of biodiversity impacted by climate change and anthropogenic stresses.",
+			"cost": 220000
+		},
+		{
+			"activity": "Develop private-public partnership models to promote ecotourism that support effective and sustainable management of the network of protected areas",
+			"result": "At least two pilot models will be trialed within the Network to ensure the conservation of biological resources without negative impacts on livelihoods. These models will be used to drive private-public partnerships in other sectors of the Network.",
+			"cost": 440000
+		},
+		{
+			"activity": "Promote sustainable fishery methods in areas where fishing is permitted or in adjacent areas where fisheries threaten the biological attributes of the protected areas Network.",
+			"result": "Trawl fisheries in the region are introduced to TEDs and other sustainable fishery technology and endangered species are protected through joint initiatives.",
+			"cost": 250000
+		}
+	],
+	"financialStability": "In addition to the secured funding mentioned above, this project complements the (approved and started) UNDP/GEF Sulu-Celebes Sea (SCS) Sustainable Fisheries Management Project between the Governments of Malaysia, Philippines and Indonesia. The Sulu-Celebes Sea Sustainable Fisheries Management Project aims at developing economically and ecologically sustainable marine fisheries in the SCS, to benefit communities who are dependent on these resources for livelihood. The global community will benefit as well in light of the conservation of highly diverse marine ecosystems and its ecosystems services by improving the conditions of fisheries and their habitats in the SCS through an integrated, collaborative and participatory management at the local, national and tri-national levels. <br/><br/>Sabah Parks and DENR-PAWB are government agencies with longstanding funding commitments by Malaysia and Philippines governments respectively. CI-Philippines has secured funding for a limited regional involvement through the Walton Foundation and through core funds, while MRF contributes expertise and resources on an in-kind basis. It is envisioned that the activities of this project will develop partnerships and funding strategies, ensuring financial sustainability and ecosystem resilience of the protected areas, reducing the negative impacts of climate change, unsustainable resource use and habitat degradation.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "While there is controversy around carbon sequestration and coral reefs (with scientists claiming they can act as sinks and as emitters), given the right conditions, a substantial proportion of carbon is sequestered by reefs – even if at the same time other carbon is released into the atmosphere. We argue that in the absence of reefs all of this carbon would be released into the atmosphere, and that reefs act as an important geological buffer to the earth’s climate. The project will also investigate ways to contribute to the Blue Carbon Initiative, taking into account that resilient marine ecosystems do not only play a crucial role in binding carbon, but also contribute to economic development, food security, social wellbeing, and provide important buffers against pollution, and extreme weather events."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "picture1",
+			"url": "http://www.cbd.int/database/attachment/?id=806"
+		},
+		{
+			"title": "picture2",
+			"url": "http://www.cbd.int/database/attachment/?id=807"
+		},
+		{
+			"title": "picture3",
+			"url": "http://www.cbd.int/database/attachment/?id=808"
+		},
+		{
+			"title": "picture4",
+			"url": "http://www.cbd.int/database/attachment/?id=809"
+		},
+		{
+			"title": "picture5",
+			"url": "http://www.cbd.int/database/attachment/?id=810"
+		}
+	],
+	"maps": [
+		{
+			"title": "map",
+			"url": "http://www.cbd.int/database/attachment/?id=804"
+		}
+	],
+	"coordinates": {
+		"lng": 101.975766,
+		"lat": 4.210484,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/71271"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9812"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/198330"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/793"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/47D96028-CC6E-1CF7-B9C4-11D1DF5147D1/attachments/6200.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Project Partner",
+			"info": "Project Partner",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Project Partner",
+			"info": "Project Partner",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Project Partner",
+			"info": "Project Partner",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Key Implementin",
+			"info": "Key Implementing Agency",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Key Implementin",
+			"info": "Key Implementing Agency",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Key Implementin",
+			"info": "Key Implementing Agency",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Lead Agency",
+			"info": "Lead Agency",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "47D96028-CC6E-1CF7-B9C4-11D1DF5147D1",
+		"documentID": 203780,
+		"createdOn": "2015-03-27T19:46:06.727",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:06.727",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 19045,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:08 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/47D96028-CC6E-1CF7-B9C4-11D1DF5147D1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 17412
+		}
+	}
+}

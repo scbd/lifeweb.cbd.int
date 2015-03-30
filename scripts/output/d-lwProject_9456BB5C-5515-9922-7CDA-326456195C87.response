@@ -1,0 +1,287 @@
+{
+	"header": {
+		"identifier": "9456BB5C-5515-9922-7CDA-326456195C87",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "19E951FE-9805-7011-BE9B-9F7352483B9C"
+			},
+			"description": "State budget planned in the Medium Term budget for 2014-2016",
+			"funding": 100000,
+			"dateTime": "1396310400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "al"
+		}
+	],
+	"title": "Rehabilitation and integrated management of Lura National Park",
+	"timeFrame": 3,
+	"projectAbstract": "For many years Lura National Park, designated since 1996, has been under a constant pressure and threat by a number of factors. The main factor and the most negative impacts on the park has been the human activity, over-exploitation of natural resources especially forests and the negative impacting on the entire ecosystem. Being an important area of special biodiversity values this sites’ rehabilitation and integrated management is a priority in the wider context of achieving the sustainable use and conservation of natural resources to be able to reach Aichi targets of the CBD.",
+	"description": "National Park Lura is designated since 1996, by a Governmente Decree no. 96, dated 21.11.1996 as Forest national park, with an area of 1280 hectares. National Park “Lura”, is situated in Dibra Qark (county), in Dibra District and in Lura Commune. <br/>It is considered amongst the rarely and special beauty of Albanian’s nature. It has high scientific, tourism, recreation, economic and social value; an international biodiversity value, diverse habitats, vegetation types and animal species, and a variety of ecosystems as natural forests, meadow and glacier lakes.<br/><br/>The project goal is to rehabilitate and ensure integrated management of Lura National Park, to protect biodiversity and natural specific characteristics and unique values of habitats and species of flora and fauna, representative qualities, aesthetic and historical and cultural use territory sustainable, tourism, research and opportunities to educate and raise awareness, by integrating them with the ecological, economic, social and cultural goals.<br/><br/>Among major activities of the project will be the design of the rehabilitation plan and implementation of this plan.<br/><br/>Thus, forests and vegetation are cut and burned several times, habitats and species of flora and fauna are destroyed, altered or highly vulnerable to extinction, some water sources have dried up, are impinged water surfaces of lakes, etc., hence erosion is advancing and growing. These phenomena and human activities are leading to the devaluation of natural, biological and eco-touristic park and beyond.<br/><br/>Preservation of Protected Areas is an obligation of Albania from the national legal framework and international commitments in the field of nature conservation and biodiversity. As a party to a number of international conventions, Albania has its obligation and responsibility to meet such demands. Through the implementation of this project it will be aimed simultaneously the increase of living standard of the population, promoting the sustainable development of the environment and natural and cultural resources and achieving the objectives, policies of the EU,  as well as national and local ones. Improving the situation in the park territory is more than necessary at the moment<br/>Based on the relief, geographical position and climatic conditions, livestock and farming are not considered as developed, although people have a tradition on these. Economic and social development generally relies on traditional management of many natural resources of the area.<br/><br/>The park's vegetation consists mainly of beech, fir and Macedonian pine, represenatives of the Alpine area. In this area there are different coniferous and vegetation gatherings, that makes this mountain massive important in terms of biodiversity values of Albania such as beech (Fagus silvatica), Pine (Pinus heldreichii), Fir (Abies alba), Black pine (Pinus nigra) and sometimes European yew (Taxus baccata), are examples of shrubs Daphne (Daphne mezereum), blueberries (Vaccinium myrtilius) and heather (Erica carnea).<br/><br/>The combination of floristic values with those of landscape make the park and other areas around it, from the environmental point of view, one of the famous ecosystems in comparison with other mountain ecosystems of the country.<br/><br/>Within the Park’s territory there are famous lakes such as: Flower Lake, Black Lake, Grand Lake,which are also declared Nature Monuments (Cat. III IUCN).<br/>Lura is known for wild fauna diversity. In the Parks‘ massive find shelter many species of mammals such as the hedgehog (Erinaceus europeus), mole (Talpa europea), Bats (Chiroptera), Forest Mouse (Apodemus sylvaticus), squirrel (Sciurius vulgaris), lynx (Lynx lynx), otter (Lutra lutra), Brown bear (Ursus arctos) etc.<br/><br/>The park’s fauna is typical for the mountainous area. The main species occurring there are bear (Ursus actos), wolf (Canis lupus), lynx (Felis lynx), wild goat (Rupicapra rupicapra), roebuck (Capreolus capreolus), wild boar (Sus scrofa) etc. The birds are represented by the eagle (Aquila chrysaetos), capercaille (Tatrao urogallus), falcon (Falco sp), etc. The reptiles and amphibians include the beauty of the land (Salamandra salamandra), the alpine’s triton, the yellow belly frog, the wood frog, the arrow and big water snake etc. The park has also many picturesque landscapes. The strong glacial activity has brought the creation of circuses and glacial lakes surrounded by high mountains covered by meadows and forests, with amazing views, and important species as the water lily (Nymphaea alba and Nymiphaea luteum), with a white into yellow color. A magnificent and contemplative view has also the Pela’s highlands field, with a variegated flora, multi-colored flowers and surrounded with centennial woods. Also, the water resources are amazing, including creeks, the canyons and permanent and temporary waterfalls. Apart the economic and scientific value, the park has great aesthetic, landscape and tourism values preferred by the local and foreign visitors. Natures and biological richness, the landscape beauties offers great potential for the eco-tourism’s development, as a very important resource for the income generation of local communities, which mainly takes care of stock-breeding. In proximity of the park are located the villages of Fushë-Lurë, Gurrë-Lurë, etc, very picturesque and appropriate for traditional activities and products requested by the visitors and tourist. The inhabitants in general take care for agriculture, forestry, stock-breeding and handcrafts production. Many of the richest nature resources are not used by the community for the familiar tourism and cultural development. The park is not very visited by the visitors because of the damaged infrastructure and for the lack of the services. The economic and social conditions have forced the inhabitants to leave, which is not in the park’s administration interest and not good for the development of the tourism.",
+	"additionalInformation": "\n[participation]\nIn case of Albania the participation of local communities in the preparation of the management plan with the participatory approach principle is seen as very important. Local communities involvement is an obligation of the national legislation. More over if the park is properly managed local communities become interested as it provides additional sources of income from the sustainable use of biodiversity components of the park.\n[governance]\nProtected Areas administrations in Albania are undergoing an institutional reform. Therefore the project implementation will have an impact on the revised and updated structures.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The Environment Cross-cutting Strategy states the overall objective for all Protected Areas to have a Management Plan in medium term – meaning within 2015. The second stage is the implementation of Management plans in order to ensure the integrated management of the park which in long term is translated in sustainable management of natural resources and to ensure the favourable conservation status of species and habitats."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "The existing NBSAP of 2000 (currently under revision and update) has identified Lura National Park amongst other Protected Areas, for which Management Plans need to be prepared. However as the result of human and financial constraints this measure is not implemented.<br/><br/>Meanwhile the Programme of Work on Protected Areas has identified, as one of the areas in great need of rehabilitation due to several factors – the most important of which is the illegal logging inside the Park area.<br/>Implementation of the Management Plan of Lura NP will contribute to achieve the favourable conservation status of species and habitats and will also increase the coverage of protected areas in the country."
+		}
+	],
+	"budget": [
+		{
+			"activity": "Rehabilitation and reforestation  of the National Park",
+			"result": "Area covered by Lura NP re-forested and rehabilitated"
+		},
+		{
+			"activity": "Elaboration of the management Plan for Lura NP",
+			"result": "Management Plan prepared and approved"
+		},
+		{
+			"activity": "Integrated management of Lura NP through the implementation of the Management Plan",
+			"result": "Measures and activities of MP implemented in practices"
+		}
+	],
+	"financialStability": "The Ministry of the Environment of Albania is committed to pursue the matter of Protected Areas integrated management that will help to achieve the goals and objectives of nature and biodiversity protection and sustainable use in the country. The rehabilitation of Lura NP and the implementation of its Management plan will ensure the proper conservation of biodiversity in the Parks’ area. This way the effective management of Lura NP will create the premises for a long-term sustainability of natural resources and in the same time be a source of income for the parks administration. Sustainable development principles will bring the long-term survival and species and habitats within its boundaries. Implementation of the management plan will create also mechanisms for income generation from visitors’ as well as other activities that will be detailed in the plan.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "Reforestation will contribute to the carbon sequestration increase."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "The Management Plan will envisage new measures including the cultural ones like the brand products of the area."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "Integrated management will ensure the development of bio products as well as sustainable development of pastures."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "A properly managed National park will provide additional income for the local communities living in the area"
+		}
+	],
+	"aichiTargets": [
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-11"
+			},
+			"comment": "Ecological Studies to be conducted in the frame of the project will identify and assess the potential need for the enlargement of the boundaries of the existing Park. The Management Plan to be prepared under the project will include the ecological study on potential enlargement of the NP boundaries. The Management Plan after elaboration and extended consultation with stakeholders will be approved by the Minister of the Environment in accordance with the national legal framework."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-12"
+			},
+			"comment": "Again there is a direct contribution as there are many identified threatened species in Lura National Park area. In the park territory are grown many rare and threatened plants, endemic and sub endemic plants such as Forsythia europaea, Brachypodium albanicum, Digitalis lutea, Gentiana lutea, Hypericum perforatum, Oreganum vulgare van, the orchid (Orchis sp), Numphaea alba, Nyphan luteum, etc. Threatened fauna species include the bear (Ursus actos), lynx (Felis lynx), the wild goat (Rupicapra rupicapra), the roebuck (Capreolus capreolus), the wild boar (Sus scrofa) etc. and brid species like: the eagle (Aquila chrysaetos), capercaille (Tatrao urogallus), falcon (Falco sp) etc."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-13"
+			},
+			"comment": "Genetic diversity of species living in the area would be carefully studied and analyzed in the course of the project."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-15"
+			},
+			"comment": "This proposed project will help achieve Aichi Biodiversity Target 15 through the rehabilitation and restoration of around 800 hectares”. Concrete activities will include the actual assessment of forest habitats, reclassification od degraded areas, cleaning and opening of the forest roads to the park, designation of parcles with tree species to be planted that will be followed by the real action of reforestation of around 600 of forest habitat with species that have been previously there in the park such as black pine (Pinis nigra), Pinus heldreichii, Pinus leucodermis etc. "
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-05"
+			},
+			"comment": "The contribution of this project toward Aichi target 5 is direct as Lura is a mountainous National Park situated in the northern part of the country. In concrete terms as the area has experienced severe damage from illegal logging activities the re-forestation will create the premises for the rehabilitation of the Park therefore contributing to ensure the favourable conservation status of forest habitats and the global target to 2020."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-09"
+			},
+			"comment": "The Management Plan will consider the issue of potential invasive alien species in Lura NP."
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/images/lifeweb/eoi/docs/23990.doc"
+		},
+		{
+			"title": "Map - Emerald Network Proposed Sites",
+			"url": "http://www.cbd.int/doc/lifeweb/albania/albania_final.jpg"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/albania/Endorsement letter life web EoI Lura NP Albania.jpg"
+		},
+		{
+			"title": "Lura NP pictures",
+			"url": "http://www.cbd.int/doc/lifeweb/albania/Lura NP pictures (2).doc"
+		},
+		{
+			"title": "Network of Protected Areas in Albania",
+			"url": "http://www.cbd.int/doc/lifeweb/albania/Network of Protected Areas in Albania.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": ""
+		}
+	],
+	"coordinates": {
+		"lng": 20.193867199122906,
+		"lat": 41.763990601913385,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/9456BB5C-5515-9922-7CDA-326456195C87/attachments/23990.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Ismail Hysa Gez",
+			"info": "Ismail Hysa Gezim Bruçi\t\nKoder-Kamez\t\nIsmail_hysa@yahoo.com\t   \t\nAssociation “Ecological& Touristic Environment Lura”"
+		},
+		{
+			"partner": "Hakik Gjokola \n",
+			"info": "Hakik Gjokola \nHead of Lura Commune \t\nLura Commune, Diber"
+		},
+		{
+			"partner": "Ferit Mena\nLura",
+			"info": "Ferit Mena\nLura National Park administration\t\t\t\nDirectorate of Forestry Service Diber"
+		},
+		{
+			"partner": "Agron Daci\t\nLur",
+			"info": "Agron Daci\t\nLura Commune, Diber\t      \ndiberdshp@yahoo.com                              \t\n+ 355 672055090\t\nDirectorate of Forestry Service Diber"
+		},
+		{
+			"partner": "Odeta Çato\nMini",
+			"info": "Odeta Çato\nMinistry of the Environment, Biodiversity Directorate\t\nRruga e Durresit, no.27\t\nOdeta.Cato@moe.gov.al\t\n+ 355 4 2243578"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "9456BB5C-5515-9922-7CDA-326456195C87",
+		"documentID": 203704,
+		"createdOn": "2015-03-27T19:44:49.327",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:49.327",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 16900,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {
+			"en": "Rehabilitation and integrated management of Lura National Park"
+		},
+		"summary": {
+			"en": "National Park Lura is designated since 1996, by a Governmente Decree no. 96, dated 21.11.1996 as Forest national park, with an area of 1280 hectares. National Park “Lura”, is situated in Dibra Qark (county), in Dibra District and in Lura Commune. <br/>It is considered amongst the rarely and special beauty of Albanian’s nature. It has high scientific, tourism, recreation, economic and social value; an international biodiversity value, diverse habitats, vegetation types and animal species, and a variety of ecosystems as natural forests, meadow and glacier lakes.<br/><br/>The project goal is to rehabilitate and ensure integrated management of Lura National Park, to protect biodiversity and natural specific characteristics and unique values of habitats and species of flora and fauna, representative qualities, aesthetic and historical and cultural use territory sustainable, tourism, research and opportunities to educate and raise awareness, by integrating them with the ecological, economic, social and cultural goals.<br/><br/>Among major activities of the project will be the design of the rehabilitation plan and implementation of this plan.<br/><br/>Thus, forests and vegetation are cut and burned several times, habitats and species of flora and fauna are destroyed, altered or highly vulnerable to extinction, some water sources have dried up, are impinged water surfaces of lakes, etc., hence erosion is advancing and growing. These phenomena and human activities are leading to the devaluation of natural, biological and eco-touristic park and beyond.<br/><br/>Preservation of Protected Areas is an obligation of Albania from the national legal framework and international commitments in the field of nature conservation and biodiversity. As a party to a number of international conventions, Albania has its obligation and responsibility to meet such demands. Through the implementation of this project it will be aimed simultaneously the increase of living standard of the population, promoting the sustainable development of the environment and natural and cultural resources and achieving the objectives, policies of the EU,  as well as national and local ones. Improving the situation in the park territory is more than necessary at the moment<br/>Based on the relief, geographical position and climatic conditions, livestock and farming are not considered as developed, although people have a tradition on these. Economic and social development generally relies on traditional management of many natural resources of the area.<br/><br/>The park's vegetation consists mainly of beech, fir and Macedonian pine, represenatives of the Alpine area. In this area there are different coniferous and vegetation gatherings, that makes this mountain massive important in terms of biodiversity values of Albania such as beech (Fagus silvatica), Pine (Pinus heldreichii), Fir (Abies alba), Black pine (Pinus nigra) and sometimes European yew (Taxus baccata), are examples of shrubs Daphne (Daphne mezereum), blueberries (Vaccinium myrtilius) and heather (Erica carnea).<br/><br/>The combination of floristic values with those of landscape make the park and other areas around it, from the environmental point of view, one of the famous ecosystems in comparison with other mountain ecosystems of the country.<br/><br/>Within the Park’s territory there are famous lakes such as: Flower Lake, Black Lake, Grand Lake,which are also declared Nature Monuments (Cat. III IUCN).<br/>Lura is known for wild fauna diversity. In the Parks‘ massive find shelter many species of mammals such as the hedgehog (Erinaceus europeus), mole (Talpa europea), Bats (Chiroptera), Forest Mouse (Apodemus sylvaticus), squirrel (Sciurius vulgaris), lynx (Lynx lynx), otter (Lutra lutra), Brown bear (Ursus arctos) etc.<br/><br/>The park’s fauna is typical for the mountainous area. The main species occurring there are bear (Ursus actos), wolf (Canis lupus), lynx (Felis lynx), wild goat (Rupicapra rupicapra), roebuck (Capreolus capreolus), wild boar (Sus scrofa) etc. The birds are represented by the eagle (Aquila chrysaetos), capercaille (Tatrao urogallus), falcon (Falco sp), etc. The reptiles and amphibians include the beauty of the land (Salamandra salamandra), the alpine’s triton, the yellow belly frog, the wood frog, the arrow and big water snake etc. The park has also many picturesque landscapes. The strong glacial activity has brought the creation of circuses and glacial lakes surrounded by high mountains covered by meadows and forests, with amazing views, and important species as the water lily (Nymphaea alba and Nymiphaea luteum), with a white into yellow color. A magnificent and contemplative view has also the Pela’s highlands field, with a variegated flora, multi-colored flowers and surrounded with centennial woods. Also, the water resources are amazing, including creeks, the canyons and permanent and temporary waterfalls. Apart the economic and scientific value, the park has great aesthetic, landscape and tourism values preferred by the local and foreign visitors. Natures and biological richness, the landscape beauties offers great potential for the eco-tourism’s development, as a very important resource for the income generation of local communities, which mainly takes care of stock-breeding. In proximity of the park are located the villages of Fushë-Lurë, Gurrë-Lurë, etc, very picturesque and appropriate for traditional activities and products requested by the visitors and tourist. The inhabitants in general take care for agriculture, forestry, stock-breeding and handcrafts production. Many of the richest nature resources are not used by the community for the familiar tourism and cultural development. The park is not very visited by the visitors because of the damaged infrastructure and for the lack of the services. The economic and social conditions have forced the inhabitants to leave, which is not in the park’s administration interest and not good for the development of the tourism."
+		},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:44:51 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "7150",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/9456BB5C-5515-9922-7CDA-326456195C87",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 15511
+		}
+	}
+}

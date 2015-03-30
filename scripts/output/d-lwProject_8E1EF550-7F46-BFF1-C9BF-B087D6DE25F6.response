@@ -1,0 +1,268 @@
+{
+	"header": {
+		"identifier": "8E1EF550-7F46-BFF1-C9BF-B087D6DE25F6",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "lr"
+		}
+	],
+	"title": "Support to the Liberian Protected Area Network through Strengthening Management Capacity and Livelihood Support",
+	"timeFrame": null,
+	"projectAbstract": "Though relatively intact, the Sapo National Park, Grebo National Forest, Grand Kru-River Gee National Forest, East Nimba Nature Reserve and the Lake Piso Sustainable Multiple Use Reserve face serious threats from illegal and unsustainable logging, unsustainable farming and illegal extraction of natural resources. The aim of this project is to strengthen the management of the existing protected areas and support the establishment of proposed protected areas and national parks in Liberia.",
+	"description": "There are several threats to the conservation of biodiversity in protected areas of Liberia. The long civil war endured by Liberia in the past has meant that conservation actions have been given a low priority in recent years. Nonetheless, it is well documented that forested areas and local wildlife suffer from anthropogenic activities, such as the illegal and unsustainable logging, unsustainable farming, illegal extractive resource use such as mining and the bushmeat trade. Though relatively intact, Sapo National Park and Grebo National Forest as well as East Nimba Reserve and Lake Piso Sustainable Multiple Use Reserve face imminent threats from the increasing influx of human population in the respective regions and the aforementioned anthropogenic activities that come along with this. Recent surveys carried out by the Forestry Development Authority and the WCF around e.g. Sapo NP highlight the range of these threats in the region.<br/><br/>Spread across the Liberian-Ivorian border, lies the Taï-Sapo Forest Complex, a region of very high levels of biodiversity and endemism. In October 2009, the Wild Chimpanzee Foundation (WCF) and the Great Ape Survival Partnership (GRASP/UNEP) in collaboration with the protected area managers of Liberia (Forestry Development Authority, FDA) and Côte d’Ivoire (Office Ivoirien des Parcs et Reserves, OIPR and Société de Développement des Forêts, SODEFOR), organized a workshop to initiate transboundary collaboration between Liberia and Côte d’Ivoire for the conservation of this Forest Complex and the implementation of landscape corridors to keep this important ecosystem intact (http://www.tai-sapo.org). Outcomes from the workshop highlighted the importance of imminent action needed in the region to effectively implement landscape corridors, both transboundary and national. Priority corridors were identified, of which one was the connection between the Sapo National Park (1550 km²) and the Grebo National Forest (2581 km²) and the existing natural corridors that join the Grebo National Forest to its counterparts in Côte d’Ivoire. Moreover, under the protected area (PA) network strategic plan of Liberia, Grebo National Forest and Grand Kru-River Gee National Forest are proposed to become national park, but the implementation of this process needs financial and technical support. East Nimba Reserve and Lake Piso Sustainable Multiple Use Reserve that are threatened by unsustainable land use practices, uncontrolled bushfires, extractive resource use such as overfishing and sand-mining, are two other areas within the Liberian PA network that need reinforced protection and management support.<br/><br/>Therefore, imminent studies and strengthened management strategies for the existing and proposed protected areas are crucial to ensure the survival of the largest remaining forest bloc in West Africa (Sapo-Grebo-Tai complex), unique ecosystems (East Nimba and Lake Piso Reserves) and the endangered and/or endemic species found therein. Livelihood support of the local communities surrounding the protected areas also has to be considered as it is a major problem confronting the protected areas. Most people living in communities around these PAs are unemployed; hence they derive their livelihood through farming, fishing, hunting and mining within the protected areas. Most of the people living in these communities live in abject poverty and face severe food insecurity. These problems also make the situation very volatile for the proper management of the protected areas. <br/><br/>For these issues to be properly addressed, alternative forms of livelihood must be introduced to the communities around the protected areas. In doing so, this will help enhance the management of the protected areas. It will also increase awareness of biodiversity conservation issues and its significance in livelihood and income generation. It will enhance and enforce the ability of local communities to engender interest in integrating sustainable farming and agro-forestry systems, reduce the dependency of communities on resources of protected areas and reduce poverty for people living adjacent to the protected areas.",
+	"additionalInformation": "\n[participation]\nThe fact that this project primarily seeks to enhance the participation of local communities in the form of shared governance in the management of these protected areas is a clear demonstration of the projects ability to ensure equity. This will also generate a sense of ownership among local communities through participation in the management of the PAs.<br/><br/>Local community members will participate in development and decision making processes by designating representatives that will assist or be member in strategic and management meetings/committees. During implementation of the project, local community members will be employed whenever possible. Livelihood programs will be identified and managed by and with the local communities and their capacity reinforced to enable programs to continue over time. Eventual payments from ecosystem services will benefit the local communities with a predefined percentage.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The Government of Liberia launched in February 2006 the development of an Interim Poverty Reduction Strategy (IPRS), while formulating a 150-day plan of short-term reforms and deliverables in the four priority areas of Security, Economic Revitalization, Basic Services and Infrastructure, and Governance and Rule of Law. The IPRS focused on maintaining security and building peace; improving governance and the rule of law; revitalizing the economy; and rebuilding infrastructure and beginning to get basic services up and running. The sectoral priorities set by the Government under the four pillars of intervention adequately reflect Liberia’s development challenges in order to initiate a longer-term process of improving the livelihoods of Liberians and to reduce poverty on a country-wide basis.<br/><br/>Each pillar of the IPRS contains a matrix of time-bound policy objectives, operational programs, results/indicators and deliverables. Capacity building as well as job creation and service delivery measures have been mainstreamed into each pillar. The Government prepared a full poverty reduction strategy program (PRSP) in 2008 that successfully supported the four priority areas mentioned above. This project is tailored to fit within these PRSP priorities mainly through the provision of sustainable livelihood and income generation of communities around the protected areas and the strengthening of the management teams capacity to adequately manage these PAs. The Poverty reduction strategy (PRS) can be downloaded at: http://www.imf.org/external/pubs/ft/scr/2008/cr08219<br/><br/>This project is also intended to generate sustained improvements in human well-being, which lies at the heart of the MDGs, and relies fundamentally on the achievement of environmental sustainability (MGD – 7).<br/><br/>The proposition to reinforce existing protected areas and to establish new national parks such as the Grebo National Park or Grand Kru-River Gee, derive directly from the Protected Forest Area Network Strategic Plan of Liberia and fit well with the countries priorities."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Strengthen the management of the Sapo National Park, Grebo National Forest, Grand Kru-River Gee National Forest, East Nimba Nature Reserve and the Lake Piso Sustainable Multiple Use Reserve",
+			"result": "1. Management teams carry out and    improve key management activities such as surveillance, biomonitoring, sensitization and local development around the protected areas to contribute to effective conservation of key species and biodiversity.\r\n2. Management teams are well trained and fully equipped to shield the protected areas from intruders and illegal activities."
+		},
+		{
+			"activity": "2. Strengthen the process of the establishment of proposed protected areas and the creation of National Parks in Liberia",
+			"result": "1. Comprehensive management plans and their implementation for newly created protected areas and national parks result in increased biodiversity protection \r\n2. The protected area network of the Tai-Sapo complex is reinforced with Grebo and Grand Kru-River Gee becoming operational National Parks\r\n3. Improved potential of meeting up with CBD quest to conserve 10% of Liberian land space"
+		},
+		{
+			"activity": "3. Establish and monitor new or already existing landscape corridors within the Taï-Sapo complex",
+			"result": "1. Increased connectivity of protected areas and effective protection of new and already existing corridors allow for genetic exchange of key species and increased forest cover"
+		},
+		{
+			"activity": "4. Reduce the threat to biodiversity in the protected areas through the establishment of sustainable livelihood support projects and income generation.",
+			"result": "1. Diversified and sustainable sources of livelihood and cash income\r\n2. Over thousand community members trained in sustainable livelihood, agro-forestry schemes and biodiversity conservation\r\n3. Increased participation (about 30%) of PA communities in protected area management and biodiversity-conscious activities \r\n4. Schemes for payments of ecosystem services are identified and operational"
+		},
+		{
+			"activity": "5. To ensure Land Tenure Reform and the strengthening of local institutions and administration",
+			"result": "1. A comprehensive law clarifying ownership, access and use of land around protected areas is set up\r\n2. Local institutions strengthened in resource governance and land administration around protected areas\r\n3. Documented and integrated indigenous knowledge and skills about the conservation/protection of PAs"
+		},
+		{
+			"activity": "6. Education, Public Awareness and Capacity Building on Biodiversity Conservation",
+			"result": "1. Hundreds of brochures on biodiversity  and its conservation\r\n2. Carry out massive and sustained public awareness using popular media in each of the PAs \r\n3. Published proceedings of public education and awareness \r\n4. Target national school system and universities for awareness activities"
+		}
+	],
+	"financialStability": "In Liberia as well as in Côte d’Ivoire, the protected area network and its management is supported by the national governments as well as international donors. For Sapo National Park, the NGOs Fauna Flora International and Conservation International assist the FDA technically and financially as long-term partner organisations within Liberia. Besides state funds, Sapo NP receives additional funding through the FFEM (Fonds Français pour l’Environnement Mondiale), USAID, the Darwin Initiative and the European Union.<br/>In Côte d’Ivoire, besides state funds, the Taï National Park receives and has received for the past 20 years significant funding from the German Cooperation (KfW, GTZ), and additional funding through the World Wildlife Fund for Nature and the WCF. The Ivorian classified forests neighbouring Grebo National Forest are supported through a project from the FFEM and the WCF with prospect of continued funding for the coming 4 years. In Côte d’Ivoire, a Trust Fund has been set up for the sustainable funding of the Protected Areas and has received its first donation specific for the Taï National Park in 2009. Under the debt for nature swap scheme it is very likely that the German and the French governments will contribute to further funding of the Ivorian protected areas trust fund (FPRCI), focusing on sustainable financing of the protected areas within the Tai-Sapo complex on the Ivorian side. The possibility whether and how this Trust Fund could also support transboundary initiatives needs to be evaluated. The creation of a sustainable financing mechanism for the Liberian part of the transboundary protected area complex including Private Public Partnership agreements (likely with the cocoa sector under certification schemes) would be other ways that need to be explored for sustainable funding throughout the project. One expected long-term contribution to conservation activities in Liberia will be a 10% profit from logging operations in the country and plans to also establish a Trust Fund for the PA network.<br/>Some smaller scale funding has already been raised for various activities across the Taï-Sapo Complex, for example for sensitization activities (Arcus Foundation, Great Ape Conservation Fund), biomonitoring (Great Ape Conservation Fund, FFEM, STEWARD) and microprojects (FFEM), including Liberian protected areas (Sapo and Grebo). The Wild Chimpanzee Foundation and GRASP/UNEP as active supporters of the initiative have also developed further grant proposals to other potential donors for the conservation of the Taï-Sapo Corridor (e.g. Green IT project under the Korean government). The outcomes of the transboundary workshop carried out in October 2009 demonstrated the commitment of all stakeholders, notably the Forestry Development Authority and the government of Liberia who is a key actor in this project as well as the Ivorian government, NGOs as well as national and international research, development and conservation institutions of both countries. <br/><br/>Grand Kru-River Gee and Grebo National Forests are likely to receive funding in 2010 from GEF through the Worldbank to initiate the process of establishing the proposed protected areas and National Parks.<br/>The East Nimba Reserve is currently mainly depending on government support, with ARD/USAID support for rural development aspects. The Lake Piso Sustainbale Multiple Use Reserve establishment is currently supported by the Worldbank and FAO is working on market analysis and development aspects.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "picture 2",
+			"url": "http://www.cbd.int/database/attachment/?id=659"
+		},
+		{
+			"title": "picture 3",
+			"url": "http://www.cbd.int/database/attachment/?id=666"
+		}
+	],
+	"maps": [
+		{
+			"title": "map 1",
+			"url": "http://www.cbd.int/database/attachment/?id=656"
+		},
+		{
+			"title": "map 2",
+			"url": "http://www.cbd.int/database/attachment/?id=657"
+		},
+		{
+			"title": "map 3",
+			"url": "http://www.cbd.int/database/attachment/?id=658"
+		},
+		{
+			"title": "map 4",
+			"url": "http://www.cbd.int/database/attachment/?id=777"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Socio-economic survey around the Sapo National Park",
+			"url": "http://www.cbd.int/database/attachment/?id=769"
+		},
+		{
+			"title": "Socio-economic survey around the Lake Piso multiple resource use reserve",
+			"url": "http://www.cbd.int/database/attachment/?id=770"
+		},
+		{
+			"title": "Socio-economic survey around the East Nimba Reserve",
+			"url": "http://www.cbd.int/database/attachment/?id=771"
+		},
+		{
+			"title": "Economic analysis of a low carbon economy for Liberia",
+			"url": "http://www.cbd.int/database/attachment/?id=772"
+		},
+		{
+			"title": "Transboundary Workshop report",
+			"url": "http://www.cbd.int/database/attachment/?id=773"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=774"
+		},
+		{
+			"title": "The poverty reduction strategy of Liberia",
+			"url": "http://www.cbd.int/database/attachment/?id=776"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Liberia/Lifeweb Project Expression of Interest - Liberia PA Network_FINAL.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Liberia/Lifeweb Project Expression of Interest - Liberia PA Network_FINAL.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -9.429499,
+		"lat": 6.428055,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/7409"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9170"
+		},
+		{
+			"url": "http://www.protectedplanet.net/sites/9176"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/8E1EF550-7F46-BFF1-C9BF-B087D6DE25F6/attachments/6069.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "8E1EF550-7F46-BFF1-C9BF-B087D6DE25F6",
+		"documentID": 203772,
+		"createdOn": "2015-03-27T19:45:58.507",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:58.507",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 18080,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:01 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/8E1EF550-7F46-BFF1-C9BF-B087D6DE25F6",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 16846
+		}
+	}
+}

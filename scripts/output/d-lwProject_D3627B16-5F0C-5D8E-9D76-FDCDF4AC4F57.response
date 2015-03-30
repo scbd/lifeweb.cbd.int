@@ -1,0 +1,201 @@
+{
+	"header": {
+		"identifier": "D3627B16-5F0C-5D8E-9D76-FDCDF4AC4F57",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 2900000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "id"
+		}
+	],
+	"title": "Developing a resilient and effectively managed network of Marine Protected Areas in the Lesser Sunda Ecoregion.",
+	"timeFrame": null,
+	"projectAbstract": "Lying at the southern end of the Coral Triangle, the Lesser Sunda Ecoregion (LSE) stretches from Bali to Timor Leste, covering an area of more than 45 million hectares. Linking the Indian and Pacific Oceans, the LSE supports diverse and highly productive coral reef and pelagic habitats and is an important transition zone between Pacific and Indian faunas",
+	"description": "Lying at the southern end of the Coral Triangle, the Lesser Sunda Ecoregion (LSE) stretches from Bali to Timor Leste, covering an area of more than 45 million hectares. Linking the Indian and Pacific Oceans, the LSE supports diverse and highly productive coral reef and pelagic habitats and is an important transition zone between Pacific and Indian faunas. Fish and coral diversity is extremely high in the LSE with 1,783 species of fish and 523 species of coral recorded (deVantier et al 2008, Veron et al. unpublished). The LSE has very high rates of endemism for both corals and fish. Eleven endemic species of coral were identified by Veron et al. (unpublished) (although some have since been recorded outside the LSE) and 25 endemic species of fish (De Vantier et al. 2008).  Strong currents and major seasonal cold-water upwellings generate incredible productivity and are likely to be key factors in conferring resilience to the growing threat of rising sea surface temperatures associated with climate change.  Many of these reefs are still in excellent condition though the main threats to coral reefs and coral reef fisheries are destructive, illegal, unreported and overfishing, reclamation and coastal development, unregulated expansion of aquaculture (in some places using methods which damage reefs and seagrass) and climate change.  There is still time to abate these threats due to the low population and early stage of coastal development. <br/><br/>This region is also regionally important migratory corridor and feeding ground for cetaceans with 18 species recorded to date including blue and sperm whales. Several islands in the area provide important nesting sites for endangered species of sea turtles and dugongs are commonly seen in coastal areas.  In the Lesser Sunda, coastal waters drop steeply to deep sea habitats favored by blue and sperm whales bringing them close to the coast. Migratory ‘bottlenecks’ in the narrow straits between the islands are also used as shipping lanes, fishing grounds and affected by coastal runoff.  The main threats to large marine life in the Lesser Sundas are poaching and hunting, entanglement in fishing gear, bycatch, ship strike, underwater noise, litter and other pollution. Many of these threats could be addressed through an effectively managed, resilient network of MPAs, careful spatial planning of coastal and catchment areas and improved fisheries management for the region. If properly protected, the Lesser Sunda Ecoregion could become a refuge for marine life and productive fisheries providing food security amid global climate change.<br/><br/>The Government of Indonesia is committed to developing networks of MPAs and have established or declared 13 million hectares of MPAs to date.  Over the coming years they are planning to strengthen the effective management of these existing MPAs and increase the area covered by MPAs to 20 million hectares by 2020 (Marine and Fisheries Ministerial Speech on the launching of Savu Sea MNP at Manado, 5 May 2009 ). The most important challenges to achieving these goals are development of adequate awareness, capacity, legal and policy frameworks and enabling conditions.  Indonesia’s recent decentralization policy gives a stronger mandate to local governments to manage natural resources in the areas under their jurisdiction.  This creates opportunities for new approaches such as the design and implementation of resilient MPA networks, but districts lack the capacity, skills and resources to manage their protected areas effectively. It has also resulted in a complex legal and administrative framework where the mandates of national, provincial and district government agencies are ill-defined and partly overlapping.  <br/><br/>The Government of Indonesia has requested support from TNC and its partners to assist in the development of enabling conditions to strengthen the existing MPAs and MPA networks, assist with identification of new areas for MPAs and to provide technical inputs into coastal and marine spatial planning which align with conservation and sustainable use of resources.  The province of East Nusa Tenggara in the Lesser Sundas Ecoregion will be one of the first provinces in Indonesia to develop a comprehensive coastal and marine spatial plan and will serve as a model for other regions of Indonesia. Developing effective management of the Savu Sea MNP is a high priority for the Government of Indonesia as a platform for sustainable fisheries and development of the region as well as poverty reduction.  <br/><br/>TNC and its partners have a long history of working closely with the Government of Indonesia on marine conservation and sustainable fisheries policy and are well positioned to support the development and implementation of an MPA network in the Lesser Sundas Ecoregion:<br/>• From 2006-2009, TNC identified a resilient network of Marine Protected Areas for the Lesser Sundas Ecoregion providing a strong information base and ‘roadmap’ for the development and implementation of an MPA network in this region.<br/>• In 2009, TNC supported the declaration and implementation of a the largest MPA in the Coral Triangle – the Savu Sea Marine National Park (3.5 million hectares) and facilitates management through the Team Savu – an intergovernmental team of experts and government agency representatives.<br/>• TNC is involved in a national think tank on marine conservation policies (Komite Nasional Konservasi Laut).  <br/>• TNC has a strong background in training, capacity building and development of the enabling conditions for effective MPA management. <br/><br/>References:<br/><br/>DeVantier, L., Turak, E., Allen, G. 2008 Lesser Sunda Ecoregional Planning Coral Reef Stratification: Reef and seascapes of the Lesser Sunda ecoregion. Report to The Nature Conservancy. Bali, Indonesia. 72 pp<br/><br/>Veron J.E. N. , L. M. DeVantier, E. Turak, A. L. Green, S. Kininmonth, M. Stafford-Smith, N. Peterson (in press) Delineating the Coral Traingle. Galaxea",
+	"additionalInformation": "\n[participation]\nThis project will contribute to a greater diversity of governance types in the projected area system and full and effective participation of indigenous and local communities by:<br/>    - enhancing the local governments of Bali, NTB and NTT to take a lead in the planning and management of MPAs <br/>    - enhancing local and indigenous communities to actively involved in the planning, campaigning and protection of MPAs surrounding their areas<br/>- enhancing the capacity of local universities and NGOs enabling their instrumental participation in the planning, campaigning and protection of MPAs.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "In relation to the Convention on Biological Diversity (CBD), Indonesia has submitted Indonesian Biodiversity and Startegy Action Plan (BAPPENAS, 2003) in which the government of Indonesia aims to slow the loss of primary forests, wetlands, coral reefs and other terrestrial and marine habitats of primary importance for biodiversity.<br/>The document stated 5 missions in which mission number 3 and 4 are particularly fit with this project. The mission number 3 and 4 stated :<br/>To implement a balanced conservation and sustainable use of biodiversity.<br/>This will be achieved by enhancing ecosystems conservation, reducing the rate of their degradation, and developing biodiversity management and its sustainable use, in order to improve the welfare of Indonesian individuals and society in equitable, fair, responsible, balanced and sustainable manner. These efforts will be undertaken based on identification of existing problems, using approaches that balance the needs of conservation and sustainable use of biological resources for community welfare.<br/><br/>To strengthen institutions and law enforcement.<br/>This will be achieved by building and developing institutional capacity to formulate legal and policy instruments, as well as by empowering their law enforcement officials at the local, regional, and national levels. These will ensure order and legal certainty for the management of biodiversity in a fair, responsible, accountable, balanced and sustainable manner.<br/><br/>Furthermore there are five objectives, to obtain the above missions and Objective 1, 3 and 4 are particularly fit well with the purpose of the project.<br/>Objective 1:<br/>To develop the quality of Indonesian individuals and society who are concerned with the conservation and sustainable use of biodiversity.<br/><br/>Especially under Goal 1.3 : There is a progress in the partnership between indigenous, local, regional and national community groups with international and global communities in the management, utilization and conservation of biodiversity in a fair, balanced, responsible, accountable and sustainable manner.<br/><br/>Objective 3:<br/>To reduce and stop the rate of biodiversity degradation and extinction at the national, regional and local levels within the 2003-2020 period, along with rehabilitation and sustainable use efforts.<br/><br/>Objective 4:<br/>To empower institutional, policy and law enforcement arrangements at the national, regional, local, as well as at customary level so as to be effective and conducive for the management of biodiversity in a synergic, responsible, accountable, fair, balanced and sustainable manner.<br/><br/>The Government of Indonesia is committed to developing networks of MPAs by establishing 20 million hectares of MPAs by 2020. The Government of Indonesia has established or declared 13 million hectares of MPAs to date.  To achieve the 2020 goal, development of adequate awareness, capacity, legal and policy frameworks and enabling conditions are the most important challenges.  Although Indonesia’s recent decentralization policy gives a stronger mandate to local governments to manage natural resources in the areas under their jurisdiction, but districts lack the capacity, skills and resources to manage their protected areas effectively. It has also resulted in a complex legal and administrative framework where the mandates of national, provincial and district government agencies are ill-defined and partly overlapping.  <br/>The Government of Indonesia has requested support from TNC and its partners to assist in the development of enabling conditions to strengthen the existing MPAs and MPA networks, assist with identification of new areas for MPAs and to provide technical inputs into coastal and marine spatial planning which align with conservation and sustainable use of resources.  The province of East Nusa Tenggara in the Lesser Sundas Ecoregion will be one of the first provinces in Indonesia to develop a comprehensive coastal and marine spatial plan and will serve as a model for other regions of Indonesia. Developing effective management of the Savu Sea MNP is a high priority for the Government of Indonesia as a platform for sustainable fisheries and development of the region as well as poverty reduction.<br/><br/>Facing with the condition that the current protected areas are not effectively function to protect Indonesia’s mega biodiversity and provide benefits to local people, National Action Plan for Protected Areas for Indonesia (2009 – 2014) presents actions to be carried out over 5 years (2009-2014) to further<br/>develop and strengthen Indonesia’s system of protected areas. It covers actions for both marine and<br/>terrestrial protected areas, and considers the full range of types of protected areas. <br/><br/>There are 5 general objectives in the National Action Plan:<br/>1. To ensure effective management of existing protected areas in Indonesia.<br/>2. To promote the establishment of new protected areas designed to fill the ecological gaps in the current protected areas system.<br/>3. To protect sustainable use of biodiversity within protected areas.<br/>4. To enhance the protected areas contribution on carbon emission.<br/><br/>This proposal fits well with Objective 1, 3 and through spatial planning process strongly supports the Objective 2."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Support the development of a zoning and management plan for Savu Sea Marine National Park (2010 - 2013)\n\n2. Support the development of coastal and marine spatial plans for East Nusa Tenggara Province (2010 - 2012)\n\n3. Develop enabling conditions (capacity building, training, strategic advice) for implementation and effective management of the Lesser Sunda MPA network (2010-2014)",
+			"result": "1. Savu Sea Marine National Park Zoning and Management Plans are produced, endorsed and implemented by district, provincial and national governments to protect biodiversity and ensure food security for the people of East Nusa Tengarra Province.\n\n2. Coastal and Marine spatial plans include the Lesser Sunda MPA network and coastal development is consistent with protection of coral reefs and maintenance of food security for the region.\n\n3. District, provincial and national governments are able to implement and effectively manage MPAs within the Lesser Sunda Ecoregion."
+		}
+	],
+	"financialStability": "Department of Marine Affairs and Fisheries (Indonesia) will support Savu Sea MNP through its annual budget allocation of at least $100 000 USD annually to cover costs of their personnel and some operational costs. <br/>Provincial and district governments of the Lesser Sunda Ecoregion will have access to funds to support MPA development through their coastal community development program. <br/>There is potential to generate revenue from user fees in the region including fisheries, tourism, shipping and other industries such as oil and gas.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"attachments": [
+		{
+			"title": "Infosheet on Lesser Sundas",
+			"url": "http://www.cbd.int/database/attachment/?id=396"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/database/attachment/?id=397"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=398"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Indonesia/Lesser Sunda/TNC Indonesia Marine LifeWeb Project Expression of Interest.pdf"
+		}
+	],
+	"coordinates": {
+		"lng": 117.59765625,
+		"lat": -8.841651120809145,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/D3627B16-5F0C-5D8E-9D76-FDCDF4AC4F57/attachments/4705.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "D3627B16-5F0C-5D8E-9D76-FDCDF4AC4F57",
+		"documentID": 203753,
+		"createdOn": "2015-03-27T19:45:39.39",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:39.39",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 16302,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:41 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/D3627B16-5F0C-5D8E-9D76-FDCDF4AC4F57",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 15543
+		}
+	}
+}

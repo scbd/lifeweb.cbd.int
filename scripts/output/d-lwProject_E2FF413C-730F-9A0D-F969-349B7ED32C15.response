@@ -1,0 +1,289 @@
+{
+	"header": {
+		"identifier": "E2FF413C-730F-9A0D-F969-349B7ED32C15",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "89797DDC-E840-4D37-77ED-B9F545FCA9E5"
+			},
+			"description": "LDCF Project “Economy-wide integration of CC adaptation and DRM/DRR to reduce climate vulnerabilities of communities in Samoa”",
+			"funding": 100000,
+			"dateTime": "1407715200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "Global Environment Facility's Pacific Alliance of Sustainability (GEF-PAS) Programme: Prevent, control and management of invasive alien species in the Pacific islands",
+			"funding": 82000,
+			"dateTime": "1388534400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "2DEDFF04-0F81-F42A-A9F1-C9DEA85E2AD7"
+			},
+			"description": "",
+			"funding": 77000,
+			"dateTime": "1407715200000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Charles Besancon",
+	"countries": [
+		{
+			"identifier": "ws"
+		}
+	],
+	"title": "Mt Vaea Ecosystem Resilience and Forest Restoration",
+	"timeFrame": null,
+	"projectAbstract": "The Mt Vaea Ecosystem Resilience and Forest Restoration project is the first demonstration project of invasive plant management and forest restoration in Samoa. The project will focus on implementing the operational plan for restoring Mt. Vaea Nature Reserve (MNRE, 2014). There are two main components to the project, firstly the selective removal of invasive weeds, and secondly replanting the reserve with selected native plant species. More importantly, the project will help achieve and implement some of the objectives and priority actions highlighted in the National Invasive Species Action Plan (NISAP) and Samoa’s National Biodiversity Strategy Action Plan (NBSAP), as well as Aichi Targets.  Mt Vaea is the most visited reserve in Samoa by locals and tourists due to its beautiful panorama view from the top, and where the late writer Robert Louis Stevenson rests forever.",
+	"description": "Invasive plants are a major threat to the biodiversity of Samoa because they continue to spread unabated. This project will research and develop techniques for managing invasive plants, and restoring the native forest. Additionally, given the site’s rugged topography, steep slopes, and erodible soils, it is important that a more resilient environment is built by replacing invasive trees that are prone to storm damage, with native ones.  A recent survey (2013) shows an increase of invasive plant species coverage on the site. Recent landslides in the reserve following heavy rain have occurred in areas dominated by invasive tree species which tend to be less well-rooted and more easily dislodged in stormy weather than native tree species. The biggest threats now are the vulnerability of the area to soil erosion and degradation, and the loss of natural habitats and ecosystem by the dominance of existing and new invasive alien species to the site.",
+	"additionalInformation": "\n[participation]\nThe project site is a government land, but restoration activities are envisioned to strengthen partnerships with the local community of Vailima who will be hired to assist in project activities. Furthermore, local environmental NGOs, such as the newly formed Samoa Conservation Society, have expressed an interest in providing volunteer labour for project activities. Whilst more tourists will be expected to the area, the community will also benefit from selling local products at entry points of the reserve during ecotourism activities.\n[governance]\nMt Vaea will increase the management capacity at different level of authorities for effective management of terrestrial ecosystem based management areas. Mt Vaea Project has a committee of its own, and new information gathered from this implementation phase will be disseminated and stored for similar projects in the near future.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": "Mt Vaea and the need for its restoration is listed as a top priority in the 2008-2011 National Invasive Species Action Plan (attached), and National Environment Sector Plan (NESP)"
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "The National Biodiversity Strategy Action Plan for Samoa will be finalised in June 2014 which includes Mt Vaea and its restoration as a key project to be done to achieve elements of Aichi Biodiversity Targets 9, 11, 14 and 15."
+		}
+	],
+	"budget": [
+		{
+			"activity": "1.\t Reduce the abundance and distribution of invasive plant species in target sites in the Mt Vaea reserve by 2020",
+			"result": "Control priority invasive plants that are currently uncommon but are spreading and that have high environmental impacts. This includes Cestrum nocturnum, Cordiaalliadora and Cocciniagrandisas initial species targets.\n\nNo mature invasive species of 24 initial target invasive plants in target sites"
+		},
+		{
+			"activity": "2. Re-vegetate and maintain target sites in the reserve with native tree species",
+			"result": "Non- forested areas have a native forest canopy\n\nImproving the condition of the native forest areas by complimenting the management of  invasive plants with  enrichment planting of native plants where required\n\nExpand restoration outwards from native forest sites to adjacent areas by conducting weed management and tree replanting in expanding buffer zones around native forest areas"
+		},
+		{
+			"activity": "3. Improve knowledge on successful approaches to restore the Samoan rainforest and raise public awareness on weed management and forest restoration approaches",
+			"result": "Research on approaches to restore the Samoan rainforest is conducted\n\nAt least 1 community group is actively engaged in conducting invasive species management and tree planting activities in the reserve\n\nA wide range of awareness material are prepared and disseminated including brochures on weed control methods and restoration approaches"
+		}
+	],
+	"financialStability": "Once the restoration activities are completed, the incremental costs to maintain the ecosystem condition are much lower. The Ministry of Natural Resources of Samoa has greatly increased its capacity in the past 10 years by expanding the number of staff and technical capacity. It is in a good position to support the ongoing efforts in the future after this proposed project is finished through domestic funding sources.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "This project will increase ecosystem resilience in the Mt Vaea Nature Reserve as an ecosystem based adaptation response to climate change. Specifically, the project will improve the ecosystem functions of the forest in Mt Vaea that has been severely degraded by the introduction of non-native forest tree species as a buffer to the negative effects of climate change. Observations indicate that native plant species are more resilient to climate change than introduced invasive plant species."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": "The site has a strong connection to the local communities who have visited it for centuries. However, as a result of the severe degradation that exists now because of the presence of non-native species and vulnerability to natural disasters, their connection to the forest has been decreased considerably. The project will therefore seek to renew and strengthen this connection by engaging community members in project activities, and through awareness campaigns.<br/>Another aspect of this project is to provide a better experience to tourists that visit this site every year to visit the grave of Robert Louis Stevenson, the Scottish writer whose grave is located at the top of Mt Vaea.<br/><br/>Apart from being the location of the late Author R.L. Stevenson, the mountain has a legend/story that explains the linkage between the Samoan and Fijian chiefly systems in the distant past."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "The project will increase the volume and quality of water that the forest provides to the local community called Vailima by improving the area, and the quality of the forest in the watershed. Incidentally, the word, Vailima literally means “Water in Hands”."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices5"
+			},
+			"comment": "Native trees provide numerous medicinal values to treatment of traditional sicknesses and remedies for pain and inflammations. More than 30,000 people visit Mt Vaea for hiking, physical fitness and healthy lifestyle, while at the same time enjoying a learning experience on the nature of the area. Several schools use the site for field trips every year as part of their syllabus and also for research purposes."
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "The site is one of the major tourist attractions in Samoa because of its traditional and historical values. The monument of Robert Louis Stevenson located at the top of the summit, the panorama view from the summit to the surrounding areas, and the natural pool (watershed) remains the most interesting features of the Reserve for visitors.<br/>Improving the forest condition and enhancing biodiversity conservation will increase the number of tourists that visit this site, although this is not the primary purpose for this proposed restoration project."
+		}
+	],
+	"aichiTargets": [
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-11"
+			},
+			"comment": "The Mt Vaea project aims to restore Mt Vaea Nature reserve by removing invasive species and replanting native trees as a measure to increase ecosystem resilience. Vailima Reserves hosts 15 species of birds, 2 bats, 3 lizards, 14 butterflies and other wildlife that contribute to the seed dispersal of trees and other environmental biodiversity creating new habitats and bringing life to the forest. With the aim to reinstate the native forest cover, it is anticipated that the numbers will increase significantly by 2020."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-12"
+			},
+			"comment": "The Mt Vaea Project will have great environmental benefits in terms of increasing and reviving Samoa’s natural biodiversity when the objectives outlined above are met. The highly threatened tooth-billed pigeon or Manumea (Didunculusstrigirostris),which is the national bird of Samoa, was discovered in Samoa in late December 2013. It is hoped that the Manumea will be re-introduced into the reserve along with other threatened species such as the Samoan swallowtail butterfly in the future as the reserve is a perfect place to raise awareness on threatened biodiversity."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-14"
+			},
+			"comment": "By 2020, the natural forest cover will increase, thereby increasing the diversity of native plants and animals, and preventing further soil erosion and subsequently water runoff for the Loimata o Apaula Stream. This will contribute to better water quality and quantity which will benefit both local residents and visitors alike."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-15"
+			},
+			"comment": "The project will restore the 80 ha of the Mt Vaea reserve to a more natural state, and in doing so will contribute to carbon storage and climate change mitigation. In addition, the techniques to manage invasive plants and restore the rainforest learned in this project can be applied more broadly in order to allow Samoa to achieve the 15% restoration target. "
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-05"
+			},
+			"comment": "The project will not only reduce forest degradation in a critical natural habitat in Samoa, it will reverse it by restoring the forest."
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-09"
+			},
+			"comment": "The implementation phase of the project targets the management of the priority invasive plants by 2020. A public awareness campaign will be carried out, including biosecurity measures and public and community participation in replanting and maintenance works. Measures to manage and prevent pathways will be made and closely monitored."
+		}
+	],
+	"images": [
+		{
+			"title": "Poster for Mt Vaea restoration project",
+			"url": "http://www.cbd.int/doc/lifeweb/samoa/Images/poster for mt vaea restoration project.jpg"
+		},
+		{
+			"title": "Signboard for Mt Vaea ecological restoration project 2",
+			"url": "http://www.cbd.int/doc/lifeweb/samoa/Images/Signboard for Mt Vaea Ecological Restoration Project 2.jpg"
+		},
+		{
+			"title": "Signboard for Mt Vaea ecological restoration project",
+			"url": "http://www.cbd.int/doc/lifeweb/samoa/Images/Signboard for Mt Vaea Ecological Restoration Project.jpg"
+		},
+		{
+			"title": "View of Mt Vaea from rls museum",
+			"url": "http://www.cbd.int/doc/lifeweb/samoa/Images/View of Mt Vaea from RLS Museum.jpg"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/samoa/Documents/Final-Samoa_EOI_MtVaea.doc"
+		},
+		{
+			"title": "Mt Vaea LifeWeb Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/samoa/Documents/Final-Samoa_EOI_MtVaea.docx"
+		}
+	],
+	"coordinates": {
+		"lng": -171.7705677,
+		"lat": -13.86425642,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/E2FF413C-730F-9A0D-F969-349B7ED32C15/attachments/24012.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "E2FF413C-730F-9A0D-F969-349B7ED32C15",
+		"documentID": 203697,
+		"createdOn": "2015-03-27T19:44:43.843",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:43.843",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 14455,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:44:45 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/E2FF413C-730F-9A0D-F969-349B7ED32C15",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 12997
+		}
+	}
+}

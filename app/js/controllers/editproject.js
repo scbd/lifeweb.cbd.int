@@ -17,39 +17,11 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
         $scope.documentExists = true;
     });
 
-    $scope.editDonor = function(name, donorKey, editingDonor) {
-        $scope['show_' + donorKey] = !$scope['show_' + donorKey];
-        if(!$scope['show_' + donorKey])
-            return;
-
-        $scope.donationsAC().then(function(data) {
-            var donor;
-            if(name)
-                for(var i=0; i!=data.length; ++i)
-                    if(data[i].name.toUpperCase() == name.toUpperCase())
-                        donor = data[i];
-
-            if(!donor)
-                donor = { name: name };
-
-            if(!editingDonor)
-                editingDonor = $scope[donorKey] = donor;
-            else {
-                //first clear out the object:
-                for(var k in editingDonor)
-                    delete editingDonor[k];
-                //then add eevrything back. (we have to do this so we keep the reference)
-                for(var k in donor)
-                    editingDonor[k] = donor[k];
-            }
-        });
-    };
-
     $scope.donationsAC = function() {
         return donorPromise.then(function(donors) {
         console.log('ac donors: ', donors);
             for(var i=0; i!=donors.length; ++i)
-                donors[i].__value = donors[i].name;
+                donors[i].__value = donors[i].name_s;
 
             return donors;
         });
@@ -413,6 +385,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             if($scope.document.budget && $scope.document.budget.length == 0)
                 $scope.document.budget = undefined;
         });
+
+        $scope.newdonor = {};
     }
 
     $scope.sum = function(arr, key) {
@@ -423,46 +397,26 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
       return sum;
     };
+    var donorPromise = $.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwDonor))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
+    console.log('donor data: ', data);
+        var items = data.response.docs;
 
-    var donorPromise = $.get('/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
-        var items = data.Items;
-        var newItems = [];
-        for(var i=0; i!=items.length; ++i)
-            newItems.push(items[i].body);
-
-        return newItems;
-    });
-    $scope.donorButtonText = 'Create New Donor';
-    $scope.newdonor = {};
-    $scope.$watch('newdonor.name', function() {
-        donorPromise.then(function(donors) {
-            for(var i=0;i!=donors.length; ++i)
-                if(donors[i].name == $scope.newdonor.name) {
-                    $scope.donorButtonText = 'Edit This Donor'; break;
-                } else
-                    $scope.donorButtonText = 'Create New Donor';
+        items.forEach(function(donor) {
+            donor.identifier = donor.identifier_s;
         });
+
+        return items;
     });
   });
 
   app.controller('documentDonorCtrl', function($scope, $q, guid) {
-    $scope.donorButtonText = 'New Donor';
-    $scope.$watch('donation', function() {
-        donorPromise.then(function(donors) {
-            for(var i=0;i!=donors.length; ++i)
-                if(donors[i].name == $scope.donation.donor) {
-                    $scope.donorButtonText = 'Edit This Donor'; break;
-                } else
-                    $scope.donorButtonText = 'Create New Donor';
-        });
-    });
-
     //TODO: duplicated above in other controller...
     var donorPromise = $.get('/api/v2013/documents/?$filter=(type+eq+%27lwDonor%27)&body=true&cache=true&collection=my').then(function(data) {
         var items = data.Items;
-        var newItems = [];
-        for(var i=0; i!=items.length; ++i)
-            newItems.push(items[i].body);
+
+        items.forEach(function(donor) {
+            donor.identifier = donor.identifier_s;
+        });
 
         return newItems;
     });

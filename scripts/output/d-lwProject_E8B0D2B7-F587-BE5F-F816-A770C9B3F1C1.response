@@ -1,0 +1,224 @@
+{
+	"header": {
+		"identifier": "E8B0D2B7-F587-BE5F-F816-A770C9B3F1C1",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "CACA2858-F011-3468-EAAD-A6671816C824"
+			},
+			"description": "",
+			"funding": 100000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cm"
+		}
+	],
+	"title": "Conserving the Cross River Gorilla Landscape: Piloting a landscape-scale approach to Reducing Emissions from Deforestation and Forest Degradation (REDD)",
+	"timeFrame": null,
+	"projectAbstract": "The Gulf of Guinea is an area of known high biodiversity importance. Despite the presence of a host of endangered and endemic species, biodiversity is under increasing threat from a number of human activities. This project aims to protect both highland and lowland corridors in the Cross River Gorilla landscape in order to effectively manage unprotected forests, and the ecosystem services they provide, thus securing local livelihoods and preserving important carbon sinks.",
+	"description": "The Project area falls within the 4,300km2 Takamanda-Mone Technical Operations Unit (TOU), a government land-use classification established to help with land-use planning for conservation and development. Within the TOU, three protected areas exist, the 676km2 Takamanda National Park, created in 2008; the 538km2 Mone Forest Reserve, created in 1951 and the 19.4km2 Kagwene Gorilla Sanctuary, created in 2008.<br/><br/>The Gulf of Guinea is an area of known high biodiversity importance, and the Takamanda-Mone landscape is typical of this. Important large mammal species found in the forests of this region include a unique sub-species of chimpanzee (Pan troglodytes ellioti), the drill (Mandrillus leucophaeus) and the world’s most endangered species of gorilla (Gorilla gorilla diehli). Biodiversity amongst other taxa is equally high and the region also has some of the highest levels of plant diversity in Africa and forest cover remains largely intact across the landscape.<br/><br/>Despite the presence of a host of endangered and endemic species, biodiversity is under increasing threat from a number of human activities. Commercial bush-meat hunting is pervasive and is leading to local extinctions in many forest areas. The introduction of guns has had a big impact on large mammal populations, but indiscriminate snaring is also of serious concern. Some animals, notably the great apes, are still hunted for traditional and medicinal reasons as well.<br/><br/>Habitat conversion due to expanding agriculture (and the preference for slash and burn), and as a result of grassland burning is also fragmenting the forest area. Access to the Takamanda-Mone landscape remains limited, but as seasonal roads are improved, the degree of deforestation and degradation is set to increase dramatically.<br/><br/>Due to poor road access and limited alternative employment opportunities, most local communities are highly forest dependent. Unfortunately, population pressure and the market demand for many forest resources in nearby Nigeria is encouraging many communities to allow outsiders to harvest various forest products unsustainably in return for token payments. A well organised trans-boundary trade in illegal timber, bush-meat and many other non-timber forest products exists and needs to be brought under control.<br/><br/>In the long term it is also essential that habitat connectivity be maintained and managed between core protected areas within the landscape if true landscape species such as the forest elephant and Cross River gorilla are to survive. The need to protect both highland and lowland corridors is important. If unprotected forests are not managed in some way, essential ecosystem services for local livelihoods (NTFPs, watershed protection, etc.) will also be lost, and huge amounts of carbon (up to 400t/ha) released. <br/><br/> Reducing Emissions from Deforestation and Degradation (REDD) is emerging as an effective strategy for concurrently mitigating negative impacts of climate changes while conserving large tracts of forest. <br/><br/>To be globally effective, REDD must be implemented at spatial scales greater than individual protected areas and project sites, and at timescales that go beyond individual project cycles in order to address the long-term drivers of deforestation. This will require planning the implementation of different types of emissions reduction activities (such as Improved Forest Management, Avoided Planned Deforestation, Avoided Unplanned Deforestation, etc.) as well as afforestation (in the form of agroforestry, etc.) in a spatially coherent way that takes full account of local development needs.  Integrating REDD into planning at the landscape scale is a formidable challenge, but is the only way in which opportunity costs and leakage risks can be truly controlled and thereby ensure sustainability. <br/><br/>The Cross River Gorilla Landscape provides an excellent site to pilot  landscape-level planning for REDD and in doing so helps develop national capacity to implement REDD methods and approaches and conserve the Protected Areas within these landscapes.<br/><br/>As an initial step, we propose a landscape scale analysis that evaluates the potential of different use zones in Takamanda Mone. Activities will be:<br/><br/>1.\tREDD capacity building and outreach among local and national government departments.<br/>2.\tEvaluating carbon stocks in different land-use types under different types of management (managed vs. unmanaged production forest, protected forest, plantations, agriculture, etc.).<br/>3.\tEvaluating rates of change of land-use (improved remote sensing and extensive ground-truthing) both in the Takamanda-Mone TOU and in a wider Reference Area.<br/>4.\tCompletion of a summary study on the potential options for REDD development in the landscape and a roadmap for moving forward.<br/><br/>The analysis will set the stage for a landscape wide plan to mitigate climate change, protect biodiversity, and support livelihood creation.",
+	"additionalInformation": "\n[participation]\nAs deforestation in the Takamanda Mone Landscape is mainly caused by small scale agriculture, an efficient strategy for reducing emissions from deforestation and forest degradation will have to ensure participation of local communities and create tangible benefits for them in order to motivate them for sustainable management of natural resources. <br/><br/>For the initial evaluation proposed here, we will target our activities to national and local government officials, through capacity building activities and working to inform the national REDD Readiness strategy development.<br/><br/>After this initial phase and with additional funding, participation of local communities in planning and management processes will be fostered on two levels:<br/>- Full integration of local communities and municipalities into initial land use planning on landscape level and processes for formalizing land use designations.<br/>- Participation of local communities in natural resources management through the introduction of sustainable community based forest management (CBFM) in production forests (Council or Community Forests) and the development of co-management systems and structures for protection zones.<br/><br/>If landscape based REDD is implemented, local communities will be the ultimate beneficiaries.  They will benefit in three different ways:<br/>- Local communities will benefit directly from the activities implemented by the project to improve farming techniques (agro-forestry) and management of community forests for sustainable production (wood and non wood forest products) and/or protection (eco-tourism).<br/>- It is also expected that local communities will benefit indirectly from improved ecosystem services provided by natural forests in the landscape.<br/>- On the long term, once emissions from deforestation and forest degradation have effectively been reduced, local communities will be the main beneficiaries of funds generated through payments for performance.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The project reinforces Cameroon’s REDD strategy development, as outlined in the national R-PIN, by setting up the enabling conditions for a REDD demonstration project to help Cameroon evaluate the potential benefits and pitfalls of REDD before deciding how to move towards wider adoption. In addition, in 2009, Cameroon, along with 36 other tropical and subtropical countries, was selected by FCPF for preparation support; this project will support that process.<br/>The project will support components of the National Forest and Environment Sector Programme (FESP). Strong alignment to components 3 (management of wildlife and protected areas), 4 (community management of natural resources) and 5 (institutional capacity building) are foreseen. Further, project objectives will strongly reinforce multiple areas of the COMIFAC action plan, especially:<br/>•\tarea 4 (reinforcing conservation in protected areas)<br/>•\t6 (creating alternatives livelihoods to combat poverty)<br/>•\t7 (increasing capacity of stakeholders, government and communities, to organize themselves to better participate in REDD and payments for ecosystem services schemes that support biodiversity preservation and poverty relief) <br/>•\t9 (serving as a precondition to any future carbon-based revenue generation that could help improve livelihoods in the Takamanda-Mone landscape."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Set the stage for landscape-level planning with the Government of Cameroon",
+			"result": "Feasibility study with estimates of potential emission reductions that inform landscape level planning"
+		}
+	],
+	"financialStability": "This project proposes the first step in a planning a landscape demonstration projects. Our analysis will allow us to develop a plan for the development of different land use zones, and the potential carbon revenues that can be generated through different interventions.  This analysis will help evaluate REDD as an alternative source of financing for biodiversity preservation and livelihood creation, and provide different options for the Cameroonian government to pursue in order to balance the need for generating capital, improving livelihoods, securing forest resources, protecting biodiversity and maintaining ecosystem services.<br/><br/>The feasibility study will then support development of a pilot landscape level approach to REDD including:<br/>1.\tDeveloping a future land-use vision for currently un-zoned areas of the Takamanda-Mone TOU to ensure that a) community needs are met while protecting highly biodiverse areas and key Cross River gorilla habitat in between the existing protected areas, b) connectivity is maintained, and c) other ecosystem services such as watershed protection are preserved.<br/>2.\tImplementing a process of formalizing land-use designations to maximize emissions reductions while maintaining livelihoods and biodiversity benefits, using a phased approach that focuses first on areas where the threat of deforestation is current and/or most imminent and where the ratio of REDD benefits to opportunity costs is highest. Specific activities would include:<br/>a)\tGazetting currently unzoned areas that are likely to be transformed to agricultural use in the near future as a mosaic of locally-managed protection and production forests (“Council” or “Community” status), and generating carbon credits to help finance their management.<br/>b)\tWorking with communities to define agricultural land-use zones and to enhance the sustainability of agricultural practices in order to ensure permanence and to reduce leakage (via improving tenure security, agroforestry, improved farming techniques, etc.).<br/>3.\tImproving management of existing permanent production forest (forest management units and production forest reserves) through a combination of reduced impact logging techniques, and protecting the highest biodiversity and socio-economic value areas.<br/>4.\tInforming the development of the Cameroon national REDD strategy by feeding into national-level processes such as the establishment of a national reference scenario and by outlining the criteria for determining where a spectrum of REDD activities could be most effective given the need to balance sustainable development with climate and conservation goals.<br/><br/>These actions in the future could serves as a way to generate funding for Cameroon by nesting it into Cameroon’s national and regional REDD strategies.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "WCS Cross River gorilla",
+			"url": "http://www.cbd.int/database/attachment/?id=856"
+		},
+		{
+			"title": "WCS Cross River Gorilla Landscape",
+			"url": "http://www.cbd.int/database/attachment/?id=857"
+		},
+		{
+			"title": "Picture",
+			"url": "http://www.cbd.int/database/attachment/?id=858"
+		},
+		{
+			"title": "WCS TNP photo",
+			"url": "http://www.cbd.int/database/attachment/?id=859"
+		}
+	],
+	"maps": [
+		{
+			"title": "Map",
+			"url": "http://www.cbd.int/database/attachment/?id=860"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Carbon for Conservation document",
+			"url": "http://www.cbd.int/database/attachment/?id=854"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Cross River Gorilla/Takamanda_Letter of endorsement MEPN.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Cross River Gorilla/WCS Life Web Cameroon 25 May 2010.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Cross River Gorilla/WCS Life Web Cameroon 25 May 2010.doc"
+		}
+	],
+	"coordinates": {
+		"lng": 12.354722,
+		"lat": 7.369722,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/20109"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/E8B0D2B7-F587-BE5F-F816-A770C9B3F1C1/attachments/6231.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "E8B0D2B7-F587-BE5F-F816-A770C9B3F1C1",
+		"documentID": 203785,
+		"createdOn": "2015-03-27T19:46:14.24",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:14.24",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 15027,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:17 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/E8B0D2B7-F587-BE5F-F816-A770C9B3F1C1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 14120
+		}
+	}
+}

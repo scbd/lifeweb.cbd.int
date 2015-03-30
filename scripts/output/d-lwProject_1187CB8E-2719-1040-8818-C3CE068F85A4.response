@@ -1,0 +1,277 @@
+{
+	"header": {
+		"identifier": "1187CB8E-2719-1040-8818-C3CE068F85A4",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "09B47045-F2F2-C6B6-9642-3022B7426F1E"
+			},
+			"description": "Gordon and Betty Moore Foundation, Linden Trust, Walton Family Foundation, The Nature Conservancy:  These foundations and The Nature Conservancy were recognised for jointly providing over US$ 30 million in support of the Forever Costa Rica expression of interest.",
+			"funding": 9000000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "EE1F1447-CC2C-EE58-D70D-E6F20FFCEB81"
+			},
+			"description": "Gordon and Betty Moore Foundation, Linden Trust, Walton Family Foundation, The Nature Conservancy:  These foundations and The Nature Conservancy were recognised for jointly providing over US$ 30 million in support of the Forever Costa Rica expression of interest.",
+			"funding": 1900000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "823E7BC0-AEDA-4D6F-ED21-7FF83B6AC577"
+			},
+			"description": "Gordon and Betty Moore Foundation, Linden Trust, Walton Family Foundation, The Nature Conservancy:  These foundations and The Nature Conservancy were recognised for jointly providing over US$ 30 million in support of the Forever Costa Rica expression of interest.",
+			"funding": 5000000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "A6BDB9AD-98FB-71BF-4A95-E66AD36F6C7D"
+			},
+			"description": "Gordon and Betty Moore Foundation, Linden Trust, Walton Family Foundation, The Nature Conservancy:  These foundations and The Nature Conservancy were recognised for jointly providing over US$ 30 million in support of the Forever Costa Rica expression of interest.",
+			"funding": 5500000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 3500000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "970DB923-9D67-245D-D626-7B9FB66D6E04"
+			},
+			"description": "US$ 27 million of financial support was conveyed from the government of the United States made available through the Topical Forest Conservation Act.",
+			"funding": 27000000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cr"
+		}
+	],
+	"title": "Forever Costa Rica",
+	"timeFrame": null,
+	"projectAbstract": "Costa Rica has 26 percent of its land area under various protection management categories.  As in many other developing countries, however, challenges and threats are great.  This is mainly due to the fact that development continues to pressure the ecological systems around terrestrial and marine protected areas.  Overfishing, legal and illegal fishing, unregulated tourism development, urbanization, logging, and water pollution, sedimentation, the degradation of coral reefs and the depletion of fisheries, are threats that affect protected areas as well as other neighboring lands and waters.  In addition, despite the enormous efforts made to date, Costa Rica’s protected area system still has conservation gaps that must be addressed if the desired ecological representation is to be achieved.",
+	"description": "Costa Rica has 26 percent of its land area under various protection management categories.  As in many other developing countries, however, challenges and threats are great.  This is mainly due to the fact that development continues to pressure the ecological systems around terrestrial and marine protected areas.  Overfishing, legal and illegal fishing, unregulated tourism development, urbanization, logging, and water pollution, sedimentation, the degradation of coral reefs and the depletion of fisheries, are threats that affect protected areas as well as other neighboring lands and waters.  In addition, despite the enormous efforts made to date, Costa Rica’s protected area system still has conservation gaps that must be addressed if the desired ecological representation is to be achieved.   <br/><br/>The greatest ecological gap is in the coastal-marine environment.  Costa Rica is among the 20 most biologically diverse countries in the world. Its marine biodiversity is distributed over an area of 567,928 km2 in both the Caribbean Sea and the Pacific Ocean. It is estimated that the country’s coastal areas and marine waters are home to approximately 6,700 marine species, or 3.5% of the world’s total marine species, among which 90 are endemic. Costa Rica’s jurisdictional marine environments serve as a permanent or temporary home to a large number of species of global importance, including the West Indian manatee (Trichechus manatus); five species of sea turtles, including the leatherback turtle (Dermochelys coriacea), the green turtle (Chelonia mydas), and the loggerhead sea turtle (Caretta caretta); whales and dolphins (i.e., the humpback whale - Megaptera novaeangliae, the false killer whale - Pseudorca crassidens, the pantropical spotted dolphin - Stenella attenuate, and the estuarine Tucuxi dolphin - Sotalia guianensis); a large number of widely distributed and endemic fish species, the latter of which are found mostly in the Cocos Island area; and a large number of marine invertebrates, including the queen conch (Strombus gigas), the spiny lobster (Panulirus argus), the spotted spiny lobster (P. guttatus), and the piagua clam (Anadara sp.). Additionally, high productivity levels in the Pacific Ocean that result from major upwellings also sustain a regionally significant marine fishery.<br/>Costa Rica faces resource overexploitation, habitat degradation, unregulated coastal development, pollution, invasive species and climate change as major threats to marine biodiversity. In addition, the MPAs’ managers do not possess a full range of tools needed for effective MPA management. Unlike their terrestrial counterparts, MPAs do not have a marine assessment and monitoring strategy with clearly defined indicators that would assist in the decision-making processes or help in assessing the progress towards achieving biodiversity conservation goals. Only 12 of the 21 present MPAs have a management plan and some of the existing plans may need to be updated to face new challenges for the MPAs, including climate change. <br/>The project will help to reduce threats to terrestrial and marine biodiversity by: (1) protecting key habitats to prevent their degradation; (2) identifying MPAs that are most affected by climate change, incorporating climate change mitigation and adaptation into their management plans, and the preliminary monitoring of affected key species and ecosystems and (3) promoting sustainable fisheries and tourism. Consequently, Costa Rica’s long-term solution to the ongoing loss of biodiversity depends on consolidating its MPAs through increased ecological representation, improved management effectiveness in both terrestrial and marine PAs, and ensured financial sustainability for the entire PA system.",
+	"additionalInformation": "\n[participation]\nThe coastal human populations that use these resources will participate in biodiversity conservation through the design of the MPAs. The MPAs should have a zoning design that respond to the needs of the maintenance and improvement of wildlife and human populations.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The project is consistent with the Environment Law No. 7554 (1995) and the Biodiversity Law No. 7788 (1998), which seek the conservation of biodiversity and the sustainable use of the country’s resources, and also promote the fair distribution of costs and benefits. In addition, the project is consistent with Costa Rica’s National Strategy for Biodiversity Conservation and Sustainable Use (1999) and the National Development Plan (2006-2010), which provide the framework for marine ecosystems conservation and sustainable use. Similarly, the project is consistent with the National Marine Strategy (2008), which highlights the need for incorporating the conservation and sustainable use of marine resources as part of Costa Rica’s development needs."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"financialStability": "The proposed project “Forever Costa Rica”, seeks to help Costa Rica become the first developing country to meet the goals of the Convention on Biological Diversity’s Program of Work on Protected Areas (PoWPA), and in doing so creates a unique potential model for other developing countries.  Forever Costa Rica contains, as a centerpiece, the definition of stable funding to achieve the nation’s goals under the CBD and to cover recurring associated expenses. A private trust will be established with the beneficiary defined as “the public protected areas of Costa Rica”.  The trustee  will be the Asociación Costa Rica por Siempre, a civil, private, nonprofit association domiciled in Costa Rica.  This association has the objective of managing the trust and, via disbursements from the trust, providing the goods and services needed to allow Costa Rica’s implementation of its national and international commitments for the conservation of biodiversity, especially those included in the PoWPA.  <br/>The total fundraising goal is US$50 million.  Interest income from the US$42 million (or annual flows from bilateral and multilateral funding sources) will be used to finance recurring costs originated by the project. In addition, a sinking fund of US$8 million will be used for expanding and improving the marine protected area system during the life of the project. <br/>The Nature Conservancy, the Linden Trust for Conservation and the Gordon and Betty Moore Foundation set a goal of US$34 million from individual donors and nonprofit foundations (US$31.5 raised to date), and and a goal of at least US$17 million from bilateral and multilateral donors (over US$20 million in proposals pending).<br/>Detailed costing exercises is attached to this proposal and the donor list are available upon request.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "boat",
+			"url": "http://www.cbd.int/database/attachment/?id=482"
+		},
+		{
+			"title": "Isla del coco-chatham beach",
+			"url": "http://www.cbd.int/database/attachment/?id=483"
+		},
+		{
+			"title": "Gulf",
+			"url": "http://www.cbd.int/database/attachment/?id=484"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Costs Excel Spreadsheet",
+			"url": "http://www.cbd.int/database/attachment/?id=500"
+		},
+		{
+			"title": "Agenda",
+			"url": "http://www.cbd.int/database/attachment/?id=501"
+		},
+		{
+			"title": "National PowPa goals-english ",
+			"url": "http://www.cbd.int/database/attachment/?id=502"
+		},
+		{
+			"title": "Project document",
+			"url": "http://www.cbd.int/database/attachment/?id=503"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=504"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Costa Rica/Forever Costa Rica/Costa_Rica_Lifeweb_FCR_Expression_of_Interest v2.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Costa Rica/Forever Costa Rica/Costa_Rica_Lifeweb_FCR_Expression_of_Interest v2.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -84.012451171875,
+		"lat": 9.990490803070292,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/1187CB8E-2719-1040-8818-C3CE068F85A4/attachments/4730.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "1187CB8E-2719-1040-8818-C3CE068F85A4",
+		"documentID": 203760,
+		"createdOn": "2015-03-27T19:45:47.337",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:47.337",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 13021,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:49 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/1187CB8E-2719-1040-8818-C3CE068F85A4",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 11638
+		}
+	}
+}

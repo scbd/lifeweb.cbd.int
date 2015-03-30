@@ -1,0 +1,256 @@
+{
+	"header": {
+		"identifier": "4D4C8D67-D299-5B06-6F8E-BBE5E8CD733A",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "4BC49417-8415-52B8-A3F1-9E3C4CA1C5FD"
+			},
+			"description": "The government of Finland conveyed the agreements reached for a total of € 500,000 in support of the following Expressions of Interest submitted to CBD LifeWeb:  Conservation and Ecological Restoration of Lomas and Community-based Management of Natural Resources in Atiquipa, in Peru; and Western Tanzania Livelihoods and Forest Conservation Project.",
+			"funding": 249992,
+			"dateTime": "1230768000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "pe"
+		}
+	],
+	"title": "Conservation and Ecological Restoration of Lomas and Community-based Management of Natural Resources in Atiquipa",
+	"timeFrame": null,
+	"projectAbstract": "The Atiquipa lomas, located in the Caravelí province, Arequipa Region, are the most important and best preserved in Peru and contain the only remaining patch of lomas forest in the world.",
+	"description": "The Atiquipa lomas are property of 513 families distributed in three towns: Atiquipa, Santa Rosa and Agua Salada, which are all associated to the Atiquipa Peasant Community. The Atiquipa Community owns more than 17,000 hectares, including 10,000 hectares of loma formations (of an original cover of almost 100,000 hectares). Land is collectively managed, following traditional practices. The most extended and profitable economic activity in the area is extensive livestock production. Agriculture activities are marginal due to water scarcity and the traditional prioritization of water use in the area: human consumption in the first place, livestock in the second and agriculture in the last.<br/><br/>With the establishment of the Atiquipa Peasant Community 100 years ago, local inhabitants tried to make a shift in the management of the lomas, which were heavily degraded since the end of the Inca rule due to intensive use and the introduction of exotic flora and fauna. The new management model included the use of diversified agriculture, family agricultural plots, water resources management and reduction of livestock activities using seasonal ranching for bovine livestock. However, during the second half of the 20th century, chronic drought and economic crisis put new pressure on the lomas through the replacement of cows by goats, managed in extensive production systems; the clearance of forest to produce livestock fodder and the progressive abandonment of all major agriculture activities, with the exception of olive production. As a result of such situation, the loma forest was reduced to its current extension of only 1,500 hectares, 70% of which is sparse forest, agriculture areas were also reduced to only 70 hectares, as well as pasture lands which dropped to 800 hectares. Local population had to migrate to other areas in search of labor and new economic opportunities, leaving the Atiquipa Lomas scarcely populated.<br/><br/>Negative effects of deforestation and overgrazing are severe and combined with limited availability of water are producing a major shift at the landscape level. Fragmentation and habitat loss are causing the decline of the populations of certain species, including invertebrates such as the river crab (Hypolobocera sp.). Fragmentation, especially of the remaining forest, is also reducing the fog-catchment area (trees and shrubs) and disturbing the natural hydrological cycle of an area that is the only source of good quality freshwater in 200 kilometers around.<br/><br/>The current project aims for the conservation, restoration and sustainable use of the Atiquipa lomas, with active participation of the Atiquipa Peasant Community and through the development of activities in three lines of action: 1) biodiversity conservation, 2) water resources management and 3) climate change adaptation.<br/><br/>The project will build on previous successful experiences in conservation and sustainable management of the loma ecosystems such as the “Conservation and sustainable use of the loma ecosystems of Atiquipa and Taimara by local communities”, project funded by GEF until 2006 and which allowed for: i) the delimitation of areas for conservation, restoration, pasture management and silviculture, ii) establishment and recovery of fog-catchment and water storage systems, iii) establishment of meteorological facilities, iv) improved livestock management and v) training in new productive activities such as apiculture, dairy products and other.<br/><br/>The project is fully aligned with national priorities for in-situ biodiversity conservation defined by the National Service of Natural Protected Areas (SERNANP), since Atiquipa Lomas has been identified as one of the most important areas for conservation in the last gap analysis study done during the update process of the protected areas Master Plan. The area has also been identified as priority by the Arequipa Regional government, which is starting the process for the establishment of its system of protected areas.<br/><br/>The aim of the project in the promotion of sustainable economic activities by local settlers is in line with the Financial Plan for the National System of Protected Areas, which identifies these kinds of activities as means to ensure financial sustainability of protected areas in the long term. <br/><br/>The project will also build biodiversity management capacities at the local level, an issue in line with the co-management approach that the new protected areas authority and the recently established Ministry of the Environment are strongly promoting.",
+	"additionalInformation": "\n[participation]\nThe project will contribute to the consolidation of the positive results obtained by previous successful initiatives developed by the Atiquipa Peasant Community, with technical support of different institutions such as the Instituto Regional de Ciencias Ambientales (IRECA) of the San Agustin National University of Arequipa, and which included reforestation of the lomas, restoration and improvement fog catchment facilities, ecosystem and water resources management and improvement of income levels through better production practices.  <br/>To the obtain its expected outcomes the project will: 1) provide technical, legal and institutional support for: i) the establishment of the Atiquipa lomas as a new protected area under the framework of the Protected Areas Law and ii) the participative planning process and formulation of the protected area management plan; 2) restore the lomas natural vegetation cover to increase the water-from-fogs natural catchment surface; 3) install new fog catchment facilities to “harvest” water both for reforestation and productive activities; 4) promote new sustainable economic activities compatible with biodiversity conservation such as ecotourism, for which a plan will be developed and 5) formulate and implement an environmental education and awareness plan aimed to local actors in Atiquipa and surrounding areas in order to ensure sustainability in the long term.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The project is fully aligned with national priorities for in-situ biodiversity conservation defined by the National Service of Natural Protected Areas (SERNANP), since Atiquipa Lomas has been identified as one of the most important areas for conservation in the last gap analysis study done during the update process of the protected areas Master Plan. The area has also been identified as priority by the Arequipa Regional government, which is starting the process for the establishment of its system of protected areas.<br/><br/>The aim of the project in the promotion of sustainable economic activities by local settlers is in line with the Financial Plan for the National System of Protected Areas, which identifies these kinds of activities as means to ensure financial sustainability of protected areas in the long term. <br/><br/>The project will also build biodiversity management capacities at the local level, an issue in line with the co-management approach that the new protected areas authority and the recently established Ministry of the Environment are strongly promoting."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Biodiversity conservation",
+			"result": "•\tEstablishment of the Lomas de Atiquipa protected area; \n•\tReforestation of 200 hectares de lomas forest; \n•\tFormulation and implementation of an ecotourism with direct participation of local communities",
+			"cost": 440
+		},
+		{
+			"activity": "Water resources management",
+			"result": "•\tSet-up of water-from-fogs catchment and storage systems",
+			"cost": 54
+		},
+		{
+			"activity": "Climate change adaptation",
+			"result": "•\tPromotion of sustainable economic activities \n•\tFormulation and implementation of an environmental education and awareness plan",
+			"cost": 98
+		}
+	],
+	"financialStability": "At the end of the current project the ecosystem restoration model (improved water catchment through reforestation and conservation of the lomas forest) that the Atiquipa Peasant Community has been implementing during the last 15 years will be consolidated, allowing for the expansion of actions such as the management of almost 400 hectares of lomas that where reforested by previous projects in the area.<br/><br/>The development of new sustainable economic activities will help to diversify income generation sources, making local communities less vulnerable to the negative impacts of reduced land productivity due to climate change. This will also make more feasible for small scale producers located nearby Atiquipa to adopt sustainable production practices that incorporate the ecosystem conservation approach. <br/><br/>Sustainability at the institutional level will be ensured by the direct involvement of SERNANP in the establishment and planning process of the protected area and in the monitoring of on-the-ground conservation activities.<br/><br/>Counterpart Funds:<br/>TNC: 22,365<br/>IRECA: 37,275<br/>Atiquipa Community: 23,359",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Fog entering the Lomas",
+			"url": "http://www.cbd.int/database/attachment/?id=65"
+		},
+		{
+			"title": "Loma forest",
+			"url": "http://www.cbd.int/database/attachment/?id=66"
+		},
+		{
+			"title": "Bromeliads in the Lomas",
+			"url": "http://www.cbd.int/database/attachment/?id=67"
+		},
+		{
+			"title": "Ancient agricultural plots",
+			"url": "http://www.cbd.int/database/attachment/?id=68"
+		},
+		{
+			"title": "Fog catchment facilty",
+			"url": "http://www.cbd.int/database/attachment/?id=69"
+		},
+		{
+			"title": "View of the surrounding desert from the Lomas",
+			"url": "http://www.cbd.int/database/attachment/?id=70"
+		}
+	],
+	"maps": [
+		{
+			"title": "Large Scale Map",
+			"url": "http://www.cbd.int/database/attachment/?id=62"
+		},
+		{
+			"title": "Small Scale Map",
+			"url": "http://www.cbd.int/database/attachment/?id=63"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=153"
+		},
+		{
+			"title": "Press release",
+			"url": "http://www.cbd.int/doc/press/2010/pr-2010-05-25-lifeweb-en.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Peru/Lomas de Atiquipa - LifeWeb Project Expression of Interest.doc"
+		},
+		{
+			"title": "Nature Conservancy",
+			"url": "http://www.nature.org"
+		},
+		{
+			"title": "Instituto Regional de Ciencias Ambientales (IRECA)",
+			"url": "http://www.lomasdeatiquipa.com/atiquipa.htm"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Peru/Lomas de Atiquipa - LifeWeb Project Expression of Interest.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -74.311523,
+		"lat": -15.640229,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/4D4C8D67-D299-5B06-6F8E-BBE5E8CD733A/attachments/4029.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "4D4C8D67-D299-5B06-6F8E-BBE5E8CD733A",
+		"documentID": 203729,
+		"createdOn": "2015-03-27T19:45:13.967",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:13.967",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 13129,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:16 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/4D4C8D67-D299-5B06-6F8E-BBE5E8CD733A",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 11966
+		}
+	}
+}

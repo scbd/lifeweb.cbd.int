@@ -153,7 +153,20 @@ define(['app'], function(app) {
       }
   });
 
+  app.filter('filterArrayCountries', function($http) {
+    var countries = [];
 
+    $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
+      countries = data.data;
+    });
+    return function(arr) {
+        if(!arr || !arr.length)
+            return '';
+        return arr.reduce(function(prev, cur) {
+            return prev + countries.find(function(item) { return cur == item.identifier; }).name + ', ';
+        }, '').slice(0, -2);
+    }
+  });
 
   //##################################################################
   app.filter('filterCountry', function () {
@@ -259,6 +272,13 @@ define(['app'], function(app) {
       }
   });
 
+  app.filter('filterYear2', function() {
+    return function(str) {
+        var date = new Date(str);
+        return date.getFullYear();
+    };
+  });
+
   //##################################################################
   app.filter('filterYear', function ($filter) {
       return function (projs, year) {
@@ -341,6 +361,16 @@ define(['app'], function(app) {
       }
   });
 
+  app.filter('justProject', function() {
+    return function(arr) {
+        if(!arr)
+            return [];
+        return arr.map(function(item) {
+            return item.project;
+        });
+    };
+  });
+
   //##################################################################
   app.filter('filterProjectCountry', function () {
       return function (countryList, pcountries) {
@@ -357,6 +387,44 @@ define(['app'], function(app) {
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
                   if (pcountries[j].country_ss && pcountries[j].country_ss.indexOf(countryList[i].code) != -1) {
+                      result.push(countryList[i]);
+                  }
+              }
+
+          }
+
+          var r = new Array();
+          o: for (var i = 0; i < result.length; i++) {
+              for (var x = 0; x < r.length; x++) {
+                  if (r[x] == result[i]) {
+                      continue o;
+                  }
+              }
+              r[r.length] = result[i];
+          }
+          return r;
+
+
+
+      }
+  });
+
+  //##################################################################
+  app.filter('filterMatchProjectCountry', function () {
+      return function (countryList, pcountries) {
+
+          if (!countryList)
+              return null;
+
+          if (!pcountries)
+              return countryList;
+
+          var result = [];
+
+            console.log('pr countries? ', pcountries);
+          for (var i = 0; i < countryList.length; i++) {
+              for (var j = 0; j < pcountries.length; j++) {
+                  if (pcountries[j].project.country_ss && pcountries[j].project.country_ss.indexOf(countryList[i].identifier) != -1) {
                       result.push(countryList[i]);
                   }
               }
@@ -831,26 +899,16 @@ define(['app'], function(app) {
   });
 
   //##################################################################
-  app.filter('filterMatchYear', function () {
+  app.filter('filterMatchYear', function ($filter) {
       return function (matches, year) {
-
           if (!matches)
               return null;
+          if(!year)
+            return matches;
 
-          var result = [];
-
-          if (year == '' || year == null)
-              return matches;
-          else {
-              for (var i = 0; i < matches.length; i++) {
-                  if (matches[i].year == year) {
-                      result.push(matches[i]);
-                  }
-              }
-          }
-
-          return result;
-
+        return matches.filter(function(item) {
+            return $filter('filterYear2')(item.project.createdDate_s) == year;
+        });
       }
   });
 
@@ -911,53 +969,45 @@ define(['app'], function(app) {
       }
   });
 
-
+    app.filter('uniqueDonor', function() {
+        return function(matches) {
+        console.log('matches? ', matches);
+            if(!matches)
+                return [];
+            matches.filter(function(item, index) {
+                return !matches.find(function(findItem, findIndex) {
+                    return item.donor.identifier_s == findItem.donor.identifier_s && index != findIndex;
+                });
+            });
+        };
+    });
 
   //##################################################################
   app.filter('filterMatchCountry', function () {
-      return function (funding, value) {
-
-          if (!funding)
+      return function (arr, country) {
+          if (!arr)
               return null;
+          if(!country)
+            return arr;
 
-          if (value == null)
-              return funding;
-
-          var result = [];
-
-          for (var i = 0; i < funding.length; i++) {
-
-              var key = funding[i].project.country_codes;
-
-              for (var j = 0; j < key.length; j++) {
-                  if (key[j] == value) {
-                      result.push(funding[i]);
-                  }
-              }
-          }
-          return result;
-      }
+          return arr.filter(function(item) {
+            return item.project.country_ss.indexOf(country) != -1;
+          });
+      };
   });
 
 
   //##################################################################
   app.filter('filterMatchDonor', function () {
-      return function (funding, id) {
-
-          if (!funding)
+      return function (arr, donor) {
+          if (!arr)
               return null;
+          if(!donor)
+            return arr;
 
-          if (id == null)
-              return funding;
-
-          var result = [];
-
-          for (var i = 0; i < funding.length; i++) {
-              if (funding[i].donor.id == id) {
-                      result.push(funding[i]);
-              }
-          }
-          return result;
+          return arr.filter(function(item) {
+            return item.donor.identifier_s == donor;
+          });
       }
   });
 
@@ -1105,17 +1155,7 @@ define(['app'], function(app) {
 
           //convert all to Euros and sum
           for (var i = 0; i < funding.length; i++) {
-                 
-              amount = 0;
-
-              if (funding[i].currency == "US Dollars") {
-                  amount = funding[i].amount * USDtoEURO;
-              }
-
-              if (funding[i].currency == "Euros") {
-                      amount = funding[i].amount;
-              }
-
+              amount = funding[i].amount * USDtoEURO;
               total = total + amount;
           }
 
@@ -1139,15 +1179,15 @@ define(['app'], function(app) {
           if (!funding)
               return null;
 
-          var low = 2013;
+          var low = 2015;
           var high = 2008;
 
           for (var i = 0; i < funding.length; i++) {
-              if (low > funding[i].year)
-                  low = funding[i].year;
-              if (high < funding[i].year)
-                  high = funding[i].year;
-
+              var year = $filter('filterYear2')(funding[i].project.createdDate_s);
+              if (low > year)
+                  low = year;
+              if (high < year)
+                  high = year;
           }
 
 
@@ -1158,7 +1198,6 @@ define(['app'], function(app) {
           if (low > high) return "0";
 
           return   low + " - " + high;
-
       }
   });
 
@@ -1194,38 +1233,35 @@ define(['app'], function(app) {
 
 
   //##################################################################
-  app.filter('DistinctCountries', function ($filter) {
-      return function (funding) {
+  app.filter('DistinctCountries', function () {
+      return function (matches) {
+          if (!matches)
+              return 0;
 
-          if (!funding)
-              return null;
-          var c = [];
+          var keys = {};
+          return matches.reduce(function(prev, cur, index) {
+                console.log('prev: ', prev);
+                if(keys[cur.donor.identifier_s])
+                    return prev;
 
-          var flag = false;
-
-          for (var i = 0; i < funding.length; i++) {
-
-              var value = funding[i].project.country_names.split(',');
-              var key = funding[i].project.country_codes;
-
-              for (var k = 0; k < key.length; k++) {
-
-                  for (var j = 0; j < c.length; j++) {
-
-                      if (c[j].key == key[k].trim())
-                          flag = true;
-                  }
-                  if (flag == false) {
-                      c.push({ "key": key[k].trim(), "value": value[k].trim() });
-                  }
-                  flag = false;
-                 
-              }
-          }
-
-          return $filter('orderBy')(c, 'key');
-
+                keys[cur.donor.identifier_s] = true;
+                return prev + 1;
+            }, 0);
       }
+  });
+
+  app.filter('uniqueDonorsFromProjects', function() {
+    //return array of {label: key: }
+    return function(projects) {
+        return [];
+    /*
+        return projects.reduce(function(prev, item) {
+            return prev.concat(item.donor_ss.map(function(item) {
+                return {title: item};
+            });
+        }, []);
+        */
+    };
   });
 
   //##################################################################

@@ -1,0 +1,226 @@
+{
+	"header": {
+		"identifier": "7419CDF9-4532-158F-2330-402119A003D4",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "54130C55-0F45-BA0F-68A9-6F3DDC738437"
+			},
+			"description": "The government of France announced a €4 million commitment to support the Biofund, a protected areas trust fund in Mozambique, through the Agence Française de Développement. ",
+			"funding": 4000000,
+			"dateTime": "1288569600000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9BA69D2F-315D-2E27-49B5-057B5D2C4332"
+			},
+			"description": "",
+			"funding": 1100000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "mz"
+		}
+	],
+	"title": "Capitalizing the Foundation for Conservation of Biodiversity (BIOFUND Mozambique)",
+	"timeFrame": null,
+	"projectAbstract": "BIOFUND Mozambique is an independent environmental Foundation which aims to support the conservation of aquatic and terrestrial biodiversity and the sustainable use of natural resources, including the consolidation of the national system of conservation areas. <br/><br/>The present project is a plan to capitalize the BIOFUND so as to be able to provide 30% of the operating costs of the Protected Area network in Mozambique. The project sets out the ambitious ten-year fundraising target of 100 million USD.",
+	"description": "National Context<br/><br/>1.\tCovering an area of about 784,000 km2, Mozambique is located on the southeastern coast of Africa. It is bounded by Tanzania to the north; by the Mozambique Channel (Indian Ocean) in the east; on the south and southwest by South Africa and Swaziland; and on the west by Zimbabwe, Zambia, and Malawi (Figure 1). The country is generally low-lying, with only 13 percent of the country above 1,000 m. The land ascends in a westward direction from the coast through a coastal lowland that is narrow in the north but broad in the south (~44% of the total land area), through a sub-plateau zone to an extensive low-lying plateau of moderate height, and finally up to a narrow higher-lying area on the western border. The climate ranges from subtropical in the south to tropical in the center and north. Most of the country receives above 400 mm of rainfall per annum, with the rainy season extending from October to April. The coastal zone receives up to 900 mm of rain per year. The north region is more humid than the south, except in the Upper Zambezi region in Tete, where it is dry and hot. <br/><br/>Socio-economic context:<br/><br/>2.\tAt the end of the armed conflict in 1992, Mozambique ranked among the poorest countries in the world. It still ranks among the least developed nations, with very low well-being indicators (Table 3). More than 70 percent of Mozambicans live in extreme poverty (<US$2/d). In 2007, 38 percent of the population was undernourished and only 42 percent had access to an improved water source. The country ranks 172 out of 177 in the UNDP’s Human Development Index (HDI), the lowest in southern African. <br/><br/>3.\tThe population of ~21 million is growing at a rate of about 2.4 percent. Population density is low (~25/km2). The north-central provinces of Zambezia and Nampula are the most populous, with about 45% of the population. In the central zone, people are concentrated along the Beira Corridor, and in the south, around Maputo. More than 70 percent of the population live along the coastal area, and about 68 percent live in rural areas. Population dynamics and economic growth are both likely to be affected by HIV/AIDS, for which the adult prevalence rate is estimated at 12.2%. Catholics comprise 24 percent of the population, while Muslims comprise 18 percent. Mozambique's major ethnic groups encompass numerous sub-groups with diverse languages, dialects, cultures, and histories. <br/><br/>4.\tIn 1987, the government embarked on a series of macro-economic reforms to stabilize the economy. These steps, combined with donor assistance and with political stability since multi-party elections in 1994, have led to improvements in the country's growth rate. Mozambique's once substantial foreign debt has been reduced through forgiveness and rescheduling under Heavily Indebted Poor Countries (HIDP) and Multilateral Debt Relief initiatives. As a result of the debt relief it has received, the Government of Mozambique’s outstanding debt stock has fallen from 25% of GDP in 2005 to under 12 % of GDP today, well below debt distress thresholds determined by the IMF. Fiscal reforms, including introduction of a value-added tax and reform of the Customs Service, have also improved the government's revenue collection abilities. In spite of these gains, Mozambique still remains dependent upon foreign assistance for much of its budget, and most of the population lives below the poverty line. Subsistence agriculture continues to employ the vast majority of the country's work force. <br/><br/>5.\tMozambique’s Gross Domestic Product (GDP) was US$20.17 billion in 2009 (up from US$17.64 billion in 2008) and foreign direct investments (FDI) was US$1.8 billion. The 2010 forecast economic growth rate is estimated at 6.3%, some 2% higher than 2009. Agriculture accounted for 21% of the GDP in 2008. Agricultural exports included: cotton; cashew nuts; sugarcane; tea; cassava; corn; coconuts; sisal; citrus and tropical fruits; potatoes; sunflowers; beef and poultry. Domestically consumed food crops included corn; pigeon peas; cassava; rice; beef; pork; chicken; and goat. Although more than 80% of the 20,3 million people (2009 estimate) in Mozambique engages in small-scale agriculture, the sector still suffers from severely inadequate infrastructure, commercial networks, and investment . Industry accounted for 31% of GDP in 2008, and included production of: food; beverages; chemicals (fertilizer, soap, paints); aluminum; petroleum products; textiles; cement; glass; asbestos; and tobacco. 2009 was a record year for industrial and agricultural development in Mozambique, with nearly US$6 billion approved across some 250 projects . Services  accounted for some 39.7% of GDP in 2008. Of these, tourism accounted for 5% of GDP. With little central planning, tourism income has grown to US$481m (~1.5 million visitors) in 2009, mainly through independent tourism initiatives. There are significant unexploited mineral resources in Mozambique, and prospecting is occurring for oil, gas, diamonds and uranium, with export revenue expected to reach US$500 million in 2010/11. <br/><br/>6.\tThe country’s economy will, in the medium- to long-term, continue to rely largely on its natural resource base. Even with rapid rates of urbanization, the subsistence and well-being of most Mozambicans depends largely on their access to land, water resources, forest products, fisheries, mines, and other natural resources. The government is trying to balance its immediate goal of reducing poverty through use of natural resources, with longer-term strategies requiring judicious management of these resources. Limited domestic funds are however leading to a heavy reliance on foreign capital to support these strategies.",
+	"additionalInformation": "\n[participation]\nThe Forests and Wildlife Law (10/99) establishes the norms and standards for the protection, conservation and sustainable use of forestry and wildlife resources. Article 33 of the Law enables the State to delegate powers to local communities, associations or to the private sector in the management of forest and fauna . It stipulates that 20% of any revenue collected from the use of forestry products and wildlife in protected areas must be distributed the local communities in the area where the resources were extracted. The Forestry and Wildlife Regulations (12/02) enact specific provisions of the law and regulates hunting fees (the fee schedule is updated in terms of Decree 96/2003).",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "1.\tThe legislative and regulatory framework for protected areas in Mozambique is relatively well developed. It adequately provides for inter alia: the total or partial protection of significant areas under some form of conservation land use; the institutional roles and responsibilities for different PA categories; the rights of communities living and around these conservation and protected areas; the development of a range of partnerships between the state and the private sector, communities, NGOs and other institutions; a range of different financing mechanisms for protected areas; and the distribution of financial benefits from the use of protected areas to affected local communities. <br/>2.\tThe Principles for the Administration of Protected Areas in Mozambique (Resolution of the Council of Ministers, 2006) details the options for the management and development of protected areas. It specifically provides for co-management partnerships between the state and the private sector, local communities, NGOs and other institutions.    <br/>3.\tThe government has adopted, or is in the process of developing, a number of policies, strategies and plans to meet its biodiversity conservation obligations in terms of the CBD. The National Environmental Management Programme (NEMP) is the master plan for environment management in Mozambique. It contains a national environment policy, environment umbrella legislation (see above), and an environmental strategy. The NEMP is also a program of sectoral plans, containing projections for the medium- and long-term aiming to lead the country to sustainable socio-economic development. Within the framework of the NEMP, a number of biodiversity conservation strategies and plans have also been prepared. These include inter alia: the National Biodiversity and Action Plan (2003) covering the period 2003-2010; the Integrated Coastal Zone Management Program; and the Human Wildlife Mitigation Strategy (2009). <br/>4.\tOf particular relevance for protected areas is the new Conservation Policy and Implementation Strategy (2009) covering the period 2009-2019.  The Conservation  Policy aims to: (i) harmonize laws and sectoral policies among the ministries (MITUR, MINAG, MICOA, and the Ministry of Public Works and Housing); and (ii) establish systems for inter-institutional coordination, mechanisms for the involvement of civil society, strategies for management of parks and reserves, and criteria for new areas of conservation and reclassification of areas of conservation. It also makes recommendations for decentralizing management of conservation areas, and identifies mechanisms for the integration of communities as beneficiaries of conservation areas. In addition, it makes recommendations for clarification of areas of responsibility and coordination between MITUR and the Ministry of Fisheries in marine conservation areas."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Start and Capacity Building of the BIOFUND",
+			"result": "1.\tMozambican foundation registered \n2.\tInvestment and income generating vehicle (foreign investment fund) established and started to be capitalised\n3.\tBoard elected and operational as well as other governing bodies constituted and functioning \n4.\tKey staff employed and administration organised (office space, resources)\n5.\tOperational and strategic instruments and procedures developed implemented \n6.\tTraining and capacity building of the executive team staff and the Board of Directors;\n7.\tImplementation of the fund-raising strategy to finance BIOFUND’s operational costs, and build its capital in support of conservation areas;\n8.\tImplementation of an investment strategy for BIOFUND;\n9.\tImplementation of the communications strategy for BIOFUND;\n10.\tInitial grants developed and Pilot funding disbursed."
+		},
+		{
+			"activity": "Capitalization of the BIOFUND",
+			"result": "BIOFUND Capable of covering form revenues 30% of the operating costs of the PA Network in Mozambique."
+		}
+	],
+	"financialStability": "Protected area financing<br/><br/>1.\tProtected areas in Mozambique are financed from three primary sources: (i) annual central government allocation (~1% of income in 2008/9) ; (ii) other government allocation, including payment of staff salaries and special grants (~2.5% of income in 2008/9); internal revenue (self-financing) generated from activities undertaken in protected areas (~8% of income in 2008/9, of which 16-20% is distributed to designated local communities and 20% back to the state budget); and (iii) donor funding provided by development partners (~89% of income in 2008/9). <br/><br/>SEE FIGURE 4: Distribution of revenue sources for funding Mozambiques conservation areas (2008/2009)<br/><br/>2.\tGovernment revenue allocations consist of direct government budget support, public taxes, fees and fines , revenue sharing with communities and debt relief. The government contributes general budget support for operational expenses in conservation areas through the provincial directorates of MITUR and the Provincial Governments. Salaries of staff working in conservation areas are paid by provincial government offices. <br/><br/>3.\tThe main income sources from the use of protected areas and their natural resources include: user fees (such as entry fees, accomodation, fishing fees, guided tours and diving fees); fees from licenses for use of natural resources (timber concessions, live game sales and hunting concessions); income from fines and auction sales of confiscated goods (predominantly timber);  and income from nature-based tourism concessions. Except in the case of Limpopo NP (where a special agreement enables the park to keep the revenues generated within its borders to be used to offset operating and investment costs), the income from protected areas is submitted to the relevant provincial Financial Administration Office where a portion is allocated to the state budget (20%), a portion to the  affected local community (16%) and the remainder (64%) returned (on application) to the relevant protected area for disbursement . Table 2 summarises the income generated from the protected areas for the period 2005-2009.<br/><br/>4.\tOther government ministries may also provide direct financing or in-kind support for conservation areas.  For example, under a Memorandum of Understanding signed in December 2004 between MITUR and the Ministry of National Defence (MDN) the MDN has provided weapons and ammunition to three different National Parks. In addition to material support, the MDN has placed military personnel inside six National Parks and Reserves, paying their salaries and other benefits, and contributing to their food needs as well.<br/><br/>SEE TABLE 2: INCOME (in US$) GENERATED DIRECTCTLY FROM THE PROTECTED AREAS IN MOZAMBIQUE FOR 2005-2009<br/><br/><br/>5.\tBilateral and multilateral donor projects, supported by donors such as France (AFD, FFEM), Germany (KFW), US (USAID), the Global Environment Facility (GEF) and the World Bank, provide the largest share of funding for Mozambique’s conservation areas. Protected areas are still heavily dependent on donor funding to sustain even the most basic operational functions. Donors currently provide about US$16-22 million annually in financing for Mozambique’s conservation areas (see also Table 3) . The Biodiversity and Environmental Working Groups provide forums for government and donor coordination, with participation from other stakeholders.  <br/><br/>6.\tBased on the content of this submission to CBD’s LifeWeb platfor, the government of Mozambique and its partners in this project intend to hold a round table among international coooperation partners. The goal of this round table will be to communicatethe vision and specific goals of this project to various intenrational cooperation partners at the same time, strengthen interest of both traditional and non-traditional donors, and facilitate coordination among the donor partners visavis these project priorities. This round table process will be co-convened with support of the CBD’s LifeWeb, and it is anticipated the first meeting will be held in late 2010 or early 2011.<br/><br/>SEE TABLE 3: SUMMARY OF THE PRIMARY FUNDING SUPPORT FROM DONOR PARTNERS FOR PROTECTED AREAS IN MOZAMBIQUE (as at April, 2010)<br/><br/><br/>7.\tBased on a preliminary calculation undertaken during 2010 for the National Parks, National Reserves  and Forest Reserves) , the costs (funding necessary to cover core staff costs, basic conservation activities and basic investments) for protected areas are conservatively estimated at US$19,837,459 per year. With current revenues of US$14,897,402 (including donor funds) or US$1,239,855(excluding donor funds), this equates to a funding gap of US$ 4,940,058 (with donor funds) or US$ 18,597,605 (without donor funds) per annum. <br/><br/>8.\tThe estimated annual costs for all categories of conservation areas has also been estimated during the PPG phase and is summarised in Table 4 below.<br/><br/>SEE TABLE 4:  ESTIMATED ANNUAL COSTS (2010 US DOLLARS) FOR MOZAMBIQUE’S CONSERVATION AREAS",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Distribution and extent of conservation areas in Mozambique",
+			"url": "http://www.cbd.int/database/attachment/?id=882"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Table 1: Areas of outstanding ecosystem, biological and/or scenic value in Mozambique",
+			"url": "http://www.cbd.int/database/attachment/?id=884"
+		},
+		{
+			"title": "Figure 3: Costs (US$) of environmental degradation in Mozambique (2009)",
+			"url": "http://www.cbd.int/database/attachment/?id=885"
+		},
+		{
+			"title": "Figure 4 : Distribution of revenue sources for funding Mozambiques conservation areas (2008/2009)",
+			"url": "http://www.cbd.int/database/attachment/?id=886"
+		},
+		{
+			"title": "Table 2: Income generated (in $US) directly from the protected areas in mozambique for 2005-2009.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=887"
+		},
+		{
+			"title": "Table 3: Summary of the primary funding support from donor partners for protected areas in mozambique (as at april, 2010)",
+			"url": "http://www.cbd.int/database/attachment/?id=888"
+		},
+		{
+			"title": "Table 4:  Estimated Annual Costs (2010 US dollars) for Mozambique’s Conservation Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=889"
+		}
+	],
+	"coordinates": {
+		"lng": 35.529562,
+		"lat": -18.665695,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/7419CDF9-4532-158F-2330-402119A003D4/attachments/6319.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "7419CDF9-4532-158F-2330-402119A003D4",
+		"documentID": 203786,
+		"createdOn": "2015-03-27T19:46:14.803",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:14.803",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 19591,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:16 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/7419CDF9-4532-158F-2330-402119A003D4",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 18646
+		}
+	}
+}

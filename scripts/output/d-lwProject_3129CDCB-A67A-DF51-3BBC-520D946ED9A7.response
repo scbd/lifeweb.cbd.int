@@ -1,0 +1,310 @@
+{
+	"header": {
+		"identifier": "3129CDCB-A67A-DF51-3BBC-520D946ED9A7",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "9AAB2AE2-1EF0-C623-C983-9820E3196C11"
+			},
+			"description": "",
+			"funding": 21817,
+			"dateTime": "1388534400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "A0276ADD-CD69-1C0C-C2C0-646C32F06A2F"
+			},
+			"description": "",
+			"funding": 30704,
+			"dateTime": "1388534400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "1A00E64A-C7EA-971E-F2E2-FC144BEFE57C"
+			},
+			"description": "",
+			"funding": 12948,
+			"dateTime": "1388534400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "9619368D-3DD5-488B-4C27-38A2B452C48D"
+			},
+			"description": "IUCN Save Our Species Project: ENSURING A FUTURE FOR THE CRITICALLY ENDANGERED SIAMESE CROCODILE",
+			"funding": 28111,
+			"dateTime": "1388534400000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Jackson Frechette<br/>Jackson.frechette@fauna-flora.org<br/>+855 (0)97 544 8298<br/>Fauna and Flora International",
+	"countries": [
+		{
+			"identifier": "kh"
+		}
+	],
+	"title": "Ensuring the future of the Critically Endangered Siamese crocodile in the wild",
+	"timeFrame": null,
+	"projectAbstract": "This project sets out to re-establish viable, breeding populations of Siamese crocodiles in Southwest Cambodia, by using both reintroduction (releasing crocodiles into areas from which the species has been completely wiped out) and reinforcement (adding crocodiles to existing, severely depleted colonies). It also aims to strengthen the protection of existing breeding populations in Southwest Cambodia. By establishing crocodile sanctuaries we are securing watersheds which helps secure livelihoods maintain and protecting fisheries. Water security is also an important climate change mitigation. Our program protects and increases the world’s largest wild population of Siamese crocodiles, which falls directly in-line with Aichi Target 12. Our project enhances protection on the national and community level (Aichi 2,12,14, 15, 18), increases education and awareness on a local and national scale (Aichi 1), and provides data on the ecology and population status of the species (Aichi 17, 19). This project builds on over a decade of work by Fauna & Flora International’s Cambodian Crocodile Conservation Project.",
+	"description": "After many decades of habitat loss, hunting and collection for crocodile farms, the Siamese crocodile, Crocodylus siamensis, is at very high risk of extinction in the wild throughout Asia and is listed as Critically Endangered and on Appendix I of CITES. Cambodia still holds the biggest known wild population (up to 250 adults), and has made good progress to strengthen the protection of this species in the wild. Community-based initiatives have proved to especially effective. However, Cambodia’s crocodile population is severely fragmented and still faces many pressures, including accidental drowning in fishing nets and loss of critical habitat to hydropower dams. Fewer than five nests are recorded in the wild every year, which is not enough to ensure the survival and recovery of Cambodia’s famous crocodiles. Our program seeks to conserve the Siamese crocodile through captive breeding to reinforce existing populations, and enhanced protection of key breeding sites.",
+	"additionalInformation": "\n[participation]\nIn establishment of our crocodile sanctuaries we are going through rigorous free, prior, and informed consent protocols. This involves meeting with community members, establishing and addressing their concerns, and also monitoring the effect of our activities on community members.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "One major aspect of our program is the development of the National Crocodile Conservation Action Plan. We hope that it will be finished and approved by the government by the end of 2014, or early 2015."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": "We are addressing a number of actions in Cambodia’s National Biodiversity Strategy and Action Plan, in which the Siamese crocodile was identified as a priority Endangered Species. These include “systematic monitoring”, “development and implementation of recovery programs”, and “measures ensuring the protection of critical habitats”. This project hits several targets and indicators under this plan (Targets: 3, 4, 6, 8, 10, 11, 14, 17, and 20). This project also fulfills several actions to support Cambodia’s Action Plans for PoWPAs through its combination of supporting community protection and management of sanctuary areas, improving national protected status of crocodile habitats,  and monitoring wild crocodile populations (Key PoWPA actions: 1.2, 1.4, 2.1, 3.2, 3.5, 4.2, 4.3, 4.4)."
+		}
+	],
+	"budget": [
+		{
+			"activity": "Enhance the viability of wild populations through restocking wild populations with animals reared in our captive breeding program",
+			"result": "Number of crocodiles in sanctuaries is increased, and breeding is increased"
+		},
+		{
+			"activity": "Get national-level protection status for crocodile sanctuaries (6 total), strengthen community management of the sanctuaries and develop management plans for them",
+			"result": "Sanctuaries are approved for protected status by the government; community patrols are monitored and illegal activity within the sanctuaries is reduced; management plans are approved at the community and state level."
+		},
+		{
+			"activity": "Increase awareness so that at least 10% of Cambodians are aware that the Siamese crocodile is indigenous, rare, and protected by law",
+			"result": "Number of guests to the Phnom Tamao Breeding Facility; number of outreach materials produced (tv, social media etc.), surveys to indicate the public perception of crocodiles"
+		},
+		{
+			"activity": "Monitor the crocodile populations and disseminate project methods, results, and impacts to benefit further conservation planning",
+			"result": "Number of individuals are assessed; Information is published"
+		}
+	],
+	"financialStability": "FFI and FA are fully committed to the long-term conservation of the Siamese crocodile. The CCCP has been already operating for 14 years and both institutions are dedicated to ensuring that the program continues well into the future. FA has demonstrated their commitment to conservation with ongoing agreements with FFI. Also, the expected government approval of the National Action Plan for Crocodile Conservation will cement state level commitment for crocodile conservation.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": "Our crocodile sanctuaries will protect the watersheds of the rivers from deforestation and conversion to agriculture. This will provide flood and erosion control. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": "Our plan is to secure a total of 80,000 ha of forested land conserved and protected as Crocodile sanctuaries. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": "The protection of the crocodile sanctuaries will include patrolling to prevent unsustainable fishing methods such as fishing using electric currents. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": "The formation of crocodile sanctuaries will protect the watersheds of the 6 designated areas. This will help prevent the conversion of the surrounding forests to agriculture and reduce the impact that grazing animals have on water quality. The conservation of those forests will help maintain clean water for households. "
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": "This project will employ community wardens to guard the crocodile areas. We will also support the development and preservation of non-timber forest product (e.g. cardamom) collection within the crocodile sanctuaries and surrounding forests. The protected areas will also help to maintain fish stocks by preventing illegal and unsustainable fishing practices. "
+		}
+	],
+	"aichiTargets": [
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-11"
+			},
+			"comment": "Our crocodile sanctuaries are part of the greater protected area landscape in the Cardamom mountains and provide further protection for the sites within protected areas, and creates new protected areas outside formally protected forests. "
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-12"
+			},
+			"comment": "This project directly protects the largest wild breeding populations of the critically endangered Siamese crocodile. We will also stabilize and  increase the wild population through reintroduction and reinforcement from captive bred stock. "
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-14"
+			},
+			"comment": "The establishment of crocodile sanctuaries protects the watersheds for several indigenous communities. "
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-15"
+			},
+			"comment": "We helping in the protection of both biodiversity and tracts of intact forest. We are also restoring the ecosystem by increasing the population or reintroducing the top predator. "
+		},
+		{
+			"type": {
+				"identifier": "AICHI-TARGET-05"
+			},
+			"comment": "Our project aims to secure and protect critical crocodile habitat and 80,000 ha of catchment across the sites. "
+		}
+	],
+	"images": [
+		{
+			"title": "Siamese Crocling",
+			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/crocodiles/Siamese Crocling.jpg"
+		},
+		{
+			"title": "Siamese Crocodile",
+			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/crocodiles/siamese crocodile.jpg"
+		}
+	],
+	"maps": [
+		{
+			"title": "Siamese Crocodile Sanctuary Map",
+			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/crocodiles/siamese crocodile sanctuary_map.png"
+		}
+	],
+	"attachments": [
+		{
+			"title": "LifeWeb Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/crocodiles/CCCP_July24_Lifeweb EOI_template_english_Final.docx"
+		}
+	],
+	"coordinates": {
+		"lng": 0,
+		"lat": 0,
+		"zoom": 7
+	},
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/313445"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/3129CDCB-A67A-DF51-3BBC-520D946ED9A7/attachments/24041.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "We will work to",
+			"info": "We will work together with MoE in the development of the national species biodiversity database. They will also be important partners in conducting surveys for crocodiles in places outside our focal areas."
+		},
+		{
+			"partner": "FiA will be key",
+			"info": "FiA will be key in helping to acquire pure-bred Siamese crocodiles from farms for the captive breeding program and release. They will be key participants in the release and monitoring of captive bred crocodiles."
+		},
+		{
+			"partner": "FA has been a k",
+			"info": "FA has been a key partner in this project from its inception. Much of the work here is areas under FA jurisdiction with FA staff, including our Phnom Tamao captive breeding site. FA is a key partner is the facilitation of the Action Plan being approved at the national level."
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "3129CDCB-A67A-DF51-3BBC-520D946ED9A7",
+		"documentID": 203699,
+		"createdOn": "2015-03-27T19:44:44.013",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:44:44.013",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 12317,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:44:46 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/3129CDCB-A67A-DF51-3BBC-520D946ED9A7",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10715
+		}
+	}
+}

@@ -1,0 +1,245 @@
+{
+	"header": {
+		"identifier": "BB1C6E46-F128-C510-0F8D-95C7C34CCB1E",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "CACA2858-F011-3468-EAAD-A6671816C824"
+			},
+			"description": "",
+			"funding": 600000,
+			"dateTime": "1262304000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		},
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "200 000 (AECID (Espagne); MMAMR (Espagne); Fondation MAVA",
+			"funding": 200000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "gw"
+		}
+	],
+	"title": "Renforcement de la surveillance dans les aires marines protégées de la Guinée-Bissau",
+	"timeFrame": null,
+	"projectAbstract": "Due to its geographic location, the coastal area of Guinea-Bissau remains remarkably enriched with biodiversity and relatively abundant natural resources. These resources play a vital role in ensuring food security and producing economic benefits for the local population. In order to preserve the biodiversity, the Government of Guinea-Bissau created a system of protected areas, covering 12% of its territory. Unfortunately, the institution responsible for the management of these protected areas, the Institute of Biodiversity and Protected areas, faces difficulties ensuring effective monitoring of these protected areas. This project aims to strengthen the management and create effective monitoring of 3 marine protected areas in Guinea-Bissau.",
+	"description": "En raison de sa géographie particulière et du bon état de conservation de ses écosystèmes, notamment les mangroves et l’archipel des Bijagós, la zone côtière de la Guinée-Bissau dispose encore d’une biodiversité remarquable et de ressources naturelles relativement abondantes. Ces ressources jouent un rôle vital pour les populations du pays soit pour leur sécurité alimentaire soit pour leur économie. <br/><br/>Afin de préserver les sources de cette biodiversité le Gouvernement de Guinée-Bissau a créé un système d’aires protégées qui couvrent près de 12% de son territoire. L’Institution responsable de la gestion de ces aires protégées, l’Institut de la Biodiversité et des Aires Protégées (IBAP) éprouve cependant des difficultés à assurer une surveillance efficace en disposant seulement d’une moyenne de 5 gardes pour chacune des aires protégées et des équipements rudimentaires. <br/><br/>Ces difficultés sont rencontrées notamment vis-à-vis des  pêcheurs migrants venus d’autres pays de la région où les ressources sont moins abondantes. La surveillance maritime proprement dite est particulièrement complexe en raison des superficies concernées, de la mobilité des pêcheurs et des risques encourus par les gardes face à des embarcations illégales disposant souvent d’armes à feu. Il n’est pas rare que des campements illégaux s’installent dans des zones de mangrove où ils sont difficiles à repérer puis à déguerpir .Il est donc impératif d’élaborer et mettre en œuvre une véritable stratégie de surveillance maritime reposant sur un personnel formé, des équipements performants, des normes de fonctionnement éprouvées ainsi qu’un mécanisme de suivi-évaluation adapté.<br/><br/>Les pratiques de pêche observées sont rarement durables en raison des engins utilisés (filets dérivants, sennes tournantes, filets monofilaments) des emplacements (fermeture de bras de mer, intérieur des mangroves) des espèces ciblées (raies et requins pour leurs ailerons, lamantins) et de l’utilisation massive du bois de mangrove pour le fumage des captures mais aussi pour la commercialisation vers les pays limitrophes. Ces difficultés rencontrées risquent de compromettre à terme les efforts de conservation de la Guinée-Bissau et de provoquer une érosion structurelle de la biodiversité, des ressources naturelles ainsi que la dégradation des conditions de vie et des patrimoines culturels des populations qui résident dans ces 3 aires marines protégées.",
+	"additionalInformation": "\n[participation]\nLa mise en place d’un système de surveillance efficace des 3 aires marine protégées considérées permettra avant tout de protéger les ressources naturelles et la biodiversité dont dépendent directement les populations résidentes pour leur subsistance et leur économie. Elle vise en particulier à faire respecter les droits d’accès qui leur sont réservés de manière exclusive.<br/>La protection des écosystèmes et des services qu’ils sont appelés à rendre aura également pour effet de sécuriser en partie la qualité de vie des populations autochtones et contribuera à maintenir vivant leur patrimoine culturel intimement associé à la biodiversité.<br/>Les populations locales seront directement associées au système de surveillance participative par l’intermédiaire de la présence de représentants des communautés au sein des équipes de surveillance.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "Stratégie nationale pour les aires protégées et la conservation de la biodiversité en Guinée-Bissau (annexe)<br/><br/>Estrategia nacional e Plano de Acção para a Conservação da Diversidade Biologica na Guiné-Bissau. Ministerio dos Recursos Naturais e Energia, Direcção Geral do Ambiente/GEF-PNUD<br/><br/>Plan d’Action pour la Conservation des Tortues Marines en Guinée-Bissau (IBAP)<br/><br/>MoU et Stratégie Régionale pour la Conservation du Lamantin en Afrique de l’Ouest (UNEP/WI/PRCM)<br/><br/>Accord sur la Conservation des Oiseaux Migrateurs d’Afrique et d’Eurasie (AEWA)<br/><br/>Convention sur la Conservation des Espèces Migratrices (CMS)"
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Développement d’un système de surveillance maritime dans les 3 aires marines protégées (AMP)",
+			"result": "3 Unités de Surveillance Maritime (USM) opérationnelles, dotées en équipements (vedettes et équipements de surveillance), ressources humaines et moyens de fonctionnement; mise en place d’une Unité Centrale de Coordination (UCC) chargée de superviser et coordonner les opérations de surveillance; formation des personnels affectés aux USM et à l’UCC;\nSignalisation des AMP sur le terrain"
+		},
+		{
+			"activity": "Sauvegarde des populations d’espèces menacées dans les 3 aires marines protégées (Lamantin, tortues marines, oiseaux d’eau migrateurs + ressources halieutiques menacées i.e raies et requins)",
+			"result": "Mécanismes de surveillance, de suivi et de protection appropriés aux situations particulières des espèces menacées (lieux de regroupement des lamantins, plages de ponte des tortues marines, reposoirs et colonies nicheuses d’oiseaux d’eau) : patrouilles, affûts, signalisation, etc."
+		},
+		{
+			"activity": "Amélioration de la relation entre les populations résidentes, les pêcheurs et les aires protégées",
+			"result": "Tables de concertation définissant les règles d’usage et mécanismes de gouvernance partagée;\nParticipation de représentants des populations résidentes aux opérations de surveillance;\nInformation et sensibilisation des pêcheurs et autres usagers sur la vulnérabilité des espèces menacées et des habitats comme la mangrove"
+		}
+	],
+	"financialStability": "L’Institut pour la Biodiversité et les Aires Protégées de la Guinée-Bissau achève de mettre en place un Fonds Fiduciaire, dénommé Bioguiné, avec l’aide de ses partenaires dont le GEF/Banque Mondiale, le GEF/PNUD, l’UE, l’Espagne, la Fondation MAVA, qui permettra à terme de générer des intérêts annuels destinés à financer le fonctionnement du système national d’aires protégées. (voir texte de la brochure de présentation en annexe)",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "Parc Naturel des Mangroves du Rio Cacheu (ethnie baïote)",
+			"url": "http://www.cbd.int/database/attachment/?id=848"
+		}
+	],
+	"maps": [
+		{
+			"title": "Map",
+			"url": "http://www.cbd.int/database/attachment/?id=852"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Fundação Bioguiné",
+			"url": "http://www.cbd.int/database/attachment/?id=849"
+		},
+		{
+			"title": "National Strategy - Protected Areas and Biodiversity Guinea-Bissau",
+			"url": "http://www.cbd.int/database/attachment/?id=850"
+		},
+		{
+			"title": "Photos with captions",
+			"url": "http://www.cbd.int/database/attachment/?id=851"
+		},
+		{
+			"title": "Expression of Interest (French)",
+			"url": "http://www.cbd.int/doc/lifeweb/Guinea Bissau/lifeweb project scale expression french rempli 2.doc"
+		},
+		{
+			"title": "Letter of Endorsement (French)",
+			"url": "http://www.cbd.int/doc/lifeweb/Guinea Bissau/Lettre Support CDB Lifeweb.pdf"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Guinea Bissau/lifeweb project scale expression french rempli 2.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -15.180413,
+		"lat": 11.803749,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/BB1C6E46-F128-C510-0F8D-95C7C34CCB1E/attachments/6229.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "BB1C6E46-F128-C510-0F8D-95C7C34CCB1E",
+		"documentID": 203783,
+		"createdOn": "2015-03-27T19:46:09.99",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:46:09.99",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 10324,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:46:13 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/BB1C6E46-F128-C510-0F8D-95C7C34CCB1E",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 9234
+		}
+	}
+}

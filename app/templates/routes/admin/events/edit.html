@@ -8,6 +8,7 @@
       <form role="form" name="editForm" ng-submit="save('lwEvent')" class="form-horizontal">
         <fieldset>
             <legend>Basic Information</legend>
+            <afc-input type="text" name="name" ng-model="document.name" title="Name" placeholder="Name of Event"></afc-input>
             <afc-text title="Description" ng-model="document.description"></afc-text>
             <afc-input type="date" name="startDate" ng-model="document.startDate" title="Start Date" placeholder="Date document begins"></afc-input>
             <afc-input type="date" name="endDate" ng-model="document.endDate" title="End Date" placeholder="Date document finishes"></afc-input>
@@ -47,8 +48,21 @@
         
         <h4>organizations</h4>
         <div>
-            <label for="organizations">Organizations</label>
-            <afc-autocomplete ng-model="organizations" source="allRegionsAC" selectbox="true" placeholder="Enter the organizations involved" multiple="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
+              <div ng-repeat="organization in document.organizations">
+                <div class="col-sm-11">
+                  <input type="text" class="form-control" ng-model="organization" />
+                </div>
+                <div class="col-sm-1">
+                  <button ng-click="document.organizations.splice($index, 1)">X</button>
+                </div>
+              </div>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" ng-model="newOrganization" placeholder="Enter an organization" />
+              </div>
+              <div class="col-sm-2">
+                <button type="button" class="col-sm-2 form-control" ng-click="addOrganization()">Add</button>
+              </div>
+              <br />
         </div>
         
         <h4>Event's Project</h4>

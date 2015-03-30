@@ -1,0 +1,190 @@
+{
+	"header": {
+		"identifier": "836ACB21-E28B-5F66-98AD-5D4E9FBEF6B4",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "cr"
+		}
+	],
+	"title": "Increase of mangrove protected area and strengthening of management skills",
+	"timeFrame": null,
+	"projectAbstract": "The Gulf of Nicoya harbors 20 mangroves covering 112 km of shore line, representing around 15.400 ha. 50% of it is protected as Wildlife Reserves (category II UICN). In the internal part of the gulf there is probably the most important extension of L. racemosa present in the country.",
+	"description": "Costa Rica is rapidly loosing its wetlands. Threats to these ecosystems do not only come from direct human activities (like for example, land use change, advance in agriculture front, pollution, sediments, infrastructure construction, changes in headwaters of drainages, aquaculture projects and illegal extraction, among others), but also from climate change (soil warming, alteration of climate patterns and sea level increase). These ecosystems are considered to be very fragile in general and especially when facing climate change and are threatened the most today.<br/><br/>Mangroves represent 1% of national territory, with more tan 127 mangroves covering around 42.000 hectares. 99% of them are concentrated in the Pacific shore and the rest in the Caribbean. Costa Rica contains 0.002% of the Earth´s mangroves; and are habitat of rare, threatened and in extinsion species as for example the red ara (Ara macao) in the Central and South Pacific, the pink spatula bird (Ajaia ajaja), the ant tangara (Habia atrimaxillaris), the caiman (Caiman crocodylus), the boa (Corallus sp.), the white faced, the congo and the squirrel monkeys. In addition, they are the only hábitat for a few endemic species, such as, the mangrove reinita (Dendroica petechia xanthoera). Because they are so biodiverse areas, mangroves also represent an important genetic resource, which in the futurecould be highly valuable for the production of medicinal drugs. Also, mangroves are considered as one of the most productive ecosystems on earth. In the particular case of Costa Rica, the mangrove formations in the Nicoya Gulf could be constributing for the estuarine system to be one of the most productive in the world. The Pacific mangroves of Costa Rica, just as in the rest of the world, have been degraded and destroyed over the years. For the Nicoya Gulf shore a 6.7 % cover loss has been calculated from 1964 to 1989. In 1986, 13 of the 35 described mangrove areas were catalogued as degraded or highly altered,the rest showed some degree of alteration or in the course of recovering.In the Caribbean a similar situation has been happening but not been documented.<br/><br/>In Costa Rica, among the main causes of mangrove loss we can mention the following: Shrimp aquaculture. The mangroves of “estero Chomes” have been devastated up to 80% from an aquaculture Project. Organic, pesticides, hydrocarbon and solid waste pollution. The advance of the agricultura front and in general land use change. The expansion of cattle areas and development of agriculture have become important threats to most of the south Pacific mangroves. There are more and more mangroves turned into ranching or agricultura areas, running the risk the this development front keep expanding into the mangroves and its buffer areas. Urban development or industry. A clear example of this the Mata Limón mangrove in Puntarenas where part of its destruction is attributed to road and the Caldera harbor construction. These actions caused important changes in topography, ocean tides and normal fluxes into the mangroves; which consequently derived in the death of many fish and bivalves. House building using mangrove materials affects the mangroves due to a lack in planning as well as in managing generated waste. This is the case in Chacarita, Bejuco, Zapote, Estero Negro, Río Savegre and others. There are important changes in water and sediment pulses from the feeding rivers due to deforestation, agriculture practices and dam building. The effects of these changes are augmented from the accompanying pesticides generated form agriculture in the drainage area. The Terraba-Sierpe mangroves constitute the tip of a large watershed where over 63% of it is under serious erosion. These mangroves are the largest in extension (15.000 ha) in Costa Rica and are declared as a RAMSAR site under the influence of the Río Grande de Térraba and Río Sierpe watersheds (4.767 km2 and 1.966 km2 respectively). These mangroves are among the highest (30 m) and more dense of the central american Pacífic. Apart from habitat to many rare and threatened species mentioned before, they maintain another endemic species, the mangrove hummingbird (Amazilia boucardi). The plant species present are Rhizophora mangle (Rhizophoraceae, red mangrove or cat), R. harrisonii (Rhizophoraceae, gentleman mangrove), Avicennia germinans (Avicenniaceae, salt mangrove), A. tonduzii (Avicenniaceae, salt mangrove), Laguncularia racemosa (Combreataceae, ladybug mangrove), Pelliciera rhizophorae (Pellicieraceae, acorn mangrove), Achrostichum aureum (Pteridaceae, mangrove fern), and there is also Mora oleifera (alcornoque or mora) a south American tree species. 70 % of the present mangrove in Terraba-Sierpe is protected under the category of National Wetland (category VI UICN) which includes a permission to extractive and productive activities. From these mangroves they extract bark for tannins; carbon and wood for cooking and house building. They are also areas for aquaculture, agriculture, salt production, living, hunting of mammals and reptiles. There is mussel collecting as one of the most important subsistence and commercial ways of living.<br/><br/>The Gulf of Nicoya harbors 20 mangroves covering 112 km of shore line, representing around 15.400 ha. 50% of it is protected as Wildlife Reserves (category II UICN). In the internal part of the gulf there is probably the most important extension of L. racemosa present in the country.",
+	"additionalInformation": "\n[participation]\nThe coastal human populations that use these resources will participate in biodiversity conservation through the design of the MPAs. The MPAs will have a zoning design that respond to the needs of the maintenance and improvement of wildlife and human populations.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The project is consistent with the Environment Law No. 7554 (1995) and the Biodiversity Law No. 7788 (1998), which seeks the conservation of biodiversity and the sustainable use of the country’s resources, and also promotes the fair distribution of costs and benefits. In addition, the project is consistent with Costa Rica’s National Strategy for Biodiversity Conservation and Sustainable Use (1999) and the National Development Plan (2006-2010), which provide the framework for marine ecosystems conservation and sustainable use. Similarly, the project is consistent with the National Marine Strategy (2008), which highlights the need for incorporating the conservation and sustainable use of marine resources as part of Costa Rica’s development needs."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Objective 1. By 2012, SINAC improves representation and ecological integrity of coastal and marine biodiversity, incorporating new and expanded MPAs with mangrove cover, using an ecosystem approach",
+			"result": "Result 1.1. Coastal marine biodiversity representation and ecological integrity of MPAs have been improved. Result 1.2. 2 New MPAs have been marked with boundary stones in their terrestrial portions."
+		},
+		{
+			"activity": "Objective 2. By 2013, 4 MPAs both existing in 2009 and recently created or expanded have official management plans.",
+			"result": "Result 2.1. Newly created or expanded MPAs have new or updated official management plans"
+		},
+		{
+			"activity": "Objective 3.By 2015, 2 MPAs of those existing in 2009 that are being monitored, receive a score of acceptable or higher.",
+			"result": "Result 3.1. The MPAs have reached a score of at least \"acceptable\" in the Monitoring of Effective Management system"
+		},
+		{
+			"activity": "Objective 4. By 2012, 2 new or expanded MPAs develop control and surveillance plans",
+			"result": "Result 4.1.The MPAs have official Control and Surveillance Plans"
+		}
+	],
+	"financialStability": "The proposed project is part of a larger project called Forever Costa Rica, which seeks to help Costa Rica become the first developing country to meet the goals of the Convention on Biological Diversity’s Program of Work on Protected Areas (PoWPA), and in doing so creates a unique potential model for other developing countries. Forever Costa Rica contains, as a centrepiece, the definition of stable funding to achieve the nation’s goals under the CBD and to cover recurring associated expenses. A private trust will be established with the beneficiary defined as “the public protected areas of Costa Rica”. The trustee will be the “Asociación Costa Rica por Siempre”, a civil, private, nonprofit association domiciled in Costa Rica. This association has the objective of providing the goods and services needed to allow Costa Rica’s implementation of its national and international commitments for the conservation of biodiversity, especially those included in the Program of Work on Protected Areas under the Convention on Biological Diversity.<br/><br/>The total fundraising goal is US$50 million. Interest income from the US$42 million (or annual flows from bilateral and multilateral funding sources) will be used to finance recurring costs originated by the project. In addition, a sinking fund of US$8 million will be used for expanding and improving the marine protected area system during the life of the project.<br/><br/>The Nature Conservancy, the Linden Trust for Conservation and the Gordon and Betty Moore Foundation will raise at least US$34 million from individual donors and nonprofit foundations, and the project will raise at least US$17 million from bilateral and multilateral donors. As of 9/23/09 detailed costing exercises and the donor list are available upon request.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "map",
+			"url": "http://www.cbd.int/database/attachment/?id=308"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Estrategia Nacional Marina 2008",
+			"url": "http://www.tncinfocostarica.net/content/publicaciones/ambientes_marinos/Estrategia_Nacional_Marina.pdf"
+		},
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=307"
+		}
+	],
+	"coordinates": {
+		"lng": -84.8150781,
+		"lat": 9.728666,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/836ACB21-E28B-5F66-98AD-5D4E9FBEF6B4/attachments/4675.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "836ACB21-E28B-5F66-98AD-5D4E9FBEF6B4",
+		"documentID": 203749,
+		"createdOn": "2015-03-27T19:45:36.3",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:36.3",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 11586,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:37 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1022",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/836ACB21-E28B-5F66-98AD-5D4E9FBEF6B4",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 10929
+		}
+	}
+}

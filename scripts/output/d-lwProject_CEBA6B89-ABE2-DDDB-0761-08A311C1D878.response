@@ -1,0 +1,248 @@
+{
+	"header": {
+		"identifier": "CEBA6B89-ABE2-DDDB-0761-08A311C1D878",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "pw"
+		}
+	],
+	"title": "Management support to the Northern Reefs management area",
+	"timeFrame": null,
+	"projectAbstract": "The Northern Reefs area includes a large number of marine habitat types, including seagrass beds, algal flats, barrier reefs, fringing reefs, patch reefs, atolls, sunken atoll, lagoon areas, small sand spits/islands, and small volcanic rock islands.",
+	"description": "The Northern Reefs have high biodiversity. During the recent REA, a total of 338 confirmed species of hard coral were recorded and an additional 41 taxa remain to be confirmed (Turak and DeVantier 2009). In addition, a total number of 520 taxa of reef-associated fish were recorded (Musburger 2009). Verheij and Prud’homme van Reine (2009) recorded 9 species of seagrasses and 163 taxa of algae of which 68 taxa are new records for Palau. Dr. Alan Olsen recorded on one of the small islands north of Ngarchelong State 21 bird species, of which 7 are endemics. During the REA, signs of overfishing and illegal fishing of sharks were observed and the proposed project will address these issues. In addition, the REA also concluded that many of the reefs in the Northern Reefs area are showing resilience to climate change, which the proposed project will enhance.<br/><br/>The Northern Reefs area includes a large number of marine habitat types, including seagrass beds, algal flats, barrier reefs, fringing reefs, patch reefs, atolls, sunken atoll, lagoon areas, small sand spits/islands, and small volcanic rock islands.<br/><br/>The recently completed first iteration of the Conservation Action Planning (CAP) for Ngarchelong state identified the following major threats for the area: overfishing from commercial fishing practices and climate change. The proposed activities focus on addressing the threat of overfishing, and while the area has shown in 1998 to be resilient to climate change, the conservation efforts will focus on enhancing the resilience of these reefs. Healthy, resilient reef will contribute to the protection of the low, sand islands of Kayangel, from potential storm damage.<br/><br/>Last but not least, the Northern Reefs are one of the main protein sources for the people of Ngarchelong and Kayangel States. In addition, fish is sold in Koror and therefore is also a protein source for other parts of Palau. <br/><br/>Through the project the health of the ecosystems of the Northern Reefs will be improved and therefore the project will contribute to the sustainable use of the natural resources of the Northern Reefs, the livelihood of the communities of the States of Kayangel and Ngarchelong, and the food security of the area.",
+	"additionalInformation": "\n[participation]\nThe communities of Kayangel and Ngarchelong states are depending for a part of their proteins on the fish resources of the Northern reefs. They will be the main implementers of the project, including being trained to be part of the enforcement and monitoring teams. In addition, they will be part of the management team of the project.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "The 2006 ERA identified a number of ecological gaps in Palau which where not part of any of the existing conservation areas in Palau. most of the areas were within the Northern Reefs area belonging to Ngarchelong and Kayangel States. As part of the management planning process a CAP was conducted for the Ngarchelong part of the NR. A CAP for Kayangel state is proposed as part of the current proposal. The results of the CAPs will provide input in the drafting process of a management plan for the nothern reefs."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Staffing - 1 program officer\nStaffing - 3 monitoring/enforcement officers",
+			"result": "Staff recruited",
+			"cost": 750
+		},
+		{
+			"activity": "Planning process - Community consultation mgts\nPlanning process - Conservation Action Planning Mgts\nPlanning process - Management and integration into wider NR management Plan",
+			"result": "CAP report completed"
+		},
+		{
+			"activity": "Infrastructure - Boat\nInfrastructure - Office equipment \nInfrastructure - Awareness materials",
+			"result": "Boat procured\nOperational office\nAwareness materials produced",
+			"cost": 500
+		},
+		{
+			"activity": "Operational costs - Office operations\nOperational costs - Monitoring, including training\nOperational costs - Enforcement, including training\nOperational costs - Drafting legislation",
+			"result": "Trained staff\nSemi-annual monitoring reports\nMonthly enforcement reports\nLegislation drafted and enacted"
+		}
+	],
+	"financialStability": "The PAN Act provides the mechanism for the National Government to collect a conservation fee of $30, the “Green Fee”, of which $20 is earmark for supporting the PAN. <br/><br/>The PAN legislation also provides the disbursement mechanism for the “Green Fee” and the return from  Palau’s part of the Micronesia Challenge Endowment to the PAN office and PAN sites.<br/><br/>During the project it is envisaged that funding will come online from the Micronesia Challenge and the Palau “Green Fee” and that the responsibility for funding of the recurrent costs will be taken over by the PAN office over the duration of the proposed project (PAN Contribution: y1 0%; y2 25%;y3 50%; afterwards 100%)",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Palau/Palau LifeWeb Project Expression of Interest - Edited 2009 09 09 EV.pdf"
+		},
+		{
+			"title": "palau lifeweb project expression of interest - edited 2009 09 09 ev.pdf",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1765"
+		}
+	],
+	"coordinates": {
+		"lng": 134.58252,
+		"lat": 7.51498,
+		"zoom": 7
+	},
+	"links": [
+		{
+			"name": "www.palau.biodiv-chm.org/",
+			"url": "http://www.palau.biodiv-chm.org/"
+		},
+		{
+			"name": "www.nature.org",
+			"url": "http://www.nature.org"
+		},
+		{
+			"name": "www.picrc.org",
+			"url": "http://www.picrc.org"
+		},
+		{
+			"name": "www.palau-pcs.org",
+			"url": "http://www.palau-pcs.org"
+		},
+		{
+			"name": "http://palau.chm-cbd.net/",
+			"url": "http://palau.chm-cbd.net/"
+		}
+	],
+	"protectedAreas": [
+		{
+			"url": "http://www.protectedplanet.net/sites/220005"
+		}
+	],
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/CEBA6B89-ABE2-DDDB-0761-08A311C1D878/attachments/4038.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": {
+				"id": 23897,
+				"header": "e7c95728-911c-4ae8-9081-0b0016dc4939",
+				"show": false,
+				"role": null,
+				"role_info": null,
+				"name": "Tiare Holm",
+				"job": "",
+				"email": "",
+				"phone": "",
+				"fax": "",
+				"info": "",
+				"pic_url": null,
+				"country": null,
+				"org": null
+			},
+			"info": ""
+		},
+		{
+			"partner": {
+				"id": 23894,
+				"header": "87cb9028-3a22-46c9-91fb-49c526df93ac",
+				"show": false,
+				"role": null,
+				"role_info": null,
+				"name": "Mr. Yimnang Golbuu",
+				"job": "",
+				"email": "",
+				"phone": "",
+				"fax": "",
+				"info": "",
+				"pic_url": null,
+				"country": null,
+				"org": null
+			},
+			"info": "Technical support regarding management planning and monitoring."
+		},
+		{
+			"partner": {
+				"id": 23892,
+				"header": "cf0a512c-dfda-49a1-bcc0-342cc13d517d",
+				"show": false,
+				"role": null,
+				"role_info": null,
+				"name": "Eric Verheij",
+				"job": "PAN Advisor",
+				"email": "everheij@tnc.org",
+				"phone": "(+680) 488 2017,",
+				"fax": "",
+				"info": "",
+				"pic_url": null,
+				"country": null,
+				"org": null
+			},
+			"info": "Provision of technical training\\ management planning and implementation."
+		},
+		{
+			"partner": "Government of t",
+			"info": "Government of the Republic of Palau, represented by the Office of Enviromental Response and Coordination"
+		}
+	]
+}
+
+{
+	"statusCode": 500,
+	"body": {
+		"Message": "Document contains errors:Error.InvalidType, institutionalContext (#8AF)"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:16 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "85",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 7747
+		}
+	}
+}

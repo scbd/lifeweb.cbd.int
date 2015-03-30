@@ -1,0 +1,223 @@
+{
+	"header": {
+		"identifier": "29705238-FDDC-55C2-5978-89788C5B29D4",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "1FC0DBB7-5C09-2624-41ED-4AE70F626494"
+			},
+			"description": "",
+			"funding": 400000,
+			"dateTime": "1293840000000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Submitted by the Municipality of La Paz",
+	"countries": [
+		{
+			"identifier": "bo"
+		}
+	],
+	"title": "Strengthening Management and Consolidation of the La Paz Municipal Protected Areas System",
+	"timeFrame": null,
+	"projectAbstract": "The Municipality of La Paz posses a great variety of biodiversity, landscapes and ecosystems which, due to the unplanned increase of the urban areas, has been destroyed and devastated in many ways.",
+	"description": "The city of La Paz is the administrative capital and the second most populated city in Bolivia. The urban area of La Paz has developed in a narrow valley of La Paz River. This area features a rough topography with more than 200 rivers and streams whose soil shows unstable geological conditions. In addition, the occupation of flood-prone areas, the construction of housing on steep hills, changes experienced in water regimes, the occupation of overall unstable areas, the blocking of slopes and the disposal of debris and dumping of wastes in canals represent major risk factors in terms of social construction. This also increases the existing level of vulnerability to potential disasters in the city, which is located at 3.600 meters over sea level.<br/>The Municipality of La Paz posses a great variety of biodiversity, landscapes and ecosystems, which due to the unplanned increase of the urban areas was destroyed and devastated in many ways. One of them is the expansion of the urban area over the rural one. In response as this phenomenon the Municipality of La Paz established recently the Municipal Protected Areas System (MPAS) in 2008, under the leadership of Dr. Juan del Granado Cosio current mayor of the La Paz Municipality.<br/><br/>The MPAS was constituted with the main goal of seeking governance models that strengthen the conservation of the biodiversity and environmental services that a variety of ecosystems provide, through the development of economic and social incentives that allow to local inhabitants to contribute in the sustainable management of the lands and take part in the efforts of the National conservation.<br/><br/>The project will strengthen the sustainable management of this innovative System of Protected Areas through i) strength and consolidate the institutional management of the System, ii) protect the hydrological fresh water sources in the main protected areas (such as Zongo and Hampaturi), and iii) design and implement financial mechanisms for the integral management of the biodiversity in the whole protected areas.",
+	"additionalInformation": "\n[participation]\nThe principal recipients of the benefits of the project will be the local communities of the urban and rural areas independently of their social condition. Obviously the project is looking forward to improve the economic conditions of the less income communities, giving them employment opportunities in their own protected areas.<br/><br/>The work in the rural areas allow the communities to improve their knowledge in environmental issues, and the management of their own natural resources, preserving the areas as assets, people who are migrating to urban areas seeking better living conditions would be able to value the environmental goods and services derived from protected areas, and finally urban people will be able to preserve and respect the environment services they receive from other areas and preserve main benefits such as fresh water.<br/><br/>Working in the city and communities implies to coordinate the actions with a lot of sectors and get the engagement of them for the implementation of the project, the local actors and communities will be the administrators of the actions, with the support of the Municipality of La Paz and The Nature Conservancy.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "The main objective is to strengthen and to support the environmental management of the Protected Areas System of La Paz in both areas environmental resource management and treatment. Also the project intends to begin a conscientious process on the population, especially urban population, about the high value of protected areas, landscapes, mainly to raise inhabitants’ consciousness of the importance of basins conservation belonging to protected areas which provide daily fresh water. Trying to develop indicators and mechanisms that show harmony between productive and social development along with the nature conservation.",
+			"result": "-\tSustainable management plan for the Protected Areas System (Zongo and Hampaturi).\n\n-\tRaise La Paz inhabitant’s consciousness about the importance of Protected Areas and environmental goods and services for living conditions and of the economic and social benefits they represent.\n\n-\tWater fresh source protection.\n\n-\tBiodiversity management in protected areas (also includes indirect benefits for climate change adaptation)."
+		}
+	],
+	"financialStability": "The Municipal Protected Areas System was recognized as a great initiative for municipal biodiversity conservation because it is a way for La Paz inhabitants to be part of the environmental accountability and for the benefits as well.  <br/><br/>This is an efficient model of areas protection since the inhabitants along with the Municipality are responsible for the conservation of their own areas.<br/><br/>The Municipality of La Paz was successful in getting the funds of the international cooperation due to its biodiversity protection achievements and commitment in urban and rural areas. <br/><br/>The counterpart funds will be at least 80,000 Euros for three years in cash, and other contributions to the projects in kind.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"maps": [
+		{
+			"title": "map1",
+			"url": "http://www.cbd.int/database/attachment/?id=202"
+		},
+		{
+			"title": "map2",
+			"url": "http://www.cbd.int/database/attachment/?id=203"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Letter of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=200"
+		},
+		{
+			"title": "27 PAs in la paz municipal protected areas system",
+			"url": "http://www.cbd.int/database/attachment/?id=201"
+		},
+		{
+			"title": "Carta de Solicitud Sernap ",
+			"url": "http://www.cbd.int/database/attachment/?id=244"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Bolivia/lifeweb project expression of interest.doc"
+		},
+		{
+			"title": "http://www.lapaz.bo",
+			"url": "http://www.lapaz.bo"
+		},
+		{
+			"title": "http://www.nature.org",
+			"url": "http://www.nature.org"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Bolivia/lifeweb project expression of interest.doc"
+		}
+	],
+	"coordinates": {
+		"lng": -68.146248,
+		"lat": -16.49901,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/29705238-FDDC-55C2-5978-89788C5B29D4/attachments/4050.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "29705238-FDDC-55C2-5978-89788C5B29D4",
+		"documentID": 203737,
+		"createdOn": "2015-03-27T19:45:23.297",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:23.297",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 8214,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:25 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1025",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/29705238-FDDC-55C2-5978-89788C5B29D4",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 7297
+		}
+	}
+}

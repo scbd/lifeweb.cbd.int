@@ -1,0 +1,265 @@
+{
+	"header": {
+		"identifier": "B3294A66-A850-31D4-DC43-ED3935323C6C",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "sb"
+		}
+	],
+	"title": "Building National Capacity for Mainstreaming Protected Areas Outcomes that Support Payments for Ecosystem Service and Climate Change Adaptation in the Solomon Islands",
+	"timeFrame": null,
+	"projectAbstract": "The Solomon Islands consists of six major islands, 30 smaller islands and approximately 962 isles, atolls and cays. The islands chain extends over a distance of 1600km with a total area of 28,369km2 and Sea area (EEZ) of 1.34million sq km (National Environment Management Strategy, 1993:6).The islands are highly diverse with rare and endemic species of indigenous flora and fauna.",
+	"description": "The Solomon Islands consists of six major islands, 30 smaller islands and approximately 962 isles, atolls and cays. The islands chain extends over a distance of 1600km with a total area of 28,369km2 and Sea area (EEZ) of 1.34million sq km (National Environment Management Strategy, 1993:6).The islands are highly diverse with rare and endemic species of indigenous flora and fauna. <br/><br/>The Solomon Islands has 2,597 described plant species, 245 birds, 75 mammals, 87 reptiles, 19 amphibians, 777 fish and 1799 invertebrate species (IUCN 2008). Major threats to Solomon Islands biodiversity include: the ongoing threat of logging, mining, oil palm and other industrial agriculture and unsustainable fishing practices and the increasing threat from a rapidly expanding human population (3%/annum) and expanding conversion and degradation of forests through subsistence agriculture and cash crops and increase drought, storms and sea level rise as a consequence of climate change.  <br/><br/>Forest cover in the Solomon Islands has decreased from 80% in the 1990s to 60% today indicating a significant loss in biodiversity. The need to protect or conserve these forests is imperative to ensure that biodiversity of Solomon Islands is maintained. The current status of species in the Solomon Islands include: 2 extinct, 2 critically endangered, 10 endangered, 20 vulnerable, 184 near threatened species (IUCN 2008). These numbers are expected to rapidly increase over the next decade if we don't immediately expand and strengthen the existing protected area system. <br/><br/>Currently, there are about 42 protected areas in the Solomon Islands, 80 percent of which are in customary land ownership. These are largely being managed by local communities and NGOs, although the Government has supported a few of them. Most of these protected areas are marine sites. In early 90s eighteen new protected areas were proposed (Lees 1990).<br/><br/>Less that 1% of the Solomon Islands land and sea areas are protected.  It is a matter of great urgency to protect and effectively manage high priority areas (9% of the land and sea) identified as part of the Solomon Islands Ridges to Reefs National Gap Analysis.",
+	"additionalInformation": "\n[participation]\nThe Project would promote participatory processes and behaviour that affect the way conservation is done at the local and national levels. This would principally be achieved through the wide participation of local communities, capacity-building, and the promotion of accountability and transparency at different levels of the administration of the project.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "This project will be a core project for the effective implementation of National Protected Areas priorities under the National Conservation Plan - identified in the National Gap Analysis. These areas will be incorporated in all National Plans"
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "1. Development of overarching policies, frameworks and processes to deliver protected areas",
+			"result": "1. Efficient and effective policies, frameworks and processes established"
+		},
+		{
+			"activity": "2. Development of a Protected Areas Task force within  MECM to coordinate, assess and manage the overall process",
+			"result": "2. Task force established and operational"
+		},
+		{
+			"activity": "3. Assessment of each priority area to determine: (a) opportunities for payments for ecosystem services including -carbon, fresh water and biodiversity credits; (b) assessment and confirmation of customary ownership and tenure boundaries; (c) assessment of existing arrangements over the land.",
+			"result": "3.  (a) PES options established,  (b) customary ownership established and (c) existing arrangements over the land determined."
+		},
+		{
+			"activity": "4. Establishment and training of field teams to provide the on ground consultation, awareness regarding boundary, management, PES and conservation compatible enterprise options for the establishment of each protected area.",
+			"result": "4.  Field teams established and trained and awareness and consultation with communities conducted."
+		},
+		{
+			"activity": "5. Establishment of Protected Areas steering committee for each protected area and refinement of boundaries, management, PES and conservation compatible enterprises arrangements",
+			"result": "5. Protected areas steering group established for each protected area and boundaries, management , PES and conservation compatible enterprise options determined"
+		},
+		{
+			"activity": "6. Incorporated land groups established for the customary owners and boundary, management and PES arrangements refined options (NB: Each incorporated land group has a representative on the steering committee).",
+			"result": "6. Incorporated land groups established and boundary, management, PES and conservation compatible enterprise options determined"
+		},
+		{
+			"activity": "7. Draft protected area plan of management and agreement (including PES) developed and negotiated with steering committee",
+			"result": "7. Plan of management and agreement agreed and protected area gazetted"
+		},
+		{
+			"activity": "8. Financial systems established to ensure the equitable sharing of benefits to customary landowners through the incorporated land groups.",
+			"result": "8. Sub-account created in Mama Graun Trust fund and PES funds provided to incorporated land groups."
+		},
+		{
+			"activity": "9. PES is performance based and baseline is established using high resolution satellite imagery for each protected area",
+			"result": "9. PES allocation to all incorporated land groups provided in accordance with commitment to protection baselines (e.g. retention of 80% of forest)."
+		},
+		{
+			"activity": "10. Monitoring and reporting  systems developed and implemented",
+			"result": "10. Performance of protected areas monitored and reports provided."
+		},
+		{
+			"activity": "11. TNC to provide capacity building to strengthen the institutional capacity of Solomon Islands Government (MECM) and in country partners to deliver effective protected areas outcomes including: technical, PES, financial, governance, monitoring  and community based consultation.",
+			"result": "11. MECM institutional capacity strengthened and protected areas effectively established and managed."
+		}
+	],
+	"financialStability": "1. The Solomon Islands Government<br/>2. Conservation NGOs<br/><br/>The letter of commitment will be made available at a later date should it be required.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices2"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"attachments": [
+		{
+			"title": "Endorsement Letter from the Ministry of the Environment, Conservation, and Meteorology",
+			"url": "http://www.cbd.int/database/attachment/?id=453"
+		},
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Solomon Islands/Soloman Islands Lifeweb_project_EOI__SI_PA's_glm_9Jan2010 - Final.doc"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/database/attachment/?id=1750"
+		}
+	],
+	"coordinates": {
+		"lng": 160.156194,
+		"lat": -9.64571,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/B3294A66-A850-31D4-DC43-ED3935323C6C/attachments/4707.jpg"
+	},
+	"institutionalContext": [
+		{
+			"partner": "Additional supp",
+			"info": "Additional support",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Financial Manag",
+			"info": "Financial Management and Sub-account for each new Protected Area",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Capacity buildi",
+			"info": "Capacity building, training and support: Technical, Governance, Community Consultation",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		},
+		{
+			"partner": "Coordination an",
+			"info": "Coordination and Implementation",
+			"role": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+		}
+	]
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "B3294A66-A850-31D4-DC43-ED3935323C6C",
+		"documentID": 203757,
+		"createdOn": "2015-03-27T19:45:43.323",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:43.323",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 10016,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:44 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1026",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/B3294A66-A850-31D4-DC43-ED3935323C6C",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 8770
+		}
+	}
+}

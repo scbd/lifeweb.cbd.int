@@ -1,0 +1,304 @@
+{
+	"header": {
+		"identifier": "2433F82D-BC4F-D8C5-1674-EA6707AFA1D1",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "mg"
+		}
+	],
+	"title": "Action Tsitongambarika",
+	"timeFrame": null,
+	"projectAbstract": "Intrinsic Biodiversity Problem - The disappearance of the lowland humid forest ecosystem of TGK would constitute a loss of the largest remaining area of this highly threatened and diverse vegetation type in Southern Madagascar, as well as a number of species endemic to the SE, and even to TGK itself, and many more that are poorly, if at all, represented in existing PAs.",
+	"description": "Tsitongambarika (TGK) forest is home to a high diversity of species, including many endemics. These biodiversity values are being steadily eroded due to unsustainable use of forest resources, clearance of forest for shifting cultivation, associated fires and charcoal production. The underlying cause of these threats is food insecurity among local, forest-dependent communities, exacerbated by steady decline and siltation of water sources for irrigation as a result of deforestation. The potential negative effects of deforestation and degradation to ecosystem services extend well beyond the immediate TGK forest area. TGK forest degradation threatens water catchment protection to nearby town of Tolagnaro (Fort Dauphin). Also, several rivers and springs, which are the main sources of domestic, industrial and irrigation water for other downriver populations, are threatened. This might undermine the projected major economic development of Tolagnaro town, which has been designated as one of three major economic growth poles by the Malagasy Government in partnership with the World Bank. The following specific problems flow from the overall problem described above:<br/>Intrinsic Biodiversity Problem - The disappearance of the lowland humid forest ecosystem of TGK would constitute a loss of the largest remaining area of this highly threatened and diverse vegetation type in Southern Madagascar, as well as a number of species endemic to the SE, and even to TGK itself, and many more that are poorly, if at all, represented in existing PAs.<br/>Resources, Knowledge and Cultural Motivation Problem - There is a lack of resources and capacity within national NGOs and government authorities to manage PAs. New, flexible models are required to spread good practice and value based motivation. <br/>Lack of Private Sector Engagement Problem - Like many other developing countries, Madagascar is experiencing accelerating economic growth, with associated pressures on natural ecosystems. The mining sector alone is predicted to grow from 4% to 30% of GDP by 2012. There is a pressing need to engage the private sector in multi-sectoral partnerships with government and civil society that extend well beyond compliance with environmental regulations and generate new sources for biodiversity conservation. <br/>Natural resources overexploitation Problem - Local communities exert the main direct pressures on forest resources in Madagascar. The unsustainable use of forest resources is driven by demand for fuel-wood, charcoal production, medicinal plants, bushmeat and land for agricultural production. The precarious living conditions, and, in particular, low levels of food security, typical of forest-adjacent communities, only exacerbate the depletion of forest resources, since these communities have very limited alternative livelihood options.  If action is not taken quickly, the natural resource base that underpins local livelihoods and provides a safety net during times of food shortages will be depleted. <br/>The most sustainable solution to all these problems is, as described in this proposal, the effective management of TGK as a participatory Protected Area (PA), which will also offer powerful lessons to other practitioners in the immediate area and beyond.",
+	"additionalInformation": "\n[participation]\nAction TGK explicitly includes community participation as a Key Objective. Villages are represented by local community management committees that have been granted the management of the forest through “Transferts de Gestion”. Also, Asity Madagascar, the main implementing National NGO Partner, has a history of strong roots into the community. The Government of Madagascar encourages National NGOs to play a leading role in the implementation of actions including capacity building to improve conservation results.  In order to strengthen this, BirdLife International will provide continual mentoring support to Asity Madagascar on key project activities. In addition, there will be a particular focus on the inclusion of women in the local structures for PA management and also in the participatory ecological monitoring teams. All Partners are committed to the promotion of gender mainstreaming and equal opportunities in the implementation of the Action. The traditional community elders and leaders will be more fully integrated into these local management structures too, in order for them to take responsibility and be effective at forest management. After careful discussion from village to national level, it is agreed that villagers will be compensated for well-documented opportunity and direct costs of participation; flat-rate per diems and salaries will not be paid. Finally, there is potential for economic growth in the communities adjacent to the Action. However, even if these changes bring the promise of development for many, they also represent a threat of increased marginalisation of the most vulnerable members of society, who are the least well prepared to take advantage of the new economic opportunities. In this context, it is significant that the Action will work with some of the most economically marginalised sections of Anosy society - indigenous, forest-adjacent communities - and that it will pay particular attention to providing them with a voice and the means (through, for example, the establishment of local management structures for the new PA) to influence and respond to change when it occurs. Overall, the ability of local communities to sustainably manage forest resources will be strengthened, and they will be provided with appropriate tools to capture more of the socio-economic benefits that will arise from the conservation of TGK. Sustainable management will offer new opportunities, especially valuing the ecosystem goods and services provided by the forest and their sustainable utilisation by the local populations.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": "In 2008, nationwide progress towards PoWPA implementation and priority setting in Madagascar was reviewed. During this process, three main barriers and limitations preventing the existing PA system from achieving the targets of the CBD PoWPA were identified. The Government of Madagascar responded by addressing two of the three barriers through the UNDP-GEF Supporting country action on the CBD PoWPA project in 2008. Action TGK aims to respond to the third identified barrier, more specifically: Barrier 2) PAs may be perceived to be less important among key actors than other pressing social and economic activities. Action TGK objectives prioritise the involvement of local communities and other relevant stakeholders to satisfactorily improve perceptions of PA protection and its related benefits. In addition, two of the three most commonly identified PA threats are addressed by the Action, they are: 1) “Natural habitat loss, fragmentation and isolation” and 2) “Subsistence overexploitation, collection and hunting”. At the local level, TGK is included on the list of regional priorities for inclusion in the National PA System, prepared by the government of Anosy Region."
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "Overall Objective:  To establish an effective, sustainably financed, community co-managed PA capable of conserving the unique biodiversity values of TGK forest and reducing poverty among forest-dependent communities, through the creation and promotion of an effective multi-sectoral partnership among government, civil society and the private sector.\r\n\r\nBreakdown into Specific Objectives follows below.",
+			"result": "A effective, sustainably financed, community co-managed PA capable of conserving the unique biodiversity values of TGK forest and reducing poverty among forest-dependent communities established, through the support of an effective multi-sectoral partnership among government, civil society and the private sector."
+		},
+		{
+			"activity": "Community participation: that representatives of at least 15 of the villages around TGK forest actively participate in PA management by the end of the project.",
+			"result": "Participatory ecological monitoring programme in place to monitor trends in forest condition, biodiversity resources and human pressures and to guide the management of TGK PA."
+		},
+		{
+			"activity": "Awareness in Madagascar and Europe: that attitude and awareness towards PAs will improve in at least 90% of the target villages. Action TGK will be featured in Malagasy mass media at least 10 times during the project year. In addition, visitors to EAZA member zoos and aquaria will be exposed to communication messages about Action TGK.",
+			"result": "Awareness among the general public in Madagascar and EU citizens of the biodiversity and socio-economic values of TGK forest and of the importance and benefits of PAs are raised through an integrated programme of information, communication, and environmental education."
+		},
+		{
+			"activity": "Sustainable financing: that long-term PA financing mechanisms to deliver at least €200,000 per annum are investigated / tested.",
+			"result": "Mechanisms to generate sufficient long-term financing for the conservation of TGK investigated and initially tested."
+		},
+		{
+			"activity": "Documentation and dissemination: that at least one multi-sectoral partnership for forest conservation, in Madagascar or elsewhere, consider the model piloted by the Action.",
+			"result": "The success of the Action evaluated at all points, and lessons documented and disseminated as a flexible model of multi-sectoral partnership for PA management."
+		}
+	],
+	"financialStability": "In order to obtain temporary protection for TGK, Conservation International (CI) and Rio Tinto (QMM) have been supporting Asity Madagascar and the Government of Madagascar in the development of a simplified PA management plan as a precursor to definitive protection. The process is now close to the completion of the full PA management and business plan for TGK.  This process is critical for facilitating the proposed activities in the Action TGK and will continue in parallel and in addition to Action TGK objectives. In terms of long term sustainable financing by the end of project year, at least 2 partnerships with EAZA members and at least two other long-term financing mechanisms (e.g. endowment fund, carbon credit, etc) will be investigated for the new PA. In addition, due to the presence of the multinational mining company Rio Tinto, and as part of a global strategy for offsetting its footprint on biodiversity, the company, which operates an ilmenite mine, close to but outside of TGK forest, will remain committed to support the new PA.",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices1"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices6"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices3"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "image1",
+			"url": "http://www.cbd.int/database/attachment/?id=118"
+		},
+		{
+			"title": "image2",
+			"url": "http://www.cbd.int/database/attachment/?id=119"
+		},
+		{
+			"title": "image3",
+			"url": "http://www.cbd.int/database/attachment/?id=120"
+		},
+		{
+			"title": "image4",
+			"url": "http://www.cbd.int/database/attachment/?id=121"
+		},
+		{
+			"title": "image5",
+			"url": "http://www.cbd.int/database/attachment/?id=122"
+		},
+		{
+			"title": "image6",
+			"url": "http://www.cbd.int/database/attachment/?id=123"
+		},
+		{
+			"title": "image7",
+			"url": "http://www.cbd.int/database/attachment/?id=124"
+		},
+		{
+			"title": "image8",
+			"url": "http://www.cbd.int/database/attachment/?id=125"
+		}
+	],
+	"maps": [
+		{
+			"title": "2 map nap tgk",
+			"url": "http://www.cbd.int/database/attachment/?id=105"
+		},
+		{
+			"title": "Tsitongambarika Forest Protected Area boundaries and core protection zone, with 2005 Forest Cover",
+			"url": "http://www.cbd.int/database/attachment/?id=126"
+		},
+		{
+			"title": "The Anosy Region, located in the extreme southeast of the island of Madagascar",
+			"url": "http://www.cbd.int/database/attachment/?id=127"
+		},
+		{
+			"title": "map3",
+			"url": "http://www.cbd.int/database/attachment/?id=131"
+		}
+	],
+	"attachments": [
+		{
+			"title": "5 deforestation map anosy region",
+			"url": "http://www.cbd.int/database/attachment/?id=108"
+		},
+		{
+			"title": "6 biodiversity ",
+			"url": "http://www.cbd.int/database/attachment/?id=109"
+		},
+		{
+			"title": "7 biodiversity ",
+			"url": "http://www.cbd.int/database/attachment/?id=110"
+		},
+		{
+			"title": "8 biological inventory 2005-2006",
+			"url": "http://www.cbd.int/database/attachment/?id=111"
+		},
+		{
+			"title": "11 freshwater security ",
+			"url": "http://www.cbd.int/database/attachment/?id=113"
+		},
+		{
+			"title": "12 freshwater security ",
+			"url": "http://www.cbd.int/database/attachment/?id=114"
+		},
+		{
+			"title": "13 map of tgk with management transfers",
+			"url": "http://www.cbd.int/database/attachment/?id=115"
+		},
+		{
+			"title": "14 approch methods",
+			"url": "http://www.cbd.int/database/attachment/?id=116"
+		},
+		{
+			"title": "Letter  of Endorsement",
+			"url": "http://www.cbd.int/database/attachment/?id=117"
+		},
+		{
+			"title": "1 map of Madagascar and tgk anosy region",
+			"url": "http://www.cbd.int/database/attachment/?id=128"
+		},
+		{
+			"title": "3 photographs of tgk forest and the forest managers",
+			"url": "http://www.cbd.int/database/attachment/?id=129"
+		},
+		{
+			"title": "4 photographs of tgk forest and the forest managers",
+			"url": "http://www.cbd.int/database/attachment/?id=130"
+		},
+		{
+			"title": "Asity Madagascar",
+			"url": "http://asitymadagascar.org"
+		},
+		{
+			"title": "institutional context",
+			"url": "http://www.cbd.int/database/attachment/?id=112"
+		},
+		{
+			"title": "MEEFT - Madagascar",
+			"url": "http://www.meeft.gov.mg/"
+		}
+	],
+	"coordinates": {
+		"lng": 46.77978515625,
+		"lat": -24.7717723282288,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/2433F82D-BC4F-D8C5-1674-EA6707AFA1D1/attachments/4042.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "2433F82D-BC4F-D8C5-1674-EA6707AFA1D1",
+		"documentID": 203733,
+		"createdOn": "2015-03-27T19:45:20.06",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:20.06",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 15784,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:22 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1024",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/2433F82D-BC4F-D8C5-1674-EA6707AFA1D1",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 14270
+		}
+	}
+}

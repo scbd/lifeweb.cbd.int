@@ -1,0 +1,250 @@
+{
+	"header": {
+		"identifier": "DC85AA49-9A2A-9BB3-4ED0-0D292A223308",
+		"languages": [
+			"en"
+		],
+		"schema": "lwProject"
+	},
+	"donations": [
+		{
+			"donor": {
+				"identifier": "58A7E548-B417-AB35-38A2-AB23E7868F33"
+			},
+			"description": "State Budget of Ukraine supply protected areas with resources that cover 30% of the funding required",
+			"funding": 5000000,
+			"dateTime": "-62135596800000",
+			"lifeweb_facilitated": true,
+			"domestic": false
+		}
+	],
+	"leadContact": "Unknown",
+	"countries": [
+		{
+			"identifier": "ua"
+		}
+	],
+	"title": "System Level Expression of Interest - Ukraine",
+	"timeFrame": null,
+	"projectAbstract": "A total of 38 protected areas have been created in Ukraine over the past four years. In addition, 8 biosphere reserves and national parks have been substantially enlarged. As a result, Ukraine's protected area network now covers 3.27 million ha, or approximately 5.4% of the country's territory. This project aims to improve the management of Ukraine's network of protected areas and support its expansion by 300000 ha anticipated to take place in the next 2 years.",
+	"description": "Ukraine has the largest area of arable land in Europe, which makes up 55% of the total surface of the country. Over 30% of total arable lands have been degraded. The availability of drinking water is 10 times lower compared to the average for European countries. In 2010, protected areas covered 3,27 million ha, or approximately 5,4% of surface of Ukraine. The native vegetation area is 0,35 hectare per citizen.<br/>Protected areas have a high social importance in some regions as they provide job opportunities, recreational services, nature resource use (including timber, see also sector Current Budget, income of protected areas), and education in rural areas. <br/>Ecosystem services have not yet been recognized by local communities and protected area managers despite the multiple ecosystem services they provide. Furthermore, the expansion of protected areas in Ukraine has undermined the capacity of the existing protected area system to properly manage newly established protected areas and integrate them into other sectors. Additionally, the change in land ownership over the last decade has introduced new challenges to existing protected areas, including integration of existing protected areas into other sectors and building public support for protected areas.<br/><br/>The protected areas network of Ukraine is well represented and covers the whole range of natural zones, types of habitats and ecosystems (see RAPPAM evaluation, WWF, 2008), Annex 6a.",
+	"nationalAlignment": [
+		{
+			"type": {
+				"identifier": "NBSAP"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "5B6177DD-5E5E-434E-8CB7-D63D67D5EBED"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "CC"
+			},
+			"comment": ""
+		}
+	],
+	"budget": [
+		{
+			"activity": "To substantially improve site-based protected area planning and management",
+			"result": "Improved planning and management of protected areas"
+		},
+		{
+			"activity": "To promote equity and benefit-sharing",
+			"result": "Enhanced access to resources and equitable sharing of the benefits arising out of their utilization"
+		},
+		{
+			"activity": "To build capacity for the planning, establishment and management of protected areas",
+			"result": "Enhanced capacity for the planning, establishment and management of protected areas"
+		},
+		{
+			"activity": "To ensure financial sustainability of protected areas",
+			"result": "Financial sustainability of protected areas"
+		},
+		{
+			"activity": "To integrate protected areas into broader land- and seascapes and sectors in order to maintain  their ecological structure and functions",
+			"result": "Greater integration of protected areas"
+		},
+		{
+			"activity": "To strengthen communication, education and public awareness",
+			"result": "Strengthened communication, education and public awareness"
+		}
+	],
+	"financialStability": "Major revenue sources and approximate amounts:<br/>1) Government budget. app. 10 million UAH/1 million € (2010), app. 20million UAH/2 million €, (2011), app. 20 million UAH/2 million € (2012).<br/><br/>“…State Budget of Ukraine supply protected areas with resources that cover 30% of the funding required…”<br/><br/>The largest portion of the State Budget is assigned for the cost of personnel. Protected areas ,which are under the Ministry of environmental protection, have had the following budgets: in 2005 the total budget was 15,7 mln UAH, of which the cost of personnel,(including taxes)was  14,5 mln UAH (92,5%), and in 2009 the total budget was  61,0 mln UAH of which the cost of  personnel was 60,1 mln UAH (98,6%).<br/><br/>2) Protected Area revenue.  Protected areas provide chargeable services (Order Cabinet of Ministries of Ukraine #1913 from 28.12.00 and  #827 from 02.06.03). During the last five years the income generated by protected areas under the Ministry of environmental protection of Ukraine increased from  4,0 mln UAH in 2005 to 8,6 mln UAH in 2009. The main source of income is timber: in 2008 the income provided by timber was 81,1% of the total income.<br/><br/>3) Income from recreation has been increasing in the past years. In 2005, recreational income comprised 8,47% of total PAs income/revenue from different services, in 2009, 13,6% (National Strategy for Strengthening Financial Sustainability of Protected Areas of Ukraine (UNDP, 2009), Annex 1 (in Ukrainian).",
+	"climateContribution": [
+		{
+			"type": {
+				"identifier": "ecoservices4"
+			},
+			"comment": ""
+		},
+		{
+			"type": {
+				"identifier": "ecoservices7"
+			},
+			"comment": ""
+		}
+	],
+	"images": [
+		{
+			"title": "picture 1.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=636"
+		},
+		{
+			"title": "picture 2.jpg",
+			"url": "http://www.cbd.int/database/attachment/?id=637"
+		}
+	],
+	"maps": [
+		{
+			"title": "Map",
+			"url": "http://www.cbd.int/database/attachment/?id=628"
+		}
+	],
+	"attachments": [
+		{
+			"title": "Expression of Interest",
+			"url": "http://www.cbd.int/doc/lifeweb/Ukraine/Ukraine PA expession (final).doc"
+		},
+		{
+			"title": "Annex 1 - GEF capacity-building assessment",
+			"url": "http://www.cbd.int/database/attachment/?id=629"
+		},
+		{
+			"title": "Annex 2 - National Environmental Policy of Ukraine",
+			"url": "http://www.cbd.int/database/attachment/?id=630"
+		},
+		{
+			"title": "Annex 3 - List of Existing Protected Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=631"
+		},
+		{
+			"title": "Annex 4 - List of Newly Created Protected Areas",
+			"url": "http://www.cbd.int/database/attachment/?id=632"
+		},
+		{
+			"title": "Annex 6 - WWF socio-economic survey",
+			"url": "http://www.cbd.int/database/attachment/?id=633"
+		},
+		{
+			"title": "Annex 6a - WWF biological survey",
+			"url": "http://www.cbd.int/database/attachment/?id=634"
+		},
+		{
+			"title": "Annex 7 - GHG Ukraine",
+			"url": "http://www.cbd.int/database/attachment/?id=635"
+		},
+		{
+			"title": "Expression of Interest",
+			"keywords": [
+				"project_doc"
+			],
+			"url": "http://www.cbd.int/doc/lifeweb/Ukraine/Ukraine PA expession (final).doc"
+		}
+	],
+	"coordinates": {
+		"lng": 31.16558,
+		"lat": 48.379433,
+		"zoom": 7
+	},
+	"thumbnail": {
+		"url": "http://lifeweb.cbd.int/api/v2013/documents/DC85AA49-9A2A-9BB3-4ED0-0D292A223308/attachments/6040.jpg"
+	}
+}
+
+{
+	"statusCode": 201,
+	"body": {
+		"metadata": {
+			"userID": "15011",
+			"schema": "lwProject"
+		},
+		"workingDocumentMetadata": null,
+		"body": null,
+		"workingDocumentBody": null,
+		"identifier": "DC85AA49-9A2A-9BB3-4ED0-0D292A223308",
+		"documentID": 203771,
+		"createdOn": "2015-03-27T19:45:57.32",
+		"createdBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"updatedOn": "2015-03-27T19:45:57.32",
+		"updatedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"deletedOn": null,
+		"deletedBy": {
+			"userID": 15011,
+			"firstName": "Jason",
+			"lastName": "Mccarrell",
+			"email": "jason.abz@gmail.com"
+		},
+		"type": "lwProject",
+		"owner": "country:va",
+		"revision": 1,
+		"size": 7899,
+		"rights": null,
+		"charset": "utf-8",
+		"title": {},
+		"summary": {},
+		"workingDocumentID": null,
+		"workingDocumentCreatedOn": null,
+		"workingDocumentCreatedBy": null,
+		"workingDocumentUpdatedOn": null,
+		"workingDocumentUpdatedBy": null,
+		"workingDocumentSize": null,
+		"workingDocumentOwner": null,
+		"workingDocumentTitle": null,
+		"workingDocumentSummary": null,
+		"workingDocumentLock": null,
+		"Realm": "lifeweb"
+	},
+	"headers": {
+		"server": "nginx/1.3.16",
+		"date": "Fri, 27 Mar 2015 19:45:58 GMT",
+		"content-type": "application/json; charset=utf-8",
+		"content-length": "1023",
+		"connection": "keep-alive",
+		"x-powered-by": "ASP.NET",
+		"cache-control": "no-cache",
+		"pragma": "no-cache",
+		"expires": "-1",
+		"location": "/api/v2013/documents/DC85AA49-9A2A-9BB3-4ED0-0D292A223308",
+		"x-aspnet-version": "4.0.30319",
+		"vary": "Accept-Encoding"
+	},
+	"request": {
+		"uri": {
+			"protocol": "http:",
+			"slashes": true,
+			"auth": null,
+			"host": "lifeweb.cbd.int",
+			"port": 80,
+			"hostname": "lifeweb.cbd.int",
+			"hash": null,
+			"search": "?schema=lwProject",
+			"query": "schema=lwProject",
+			"pathname": "/api/v2013/documents",
+			"path": "/api/v2013/documents?schema=lwProject",
+			"href": "http://lifeweb.cbd.int/api/v2013/documents?schema=lwProject"
+		},
+		"method": "post",
+		"headers": {
+			"authorization": "Ticket 26D57ADACC8CD011E7580E50253CC88FB4325C236AA7FD1DB4BFD0B4ACCF1E910DDD6DCE35EAE0AAAD7E9006565F0F853742B439D2EA8A02372A05B3E4BFF77DAACDA76F28DC8E6563FCBEE974651BF40422AF4497CB0E6522DFEFCF72752F906E0FAC51A6D32B3D921D9C724B09F321C5866EA462E80321217A54012BC3763F",
+			"realm": "lifeweb",
+			"accept": "application/json",
+			"content-type": "application/json",
+			"content-length": 6787
+		}
+	}
+}

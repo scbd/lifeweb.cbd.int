@@ -35,7 +35,6 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/e
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
         //TODO: should be a filter!
         $scope.fullCountryName = function(shortCountryName) {
-            console.log('country short: ', shortCountryName);
             for(var i=0; i!=$scope.countries.length; ++i)
                 if($scope.countries[i].identifier == shortCountryName)
                     return $scope.countries[i].name;
