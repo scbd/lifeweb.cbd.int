@@ -84,7 +84,7 @@
             <td><input type="text" ng-model="partner.partner" placeholder="Enter partner's full name" /></td>
             <td><textarea style="display: inline;" rows="1" ng-model="partner.info" expandable-text placeholder="Describe this partner's role specific to this project"></textarea></td>
             <td>
-              <afc-autocomplete source="roles" ng-model="partner.role" placeholder="Select partner's role" scrollbar-compatible="true"></afc-autocomplete>
+              <afc-autocomplete source="roles" ng-model="partner.role" placeholder="Select partner's role"  windows-scrollbar-compatible="true"></afc-autocomplete>
             </td>
             <td>
               <button ng-click="document.institutionalContext.splice($index, 1)">X</button>

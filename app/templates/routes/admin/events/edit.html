@@ -15,7 +15,7 @@
             <div class="row form-group">
               <label class="col-xs-2 control-label" for="coverImage">Event Type</label>
               <div class="col-xs-9">
-                <afc-autocomplete ng-model="document.type" multiple="true" placeholder="Select a type" source="typeAC" selectbox="true" mapping="identifierMapping"></afc-autocomplete>
+                <afc-autocomplete ng-model="document.type" multiple="true" placeholder="Select a type" source="typeAC" selectbox="true" mapping="identifierMapping" windows-scrollbar-compatible="true"></afc-autocomplete>
               </div>
             </div>
             <div class="row form-group">
@@ -33,7 +33,7 @@
         <fieldset>
           <legend>Location</legend>
           <label hidden for="location">Location</label>
-          <afc-autocomplete ng-model="document.location.country" source="countriesAC" selectbox="true" mapping="identifierMapping" placeholder="Country..."></afc-autocomplete>
+          <afc-autocomplete ng-model="document.location.country" source="countriesAC" selectbox="true" mapping="identifierMapping" placeholder="Country..." windows-scrollbar-compatible="true"></afc-autocomplete>
           <afc-textarea title="Address" ng-model="document.location.address" placeholder="Enter the full address of the event..."></afc-textarea>
           <lonlat-input ng-model="document.location.coordinates" help="Longitude and Latitude of event location." map-reference="locationMap"></longlat-input>
         </fieldset>

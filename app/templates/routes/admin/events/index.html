@@ -17,7 +17,7 @@
         <tbody>
             <tr ng-repeat="event in draftEvents | filter:eventFilter | orderBy:'-updatedOn'">
                 <td><img ng-src="{{event.body.logo.url | thumbnail}}" style="height: 40px;"></img></td>
-                <td>{{event.body.description}}</td>
+                <td>{{event.body.name}}</td>
                 <td>
                   <a ng-href="/event?id={{event.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/events/edit/{{event.identifier}}" target="_blank"><button type="button">Edit</button></a>

@@ -281,33 +281,15 @@ define(['app'], function(app) {
 
   //##################################################################
   app.filter('filterYear', function ($filter) {
-      return function (projs, year) {
-
-          if (!projs)
+    return function (matches, year) {
+          if (!matches)
               return null;
+          if(!year)
+            return matches;
 
-          var result = [];
-
-
-          if (year == '' || year == null)
-              return projs;
-          else {
-              for (var i = 0; i < projs.length; i++) {
-                  if ( projs[i].approved_on_date ) {
-
-                      var d1 = projs[i].approved_on_date.replace("/Date(", "");
-                      d1 = d1.replace(")/", "");
-                      var approved_on_year = $filter('date')(new Date(Number(d1)), 'yyyy');
-
-                      if(approved_on_year == year)
-                          result.push(projs[i]);
-
-                  }
-              }
-          }
-
-          return result;
-
+        return matches.filter(function(item) {
+            return $filter('filterYear2')(item.createdDate_s) == year;
+        });
       }
   });
 

@@ -49,8 +49,8 @@ function getFundingStatus(proj) {
 
 
       //IStorage.documents.query(query).then(function(data) {
-      //fields used: budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss
-      $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s').success(function(data) {
+      //fields used: budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss
+      $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s').success(function(data) {
       //TODO: for grabbing focal points:
       //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
           console.log('data: ', data);
@@ -113,7 +113,7 @@ function getFundingStatus(proj) {
       }
 
       $scope.orderList = true;
-      $scope.sortTerm = 'createdDate_dt';
+      $scope.sortTerm = 'createdDate_s';
 
       //==================================
       $scope.sortTable = function (term) {

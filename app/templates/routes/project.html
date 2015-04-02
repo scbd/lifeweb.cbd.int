@@ -74,6 +74,10 @@
             <td class="lw-dt">abstract</td>
             <td valign="middle" class="lw-dd" style="vertical-align: middle!important; text-align: left;" ng-bind-html="eoi.projectAbstract"></td>
         </tr>
+        <tr ng-show="eoi.timeFrame">
+            <td class="lw-dt">time frame</td>
+            <td class="lw-dd">{{eoi.timeFrame}} months</td>
+        </tr>
         <tr>
             <td class="lw-dt">country</td>
             <td class="lw-dd" style="text-align: left;">
@@ -430,7 +434,6 @@
 
     <div ng-show="eoi.additionalInformation" style="padding-top:20px;">
         <h4>Additional Information</h4>
-        <div> Time Frame: {{eoi.timeFrame}} months</div>
         <div class="lw-proj-text" ng-bind-html="eoi.additionalInformation"></div>
     </div>
 </section>
