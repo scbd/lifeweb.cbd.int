@@ -233,7 +233,7 @@
 
     <div ng-repeat="t in eoi.climateContribution">
         
-            <h4><img src="{{(t.type.identifier | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.type.identifier}}"/>  {{(t.type.identifier | filterGetEcoservices).title}} </h4>
+            <h4><img src="{{(t.type.identifier | filterGetEcoservices).icon}}" style="width:20px;padding-right:5px;" alt="{{t.type.identifier}}"/>  {{(t.type.identifier | filterGetEcoservices).desc}} </h4>
             <div class="lw-proj-text" ng-bind-html="t.comment"></div>
     </div>
 </section>

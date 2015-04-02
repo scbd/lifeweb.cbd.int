@@ -1043,13 +1043,13 @@ define(['app'], function(app) {
               return null;
 
           var ecoservices = [
-             { "name": "ecoservices1", "icon": "/app/lifeweb/images/ecoservices/ecoservices1_small.png", "desc": "" },
-             { "name": "ecoservices2", "icon": "/app/lifeweb/images/ecoservices/ecoservices2_small.png", "desc": "" },
-             { "name": "ecoservices3", "icon": "/app/lifeweb/images/ecoservices/ecoservices3_small.png", "desc": "" },
-             { "name": "ecoservices4", "icon": "/app/lifeweb/images/ecoservices/ecoservices4_small.png", "desc": "" },
-             { "name": "ecoservices5", "icon": "/app/lifeweb/images/ecoservices/ecoservices5_small.png", "desc": "" },
-             { "name": "ecoservices6", "icon": "/app/lifeweb/images/ecoservices/ecoservices6_small.png", "desc": "" },
-             { "name": "ecoservices7", "icon": "/app/lifeweb/images/ecoservices/ecoservices7_small.png", "desc": "" }
+             { "name": "ecoservices1", "icon": "/app/lifeweb/images/ecoservices/ecoservices1_small.png", "desc": "Climate Change Mitigation" },
+             { "name": "ecoservices2", "icon": "/app/lifeweb/images/ecoservices/ecoservices2_small.png", "desc": "Climate Change Adaptation" },
+             { "name": "ecoservices3", "icon": "/app/lifeweb/images/ecoservices/ecoservices3_small.png", "desc": "Freshwater Security" },
+             { "name": "ecoservices4", "icon": "/app/lifeweb/images/ecoservices/ecoservices4_small.png", "desc": "Food Security" },
+             { "name": "ecoservices5", "icon": "/app/lifeweb/images/ecoservices/ecoservices5_small.png", "desc": "Human Health" },
+             { "name": "ecoservices6", "icon": "/app/lifeweb/images/ecoservices/ecoservices6_small.png", "desc": "Cultural and Spiritual Access" },
+             { "name": "ecoservices7", "icon": "/app/lifeweb/images/ecoservices/ecoservices7_small.png", "desc": "Income Generation" }
           ];
 
           var result = [];
