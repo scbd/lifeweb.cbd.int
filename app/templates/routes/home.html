@@ -9,21 +9,36 @@
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
   <carousel interval="3000">
       <slide active>
-        <div class="" id='map' ng-controller="MapCtrl" style="height: 100%"></div>    
+        <div class="" id='map' ng-controller="MapCtrl" style="height: 100%"></div>
       </slide>
+      
       <slide>
-        <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="Endangered Frog" class="img-responsive" style="height: 100%; width:100%;">
+        <img src="/app/images/campaigns/islandresilience/header.png" alt="Island" class="img-responsive" style="height: 100%; width:100%;">
         <div class="carousel-caption">
           <h1 style="color: white;">
-            Zero Extinction Campaign
+            Island Resilience
           </h1>
           <p style="color:white;font-size:110%;">
-              LifeWeb's Zero Extinction campaign focuses attention on the extinction crisis and provides a platform for countries to profile their financial needs to prevent
-              species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem biodiversity loss.
+              Lifeweb’s Island Resilience Campaign seeks to engage governments, donor institutions, relevant organizations, and island champions to develop projects and activities necessary to address biodiversity loss and sustainable livelihoods on islands.
           </p>
-          <a class="btn btn-lg btn-primary bold-btn" href="/campaigns/zeroextinction">more information</a> 
+          <a class="btn btn-lg btn-primary bold-btn" href="/campaigns/zeroextinction">more information</a>
         </div>
+    </slide>
+
+      <slide>
+          <img src="http://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="Endangered Frog" class="img-responsive" style="height: 100%; width:100%;">
+          <div class="carousel-caption">
+              <h1 style="color: white;">
+                  Zero Extinction Campaign
+              </h1>
+              <p style="color:white;font-size:110%;">
+                  LifeWeb's Zero Extinction campaign focuses attention on the extinction crisis and provides a platform for countries to profile their financial needs to prevent
+                  species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem biodiversity loss.
+              </p>
+              <a class="btn btn-lg btn-primary bold-btn" href="/campaigns/islandresilience">more information</a>
+          </div>
       </slide>
+
 
       <slide>
         <img src="http://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="img-responsive" style="height: 100%;width:100%;">
@@ -47,7 +62,7 @@
       <div class="col-xs-4">
         <div class="well" style="background-color:#3E606F;">
           <a href="/explore/">
-            <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> 
+            <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" />
             <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> EXPLORE <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span>
           </a>
           <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3F403D" />
@@ -58,7 +73,7 @@
       <div class="col-xs-4">
         <div class="well" style="background-color:#3F403D;">
           <a href="/share/">
-            <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> 
+            <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" />
             <span style="font-weight:bold;color:#fff; font-size:120%;text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);"> SHARE <i class="icon-chevron-right icon-white" style="position:relative;top:-1px;"></i> </span>
           </a>
           <hr style="padding:0; margin: 5px; border:0;border-top:1px solid #3E606F" />
@@ -80,7 +95,7 @@
 
 
     <!-- Latest Projects
-         ================================================== -->  
+         ================================================== -->
     <div class="container-liquid">
       <a href="/explore/"><h2 class="featurette-heading"> Latest projects <i class="icon-chevron-right" style="position:relative;top:12px;"></i></h2></a>
       <hr style="padding:0;margin:0;"/>
@@ -90,13 +105,13 @@
        <!--<project-min doc-id="24020" class="col-xs-6"></project-min>-->
       </div>
     </div>
-         
+
     <br/>
-    <br/>  
+    <br/>
 
 
     <!-- Latest Events
-         ================================================== --> 
+         ================================================== -->
     <h2 class="featurette-heading" ><a href="/events">Latest Events <i class="icon-chevron-right" style="position:relative;top:12px;"></i></a></h2>
     <hr style="padding: 0; margin: 0;" />
     <br>
@@ -104,9 +119,9 @@
       <event-min doc-id="23834" class="col-xs-4"></event-min>
       <event-min doc-id="23953" class="col-xs-4"></event-min>
       <event-min doc-id="10668" class="col-xs-4"></event-min>
-    </div>             
+    </div>
     <br/>
-    <br/>  
+    <br/>
 
 <!--
     <h2 class="featurette-heading"> <a href="http://twitter.com/CBDLifeWeb">Latest News <i class="icon-chevron-right" style="position:relative;top:12px;"></i></a></h2>
@@ -118,9 +133,9 @@
       </div> <!--TODO: vulnerable to XSS through twitter api-->
     </div>
     -->
-    <br/><br/>   
+    <br/><br/>
     <div class="row">
-      <div class="col-xs-12">  
+      <div class="col-xs-12">
         <h2 class="featurette-heading"> LifeWeb Donors <span class="muted" > </span></h2> <hr style="padding:0;margin:0;"/><br/>
         <style>
             .donor {
@@ -128,10 +143,10 @@
             }
         </style>
         <div class="row">
-          <div class="donor col-xs-1">     
+          <div class="donor col-xs-1">
             <a href="/donors?id=23827" ><img src="//www.cbd.int/images/lifeweb/donors/logos/23827.gif" alt="23827" width="90"></a>
           </div>
-          <div class="donor col-xs-1">     
+          <div class="donor col-xs-1">
             <a href="/donors?id=6162" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6163.gif" alt="6163" width="90"></a>
           </div>
           <div class="donor col-xs-1">
@@ -143,7 +158,7 @@
           <div class="donor col-xs-1">
             <a href="/donors?id=6171" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6171.gif" alt="6171" width="90"></a>
           </div>
-          <div class="donor col-xs-1">       
+          <div class="donor col-xs-1">
             <a href="/donors?id=6162" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6162.gif" alt="6162" width="90"></a>
           </div>
           <div class="donor col-xs-1">
@@ -152,7 +167,7 @@
           <div class="donor col-xs-1">
             <a href="/donors?id=6177"><img src="//www.cbd.int/images/lifeweb/donors/logos/6177.gif" alt="6177" width="90"></a>
           </div>
-          <div class="donor col-xs-1">        
+          <div class="donor col-xs-1">
             <a href="/donors?id=6117"><img src="//www.cbd.int/images/lifeweb/donors/logos/6117.gif"  alt="6117" width="90"></a>
           </div>
           <div class="donor col-xs-1">
@@ -166,13 +181,13 @@
           <div class="donor col-xs-1">
             <a href="/donors?id=6611" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6611.gif" alt="6611" width="100"></a>
           </div>
-          <div class="donor col-xs-1">      
+          <div class="donor col-xs-1">
             <a href="/donors?id=6454" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6454.gif"  alt="6454" width="100"></a>
           </div>
           <div class="donor col-xs-1">
             <a href="/donors?id=6119" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6119.gif"  alt="6119" width="100"></a>
           </div>
-          <div class="donor col-xs-1">     
+          <div class="donor col-xs-1">
             <a href="/donors?id=6452" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6452.gif" alt="6452" width="100"></a>
           </div>
           <div class="donor col-xs-1">
