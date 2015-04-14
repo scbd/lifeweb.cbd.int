@@ -293,7 +293,7 @@ media-heading {
     .title-divider {
         padding: 0!important;
         margin: 0!important;
-       
+
     }
     .span9 {
         padding: 0!important;
@@ -708,8 +708,8 @@ section > h3
 
 #footer_header
 {
-  border-right: #808080 solid 1px;
-  height: 200px;
+  /*border-right: #808080 solid 1px;*/
+  /*height: 200px;*/
 }
 
 #footer_header > h3, #footer_header > h3, #footer_header > address, #signup_form > h3, #signup_form > span
@@ -726,8 +726,8 @@ section > h3
 
 #signup_form
 {
-  border-right: #808080 solid 1px;
-  height: 200px;
+  /*border-right: #808080 solid 1px;
+  height: 200px;*/
 }
 
 #signup_form > span
@@ -758,5 +758,3 @@ section > h3
 }
 
 /* ++++++++++++++++++++++ */
-
-

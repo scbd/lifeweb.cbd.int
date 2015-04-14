@@ -1,7 +1,7 @@
-<div class="ng-cloak" style="width:200px;" >
+<div class="ng-cloak"  >
     	<div ng-show="user.isAuthenticated">
 
-            <h3 style="color:#efefef;">Signed in as <b>{{user.name}}</b></h3>
+            <h3 style="color:#111;">Signed in as <b style="color:white;">{{user.name}}</b></h3>
 
             <ul style="color:#efefef;">
                 <li style="padding:3px;"><a href="/admin">Management center</a></li>
@@ -9,13 +9,13 @@
                 <li style="padding:3px;"><a href="https://accounts.cbd.int/profile">My Profile</a></li>
                 <li style="padding:3px;"> <button type="button" class="btn btn-info" ng-click="doSignOut()"> <i class="icon  icon-off icon-white"></i> Sign out</button></li>
            </ul>
-		
+
 	</div>
 
-    
-   <h3 ng-hide="user.isAuthenticated" style="color: #efefef;">Sign in</h3>
+
+   <h3 ng-hide="user.isAuthenticated" style="color: #111;">Sign in</h3>
 		<form class="form-horizontal" ng-submit="doSignIn()" style="margin-left:15px;">
-	 
+
 		<div ng-hide="user.isAuthenticated">
 
 			<div class="alert alert-block" ng-show="isInvalid">
