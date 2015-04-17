@@ -28,8 +28,8 @@ h4 {
 }
 
 table {
-    text-align: center;
-    vertical-align: middle;
+    /*text-align: center;
+    vertical-align: middle;*/
 }
 
 .green {
@@ -41,6 +41,7 @@ table {
 .blue {
     background-color: #BBBBFF;
 }
+.color-blue{color:#2185C5}
 
 .navbar-inverse
 {
@@ -756,5 +757,12 @@ section > h3
   position: relative!important;
   vertical-align: top;
 }
+
+.event-date{
+    text-transform: uppercase;
+
+}
+
+
 
 /* ++++++++++++++++++++++ */

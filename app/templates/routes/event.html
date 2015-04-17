@@ -8,22 +8,13 @@
     </div>
 
           <div class="row">
-              
+
               <!-- left side bar -->
               <div class="col-xs-8">
-                  <h1 class="title-divider" ng-bind-html="event.description"></h1>
 
-
-                <table style="margin-bottom:30px;">
-                <tr>
-                <td style="padding-right:20px;">
-                          <img src="{{event.coverImage.url}}" ng-show="event.icon" class="img-polaroid" style="max-width:150px;margin-top:15px;" /></td>
-                      
-                          <td><h3 style="color: #2185C5;" ng-bind-html="event.description"></h3>
-                          <h3>{{properDate(event.startDate)}} - {{properDate(event.endDate)}}</h3></td>
-                          </tr>
-                          </table>
-                     
+                  <h1 class="title-divider" ng-bind-html="event.name"></h1>
+                  <div class="event-date color-blue"><strong>{{event.startDate | date : "dd MMM yyyy"}}</strong> <span ng-show="event.endDate"> - <strong>{{event.endDate| date : "dd MMM yyyy" }}</strong></span></div>
+                  <div style="margin-bottom:30px;" ng-bind-html="event.description"></div>
                   <iframe ng-src="{{event.firstDocumentLink}}" style="width:700px; height:950px;"> </iframe>
 
               </div><!-- end left side bar -->
@@ -31,6 +22,9 @@
 
               <!-- right side bar -->
               <div class="col-xs-4" >
+
+                  <img src="{{event.coverImage.url}}" ng-show="event.coverImage.url" class="img-polaroid" style="max-width:300px;" />
+
 
                   <div ng-show="event.project" >
                       <h3 class="title-divider">Expression of Interest</h3>

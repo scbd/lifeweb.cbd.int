@@ -19,6 +19,8 @@ define(['app'], function(app) {
       }
   });
 
+ 
+
 //##################################################################
   app.filter('filterToUSD', function ($filter) {
     return function (amount, currency) {
@@ -113,7 +115,7 @@ define(['app'], function(app) {
                   result.push(contacts[i]);
               }
           }
-     
+
           return result;
       }
   });
@@ -1123,7 +1125,7 @@ define(['app'], function(app) {
   //##################################################################
   app.filter('SumAmount', function ($filter) {
       return function (funding, selected_currency) {
-          
+
           var USDtoEURO = 0.73500;
 
           if (!funding)
@@ -1201,7 +1203,7 @@ define(['app'], function(app) {
 
                   }
                   if (!flag) {
-                      
+
                       c.push(funding[i].project.country_codes[k]);
                   }
                   flag = false;
@@ -1335,7 +1337,7 @@ define(['app'], function(app) {
 
     app.filter('filterCountryName', function($filter) {
         return function(countries, id) {
-              
+
             if (countries == null)
                 return null;
 
@@ -1355,46 +1357,46 @@ define(['app'], function(app) {
     //##################################################################
     app.filter('filterIsFunded', function() {
         return function(projs, funded) {
-      
+
             if (projs == null)
                 return null;
 
       if(funded == 'all')
         return projs;
-      
-      var result= []; 
-        
+
+      var result= [];
+
         if(funded == '' || funded == null)
           funded = false;
           else{
           funded = true;
           }
-          
+
 
           for (var i=0; i < projs.length; i++){
             if (projs[i].is_funded == funded) {
               result.push(projs[i]);
             }
           }
-        
-        
+
+
             return result;
-          
+
         }
     });
 
     //##################################################################
     app.filter('filterCountry', function() {
         return function(projs, code) {
-              
+
            if(code == null)
                return projs;
 
            if (projs == null)
                return projs;
 
-            var result= []; 
-            
+            var result= [];
+
             for (var i=0; i < projs.length; i++){
               if (projs[i].country_ss && projs[i].country_ss.indexOf(code) != -1) {
                 result.push(projs[i]);
