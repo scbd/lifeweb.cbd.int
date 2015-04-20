@@ -26,5 +26,17 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
               events.splice(events.indexOf(event), 1);
             });
         };
+
+        $scope.confirm = 0;
+
+        $scope.confirmDelete = function(pid) {
+            $scope.confirm = pid;
+        };
+        $scope.cancelDelete = function() {
+            $scope.confirm = 0;
+        };
+
+
+
     });
 });

@@ -1,18 +1,23 @@
-<div class="container" ng-controller="AdminEventsCtrl" style="margin-top: 100px">
-  <fieldset>
-    <legend>
-        Events
-        <a ng-href="/admin/events/create" target="_blank"><button type="button">Create Event</button></a>
-    </legend>
-      Event Filter: <input ng-model="eventFilter" />
-    <h3 style="color: #EEDD44;">Draft Events</h3>
+<div class="container" ng-controller="AdminEventsCtrl" style="margin-top: 30px">
+
+<h1>EVENTS</h1>
+
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h1 class="panel-title" style="font-weight:bold;font-size:20px;">DRAFT Events</h1>
+            <br>
+            <a class="pull-right" ng-href="/admin/event/create" target="_blank"><button type="button">Create event</button></a>
+            Event Filter: <input ng-model="eventFilter" />
+        </div>
+        <div class="panel-body">
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Start Date</th>
                 <th>Description</th>
-                <th>Links</th>
+                <th class="text-right">EDIT</th>
             </tr>
         </thead>
         <tbody>
@@ -20,23 +25,38 @@
                 <td>{{event.body.name}}</td>
                 <td>{{event.body.startDate | date : 'dd MMM yyyy'}}</td>
                 <td>{{event.body.description}}</td>
-                <td>
+                <td class="text-right">
                   <a ng-href="/event?id={{event.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/events/edit/{{event.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteEvent(event, draftEvents, 'drafts')">X</button>
+
+                  <button ng-show="confirm == 0"  type="button" ng-click="confirmDelete(event.identifier)">X</button>
+                  <button ng-show="confirm == event.identifier" type="button" ng-click="cancelDelete()">CANCEL</button>
+                  <button ng-show="confirm == event.identifier" type="button" class="btn-danger" ng-click="deleteEvent(event, draftEvents, 'drafts')">DELETE</button>
+
+
                 </td>
             </tr>
 
         </tbody>
     </table>
-    <h3 style="color: #8888FF;">Published Events</h3>
+</div>
+</div>
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h1 class="panel-title" style="font-weight:bold;font-size:20px;">PUBLISHED Events</h1>
+        <br>
+        Event Filter: <input ng-model="eventFilter" />
+
+    </div>
+    <div class="panel-body">
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Start Date</th>
                 <th>Description</th>
-                <th>Links</th>
+                <th class="text-right">EDIT</th>
             </tr>
         </thead>
         <tbody>
@@ -45,13 +65,18 @@
                 <td>{{event.body.name}}</td>
                 <td>{{event.body.startDate | date : 'dd MMM yyyy'}}</td>
                 <td>{{event.body.description}}</td>
-                <td>
+                <td class="text-right">
                   <a ng-href="/event?id={{event.identifier}}" target="_blank"><button type="button">View</button></a>
                   <a ng-href="/admin/events/edit/{{event.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteEvent(event, publishedEvents, 'documents')">X</button>
+                  <button ng-show="confirm == 0"  type="button" ng-click="confirmDelete(event.identifier)">X</button>
+                  <button ng-show="confirm == event.identifier" type="button" ng-click="cancelDelete()">CANCEL</button>
+                  <button ng-show="confirm == event.identifier" type="button" class="btn-danger" ng-click="deleteEvent(event, publishedEvents, 'documents')">DELETE</button>
+
+
                 </td>
             </tr>
         </tbody>
     </table>
-  </fieldset>
+</div>
+</div>
 </div>

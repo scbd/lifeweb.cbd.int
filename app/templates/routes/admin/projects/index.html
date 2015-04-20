@@ -1,4 +1,5 @@
 <div class="container" ng-controller="AdminProjectsCtrl" style="margin-top: 30px">
+    <h1>PROJECTS</h1>
 
 
       <div class="panel panel-default">
@@ -17,7 +18,7 @@
                 <th ng-click="sortTerm='body.title'">Title</th>
                 <th ng-click="sortTerm='body.leadContact'">Lead Contact</th>
                 <th ng-click="sortTerm='-updatedOn'">Updated On</th>
-                <th>EDIT</th>
+                <th class="text-right">EDIT</th>
             </tr>
         </thead>
         <tbody>
@@ -37,7 +38,6 @@
                   <button ng-show="confirmdelete == project.identifier" type="button" ng-click="cancelDeleteProject()">CANCEL</button>
                   <button ng-show="confirmdelete == project.identifier" type="button" class="btn-danger" ng-click="deleteProject(project, draftProjects, 'drafts')">DELETE</button>
 
-
                 </td>
             </tr>
 
@@ -52,7 +52,6 @@
 <div class="panel-heading">
     <h1 class="panel-title" style="font-weight:bold;font-size:20px;">PUBLISHED Projects</h1>
     <br>
-    <a class="pull-right" ng-href="/admin/projects/create" target="_blank"><button type="button">Create Project</button></a>
     Project Filter: <input ng-model="projectFilter" autofocus />
 </div>
 <div class="panel-body">
@@ -64,7 +63,7 @@
                 <th ng-click="sortTerm='body.title'">Title</th>
                 <th ng-click="sortTerm='body.leadContact'">Lead Contact</th>
                 <th style="white-space:nowrap;" ng-click="sortTerm='-updatedOn'">Updated On</th>
-                <th>EDIT</th>
+                <th class="text-right">EDIT</th>
             </tr>
         </thead>
         <tbody>
@@ -75,7 +74,7 @@
                     <button type="button" ng-click="incPage()">Next 10</button>
                     <button type="button" ng-click="lastPage()">Last</button></td>
                 </tr>
-                
+
             <!-- TODO: remove duplicated code between different forms of projects -->
             <tr ng-repeat="project in publishedProjects | filter:projectFilter | orderBy:sortTerm | page: publishedProjectsPage:itemsPerPage">
                 <td>{{($index+1) + (publishedProjectsPage * itemsPerPage)}}</td>
