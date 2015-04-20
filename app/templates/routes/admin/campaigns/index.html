@@ -1,17 +1,24 @@
-<div class="container" ng-controller="AdminCampaignsCtrl" style="margin-top: 100px">
-  <fieldset>
-    <legend>
-        Campaigns
-        <a ng-href="/admin/campaigns/create" target="_blank"><button type="button">Create Campaign</button></a>
-    </legend>
-      Campaign Filter: <input ng-model="campaignFilter" />
-    <h3 style="color: #EEDD44;">Draft Campaigns</h3>
+<div class="container" ng-controller="AdminCampaignsCtrl" style="margin-top: 30px">
+
+<h1>CAMPAIGNS</h1>
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h1 class="panel-title" style="font-weight:bold;font-size:20px;">DRAFT Campaigns</h1>
+        <br>
+        <a class="pull-right" ng-href="/admin/campaigns/create" target="_blank"><button type="button" class="btn-info">add new</button></a>
+        Campaign Filter: <input ng-model="campaignFilter" />
+    </div>
+    <div class="panel-body">
+
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th></th>
                 <th>Title</th>
-                <th>Links</th>
+                <th>Link</th>
+                <th class="text-right">EDIT</th>
             </tr>
         </thead>
         <tbody>
@@ -20,20 +27,39 @@
                 <td>{{campaign.body.title}}</td>
                 <td>
                   <a ng-href="{{campaign.body.homepage.url | linkify}}" target="_blank">{{campaign.body.homepage.url}}</a>
+              </td>
+              <td class="text-right">
                   <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteCampaign(campaign, draftCampaigns, 'drafts')">X</button>
+
+                  <button ng-show="confirm == 0"  type="button" ng-click="confirmDelete(event.identifier)">X</button>
+                  <button ng-show="confirm == event.identifier" type="button" ng-click="cancelDelete()">CANCEL</button>
+                  <button ng-show="confirm == event.identifier" type="button" class="btn-danger" ng-click="deleteCampaign(campaign, draftCampaigns, 'drafts')">DELETE</button>
+
+
                 </td>
             </tr>
-            
+
         </tbody>
     </table>
-    <h3 style="color: #8888FF;">Published Campaigns</h3>
+</div>
+</div>
+
+
+
+<div class="panel panel-success">
+    <div class="panel-heading">
+        <h1 class="panel-title" style="font-weight:bold;font-size:20px;">PUBLISHED Campaigns</h1>
+        <br>
+        Campaign Filter: <input ng-model="campaignFilter" />
+    </div>
+    <div class="panel-body">
     <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th></th>
                 <th>Title</th>
-                <th>Links</th>
+                <th>Link</th>
+                <th  class="text-right">EDIT</th>
             </tr>
         </thead>
         <tbody>
@@ -43,11 +69,17 @@
                 <td>{{campaign.body.title}}</td>
                 <td>
                   <a ng-href="{{campaign.body.homepage.url | linkify}}" target="_blank">{{campaign.body.homepage.url}}</a>
+              </td>
+              <td class="text-right">
                   <a ng-href="/admin/campaigns/edit/{{campaign.identifier}}" target="_blank"><button type="button">Edit</button></a>
-                  <button type="button" ng-click="deleteCampaign(campaign, publishedCampaigns, 'documents')">X</button>
+
+                  <button ng-show="confirm == 0"  type="button" ng-click="confirmDelete(event.identifier)">X</button>
+                  <button ng-show="confirm == event.identifier" type="button" ng-click="cancelDelete()">CANCEL</button>
+                  <button ng-show="confirm == event.identifier" type="button" class="btn-danger" ng-click="deleteCampaign(campaign, publishedCampaigns, 'documents')">DELETE</button>
+
+
                 </td>
             </tr>
         </tbody>
     </table>
-  </fieldset>
 </div>
