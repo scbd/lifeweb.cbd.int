@@ -20,7 +20,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/e
             //});
         });
 
-        
+
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
@@ -45,5 +45,15 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/e
         response.body = donor;
         $scope.donors.push(response);
     });
+
+    $scope.confirm = 0;
+
+    $scope.confirmDelete = function(pid) {
+        $scope.confirm = pid;
+    };
+    $scope.cancelDelete = function() {
+        $scope.confirm = 0;
+    };
+    
   });
 });
