@@ -21,7 +21,7 @@ define(['app', 'authentication'], function(app) {
         title : 'Welcome',
         resolve: {
           user : resolveUser(),
-          dependencies: resolveJS(['/app/js/controllers/map.js', '/app/js/controllers/twitter.js', '/app/js/directives/event-min.js', '/app/js/directives/project-min.js']),
+          dependencies: resolveJS(['/app/js/directives/latest-events.js', '/app/js/controllers/map.js', '/app/js/controllers/twitter.js', '/app/js/directives/event-min.js', '/app/js/directives/project-min.js']),
         },
         label: 'Home'
       })
@@ -173,7 +173,7 @@ define(['app', 'authentication'], function(app) {
         },
       })
 
-      .when('/oauth2/callback', { 
+      .when('/oauth2/callback', {
         templateUrl: '/app/templates/oauth2/callback.html',
         resolve: {
           user : resolveUser(),
@@ -346,7 +346,7 @@ define(['app', 'authentication'], function(app) {
       //
       //
       //==================================================
-      function resolveUser(requiredPrivilages) { 
+      function resolveUser(requiredPrivilages) {
         return function($rootScope, authentication, $location, $kookies, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;

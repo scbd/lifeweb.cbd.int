@@ -21,12 +21,30 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 		                return prev;
 
 		            var matches = [];
-		            for(var i=0; i!=item.donor_ss.length; ++i)
-		                matches.push({
-		                    donor: donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; }),
-		                    amount: item.donatioFunding_ds[i],
-		                    project: item,
-		                });
+
+
+					for(var i=0; i <= item.donor_ss.length; ++i)
+					{
+
+						try{
+							var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
+
+						if(donor_name){
+							matches.push({
+		                    	donor: donor_name,
+		                    	amount: item.donatioFunding_ds[i],
+		                    	project: item,
+								year: item,
+		                	});
+						}
+
+						}catch(err){
+
+							console.log('problem item: ', item);
+						};
+
+					}
+
 		            return prev.concat(matches);
 		        }, []);
 		        console.log('matches: ', $scope.matches);
@@ -39,7 +57,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
           $scope.countries = data.data;
         });
 
-			  $scope.currency = "EURO";
+			  $scope.currency = "USD";
 
 		  //==================================
 		  $scope.toggleCurrency = function () {
@@ -51,6 +69,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 		  }
 
 			$scope.orderList = true;
+
 			$scope.sortTerm = 'year';
 
 			 //==================================
