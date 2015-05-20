@@ -2,7 +2,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
   app.controller('EOIDetailCtrl', function ($scope, $http, location, $anchorScroll) {
 
 
-        $scope.currency = "EURO";
+        $scope.currency = "USD";
 
             //==================================
             $scope.toggleCurrency = function () {

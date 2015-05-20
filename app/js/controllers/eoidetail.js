@@ -1,8 +1,8 @@
 define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 'controllers/page', 'editFormUtility', '/app/js/services/filters/linkify.js', '/app/js/services/filters/thumbnail.js', '/app/js/directives/campaign.js',], function(app, map) {
 //TODO: rename this shittily named controller
   app.controller('EOIDetailCtrl', function ($scope, $http, $q, $modal, editFormUtility, $anchorScroll, location) {
-        
-        $scope.currency = "EURO";
+
+        $scope.currency = "USD";
 
             //==================================
         $scope.toggleCurrency = function () {
@@ -21,7 +21,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             document.querySelector('#sidebar .' + hash).classList.add('active');
         };
 
-        
+
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
@@ -226,7 +226,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
         project.funding_needed = project.total_cost - total_funding;
         console.log('funding needed: ', project.funding_needed);
-        
+
         //check whether any are lifeweb_facilitated:
         var all = true;
         var one = false;
