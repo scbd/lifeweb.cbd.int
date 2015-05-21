@@ -28,7 +28,7 @@ app.factory("editFormUtility", ["IStorage", "$q","commonjs", function(storage, $
 					return success;
 				},
 				function(error) {
-					if (error.status == 404)
+					if (error.status == 404 || error.status == 401)
 						return storage.documents.get(identifier, { info: "" });
 					throw error;
 				}).then(
@@ -77,7 +77,7 @@ app.factory("editFormUtility", ["IStorage", "$q","commonjs", function(storage, $
 		//==================================
 		saveDraft: function(document) {
       //TODO: this version is now more up to date because it returns a promise that ensures everything has actually completed.
-      //Currently, you would have to go two promises deep to get to the real result from the return. Ie. saveDraft().then(function(result) { result.then(function(result) { result.then(function(result) { console.log('real result: ', result); }); }); }); 
+      //Currently, you would have to go two promises deep to get to the real result from the return. Ie. saveDraft().then(function(result) { result.then(function(result) { result.then(function(result) { console.log('real result: ', result); }); }); });
       //further, in the resulting promise, the saveDraft operation is likely not complete yet... hence the nested promises, even though you may think it is complete.
       //This version, the returned value is a promise whos result is the result of the put call. or similar if error.
 

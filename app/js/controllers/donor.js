@@ -25,7 +25,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
     });
 
     $scope.count = function(o) { var c=0;for(var k in o)++c;return c;};
- 
+
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
@@ -37,6 +37,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
             });
             return data; //good practice. always return from a promise, the same data.
         });
+        
         //TODO: duplicated in controllers/eoidetails.js
         //TODO: should just be a filter...
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?

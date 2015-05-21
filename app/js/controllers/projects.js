@@ -24,7 +24,7 @@ function getFundingStatus(proj) {
                         proj.funding_status = 'funded';
                     else if(proj.totalFunding < 1)
                         proj.funding_status = 'not yet funded';
-                    
+
                     return proj.funding_status;
 }
 
@@ -126,7 +126,7 @@ function getFundingStatus(proj) {
           }
       }
 
-      $scope.currency = "EURO";
+      $scope.currency = "USD";
 
       //==================================
       $scope.toggleCurrency = function () {

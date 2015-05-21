@@ -19,7 +19,7 @@ define(['app'], function(app) {
       }
   });
 
- 
+
 
 //##################################################################
   app.filter('filterToUSD', function ($filter) {
@@ -1284,50 +1284,56 @@ define(['app'], function(app) {
   app.filter('filterCurrency', function ($filter) {
       return function (amount, currency, selected_currency) {
 
-          var USDtoEURO = 0.73500;
-          if(!currency)
-            currency = 'USD';
+          var USDtoEURO = 0.90;
 
-          if (amount === 0)
-              return "undisclosed";
-          if (!amount)
-              return null;
+          var exchange = "";
+
+          if (!amount || amount <= 0) {
+              return "";
+          }
 
           if (selected_currency == "USD") {
 
               if (currency == "Euros") {
                   amount = amount * (1 / USDtoEURO);
                   amount = $filter('number')(amount, 0);
-                  return "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
+                  exchange = "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
               }
               else {
                   amount = $filter('number')(amount, 0);
-                  return "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
+                  exchange = "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
               }
           }
 
           if (selected_currency == "EURO") {
 
-              if (currency == "USD") {
+              if (currency == "US Dollars") {
                   amount = amount * USDtoEURO;
                   amount = $filter('number')(amount, 0);
-                  return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
+                  exchange = "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
               }
               else {
                   amount = $filter('number')(amount, 0);
-                  return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
+                  exchange = "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
               }
           }
 
           if (!selected_currency) {
 
               if (currency == "US Dollars") {
-                  return "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " USD"
+                  exchange = "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " USD"
               }
               if (currency == "Euros") {
-                  return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " EUROS"
+                  exchange = "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " EUROS"
               }
           }
+
+
+          if (!amount || amount <= 0) {
+              return "";
+          }
+
+          return exchange;
 
       };
   });

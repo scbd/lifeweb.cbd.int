@@ -124,7 +124,7 @@ define(['app'], function(app) {
                   result.push(contacts[i]);
               }
           }
-     
+
           return result;
       }
   });
@@ -1145,7 +1145,7 @@ define(['app'], function(app) {
   //##################################################################
   app.filter('SumAmount', function ($filter) {
       return function (funding, selected_currency) {
-          
+
           var USDtoEURO = 0.73500;
 
           if (!funding)
@@ -1159,7 +1159,7 @@ define(['app'], function(app) {
 
           //convert all to Euros and sum
           for (var i = 0; i < funding.length; i++) {
-                 
+
               amount = 0;
 
               if (funding[i].currency == "US Dollars") {
@@ -1234,7 +1234,7 @@ define(['app'], function(app) {
 
                   }
                   if (!flag) {
-                      
+
                       c.push(funding[i].project.country_codes[k]);
                   }
                   flag = false;
@@ -1273,7 +1273,7 @@ define(['app'], function(app) {
                       c.push({ "key": key[k].trim(), "value": value[k].trim() });
                   }
                   flag = false;
-                 
+
               }
           }
 
@@ -1318,14 +1318,15 @@ define(['app'], function(app) {
   app.filter('filterCurrency', function ($filter) {
       return function (amount, currency, selected_currency) {
 
-          var USDtoEURO = 0.73500;
+          var USDtoEURO = 0.90;
 
+          var exchange = "";
 
           if (!amount)
               return null;
 
-          if (amount == 0) {
-              return "undisclosed";
+          if (amount <= 0) {
+              return "-";
           }
 
           if (selected_currency == "USD") {
@@ -1333,11 +1334,11 @@ define(['app'], function(app) {
               if (currency == "Euros") {
                   amount = amount * (1 / USDtoEURO);
                   amount = $filter('number')(amount, 0);
-                  return "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
+                  exchange = "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
               }
               else {
                   amount = $filter('number')(amount, 0);
-                  return "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
+                  exchange = "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " USD"
               }
           }
 
@@ -1346,23 +1347,30 @@ define(['app'], function(app) {
               if (currency == "US Dollars") {
                   amount = amount * USDtoEURO;
                   amount = $filter('number')(amount, 0);
-                  return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
+                  exchange = "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
               }
               else {
                   amount = $filter('number')(amount, 0);
-                  return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
+                  exchange = "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");// + " EUROS"
               }
           }
 
           if (!selected_currency) {
 
               if (currency == "US Dollars") {
-                  return "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " USD"
+                  exchange = "$" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " USD"
               }
               if (currency == "Euros") {
-                  return "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " EUROS"
+                  exchange = "\u20AC" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ") + " EUROS"
               }
           }
+
+
+          if (!amount || amount <= 0) {
+              return "-";
+          }
+
+          return exchange;
 
       };
   });
@@ -1372,7 +1380,7 @@ define(['app'], function(app) {
 
     app.filter('filterCountryName', function($filter) {
         return function(countries, id) {
-              
+
             if (countries == null)
                 return null;
 
@@ -1392,46 +1400,46 @@ define(['app'], function(app) {
     //##################################################################
     app.filter('filterIsFunded', function() {
         return function(projs, funded) {
-      
+
             if (projs == null)
                 return null;
 
       if(funded == 'all')
         return projs;
-      
-      var result= []; 
-        
+
+      var result= [];
+
         if(funded == '' || funded == null)
           funded = false;
           else{
           funded = true;
           }
-          
+
 
           for (var i=0; i < projs.length; i++){
             if (projs[i].is_funded == funded) {
               result.push(projs[i]);
             }
           }
-        
-        
+
+
             return result;
-          
+
         }
     });
 
     //##################################################################
     app.filter('filterCountry', function() {
         return function(projs, code) {
-              
+
            if(code == null)
                return projs;
 
            if (projs == null)
                return projs;
 
-            var result= []; 
-            
+            var result= [];
+
             for (var i=0; i < projs.length; i++){
                 for(var j=0; j < projs[i].country_codes.length; j++){
               if (projs[i].country_codes[j] == code) {
