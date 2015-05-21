@@ -24,7 +24,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 		            for(var i=0; i!=item.donor_ss.length; ++i)
 		                matches.push({
 		                    donor: donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; }),
-		                    amount: item.donatioFunding_ds[i],
+		                    amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
 		                    project: item,
 		                });
 		            return prev.concat(matches);
