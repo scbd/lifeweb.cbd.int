@@ -4,14 +4,9 @@
   "dependencies": {
     "bower": "^1.3.11",
     "express": "~3.4.8",
-    "grunt": "~0.4.2",
-    "grunt-bower-task": "~0.3.4",
-    "grunt-cli": "~0.1.13",
-    "http-proxy": "^1.11.1",
-    "load-grunt-tasks": "^0.4.0"
+    "http-proxy": "1.11.1"
   },
   "devDependencies": {
-    "awsbox": "0.6.x",
     "http-sync": "^0.1.1",
     "linq": "*",
     "prompt": "^0.2.14",
@@ -22,6 +17,7 @@
   },
   "engine": "node >= 0.10.18",
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install"
+    "postinstall": "./node_modules/.bin/bower install --allow-root --config.interactive=false",
+    "start": "node server"
   }
 }

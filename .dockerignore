@@ -1,0 +1,8 @@
+.git
+.bower-storage
+**/.DS_Store
+node_modules
+bower_components
+app/libs
+app_build
+deploy.sh
