@@ -21,8 +21,8 @@ process.on('uncaughtException', function (exception) {
 
 (function() {
   //TODO: paste the command i used here as an example.
-  var oldProjectsFile = process.argv[2] || 'http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx';
-  var newProjectsUrl = process.argv[3] || 'http://lifeweb.cbd.int/api/v2013/documents?schema=';
+  var oldProjectsFile = process.argv[2] || 'https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx';
+  var newProjectsUrl = process.argv[3] || 'https://lifeweb.cbd.int/api/v2013/documents?schema=';
   Ajax.newProjectsUrl = newProjectsUrl;
 
     var donorCache = {};
