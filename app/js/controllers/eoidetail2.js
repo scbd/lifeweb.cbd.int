@@ -41,7 +41,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
               $scope.eoi = data;
 
               var sCountry = data.country;
-              $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
+              $http.jsonp('https://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
                .success(function (data) {
                   $scope.geolocation = {
                     lat: data[0].lat,

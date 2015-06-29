@@ -12,7 +12,7 @@ define(['app', 'leaflet',], function(app, L) {
 			});
 
       var cloudmade_url = 'http://{s}.tile.cloudmade.com/2441defe017745a29b7576818f21432b/2/256/{z}/{x}/{y}.png';
-      var openstreetmaps_url = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+      var openstreetmaps_url = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
       /*
       var legend = L.control({position: 'bottomright'});
       legend.onAdd = function(map) {

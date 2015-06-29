@@ -36,7 +36,7 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
       $scope.fp_national = data.response.docs;
     });
       //Duplicated in edit event
-	  $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
+	  $http.jsonp('https://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK&country=' + sCountry)
 		 .success(function (data) {
 			  $scope.geolocation = {
               lat: data[0].lat,

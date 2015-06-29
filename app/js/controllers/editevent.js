@@ -75,7 +75,7 @@ console.log('mapinfo: ', mapInfo);
 
     //takes the base map that has 'callback'. This way we can work even if it hasn't loaded yet...
     function focusCountry(map, countryCode) {
-        return $http.jsonp('http://nominatim.openstreetmap.org/search/'+countryCode+'?format=json&json_callback=JSON_CALLBACK&country=' + countryCode)
+        return $http.jsonp('https://nominatim.openstreetmap.org/search/'+countryCode+'?format=json&json_callback=JSON_CALLBACK&country=' + countryCode)
 		 .then(function (data) {
             data = data.data;
 		    console.log('data from country bound call: ', data); //looking for zoom

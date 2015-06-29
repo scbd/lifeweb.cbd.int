@@ -85,7 +85,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
               addFundingProperties($scope.eoi);
 
               var sCountry = data.countries[0].identifier;
-              $http.jsonp('http://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
+              $http.jsonp('https://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
                .success(function (data) {
                   $scope.geolocation = {
                     lat: $scope.eoi.coordinates.lat,
