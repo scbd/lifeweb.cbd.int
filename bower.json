@@ -1,10 +1,11 @@
 {
   "name": "lifeweb-cbd-int",
   "dependencies": {
-    "angular": "~1.3.6",
-    "angular-route": "~1.2.5",
+    "angular": "1.3.16",
+    "angular-route": "1.3.16",
+    "angular-cookies": "1.3.16",
     "angular-bootstrap": "~0.12.0",
-    "angular-sanitize": "~1.3.6",
+    "angular-sanitize": "1.3.16",
     "bootstrap": "~3.1.1",
     "font-awesome": "~4.0.3",
     "requirejs": "~2.1.10",
