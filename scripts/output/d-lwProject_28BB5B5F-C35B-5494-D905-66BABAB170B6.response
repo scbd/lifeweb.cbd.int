@@ -97,25 +97,25 @@
 	"maps": [
 		{
 			"title": "map 1",
-			"url": "http://www.cbd.int/database/attachment/?id=761"
+			"url": "https://www.cbd.int/database/attachment/?id=761"
 		},
 		{
 			"title": "map 2",
-			"url": "http://www.cbd.int/database/attachment/?id=762"
+			"url": "https://www.cbd.int/database/attachment/?id=762"
 		},
 		{
 			"title": "map 3",
-			"url": "http://www.cbd.int/database/attachment/?id=764"
+			"url": "https://www.cbd.int/database/attachment/?id=764"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Focal Point Support Letter",
-			"url": "http://www.cbd.int/database/attachment/?id=767"
+			"url": "https://www.cbd.int/database/attachment/?id=767"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Congo/Odzala-Lossi/Odzala-Lossi lifeweb project scale expression.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Congo/Odzala-Lossi/Odzala-Lossi lifeweb project scale expression.doc"
 		}
 	],
 	"coordinates": {

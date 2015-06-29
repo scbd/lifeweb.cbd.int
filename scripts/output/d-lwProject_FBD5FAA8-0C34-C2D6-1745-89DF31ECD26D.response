@@ -88,24 +88,24 @@
 	"maps": [
 		{
 			"title": "map1",
-			"url": "http://www.cbd.int/database/attachment/?id=293"
+			"url": "https://www.cbd.int/database/attachment/?id=293"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Expression of interest",
-			"url": "http://www.cbd.int/database/attachment/?id=296"
+			"url": "https://www.cbd.int/database/attachment/?id=296"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/doc/lifeweb/Dominican Republic/lifeweb_DR proposal_FINAL_12_20 _2_.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Dominican Republic/lifeweb_DR proposal_FINAL_12_20 _2_.pdf"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Dominican Republic/lifeweb_DR proposal_FINAL_12_20 _2_.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Dominican Republic/lifeweb_DR proposal_FINAL_12_20 _2_.pdf"
 		}
 	],
 	"coordinates": {

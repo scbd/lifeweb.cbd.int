@@ -10,7 +10,7 @@ define(['app', 'authentication', 'URI', 'controllers/page', 'editFormUtility',],
             return date.toDateString();
         };
 
-      //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true })
+      //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true })
       editFormUtility.load(sID)
           .then(function (data) {
             console.log('event: ', data);

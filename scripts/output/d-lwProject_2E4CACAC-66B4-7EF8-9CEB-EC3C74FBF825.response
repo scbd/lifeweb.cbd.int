@@ -102,72 +102,72 @@
 	"maps": [
 		{
 			"title": "map 1",
-			"url": "http://www.cbd.int/database/attachment/?id=874"
+			"url": "https://www.cbd.int/database/attachment/?id=874"
 		},
 		{
 			"title": "map 2",
-			"url": "http://www.cbd.int/database/attachment/?id=875"
+			"url": "https://www.cbd.int/database/attachment/?id=875"
 		},
 		{
 			"title": "Map 3",
-			"url": "http://www.cbd.int/database/attachment/?id=876"
+			"url": "https://www.cbd.int/database/attachment/?id=876"
 		}
 	],
 	"attachments": [
 		{
 			"title": "arrêté de classement",
-			"url": "http://www.cbd.int/database/attachment/?id=864"
+			"url": "https://www.cbd.int/database/attachment/?id=864"
 		},
 		{
 			"title": "carte-globale des AP du togo",
-			"url": "http://www.cbd.int/database/attachment/?id=865"
+			"url": "https://www.cbd.int/database/attachment/?id=865"
 		},
 		{
 			"title": "carte-présentation du complexe de togodo",
-			"url": "http://www.cbd.int/database/attachment/?id=866"
+			"url": "https://www.cbd.int/database/attachment/?id=866"
 		},
 		{
 			"title": "code forestier",
-			"url": "http://www.cbd.int/database/attachment/?id=867"
+			"url": "https://www.cbd.int/database/attachment/?id=867"
 		},
 		{
 			"title": "décret 2003",
-			"url": "http://www.cbd.int/database/attachment/?id=868"
+			"url": "https://www.cbd.int/database/attachment/?id=868"
 		},
 		{
 			"title": "lettre de motivation",
-			"url": "http://www.cbd.int/database/attachment/?id=869"
+			"url": "https://www.cbd.int/database/attachment/?id=869"
 		},
 		{
 			"title": "loi cadre environnement",
-			"url": "http://www.cbd.int/database/attachment/?id=870"
+			"url": "https://www.cbd.int/database/attachment/?id=870"
 		},
 		{
 			"title": "engagement des populations de togodo nord",
-			"url": "http://www.cbd.int/database/attachment/?id=871"
+			"url": "https://www.cbd.int/database/attachment/?id=871"
 		},
 		{
 			"title": "pv de délimitation consensuelle togodo nord",
-			"url": "http://www.cbd.int/database/attachment/?id=872"
+			"url": "https://www.cbd.int/database/attachment/?id=872"
 		},
 		{
 			"title": "pv de réunion constitutive uavgap togodo nord",
-			"url": "http://www.cbd.int/database/attachment/?id=873"
+			"url": "https://www.cbd.int/database/attachment/?id=873"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Togo/lifeweb project scale expression french Togo.docx"
+			"url": "https://www.cbd.int/doc/lifeweb/Togo/lifeweb project scale expression french Togo.docx"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/doc/lifeweb/Togo/lettre de transmission.jpg"
+			"url": "https://www.cbd.int/doc/lifeweb/Togo/lettre de transmission.jpg"
 		},
 		{
 			"title": "Expression of interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Togo/lifeweb project scale expression french Togo.docx"
+			"url": "https://www.cbd.int/doc/lifeweb/Togo/lifeweb project scale expression french Togo.docx"
 		}
 	],
 	"coordinates": {

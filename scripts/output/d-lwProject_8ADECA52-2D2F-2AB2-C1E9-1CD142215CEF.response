@@ -68,54 +68,54 @@
 	"images": [
 		{
 			"title": "photos",
-			"url": "http://www.cbd.int/database/attachment/?id=826"
+			"url": "https://www.cbd.int/database/attachment/?id=826"
 		},
 		{
 			"title": "photos (faune)",
-			"url": "http://www.cbd.int/database/attachment/?id=827"
+			"url": "https://www.cbd.int/database/attachment/?id=827"
 		}
 	],
 	"maps": [
 		{
 			"title": "map 1",
-			"url": "http://www.cbd.int/database/attachment/?id=818"
+			"url": "https://www.cbd.int/database/attachment/?id=818"
 		},
 		{
 			"title": "map 2",
-			"url": "http://www.cbd.int/database/attachment/?id=819"
+			"url": "https://www.cbd.int/database/attachment/?id=819"
 		},
 		{
 			"title": "map 3",
-			"url": "http://www.cbd.int/database/attachment/?id=820"
+			"url": "https://www.cbd.int/database/attachment/?id=820"
 		}
 	],
 	"attachments": [
 		{
 			"title": "annexes 1, 2, 3 et 4",
-			"url": "http://www.cbd.int/database/attachment/?id=828"
+			"url": "https://www.cbd.int/database/attachment/?id=828"
 		},
 		{
 			"title": "annexe 5 (photos flore)",
-			"url": "http://www.cbd.int/database/attachment/?id=829"
+			"url": "https://www.cbd.int/database/attachment/?id=829"
 		},
 		{
 			"title": "annexe 5 (photos faune)",
-			"url": "http://www.cbd.int/database/attachment/?id=830"
+			"url": "https://www.cbd.int/database/attachment/?id=830"
 		},
 		{
 			"title": "annexe 6 (budget prévisionnel)",
-			"url": "http://www.cbd.int/database/attachment/?id=831"
+			"url": "https://www.cbd.int/database/attachment/?id=831"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Benin/Expression d'interêt - Parc W final.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Benin/Expression d'interêt - Parc W final.doc"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Benin/Expression d'interêt - Parc W final.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Benin/Expression d'interêt - Parc W final.doc"
 		}
 	],
 	"coordinates": {

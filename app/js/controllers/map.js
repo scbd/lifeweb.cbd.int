@@ -76,7 +76,7 @@ define(['app', 'leaflet',], function(app, L) {
 		$scope.mapdata = null; 
 
 
-		$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
+		$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
 			.success(function(data) {
 				 $scope.mapdata = data;
 			});

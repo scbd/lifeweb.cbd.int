@@ -87,70 +87,70 @@
 	"images": [
 		{
 			"title": "picture 2",
-			"url": "http://www.cbd.int/database/attachment/?id=659"
+			"url": "https://www.cbd.int/database/attachment/?id=659"
 		},
 		{
 			"title": "picture 3",
-			"url": "http://www.cbd.int/database/attachment/?id=666"
+			"url": "https://www.cbd.int/database/attachment/?id=666"
 		}
 	],
 	"maps": [
 		{
 			"title": "map 1",
-			"url": "http://www.cbd.int/database/attachment/?id=656"
+			"url": "https://www.cbd.int/database/attachment/?id=656"
 		},
 		{
 			"title": "map 2",
-			"url": "http://www.cbd.int/database/attachment/?id=657"
+			"url": "https://www.cbd.int/database/attachment/?id=657"
 		},
 		{
 			"title": "map 3",
-			"url": "http://www.cbd.int/database/attachment/?id=658"
+			"url": "https://www.cbd.int/database/attachment/?id=658"
 		},
 		{
 			"title": "map 4",
-			"url": "http://www.cbd.int/database/attachment/?id=777"
+			"url": "https://www.cbd.int/database/attachment/?id=777"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Socio-economic survey around the Sapo National Park",
-			"url": "http://www.cbd.int/database/attachment/?id=769"
+			"url": "https://www.cbd.int/database/attachment/?id=769"
 		},
 		{
 			"title": "Socio-economic survey around the Lake Piso multiple resource use reserve",
-			"url": "http://www.cbd.int/database/attachment/?id=770"
+			"url": "https://www.cbd.int/database/attachment/?id=770"
 		},
 		{
 			"title": "Socio-economic survey around the East Nimba Reserve",
-			"url": "http://www.cbd.int/database/attachment/?id=771"
+			"url": "https://www.cbd.int/database/attachment/?id=771"
 		},
 		{
 			"title": "Economic analysis of a low carbon economy for Liberia",
-			"url": "http://www.cbd.int/database/attachment/?id=772"
+			"url": "https://www.cbd.int/database/attachment/?id=772"
 		},
 		{
 			"title": "Transboundary Workshop report",
-			"url": "http://www.cbd.int/database/attachment/?id=773"
+			"url": "https://www.cbd.int/database/attachment/?id=773"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=774"
+			"url": "https://www.cbd.int/database/attachment/?id=774"
 		},
 		{
 			"title": "The poverty reduction strategy of Liberia",
-			"url": "http://www.cbd.int/database/attachment/?id=776"
+			"url": "https://www.cbd.int/database/attachment/?id=776"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Liberia/Lifeweb Project Expression of Interest - Liberia PA Network_FINAL.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Liberia/Lifeweb Project Expression of Interest - Liberia PA Network_FINAL.doc"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Liberia/Lifeweb Project Expression of Interest - Liberia PA Network_FINAL.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Liberia/Lifeweb Project Expression of Interest - Liberia PA Network_FINAL.doc"
 		}
 	],
 	"coordinates": {

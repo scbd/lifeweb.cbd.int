@@ -92,58 +92,58 @@
 	"images": [
 		{
 			"title": "picture 1.jpg",
-			"url": "http://www.cbd.int/database/attachment/?id=636"
+			"url": "https://www.cbd.int/database/attachment/?id=636"
 		},
 		{
 			"title": "picture 2.jpg",
-			"url": "http://www.cbd.int/database/attachment/?id=637"
+			"url": "https://www.cbd.int/database/attachment/?id=637"
 		}
 	],
 	"maps": [
 		{
 			"title": "Map",
-			"url": "http://www.cbd.int/database/attachment/?id=628"
+			"url": "https://www.cbd.int/database/attachment/?id=628"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Ukraine/Ukraine PA expession (final).doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Ukraine/Ukraine PA expession (final).doc"
 		},
 		{
 			"title": "Annex 1 - GEF capacity-building assessment",
-			"url": "http://www.cbd.int/database/attachment/?id=629"
+			"url": "https://www.cbd.int/database/attachment/?id=629"
 		},
 		{
 			"title": "Annex 2 - National Environmental Policy of Ukraine",
-			"url": "http://www.cbd.int/database/attachment/?id=630"
+			"url": "https://www.cbd.int/database/attachment/?id=630"
 		},
 		{
 			"title": "Annex 3 - List of Existing Protected Areas",
-			"url": "http://www.cbd.int/database/attachment/?id=631"
+			"url": "https://www.cbd.int/database/attachment/?id=631"
 		},
 		{
 			"title": "Annex 4 - List of Newly Created Protected Areas",
-			"url": "http://www.cbd.int/database/attachment/?id=632"
+			"url": "https://www.cbd.int/database/attachment/?id=632"
 		},
 		{
 			"title": "Annex 6 - WWF socio-economic survey",
-			"url": "http://www.cbd.int/database/attachment/?id=633"
+			"url": "https://www.cbd.int/database/attachment/?id=633"
 		},
 		{
 			"title": "Annex 6a - WWF biological survey",
-			"url": "http://www.cbd.int/database/attachment/?id=634"
+			"url": "https://www.cbd.int/database/attachment/?id=634"
 		},
 		{
 			"title": "Annex 7 - GHG Ukraine",
-			"url": "http://www.cbd.int/database/attachment/?id=635"
+			"url": "https://www.cbd.int/database/attachment/?id=635"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Ukraine/Ukraine PA expession (final).doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Ukraine/Ukraine PA expession (final).doc"
 		}
 	],
 	"coordinates": {

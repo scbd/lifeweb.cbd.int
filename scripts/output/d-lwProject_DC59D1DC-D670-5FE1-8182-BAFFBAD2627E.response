@@ -120,13 +120,13 @@
 			"result": "•\tCapacity building activities through a regional cooperation platform to institutionalize the analyses of management effectiveness of PA in all 9 Amazon countries. This platform will allow a regional approach of management effectiveness through information exchange.\n•\tA standardized protocol for sharing information on evaluation of management effectiveness of protected areas."
 		}
 	],
-	"financialStability": "According to a financial sustainability preliminary study on protected areas, the Amazonian countries have evolved in their financial sustainability analysis and valuation according to a score card made by UNDP. Based on a compilation of information from the score cards for each of the Amazon Biome countries, it is estimated that the main providers for the region’s protected areas budget are the individual states that provide approximately  75% of funds, followed by international cooperation donors with 18%. Self-raised budget sources are only 10% of the total of available sources and they come mainly from the entry fees at Protected Areas (see Charter 1). This information suggests the need to diversify financial portfolios thereby guaranteeing long term funding that is not highly dependent on low-stability financial sources.<br/><br/>The financial sources distributed among the Amazon Biome countries vary between 20% and 100% of the total of available sources for the national Protected Areas in each country (see Table 3). According to this information the total of financial sources available for the Protected Areas at the Amazon Biome for the fiscal year 2009 averaged between USD 75 million and USD 100 million bracket. In other words, this amount corresponded to 20% and 48% of the total of available financial resources for the Protected Areas at the Amazon Biome.<br/><br/>Table 3. Total of available financial sources for the Protected Areas at the Amazon Biome by countries in 2009<br/><br/><img src=\"http://www.cbd.int/database/attachment/?id=1774\" /><br/><br/><table class=\"table table-striped\"><tr><th>Country</th><th>Total available resources for Amazonian Protected Areas (USD)</th><th>Percentages of allocated resources out of the total of Protected Areas system budget (%)</th></tr><tr><td>Bolivia</td><td>2.093.770</td><td>38</td></tr><tr><td>Brazil*</td><td>44.540.858</td><td>20</td></tr><tr><td>Colombia</td><td>6.049.878</td><td>30</td></tr><tr><td>Ecuador</td><td>1.176.143</td><td>30</td></tr><tr><td>French Guyana</td><td>9.820.000</td><td>100</td><tr><td>Peru</td><td>10.758.410</td><td>72</td></tr></table><br/>Source: Memories from the Regional Workshop of Sao Paulo – Brazil, February 3 – 6, 2010; Regional Environmental Direction of French Guyana (DIREN); 2010 (only National Parks and natural Reserves).Information provided by the countries at a regional Workshop in Lima-Peru, August/2010",
+	"financialStability": "According to a financial sustainability preliminary study on protected areas, the Amazonian countries have evolved in their financial sustainability analysis and valuation according to a score card made by UNDP. Based on a compilation of information from the score cards for each of the Amazon Biome countries, it is estimated that the main providers for the region’s protected areas budget are the individual states that provide approximately  75% of funds, followed by international cooperation donors with 18%. Self-raised budget sources are only 10% of the total of available sources and they come mainly from the entry fees at Protected Areas (see Charter 1). This information suggests the need to diversify financial portfolios thereby guaranteeing long term funding that is not highly dependent on low-stability financial sources.<br/><br/>The financial sources distributed among the Amazon Biome countries vary between 20% and 100% of the total of available sources for the national Protected Areas in each country (see Table 3). According to this information the total of financial sources available for the Protected Areas at the Amazon Biome for the fiscal year 2009 averaged between USD 75 million and USD 100 million bracket. In other words, this amount corresponded to 20% and 48% of the total of available financial resources for the Protected Areas at the Amazon Biome.<br/><br/>Table 3. Total of available financial sources for the Protected Areas at the Amazon Biome by countries in 2009<br/><br/><img src=\"https://www.cbd.int/database/attachment/?id=1774\" /><br/><br/><table class=\"table table-striped\"><tr><th>Country</th><th>Total available resources for Amazonian Protected Areas (USD)</th><th>Percentages of allocated resources out of the total of Protected Areas system budget (%)</th></tr><tr><td>Bolivia</td><td>2.093.770</td><td>38</td></tr><tr><td>Brazil*</td><td>44.540.858</td><td>20</td></tr><tr><td>Colombia</td><td>6.049.878</td><td>30</td></tr><tr><td>Ecuador</td><td>1.176.143</td><td>30</td></tr><tr><td>French Guyana</td><td>9.820.000</td><td>100</td><tr><td>Peru</td><td>10.758.410</td><td>72</td></tr></table><br/>Source: Memories from the Regional Workshop of Sao Paulo – Brazil, February 3 – 6, 2010; Regional Environmental Direction of French Guyana (DIREN); 2010 (only National Parks and natural Reserves).Information provided by the countries at a regional Workshop in Lima-Peru, August/2010",
 	"climateContribution": [
 		{
 			"type": {
 				"identifier": "ecoservices1"
 			},
-			"comment": "There is some data about carbon sequestration estimated for the Amazon Basin supported from analysis of plant biomass. Through a “single raster” image has been identified the way how the biomass is distributed across the Amazonian region. This research was conducted using a methodology supported on a combination of the soil coverage map with derived parameters of remote detection and more than 500 forest plots distributed in the basin (Saatchi, et al., 2007).<br/><br/>The distribution map was produced in ENVI in TIFF format which identifies the biomass, classifying 11 types or classes, from a 1 Km. distance spatial resolution and with a reasonable accuracy (more than 70%). Remote observation and earth data used in this work have been gathered between years 1990 and 2000. The biomass map represents the distribution of average biomass at the Amazon Basin during this period and it has been used to estimate the carbon total population at the basin, including the natural and underground biomass.<br/><br/>Map 3. Types and classes of biomass from the Amazon Basin<br/><img src=\"http://www.cbd.int/database/attachment/?id=1773\"  /><br/>Source:  Saatchi S.S, Houghton R.A, Alvala R.C.D.S, Soares J.V, Yu Y. Distribution of aboveground live biomass in the Amazon basin. Glob. Change Biol. 2007; 13:816–837.<br/><br/>Additionally, the Amazon Biome plays a major role in climate regulation. It boosts the atmosphere circulation in the tropics absorbing the energy and recycling almost half of rainfall. It is also estimated that the region holds almost 10% of the world carbon’s reserves stored in the terrestrial ecosystems (Melillo et al., 1993).<br/><br/><table class=\"table table-striped\"><tr><th>Ecosystem services</th><th>Economic Value</th></tr><br/><tr><td>Erosion prevention</td><td>238 US$ / ha / year</td></tr><tr><td>Fire protection</td><td>6US$ / ha / year</td></tr><tr><td>Carbon sequestration: Avoid damage due to CO2 avoided emissions.</td><td>70-100 US$ / ha / year</td></tr><tr><td>Carbon sequestration: Total value of sequestrated carbon in forests reserves (without perturbations)</td><td>750-10000 US$ / ha / year</td></tr><tr><td>Biodiversity Conservation</td><td>known</td></tr><tr><td>Unknown cultural aspects associated to the forest</td><td>known</td></tr><tr><td>Protection against diseases</td><td>known</td></tr></table><br/><br/>Source: Adapted from Verweij, P et al. 2009."
+			"comment": "There is some data about carbon sequestration estimated for the Amazon Basin supported from analysis of plant biomass. Through a “single raster” image has been identified the way how the biomass is distributed across the Amazonian region. This research was conducted using a methodology supported on a combination of the soil coverage map with derived parameters of remote detection and more than 500 forest plots distributed in the basin (Saatchi, et al., 2007).<br/><br/>The distribution map was produced in ENVI in TIFF format which identifies the biomass, classifying 11 types or classes, from a 1 Km. distance spatial resolution and with a reasonable accuracy (more than 70%). Remote observation and earth data used in this work have been gathered between years 1990 and 2000. The biomass map represents the distribution of average biomass at the Amazon Basin during this period and it has been used to estimate the carbon total population at the basin, including the natural and underground biomass.<br/><br/>Map 3. Types and classes of biomass from the Amazon Basin<br/><img src=\"https://www.cbd.int/database/attachment/?id=1773\"  /><br/>Source:  Saatchi S.S, Houghton R.A, Alvala R.C.D.S, Soares J.V, Yu Y. Distribution of aboveground live biomass in the Amazon basin. Glob. Change Biol. 2007; 13:816–837.<br/><br/>Additionally, the Amazon Biome plays a major role in climate regulation. It boosts the atmosphere circulation in the tropics absorbing the energy and recycling almost half of rainfall. It is also estimated that the region holds almost 10% of the world carbon’s reserves stored in the terrestrial ecosystems (Melillo et al., 1993).<br/><br/><table class=\"table table-striped\"><tr><th>Ecosystem services</th><th>Economic Value</th></tr><br/><tr><td>Erosion prevention</td><td>238 US$ / ha / year</td></tr><tr><td>Fire protection</td><td>6US$ / ha / year</td></tr><tr><td>Carbon sequestration: Avoid damage due to CO2 avoided emissions.</td><td>70-100 US$ / ha / year</td></tr><tr><td>Carbon sequestration: Total value of sequestrated carbon in forests reserves (without perturbations)</td><td>750-10000 US$ / ha / year</td></tr><tr><td>Biodiversity Conservation</td><td>known</td></tr><tr><td>Unknown cultural aspects associated to the forest</td><td>known</td></tr><tr><td>Protection against diseases</td><td>known</td></tr></table><br/><br/>Source: Adapted from Verweij, P et al. 2009."
 		},
 		{
 			"type": {
@@ -188,52 +188,52 @@
 	"maps": [
 		{
 			"title": "Figure 2: Localización de la Región Amazónica",
-			"url": "http://www.cbd.int/database/attachment/?id=983"
+			"url": "https://www.cbd.int/database/attachment/?id=983"
 		},
 		{
 			"title": "Map 2. Coincidences between national conservation priorities analysis  and the regional priority conservation analysis",
-			"url": "http://www.cbd.int/database/attachment/?id=1772"
+			"url": "https://www.cbd.int/database/attachment/?id=1772"
 		},
 		{
 			"title": "map 3. types and classes of biomass from the amazon basin",
-			"url": "http://www.cbd.int/database/attachment/?id=1773"
+			"url": "https://www.cbd.int/database/attachment/?id=1773"
 		},
 		{
 			"title": "chart 3. distribution of budget sources by financial providers",
-			"url": "http://www.cbd.int/database/attachment/?id=1774"
+			"url": "https://www.cbd.int/database/attachment/?id=1774"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Letter of Endorsement Brazil",
-			"url": "http://www.cbd.int/database/attachment/?id=1389"
+			"url": "https://www.cbd.int/database/attachment/?id=1389"
 		},
 		{
 			"title": "Letter of Endorsement Colombia",
-			"url": "http://www.cbd.int/database/attachment/?id=1390"
+			"url": "https://www.cbd.int/database/attachment/?id=1390"
 		},
 		{
 			"title": "Letter of Endorsement Ecuador",
-			"url": "http://www.cbd.int/database/attachment/?id=1391"
+			"url": "https://www.cbd.int/database/attachment/?id=1391"
 		},
 		{
 			"title": "Letter of Endorsement Bolivia",
-			"url": "http://www.cbd.int/database/attachment/?id=12194"
+			"url": "https://www.cbd.int/database/attachment/?id=12194"
 		},
 		{
 			"title": "Letter of Endorsement French Guyana",
-			"url": "http://www.cbd.int/database/attachment/?id=12195"
+			"url": "https://www.cbd.int/database/attachment/?id=12195"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Amazon vision/05-06-2013 EOI Amazon Vision Initiative_Final Version.docx"
+			"url": "https://www.cbd.int/doc/lifeweb/Amazon vision/05-06-2013 EOI Amazon Vision Initiative_Final Version.docx"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Amazon vision/05-06-2013 EOI Amazon Vision Initiative_Final Version.docx"
+			"url": "https://www.cbd.int/doc/lifeweb/Amazon vision/05-06-2013 EOI Amazon Vision Initiative_Final Version.docx"
 		}
 	],
 	"coordinates": {

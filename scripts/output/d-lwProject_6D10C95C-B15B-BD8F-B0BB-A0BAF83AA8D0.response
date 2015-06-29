@@ -97,54 +97,54 @@
 	"images": [
 		{
 			"title": "aural 1",
-			"url": "http://www.cbd.int/database/attachment/?id=692"
+			"url": "https://www.cbd.int/database/attachment/?id=692"
 		},
 		{
 			"title": "aural 2",
-			"url": "http://www.cbd.int/database/attachment/?id=693"
+			"url": "https://www.cbd.int/database/attachment/?id=693"
 		},
 		{
 			"title": "prey long 1",
-			"url": "http://www.cbd.int/database/attachment/?id=695"
+			"url": "https://www.cbd.int/database/attachment/?id=695"
 		},
 		{
 			"title": "prey long 2",
-			"url": "http://www.cbd.int/database/attachment/?id=696"
+			"url": "https://www.cbd.int/database/attachment/?id=696"
 		},
 		{
 			"title": "prey long 3",
-			"url": "http://www.cbd.int/database/attachment/?id=697"
+			"url": "https://www.cbd.int/database/attachment/?id=697"
 		}
 	],
 	"maps": [
 		{
 			"title": "Map of Phnom Aural Wildlife Sanctuary",
-			"url": "http://www.cbd.int/database/attachment/?id=703"
+			"url": "https://www.cbd.int/database/attachment/?id=703"
 		},
 		{
 			"title": "Map of Prey Long Forest Landscape",
-			"url": "http://www.cbd.int/database/attachment/?id=704"
+			"url": "https://www.cbd.int/database/attachment/?id=704"
 		}
 	],
 	"attachments": [
 		{
 			"title": "National Biodiversity Strategy and Action Plan",
-			"url": "http://www.cbd.int/database/attachment/?id=701"
+			"url": "https://www.cbd.int/database/attachment/?id=701"
 		},
 		{
 			"title": "Cambodia Fourth National Report to the CBD",
-			"url": "http://www.cbd.int/database/attachment/?id=702"
+			"url": "https://www.cbd.int/database/attachment/?id=702"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/lifeweb_project_Cambodia.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Cambodia/lifeweb_project_Cambodia.pdf"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Cambodia/lifeweb_project_Cambodia.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Cambodia/lifeweb_project_Cambodia.pdf"
 		}
 	],
 	"coordinates": {
@@ -155,11 +155,11 @@
 	"links": [
 		{
 			"name": "High priority conservation sites identified by cambodia protected area gap analysis",
-			"url": "http://www.cbd.int/database/attachment/?id=699"
+			"url": "https://www.cbd.int/database/attachment/?id=699"
 		},
 		{
 			"name": "Map of Protected Areas of Cambodia",
-			"url": "http://www.cbd.int/database/attachment/?id=700"
+			"url": "https://www.cbd.int/database/attachment/?id=700"
 		}
 	],
 	"thumbnail": {

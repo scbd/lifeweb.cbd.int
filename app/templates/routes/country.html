@@ -31,7 +31,7 @@
 <section id="info"  >    
       
       <h2 class="title-divider featurette-heading lw-top-heading" >
-          <img style="height:50px;display:inline!important;" src="http://www.cbd.int/{{countrydetails.flag.url}}" alt="{{countrydetails.flag.name}}" class="thumbnail" /> 
+          <img style="height:50px;display:inline!important;" src="https://www.cbd.int/{{countrydetails.flag.url}}" alt="{{countrydetails.flag.name}}" class="thumbnail" /> 
           {{countries | filterCountryName:CountryID}}</h2> 
 
         <div data-ng-controller="MapCtrl" >
@@ -43,7 +43,7 @@
     <div ng-show="countrydetails.NbsapReportList">
         <h4>National Biodiversity Action Plans</h4>
         <div ng-repeat="report in countrydetails.NbsapReportList">
-            <i class="icon-file"></i><a href="http://www.cbd.int/{{report.url}}" target="_new">{{report.name}}</a><br>
+            <i class="icon-file"></i><a href="https://www.cbd.int/{{report.url}}" target="_new">{{report.name}}</a><br>
         </div>
     </div>
     <div ng-show="actionplan.plan">
@@ -55,7 +55,7 @@
     <div ng-show="countrydetails.NrReportList">
         <h4>National Reports</h4>
         <div ng-repeat="report in countrydetails.NrReportList">
-            <i class="icon-file"></i><a href="http://www.cbd.int/{{report.url}}" target="_new">{{report.name}}</a><br>
+            <i class="icon-file"></i><a href="https://www.cbd.int/{{report.url}}" target="_new">{{report.name}}</a><br>
         </div>
     </div>
 </section>
@@ -74,7 +74,7 @@
       <tr ng-repeat="proj in projects">
         <td valign="top" style="padding-right: 10px; padding-bottom: 20px;">
           <a class="pull-left" href="/project/?id={{proj.id}}">
-            <img class="img-rounded" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
+            <img class="img-rounded" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
           </a>
         </td>
         <td valign="top">
@@ -98,7 +98,7 @@
             <table>
                 <tr ng-repeat="proj in projects">
                     <td valign="top" style="padding-right: 10px; padding-bottom: 20px;"><a class="pull-left" href="/project/?id={{proj.id}}">
-                        <img class="img-rounded" style="margin-top: 8px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
+                        <img class="img-rounded" style="margin-top: 8px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="{{proj.old_id}}" />
                     </a></td>
                     <td valign="top"><a href="/project/?id={{proj.id}}">
                         <h5 class="media-heading">{{proj.title}}</h5>

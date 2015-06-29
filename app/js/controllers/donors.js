@@ -1,12 +1,12 @@
 define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',], function(app) {
 	app.controller('DonorCtrl', function ($scope, $http) {
 	    /*
-		 $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
+		 $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {
 					$scope.matches = data;
           console.log(data);
 			  });
-		 $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK')
+		 $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {
 					$scope.projects = data;
 			  });

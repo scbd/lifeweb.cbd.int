@@ -73,17 +73,17 @@
 	"maps": [
 		{
 			"title": "map1",
-			"url": "http://www.cbd.int/database/attachment/?id=303"
+			"url": "https://www.cbd.int/database/attachment/?id=303"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/database/attachment/?id=298"
+			"url": "https://www.cbd.int/database/attachment/?id=298"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=299"
+			"url": "https://www.cbd.int/database/attachment/?id=299"
 		},
 		{
 			"title": "Estrategia Nacional Marina 2008",
@@ -98,7 +98,7 @@
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Costa Rica/Improving ecological integrity/costa_rica_carismaticas_lifeweb_expression_of_interest_.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Costa Rica/Improving ecological integrity/costa_rica_carismaticas_lifeweb_expression_of_interest_.pdf"
 		}
 	],
 	"coordinates": {

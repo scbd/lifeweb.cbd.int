@@ -5,11 +5,11 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
 
     $scope.DonorID = sID;
     /*
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&org=' + sID, { cache: true }).success(function (data) {
+    $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&org=' + sID, { cache: true }).success(function (data) {
         console.log('matches data: ', data);
         $scope.matches = data;
     });
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/organizations.aspx?callback=JSON_CALLBACK&id=' +  sID, { cache: true }).success(function (data) {
+    $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/organizations.aspx?callback=JSON_CALLBACK&id=' +  sID, { cache: true }).success(function (data) {
         console.log('donor data: ', data);
         $scope.donor = data;
     });

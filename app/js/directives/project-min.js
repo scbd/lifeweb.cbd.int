@@ -30,7 +30,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
         $scope.load= function() {
 
             console.log('doc id: ', $scope.docId);
-          //$http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + $scope.docId, { cache: true })
+          //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + $scope.docId, { cache: true })
           if($scope.project)
             $scope.proj = $scope.project;
           else

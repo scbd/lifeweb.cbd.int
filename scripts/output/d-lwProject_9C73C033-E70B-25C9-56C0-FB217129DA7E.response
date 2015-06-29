@@ -114,55 +114,55 @@
 	"images": [
 		{
 			"title": "landscape1",
-			"url": "http://www.cbd.int/database/attachment/?id=246"
+			"url": "https://www.cbd.int/database/attachment/?id=246"
 		},
 		{
 			"title": "landscape2",
-			"url": "http://www.cbd.int/database/attachment/?id=247"
+			"url": "https://www.cbd.int/database/attachment/?id=247"
 		},
 		{
 			"title": "landscape3",
-			"url": "http://www.cbd.int/database/attachment/?id=248"
+			"url": "https://www.cbd.int/database/attachment/?id=248"
 		},
 		{
 			"title": "landscape4",
-			"url": "http://www.cbd.int/database/attachment/?id=249"
+			"url": "https://www.cbd.int/database/attachment/?id=249"
 		},
 		{
 			"title": "landscape5",
-			"url": "http://www.cbd.int/database/attachment/?id=250"
+			"url": "https://www.cbd.int/database/attachment/?id=250"
 		},
 		{
 			"title": "fauna1",
-			"url": "http://www.cbd.int/database/attachment/?id=251"
+			"url": "https://www.cbd.int/database/attachment/?id=251"
 		},
 		{
 			"title": "fauna2",
-			"url": "http://www.cbd.int/database/attachment/?id=252"
+			"url": "https://www.cbd.int/database/attachment/?id=252"
 		},
 		{
 			"title": "fauna3",
-			"url": "http://www.cbd.int/database/attachment/?id=253"
+			"url": "https://www.cbd.int/database/attachment/?id=253"
 		},
 		{
 			"title": "fauna4",
-			"url": "http://www.cbd.int/database/attachment/?id=254"
+			"url": "https://www.cbd.int/database/attachment/?id=254"
 		},
 		{
 			"title": "fauna5",
-			"url": "http://www.cbd.int/database/attachment/?id=255"
+			"url": "https://www.cbd.int/database/attachment/?id=255"
 		}
 	],
 	"maps": [
 		{
 			"title": "Ecoregional map",
-			"url": "http://www.cbd.int/database/attachment/?id=245"
+			"url": "https://www.cbd.int/database/attachment/?id=245"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Ecoregional Plan",
-			"url": "http://www.cbd.int/database/attachment/?id=256"
+			"url": "https://www.cbd.int/database/attachment/?id=256"
 		},
 		{
 			"title": "Caucasus Protected Areas Fund",
@@ -170,11 +170,11 @@
 		},
 		{
 			"title": "Letter of Endorsement Georgia",
-			"url": "http://www.cbd.int/database/attachment/?id=401"
+			"url": "https://www.cbd.int/database/attachment/?id=401"
 		},
 		{
 			"title": "Letter of Endorsement Armenia",
-			"url": "http://www.cbd.int/database/attachment/?id=499"
+			"url": "https://www.cbd.int/database/attachment/?id=499"
 		}
 	],
 	"coordinates": {

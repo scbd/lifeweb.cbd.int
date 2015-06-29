@@ -29,7 +29,7 @@ define(['app', 'URI'], function(app) {
         //*********************************************
         $scope.load= function() {
 
-          $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK&id=' + $scope.docId, { cache: true })
+          $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/events.aspx?callback=JSON_CALLBACK&id=' + $scope.docId, { cache: true })
           .success(function (data) {
                   $scope.item = data;
                  });

@@ -86,66 +86,66 @@
 	"images": [
 		{
 			"title": "zanzibar picture 2",
-			"url": "http://www.cbd.int/database/attachment/?id=722"
+			"url": "https://www.cbd.int/database/attachment/?id=722"
 		},
 		{
 			"title": "zanzibar picture 3",
-			"url": "http://www.cbd.int/database/attachment/?id=723"
+			"url": "https://www.cbd.int/database/attachment/?id=723"
 		}
 	],
 	"maps": [
 		{
 			"title": "zanzibar map 1",
-			"url": "http://www.cbd.int/database/attachment/?id=726"
+			"url": "https://www.cbd.int/database/attachment/?id=726"
 		},
 		{
 			"title": "zanzibar map 2",
-			"url": "http://www.cbd.int/database/attachment/?id=727"
+			"url": "https://www.cbd.int/database/attachment/?id=727"
 		},
 		{
 			"title": "zanzibar map 3",
-			"url": "http://www.cbd.int/database/attachment/?id=728"
+			"url": "https://www.cbd.int/database/attachment/?id=728"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Ecosystem Profile",
-			"url": "http://www.cbd.int/database/attachment/?id=717"
+			"url": "https://www.cbd.int/database/attachment/?id=717"
 		},
 		{
 			"title": "Strategic Framework",
-			"url": "http://www.cbd.int/database/attachment/?id=718"
+			"url": "https://www.cbd.int/database/attachment/?id=718"
 		},
 		{
 			"title": "Wildlife Conservation Society Tanzania Program: Strategic Plan 2009-2013",
-			"url": "http://www.cbd.int/database/attachment/?id=719"
+			"url": "https://www.cbd.int/database/attachment/?id=719"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=720"
+			"url": "https://www.cbd.int/database/attachment/?id=720"
 		},
 		{
 			"title": "Zanzibar agriculture strategic plan 2004",
-			"url": "http://www.cbd.int/database/attachment/?id=724"
+			"url": "https://www.cbd.int/database/attachment/?id=724"
 		},
 		{
 			"title": "Background Information",
-			"url": "http://www.cbd.int/database/attachment/?id=725"
+			"url": "https://www.cbd.int/database/attachment/?id=725"
 		},
 		{
 			"title": "Tanzania National Forest Management Plan",
-			"url": "http://www.cbd.int/database/attachment/?id=742"
+			"url": "https://www.cbd.int/database/attachment/?id=742"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Tanzania (United Republic)/LifeWeb Project Expression of Interest_Zanzibar_DCCFF_WCS_Aug09.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Tanzania (United Republic)/LifeWeb Project Expression of Interest_Zanzibar_DCCFF_WCS_Aug09.pdf"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Tanzania (United Republic)/LifeWeb Project Expression of Interest_Zanzibar_DCCFF_WCS_Aug09.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Tanzania (United Republic)/LifeWeb Project Expression of Interest_Zanzibar_DCCFF_WCS_Aug09.pdf"
 		}
 	],
 	"coordinates": {

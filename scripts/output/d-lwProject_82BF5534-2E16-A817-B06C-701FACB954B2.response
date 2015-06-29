@@ -33,7 +33,7 @@
 	"title": "Protected Area System Expression of Interest",
 	"timeFrame": null,
 	"projectAbstract": "Micronesia’s highly diverse natural resources represent the capital for the local people, who serve as the traditional <br/>stewards of their land and sea. With over a half million people spread over 6.7 million square kilometres of ocean, the Micronesia region constitutes more than 20% of the Pacific Island region.",
-	"description": "Home to at least 66 known threatened species and 60% of all known corals, the annual net benefits from coral reefs in terms of fisheries, tourism, coastal protection and biodiversity, to the Pacific as a whole is estimated at $2 billion, with approximately $800 million worth of benefits annually distributed across Micronesia. <br/><br/>In 2004, ROP completed a Palau Tourism Economic Valuation Survey and details can be found at: http://www.spc.int/prism/country/pw/stats/PalauStats/Publication/palautouriam_rpt.pdf<br/><br/>More information can be found at the following links:<br/>http://palau.chm-cbd.net/<br/>http://www.cbd.int/doc/world/mh/mh-nr-02-en.pdf<br/>http://www.cbd.int/doc/world/fm/fm-nr-02-en.pdf",
+	"description": "Home to at least 66 known threatened species and 60% of all known corals, the annual net benefits from coral reefs in terms of fisheries, tourism, coastal protection and biodiversity, to the Pacific as a whole is estimated at $2 billion, with approximately $800 million worth of benefits annually distributed across Micronesia. <br/><br/>In 2004, ROP completed a Palau Tourism Economic Valuation Survey and details can be found at: http://www.spc.int/prism/country/pw/stats/PalauStats/Publication/palautouriam_rpt.pdf<br/><br/>More information can be found at the following links:<br/>http://palau.chm-cbd.net/<br/>https://www.cbd.int/doc/world/mh/mh-nr-02-en.pdf<br/>https://www.cbd.int/doc/world/fm/fm-nr-02-en.pdf",
 	"nationalAlignment": [
 		{
 			"type": {
@@ -57,31 +57,31 @@
 	"attachments": [
 		{
 			"title": "Annex1: MOSAIC Sites",
-			"url": "http://www.cbd.int/database/attachment/?id=407"
+			"url": "https://www.cbd.int/database/attachment/?id=407"
 		},
 		{
 			"title": "Annex 2: MOSAIC Maps and Pictures",
-			"url": "http://www.cbd.int/database/attachment/?id=408"
+			"url": "https://www.cbd.int/database/attachment/?id=408"
 		},
 		{
 			"title": "Micronesia Challenge Fund: Program Highlights December 2009",
-			"url": "http://www.cbd.int/database/attachment/?id=409"
+			"url": "https://www.cbd.int/database/attachment/?id=409"
 		},
 		{
 			"title": "Annex 4: Images of the Project Area",
-			"url": "http://www.cbd.int/database/attachment/?id=410"
+			"url": "https://www.cbd.int/database/attachment/?id=410"
 		},
 		{
 			"title": "Micronesia Challenge Brochure",
-			"url": "http://www.cbd.int/database/attachment/?id=411"
+			"url": "https://www.cbd.int/database/attachment/?id=411"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/database/attachment/?id=412"
+			"url": "https://www.cbd.int/database/attachment/?id=412"
 		},
 		{
 			"title": "Expression of Interest: Management of Strategic Areas for Island Conservation (MOSAIC)",
-			"url": "http://www.cbd.int/database/attachment/?id=414"
+			"url": "https://www.cbd.int/database/attachment/?id=414"
 		},
 		{
 			"title": "Micronesia on Protect Planet Ocean",
@@ -93,15 +93,15 @@
 		},
 		{
 			"title": "Reimaanlok:Looking to the Future - National Conservation Area Plan for the Marshall Islands 2008",
-			"url": "http://www.cbd.int/database/attachment/?id=1374"
+			"url": "https://www.cbd.int/database/attachment/?id=1374"
 		},
 		{
 			"title": "A Blueprint for Conserving the Biodiversity of the Federated States of Micronesia",
-			"url": "http://www.cbd.int/database/attachment/?id=1375"
+			"url": "https://www.cbd.int/database/attachment/?id=1375"
 		},
 		{
 			"title": "Biodiversity Planning for Palau’s Protected Areas Network 2007",
-			"url": "http://www.cbd.int/database/attachment/?id=1376"
+			"url": "https://www.cbd.int/database/attachment/?id=1376"
 		},
 		{
 			"title": "Video: Protecting Micronesia | Global Ideas",
@@ -116,7 +116,7 @@
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Micronesia Challenge/Annex6.System-Scale.EOI.MOSAIC.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Micronesia Challenge/Annex6.System-Scale.EOI.MOSAIC.pdf"
 		}
 	],
 	"coordinates": {

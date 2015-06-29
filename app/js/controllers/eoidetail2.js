@@ -31,13 +31,13 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         };
 
         if (!sID) {
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projectsmin.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
               $scope.eoi = data;
 
             });
         }
         else {
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + sID, { cache: true }).success(function (data) {
               $scope.eoi = data;
 
               var sCountry = data.country;
@@ -62,25 +62,25 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                     map.callback = setview;
               });
             });
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.contacts = data;
             });
 
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.partners = data;
             });
 
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=powpa&eoi=' + sID, { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=powpa&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.fp_powpa = data;
             });
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&eoi=' + sID, { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/focalpoints.aspx?callback=JSON_CALLBACK&type=national&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.fp_national = data;
             });
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&eoi=' + sID, { cache: true }).success(function (data) {
                 $scope.funding = data;
             });
 
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
                .success(function (data) {
                  return;  //TODO: make this working again?
 

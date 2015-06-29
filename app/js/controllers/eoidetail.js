@@ -111,7 +111,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
             //I think it was to allow people to look around the map to se other funding opportunities.
             //TODO: get this working again, remove the first line return;
             /*
-            $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
+            $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/mapdata.aspx?callback=JSON_CALLBACK')
                .success(function (data) {
                    $scope.mapdata = data;
 

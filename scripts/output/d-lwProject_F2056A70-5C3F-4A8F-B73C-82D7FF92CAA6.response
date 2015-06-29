@@ -121,11 +121,11 @@
 	"maps": [
 		{
 			"title": "for more information see: http://www.parquesnacionales.gov.co/PNN/portel/libreria/pdf/Mapa_Parques.pdf",
-			"url": "http://www.cbd.int/database/attachment/?id=349"
+			"url": "https://www.cbd.int/database/attachment/?id=349"
 		},
 		{
 			"title": "map2.png",
-			"url": "http://www.cbd.int/database/attachment/?id=351"
+			"url": "https://www.cbd.int/database/attachment/?id=351"
 		}
 	],
 	"attachments": [
@@ -135,38 +135,38 @@
 		},
 		{
 			"title": "Annex 5 - Basis for an Financial Strategy of Colombia’s National Parks System (in Spanish)",
-			"url": "http://www.cbd.int/database/attachment/?id=344"
+			"url": "https://www.cbd.int/database/attachment/?id=344"
 		},
 		{
 			"title": "Annex 9 - SINAP Action Plan (in Spanish)",
-			"url": "http://www.cbd.int/database/attachment/?id=345"
+			"url": "https://www.cbd.int/database/attachment/?id=345"
 		},
 		{
 			"title": "Annex 3 - PoWPA Progress Report for Colombia, 2009 ",
-			"url": "http://www.cbd.int/database/attachment/?id=346"
+			"url": "https://www.cbd.int/database/attachment/?id=346"
 		},
 		{
 			"title": "Annex 6- Fondo Patrimonio Natural Financial Strategy (in Spanish)",
-			"url": "http://www.cbd.int/database/attachment/?id=347"
+			"url": "https://www.cbd.int/database/attachment/?id=347"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=348"
+			"url": "https://www.cbd.int/database/attachment/?id=348"
 		},
 		{
 			"title": "Annex 1 WDPA list for Colombia",
-			"url": "http://www.cbd.int/database/attachment/?id=1075"
+			"url": "https://www.cbd.int/database/attachment/?id=1075"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Colombia/Strengthening PAs/lifeweb_project_expression_of_interest_colombia_amazonas (2).doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Colombia/Strengthening PAs/lifeweb_project_expression_of_interest_colombia_amazonas (2).doc"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Colombia/Strengthening PAs/lifeweb_project_expression_of_interest_colombia_amazonas (2).doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Colombia/Strengthening PAs/lifeweb_project_expression_of_interest_colombia_amazonas (2).doc"
 		}
 	],
 	"coordinates": {

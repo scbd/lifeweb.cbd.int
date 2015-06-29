@@ -100,19 +100,19 @@
 	"maps": [
 		{
 			"title": "carte mauritanie",
-			"url": "http://www.cbd.int/database/attachment/?id=1340"
+			"url": "https://www.cbd.int/database/attachment/?id=1340"
 		},
 		{
 			"title": "carte rampao",
-			"url": "http://www.cbd.int/database/attachment/?id=1341"
+			"url": "https://www.cbd.int/database/attachment/?id=1341"
 		},
 		{
 			"title": "senegal map",
-			"url": "http://www.cbd.int/database/attachment/?id=1342"
+			"url": "https://www.cbd.int/database/attachment/?id=1342"
 		},
 		{
 			"title": "guinea bissau map",
-			"url": "http://www.cbd.int/database/attachment/?id=1343"
+			"url": "https://www.cbd.int/database/attachment/?id=1343"
 		}
 	],
 	"attachments": [

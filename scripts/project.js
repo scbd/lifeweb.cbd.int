@@ -121,7 +121,7 @@ var oldNewBridge = {};
 
             //projectPromises comes out as [newProject, partners, contacts, donations]
             var projectPromises = [];
-            var projectUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?id=' + id;
+            var projectUrl = 'https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?id=' + id;
             projectPromises.push(Ajax.getJson(projectUrl).then(function(data) {
                 data = JSON.parse(data.toString());
                 console.log('PROJECT START: receieved and parsed old project data...');
@@ -256,7 +256,7 @@ var oldNewBridge = {};
                 var thumbnail_id = data.old_id;
                 if(!thumbnail_id)
                     thumbnail_id = data.id;
-                var downfile = 'http://www.cbd.int/images/lifeweb/eoi/thumbnails/'+thumbnail_id+'.jpg';
+                var downfile = 'https://www.cbd.int/images/lifeweb/eoi/thumbnails/'+thumbnail_id+'.jpg';
                 var upfile = 'http://lifeweb.cbd.int/api/v2013/documents/'+newProject.header.identifier+'/attachments/'+thumbnail_id+'.jpg';
                 return Downup.with(downfile, upfile).then(function(img_url) {
                     console.log('done uploading file: ', img_url);
@@ -274,7 +274,7 @@ var oldNewBridge = {};
 
             //******* Data requiring ajax calls *******//
             //partner roles
-            var rolesUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?eoi='+id;
+            var rolesUrl = 'https://www.cbd.int/cbd/lifeweb/new/services/web/partnerroles.aspx?eoi='+id;
             projectPromises.push(Ajax.getJson(rolesUrl).then(function(data) {
                 console.log('CONTACTS START: finished loading and parsing institutional context...');
                 var contacts = JSON.parse(data.toString());
@@ -306,7 +306,7 @@ var oldNewBridge = {};
             projectPromises.push(q.fcall(function() { return []; }));
             //TODO: the url gives 500
             /*
-            var contactsUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?eoi='+id;
+            var contactsUrl = 'https://www.cbd.int/cbd/lifeweb/new/services/web/contactroles.aspx?eoi='+id;
             projectPromises.push(Ajax.getJson(contactsUrl).then(function(data) {
                 var contacts = JSON.parse(data.toString());
                 console.log('in contact roles? datalength: ', contacts.length);
@@ -322,7 +322,7 @@ var oldNewBridge = {};
 
             //donors
             newProject.donations = [];
-            var fundingUrl = 'http://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?eoi='+id;
+            var fundingUrl = 'https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?eoi='+id;
             //var donorsBlock = rblock(q, request);
             projectPromises.push(Ajax.getJson(fundingUrl).then(function(data) {
                 var donations = JSON.parse(data.toString());

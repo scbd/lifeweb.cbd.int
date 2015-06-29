@@ -73,7 +73,7 @@
 	"maps": [
 		{
 			"title": "map",
-			"url": "http://www.cbd.int/database/attachment/?id=308"
+			"url": "https://www.cbd.int/database/attachment/?id=308"
 		}
 	],
 	"attachments": [
@@ -83,7 +83,7 @@
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=307"
+			"url": "https://www.cbd.int/database/attachment/?id=307"
 		}
 	],
 	"coordinates": {

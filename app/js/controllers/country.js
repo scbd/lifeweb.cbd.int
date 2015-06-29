@@ -12,7 +12,7 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
     }
 
 
-    $http.jsonp('http://www.cbd.int/scbd/ui/countries/webservices/countrydetails.aspx?callback=JSON_CALLBACK&country=' + sCountry, { cache: true }).success(function (data) {
+    $http.jsonp('https://www.cbd.int/scbd/ui/countries/webservices/countrydetails.aspx?callback=JSON_CALLBACK&country=' + sCountry, { cache: true }).success(function (data) {
       $scope.countrydetails = data;
     });
      
@@ -21,11 +21,11 @@ define(['app', '/app/js/controllers/map.js', 'authentication', 'URI'], function(
       $scope.projects = data.response.docs;
     });
 
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function (data) {
+    $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function (data) {
       $scope.countries = data;
     });
      
-    $http.jsonp('http://www.cbd.int/cbd/lifeweb/new/services/web/actionplan.aspx?callback=JSON_CALLBACK&country=' + sCountry, { cache: true }).success(function (data) {
+    $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/actionplan.aspx?callback=JSON_CALLBACK&country=' + sCountry, { cache: true }).success(function (data) {
       $scope.actionplan = data;
     });
      

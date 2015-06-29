@@ -107,8 +107,8 @@
 
                     <div ng-show="list==false" class="media project_well" ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterMatchYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
                         <a class="pull-left" href="/projects?id={{proj.id}}" >
-                            <img ng-show="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                            <img ng-hide="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="http://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" />
+                            <img ng-show="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
+                            <img ng-hide="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" />
                             <div class="media-type" style="color: #333">{{ proj.approved_on_date | filterDate  }}</div>
                         </a>
 

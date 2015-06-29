@@ -87,24 +87,24 @@
 	"maps": [
 		{
 			"title": "carte de localisation de la zone d'etude ",
-			"url": "http://www.cbd.int/database/attachment/?id=919"
+			"url": "https://www.cbd.int/database/attachment/?id=919"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/Lettre_Ministre_Cameroun.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/Lettre_Ministre_Cameroun.pdf"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/ProjetLifeweb_Cameroun.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/ProjetLifeweb_Cameroun.doc"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/ProjetLifeweb_Cameroun.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Cameroon/Savoir traditionnel autochtone/ProjetLifeweb_Cameroun.doc"
 		}
 	],
 	"coordinates": {

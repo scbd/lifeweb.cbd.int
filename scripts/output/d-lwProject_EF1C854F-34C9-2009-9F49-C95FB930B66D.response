@@ -93,24 +93,24 @@
 	"maps": [
 		{
 			"title": "Banc D'Arguin National Park",
-			"url": "http://www.cbd.int/database/attachment/?id=712"
+			"url": "https://www.cbd.int/database/attachment/?id=712"
 		},
 		{
 			"title": "Cap Blanc Satellite Reserve",
-			"url": "http://www.cbd.int/database/attachment/?id=713"
+			"url": "https://www.cbd.int/database/attachment/?id=713"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Mauritania/lifeweb RSCB_PNBA.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Mauritania/lifeweb RSCB_PNBA.doc"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Mauritania/lifeweb RSCB_PNBA.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Mauritania/lifeweb RSCB_PNBA.doc"
 		}
 	],
 	"coordinates": {

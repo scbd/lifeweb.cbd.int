@@ -79,29 +79,29 @@
 	"maps": [
 		{
 			"title": "map1",
-			"url": "http://www.cbd.int/database/attachment/?id=202"
+			"url": "https://www.cbd.int/database/attachment/?id=202"
 		},
 		{
 			"title": "map2",
-			"url": "http://www.cbd.int/database/attachment/?id=203"
+			"url": "https://www.cbd.int/database/attachment/?id=203"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=200"
+			"url": "https://www.cbd.int/database/attachment/?id=200"
 		},
 		{
 			"title": "27 PAs in la paz municipal protected areas system",
-			"url": "http://www.cbd.int/database/attachment/?id=201"
+			"url": "https://www.cbd.int/database/attachment/?id=201"
 		},
 		{
 			"title": "Carta de Solicitud Sernap ",
-			"url": "http://www.cbd.int/database/attachment/?id=244"
+			"url": "https://www.cbd.int/database/attachment/?id=244"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Bolivia/lifeweb project expression of interest.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Bolivia/lifeweb project expression of interest.doc"
 		},
 		{
 			"title": "http://www.lapaz.bo",
@@ -116,7 +116,7 @@
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Bolivia/lifeweb project expression of interest.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Bolivia/lifeweb project expression of interest.doc"
 		}
 	],
 	"coordinates": {

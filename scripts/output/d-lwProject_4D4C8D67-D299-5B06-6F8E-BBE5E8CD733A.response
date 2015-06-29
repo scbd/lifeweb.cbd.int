@@ -90,51 +90,51 @@
 	"images": [
 		{
 			"title": "Fog entering the Lomas",
-			"url": "http://www.cbd.int/database/attachment/?id=65"
+			"url": "https://www.cbd.int/database/attachment/?id=65"
 		},
 		{
 			"title": "Loma forest",
-			"url": "http://www.cbd.int/database/attachment/?id=66"
+			"url": "https://www.cbd.int/database/attachment/?id=66"
 		},
 		{
 			"title": "Bromeliads in the Lomas",
-			"url": "http://www.cbd.int/database/attachment/?id=67"
+			"url": "https://www.cbd.int/database/attachment/?id=67"
 		},
 		{
 			"title": "Ancient agricultural plots",
-			"url": "http://www.cbd.int/database/attachment/?id=68"
+			"url": "https://www.cbd.int/database/attachment/?id=68"
 		},
 		{
 			"title": "Fog catchment facilty",
-			"url": "http://www.cbd.int/database/attachment/?id=69"
+			"url": "https://www.cbd.int/database/attachment/?id=69"
 		},
 		{
 			"title": "View of the surrounding desert from the Lomas",
-			"url": "http://www.cbd.int/database/attachment/?id=70"
+			"url": "https://www.cbd.int/database/attachment/?id=70"
 		}
 	],
 	"maps": [
 		{
 			"title": "Large Scale Map",
-			"url": "http://www.cbd.int/database/attachment/?id=62"
+			"url": "https://www.cbd.int/database/attachment/?id=62"
 		},
 		{
 			"title": "Small Scale Map",
-			"url": "http://www.cbd.int/database/attachment/?id=63"
+			"url": "https://www.cbd.int/database/attachment/?id=63"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/database/attachment/?id=153"
+			"url": "https://www.cbd.int/database/attachment/?id=153"
 		},
 		{
 			"title": "Press release",
-			"url": "http://www.cbd.int/doc/press/2010/pr-2010-05-25-lifeweb-en.pdf"
+			"url": "https://www.cbd.int/doc/press/2010/pr-2010-05-25-lifeweb-en.pdf"
 		},
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Peru/Lomas de Atiquipa - LifeWeb Project Expression of Interest.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Peru/Lomas de Atiquipa - LifeWeb Project Expression of Interest.doc"
 		},
 		{
 			"title": "Nature Conservancy",
@@ -149,7 +149,7 @@
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Peru/Lomas de Atiquipa - LifeWeb Project Expression of Interest.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Peru/Lomas de Atiquipa - LifeWeb Project Expression of Interest.doc"
 		}
 	],
 	"coordinates": {

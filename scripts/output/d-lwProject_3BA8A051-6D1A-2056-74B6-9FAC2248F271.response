@@ -142,52 +142,52 @@
 	"maps": [
 		{
 			"title": "Map 1",
-			"url": "http://www.cbd.int/database/attachment/?id=783"
+			"url": "https://www.cbd.int/database/attachment/?id=783"
 		},
 		{
 			"title": "Map 2",
-			"url": "http://www.cbd.int/database/attachment/?id=784"
+			"url": "https://www.cbd.int/database/attachment/?id=784"
 		},
 		{
 			"title": "Map 3",
-			"url": "http://www.cbd.int/database/attachment/?id=786"
+			"url": "https://www.cbd.int/database/attachment/?id=786"
 		}
 	],
 	"attachments": [
 		{
 			"title": "Expression of Interest",
-			"url": "http://www.cbd.int/doc/lifeweb/Philippines/Philippines LifeWeb_System level expression_v08July.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Philippines/Philippines LifeWeb_System level expression_v08July.doc"
 		},
 		{
 			"title": "Key Biodiversity Areas",
-			"url": "http://www.cbd.int/database/attachment/?id=778"
+			"url": "https://www.cbd.int/database/attachment/?id=778"
 		},
 		{
 			"title": "National Integrated Protected Areas Systems Act",
-			"url": "http://www.cbd.int/database/attachment/?id=779"
+			"url": "https://www.cbd.int/database/attachment/?id=779"
 		},
 		{
 			"title": "Criteria and Guidelines for the Categorization of Protected Areas",
-			"url": "http://www.cbd.int/database/attachment/?id=780"
+			"url": "https://www.cbd.int/database/attachment/?id=780"
 		},
 		{
 			"title": "Wildlife Act",
-			"url": "http://www.cbd.int/database/attachment/?id=781"
+			"url": "https://www.cbd.int/database/attachment/?id=781"
 		},
 		{
 			"title": "Critical Habitat Guidelines",
-			"url": "http://www.cbd.int/database/attachment/?id=782"
+			"url": "https://www.cbd.int/database/attachment/?id=782"
 		},
 		{
 			"title": "Letter of Endorsement",
-			"url": "http://www.cbd.int/doc/lifeweb/Philippines/LifeWeb_Philippines_PA System.pdf"
+			"url": "https://www.cbd.int/doc/lifeweb/Philippines/LifeWeb_Philippines_PA System.pdf"
 		},
 		{
 			"title": "Expression of Interest",
 			"keywords": [
 				"project_doc"
 			],
-			"url": "http://www.cbd.int/doc/lifeweb/Philippines/Philippines LifeWeb_System level expression_v08July.doc"
+			"url": "https://www.cbd.int/doc/lifeweb/Philippines/Philippines LifeWeb_System level expression_v08July.doc"
 		}
 	],
 	"coordinates": {
