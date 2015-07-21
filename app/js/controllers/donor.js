@@ -2,7 +2,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
   app.controller('DonorCtrl', function ($scope, $http, editFormUtility) {
     var sID = new URI().query(true).id;
     console.log('sid: ', sID);
-
+//alert('tet');
     $scope.DonorID = sID;
     /*
     $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK&org=' + sID, { cache: true }).success(function (data) {
@@ -37,7 +37,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
             });
             return data; //good practice. always return from a promise, the same data.
         });
-        
+
         //TODO: duplicated in controllers/eoidetails.js
         //TODO: should just be a filter...
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?

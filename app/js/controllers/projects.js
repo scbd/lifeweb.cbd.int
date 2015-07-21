@@ -62,6 +62,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
           });
 
 ////////////////temp fix
+
           for (index in $scope.projects)
           {
             for (index2 in $scope.projects[index].country_ss)
@@ -70,10 +71,14 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
 
                 for (index3 in $scope.countries)
                 {
-                //  console.log(country[index3]);
+                //
                   if($scope.projects[index].country_ss[index2]==$scope.countries[index3].code)
                   {
-                    $scope.projects[index].country_ss[index2]=$scope.countries[index3].name;
+                    var country_obj ={name:'',code:''};
+                    country_obj.name=$scope.countries[index3].name;
+                    country_obj.code=$scope.countries[index3].code;
+                    $scope.projects[index].country_ss[index2]=country_obj;
+                //  $scope.projects[index].country_ss[index2].code=$scope.countries[index3].code;
                   }
                 }//for3
             }//for2
@@ -81,7 +86,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
           }// for1
 ///////////temp fix
 
-          //console.log($scope.countries);
+//console.log($scope.projects);
 
       });
 

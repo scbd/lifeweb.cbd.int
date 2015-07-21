@@ -182,7 +182,8 @@ define(['app'], function(app) {
               return projs;
 
           var result = [];
-
+//console.log(projs);
+//alert('here');
           for (var i = 0; i < projs.length; i++) {
               for (var j = 0; j < projs[i].country_codes.length; j++) {
                   if (projs[i].country_codes[j] == code) {
@@ -367,12 +368,16 @@ define(['app'], function(app) {
 
           var result = [];
 
-//console.log('pr countries? ', JSON.stringify(countryList));
+
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
-                  if (pcountries[j].country_ss && pcountries[j].country_ss.indexOf(countryList[i].code) != -1) {
+                for (var k=0; k < pcountries[j].country_ss.length; k++){
+                  if (pcountries[j].country_ss[k].code == countryList[i].code) {
                       result.push(countryList[i]);
                   }
+                }
+              //  console.log('pr countries? ', pcountries[j].country_ss);
+
               }
 
           }
@@ -1404,9 +1409,14 @@ define(['app'], function(app) {
             var result= [];
 
             for (var i=0; i < projs.length; i++){
-              if (projs[i].country_ss && projs[i].country_ss.indexOf(code) != -1) {
-                result.push(projs[i]);
-              }
+
+                for (var k=0; k < projs[i].country_ss.length; k++){
+                  if (projs[i].country_ss[k].code == code) {
+                      result.push(projs[i]);
+                  }
+                }
+
+          
             }
             return result;
         }
