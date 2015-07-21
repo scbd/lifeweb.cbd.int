@@ -4,29 +4,31 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       var query = '(type eq \'lwProject\')';
 
 
-function getFundingStatus(proj) {
-                    if(!proj.totalCost) {
-                        proj.totalCost = 0;
-                        var budget = proj.budgetCost_ds || [];
-                        for(var k=0; k!=budget.length; ++k)
-                            proj.totalCost += budget[k];
-                    }
-                    proj.totalFunding = proj.totalFunding || 0;
-                    if(!proj.totalFunding)
-                        if(proj.donatioFunding_ds)
-                            for(var k=0; k!=proj.donatioFunding_ds.length; ++k)
-                                proj.totalFunding += proj.donatioFunding_ds[k];
+        function getFundingStatus(proj) {
+                            if(!proj.totalCost) {
+                                proj.totalCost = 0;
+                                var budget = proj.budgetCost_ds || [];
+                                for(var k=0; k!=budget.length; ++k)
+                                    proj.totalCost += budget[k];
+                            }
+                            proj.totalFunding = proj.totalFunding || 0;
+                            if(!proj.totalFunding)
+                                if(proj.donatioFunding_ds)
+                                    for(var k=0; k!=proj.donatioFunding_ds.length; ++k)
+                                        proj.totalFunding += proj.donatioFunding_ds[k];
 
-                    proj.funding_needed = proj.totalCost - proj.totalFunding;
-//                    console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
+                            proj.funding_needed = proj.totalCost - proj.totalFunding;
+          //console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
 
-                    if(proj.funding_needed < 1)
-                        proj.funding_status = 'funded';
-                    else if(proj.totalFunding < 1)
-                        proj.funding_status = 'not yet funded';
+                            if(proj.funding_needed < 1)
+                                proj.funding_status = 'funded';
+                            else if(proj.totalFunding < 1)
+                                proj.funding_status = 'not yet funded';
 
-                    return proj.funding_status;
-}
+                            return proj.funding_status;
+        }//getFundingStatus
+
+
 
         $scope.pageNumber = 0;
         $scope.itemsPerPage = 25;
@@ -58,10 +60,34 @@ function getFundingStatus(proj) {
           $scope.projects.forEach(function(item) {
             getFundingStatus(item);
           });
+
+////////////////temp fix
+          for (index in $scope.projects)
+          {
+            for (index2 in $scope.projects[index].country_ss)
+            {
+                //$scope.projects[index].country_ss[index2]+='XXX';
+
+                for (index3 in $scope.countries)
+                {
+                //  console.log(country[index3]);
+                  if($scope.projects[index].country_ss[index2]==$scope.countries[index3].code)
+                  {
+                    $scope.projects[index].country_ss[index2]=$scope.countries[index3].name;
+                  }
+                }//for3
+            }//for2
+
+          }// for1
+///////////temp fix
+
+          //console.log($scope.countries);
+
       });
 
       $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
           $scope.countries = data;
+//console.log($scope.countries);
       });
 
       $scope.list = true;
@@ -85,7 +111,7 @@ function getFundingStatus(proj) {
                                 $scope.projects[i].totalFunding += $scope.projects[i].donatioFunding_ds[k];
 
                     $scope.projects[i].funding_needed = $scope.projects[i].totalCost - $scope.projects[i].totalFunding;
-                    console.log('FUNDING NEEDED: ', $scope.projects[i].totalCost, $scope.projects[i].totalFunding, $scope.projects[i].funding_needed);
+//console.log('FUNDING NEEDED: ', $scope.projects[i].totalCost, $scope.projects[i].totalFunding, $scope.projects[i].funding_needed);
 
                     if($scope.projects[i].funding_needed < 1)
                         $scope.projects[i].funding_status = 'funded';
