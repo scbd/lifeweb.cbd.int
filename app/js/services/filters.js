@@ -367,7 +367,7 @@ define(['app'], function(app) {
 
           var result = [];
 
-            console.log('pr countries? ', pcountries);
+//console.log('pr countries? ', JSON.stringify(countryList));
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
                   if (pcountries[j].country_ss && pcountries[j].country_ss.indexOf(countryList[i].code) != -1) {
@@ -405,7 +405,7 @@ define(['app'], function(app) {
 
           var result = [];
 
-            console.log('pr countries? ', pcountries);
+//console.log('pr countries? ', pcountries);
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
                   if (pcountries[j].project.country_ss && pcountries[j].project.country_ss.indexOf(countryList[i].identifier) != -1) {
@@ -955,7 +955,7 @@ define(['app'], function(app) {
 
     app.filter('uniqueDonor', function() {
         return function(matches) {
-        console.log('matches? ', matches);
+//console.log('matches? ', matches);
             if(!matches)
                 return [];
             matches.filter(function(item, index) {
@@ -1024,7 +1024,7 @@ define(['app'], function(app) {
              { "name": "AICHI-TARGET-19", "icon": "/app/lifeweb/images/targets/19.png", "desc": "By 2020, knowledge, the science base and technologies relating to biodiversity, its values, functioning, status and trends, and the consequences of its loss, are improved, widely shared and transferred, and applied." },
              { "name": "AICHI-TARGET-20", "icon": "/app/lifeweb/images/targets/20.png", "desc": "By 2020, at the latest, the mobilization of financial resources for effectively implementing the Strategic Plan for Biodiversity 2011-2020 from all sources, and in accordance with the consolidated and agreed process in the Strategy for Resource Mobilization, should increase substantially from the current levels. This target will be subject to changes contingent to resource needs assessments to be developed and reported by Parties." }
           ];
-          console.log('aichi traget: ', target);
+//console.log('aichi traget: ', target);
 
           var result = [];
           for (var i = 0; i < targets.length; ++i)
@@ -1224,7 +1224,7 @@ define(['app'], function(app) {
 
           var keys = {};
           return matches.reduce(function(prev, cur, index) {
-                console.log('prev: ', prev);
+//console.log('prev: ', prev);
                 if(keys[cur.donor.identifier_s])
                     return prev;
 

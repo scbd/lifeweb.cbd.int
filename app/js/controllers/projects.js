@@ -18,7 +18,7 @@ function getFundingStatus(proj) {
                                 proj.totalFunding += proj.donatioFunding_ds[k];
 
                     proj.funding_needed = proj.totalCost - proj.totalFunding;
-                    console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
+//                    console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
 
                     if(proj.funding_needed < 1)
                         proj.funding_status = 'funded';
@@ -53,7 +53,7 @@ function getFundingStatus(proj) {
       $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s').success(function(data) {
       //TODO: for grabbing focal points:
       //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
-          console.log('data: ', data);
+//          console.log('data: ', data);
           $scope.projects = data.response.docs;
           $scope.projects.forEach(function(item) {
             getFundingStatus(item);
