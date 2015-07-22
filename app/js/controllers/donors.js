@@ -1,5 +1,6 @@
 define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',], function(app) {
 	app.controller('DonorCtrl', function ($scope, $http) {
+	//	alert('here');
 	    /*
 		 $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
 			  .success(function (data) {
@@ -44,10 +45,10 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 
 					}
 
->>>>>>> 1f3cd8c4dbc0027ac54964ce3dd4fc26c88f16d6
+//>>>>>>> 1f3cd8c4dbc0027ac54964ce3dd4fc26c88f16d6
 		            return prev.concat(matches);
 		        }, []);
-		        console.log('matches: ', $scope.matches);
+//		        console.log('matches: ', $scope.matches);
 		    });
 		});
 
