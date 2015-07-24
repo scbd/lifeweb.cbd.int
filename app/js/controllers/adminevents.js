@@ -22,7 +22,7 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
           //$http.delete('http://localhost:1818/projects') //how did this only delete one? >>;;
           IStorage[type].delete(event.identifier)
             .then(function(response, status) {
-              console.log('del event: ', response);
+            //  console.log('del event: ', response);
               events.splice(events.indexOf(event), 1);
             });
         };

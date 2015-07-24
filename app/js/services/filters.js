@@ -372,11 +372,13 @@ define(['app'], function(app) {
           for (var i = 0; i < countryList.length; i++) {
               for (var j = 0; j < pcountries.length; j++) {
                 for (var k=0; k < pcountries[j].country_ss.length; k++){
-                  if (pcountries[j].country_ss[k].code == countryList[i].code) {
+
+
+                  if (pcountries[j].country_ss[k] == countryList[i].code) {
                       result.push(countryList[i]);
                   }
                 }
-              //  console.log('pr countries? ', pcountries[j].country_ss);
+
 
               }
 
@@ -1400,6 +1402,7 @@ define(['app'], function(app) {
     app.filter('filterCountry', function() {
         return function(projs, code) {
 
+
            if(code == null)
                return projs;
 
@@ -1411,13 +1414,15 @@ define(['app'], function(app) {
             for (var i=0; i < projs.length; i++){
 
                 for (var k=0; k < projs[i].country_ss.length; k++){
-                  if (projs[i].country_ss[k].code == code) {
+                  if (projs[i].country_ss[k] == code) {
                       result.push(projs[i]);
                   }
                 }
 
-          
+
             }
+
+    
             return result;
         }
     });

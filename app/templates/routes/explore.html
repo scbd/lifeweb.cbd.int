@@ -3,7 +3,7 @@
 
        <!-- Docs nav
     ================================================== -->
-        <div class="row" ng-controller="ProjectsCtrl" >
+     <div class="row" ng-controller="ProjectsCtrl" >
             <div class="col-xs-3">
               <div class="bs-sidebar affix" id="sidebar">
                 <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
@@ -42,29 +42,7 @@
                       <option value="ecoservices6">Cultural and Spiritual Access</option>
                       <option value="ecoservices7">Income Generation</option>
                     </select>
-                          <!--<select ng-model="search.targets" style="width: 100%; margin-top: 5px;">
-                            <option value="" selected>Aichi Targets</option>
-                            <option value="Target1">Target 1: </option>
-                            <option value="Target2">Target 2: </option>
-                              <option value="Target3">Target 3: </option>
-                              <option value="Target4">Target 4: </option>
-                              <option value="Target5">Target 5: </option>
-                              <option value="Target6">Target 6: </option>
-                              <option value="Target7">Target 7: </option>
-                              <option value="Target8">Target 8: </option>
-                              <option value="Target9">Target 9: </option>
-                              <option value="Target10">Target 10: </option>
-                              <option value="Target11">Target 11: </option>
-                              <option value="Target12">Target 12: </option>
-                              <option value="Target13">Target 13: </option>
-                              <option value="Target14">Target 14: </option>
-                              <option value="Target15">Target 15: </option>
-                              <option value="Target16">Target 16: </option>
-                              <option value="Target17">Target 17: </option>
-                              <option value="Target18">Target 18: </option>
-                              <option value="Target19">Target 19: </option>
-                              <option value="Target20">Target 20: </option>
-                        </select>-->
+
                   </li>
                   <li>
                     <select class="form-control" ng-model="search.year_submitted" style="width: 100%; margin-top: 5px;">
@@ -169,7 +147,7 @@
                                     <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" /></a>
                                 </td>
                                 <td style="font-weight:bold;"> <a ng-href="/project?id={{match.identifier_s}}"><span class="media-heading">{{match.title_s}}</span></a></td>
-                                <td> <span style="font-weight:bold;" ng-repeat="country in match.country_ss"> {{country.name}} <br></span></td>
+                                <td><span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}} <br></span></td>
                                 <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
                                 <td nowrap>  {{match.funding_needed | filterCurrency:'USD':currency}} </td>
                                 <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.createdDate_s | filterDate  }}</td>

@@ -37,10 +37,10 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
         console.log(rejection);
     });
     $rootScope.$on('$routeChangeStart', function(next, current) {
-        console.log('start: ', next, current);
+      //  console.log('start: ', next, current);
     });
     $rootScope.$on('$routeChangeSuccess', function(event, current, previous) {
-        console.log('route change to: ', current);
+      //  console.log('route change to: ', current);
       if(current.$$route)
           $rootScope.title = current.$$route.title;
 

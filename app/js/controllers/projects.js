@@ -1,6 +1,6 @@
 define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility', '/app/js/services/filters/thumbnail.js', '/app/js/directives/projecttable.js', '/app/js/services/filters/page.js',], function(app) {
   app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility, $rootScope) {
-  console.log('user:S', $rootScope.user);
+  //console.log('user:S', $rootScope.user);
       var query = '(type eq \'lwProject\')';
 
 
@@ -59,36 +59,18 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
           $scope.projects = data.response.docs;
           $scope.projects.forEach(function(item) {
             getFundingStatus(item);
+            if(item.country_ss){
+               item.countries=[];
+               item.country_ss.forEach(function(country){
+                  item.countries.push({identifier: country});
+               })
+
+            }
           });
+  });
 
-////////////////temp fix
 
-          for (index in $scope.projects)
-          {
-            for (index2 in $scope.projects[index].country_ss)
-            {
-                //$scope.projects[index].country_ss[index2]+='XXX';
 
-                for (index3 in $scope.countries)
-                {
-                //
-                  if($scope.projects[index].country_ss[index2]==$scope.countries[index3].code)
-                  {
-                    var country_obj ={name:'',code:''};
-                    country_obj.name=$scope.countries[index3].name;
-                    country_obj.code=$scope.countries[index3].code;
-                    $scope.projects[index].country_ss[index2]=country_obj;
-                //  $scope.projects[index].country_ss[index2].code=$scope.countries[index3].code;
-                  }
-                }//for3
-            }//for2
-
-          }// for1
-///////////temp fix
-
-//console.log($scope.projects);
-
-      });
 
       $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
           $scope.countries = data;

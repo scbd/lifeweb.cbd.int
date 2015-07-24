@@ -5,14 +5,14 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
         var query = '(type eq \'lwCampaign\')';
         IStorage.drafts.query(query, draftParams)
           .then(function(response) {
-            console.log('draft campaigns: ', response.data.Items);
+            //console.log('draft campaigns: ', response.data.Items);
             $scope.draftCampaigns = response.data.Items;
           });
 
         //IStorage.documents.query(query, draftParams)
         $http.get('/api/v2013/documents/?$filter=(type+eq+%27lwCampaign%27)&body=true&cache=true&collection=my')
             .then(function(response) {
-                console.log('published campaigns: ', response.data.Items);
+              //  console.log('published campaigns: ', response.data.Items);
                 $scope.publishedCampaigns = response.data.Items;
             });
 
@@ -21,7 +21,7 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
           //$http.delete('http://localhost:1818/projects') //how did this only delete one? >>;;
           IStorage[type].delete(campaign.identifier)
             .then(function(response, status) {
-              console.log('del camp: ', response);
+              //console.log('del camp: ', response);
               campaigns.splice(campaigns.indexOf(campaign), 1);
             });
         };
@@ -35,7 +35,7 @@ define(['app', '/app/js/services/filters/thumbnail.js', '/app/js/services/filter
             $scope.confirm = 0;
         };
 
-        
+
 
     });
 });

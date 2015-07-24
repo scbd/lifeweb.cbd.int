@@ -350,14 +350,14 @@ define(['app', 'authentication'], function(app) {
         return function($rootScope, authentication, $location, $kookies, $window) {
           return authentication.getUser().then(function (user) {
             $rootScope.user = user;
-            console.log('user: ', user);
+          //  console.log('user: ', user);
             if(requiredPrivilages) {
               var notAllowed = true;
               for(var i=0; i!=user.roles.length; ++i)
                 if(requiredPrivilages.indexOf(user.roles[i]) != -1)
                   notAllowed = false;
 
-                console.log('not allowed? ', notAllowed);
+                //console.log('not allowed? ', notAllowed);
               if(notAllowed) {
                 $kookies.set('loginRedirect', $location.path());
                 $location.url('/login');
