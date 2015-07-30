@@ -1,7 +1,9 @@
 define(['app'], function(app){
 	app.factory('commonjs', ['authHttp','$rootScope', function($http,$rootScope){
 		return new function(){
+			/******************************************
 
+			******************************************/
 			this.getReferenceRecordIndex = function(schema,documentId){
 
 				var item = [];
@@ -45,7 +47,9 @@ define(['app'], function(app){
 				      return item;
 				});
 			}
+			/******************************************
 
+			******************************************/
 			this.isUserInRole = function(role){
 
 				var userRoles = $rootScope.user.roles;
@@ -59,7 +63,9 @@ define(['app'], function(app){
 
 				return false;
 			}
+			/******************************************
 
+			******************************************/
 			this.getCountries = function(){
 
 				// if($rootScope.countries)
@@ -88,11 +94,15 @@ define(['app'], function(app){
 
 
 			}
+			/******************************************
 
+			******************************************/
 			this.isIAC = function(){
 				return	this.isUserInRole('abschiac');
 			}
+			/******************************************
 
+			******************************************/
 			this.isAnyOtherRoleThenIAC = function(){
 
 				return	this.isUserInRole('AbsPublishingAuthorities')||
@@ -102,6 +112,36 @@ define(['app'], function(app){
 						this.isUserInRole('Administrator')
 
 			}
+
+			/******************************************
+
+			******************************************/
+		 this.getFundingStatus =	function (proj) {
+													if(!proj.totalCost) {
+															proj.totalCost = 0;
+															var budget = proj.budgetCost_ds || [];
+															for(var k=0; k!=budget.length; ++k)
+																	proj.totalCost += budget[k];
+													}
+													proj.totalFunding = proj.totalFunding || 0;
+													if(!proj.totalFunding)
+															if(proj.donatioFunding_ds)
+																	for(var k=0; k!=proj.donatioFunding_ds.length; ++k)
+																			proj.totalFunding += proj.donatioFunding_ds[k];
+
+													proj.funding_needed = proj.totalCost - proj.totalFunding;
+				//console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
+
+													if(proj.funding_needed < 1)
+															return  proj.funding_status = 'funded';
+
+													else {
+															proj.funding_status = 'not yet funded';
+															return 0;
+													}
+
+											
+			}//getFundingStatus
 		}
 	}]);
 });

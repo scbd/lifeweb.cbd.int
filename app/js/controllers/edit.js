@@ -21,7 +21,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     var singularKey = collectionKey.substr(0,collectionKey.length-1)
     var schemaName = keySchemaMap[singularKey]; //TODO: still needed?
     $scope.document = {};
-    console.log('title: ', $routeParams.title);
+  //  console.log('title: ', $routeParams.title);
     if($routeParams.title) {
       $scope.documentPromise = editFormUtility.load($routeParams.title);
       editFormUtility.documentExists($routeParams.title).then(function(exists) {
@@ -33,7 +33,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     else
       $scope.documentPromise = {
         header: {
-          identifier: guid(), 
+          identifier: guid(),
           languages: ['en'],
           schema: schemaName,
         },
@@ -41,7 +41,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
 
         $scope.documentPromise = $q.when($scope.documentPromise).then(function(document) {
         //TODO: move or something. This is for elink.js...
-        console.log('doc: ', document);
+  //      console.log('doc: ', document);
         $rootScope.documentIdentifier = document.header.identifier;
         $scope.document = document;
         return document;
@@ -148,7 +148,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
       //schema and realm
       editFormUtility.saveDraft($scope.document).then(function(result) {
         editFormUtility.load(result.identifier, localSchemaName).then(function(response) {
-            console.log('Response: ', response);
+//            console.log('Response: ', response);
         });
       });
         /*

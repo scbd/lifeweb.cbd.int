@@ -8,7 +8,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $controller('EditCtrl', {$scope: $scope});
 
     $scope.$on('documentPublished', function(event, docInfo, document) {
-        console.log('args: ', arguments);
+    //    console.log('args: ', arguments);
         $scope.published_id = document.header.identifier;
     });
 
@@ -19,7 +19,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
     $scope.donationsAC = function() {
         return donorPromise.then(function(donors) {
-        console.log('ac donors: ', donors);
+  //      console.log('ac donors: ', donors);
             for(var i=0; i!=donors.length; ++i)
                 donors[i].__value = donors[i].name_s;
 
@@ -28,7 +28,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     };
 
     $scope.updateSummary = function(index, second) {
-        console.log('1st second: ', index, second);
+    //    console.log('1st second: ', index, second);
 
         if($scope.document.campaign)
             $scope.currentCampaign = $scope.campaigns[index];
@@ -75,7 +75,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.campaignAC(); //TODO: do in better way.. perhaps using angular resources?
 
 
- 
+
     var aichiPromise = $http.get('/api/v2013/thesaurus/domains/AICHI-TARGETS/terms')
       .success(function(response, status) {
         attachAichiDescriptions(response);
@@ -111,7 +111,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     $scope.aichi_target_tabs = [];
     $scope.climate_contribution_tabs = [];
     $scope.newAttachment = {};
-    
+
     $scope.national_alignment = [
       {title: 'NBSAPs', key: 'NBSAP', help: 'National Biodiversity Strategies and Action Plans (NBSAPs) and action plans for implementing the CBD Programme of Work on Protected Areas (PoWPA)',},
       {title: 'Climate Change', key: 'CC', help: 'Alignment with National Climate Change Strategies',},
@@ -196,8 +196,8 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
     };
 
     $scope.addTab = function(tabs, tabRepository, tabIndex) {
-      console.log(tabIndex);
-      console.log(tabRepository[tabIndex]);
+  //    console.log(tabIndex);
+  //    console.log(tabRepository[tabIndex]);
       if(tabs.indexOf(tabRepository[tabIndex]) === -1)
         tabs.push(tabRepository[tabIndex]);
     };
@@ -250,7 +250,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       if(!$scope.document[projectKey]) $scope.document[projectKey] = [];
       $scope.document[projectKey].push({url: $scope[scopeNewItemKey]});
       $scope[scopeNewItemKey] = '';
-      console.log('protectedareas: ', $scope.document.protectedAreas);
+//      console.log('protectedareas: ', $scope.document.protectedAreas);
     }
 
     $scope.maybeAddPrimitive = function($event, scopeNewItemKey, projectKey) {
@@ -274,7 +274,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
             document.climateContribution = document.ecologicalContribution;
             document.ecologicalContribution = '';
         }
-      console.log('doc: ', document);
+//      console.log('doc: ', document);
       $scope.document.institutionalContext = $scope.document.institutionalContext || [];
       $scope.document.budget = $scope.document.budget || [];
       $scope.document.images = $scope.document.images || []
@@ -398,7 +398,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
       return sum;
     };
     var donorPromise = $.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwDonor))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
-    console.log('donor data: ', data);
+  //  console.log('donor data: ', data);
         var items = data.response.docs;
 
         items.forEach(function(donor) {

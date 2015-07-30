@@ -1,6 +1,6 @@
 //============================================================
 //
-// Edit LifeWeb Project Minimum 
+// Edit LifeWeb Project Minimum
 //
 //============================================================
 define(['app', 'URI', 'editFormUtility', ], function(app) {
@@ -18,18 +18,18 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
       {
         $scope.proj = null;
 
-            console.log('doc id: ', $scope.docId);
+//            console.log('doc id: ', $scope.docId);
         if($scope.docId)
           $scope.load();
         else
           $scope.error();
       },
-      controller : ['$scope', 'editFormUtility', function ($scope, editFormUtility) 
+      controller : ['$scope', 'editFormUtility', function ($scope, editFormUtility)
       {
         //*********************************************
         $scope.load= function() {
 
-            console.log('doc id: ', $scope.docId);
+//            console.log('doc id: ', $scope.docId);
           //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK&id=' + $scope.docId, { cache: true })
           if($scope.project)
             $scope.proj = $scope.project;
@@ -61,7 +61,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
         //TODO: should be a filter!
         $scope.fullCountryName = function(shortCountryName) {
-            console.log('country short: ', shortCountryName);
+//            console.log('country short: ', shortCountryName);
             for(var i=0; i!=$scope.countries.length; ++i)
                 if($scope.countries[i].identifier == shortCountryName)
                     return $scope.countries[i].name;
@@ -69,7 +69,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
 
 
 
-      
+
       }]
     }
   }])
@@ -77,7 +77,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
     return {
         controller: function($http, $scope) {
             $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(projects) {
-                    console.log('projects: ', projects.data.response.docs);
+  //                  console.log('projects: ', projects.data.response.docs);
                 $scope.projects = projects.data.response.docs.slice(0,6);
 
 
@@ -95,13 +95,13 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
                                 proj.totalFunding += proj.donatioFunding_ds[k];
 
                     proj.funding_needed = proj.totalCost - proj.totalFunding;
-                    console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
+  //                  console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
 
                     if(proj.funding_needed < 1)
                         proj.funding_status = 'funded';
                     else if(proj.totalFunding < 1)
                         proj.funding_status = 'not yet funded';
-                    
+
                     return proj.funding_status;
                 }
 

@@ -9,7 +9,7 @@ define(['app', 'editFormUtility',], function(app) {
             controller: function(editFormUtility, $scope) {
                 $scope.campaign = {};
                 editFormUtility.load($scope.id).then(function(campaign) {
-                    console.log('campaign: ', campaign);
+                  //  console.log('campaign: ', campaign);
                     $scope.campaign = campaign;
                 });
             },
