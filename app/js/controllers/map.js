@@ -83,8 +83,8 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
         $scope.projects = data.response.docs;
         $scope.temp= [];
         $scope.projects.forEach(function(item) {
-
-            if(item.coordinates_s && !commonjs.getFundingStatus(item)){
+        commonjs.getFundingStatus(item);
+            if(item.coordinates_s ){
               item.coordinates_s = JSON.parse(item.coordinates_s);
                   var geoJsonMapItem = {
                     type: 'Feature',
