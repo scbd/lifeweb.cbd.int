@@ -47,8 +47,15 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
         $scope.lastPage = function() {
             $scope.pageNumber = Math.floor($scope.projects.length/$scope.itemsPerPage);
         };
-
-
+        $scope.setProjectYearRange = function(projectStartYear) {
+            $scope.projectYearRange=[];
+            var currentTime = new Date();
+            while(currentTime.getFullYear() >= projectStartYear){
+               $scope.projectYearRange.push(projectStartYear);
+               projectStartYear++;
+             }
+        };
+        $scope.setProjectYearRange(2008);
 
 
       //IStorage.documents.query(query).then(function(data) {
