@@ -87,8 +87,8 @@
               <!-- <tr ng-repeat="match in (matches | filterMatchLifeWebbed:true) |  filterMatchYear:search.year_submitted | filterMatchCountry:search.country | filterMatchDonor:search.donor | orderBy:sortTerm:orderList "> -->
               <tr ng-repeat="match in (filtered = (matches | filterMatchYear:search.year_submitted | filterMatchCountry:search.country | filterMatchDonor:search.donor | orderBy:sortTerm:orderList))">
                 <td>
-                  <!-- <img src="{{match.donor.logo_s}}" style="width: 100px;" />
-                  <br> -->
+                 <img ng-show="{{match.logoShow}}" src="{{match.donor.logo_s}}" style="width: 100px;" />
+<p> </p>
                   <span style="padding-left: 5px;">{{match.donor.name_s}}</span></td>
                   <td>
                     <a href="/project/?id={{match.project.identifier_s}}">{{match.project.title_s}}</a>

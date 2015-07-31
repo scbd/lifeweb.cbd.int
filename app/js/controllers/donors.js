@@ -12,6 +12,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 					$scope.projects = data;
 			  });
 			  */
+		//		alert('here')
 		$scope.matches = [];
 		$http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,createdDate_s,description_s').then(function(response) {
 		    var projects = response.data.response.docs;
@@ -27,28 +28,33 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 					{
 
 						try{
-							var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
+								var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
 
-						if(donor_name){
-							matches.push({
-		                    	donor: donor_name,
-		                    	amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
-		                    	project: item,
-								year: item,
-		                	});
+//
+								if(donor_name){
+
+									matches.push({
+				                    	donor: donor_name,
+				                    	amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
+				                    	project: item,
+															year: item,
+															logoShow: donor_name.logo_s ? 1 : 0,
+
+				        });
+
 						}
-
 						}catch(err){
 
-							console.log('problem item: ', item);
+							//console.log('problem item: ', item);
 						};
 
 					}
 
+
 //>>>>>>> 1f3cd8c4dbc0027ac54964ce3dd4fc26c88f16d6
 		            return prev.concat(matches);
 		        }, []);
-//		        console.log('matches: ', $scope.matches);
+  console.log('matches: ', $scope.matches);
 		    });
 		});
 

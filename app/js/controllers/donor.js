@@ -42,7 +42,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
         //TODO: should just be a filter...
         //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
         $scope.fullCountryName = function(shortCountryName) {
-        console.log('countries: ', $scope.countries);
+//        console.log('countries: ', $scope.countries);
             for(var i=0; i!=$scope.countries.length; ++i)
                 if($scope.countries[i].identifier == shortCountryName)
                     return $scope.countries[i].name;
