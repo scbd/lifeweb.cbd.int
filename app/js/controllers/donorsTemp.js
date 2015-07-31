@@ -1,5 +1,5 @@
 define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',], function(app) {
-	app.controller('DonorCtrl', function ($scope, $http) {
+	app.controller('DonorCtrlTemp', function ($scope, $http) {
 	//	alert('here');
 	    /*
 		 $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
@@ -32,7 +32,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 
 //
 								if(donor_name){
-									if(item.donatioFunding_ds[i]) //temp hiding 0 rows
+									if(!item.donatioFunding_ds[i]) //temp hiding 0 rows
 									matches.push({
 				                    	donor: donor_name,
 				                    	amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
@@ -54,7 +54,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 //>>>>>>> 1f3cd8c4dbc0027ac54964ce3dd4fc26c88f16d6
 		            return prev.concat(matches);
 		        }, []);
-//  console.log('matches: ', $scope.matches);
+  console.log('matches: ', $scope.matches);
 		    });
 		});
 
