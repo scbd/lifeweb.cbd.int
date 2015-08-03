@@ -36,7 +36,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
           else
               editFormUtility.load($scope.docId)
               .then(function (data) {
-                    console.log('project min data:' , data);
+//console.log('project min data:' , data);
                   $scope.proj = data;
              });
        };

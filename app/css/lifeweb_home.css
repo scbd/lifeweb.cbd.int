@@ -80,7 +80,7 @@ body {
     /* CUSTOMIZE THE CAROUSEL
     -------------------------------------------------- */
     /* Carousel base class */
-	
+
     .carousel .container {
       position: relative;
       z-index: 9;
@@ -90,7 +90,7 @@ body {
       height: 500px;
 	    border-bottom:1px solid #666;
     }
-	
+
     .carousel-caption {
       background-color: transparent;
       font-size: 110%;
@@ -115,6 +115,5 @@ body {
      #map {
               margin-left: auto;
               margin-right: auto;
-              width: 100%; 
+              width: 100%;
           }
-         
