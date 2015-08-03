@@ -5,6 +5,8 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
         $scope.currency = "USD";
 //console.log($scope);
+//console.log('scope',$scope);
+
             //==================================
         $scope.toggleCurrency = function () {
 
@@ -26,7 +28,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
-//console.log('countries: ', $scope.countries);
+//nationalAlignment('countries: ', $scope.countries);
             $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
                 $scope.countries = $scope.countries.concat(data.data);
 
@@ -178,6 +180,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
     function fillInDonorData() {
         $scope.donors = {};
+        if($scope.eoi.donations)
         for(var i=0; i!=$scope.eoi.donations.length; ++i) {
             var dID = $scope.eoi.donations[i].donor.identifier;
             var promise = $scope.donors[dID];

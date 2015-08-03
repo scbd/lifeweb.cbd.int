@@ -209,14 +209,14 @@
             <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="f.lifeweb_facilitated">{{f.funding | filterCurrency:f.currency:currency}}</span></td>
             <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;"><span ng-show="!f.lifeweb_facilitated">{{f.funding | filterCurrency:f.currency:currency}}</span></td>
         </tr>
-        <tr>
+        <tr class="info">
             <td class="lw-proj-text">TOTAL CO-FUNDING</td>
             <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donations | filterTotalSecured | filterCurrency:f.currency:currency}}</td>
             <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donations | filterTotalExpected | filterCurrency:f.currency:currency }}</td>
         </tr>
 
-        <tr>
-            <td class="lw-proj-text" style="background-color:#F5A2A2;">TOTAL FUNDING NEEDED</td>
+        <tr ng-hide="{{ !((eoi.total_cost) - (eoi.donations | filterTotalSecured))}}">
+            <td  class="lw-proj-text" style="background-color:#F5A2A2;">ttTOTAL FUNDING NEEDED</td>
             <td class="lw-proj-text text-center" colspan="2" style="background-color:#F5A2A2;border-left:1px solid #ccc;">
                 {{ ((eoi.total_cost) - (eoi.donations | filterTotalSecured)  +  (eoi.donations | filterTotalExpected)) | filterCurrency:f.currency:currency}}</td>
         </tr>
