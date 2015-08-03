@@ -1,10 +1,11 @@
-define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js', '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/linkify.js',], function(app) {
+define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/app/js/directives/afc-file.js', '/app/js/directives/editdonor.js',
+ '/app/js/services/filters/thumbnail.js', '/app/js/services/filters/linkify.js',], function(app) {
     function ngTagsToArray(fake, real, realKey) {
         real[realKey] = [];
         for(var i=0; i!=fake.length; ++i)
             real[realKey].push(fake[i].text);
     }
-  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location, guid) {
+  app.controller('EditProjectCtrl', function($scope, $http, $q, $controller, $rootScope, $location, guid,realm) {
     $controller('EditCtrl', {$scope: $scope});
 
     $scope.$on('documentPublished', function(event, docInfo, document) {
@@ -397,7 +398,7 @@ define(['app', '/app/js/controllers/edit.js', '/app/js/directives/elink.js', '/a
 
       return sum;
     };
-    var donorPromise = $.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwDonor))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
+    var donorPromise = $.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwDonor))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
   //  console.log('donor data: ', data);
         var items = data.response.docs;
 

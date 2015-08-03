@@ -2,7 +2,7 @@
 
 //TODO: put somewhere common
 //TODO: i gutted IWorkflows and realm, so currently publishRequest isn't going to work.
-app.factory("editFormUtility", ["IStorage", "$q","commonjs", function(storage, $q, commonjs) {
+app.factory("editFormUtility", ["IStorage", "$q","commonjs",'realm', function(storage, $q, commonjs,realm) {
 
 	var schemasWorkflowTypes  = {
 

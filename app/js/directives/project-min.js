@@ -24,7 +24,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
         else
           $scope.error();
       },
-      controller : ['$scope', 'editFormUtility', function ($scope, editFormUtility)
+      controller : ['$scope', 'editFormUtility','realm', function ($scope, editFormUtility,realm)
       {
         //*********************************************
         $scope.load= function() {
@@ -50,7 +50,7 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
-            console.log('countries: ', $scope.countries);
+        //    console.log('countries: ', $scope.countries);
             $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
                 $scope.countries = $scope.countries.concat(data.data);
 
@@ -75,8 +75,8 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
   }])
   .directive('getprojects', function() {
     return {
-        controller: function($http, $scope) {
-            $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(projects) {
+        controller: function($http, $scope,realm) {
+            $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(projects) {
   //                  console.log('projects: ', projects.data.response.docs);
                 $scope.projects = projects.data.response.docs.slice(0,6);
 

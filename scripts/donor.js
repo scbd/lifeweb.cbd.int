@@ -4,7 +4,7 @@ var guid = require('./guid.js');
 
     var Donor = {
         donorCache: {},
- 
+
         //returns a promise that returns a promise, that returns data.
         get: function(donor) {
             console.log('GETDONOR START');
@@ -17,7 +17,7 @@ var guid = require('./guid.js');
                     if(!newDonor)
                         return Donor.create(donor);
                     else
-                        return q.fcall(function() { 
+                        return q.fcall(function() {
                             newDonor.header = {identifier: newDonor.identifier};
                             return newDonor;
                         });
@@ -45,7 +45,7 @@ var guid = require('./guid.js');
             console.log('CREATEDONOR START');
             var newDonor = {
                 header: {
-                  identifier: guid(), 
+                  identifier: guid(),
                   languages: ['en'],
                   schema: 'lwDonor',
                 },
@@ -94,7 +94,7 @@ var guid = require('./guid.js');
             }
             else
                 return q.fcall(function() {
-                    return false; 
+                    return false;
                 }).then(finishDonor);
         }
     };

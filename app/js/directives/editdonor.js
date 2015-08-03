@@ -8,7 +8,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                 donor: '=?',
                 alwaysEditing: '@?',
             },
-            controller: function($scope, $http, editFormUtility, IStorage, $element) {
+            controller: function($scope, $http, editFormUtility, IStorage, $element,realm) {
                 if(!$scope.donor)
                     $scope.donor = {};
                 $scope.donorButtonText = 'Create Donor'
@@ -24,7 +24,7 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                         $scope.showHideButtonText = 'Close Donor';
                     else
                         $scope.showHideButtonText = $scope.donorButtonText;
-                        
+
                 }
 
                 function prepareDonor(donor) {
@@ -43,12 +43,12 @@ define(['app', '/app/js/directives/afc-file.js', '/app/js/directives/guid.js', '
                 console.log('donor: ', $scope.donor.header);
                 if($scope.donor.header) {
                     var sID = $scope.donor.header.identifier;
-                    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(donor_ss:'+sID+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
+                    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:'+realm+')%20AND%20(donor_ss:'+sID+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
                         console.log('sID: ', sID);
                         $scope.matches = data.data.response.docs;
                         console.log('match data: ', $scope.matches);
                     });
-    
+
                     prepareDonor($scope.donor);
                 } else {
                     $scope.$watch('donorheader', function() {

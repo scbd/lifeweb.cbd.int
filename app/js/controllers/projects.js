@@ -1,6 +1,6 @@
 define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-form-controls', 'editFormUtility',
  '/app/js/services/common.js','/app/js/services/filters/thumbnail.js', '/app/js/directives/projecttable.js', '/app/js/services/filters/page.js',], function(app) {
-  app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility, $rootScope,commonjs) {
+  app.controller('ProjectsCtrl', function ($scope, $http, IStorage, editFormUtility, $rootScope,commonjs,realm) {
   //console.log('user:S', $rootScope.user);
       var query = '(type eq \'lwProject\')';
 
@@ -60,7 +60,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
 
       //IStorage.documents.query(query).then(function(data) {
       //fields used: budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss
-      $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates').success(function(data) {
+      $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates').success(function(data) {
       //TODO: for grabbing focal points:
       //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
 //console.log('data: ', data);

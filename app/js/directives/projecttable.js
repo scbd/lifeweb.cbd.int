@@ -31,7 +31,7 @@ define(['app', '/app/js/services/filters.js', '/app/js/services/filters/thumbnai
                                 $scope.projects[i].totalFunding += $scope.projects[i].donatioFunding_ds[k];
 
                     $scope.projects[i].funding_needed = $scope.projects[i].totalCost - $scope.projects[i].totalFunding;
-                    console.log('FUNDING NEEDED: ', $scope.projects[i].totalCost, $scope.projects[i].totalFunding, $scope.projects[i].funding_needed);
+//console.log('FUNDING NEEDED: ', $scope.projects[i].totalCost, $scope.projects[i].totalFunding, $scope.projects[i].funding_needed);
 
                     if($scope.projects[i].funding_needed < 1)
                         $scope.projects[i].funding_status = 'funded';
