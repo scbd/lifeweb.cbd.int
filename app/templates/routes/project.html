@@ -400,21 +400,21 @@
     </div>
 </div>
 
-<div ng-show="eoi.images.length > 0">
+<div class="container-fluid" ng-show="eoi.images.length > 0">
     <h4>Maps and Images</h4>
     <div class="row">
-      <div ng-repeat="img in eoi.images" class="col-xs-3">
-        <div class="thumbnail">
-            <a href="{{img.url}}" target="_blank">
-                <img style="width: 200px" src="{{img.url | thumbnail}}" class="img-rounded" /></a>
+      <div ng-repeat="img in eoi.images" >
+        <div class="col-md-4">
+            <a href="{{img.url}}" target="_blank" class="thumbnail">
+                <img class="img-responsive"  style="width: 200px" src="{{img.url | thumbnail}}" class="img-rounded" /></a>
             <p class="caption">{{img.title}}</p>
             <p ng-show="img.description">{{img.description}}</p>
         </div>
       </div>
-      <div ng-repeat="img in eoi.maps" class="col-xs-3">
-        <div class="thumbnail">
-            <a href="{{img.url}}" target="_blank">
-                <img style="width: 200px" src="{{img.url | thumbnail}}" class="img-rounded" /></a>
+      <div ng-repeat="img in eoi.maps"  >
+        <div class="col-md-4">
+            <a href="{{img.url}}" target="_blank" class="thumbnail">
+                <img class="img-responsive"  style="width: 200px" src="{{img.url | thumbnail}}" class="img-rounded" /></a>
             <p class="caption">{{img.title}}</p>
             <p ng-show="img.description">{{img.description}}</p>
         </div>
