@@ -22,7 +22,6 @@
           <!--<li><a href="#small"><i class="icon-chevron-right"></i>Small states</a></li>-->
         </ul>
       </div>
-      
       <div class="col-xs-9">
 
  
@@ -34,11 +33,11 @@
           <img style="height:50px;display:inline!important;" src="https://www.cbd.int/{{countrydetails.flag.url}}" alt="{{countrydetails.flag.name}}" class="thumbnail" /> 
           {{countries | filterCountryName:CountryID}}</h2> 
 
-        <div data-ng-controller="MapCtrl" >
+     <!--=   <div data-ng-controller="MapCtrl" >
         
         <div id='map' style="height:300px;"></div>    
-        </div>
-
+        </div>=-->
+    <leaflet-map  map-data='mapData'></leaflet-map>
 
     <div ng-show="countrydetails.NbsapReportList">
         <h4>National Biodiversity Action Plans</h4>

@@ -30,15 +30,18 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 						try{
 								var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
 
-//
+//console.log(donor_name);
 								if(donor_name){
 									if(item.donatioFunding_ds[i]) //temp hiding 0 rows
 									matches.push({
-				                    	donor: donor_name,
+										name_s:donor_name.name_s,
+										country_ss:item.country_ss,
+				                    	donor : donor_name,
+										title_s: item.title_s,
 				                    	amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
 				                    	project: item,
-															year: item,
-															logoShow: donor_name.logo_s ? 1 : 0,
+										year: item,
+										logoShow: donor_name.logo_s ? 1 : 0,
 
 				        });
 

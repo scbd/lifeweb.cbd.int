@@ -1,7 +1,5 @@
-define(['app', '/app/js/directives/leaflet-map-directive.js','/app/js/services/leafletmapservice.js', 'authentication', 'URI','/app/js/services/common.js'], function(app) {
-  app.controller('CountryCtrl',['$scope', '$http', '$window', '$routeParams','commonjs','realm','leafletMapService',function($scope, $http, $window, $routeParams,commonjs,  realm,leafletMapService) {
-
-
+define(['app', '/app/js/controllers/map.js', 'authentication', 'URI','/app/js/services/common.js'], function(app, map) {
+  app.controller('CountryCtrl',function($scope, $http, $window, $routeParams,commonjs,  realm) {
 
       //TODO: don't use URI... just use regular Angular.
       var sCountry = $routeParams.country;
@@ -17,17 +15,36 @@ define(['app', '/app/js/directives/leaflet-map-directive.js','/app/js/services/l
     $http.jsonp('https://www.cbd.int/scbd/ui/countries/webservices/countrydetails.aspx?callback=JSON_CALLBACK&country=' + sCountry, { cache: true }).success(function (data) {
       $scope.countrydetails = data;
     });
-   
-       $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:'+realm+')%20AND%20(schema_s:lwProject)%20AND%20(country_ss:'+sCountry+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function (data) {
+
+    $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:'+realm+')%20AND%20(schema_s:lwProject)%20AND%20(country_ss:'+sCountry+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').success(function (data) {
   //  console.log('proj response: ', data.response.docs.length);
-      $scope.projects = data.response.docs;
-    });
-       
-    leafletMapService.generateMap('((realm_ss:'+realm+')%20AND%20(schema_s:lwProject)%20AND%20(country_ss:'+sCountry+'))')
-    .success(function(data) {
-     console.log(data)
-       $scope.mapData = leafletMapService.processMap(data.response.docs);    
-      console.log($scope.mapData )  
+     // $scope.projects = data.response.docs;
+      console.log('here:',data.response);
+        $scope.projects = data.response.docs;
+        $scope.temp= [];
+        $scope.projects.forEach(function(item) {
+              commonjs.getFundingStatus(item);
+              if(item.coordinates_s ){
+                item.coordinates_s = JSON.parse(item.coordinates_s);
+                    var geoJsonMapItem = {
+                      type: 'Feature',
+                      geometry:{coordinates:[item.coordinates_s.lng,item.coordinates_s.lat,], type:'Point'},
+                      properties:{
+                      funding_status: item.funding_status,
+                      id: item.identifier_s,
+                      'marker-color': '#6666ff',
+                      'marker-size': 'medium',
+                      thumbnail: item.thumbnail_s,
+                      title: item.title_s}
+                    };
+  
+                  if(item.funding_status) geoJsonMapItem['marker-color']='#000';
+                //  $scope.mapdata.push(geoJsonMapItem);
+                    $scope.temp.push(geoJsonMapItem);
+  
+            }
+
+        });
     });
 
     $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function (data) {
@@ -63,15 +80,15 @@ define(['app', '/app/js/directives/leaflet-map-directive.js','/app/js/services/l
 
             var setview = function() {
               if ($scope.geolocation)
-                $scope.map.fitBounds($scope.bounds, {reset: true});
+                map.map.fitBounds($scope.bounds, {reset: true});
             }
-            if($scope.map)
+            if(map.map)
               setview();
- //           else
-  //            $scope.map.callback = setview;
+            else
+              map.callback = setview;
 		 });
    
-  }]);
+  });
  
   return true;
 });
