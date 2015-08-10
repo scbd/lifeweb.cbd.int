@@ -1,5 +1,5 @@
-<div>
-    <div class="col-md-4" ng-repeat="rt in roundtables |  orderBy:'start':'reverse'" ng-hide="rt.hide">
+<div class="row text-center">
+    <div class="col-md-4 text-center" ng-repeat="rt in roundtables |  orderBy:'start':'reverse'" ng-hide="rt.hide">
 
 
                             <a  href="/event?id={{rt.identifier_s}}">
@@ -9,15 +9,15 @@
                                 {{typeTitle(type)}}
 
                                </span> <br> -->
-                               <img src="{{rt.coverImage_s}}" alt="{{rt.identifier_s}}"  class="thumbnail" style="max-height:200px;">
+                               <img src="{{rt.coverImage_s}}" alt="{{rt.identifier_s}}"  class="thumbnail" style="max-height:200px; margin-top:20px; display: block; margin-left: auto;margin-right: auto">
 
-                                <h4 class="muted" style="padding-bottom:0;margin-bottom:0;">
+                                <h4 class="muted" style="padding-bottom:0;margin-bottom:0;text-align: left;">
 
                                     {{rt.name_s}}</h4></a>
                             </a>
 
 
-                            <p>{{properDate(rt.startDate_s)}} - {{properDate(rt.endDate_s)}}</p>
+                            <p style="text-align: left;">{{properDate(rt.startDate_s)}} - {{properDate(rt.endDate_s)}}<hr></p>
 
      </div>
      <div class="clearfix"></div>

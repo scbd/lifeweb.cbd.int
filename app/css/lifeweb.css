@@ -43,46 +43,58 @@ table {
 }
 .color-blue{color:#2185C5}
 
-.navbar-inverse
+/*.navbar-inverse
 {
   position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
-  z-index: 21435;
+  z-index: -1;
 }
 
 .navbar-inverse > .container-fluid
 {
   width: 100%;
+}*/
+
+
+.userheader {
+           text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+        color: #999;   
 }
 
-.userheader
-{
-    position: fixed;
-    z-index: 10;
-    top: 78px;
-    right: 80px;
-    left: auto;
-    background-color: #222;
-    border: 1px solid silver;
+.userheader:hover { 
+  
+     color: #fff; 
+}
+
+.userheader:focus { 
+     
+     color: #fff; 
 }
 
 #ngview-content
 {
 }
 
-.navbar-inverse {
-  height: 80px;
+.navbar {
+  min-height: 78px;
+  min-width: 280px;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
+
 }
 
 .navbar-nav > li a
 {
+
+         
   line-height: 20px;
 }
+
+
+
 
 .alignCBDLogo {
   position: relative;
@@ -763,6 +775,59 @@ section > h3
 
 }
 
+.lw_logo{
+    position: static;
+    top: 13px;
+    right: 85;
+    margin-bottom: 50px;
+}
 
-
+.nav_button{
+    position: absolute;
+    left: 80%;
+}
+#user_name{
+    font-size: 70%;
+}
 /* ++++++++++++++++++++++ */
+
+.mini-submenu{
+  display:none;  
+  background-color: rgba(0, 0, 0, 0);  
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;  
+  /*position: relative;*/
+  width: 42px;
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+
+#slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sidebar.pinit{
+      position: fixed;
+      margin-top: 25px;
+      width: 228px;
+}

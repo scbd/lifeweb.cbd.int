@@ -1,19 +1,21 @@
 <link href="/app/css/lifeweb_home.css" rel="stylesheet">
 <link href="/app/libs/leaflet/dist/leaflet.css" rel="stylesheet">
-<div class="" style="position:relative;top:0px;width:100%"  >
+
 
   <!-- Carousel
   ================================================== -->
 
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel" >
+<div class="" style="position:relative;top:0px;width:100%"  >
+ 
+<div id="myCarousel" class="carousel slide" data-ride="carousel" >
   <carousel interval="5000">
-      <slide active>
+     <slide active>
         <div class="" id='map' ng-controller="MapCtrl" style="height: 100%"></div>
+        style="height: 100%; width:100%;"
       </slide>
 
       <slide>
-        <img src="/app/images/campaigns/islandresilience/header.png" alt="Island" class="img-responsive" style="height: 100%; width:100%;">
+        <img src="/app/images/campaigns/islandresilience/header.png" alt="Island" class="img-responsive" style="height: 100%;">
         <div class="carousel-caption">
           <h1 style="color: white;">
             Island Resilience
@@ -26,12 +28,12 @@
     </slide>
 
       <slide>
-          <img src="https://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="Endangered Frog" class="img-responsive" style="height: 100%; width:100%;">
-          <div class="carousel-caption">
-              <h1 style="color: white;">
+          <img src="https://www.cbd.int/images/lifeweb/home/slider/zero.jpg" alt="Endangered Frog" class="img-responsive slide_image" >
+          <div class="col-sm-6 carousel-caption">
+              <h3 >
                   Zero Extinction Campaign
-              </h1>
-              <p style="color:white;font-size:110%;">
+              </h3>
+              <p >
                   LifeWeb's Zero Extinction campaign focuses attention on the extinction crisis and provides a platform for countries to profile their financial needs to prevent
                   species extinctions (Aichi Target 12), and achieve related targets as a key accomplishment in our global effort to stem biodiversity loss.
               </p>
@@ -41,17 +43,17 @@
 
 
       <slide>
-        <img src="https://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="img-responsive" style="height: 100%;width:100%;">
+        <img src="https://www.cbd.int/images/lifeweb/home/slider/carbon_slider.gif" alt="" class="img-responsive" style="height: 100%; width: 100%;">
         <div class="carousel-caption">
-          <h1><span style="color:#efefef;background-color:#000;padding:5px!important; white-space:nowrap;">Carbon & Biodiversity Calculator</span></h1>
-          <p style="background-color:#6666ff;padding:5px;font-size:110%">
+          <h1><span >Carbon & Biodiversity Calculator</span></h1>
+          <p >
               The Carbon and Biodiversity Calculator allows you to define your area of interest and calculate an estimated contribution of this area to climate change mitigation. At the same time, it also provides information on the area's conservation values, protected areas, forest status and opportunities for forest and landscape restoration.
           </p>
           <a class="btn btn-lg btn-primary" href="http://carbonbiodiversitycalculator.unep-wcmc.org/" target="_blank">Try it for yourself</a>
         </div>
       </slide>
     </carousel>
-    </div>
+    </div> 
 
 
  <!-- explore share learn
@@ -59,7 +61,7 @@
   <div class="container" >
 
     <div class="row text-center" style="position:relative;top:0px;margin-top:15px;margin-bottom:15px;">
-      <div class="col-xs-4">
+      <div class="col-md-4">
         <div class="well" style="background-color:#3E606F;">
           <a href="/explore/" style="text-decoration:none;">
             <!-- <img src="/app/images/favicon_black.png" style="width:20px;top:-2px;position:relative;" /> -->
@@ -70,7 +72,7 @@
         </div>
       </div>
 
-      <div class="col-xs-4">
+      <div class="col-md-4">
         <div class="well" style="background-color:#3F403D;">
           <a href="/share/" style="text-decoration:none;">
             <!-- <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> -->
@@ -81,7 +83,7 @@
         </div>
       </div>
 
-      <div class="col-xs-4">
+      <div class="col-md-4">
         <div class="well" style="background-color:#193441;">
           <a href="/benefits/" style="text-decoration:none;">
             <!-- <img src="/app/images/favicon_white.png" style="width:20px;top:-2px;position:relative;" /> -->
@@ -101,7 +103,7 @@
       <hr style="padding:0;margin:0;"/>
       <br>
       <div class="row" getprojects >
-       <project-min ng-repeat="proj in projects" doc-id="proj.identifier_s" project="proj" class="col-xs-6"></project-min>
+       <project-min ng-repeat="proj in projects" doc-id="proj.identifier_s" project="proj" class="col-md-6"></project-min>
        <!--<project-min doc-id="24020" class="col-xs-6"></project-min>-->
       </div>
     </div>
@@ -118,9 +120,9 @@
     <latest-events></latest-events>
 
     <!-- <div class="row" >
-      <event-min doc-id="23834" class="col-xs-4"></event-min>
-      <event-min doc-id="23953" class="col-xs-4"></event-min>
-      <event-min doc-id="10668" class="col-xs-4"></event-min>
+      <event-min doc-id="23834" class="col-md-4"></event-min>
+      <event-min doc-id="23953" class="col-md-4"></event-min>
+      <event-min doc-id="10668" class="col-md-4"></event-min>
     </div> -->
     <br/>
     <br/>
@@ -136,7 +138,7 @@
     </div> -->
     <!--TODO: vulnerable to XSS through twitter api-->
     <br/><br/>
-    <div class="row">
+    <div class="row ">
       <div class="col-xs-12">
         <h2 class="featurette-heading"> LifeWeb Donors <span class="muted" > </span></h2> <hr style="padding:0;margin:0;"/><br/>
         <style>
@@ -144,58 +146,80 @@
                 margin: 0 5px 20px 5px;
             }
         </style>
-        <div class="row">
-          <div class="donor col-xs-1">
-            <a href="/donors?id=23827" ><img src="//www.cbd.int/images/lifeweb/donors/logos/23827.gif" alt="23827" width="90"></a>
+        <div class="row text-center">
+            <div class="col-md-2" style="white-space: nowrap;">
+                  <div class="donor ">
+                    <a href="/donors?id=23827" ><img src="//www.cbd.int/images/lifeweb/donors/logos/23827.gif" alt="23827" width="90"></a>
+                  </div>
+                  <div class="donor ">
+                    <a href="/donors?id=6162" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6163.gif" alt="6163" width="90"></a>
+                  </div>
+            </div>
+            
+            <div class="col-md-2" style="white-space: nowrap;">
+                  <div class="donor ">
+                      <a href="/donors?id=6168" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6168.gif" alt="6168" width="90"></a>
+                  </div>      
+                  <div class="donor ">
+                    <a href="/donors?id=6160" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6160.gif" alt="6160" width="90"></a>
+                  </div>
+            </div>
+            
+            <div class="col-md-2" style="white-space: nowrap;">
+                  <div class="donor ">
+                    <a href="/donors?id=6153" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6153.gif" alt="6153" width="90"></a>
+                  </div>           
+                  <div class="donor ">
+                    <a href="/donors?id=6171" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6171.gif" alt="6171" width="90"></a>
+                  </div>
+              </div>
+              
+         <div class="col-md-2" style="white-space: nowrap;">
+              <div class="donor ">
+                <a href="/donors?id=6162" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6162.gif" alt="6162" width="90"></a>
+              </div>
+              <div class="donor ">
+                <a href="/donors?id=6141"><img src="//www.cbd.int/images/lifeweb/donors/logos/6141.gif"  alt="6141" width="90"></a>
+              </div>
           </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6162" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6163.gif" alt="6163" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-              <a href="/donors?id=6168" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6168.gif" alt="6168" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6160" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6160.gif" alt="6160" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6171" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6171.gif" alt="6171" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6162" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6162.gif" alt="6162" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6141"><img src="//www.cbd.int/images/lifeweb/donors/logos/6141.gif"  alt="6141" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6177"><img src="//www.cbd.int/images/lifeweb/donors/logos/6177.gif" alt="6177" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6117"><img src="//www.cbd.int/images/lifeweb/donors/logos/6117.gif"  alt="6117" width="90"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6153" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6153.gif" alt="6153" width="90"></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="donor col-xs-1">
-            <a href="/donors?id=23978" ><img src="//www.cbd.int/images/lifeweb/donors/logos/23978.gif" alt="23978" width="70"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6611" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6611.gif" alt="6611" width="100"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6454" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6454.gif"  alt="6454" width="100"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6119" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6119.gif"  alt="6119" width="100"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6452" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6452.gif" alt="6452" width="100"></a>
-          </div>
-          <div class="donor col-xs-1">
-            <a href="/donors?id=6453" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6453.gif"  alt="6453" width="100"></a>
+          
+          <div class="col-md-2" style="white-space: nowrap;">
+              <div class="donor ">
+                <a href="/donors?id=6177"><img src="//www.cbd.int/images/lifeweb/donors/logos/6177.gif" alt="6177" width="90"></a>
+              </div>
+               <div class="donor ">
+                <a href="/donors?id=6117"><img src="//www.cbd.int/images/lifeweb/donors/logos/6117.gif"  alt="6117" width="90"></a>
+              </div>
           </div>
         </div>
+        
+        <div class="row text-center">
+         <div class="col-md-2" style="white-space: nowrap;">
+              <div class="donor ">
+                <a href="/donors?id=23978" ><img src="//www.cbd.int/images/lifeweb/donors/logos/23978.gif" alt="23978" width="70"></a>
+              </div>
+              <div class="donor ">
+                <a href="/donors?id=6611" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6611.gif" alt="6611" width="100"></a>
+              </div>
+          </div>
+         <div class="col-md-2" style="white-space: nowrap;">          
+              <div class="donor ">
+                <a href="/donors?id=6454" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6454.gif"  alt="6454" width="100"></a>
+              </div>
+              <div class="donor ">
+                <a href="/donors?id=6119" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6119.gif"  alt="6119" width="100"></a>
+              </div>
+          </div>
+        <div class="col-md-2" style="white-space: nowrap;">
+              <div class="donor">
+                <a href="/donors?id=6452" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6452.gif" alt="6452" width="100"></a>
+              </div>
+              <div class="donor">
+                <a href="/donors?id=6453" ><img src="//www.cbd.int/images/lifeweb/donors/logos/6453.gif"  alt="6453" width="100"></a>
+              </div>
+            </div>
+        </div>
+        
       </div>
     </div>
     <br/><br/>

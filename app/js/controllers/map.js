@@ -5,7 +5,7 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
   var cheating = {};
 	app.controller('MapCtrl', ["$scope","authHttp","commonjs","realm",function($scope, $http,commonjs,realm) {
 
-		 $scope.showMap = function() { console.log('mapdata at top of showmap:',$scope.mapdata);
+		 $scope.showMap = function() { 
     			if (!$scope.mapdata)
     				return;
 
@@ -43,7 +43,7 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
 
     			function onEachFeature(feature, layer) {
           				// Create custom popup content
-          				 var popupContent = '<div id="' + feature.properties.title + '" class="popup" style="min-height:80px;">' +
+          				 var popupContent = '<div class="map_pop_up" id=""' + feature.properties.title + '" class="popup" style="min-height:80px;">' +
           											  '<a href="/project/?id=' + feature.properties.id + '">' +
           											  '<img src="' + feature.properties.thumbnail + '" class="thumbnail pull-left" style="max-height:80px;max-width:80px;margin-right:10px;" alt="' + feature.properties.id + '"/>' +
           											  '<strong>' + feature.properties.title + '</strong></a><br>' +
@@ -111,7 +111,7 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
                     delete  $scope.temp;
               }); //$http.get
     } 
- //console.log($scope.mapdata);
+
 
 
 	}]);
