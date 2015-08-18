@@ -229,8 +229,8 @@ define(['app', 'authentication'], function(app) {
         },
         label: 'Admin Projects',
       })
-      .when('/admin/events', {
-        templateUrl: '/app/templates/routes/admin/events/index.html',
+      .when('/admin/event/create', {
+        templateUrl: '/app/templates/routes/admin/events/edit.html',
         title: 'Admin Events',
         collectionKey: 'events',
         resolve: {
