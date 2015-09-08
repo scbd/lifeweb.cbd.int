@@ -5,10 +5,11 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
   var cheating = {};
 	app.controller('MapCtrl', ["$scope","authHttp","commonjs","realm",function($scope, $http,commonjs,realm) {
 
+    //$scope.mapdata=[];
 		 $scope.showMap = function() { 
     			if (!$scope.mapdata)
     				return;
-
+            
     			var map = cheating.map = L.map('map', {
     				 center: [30,15],
     				 zoom: 2,
@@ -72,8 +73,8 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
     				 onEachFeature: onEachFeature
     			}).addTo(map);
 
-      //    if(cheating.callback)
-      //      cheating.callback();  //call any callbacks the map has for once it was done.
+          if(cheating.callback)
+            cheating.callback();  //call any callbacks the map has for once it was done.
     }
 
 		$scope.$watch("mapdata", $scope.showMap);
@@ -81,34 +82,36 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
     if ($scope.mapdata == null){
           $scope.mapdata = null;
           $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates_s').success(function(data) {
+
               $scope.projects = data.response.docs;
               $scope.temp= [];
               $scope.projects.forEach(function(item) {
-              commonjs.getFundingStatus(item);
-                  if(item.coordinates_s ){
-                    item.coordinates_s = JSON.parse(item.coordinates_s);
-                        var geoJsonMapItem = {
-                          type: 'Feature',
-                          geometry:{coordinates:[item.coordinates_s.lng,item.coordinates_s.lat,], type:'Point'},
-                          properties:{
-                          funding_status: item.funding_status,
-                          id: item.identifier_s,
-                          'marker-color': '#6666ff',
-                          'marker-size': 'medium',
-                          thumbnail: item.thumbnail_s,
-                          title: item.title_s}
-                        };
-      
-                      if(item.funding_status) geoJsonMapItem['marker-color']='#000';
-                    //  $scope.mapdata.push(geoJsonMapItem);
-                        $scope.temp.push(geoJsonMapItem);
-      
-                }
+                commonjs.getFundingStatus(item);
+
+                    if(item.coordinates_s ){
+                      item.coordinates_s = JSON.parse(item.coordinates_s);
+
+                        if(item.coordinates_s.hasOwnProperty('lat') && item.coordinates_s.hasOwnProperty('lng')){
+                            var geoJsonMapItem = {
+                              type: 'Feature',
+                              geometry:{coordinates:[item.coordinates_s.lng,item.coordinates_s.lat,], type:'Point'},
+                              properties:{
+                              funding_status: item.funding_status,
+                              id: item.identifier_s,
+                              'marker-color': '#6666ff',
+                              'marker-size': 'medium',
+                              thumbnail: item.thumbnail_s,
+                              title: item.title_s}
+                            };
+                             if(item.funding_status) geoJsonMapItem['marker-color']='#000';
+                              $scope.temp.push(geoJsonMapItem);
+                        }
+                    }// if(item.coordinates_s ){
       
               });
          
-                    $scope.mapdata=$scope.temp; //activates watch
-                    delete  $scope.temp;
+               $scope.mapdata=$scope.temp; //activates watch
+ 
               }); //$http.get
     } 
 
