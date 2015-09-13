@@ -1,5 +1,5 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',], function(app) {
-	app.controller('DonorCtrl', function ($scope, $http) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',, '/app/js/services/filters/page.js'], function(app) {
+	app.controller('DonorCtrl',function ($scope, $http,realm) {
 	//	alert('here');
 	    /*
 		 $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/fundingmatches.aspx?callback=JSON_CALLBACK')
@@ -13,38 +13,68 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 			  });
 			  */
 		//		alert('here')
+		
+		$scope.setProjectYearRange = function(projectStartYear) {
+            $scope.projectYearRange=[];
+            var currentTime = new Date();
+            while(currentTime.getFullYear() >= projectStartYear){
+               $scope.projectYearRange.push(projectStartYear);
+               projectStartYear++;
+             }
+        };
+        $scope.setProjectYearRange(2008);	
+       
+		
 		$scope.matches = [];
-		$http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,createdDate_s,description_s').then(function(response) {
+		$http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=500&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,donationLifewebPrevFunded_ds,donationDate_ss,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,createdDate_s,description_s').then(function(response) {
 		    var projects = response.data.response.docs;
-		    $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:lifeweb%20AND%20(schema_s:lwDonor))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(response) {
+
+		    $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwDonor))&rows=500&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(response) {
 		        var donors = response.data.response.docs;
+
 		        $scope.matches = projects.reduce(function(prev, item) {
 		            if(!item.donor_ss)
 		                return prev;
 
 		            var matches = [];
 
-					for(var i=0; i <= item.donor_ss.length; ++i)
+					for(var i=0; i < item.donor_ss.length; ++i)
 					{
 
 						try{
 								var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
-
-//console.log(donor_name);
-								if(donor_name){
-									if(item.donatioFunding_ds[i]) //temp hiding 0 rows
-									matches.push({
-										name_s:donor_name.name_s,
-										country_ss:item.country_ss,
-				                    	donor : donor_name,
-										title_s: item.title_s,
-				                    	amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
-				                    	project: item,
-										year: item,
-										logoShow: donor_name.logo_s ? 1 : 0,
-
-				        });
-
+ 
+// if(item.donationLifewebPrevFunded_ds)
+ //console.log('item.donationLifewebPrevFunded_ds',item.donationLifewebPrevFunded_ds);
+// console.log('item.donationDate_ss',item.donationDate_ss);
+// console.log('item.donationDate_ss[i]',item.donationDate_ss[i]);
+// console.log('[i]',i);
+						if(donor_name){
+									if(item.donatioFunding_ds[i]){ //temp hiding 0 rows
+											
+											var match ={
+												name_s:donor_name.name_s,
+												country_ss:item.country_ss,
+												donor : donor_name,
+												title_s: item.title_s,
+												amount: item.donatioFunding_ds ? item.donatioFunding_ds[i] : 0,
+												project: item,
+												year: item,
+												logoShow: donor_name.logo_s ? 1 : 0,
+												createdDate_s: item.createdDate_s,	
+												donationDate_ss:item.donationDate_ss[i],	
+												//lifewebPrevFunded_ss:item.lifewebPrevFunded_ss[i],	
+											};
+//console.log('item',item);	
+//console.log('item.donationLifewebPrevFunded_ds[i]',item.donationLifewebPrevFunded_ds[i]);	
+					
+											if(item.donationLifewebPrevFunded_ds && item.donationLifewebPrevFunded_ds.hasOwnProperty(i))
+												match.lifewebPrevFunded_ss=item.donationLifewebPrevFunded_ds[i];
+											else
+												match.lifewebPrevFunded_ss=0;
+												
+											matches.push(match);
+									}
 						}
 						}catch(err){
 
@@ -52,7 +82,23 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 						};
 
 					}
-
+					
+		$scope.pageNumber = 0;
+		$scope.itemsPerPage = 5;
+		$scope.firstPage = function() {
+			$scope.pageNumber = 0;
+		};
+		$scope.decPage = function() {
+			if($scope.pageNumber > 0)
+				--$scope.pageNumber;
+		};
+		$scope.incPage = function() {
+			if(($scope.pageNumber+1) * $scope.itemsPerPage < $scope.matches.length)
+				++$scope.pageNumber;
+		};
+		$scope.lastPage = function() {
+			$scope.pageNumber = Math.floor($scope.matches.length/$scope.itemsPerPage);
+		};
 
 //>>>>>>> 1f3cd8c4dbc0027ac54964ce3dd4fc26c88f16d6
 		            return prev.concat(matches);
@@ -60,6 +106,13 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 //  console.log('matches: ', $scope.matches);
 		    });
 		});
+
+
+
+
+
+
+
 
 
         $scope.countries = [];

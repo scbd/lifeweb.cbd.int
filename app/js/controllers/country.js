@@ -25,9 +25,9 @@ define(['app', '/app/js/directives/leaflet-map-directive.js','/app/js/services/l
        
     leafletMapService.generateMap('((realm_ss:'+realm+')%20AND%20(schema_s:lwProject)%20AND%20(country_ss:'+sCountry+'))')
     .success(function(data) {
-     console.log(data)
+//     console.log(data)
        $scope.mapData = leafletMapService.processMap(data.response.docs);    
-      console.log($scope.mapData )  
+ //     console.log($scope.mapData )  
     });
 
     $http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/countries.aspx?callback=JSON_CALLBACK').success(function (data) {

@@ -898,7 +898,22 @@ define(['app'], function(app) {
             return matches;
 
         return matches.filter(function(item) {
-            return $filter('filterYear2')(item.project.createdDate_s) == year;
+            return $filter('filterYear2')(item.donationDate_ss) == year;
+        });
+      }
+  });
+  
+    //##################################################################
+  app.filter('filterPrevFunded', function ($filter) {
+      return function (matches, prevFunded) {
+          if (!matches)
+              return null;
+          if(prevFunded===undefined)
+            prevFunded=0;
+          //  return matches;
+
+        return matches.filter(function(item) {
+            return item.lifewebPrevFunded_ss == prevFunded;
         });
       }
   });
@@ -1167,28 +1182,28 @@ define(['app'], function(app) {
   app.filter('YearRange', function ($filter) {
       return function (funding) {
 
-          if (!funding)
-              return null;
+          // if (!funding)
+          //     return null;
 
-          var low = 2015;
-          var high = 2008;
+          // var low = 2015;
+          // var high = 2008;
 
-          for (var i = 0; i < funding.length; i++) {
-              var year = $filter('filterYear2')(funding[i].project.createdDate_s);
-              if (low > year)
-                  low = year;
-              if (high < year)
-                  high = year;
-          }
+          // for (var i = 0; i < funding.length; i++) {
+          //     var year = $filter('filterYear2')(funding[i].project.createdDate_s);
+          //     if (low > year)
+          //         low = year;
+          //     if (high < year)
+          //         high = year;
+          // }
 
 
 
-          if (low == high)
-               return low;
+          // if (low == high)
+          //      return low;
 
-          if (low > high) return "0";
+          // if (low > high) return "0";
 
-          return   low + " - " + high;
+          return   "2008 - " + new Date().getFullYear();
       }
   });
 
