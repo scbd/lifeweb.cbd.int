@@ -4,7 +4,7 @@ define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angula
 
 	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload', 'ngLocalizer', 'ui.bootstrap', 'ngKookies']);
 
-    app.value('realm', 'CHM-DEV');
+    app.value('realm', 'chm-dev');
 
 	app.config(function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider, $kookiesProvider) {
 		// Allow dynamic registration
