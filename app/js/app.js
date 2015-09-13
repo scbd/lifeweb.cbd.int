@@ -1,10 +1,10 @@
 'use strict';
 
-define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angular-file-upload', 'ng-localizer', 'underscore', 'angular-bootstrap',], function(Angular) {
+define(['angular', 'ui-utils', 'angular-form-controls', 'ng-tags-input', 'angular-file-upload', 'ng-localizer', 'underscore', 'angular-bootstrap'], function(Angular) {
 
 	var app = Angular.module('app', ['ngRoute', 'ngSanitize', 'ng-breadcrumbs', 'ui.unique', 'formControls', 'ngTagsInput', 'angularFileUpload', 'ngLocalizer', 'ui.bootstrap', 'ngKookies']);
-    //angular.module('formControls').value('realm', 'lifeweb');
-    app.value('realm', 'lifeweb');
+
+    app.value('realm', 'CHM-DEV');
 
 	app.config(function($controllerProvider, $compileProvider, $provide, $filterProvider, $httpProvider, $kookiesProvider) {
 		// Allow dynamic registration
