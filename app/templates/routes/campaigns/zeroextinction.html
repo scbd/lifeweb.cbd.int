@@ -52,9 +52,9 @@
                  <p><a class="btn btn-default" role="button" href="#item3">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
-             <div class="col-lg-3" ng-controller="ProjectsCtrl">
+             <div class="col-lg-3" ng-controller="zeroExtinctionCtrl">
                  <img class="img-circle" src="/app/images/campaigns/item4.gif" alt="Generic placeholder image" />
-                 <h3> <span class="label label-info">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction Campaign projects</h3>
+                 <h3> <span class="label label-info">{{(projects ).length}}</span> Zero Extinction Campaign projects</h3>
                  <p><a class="btn btn-default" role="button" href="#item4">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
@@ -149,72 +149,87 @@
          <a href="#projects_featurette" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
      </div>
      <div class="container marketing">
-         <div id="projects_featurette" class="row featurette" ng-controller="ProjectsCtrl">
-   
-
-             <div class="pull-right" style="padding-right: 10px;">Currency: <a ng-click="toggleCurrency()" style="cursor: pointer;">{{currency}}</a></div>
-
-             <h2 class="featurette-heading"> <span class="label label-info" id="zproject_count">{{(projects | filterTargets:'Target12').length}}</span> Zero Extinction projects </h2>
-             <hr />
-             <br>
-             <div ng-repeat="proj in projects | filterTargets:'Target12'" >
-                 <a class="anchor" id="proj{{$index}}"></a>
-                 <div class="well row">
-                     <div class="col-md-2">
-                         <a href="/project?id={{proj.id}}" class="pull-right">
-                             <img ng-show="proj.old_id" class="media-object img-thumbnail" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                             <img ng-hide="proj.old_id" class="media-object img-thumbnail" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" /></a>
-                     </div>
-                     <div class="col-md-8">
-                       <a href="/project?id={{proj.id}}">
-                         <h3 ng-bind-html="proj.title"></h3> <!-- TODO: fix XSS vulnerability -->
-                       </a>
-                       <p style="color: black; font-weight: bold; font-size: 14pt;" ng-bind-html="proj.country"></p>
-                       <hr />
-                       <h4 id="summary_heading">Summary</h4>
-                       <span ng-bind-html="proj.summary"></span>
-                       <hr />
-                       <div class="agraybackground row" style="padding-top:10px;">
-                         <funding-bar-chart status="proj.funding_status" total="proj.funding_needed" currency="proj.currency" display="currency" matches="proj.funding_matches" width="800"></funding-bar-chart>
-                         <!--<div class="col-md-4 agray"><h4>Funding needed</h4></div>
-                         <div class="col-md-4">
-                           <span ng-switch="proj.funding_status">
-                             <span ng-switch-when="not yet funded">not yet funded</span>
-                             <span ng-switch-when="funded">fully funded</span>
-                             <span ng-switch-default>partially funded</span>
-                           </span>
-                         </div>
-                         <div class="col-md-4 agray"><h4>Funding Status</h4></div>
-                         <div class="col-md-4">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</div>
-                         <div class="col-md-4 agray"><h4>Date submitted</h4></div>
-                         <div class="col-md-4">{{ proj.approved_on_date | filterDate  }}</div>
-                         -->
-                       </div>
-
-                       <hr />
-                       <h4 class="agray agraybackground" style="padding:6px;">How this project will address Aichi Target 12</h4>
-                       <span ng-bind-html="(proj.aichi_targets | filterGetTermComment:'Target12')"></span>
-                     </div>
-                     <div class="col-md-2">
-
-                         <ul class="pull-right" style="list-style-type:none;">
-
-                             <li ng-show="$index==1"><a href="#item4" class="btn btn-default "><i class="glyphicon glyphicon-chevron-up"></i></a>
-                                 <li ng-show="$index > 0 && $index!=1"><a href="#proj{{$index -1}}" class="btn btn-default "><i class="glyphicon glyphicon-chevron-up"></i></a>
-                             <li class="project-index"><span class="label label-default">{{$index+1}}</span><li>
-                             
-                             <li ng-hide="$last"><a href="#proj{{$index +1}}" class="btn btn-default"><i class="glyphicon glyphicon-chevron-down"></i></a>
-                                </ul>
-                     </div>
-                 </div>
-                 <div>
-                     <div class="col-md-2"></div>
-                     <div class="col-md-10" ></div>
-                  </div>
-
-         </div><!-- /.row -->
-     </div><!-- /.container-->
-
+     
+<div id="projects_featurette" class="row featurette" ng-controller="zeroExtinctionCtrl">
+                            <div class="well row">
+                                <h2 class="featurette-heading text-nowrap" style="white-space: nowrap;"> <span class="label label-info" id="zproject_count" >{{(projects ).length}}</span> Zero extinction Projects </h2>
+                        
+                                <div class="pull-right" style="padding-right: 10px;">Currency: {{currency}}</div>
+                                <br>
+                        
+                        
+                            </div>
+                        
+                            <div class="row well">
+                                <table class="table table-striped  table-hover">
+                                    <tr>
+                                        <th></th>
+                                        <th><span style="cursor:pointer;" ng-click="sortTable('title_s')">Title
+                                                            <i ng-show="sortTerm=='title_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('country_ss')">Country
+                                                            <i ng-show="sortTerm=='country_ss'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost
+                                                            <i ng-show="sortTerm=='totalCost'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
+                                                            <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date
+                                                            <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
+                                                            <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th ng-if="user.roles.indexOf('LifewebAdmin') != -1">
+                                            Admin
+                                        </th>
+                                    </tr>
+                                    <tr ng:class="{'funded':'error', false:''}[match.status]" ng-repeat="match in (projectsPage =(projects  | orderBy:sortTerm:orderList)| page: pageNumber:itemsPerPage)">
+                                        <td style="width: 70px;">
+                                            <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}"
+                                                alt="" /></a>
+                                        </td>
+                                        <td style="font-weight:bold;"> <a ng-href="/project?id={{match.identifier_s}}"><span class="media-heading">{{match.title_s}}</span></a></td>
+                                        <td><span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}} <br></span></td>
+                                        <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
+                                        <td nowrap> {{match.funding_needed | filterCurrency:'USD':currency}} </td>
+                                        <td nowrap style="font-weight:bold; text-transform:uppercase;">{{ match.startDate_s | filterDate }}</td>
+                                        <td>
+                                            <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[match.funding_status]">
+                                                            <span ng-switch="match.funding_status">
+                                                                <span ng-switch-when="not yet funded">not yet funded</span>
+                                            <span ng-switch-when="funded">fully funded</span>
+                                            <span ng-switch-default>partially&nbsp;funded</span>
+                                            </span>
+                                            </span>
+                                            <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
+                                                <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
+                                            </div>
+                                        </td>
+                                        <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
+                                            <a ng-href="/admin/projects/edit/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" nowrap>
+                                            <button type="button" ng-click="firstPage()" class="btn btn-default">First</button>&nbsp;
+                                            <button type="button" ng-click="decPage()" class="btn btn-default">Prev {{itemsPerPage}} Projects</button>
+                                        </td>
+                                        <td colspan="2">&nbsp;</td>
+                                        <td colspan="2">&nbsp;</td>
+                                        <td colspan="2" nowrap>
+                                            <button type="button" ng-click="incPage()" class="btn btn-default">Next {{itemsPerPage}} Projects</button>&nbsp;
+                                            <button type="button" ng-click="lastPage()" class="btn btn-default">Last</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                        
+                        
+                            </div>
+                        
+                        
+                        </div>
 
 
 

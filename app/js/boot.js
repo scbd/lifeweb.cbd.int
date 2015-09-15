@@ -27,7 +27,8 @@ require.config({
         'ui-utils'        : '../libs/angular-ui-utils/ui-utils',
         'stellar'         : '../libs/jquery.stellar/jquery.stellar',
         'kookies'         : '../libs/ngkookies/ngKookies',
-        'angular-cookies'       : '../libs/angular-cookies/angular-cookies',   //cause ngLocalizer needs it... requireJS sucks
+        'angular-cookies' : '../libs/angular-cookies/angular-cookies',   //cause ngLocalizer needs it... requireJS sucks
+   
     },
     shim: {
         'angular'        : { 'deps': ['jquery'], 'exports': 'angular' },

@@ -60,12 +60,14 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
 
       //IStorage.documents.query(query).then(function(data) {
       //fields used: budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss
-      $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates').success(function(data) {
+      $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject)%20AND%20(expired_b:0))&rows=155&sort=startDate_s+desc,+title_t+asc&start=0&wt=json&fl=expired_b,startDate_s,budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates').success(function(data) {
       //TODO: for grabbing focal points:
       //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
-//console.log('data: ', data);
+
           $scope.projects = data.response.docs;
+          
           $scope.projects.forEach(function(item) {
+         
             commonjs.getFundingStatus(item);
             if(item.country_ss){
                item.countries=[];
@@ -135,7 +137,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       }
 
       $scope.orderList = true;
-      $scope.sortTerm = 'createdDate_s';
+      $scope.sortTerm = 'startDate_s';
 
       //==================================
       $scope.sortTable = function (term) {

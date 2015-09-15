@@ -16,8 +16,8 @@
              </select>
              <select class="form-control" ng-model="search.lifewebPrevFunded" style="width: 180px;">
                       <option value="" selected>LifeWeb Match</option>
-                        <option  value="1" >Yes</option>
-                        <option  value="0" >No</option>
+                        <option  value="0" >Yes</option> <!-- logic reversed here.  In db it is isFundedPrior to life web but the UI reads better this wat -->
+                        <option  value="1" >No</option>
              </select>
           </form>
         </div>

@@ -53,7 +53,7 @@ define(['app', 'authentication', '/app/js/services/filters2.js', 'URI',], functi
 
       //==================================
       $scope.toggleCurrency = function () {
-
+console.log('projects',$scope.projects);
           if ($scope.currency == "EURO")
               $scope.currency = "USD";
           else

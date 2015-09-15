@@ -31,7 +31,7 @@
                       <option value="some secured funding">some secured funding</option>
                     </select>
                   </li>
-                  <li>
+         <!--         <li>
                     <select class="form-control" ng-model="search.benefits" style="width: 100%; margin-top: 5px;">
                       <option value="" selected>Ecosystem Benefits</option>
                       <option value="ecoservices1">Climate Change Mitigation</option>
@@ -43,7 +43,7 @@
                       <option value="ecoservices7">Income Generation</option>
                     </select>
 
-                  </li>
+                  </li>-->
                   <li>
                     <select class="form-control" ng-model="search.year_submitted" style="width: 100%; margin-top: 5px;">
                       <option value="" selected>Year Submitted</option>
@@ -57,6 +57,15 @@
                         <option value="500000">$0.5M to $2.5M USD</option>
                         <option value="2500000">$2.5M to $10M USD</option>
                         <option value="10000000">more than $10M USD</option>
+                    </select>
+  
+                    </li>
+                                     <li>
+                    <select class="form-control" ng-model="search.expired" style="width: 100%; margin-top: 5px;">
+                        <option value=""  selected>Expired Projects</option>
+                        <option value="1">Expired</option>
+                        <option value="0">Valid</option>
+
                     </select>
                     <a class="btn btn-info" href="/explore/">clear search</a>
                     </li>
@@ -128,8 +137,8 @@
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
                                     <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('createdDate_s')">Date
-                                    <i ng-show="sortTerm=='createdDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                <th><span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date
+                                    <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
                                     <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
@@ -138,7 +147,7 @@
                                     Admin
                                 </th>
                             </tr>
-                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets | orderBy:sortTerm:orderList) | page: pageNumber:itemsPerPage)">
+                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets |filterExpired:search.expired | orderBy:sortTerm:orderList) | page: pageNumber:itemsPerPage)">
                                 <td style="width: 70px;">
                                     <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" /></a>
                                 </td>
@@ -146,7 +155,7 @@
                                 <td><span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}} <br></span></td>
                                 <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
                                 <td nowrap>  {{match.funding_needed | filterCurrency:'USD':currency}} </td>
-                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.createdDate_s | filterDate  }}</td>
+                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.startDate_s | filterDate  }}</td>
                                 <td >
                                     <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[match.funding_status]">
                             <span ng-switch="match.funding_status">

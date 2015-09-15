@@ -291,7 +291,20 @@ define(['app'], function(app) {
             return matches;
 
         return matches.filter(function(item) {
-            return $filter('filterYear2')(item.createdDate_s) == year;
+            return $filter('filterYear2')(item.startDate_s) == year;
+        });
+      }
+  });
+  //##################################################################
+  app.filter('filterExpired', function ($filter) {
+    return function (matches, status) {
+          if (!matches)
+              return null;
+          if(!status)
+            return matches;
+
+        return matches.filter(function(item) {
+            return item.expired_b == status;
         });
       }
   });

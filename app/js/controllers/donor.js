@@ -21,7 +21,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'editForm
 
     $http.get('/api/v2013/index/select?cb=1418322176016&q=((realm_ss:lifeweb)%20AND%20(schema_s:lwProject)%20AND%20(donor_ss:'+sID+'))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(data) {
         $scope.matches = data.data.response.docs;
-        console.log('match data: ', $scope.matches);
+ console.log('match data: ', $scope.matches);
     });
 
     $scope.count = function(o) { var c=0;for(var k in o)++c;return c;};

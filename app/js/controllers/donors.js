@@ -27,12 +27,46 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 		
 		$scope.matches = [];
 		$http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=500&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,donationLifewebPrevFunded_ds,donationDate_ss,title_s,country_ss,createdDate_dt,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,createdDate_s,description_s').then(function(response) {
-		    var projects = response.data.response.docs;
+		    $scope.projects = response.data.response.docs;
 
+                if(!$scope.projects)
+                    $scope.projects = [];
+                for(var i=0; i!=$scope.projects.length; ++i) {
+                    if(!$scope.projects[i].totalCost) {
+                        $scope.projects[i].totalCost = 0;
+                        var budget = $scope.projects[i].budgetCost_ds || [];
+                        for(var k=0; k!=budget.length; ++k)
+                            $scope.projects[i].totalCost += budget[k];
+                    }
+                    $scope.projects[i].totalFunding = $scope.projects[i].totalFunding || 0;
+                    if(!$scope.projects[i].totalFunding)
+                        if($scope.projects[i].donatioFunding_ds)
+                            for(var k=0; k!=$scope.projects[i].donatioFunding_ds.length; ++k)
+                                $scope.projects[i].totalFunding += $scope.projects[i].donatioFunding_ds[k];
+
+                    $scope.projects[i].funding_needed = $scope.projects[i].totalCost - $scope.projects[i].totalFunding;
+//console.log('FUNDING NEEDED: ', $scope.projects[i].totalCost, $scope.projects[i].totalFunding, $scope.projects[i].funding_needed);
+
+                    if($scope.projects[i].funding_needed < 1)
+                        $scope.projects[i].is_funded = '1';
+                    else if($scope.projects[i].totalFunding < 1)
+                        $scope.projects[i].is_funded = '0';
+                }
+
+              $scope.sortTable = function (term) {
+                  if ($scope.sortTerm == term) {
+                      $scope.orderList = !$scope.orderList;
+                  }
+                  else {
+                      $scope.sortTerm = term;
+                      $scope.orderList = true;
+                  }
+              }
+			  
 		    $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwDonor))&rows=500&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(response) {
 		        var donors = response.data.response.docs;
 
-		        $scope.matches = projects.reduce(function(prev, item) {
+		        $scope.matches = $scope.projects.reduce(function(prev, item) {
 		            if(!item.donor_ss)
 		                return prev;
 
@@ -45,7 +79,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 								var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
  
 // if(item.donationLifewebPrevFunded_ds)
- //console.log('item.donationLifewebPrevFunded_ds',item.donationLifewebPrevFunded_ds);
+//console.log('item',item.donationLifewebPrevFunded_ds);
 // console.log('item.donationDate_ss',item.donationDate_ss);
 // console.log('item.donationDate_ss[i]',item.donationDate_ss[i]);
 // console.log('[i]',i);
@@ -62,10 +96,11 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 												year: item,
 												logoShow: donor_name.logo_s ? 1 : 0,
 												createdDate_s: item.createdDate_s,	
-												donationDate_ss:item.donationDate_ss[i],	
+												donationDate_ss:item.donationDate_ss[i],
+												is_funded:item.is_funded	
 												//lifewebPrevFunded_ss:item.lifewebPrevFunded_ss[i],	
 											};
-//console.log('item',item);	
+console.log('match',match);	
 //console.log('item.donationLifewebPrevFunded_ds[i]',item.donationLifewebPrevFunded_ds[i]);	
 					
 											if(item.donationLifewebPrevFunded_ds && item.donationLifewebPrevFunded_ds.hasOwnProperty(i))

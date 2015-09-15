@@ -115,11 +115,90 @@
 <div class="stellar-container" style="background-image: url(/app/images/campaigns/islandresilience/spinylobster.jpg); background-size: auto 2500px;" data-stellar-vertical-offset="-3700" data-stellar-background-ratio="0.5">
     <div class="container marketing">
         <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading"><span>Island Resilience Campaign Projects</span></h2>
-                <div class="lead">
-                </div>
-            </div> <!-- .col-md-7 -->
+            <div class="col-md-12">
+             
+                
+                        <div id="projects_featurette" class="row featurette" ng-controller="islandResCtrl">
+                            <div class="well row">
+                                <h2 class="featurette-heading text-nowrap" style="white-space: nowrap;"> <span class="label label-info" id="zproject_count" >{{(projects ).length}}</span> Island Resiliance Projects </h2>
+                        
+                                <div class="pull-right" style="padding-right: 10px;">Currency: {{currency}}</div>
+                                <br>
+                        
+                        
+                            </div>
+                        
+                            <div class="row well">
+                                <table class="table table-striped  table-hover">
+                                    <tr>
+                                        <th></th>
+                                        <th><span style="cursor:pointer;" ng-click="sortTable('title_s')">Title
+                                                            <i ng-show="sortTerm=='title_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('country_ss')">Country
+                                                            <i ng-show="sortTerm=='country_ss'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost
+                                                            <i ng-show="sortTerm=='totalCost'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
+                                                            <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date
+                                                            <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
+                                                            <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                                            </span></th>
+                                        <th ng-if="user.roles.indexOf('LifewebAdmin') != -1">
+                                            Admin
+                                        </th>
+                                    </tr>
+                                    <tr ng:class="{'funded':'error', false:''}[match.status]" ng-repeat="match in (projectsPage =(projects  | orderBy:sortTerm:orderList)| page: pageNumber:itemsPerPage)">
+                                        <td style="width: 70px;">
+                                            <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}"
+                                                alt="" /></a>
+                                        </td>
+                                        <td style="font-weight:bold;"> <a ng-href="/project?id={{match.identifier_s}}"><span class="media-heading">{{match.title_s}}</span></a></td>
+                                        <td><span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}} <br></span></td>
+                                        <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
+                                        <td nowrap> {{match.funding_needed | filterCurrency:'USD':currency}} </td>
+                                        <td nowrap style="font-weight:bold; text-transform:uppercase;">{{ match.startDate_s | filterDate }}</td>
+                                        <td>
+                                            <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[match.funding_status]">
+                                                            <span ng-switch="match.funding_status">
+                                                                <span ng-switch-when="not yet funded">not yet funded</span>
+                                            <span ng-switch-when="funded">fully funded</span>
+                                            <span ng-switch-default>partially&nbsp;funded</span>
+                                            </span>
+                                            </span>
+                                            <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
+                                                <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
+                                            </div>
+                                        </td>
+                                        <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
+                                            <a ng-href="/admin/projects/edit/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" nowrap>
+                                            <button type="button" ng-click="firstPage()" class="btn btn-default">First</button>&nbsp;
+                                            <button type="button" ng-click="decPage()" class="btn btn-default">Prev {{itemsPerPage}} Projects</button>
+                                        </td>
+                                        <td colspan="2">&nbsp;</td>
+                                        <td colspan="2">&nbsp;</td>
+                                        <td colspan="2" nowrap>
+                                            <button type="button" ng-click="incPage()" class="btn btn-default">Next {{itemsPerPage}} Projects</button>&nbsp;
+                                            <button type="button" ng-click="lastPage()" class="btn btn-default">Last</button>
+                                        </td>
+                                    </tr>
+                                </table>
+                        
+                        
+                            </div>
+                        
+                        
+                        </div>
+            </div> <!-- .col-md-12 -->
         </div> <!-- .row -->
     </div> <!-- .container -->
 </div>

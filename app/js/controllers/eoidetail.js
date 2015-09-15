@@ -86,7 +86,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                     $scope.eoi.protectedAreas[i].url = split[split.length-1];
                   }
               addFundingProperties($scope.eoi);
-
+console.log('eoi',$scope.eoi);
               var sCountry = data.countries[0].identifier;
               $http.jsonp('https://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
                .success(function (data) {

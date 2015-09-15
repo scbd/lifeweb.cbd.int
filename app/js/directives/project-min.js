@@ -76,8 +76,8 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
   .directive('getprojects', function() {
     return {
         controller: function($http, $scope,realm) {
-            $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=25&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(projects) {
-  //                  console.log('projects: ', projects.data.response.docs);
+            $http.get('https://api.cbd.int/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject)%20AND%20(featured_d:[* TO *]))&rows=25&sort=featured_d+desc,+title_t+asc&start=0&wt=json').then(function(projects) {
+//console.log('featured projects: ', projects.data.response.docs);
                 $scope.projects = projects.data.response.docs.slice(0,6);
 
 
