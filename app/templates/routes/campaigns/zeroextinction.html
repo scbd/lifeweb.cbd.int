@@ -54,7 +54,7 @@
              <!-- /.col-lg-3 -->
              <div class="col-lg-3" ng-controller="zeroExtinctionCtrl">
                  <img class="img-circle" src="/app/images/campaigns/item4.gif" alt="Generic placeholder image" />
-                 <h3> <span class="label label-info">{{(projects ).length}}</span> Zero Extinction Campaign projects</h3>
+                 <h3> <span class="label label-info"></span> Zero Extinction Campaign projects</h3>
                  <p><a class="btn btn-default" role="button" href="#item4">View details &raquo;</a></p>
              </div>
              <!-- /.col-lg-3 -->
@@ -208,7 +208,7 @@
                                             </div>
                                         </td>
                                         <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
-                                            <a ng-href="/admin/projects/edit/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
+                                            <a ng-href="https://dev-chm.cbd.int/submit/lwProject/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
                                         </td>
                                     </tr>
                                     <tr>

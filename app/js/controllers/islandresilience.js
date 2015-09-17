@@ -4,7 +4,15 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
   //console.log('user:S', $rootScope.user);
       var query = '(type eq \'lwProject\')';
 
-
+      $scope.getNumProjects = function (){
+ console.log('numprojectsccccccccccccccccccccccccccc',data.response.docs.length);  
+            $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject)%20AND%20(expired_b:0)%20AND%20(campaigns_ss:islandresilience))&rows=155&sort=startDate_s+desc,+title_t+asc&start=0&wt=json&fl=startDate_s,budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates').success(function(data) {
+     console.log('numprojectsccccccccccccccccccccccccccc',data.response.docs.length);
+                return data.response.docs.length;
+  
+          });
+        
+      };
 
    
    
@@ -37,7 +45,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
         
       //fields used: budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss
       $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject)%20AND%20(expired_b:0)%20AND%20(campaigns_ss:islandresilience))&rows=155&sort=startDate_s+desc,+title_t+asc&start=0&wt=json&fl=startDate_s,budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates').success(function(data) {
-console.log(data.response.docs);
+
 
                   
          $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(cData) {
