@@ -396,7 +396,7 @@ Edit Project  <a ng-if="user.isAuthenticated" href="https://dev-chm.cbd.int/subm
 <div ng-show="eoi.attachments.length > 0">
     <h4>Attached Documents</h4>
     <div ng-repeat="doc in eoi.attachments">
-        <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="{{doc.url}}" target="_blank">{{doc.title}}</a> - <p>{{doc.description}}</p><br />
+        <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="{{doc.url}}" target="_blank">{{doc.name || doc.title || doc.url}}</a> - <p>{{doc.description}}</p><br />
     </div>
 </div>
 
