@@ -11,7 +11,7 @@
                     <a style="font-size: 14px; color: #999; text-transform: uppercase;">
 
                       Search
-                      <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets ).length}}</span>
+                      <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets | filterExpired:search.expired).length}}</span>
                     </a>
                   </li>
                   <li>
@@ -58,13 +58,14 @@
                         <option value="2500000">$2.5M to $10M USD</option>
                         <option value="10000000">more than $10M USD</option>
                     </select>
-  
+
                     </li>
                                      <li>
                     <select class="form-control" ng-model="search.expired" style="width: 100%; margin-top: 5px;">
-                        <option value=""  selected>Expired Projects</option>
-                        <option value="1">Expired</option>
-                        <option value="0">Valid</option>
+                        <option value="" selected>Active Projects</option>
+
+                        <option value="1">Expired Projects</option>
+                        <option value="2" >All Projects</option>
 
                     </select>
                     <a class="btn btn-info" href="/explore/">clear search</a>
