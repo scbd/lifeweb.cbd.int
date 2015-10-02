@@ -3,17 +3,17 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 //TODO: rename this shittily named controller
   app.controller('EOIDetailCtrl', function ($scope, $http, $q, $modal, editFormUtility, $anchorScroll, location) {
 
-        $scope.currency = "USD";
+        $scope.currency = 'USD';
 //console.log($scope);
 //console.log('scope',$scope);
 
             //==================================
         $scope.toggleCurrency = function () {
 
-            if ($scope.currency == "EURO")
-                $scope.currency = "USD";
+            if ($scope.currency == 'EURO')
+                $scope.currency = 'USD';
             else
-                $scope.currency = "EURO";
+                $scope.currency = 'EURO';
         }
 
         $scope.goto = function(hash) {
@@ -23,23 +23,18 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                 document.querySelector('#sidebar .active').classList.remove('active');
             document.querySelector('#sidebar .' + hash).classList.add('active');
         };
-//alert("here");
-//
+
         $scope.countries = [];
         var countriesPromise = $http.get('/api/v2013/thesaurus/domains/countries/terms', { cache: true }).then(function(data) {
             $scope.countries = data.data;
-//nationalAlignment('countries: ', $scope.countries);
             $http.get('/api/v2013/thesaurus/domains/regions/terms', {cache: true}).then(function(data) {
                 $scope.countries = $scope.countries.concat(data.data);
-
                 return data;
             });
             return data; //good practice. always return from a promise, the same data.
         });
-        //TODO: I can't use a promise here... i dunno... maybe if i return it as a ng-resource or something, angular well respect it?
-        //TODO: should be a filter!
+
         $scope.fullCountryName = function(shortCountryName) {
-//  console.log('country short: ', shortCountryName);
             for(var i=0; i!=$scope.countries.length; ++i)
                 if($scope.countries[i].identifier == shortCountryName)
                     return $scope.countries[i].name;
@@ -62,7 +57,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
     //==================================
             $scope.removespaces = function (url) {
-                return url.replace(/ /g, "%20")
+                return url.replace(/ /g, '%20')
             }
 
 
@@ -72,13 +67,12 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
         if(sID) {
             editFormUtility.load(sID).then(function(data) {
-//console.log('the single project: ', data);
+
               $scope.eoi = data;
 
                 fillInDonorData();
                 getFocalPoints();
 
-              //fix protected planet links if necessary
               if($scope.eoi.protectedAreas)
                   for(var i=0; i!=$scope.eoi.protectedAreas.length; ++i) {
                     var pa = $scope.eoi.protectedAreas[i].url;
@@ -86,15 +80,15 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                     $scope.eoi.protectedAreas[i].url = split[split.length-1];
                   }
               addFundingProperties($scope.eoi);
-console.log('eoi',$scope.eoi);
+
               var sCountry = data.countries[0].identifier;
               $http.jsonp('https://nominatim.openstreetmap.org/search/'+sCountry+'?format=json&json_callback=JSON_CALLBACK')
                .success(function (data) {
- // console.log(sCountry);                 
                   $scope.geolocation = {
                     lat: $scope.eoi.coordinates.lat,
                     lon: $scope.eoi.coordinates.lng,
                   };
+
                   $scope.bounds = [
                     [data[0].boundingbox[0], data[0].boundingbox[2]],
                     [data[0].boundingbox[1], data[0].boundingbox[3]],
@@ -139,7 +133,7 @@ console.log('eoi',$scope.eoi);
 //  console.log('focal points? ', data.response.docs);
             $scope.focalPoints = data.response.docs;
         });
-    };
+    }
 
     function addFundingProperties(project) {
         var donations = project.donations || [];
@@ -151,7 +145,7 @@ console.log('eoi',$scope.eoi);
         }, 0);
 
         var budget = project.budget || [];
-//console.log('budget: ', budget);
+
         if(budget.length <= 0 && donations.length > 0)
             project.total_cost = total_funding;
         else
@@ -163,8 +157,6 @@ console.log('eoi',$scope.eoi);
             }, 0);
 
         project.funding_needed = project.total_cost - total_funding;
-//console.log('funding needed: ', project.funding_needed);
-
         //check whether any are lifeweb_facilitated:
         var all = true;
         var one = false;
@@ -185,7 +177,7 @@ console.log('eoi',$scope.eoi);
 //console.log('funding status: ', project.funding_status);
 
         project.currency = 'USD';
-    };
+    }
   });
 
     //TODO: duplicated in eoidetails2.js
@@ -205,5 +197,4 @@ console.log('eoi',$scope.eoi);
             return $location;
         }
     ]);
-
 });
