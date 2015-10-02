@@ -12,13 +12,12 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
       'project': 'lwProject',
       'event': 'lwEvent',
       'campaign': 'lwCampaign',
-      //'organization': 'lwOrganization', //TODO: it apaprently already exists?
     };
     $scope.breadcrumbs = breadcrumbs;
     var collectionKey = $route.current.collectionKey;
     //unpluralize the collection name for the object name
     //TODO: make the url work by name, rather than id... for now it's infeasible because I can't get seem to set the title in the mass query.
-    var singularKey = collectionKey.substr(0,collectionKey.length-1)
+    var singularKey = collectionKey.substr(0,collectionKey.length-1);
     var schemaName = keySchemaMap[singularKey]; //TODO: still needed?
     $scope.document = {};
   //  console.log('title: ', $routeParams.title);
@@ -54,12 +53,12 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
     //$scope.editProjectForm.addActivity.$setValidity("size", $scope.budget.length >= 1);
 
     //TODO: is this used anywhere anymore?
-    $scope.$on("documentInvalid", function(){
-      $scope.tab = "review";
+    $scope.$on('documentInvalid', function(){
+      $scope.tab = 'review';
     });
 
-    $scope.$watch("tab", function(tab) {
-      if(tab == "review")
+    $scope.$watch('tab', function(tab) {
+      if(tab == 'review')
         validate();
     });
 
@@ -151,11 +150,7 @@ define(['app', 'angular-form-controls', 'editFormUtility', '/app/js/directives/w
 //            console.log('Response: ', response);
         });
       });
-        /*
-        .error(function(response, status, headers, config) {
-          console.log('*ERROR* Response (code '+status+'): ', response);
-        });
-        */
+
     };
   });
 });
