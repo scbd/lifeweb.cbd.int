@@ -301,7 +301,11 @@ define(['app'], function(app) {
           if (!matches)
               return null;
           if(!status)
-            return matches;
+              status=0;
+          if(status==2)
+              return matches;
+
+
 
         return matches.filter(function(item) {
             return item.expired_b == status;
@@ -915,7 +919,7 @@ define(['app'], function(app) {
         });
       }
   });
-  
+
     //##################################################################
   app.filter('filterPrevFunded', function ($filter) {
       return function (matches, prevFunded) {
@@ -1450,7 +1454,7 @@ define(['app'], function(app) {
 
             }
 
-    
+
             return result;
         }
     });
