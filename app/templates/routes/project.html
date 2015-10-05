@@ -45,7 +45,7 @@
 <!--==============================================================================-->
 <section id="sum" style="margin:15px 0 0 0;" >
 
-Edit Project  <a ng-if="user.isAuthenticated" href="https://dev-chm.cbd.int/submit/lwProject/{{eoiID}}" target="_blank">'{{eoi.title}}'</a>
+<span ng-if="user.isAuthenticated">Edit Project:  <a ng-if="user.isAuthenticated" href="https://chm.cbd.int/submit/lwProject/{{eoiID}}" target="_blank">'{{eoi.title}}'</a> </span>
 <!-- AddThis (Social Media controls) Button BEGIN 
 <div style="width: 100%;">
     
