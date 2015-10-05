@@ -46,9 +46,9 @@
 <section id="sum" style="margin:15px 0 0 0;" >
 
 <span ng-if="user.isAuthenticated">Edit Project:  <a ng-if="user.isAuthenticated" href="https://chm.cbd.int/submit/lwProject/{{eoiID}}" target="_blank">'{{eoi.title}}'</a> </span>
-<!-- AddThis (Social Media controls) Button BEGIN 
+<!-- AddThis (Social Media controls) Button BEGIN
 <div style="width: 100%;">
-    
+
     <div class="addthis_toolbox addthis_default_style pull-right" style="width:140px;">
         <a class="addthis_button_preferred_1"></a>
         <a class="addthis_button_preferred_2"></a>
@@ -130,6 +130,7 @@
 </section>
 
 
+
 <!--==============================================================================-->
 <section id="desc" ng-show="eoi.description" >
 <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project Description</h2>
@@ -190,7 +191,7 @@
     </div>
 
 <div ng-show="eoi.donations.length">
-   
+
     <table class="table table-striped" >
         <thead>
             <tr>
@@ -402,32 +403,29 @@
 
 <div class="container-fluid" ng-show="eoi.images.length > 0">
     <h4>Maps and Images</h4>
-    <div class="row">
       <div class="row" ng-repeat="img in (imgAr = eoi.images.concat(eoi.maps))  track by $index" ng-if="$index % 3 == 0" >
         <div class="col-md-4">
             <a href="{{imgAr[$index].url}}" target="_blank" class="thumbnail">
                 <img class="img-responsive img-thumbnail"  style="width: 200px" src="{{imgAr[$index].url | thumbnail}}" class="img-rounded" /></a>
             <p class="caption">{{imgAr[$index].title}}</p>
             <p ng-show="img.description">{{imgAr[$index].description}}</p>
- 
+
         </div>
-        <div class="col-md-4">
-            <a href="{{imgAr[$index+1].url}}" target="_blank" class="thumbnail">
+        <div class="col-md-4" ng-show="imgAr[$index+1]">
+            <a href="{{imgAr[$index+1].url}}" target="_blank" class="thumbnail" >
                 <img class="img-responsive img-thumbnail"  style="width: 200px" src="{{imgAr[$index+1].url | thumbnail}}" class="img-rounded" /></a>
             <p class="caption">{{imgAr[$index+1].title}}</p>
             <p ng-show="img.description">{{imgAr[$index+1].description}}</p>
-        
+
         </div>
-        <div class="col-md-4">
-            <a href="{{imgAr[$index+2].url}}" target="_blank" class="thumbnail">
+        <div class="col-md-4" ng-show="imgAr[$index+2]">
+            <a href="{{imgAr[$index+2].url}}" target="_blank" class="thumbnail" >
                 <img class="img-responsive img-thumbnail"  style="width: 200px" src="{{imgAr[$index+2].url | thumbnail}}" class="img-rounded" /></a>
             <p class="caption">{{imgAr[$index+2].title}}</p>
             <p ng-show="img.description">{{imgAr[$index+2].description}}</p>
-      
+
         </div>
       </div>
- 
-    </div>
 </div>
 
 <div ng-show="eoi.protectedAreas.length > 0">
