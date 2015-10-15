@@ -1,4 +1,4 @@
-define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI',, '/app/js/services/filters/page.js'], function(app) {
+define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/page', 'URI','/app/js/services/filters/page.js'], function(app) {
 	app.controller('DonorCtrl',function ($scope, $http,realm) {
 	//	alert('here');
 	    /*
