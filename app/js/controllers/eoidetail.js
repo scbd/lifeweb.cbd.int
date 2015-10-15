@@ -14,7 +14,7 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                 $scope.currency = 'USD';
             else
                 $scope.currency = 'EURO';
-        }
+        };
 
         $scope.goto = function(hash) {
             location.skipReload().hash(hash);
@@ -57,8 +57,8 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
 
     //==================================
             $scope.removespaces = function (url) {
-                return url.replace(/ /g, '%20')
-            }
+                return url.replace(/ /g, '%20');
+            };
 
 
         var sID = new URI().query(true).id;
