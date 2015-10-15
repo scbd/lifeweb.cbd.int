@@ -3,12 +3,12 @@
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
     <div class="container" data-ng-controller="DonorCtrl">
-       
+
        <!-- Docs nav
     ================================================== -->
     <div class="row"  >
     <!--
-      <div class="span3 bs-docs-sidebar" >    
+      <div class="span3 bs-docs-sidebar" >
         <ul class="nav nav-list bs-docs-sidenav ">
           <li><a style="font-size:14px;color:#999;text-transform:uppercase;">LifeWeb Donor</a></li>
           <li><a href="#info"><i class="icon-chevron-right"></i>Donor Information</a></li>
@@ -16,11 +16,11 @@
         </ul>
       </div>
       -->
-      
+
       <div class="span9" >
           <section  id="info" >
              <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">
-                 <img ng-show="donor.logo" src="{{donor.logo.url}}" alt="{{donor.header.identifier}}" />
+                 <img ng-show="donor.logo" src="{{donor.logo.url}}" alt="{{donor.header.identifier}}" style="max-width: 200px; max-hieght: 100px;"/>
                  {{donor.name}}</h2>
                  <p ng-bind-html="donor.description" ></p>
                  <p>{{fullCountryName(donor.country.identifier)}}</p>
@@ -40,7 +40,7 @@
               <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Funded LifeWeb Projects</h2>
                 <projecttable projects="matches"></projecttable>
           </section>
-      
+
 </div><!-- end span 9-->
 </div><!-- end row-->
 </div><!-- end container -->
