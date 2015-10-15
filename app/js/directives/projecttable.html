@@ -39,13 +39,12 @@
                                 <span ng-switch-default>partially funded</span>
                             </span>
                         </span>
-                                    <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
+                                    <div ng-repeat="funds in match.donatioFunding_ds track by $index" style="white-space:nowrap;padding-top:5px;">
                                             <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
                                     </div>
                                 </td>
-                                <td>
-                                    <a ng-href="/admin/projects/edit/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
+                                <td ng-if="user.isAuthenticated">
+                                    <a ng-href="https://chm.cbd.int/submit/lwProject/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
                                 </td>
                             </tr>
                         </table>
-
