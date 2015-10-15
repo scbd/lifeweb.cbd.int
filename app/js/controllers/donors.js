@@ -76,13 +76,8 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 					{
 
 						try{
-								var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });
+												var donor_name = donors.find(function(donorItem) { return donorItem.identifier_s == item.donor_ss[i]; });//jshint ignore:line
  
-// if(item.donationLifewebPrevFunded_ds)
-//console.log('item',item.donationLifewebPrevFunded_ds);
-// console.log('item.donationDate_ss',item.donationDate_ss);
-// console.log('item.donationDate_ss[i]',item.donationDate_ss[i]);
-// console.log('[i]',i);
 						if(donor_name){
 									if(item.donatioFunding_ds[i]){ //temp hiding 0 rows
 											
