@@ -1,5 +1,4 @@
- 
- 
+
 <div>
 <div style="background-color:#efefef; padding:10px; border-bottom: #dedede solid 1px; margin-bottom: 10px;">
             <table style="height:220px;margin:0;padding:0;" >
@@ -17,16 +16,16 @@
                         </a>
                     </td>
                     <td>
-                        
-                        <a href="/project?id={{proj.identifier_s}}" class="proj_title" >
+
+<a href="/project?id={{proj.identifier_s}}" class="proj_title" >
                             {{proj.title_s}}
                         </a>
                         <br/>
                         <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-important', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[proj.funding_status]">
                             <span ng-switch="proj.funding_status">
-                                <span ng-switch-when="not yet funded">not yet funded</span>
-                                <span ng-switch-when="funded">fully funded</span>
-                                <span ng-switch-default>partially funded</span>
+                                <span ng-switch-when="not yet funded" class="label label-info">not yet funded</span>
+                                <span ng-switch-when="funded" class="label label-success">fully funded</span>
+                                <span ng-switch-default class="label label-info">partially funded</span>
                             </span>
                         </span>
 
