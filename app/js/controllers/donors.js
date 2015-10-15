@@ -95,7 +95,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 												is_funded:item.is_funded	
 												//lifewebPrevFunded_ss:item.lifewebPrevFunded_ss[i],	
 											};
-console.log('match',match);	
+			
 //console.log('item.donationLifewebPrevFunded_ds[i]',item.donationLifewebPrevFunded_ds[i]);	
 					
 											if(item.donationLifewebPrevFunded_ds && item.donationLifewebPrevFunded_ds.hasOwnProperty(i))
