@@ -4,33 +4,6 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
   //console.log('user:S', $rootScope.user);
       var query = '(type eq \'lwProject\')';
 
-        //
-        // function getFundingStatus(proj) {
-        //                     if(!proj.totalCost) {
-        //                         proj.totalCost = 0;
-        //                         var budget = proj.budgetCost_ds || [];
-        //                         for(var k=0; k!=budget.length; ++k)
-        //                             proj.totalCost += budget[k];
-        //                     }
-        //                     proj.totalFunding = proj.totalFunding || 0;
-        //                     if(!proj.totalFunding)
-        //                         if(proj.donatioFunding_ds)
-        //                             for(var k=0; k!=proj.donatioFunding_ds.length; ++k)
-        //                                 proj.totalFunding += proj.donatioFunding_ds[k];
-        //
-        //                     proj.funding_needed = proj.totalCost - proj.totalFunding;
-        //   //console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
-        //
-        //                     if(proj.funding_needed < 1)
-        //                         proj.funding_status = 'funded';
-        //                     else if(proj.totalFunding < 1)
-        //                         proj.funding_status = 'not yet funded';
-        //
-        //                     return proj.funding_status;
-        // }//getFundingStatus
-
-
-
         $scope.pageNumber = 0;
         $scope.itemsPerPage = 25;
         $scope.firstPage = function() {
@@ -65,15 +38,15 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       //$http.jsonp('https://www.cbd.int/cbd/lifeweb/new/services/web/projects.aspx?callback=JSON_CALLBACK', { cache: true }).success(function (data) {
 
           $scope.projects = data.response.docs;
-          
+
           $scope.projects.forEach(function(item) {
-         
+
             commonjs.getFundingStatus(item);
             if(item.country_ss){
                item.countries=[];
                item.country_ss.forEach(function(country){
                   item.countries.push({identifier: country});
-               })
+               });
 
             }
           });
