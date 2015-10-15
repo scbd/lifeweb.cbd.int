@@ -407,21 +407,21 @@
         <div class="col-md-4">
             <a href="{{imgAr[$index].url}}" target="_blank" class="thumbnail">
                 <img class="img-responsive img-thumbnail"  style="width: 200px" src="{{imgAr[$index].url | thumbnail}}" class="img-rounded" /></a>
-            <p class="caption">{{imgAr[$index].title}}</p>
+            <p class="caption">{{imgAr[$index].tag }}</p>
             <p ng-show="img.description">{{imgAr[$index].description}}</p>
 
         </div>
         <div class="col-md-4" ng-show="imgAr[$index+1]">
             <a href="{{imgAr[$index+1].url}}" target="_blank" class="thumbnail" >
                 <img class="img-responsive img-thumbnail"  style="width: 200px" src="{{imgAr[$index+1].url | thumbnail}}" class="img-rounded" /></a>
-            <p class="caption">{{imgAr[$index+1].title}}</p>
+            <p class="caption">{{imgAr[$index+1].tag }}</p>
             <p ng-show="img.description">{{imgAr[$index+1].description}}</p>
 
         </div>
         <div class="col-md-4" ng-show="imgAr[$index+2]">
             <a href="{{imgAr[$index+2].url}}" target="_blank" class="thumbnail" >
                 <img class="img-responsive img-thumbnail"  style="width: 200px" src="{{imgAr[$index+2].url | thumbnail}}" class="img-rounded" /></a>
-            <p class="caption">{{imgAr[$index+2].title}}</p>
+            <p class="caption">{{imgAr[$index+2].tag }}</p>
             <p ng-show="img.description">{{imgAr[$index+2].description}}</p>
 
         </div>
