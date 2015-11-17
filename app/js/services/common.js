@@ -132,15 +132,22 @@ define(['app'], function(app){
 													proj.funding_needed = proj.totalCost - proj.totalFunding;
 				//console.log('FUNDING NEEDED: ', proj.totalCost, proj.totalFunding, proj.funding_needed);
 
-													if(proj.funding_needed < 1)
+													if(proj.funding_needed < 1){
 															return  proj.funding_status = 'funded';
 
-													else {
-															proj.funding_status = 'not yet funded';
-															return 0;
-													}
 
-											
+													}else if(proj.funding_needed >=1 &&  proj.totalFunding > 0){
+																proj.funding_status = 'partially funded';
+																if(proj.expired_b)
+																	proj.funding_status = 'partially funded expired';
+													}
+													else{
+															proj.funding_status = 'not yet funded';
+															if(proj.expired_b)
+																 proj.funding_status = 'not yet funded expired';
+													}
+													return 0;
+
 			}//getFundingStatus
 		}
 	}]);
