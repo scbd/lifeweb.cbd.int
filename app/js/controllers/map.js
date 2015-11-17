@@ -6,10 +6,10 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
 	app.controller('MapCtrl', ["$scope","authHttp","commonjs","realm",function($scope, $http,commonjs,realm) {
 
     //$scope.mapdata=[];
-		 $scope.showMap = function() { 
+		 $scope.showMap = function() {
     			if (!$scope.mapdata)
     				return;
-            
+
     			var map = cheating.map = L.map('map', {
     				 center: [30,15],
     				 zoom: 2,
@@ -65,7 +65,7 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
     			L.geoJson($scope.mapdata, {
 
     				 pointToLayer: function (feature, latlng) {
-    					  if (feature.properties.funding_status == "funded")
+    					  if (feature.properties.funding_status == 'funded' || feature.properties.funding_status == 'partially funded expired'   || feature.properties.funding_status == 'not yet funded expired' )
     							return L.marker(latlng, { icon: fundedIcon });
     					  else
     							return L.marker(latlng, { icon: notfundedIcon });
@@ -78,10 +78,10 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
     }
 
 		$scope.$watch("mapdata", $scope.showMap);
-		
+
     if ($scope.mapdata == null){
           $scope.mapdata = null;
-          $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates_s').success(function(data) {
+          $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwProject))&rows=155&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json&fl=expired_b,budgetCost_ds,donatioFunding_ds,title_s,country_ss,createdDate_s,funding_status,identifier_s,thumbnail_s,donor_ss,updatedDate_s,coordinates_s').success(function(data) {
 
               $scope.projects = data.response.docs;
               $scope.temp= [];
@@ -107,13 +107,13 @@ define(['app', 'leaflet','/app/js/services/common.js'], function(app, L) {
                               $scope.temp.push(geoJsonMapItem);
                         }
                     }// if(item.coordinates_s ){
-      
+
               });
-         
+
                $scope.mapdata=$scope.temp; //activates watch
- 
+
               }); //$http.get
-    } 
+    }
 
 
 
