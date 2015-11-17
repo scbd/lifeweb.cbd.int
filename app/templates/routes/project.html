@@ -431,7 +431,7 @@
 <div ng-show="eoi.protectedAreas.length > 0">
     <h4>Protected Planet Sites</h4>
     <div ng-repeat="link in eoi.protectedAreas">
-        <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="http://www.protectedplanet.net/sites/{{link.url}}" target="_blank">{{link.url}}</a><br />
+        <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="http://www.protectedplanet.net/sites/{{link.url}}" target="_blank">{{link.name || link.name }}</a><br />
     </div>
 </div>
 
