@@ -16,10 +16,20 @@ define(['app'], function(app) {
           }
 
           return result;
-      }
+      };
   });
 
 
+
+
+    //##################################################################
+      app.filter('htmlToPlaintext', function ($filter) {
+        return function (text) {
+
+          return  text ? String(text).replace(/<[^>]+>/gm, '') : '';
+
+        };
+      });
 
 //##################################################################
   app.filter('filterToUSD', function ($filter) {

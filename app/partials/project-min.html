@@ -33,8 +33,8 @@
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <p style="text-align: justify; font-size: 12px;">
-                            {{proj.description_s | truncate:220}} <a href="/project?id={{proj.identifier_s}}">View details &raquo;</a>
+                        <p style="text-align: justify; font-size: 12px;" >
+                            {{proj.description_s | htmlToPlaintext | truncate:220}} <a href="/project?id={{proj.identifier_s}}">View details &raquo;</a>
                         </p>
                     </td>
                 </tr>

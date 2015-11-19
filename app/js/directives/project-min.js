@@ -3,7 +3,7 @@
 // Edit LifeWeb Project Minimum
 //
 //============================================================
-define(['app', 'URI', 'editFormUtility', ], function(app) {
+define(['app', 'URI', 'editFormUtility','/app/js/services/filters.js' ], function(app) {
   app.directive('projectMin', ['authHttp', "$filter", function ($http, guid, $filter) {
     return {
       restrict   : 'EAC',
@@ -111,5 +111,8 @@ define(['app', 'URI', 'editFormUtility', ], function(app) {
             });
         },
     };
+
   });
+
+
 });
