@@ -14,7 +14,7 @@
     "request": "~2.42.0",
     "xml2js": "~0.4.4"
   },
-  "engine": "node >= 0.10.18",
+  "engine": "node >= 4.2",
   "private": true,
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install --allow-root --config.interactive=false",
