@@ -1,6 +1,5 @@
 {
   "name": "lifeweb.cbd.int",
-  "description": "Lifeweb #",
   "dependencies": {
     "bower": "1.7.9",
     "express": "4.13.4",
@@ -16,6 +15,7 @@
     "xml2js": "~0.4.4"
   },
   "engine": "node >= 0.10.18",
+  "private": true,
   "scripts": {
     "postinstall": "./node_modules/.bin/bower install --allow-root --config.interactive=false",
     "start": "node server"
