@@ -5,7 +5,7 @@
     "express": "4.13.4",
     "http-proxy": "1.13.3"
   },
-  "devDependencies": {
+  "#devDependencies": {
     "http-sync": "^0.1.1",
     "linq": "*",
     "prompt": "^0.2.14",
