@@ -2,11 +2,12 @@
   "name": "lifeweb.cbd.int",
   "description": "Lifeweb #",
   "dependencies": {
-    "bower": "1.7.0",
-    "express": "4.13.3",
+    "express": "~3.4.8",
     "http-proxy": "1.11.1"
+    "bower": "1.7.9",
   },
   "devDependencies": {
+    "http-sync": "^0.1.1",
     "linq": "*",
     "prompt": "^0.2.14",
     "q": "~1.0.1",
@@ -14,9 +15,9 @@
     "request": "~2.42.0",
     "xml2js": "~0.4.4"
   },
- "engine": "node >= 0.10.36",
+  "engine": "node >= 0.10.18",
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install --allow-root ",
+    "postinstall": "./node_modules/.bin/bower install --allow-root --config.interactive=false",
     "start": "node server"
   }
 }
