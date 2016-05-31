@@ -60,17 +60,17 @@ table {
 
 .userheader {
            text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-        color: #999;   
+        color: #999;
 }
 
-.userheader:hover { 
-  
-     color: #fff; 
+.userheader:hover {
+
+     color: #fff;
 }
 
-.userheader:focus { 
-     
-     color: #fff; 
+.userheader:focus {
+
+     color: #fff;
 }
 
 #ngview-content
@@ -89,7 +89,7 @@ table {
 .navbar-nav > li a
 {
 
-         
+
   line-height: 20px;
 }
 
@@ -443,7 +443,7 @@ media-heading {
 
 .bs-docs-sidenav {
     /*width: 270px;*/
-    margin: 10px 0 0 0;
+    margin: 0 0 0 0; 
     padding: 0;
     background-color: #fff;
     -webkit-border-radius: 6px;
@@ -453,7 +453,7 @@ media-heading {
     -moz-box-shadow: 0 1px 4px rgba(0,0,0,.065);
     box-shadow: 0 1px 4px rgba(0,0,0,.065);
     position: relative;
-    top: 100px;
+    /*top: 100px;*/
 }
 
     .bs-docs-sidenav > li > * {
@@ -529,9 +529,9 @@ media-heading {
 -------------------------------------------------- */
 
 /* padding for in-page bookmarks and fixed navbar */
-section {
+/*section {
     padding-top: 60px;
-}
+}*/
 
     section > .page-header,
     section > .lead {
@@ -792,11 +792,11 @@ section > h3
 /* ++++++++++++++++++++++ */
 
 .mini-submenu{
-  display:none;  
-  background-color: rgba(0, 0, 0, 0);  
+  display:none;
+  background-color: rgba(0, 0, 0, 0);
   border: 1px solid rgba(0, 0, 0, 0.9);
   border-radius: 4px;
-  padding: 9px;  
+  padding: 9px;
   /*position: relative;*/
   width: 42px;
 
