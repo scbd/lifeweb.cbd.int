@@ -1,7 +1,7 @@
 <div>
     <!-- PARTIALLY FUNDED------------------------------ -->
     <div ng-if="status == 'some expected funding' || status == 'some secured funding' ">
-        <div style="width:{{width}}px;font-weight:bold;padding-bottom:10px;font-size:18px;" > partially funded </div>
+        <div style="width:{{width}}px;font-weight:bold;padding-bottom:10px;font-size:18px;" > <span class="label label-primary">Partially funded </span></div>
 
         <table style="height: 20px;margin-bottom:10px;" cellspacing="0" cellpadding="0">
             <tr>
@@ -26,14 +26,14 @@ budget<td class="total" style="vertical-align: middle; padding-left: 10px; borde
             <span  ng-show="match.funding > 0" ><span class="label" style="background-color: {{fundedColors[$index]}}; width: 100px; text-align: center;">{{match.funding |  filterCurrency:match.currency:display}}</span> {{match.donor.name}}</span>
         </div>
         <hr style="padding:0; margin:5px 0 0 0; width:100%;border-top:1px solid #808080;" />
-        <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'USD':display }} </span> &nbsp; funding needed
+        <span class="label" style="background-color: #F5A2A2; width: 100px; text-align: center;"> {{((total | filterToUSD:currency) - (matches |getMatchesTotalUSD))| filterCurrency:'USD':display }} </span> &nbsp; Funding needed
 
     </div>
 
 
     <!--FULLY FUNDED-------------------------------->
     <div ng-if="status == 'funded'">
-        <div style="font-weight:bold;font-size:18px;padding-bottom:10px;"  > fully funded </div>
+        <div style="font-weight:bold;font-size:18px;padding-bottom:10px;"  > <span class="label label-success">Fully funded<span> </div>
          <table style="height: 20px; " cellspacing="0" cellpadding="0">
             <tr>
                 <td ng-show="match.funding" width="{{ (width * (match.funding | filterToUSD:match.currency)) / (total | filterToUSD:currency)  }}px" class="funded" ng-repeat="match in matches" style="border-right: 1px solid #FFF; background-color: {{fundedColors[$index]}};"></td>
@@ -51,10 +51,10 @@ budget<td class="total" style="vertical-align: middle; padding-left: 10px; borde
 
 
     <!--NOT YET FUNDED-------------------------------->
-    <div ng-show="status == 'not yet funded' ">
+    <div ng-show="status == 'Not yet funded' ">
          <table style="height:20px;" cellspacing="0" cellpadding="0" >
             <tr>
-                <td style="width:{{width}}px;text-align:center;" class="not-funded"> <span style="color:white;font-weight:bold;">funding needed</td>
+                <td style="width:{{width}}px;text-align:center;" class="not-funded"> <span style="color:white;font-weight:bold;">Funding needed</td>
                 <td class="total" style="vertical-align: middle; padding-left: 10px; border-left: 2px solid #000; font-weight: bold;">{{total | filterCurrency:currency:display}}</td>
             </tr>
         </table>
