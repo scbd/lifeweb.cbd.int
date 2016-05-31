@@ -450,20 +450,20 @@ define(['app'], function(app) {
 
           }
 
-          var r = new Array();
-          o: for (var i = 0; i < result.length; i++) {
+          var r = [];
+          o: for ( i = 0; i < result.length; i++) {
               for (var x = 0; x < r.length; x++) {
-                  if (r[x] == result[i]) {
+                  if (r[x] === result[i]) {
                       continue o;
                   }
               }
               r[r.length] = result[i];
           }
-          return r;
+          return result;
 
 
 
-      }
+      };
   });
 
   //##################################################################
@@ -1212,19 +1212,18 @@ define(['app'], function(app) {
 
         var year,low,high=0;
 
-                _.each(funding,function(donation){
-                    year = Number(new Date(donation.donationDate_ss).getFullYear());
-                    if(!low || low && (year < low))    low= year;
-                    if(!high || high && (year > high)) high= year;
+        _.each(funding,function(donation){
+            year = Number(new Date(donation.donationDate_ss).getFullYear());
+            if(!low || low && (year < low))    low= year;
+            if(!high || high && (year > high)) high= year;
+        });
 
-                  });
-
-                  if(low===high)
-                    return low;
-                  else if(!low || !high)
-                    return   '2008 - ' + new Date().getFullYear();
-                  else
-                    return  low+ ' - ' + high;
+        if(low===high)
+          return low;
+        else if(!low || !high)
+          return   '2008 - ' + new Date().getFullYear();
+        else
+          return  low+ ' - ' + high;
 
       };
   });

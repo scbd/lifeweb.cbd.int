@@ -61,7 +61,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
                       $scope.sortTerm = term;
                       $scope.orderList = true;
                   }
-              }
+              };
 
 		    $http.get('/api/v2013/index/select?cb=1418322176016&q=(realm_ss:'+realm+'%20AND%20(schema_s:lwDonor))&rows=500&sort=createdDate_dt+desc,+title_t+asc&start=0&wt=json').then(function(response) {
 		        var donors = response.data.response.docs;
@@ -95,7 +95,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 																is_funded:item.is_funded
 																//lifewebPrevFunded_ss:item.lifewebPrevFunded_ss[i],
 															};
-			
+
 				//console.log('item.donationLifewebPrevFunded_ds[i]',item.donationLifewebPrevFunded_ds[i]);
 
 															if(item.donationLifewebPrevFunded_ds && item.donationLifewebPrevFunded_ds.hasOwnProperty(i))
