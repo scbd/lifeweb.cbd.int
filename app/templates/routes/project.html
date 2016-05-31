@@ -291,9 +291,9 @@
               </td>
             </tr>
             <tr class="info">
-              <td class="lw-proj-text">TOTAL</td>
-              <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donations | filterTotalSecured | filterCurrency:f.currency:currency}}</td>
-              <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.donations | filterTotalExpected | filterCurrency:f.currency:currency }}</td>
+              <td class="lw-proj-text" align="right"><strong>TOTAL</strong></td>
+              <td class="lw-proj-text" style="border-left:1px solid #ccc;"><strong>{{eoi.donations | filterTotalSecured | filterCurrency:f.currency:currency}}</strong></td>
+              <td class="lw-proj-text" style="border-left:1px solid #ccc;"><strong>{{eoi.donations | filterTotalExpected | filterCurrency:f.currency:currency }}</strong></td>
             </tr>
 
             <tr ng-hide="{{ !((eoi.total_cost) - (eoi.donations | filterTotalSecured))}}">
