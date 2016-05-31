@@ -89,7 +89,8 @@
         <td class="lw-dt">country</td>
         <td class="lw-dd" style="text-align: left;">
             <div ng-repeat="c in eoi.countries" style="display:inline;">
-                <strong><a href="/country/{{c.identifier}}" target="_blank">{{fullCountryName(c.identifier)}}</a></strong><span ng-show="!$last">, </span>
+                <strong><a href="/country/{{c.identifier}}" target="_blank">{{fullCountryName(c.identifier)}}</a></strong>
+                <span ng-show="!$last">, </span>
             </div>
         </td>
     </tr>
