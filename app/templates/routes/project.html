@@ -214,7 +214,7 @@
 
       <!--==============================================================================-->
       <!-- <section id="funding" ng-controller="PageController"  >  -->
-      <section id="funding">
+      <section id="funding" ng-show="eoi.donations.length">
         <h2 class="title-divider featurette-heading" style="margin: 47px 0 15px 0; padding: 0;">Project Financing</h2>
 
 
@@ -297,16 +297,12 @@
             </tr>
 
             <tr ng-hide="{{ !((eoi.total_cost) - (eoi.donations | filterTotalSecured))}}">
-              <td class="lw-proj-text" style="background-color:#F5A2A2;">ttTOTAL FUNDING NEEDED</td>
+              <td class="lw-proj-text" style="background-color:#F5A2A2;">TOTAL FUNDING NEEDED</td>
               <td class="lw-proj-text text-center" colspan="2" style="background-color:#F5A2A2;border-left:1px solid #ccc;">
                 {{ ((eoi.total_cost) - (eoi.donations | filterTotalSecured) + (eoi.donations | filterTotalExpected)) | filterCurrency:f.currency:currency}}</td>
             </tr>
           </table>
         </div>
-
-
-
-
 
         <div ng-show="eoi.financialStability" style="padding-top:20px;">
           <h4>Financial Sustainability</h4>
