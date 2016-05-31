@@ -224,7 +224,12 @@
               <span class="muted" style="text-transform: uppercase;">Funding Status:</span>
             </td>
             <td style="padding-left: 20px;">
-              <span ng:class="{'funded':'label', 'not yet funded':'label label-success', 'some secured funding':'label label-info', 'some expected funding':'label label-warning'}[eoi.funding_status]">{{eoi.funding_status}}</span>
+
+              <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[eoi.funding_status]">
+                  <span ng-if="eoi.funding_status=='funded'">Fully funded</span>
+                  <span ng-if="eoi.funding_status=='some secured funding' || eoi.funding_status=='some expected funding'">Partially funded </span>
+                  <span ng-if="eoi.funding_status=='not yet funded'">Not funded yet</span>
+              </span>
 
             </td>
           </tr>
@@ -291,22 +296,22 @@
               </td>
             </tr>
             <tr class="info">
-              <td class="lw-proj-text" align="right"><strong>TOTAL</strong></td>
+              <td class="lw-proj-text" align="right"><strong>TOTAL(s)</strong></td>
               <td class="lw-proj-text" style="border-left:1px solid #ccc;"><strong>{{eoi.donations | filterTotalSecured | filterCurrency:f.currency:currency}}</strong></td>
               <td class="lw-proj-text" style="border-left:1px solid #ccc;"><strong>{{eoi.donations | filterTotalExpected | filterCurrency:f.currency:currency }}</strong></td>
             </tr>
             <tr bgcolor="#ecf4f9">
             </tr>
             <tr bgcolor="#ecf4f9">
-              <td class="lw-proj-text" ></td>
-              <td class="lw-proj-text" style="border-left:1px solid #ccc;"></td>
+              <td class="lw-proj-text" align="right"><strong>TOTAL SECURED PLUS TOTAL EXPECTED FUNDING</strong></td>
+              <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{((eoi.donations | filterTotalSecured)+(eoi.donations | filterTotalExpected)) | filterCurrency:f.currency:currency}}</td>
               <td class="lw-proj-text" style="border-left:1px solid #ccc;"></td>
             </tr>
             <tr bgcolor="#ecf4f9">
             </tr>
             <tr bgcolor="#ecf4f9">
-              <td class="lw-proj-text" ></td>
-              <td class="lw-proj-text" style="border-left:1px solid #ccc;"></td>
+              <td class="lw-proj-text" align="right"><strong>TOTAL COST OF PROJECT</strong></td>
+              <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.total_cost | filterCurrency:eoi.currency:currency}}</td>
               <td class="lw-proj-text" style="border-left:1px solid #ccc;"></td>
             </tr>
             <tr ng-hide="{{ !((eoi.total_cost) - (eoi.donations | filterTotalSecured))}}">
