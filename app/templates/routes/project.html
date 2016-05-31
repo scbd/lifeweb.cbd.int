@@ -73,7 +73,12 @@
         </td>
     </tr>
     <tr>
-        <td class="lw-dt">abstract</td>
+        <td class="lw-dt" style="white-space: nowrap;">abstract
+            <br><br>
+            status
+            <span ng-if="eoi.expired" class="label label-danger">Project Expired</span>
+            <span ng-if="!eoi.expired" class="label label-success">Active</span>
+        </td>
         <td valign="middle" class="lw-dd" style="vertical-align: middle!important; text-align: left;" ng-bind-html="eoi.projectAbstract"></td>
     </tr>
     <tr ng-show="eoi.timeFrame">
