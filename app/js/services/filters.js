@@ -1210,29 +1210,23 @@ define(['app'], function(app) {
   app.filter('YearRange', function ($filter) {
       return function (funding) {
 
-          // if (!funding)
-          //     return null;
+        var year,low,high=0;
 
-          // var low = 2015;
-          // var high = 2008;
+                _.each(funding,function(donation){
+                    year = Number(new Date(donation.donationDate_ss).getFullYear());
+                    if(!low || low && (year < low))    low= year;
+                    if(!high || high && (year > high)) high= year;
 
-          // for (var i = 0; i < funding.length; i++) {
-          //     var year = $filter('filterYear2')(funding[i].project.createdDate_s);
-          //     if (low > year)
-          //         low = year;
-          //     if (high < year)
-          //         high = year;
-          // }
+                  });
 
+                  if(low===high)
+                    return low;
+                  else if(!low || !high)
+                    return   '2008 - ' + new Date().getFullYear();
+                  else
+                    return  low+ ' - ' + high;
 
-
-          // if (low == high)
-          //      return low;
-
-          // if (low > high) return "0";
-
-          return   "2008 - " + new Date().getFullYear();
-      }
+      };
   });
 
   //##################################################################
@@ -1273,14 +1267,18 @@ define(['app'], function(app) {
               return 0;
 
           var keys = {};
-          return matches.reduce(function(prev, cur, index) {
-//console.log('prev: ', prev);
-                if(keys[cur.donor.identifier_s])
-                    return prev;
+          var countries=[];
+          var n = [];
+          _.each(matches,function(match){
+              countries = _.union(countries,match.country_ss);
+              for(var i = 0; i < countries.length; i++)
+              {
+                if (n.indexOf(countries[i]) === -1) n.push(countries[i]);
+              }
+              countries = n;
 
-                keys[cur.donor.identifier_s] = true;
-                return prev + 1;
-            }, 0);
+          });
+          return countries.length;
       }
   });
 
