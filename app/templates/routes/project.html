@@ -280,8 +280,8 @@
             <tr ng-repeat="f in eoi.donations ">
               <td width="60%" class="lw-proj-text">
                 <img ng-src="{{f.donor.logo.url}}" style="height: 24px;"></img>
-                <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.header.identifier}}" target="_blank">{{f.donor.name}}</span> </a> (
-                  <span style="font-size: 14px;" ng-bind-html="f.description"></span>)
+                <span style="font-size: 16px; font-weight: bold;"><a href="/donors?id={{f.donor.header.identifier}}" target="_blank">{{f.donor.name}}</span> </a>
+                <p><span style="font-size: 14px;" ng-bind-html="f.description"></span></p>
               </td>
               <td width="20%" class="lw-proj-text" style="border-left:1px solid #ccc;">
                 <span ng-show="f.lifeweb_facilitated">{{f.funding | filterCurrency:f.currency:currency}}</span>
