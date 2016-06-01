@@ -81,10 +81,6 @@ define(['app', 'app/js/controllers/map.js', 'authentication', 'URI', 'leaflet', 
                 fillInDonorData();
                 getFocalPoints();
 
-                if ($scope.eoi.protectedAreas)
-                    for (var i = 0; i != $scope.eoi.protectedAreas.length; ++i) {
-                        console.log($scope.eoi.protectedAreas[i]);
-                    }
 
                 addFundingProperties($scope.eoi);
 
