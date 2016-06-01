@@ -196,4 +196,33 @@ console.log($scope.eoi.protectedAreas[i]);
             return $location;
         }
     ]);
+
+    //##################################################################
+      app.filter('roleFilter', function ($filter) {
+        return function (r) {
+          var roles =[
+              {title: 'Community Engagement', identifier: 'community_engagement',},
+              {title: 'Implementation', identifier: 'implementation',},
+              {title: 'Monitoring', identifier: 'monitoring',},
+              {title: 'Partner Coordination', identifier: 'partner_coordination',},
+              {title: 'Project Management', identifier: 'project_management',},
+              {title: 'Strategic Planning', identifier: 'strategic_planning',},
+              {title: 'Technical Support', identifier: 'technical_support',},
+              {title: 'Other', identifier: '5B6177DD-5E5E-434E-8CB7-D63D67D5EBED'},
+            ];
+
+            var found =0;
+          _.each(roles,function(obj){
+              if(r===obj.identifier)
+                found = obj.title;
+          });
+          if(found)
+            return found;
+          else
+            return r;
+
+        };
+      });
+
+
 });
