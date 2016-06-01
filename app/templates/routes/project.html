@@ -369,7 +369,7 @@
           <h4>Alignment with National Biodiversity Strategies and Action Plans</h4>
           <div ng-bind-html="eoi.nationalAlignment[0].comment"></div>
         </div>
-        <div ng-show="eoi.nationalAlignment[1].comment != ''">
+        <div ng-show="eoi.nationalAlignment[1].comment && eoi.nationalAlignment[1].comment.trim() != ''">
           <h4>Alignment with National Climate Strategies and Plans</h4>
           <div ng-bind-html="eoi.nationalAlignment[1].comment"></div>
         </div>
@@ -557,7 +557,7 @@
         <div ng-show="eoi.protectedAreas.length > 0">
           <h4>Protected Planet Sites</h4>
           <div ng-repeat="link in eoi.protectedAreas">
-            <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="http://www.protectedplanet.net/sites/{{link.url}}" target="_blank">{{link.name || link.name }}</a>
+            <span class="glyphicon glyphicon-file"></span>&nbsp; <a href="{{link.url}}" target="_blank">{{link.name || link.name }}</a>
             <br />
           </div>
         </div>
