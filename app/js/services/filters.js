@@ -445,7 +445,8 @@ define(['app'], function(app) {
               for (var j = 0; j < pcountries.length; j++) {
 
                   if (pcountries[j].project.country_ss && pcountries[j].project.country_ss.indexOf(countryList[i].identifier) != -1) {
-                      result.push(countryList[i]);
+                      if (!_.find(result,{identifier:countryList[i].identifier}))
+                          result.push(countryList[i]);
                   }
               }
 
@@ -931,7 +932,7 @@ define(['app'], function(app) {
             return matches;
 
         return matches.filter(function(item) {
-            return $filter('filterYear2')(item.donationDate_ss) === year;
+            return Number($filter('filterYear2')(item.donationDate_ss)) === Number(year);
         });
       }
   });

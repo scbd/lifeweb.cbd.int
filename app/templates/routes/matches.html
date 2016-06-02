@@ -5,23 +5,18 @@
         <span style="font-weight:bold; color:#999;position:relative;">Filter <span class="badge">{{filtered.length}}</span> matches by: </span>
 
 
-        <select class="form-control" ng-model="search.donor" style="width: 180px;" ng-options="item.donor.identifier_s as item.donor.name_s for item in filtered | unique:'donor.identifier_s'">
+        <select class="form-control" ng-model="search.donor" style="width: 180px;" ng-options="item.donor.identifier_s as item.donor.name_s for item in matches | unique:'donor.identifier_s' | orderBy:'donor.name_s'">
           <!-- filtered | unique:'donor.identifier_s'  -->
           <option value="" selected>All Donors</option>
         </select>
-        <select class="form-control" ng-model="search.country" style="width: 180px;" ng-options="item.identifier as item.name for item in (countries | filterMatchProjectCountry:filtered )">
+        <select class="form-control" ng-model="search.country" style="width: 180px;" ng-options="item.identifier as item.name for item in (countries | filterMatchProjectCountry:matches)">
           <option value="" selected>All Countries</option>
         </select>
         <select class="form-control" ng-model="search.year_submitted" style="width: 180px;">
           <option value="" selected>All Years Funded</option>
           <option ng-repeat="year in projectYearRange" value="{{year}}">{{year}}</option>
         </select>
-        <select class="form-control" ng-model="search.lifewebPrevFunded" style="width: 180px;">
-          <option value="" selected>LifeWeb Match</option>
-          <option value="0">Yes</option>
-          <!-- logic reversed here.  In db it is isFundedPrior to life web but the UI reads better this wat -->
-          <option value="1">No</option>
-        </select>
+
       </form>
     </div>
   </div>
@@ -52,7 +47,9 @@
             </th>
           </tr>
           <!-- <tr ng-repeat="match in (matches | filterMatchLifeWebbed:true) |  filterMatchYear:search.year_submitted | filterMatchCountry:search.country | filterMatchDonor:search.donor | orderBy:sortTerm:orderList "> -->
-          <tr ng-repeat="match in (filtered = (matches | filterMatchYear:search.year_submitted | filterMatchCountry:search.country | filterMatchDonor:search.donor | filterPrevFunded:search.lifewebPrevFunded) | orderBy:sortTerm:orderList  | page:pageNumber:itemsPerPage )">
+<!-- <tr ng-repeat="match in (filtered = (matches | filterMatchYear:search.year_submitted | filterMatchCountry:search.country | filterMatchDonor:search.donor | filterPrevFunded:search.lifewebPrevFunded) | orderBy:sortTerm:orderList  | page:pageNumber:itemsPerPage )"> -->
+
+          <tr ng-repeat="match in (filtered = (matches  |filterMatchYear:search.year_submitted| filterMatchDonor:search.donor | filterMatchCountry:search.country) | orderBy:sortTerm:orderList  | page:pageNumber:itemsPerPage )" >
             <!-- | page:pageNumber:itemsPerPage > -->
             <td>
               <img ng-show="{{match.logoShow}}" src="{{match.donor.logo_s}}" style="width: 100px;" />
