@@ -288,7 +288,7 @@ define(['app'], function(app) {
   app.filter('filterYear2', function() {
     return function(str) {
         var date = new Date(str);
-        return date.getFullYear();
+        return date.getFullYear().toString();
     };
   });
 
@@ -308,17 +308,16 @@ define(['app'], function(app) {
   //##################################################################
   app.filter('filterExpired', function ($filter) {
     return function (matches, status) {
+          status=Number(status);
           if (!matches)
               return null;
           if(!status)
-              status=0;
+              status=false;
           if(status===2)
               return matches;
 
-
-
         return matches.filter(function(item) {
-            return item.expired_b === status;
+            return item.expired_b === (!!status);
         });
       };
   });
@@ -330,12 +329,13 @@ define(['app'], function(app) {
           if (!projs)
               return null;
 
-          if (eco === null || eco === '')
+          if (!eco)
               return projs;
 
           var result = [];
 
           for (var i = 0; i < projs.length; i++) {
+            if(projs[i].ecoservices)
               for (var j = 0; j < projs[i].ecoservices.length; j++) {
                   if (projs[i].ecoservices[j] === eco) {
                       result.push(projs[i]);
@@ -352,7 +352,7 @@ define(['app'], function(app) {
   app.filter('filterTargets', function () {
       return function (projs, tar) {
 
-          if (!projs)
+          if (!projs || _.isEmpty(projs))
               return null;
 
           if (tar === null || tar === '')
@@ -361,6 +361,7 @@ define(['app'], function(app) {
           var result = [];
 
           for (var i = 0; i < projs.length; i++) {
+             if(_.isArray(projs[i].targets))
               for (var j = 0; j < projs[i].targets.length; j++) {
                   if (projs[i].targets[j] === tar) {
                       result.push(projs[i]);
@@ -472,19 +473,23 @@ define(['app'], function(app) {
 
           if (!projs)
               return null;
+          funding =Number(funding);
 
-          if (funding === null || funding === '')
-              return projs;
-
+          var i;
           var result = [];
 
           if (funding === 0) {
-              for (var i = 0; i < projs.length; i++) {
+
+              for ( i = 0; i < projs.length; i++) {
+                console.log(projs[i].funding_needed);
                   if (projs[i].funding_needed <= 500000) {
                       result.push(projs[i]);
                   }
               }
           }
+
+          if (!funding && _.isEmpty(result))
+              return projs;
 
           if (funding === 500000) {
               for ( i = 0; i < projs.length; i++) {
@@ -1435,7 +1440,7 @@ define(['app'], function(app) {
 
             return result;
 
-        }
+        };
     });
 
     //##################################################################
@@ -1443,14 +1448,15 @@ define(['app'], function(app) {
         return function(projs, code) {
 
 
-           if(code === null)
+           if(!code)
                return projs;
 
-           if (projs === null)
+           if (!projs)
                return projs;
 
             var result= [];
 
+            if(_.isArray(projs))
             for (var i=0; i < projs.length; i++){
 
                 for (var k=0; k < projs[i].country_ss.length; k++){

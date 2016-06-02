@@ -11,7 +11,7 @@
                     <a style="font-size: 14px; color: #999; text-transform: uppercase;">
 
                       Search
-                      <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets | filterExpired:search.expired).length}}</span>
+                      <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country  | filterYear:search.year_submitted | filterFundingStatus:search.is_funded  | filterFunding:search.funding_needed | filterExpired:search.expired).length}}</span>
                     </a>
                   </li>
                   <li>
@@ -27,8 +27,7 @@
                       <option value="" selected>Funding status</option>
                       <option value="funded">funded</option>
                       <option value="not yet funded">not yet funded</option>
-                      <option value="some expected funding">some expected funding</option>
-                      <option value="some secured funding">some secured funding</option>
+                      <option value="partially funded">partially funded</option>
                     </select>
                   </li>
          <!--         <li>
@@ -68,7 +67,7 @@
                         <option value="2" >All Projects</option>
 
                     </select>
-                    <a class="btn btn-info" href="/explore/">clear search</a>
+                    <button class="btn btn-info" ng-click="goTo('/explore/')">Clear Search Filters</button>
                     </li>
                 </ul>
               </div>
@@ -148,7 +147,8 @@
                                     Admin
                                 </th>
                             </tr>
-                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets |filterExpired:search.expired | orderBy:sortTerm:orderList) | page: pageNumber:itemsPerPage) track by $index">
+                            <!-- <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets |filterExpired:search.expired | orderBy:sortTerm:orderList) | page: pageNumber:itemsPerPage) track by $index"> -->
+                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country  | filterYear:search.year_submitted | filterFundingStatus:search.is_funded  | filterFunding:search.funding_needed | filterExpired:search.expired  ) | page: pageNumber:itemsPerPage) track by $index">
                                 <td style="width: 70px;">
                                     <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" /></a>
                                 </td>
@@ -158,16 +158,16 @@
                                 <td nowrap>  {{match.funding_needed | filterCurrency:'USD':currency}} </td>
                                 <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.startDate_s | filterDate  }}</td>
                                 <td >
-                                    <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[match.funding_status]">
-                            <span ng-switch="match.funding_status">
-                                <span ng-switch-when="not yet funded">not yet funded</span>
-                                <span ng-switch-when="funded">fully funded</span>
-                                <span ng-switch-default>partially&nbsp;funded</span>
-                            </span>
-                        </span>
-                                    <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
+                                <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[match.funding_status]">
+                                    <span ng-switch="match.funding_status">
+                                        <span ng-switch-when="not yet funded">not yet funded</span>
+                                        <span ng-switch-when="funded">fully funded</span>
+                                        <span ng-switch-default>partially&nbsp;funded</span>
+                                    </span>
+                                </span>
+                                    <!-- <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
                                             <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
-                                    </div>
+                                    </div> -->
                                 </td>
                                 <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
                                     <a ng-href="https://chm.cbd.int/submit/lwProject/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
