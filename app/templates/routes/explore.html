@@ -78,8 +78,8 @@
 
 
                 <section id="projects" >
-                    <h2 class="title-divider featurette-heading">LifeWeb Projects
-                         <span class="muted small">National priority projects</span>
+                    <h2 class="title-divider featurette-heading">LifeWeb Expressions of Interest
+
                          <span class="small_label muted pull-right">Projects are listed in USD</span></h2>
 
                     <div class="pull-right"><a ng-click="toggleList()" style="cursor:pointer;"><i class="{{listStyle}}"></i></a></div>
@@ -128,18 +128,19 @@
                                 <th></th>
                                 <th><span style="cursor:pointer;" ng-click="sortTable('title_s')">Title
                                     <i ng-show="sortTerm=='title_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('country_ss')">Country
+                                <th><span style="cursor:pointer" ng-click="sortTable('country_ss')">Country(s)
                                     <i ng-show="sortTerm=='country_ss'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
+                                    <th><span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date Submitted
+                                        <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                                        </span></th>
                                 <th><span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost
                                     <i ng-show="sortTerm=='totalCost'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
                                     <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date
-                                    <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-                                    </span></th>
+
                                 <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
                                     <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
                                     </span></th>
@@ -153,17 +154,25 @@
                                     <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" /></a>
                                 </td>
                                 <td style="font-weight:bold;"> <a ng-href="/project?id={{match.identifier_s}}"><span class="media-heading">{{match.title_s}}</span></a></td>
+                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.startDate_s | date:'dd MMM yyyy':'UTC'  }}</td>
+
                                 <td><span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}} <br></span></td>
                                 <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
                                 <td nowrap>  {{match.funding_needed | filterCurrency:'USD':currency}} </td>
-                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.startDate_s | filterDate  }}</td>
+
+
                                 <td >
-                                <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'some secured funding':'label label-info', 'some expected funding':'label label-info'}[match.funding_status]">
+                                  <span class="label label-success" ng-if="!match.expired_b">Project Active</span>
+                                  <span class="label label-danger" ng-if="match.expired_b">Project Expired</span>
+
+                                <br><br><br>
+                                <span   ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'partially funded':'label label-info'}[match.funding_status]">
                                     <span ng-switch="match.funding_status">
-                                        <span ng-switch-when="not yet funded">not yet funded</span>
-                                        <span ng-switch-when="funded">fully funded</span>
-                                        <span ng-switch-default>partially&nbsp;funded</span>
+                                        <span ng-switch-when="not yet funded">Not Yet Funded</span>
+                                        <span ng-switch-when="funded">Fully Funded</span>
+                                        <span ng-switch-default>Partially Funded</span>
                                     </span>
+
                                 </span>
                                     <!-- <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
                                             <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
