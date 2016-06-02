@@ -20,6 +20,17 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       //============================================================
       //
       //============================================================
+      $scope.canDecPage = function() {
+          if($scope.pageNumber > 0)
+              return true;
+          else
+            return false;
+
+      };
+
+      //============================================================
+      //
+      //============================================================
       $scope.goTo = function(path) {
           $location.url(path);
       };
@@ -30,6 +41,16 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       $scope.incPage = function() {
           if(($scope.pageNumber+1) * $scope.itemsPerPage < $scope.projectsPage.length)
               ++$scope.pageNumber;
+      };
+
+      //============================================================
+      //
+      //============================================================
+      $scope.canIncPage = function() {
+          if(($scope.pageNumber+1) * $scope.itemsPerPage < $scope.projectsPage.length)
+              return true;
+          else
+            return false;
       };
 
       //============================================================
@@ -133,7 +154,7 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'URI', 'angular-
       function init(){
 
           $scope.pageNumber = 0;
-          $scope.itemsPerPage = 25;
+          $scope.itemsPerPage = 10;
           $scope.setProjectYearRange(2008);
           $scope.currency = 'USD';
           $scope.orderList = true;
