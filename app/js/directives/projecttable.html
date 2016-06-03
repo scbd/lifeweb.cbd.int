@@ -2,7 +2,7 @@
   <tr>
     <th></th>
     <th>
-      <span style="cursor:pointer;" ng-click="sortTable('title_s')">Title
+      <span style="cursor:pointer;" ng-click="sortTable('title_s')">LifeWeb Expression of Interest
         <i ng-show="sortTerm=='title_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span>
     </th>
     <th>
@@ -11,15 +11,11 @@
       </span>
     </th>
     <th>
-      <span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost
+      <span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost of Project
         <i ng-show="sortTerm=='totalCost'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
       </span>
     </th>
-    <th>
-      <span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
-        <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-      </span>
-    </th>
+
     <th>
       <span style="cursor:pointer" ng-click="sortTable('createdDate_dt')">Date
         <i ng-show="sortTerm=='createdDate_dt'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
@@ -51,7 +47,6 @@
       </span>
     </td>
     <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
-    <td nowrap> {{match.funding_needed | filterCurrency:'USD':currency}} </td>
     <td nowrap style="font-weight:bold; text-transform:uppercase;">{{ match.createdDate_dt | filterDate }}</td>
     <td>
       <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'partially funded':'label label-info'}[match.funding_status]">
