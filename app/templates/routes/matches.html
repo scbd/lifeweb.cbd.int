@@ -52,10 +52,10 @@
           <tr ng-repeat="match in (filtered = (matches  |filterMatchYear:search.year_submitted| filterMatchDonor:search.donor | filterMatchCountry:search.country) | orderBy:sortTerm:orderList  | page:pageNumber:itemsPerPage )" >
             <!-- | page:pageNumber:itemsPerPage > -->
             <td>
-              <img ng-show="{{match.logoShow}}" src="{{match.donor.logo_s}}" style="width: 100px;" />
+              <a href="/donors?id={{match.d_id}}"><img ng-show="{{match.logoShow}}" src="{{match.donor.logo_s}}" style="width: 100px;" />
               <p> </p>
               <span style="padding-left: 5px;">{{name_s = match.donor.name_s}}</span>
-              <span ng-show="{{match.lifewebPrevFunded}}" style="padding-left: 5px; color:blue;">NOT A LIFE WEB MATCH</span>
+              <span ng-show="{{match.lifewebPrevFunded}}" style="padding-left: 5px; color:blue;">NOT A LIFE WEB MATCH</span></a>
             </td>
             <td>
               <a href="/project/?id={{match.project.identifier_s}}">{{title_s = match.project.title_s}}</a>
