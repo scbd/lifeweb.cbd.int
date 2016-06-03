@@ -85,22 +85,19 @@ define(['app', 'authentication', '/app/js/services/filters.js', 'controllers/pag
 																//lifewebPrevFunded_ss:item.lifewebPrevFunded_ss[i],
 															};
 
-				//console.log('item.donationLifewebPrevFunded_ds[i]',item.donationLifewebPrevFunded_ds[i]);
-
 															if(item.donationLifewebPrevFunded_ds && item.donationLifewebPrevFunded_ds.hasOwnProperty(i))
 																match.lifewebPrevFunded_ss=item.donationLifewebPrevFunded_ds[i];
 															else
 																match.lifewebPrevFunded_ss=0;
 
-														//	if(!match.lifewebPrevFunded_ss)
-
+														if(!match.lifewebPrevFunded_ss)
 																matches.push(match);
 													}
 										}
 										}catch(err){
 
 											//console.log('problem item: ', item);
-										};
+										}
 
 									}
 
