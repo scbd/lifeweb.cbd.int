@@ -443,7 +443,7 @@ media-heading {
 
 .bs-docs-sidenav {
     /*width: 270px;*/
-    margin: 0 0 0 0; 
+    margin: 0 0 0 0;
     padding: 0;
     background-color: #fff;
     -webkit-border-radius: 6px;
@@ -689,7 +689,7 @@ section > h4
 
 section .title-divider
 {
-  margin:47px 0px 15px 0px;
+  margin:7px 0px 15px 0px;
   padding: 0px;
 }
 

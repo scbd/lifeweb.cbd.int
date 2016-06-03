@@ -1,10 +1,6 @@
 <link href="/app/libs/leaflet/dist/leaflet.css" rel="stylesheet">
 <div class="container" style="min-height:700px!important;margin-bottom:200px;">
 
-  <!-- Docs nav What even is this?
-       ================================================== -->
-
-
   <div class="row" data-ng-controller="EOIDetailCtrl">
     <script type="text/ng-template" id="modal.html">
       <div style="margin-top: 50px;">
@@ -82,23 +78,6 @@
       <section id="sum">
 
         <span ng-if="user.isAuthenticated">Edit Project: <a ng-if="user.isAuthenticated" href="https://chm.cbd.int/submit/lwProject/{{eoiID}}" target="_blank">'{{eoi.title}}'</a> </span>
-        <!-- AddThis (Social Media controls) Button BEGIN
-<div style="width: 100%;">
-
-    <div class="addthis_toolbox addthis_default_style pull-right" style="width:140px;">
-        <a class="addthis_button_preferred_1"></a>
-        <a class="addthis_button_preferred_2"></a>
-        <a class="addthis_button_preferred_3"></a>
-        <a class="addthis_button_preferred_4"></a>
-        <a class="addthis_button_compact"></a>
-        <a class="addthis_counter addthis_bubble_style"></a>
-    </div>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=xa-51bf06933bfe7125"></script>
-</div>-->
-        <!-- AddThis Button END -->
-        <!-- <div class="pull-right" style="padding-right:10px;">Currency: <a ng-click="toggleCurrency()" style="cursor:pointer;">{{currency}}</a> | </div> -->
-
-
 
         <table class="lw-tt well">
           <tr>
@@ -186,13 +165,13 @@
 
       <!--==============================================================================-->
       <section id="desc" ng-show="eoi.description">
-        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Project Description</h2>
+        <h2 class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Project Description</h2>
         <div class="lw-proj-text" ng-bind-html="eoi.description"></div>
       </section>
 
 
       <section id="obj" ng-show="eoi.objectives_info || eoi.budget">
-        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Objectives and Results</h2>
+        <h2 class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Objectives and Results</h2>
 
         <div class="lw-proj-text">{{eoi.objectives_info}}</div>
         <table class="table  table-bordered table-hover" ng-show="eoi.budget" ng-repeat="obj in eoi.budget">
@@ -337,7 +316,7 @@
 
       <!--==============================================================================-->
       <section id="benefits" ng-show="eoi.climateContribution && eoi.climateContribution.length">
-        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecosystem benefits</h2>
+        <h2 class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Ecosystem benefits</h2>
 
         <div ng-repeat="t in eoi.climateContribution">
 
@@ -349,7 +328,7 @@
 
       <!--==============================================================================-->
       <section id="targets" ng-show="eoi.aichiTargets && eoi.aichiTargets.length">
-        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Links with the Aichi Targets</h2>
+        <h2 class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Links with the Aichi Targets</h2>
 
         <div ng-repeat="t in eoi.aichiTargets">
           <h4> {{t.type.identifier}} </h4>
@@ -364,7 +343,7 @@
 
       <!--==============================================================================-->
       <section id="align" ng-show="eoi.nationalAlignment">
-        <h2 ng-show="eoi.nationalAlignment[0].comment != '' || eoi.nationalAlignment[1].comment != '' || eoi.nationalAlignment[2].comment != ''" class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Alignment with National Planning</h2>
+        <h2 ng-show="eoi.nationalAlignment[0].comment != '' || eoi.nationalAlignment[1].comment != '' || eoi.nationalAlignment[2].comment != ''" class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Alignment with National Planning</h2>
         <div ng-show="eoi.nationalAlignment[0].comment != ''">
           <h4>Alignment with National Biodiversity Strategies and Action Plans</h4>
           <div ng-bind-html="eoi.nationalAlignment[0].comment"></div>
@@ -383,13 +362,13 @@
 
       <!--==============================================================================-->
       <section id="eco" ng-show="eoi.ecologicalContribution">
-        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Ecological Contribution</h2>
+        <h2 class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Ecological Contribution</h2>
         <div ng-bind-html="eoi.ecologicalContribution"></div>
       </section>
 
       <!--==============================================================================-->
       <section id="participation" ng-show="eoi.participation || eoi.governance">
-        <h2 class="title-divider featurette-heading" style="margin:47px 0 15px 0;padding:0;">Participation and Equity</h2>
+        <h2 class="title-divider featurette-heading" style="margin:7px 0 15px 0;padding:0;">Participation and Equity</h2>
 
         <div ng-show="eoi.participation!= ''">
           <h4>Participation and Equity</h4>
