@@ -1,199 +1,204 @@
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-    <div class="container" style="min-height:800px!important;">
+<div class="container" style="min-height:800px!important;">
 
-       <!-- Docs nav
-    ================================================== -->
-     <div class="row" ng-controller="ProjectsCtrl" >
-            <div class="col-xs-3">
-              <div class="bs-sidebar affix" id="sidebar">
-                <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
-                  <li>
-                    <a style="font-size: 14px; color: #999; text-transform: uppercase;">
+  <div class="row" ng-controller="ProjectsCtrl">
+    <div class="col-xs-3">
+      <div class="bs-sidebar affix" id="sidebar">
+        <ul class="nav nav-pills nav-stacked bs-docs-sidenav ">
+          <li>
+            <a style="font-size: 14px; color: #999; text-transform: uppercase;">
 
                       Search
                       <span class="badge pull-right" style="font-size:110%;">{{(projects | filter:search.keyword | filterCountry:search.country  | filterYear:search.year_submitted | filterFundingStatus:search.is_funded  | filterFunding:search.funding_needed | filterExpired:search.expired).length}}</span>
                     </a>
-                  </li>
-                  <li>
-                    <input ng-model="search.keyword" placeholder="Keywords" class="form-control">
-                  </li>
-                  <li>
-                    <select class="form-control" ng-model="search.country" ng-options="country.code as country.name for country in ((countries | filterProjectCountry:filtered)| orderBy:'name' ) ">
-                      <option value="" selected>Country</option>
-                    </select>
-                  </li>
-                  <li>
-                    <select class="form-control" ng-model="search.is_funded" style="width: 100%; margin-top: 5px;">
-                      <option value="" selected>Funding status</option>
-                      <option value="funded">funded</option>
-                      <option value="not yet funded">not yet funded</option>
-                      <option value="partially funded">partially funded</option>
-                    </select>
-                  </li>
-         <!--         <li>
-                    <select class="form-control" ng-model="search.benefits" style="width: 100%; margin-top: 5px;">
-                      <option value="" selected>Ecosystem Benefits</option>
-                      <option value="ecoservices1">Climate Change Mitigation</option>
-                      <option value="ecoservices2">Climate Change Adapation</option>
-                      <option value="ecoservices3">Freshwater Security</option>
-                      <option value="ecoservices4">Food Security</option>
-                      <option value="ecoservices5">Human Health</option>
-                      <option value="ecoservices6">Cultural and Spiritual Access</option>
-                      <option value="ecoservices7">Income Generation</option>
-                    </select>
+          </li>
+          <li>
+            <input ng-model="search.keyword" placeholder="Keywords" class="form-control">
+          </li>
+          <li>
+            <select class="form-control" ng-model="search.country" ng-options="country.code as country.name for country in ((countries | filterProjectCountry:filtered)| orderBy:'name' ) ">
+              <option value="" selected>Country</option>
+            </select>
+          </li>
+          <li>
+            <select class="form-control" ng-model="search.is_funded" style="width: 100%; margin-top: 5px;">
+              <option value="" selected>Funding status</option>
+              <option value="funded">funded</option>
+              <option value="not yet funded">not yet funded</option>
+              <option value="partially funded">partially funded</option>
+            </select>
+          </li>
+          <li>
+            <select class="form-control" ng-model="search.year_submitted" style="width: 100%; margin-top: 5px;">
+              <option value="" selected>Year Submitted</option>
+              <option ng-repeat="year in projectYearRange" value="{{year}}">{{year}}</option>
+            </select>
+          </li>
+          <li>
+            <select class="form-control" ng-model="search.funding_needed" style="width: 100%; margin-top: 5px;">
+              <option value="" selected>Amount of Funding Needed</option>
+              <option value="0">less than $0.5M USD</option>
+              <option value="500000">$0.5M to $2.5M USD</option>
+              <option value="2500000">$2.5M to $10M USD</option>
+              <option value="10000000">more than $10M USD</option>
+            </select>
 
-                  </li>-->
-                  <li>
-                    <select class="form-control" ng-model="search.year_submitted" style="width: 100%; margin-top: 5px;">
-                      <option value="" selected>Year Submitted</option>
-                        <option ng-repeat="year in projectYearRange" value="{{year}}" >{{year}}</option>
-                    </select>
-                  </li>
-                  <li>
-                    <select class="form-control" ng-model="search.funding_needed" style="width: 100%; margin-top: 5px;">
-                        <option value=""  selected>Amount of Funding Needed</option>
-                        <option value="0">less than $0.5M USD</option>
-                        <option value="500000">$0.5M to $2.5M USD</option>
-                        <option value="2500000">$2.5M to $10M USD</option>
-                        <option value="10000000">more than $10M USD</option>
-                    </select>
+          </li>
+          <li>
+            <select class="form-control" ng-model="search.expired" style="width: 100%; margin-top: 5px;">
+              <option value="" selected>Active Projects</option>
 
-                    </li>
-                                     <li>
-                    <select class="form-control" ng-model="search.expired" style="width: 100%; margin-top: 5px;">
-                        <option value="" selected>Active Projects</option>
+              <option value="1">Expired Projects</option>
+              <option value="2">All Projects</option>
 
-                        <option value="1">Expired Projects</option>
-                        <option value="2" >All Projects</option>
+            </select>
+            <button class="btn btn-info" ng-click="goTo('/explore/')">Clear Search Filters</button>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-                    </select>
-                    <button class="btn btn-info" ng-click="goTo('/explore/')">Clear Search Filters</button>
-                    </li>
-                </ul>
-              </div>
-            </div>
+    <div class="col-xs-9">
+      <section id="projects">
+        <h2 class="title-divider featurette-heading">LifeWeb Expressions of Interest
 
-            <div class="col-xs-9">
+          <span class="small_label muted pull-right">Projects are listed in USD</span>
+        </h2>
 
+        <div class="pull-right"><a ng-click="toggleList()" style="cursor:pointer;"><i class="{{listStyle}}"></i></a></div>
 
+        <div ng-show="list==false" class="media project_well" ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterMatchYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
+          <a class="pull-left" href="/projects?id={{proj.id}}">
+            <img ng-show="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
+            <img ng-hide="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" />
+            <div class="media-type" style="color: #333">{{ proj.approved_on_date | filterDate }}</div>
+          </a>
 
-                <section id="projects" >
-                    <h2 class="title-divider featurette-heading">LifeWeb Expressions of Interest
-
-                         <span class="small_label muted pull-right">Projects are listed in USD</span></h2>
-
-                    <div class="pull-right"><a ng-click="toggleList()" style="cursor:pointer;"><i class="{{listStyle}}"></i></a></div>
-                    <!--
-                    <div class="pull-right" style="padding-right:10px;">Currency: <a ng-click="toggleCurrency()" style="cursor:pointer;">{{currency}}</a> | </div>
-                    -->
-
-
-                    <div ng-show="list==false" class="media project_well" ng-repeat="proj in filtered = (projects | filter:search.keyword | filterCountry:search.country | filterMatchYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets )| orderBy:sortTerm:orderList">
-                        <a class="pull-left" href="/projects?id={{proj.id}}" >
-                            <img ng-show="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.old_id}}.jpg" alt="" />
-                            <img ng-hide="proj.old_id" class="media-object img-rounded" style="margin-top: 8px; width: 90px;" src="https://www.cbd.int/images/lifeweb/eoi/thumbnails/{{proj.id}}.png" alt="" />
-                            <div class="media-type" style="color: #333">{{ proj.approved_on_date | filterDate  }}</div>
-                        </a>
-
-                        <div class="media-body">
-                            <span class="media-type" ng-bind-html-unsafe="proj.country"></span>
-                            <a href="/project?id={{proj.identifier}}">
+          <div class="media-body">
+            <span class="media-type" ng-bind-html-unsafe="proj.country"></span>
+            <a href="/project?id={{proj.identifier}}">
                               *<h4 class="media-heading">{{proj.title}}</h4>
                             </a>
-                            <span>{{proj.summary}}</span>
-                            <br />
+            <span>{{proj.summary}}</span>
+            <br />
 
-                            <div>
-                                <span ng-show="proj.is_funded" style="color: #F00;">FUNDED:&nbsp;</span>
-                                <span style="font-weight: bold; font-size: 13px;">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</span>
-                            </div>
+            <div>
+              <span ng-show="proj.is_funded" style="color: #F00;">FUNDED:&nbsp;</span>
+              <span style="font-weight: bold; font-size: 13px;">{{proj.funding_needed | filterCurrency:proj.currency:currency}}</span>
+            </div>
 
-                        </div>
-                    </div>
-
-
-                    <div id="List" ng-show="list==true">
-                        <style>
-                            table td {
-                                vertical-align: top;
-                                font-size:12px;
-                                line-height:14px!important;
-                            }
-
-                        </style>
-                        <!--<projecttable projects="projects | filter:search.keyword | filterCountry:search.country | filterMatchYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets" currency="currency"></projecttable>-->
-
-                        <table class="table table-striped  table-hover">
-                            <tr>
-                                <th></th>
-                                <th><span style="cursor:pointer;" ng-click="sortTable('title_s')">Title
-                                    <i ng-show="sortTerm=='title_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('country_ss')">Country(s)
-                                    <i ng-show="sortTerm=='country_ss'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-                                    </span></th>
-                                    <th><span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date Submitted
-                                        <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-                                        </span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost
-                                    <i ng-show="sortTerm=='totalCost'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-                                    </span></th>
-                                <th><span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
-                                    <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-                                    </span></th>
-
-                                <th><span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
-                                    <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
-                                    </span></th>
-                                <th ng-if="user.roles.indexOf('LifewebAdmin') != -1">
-                                    Admin
-                                </th>
-                            </tr>
-                            <!-- <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country | filterYear:search.year_submitted | filterEcoservices:search.benefits | filterFunding:search.funding_needed | filterFundingStatus:search.is_funded | filterTargets:search.targets |filterExpired:search.expired | orderBy:sortTerm:orderList) | page: pageNumber:itemsPerPage) track by $index"> -->
-                            <tr ng:class="{'funded':'error', false:''}[match.status]"  ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country  | filterYear:search.year_submitted | filterFundingStatus:search.is_funded  | filterFunding:search.funding_needed | filterExpired:search.expired  | orderBy:sortTerm:orderList ) | page: pageNumber:itemsPerPage) track by $index">
-                                <td style="width: 70px;">
-                                    <a href="/project?id={{match.identifier_s}}"><img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" /></a>
-                                </td>
-                                <td style="font-weight:bold;"> <a ng-href="/project?id={{match.identifier_s}}"><span class="media-heading">{{match.title_s}}</span></a></td>
-                                <td nowrap style="font-weight:bold; text-transform:uppercase;" >{{ match.startDate_s | date:'dd MMM yyyy':'UTC'  }}</td>
-
-                                <td><span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}} <br></span></td>
-                                <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
-                                <td nowrap>  {{match.funding_needed | filterCurrency:'USD':currency}} </td>
+          </div>
+        </div>
 
 
-                                <td >
-                                  <span class="label label-success" ng-if="!match.expired_b">Project Active</span>
-                                  <span class="label label-danger" ng-if="match.expired_b">Project Expired</span>
+        <div id="List" ng-show="list==true">
+          <style>
+            table td {
+              vertical-align: top;
+              font-size: 12px;
+              line-height: 14px!important;
+            }
+          </style>
 
-                                <br><br><br>
-                                <span   ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'partially funded':'label label-info'}[match.funding_status]">
-                                    <span ng-switch="match.funding_status">
-                                        <span ng-switch-when="not yet funded">Not Yet Funded</span>
-                                        <span ng-switch-when="funded">Fully Funded</span>
-                                        <span ng-switch-default>Partially Funded</span>
-                                    </span>
+          <table class="table table-striped  table-hover">
+            <tr>
+              <th></th>
+              <th>
+                <span style="cursor:pointer;" ng-click="sortTable('title_s')">Title
+                  <i ng-show="sortTerm=='title_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i></span>
+              </th>
+              <th>
+                <span style="cursor:pointer" ng-click="sortTable('country_ss')">Country(s)
+                  <i ng-show="sortTerm=='country_ss'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                </span>
+              </th>
+              <th>
+                <span style="cursor:pointer" ng-click="sortTable('startDate_s')">Date Submitted
+                  <i ng-show="sortTerm=='startDate_s'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                </span>
+              </th>
+              <th>
+                <span style="cursor:pointer" ng-click="sortTable('totalCost')">Total Cost
+                  <i ng-show="sortTerm=='totalCost'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                </span>
+              </th>
+              <th>
+                <span style="cursor:pointer" ng-click="sortTable('funding_needed')">Funding Needed
+                  <i ng-show="sortTerm=='funding_needed'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                </span>
+              </th>
 
-                                </span>
-                                    <!-- <div ng-repeat="funds in match.donatioFunding_ds" style="white-space:nowrap;padding-top:5px;">
-                                            <a href="/donors?id={{match.donor_ss[$index]}}">{{funds |  filterCurrency:'USD':currency}}</a>
-                                    </div> -->
-                                </td>
-                                <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
-                                    <a ng-href="https://chm.cbd.int/submit/lwProject/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td colspan="2" nowrap><button type="button" ng-click="firstPage()" class="btn btn-default" ng-show="canDecPage()">First</button>&nbsp;<button type="button" ng-click="decPage()" class="btn btn-default" ng-show="canDecPage()">Prev {{itemsPerPage}} Projects</button></td>
-                                <td colspan="2">&nbsp;</td>
-                                <td colspan="2">&nbsp;</td>
-                                <td colspan="2" nowrap><button type="button" ng-click="incPage()" class="btn btn-default" ng-show="canIncPage()" >Next {{itemsPerPage}} Projects</button>&nbsp;<button type="button" ng-click="lastPage()" class="btn btn-default" ng-show="canIncPage()">Last</button></td>
-                            </tr>
-                        </table>
+              <th>
+                <span style="cursor:pointer" ng-click="sortTable('funding_status')">Status
+                  <i ng-show="sortTerm=='funding_status'" ng:class="{true:'down-caret', false:'up-caret'}[orderList]"></i>
+                </span>
+              </th>
+              <th ng-if="user.roles.indexOf('LifewebAdmin') != -1">
+                Admin
+              </th>
+            </tr>
+            <tr ng:class="{'funded':'error', false:''}[match.status]" ng-repeat="match in (projectsPage = (filtered = projects | filter:search.keyword | filterCountry:search.country  | filterYear:search.year_submitted | filterFundingStatus:search.is_funded  | filterFunding:search.funding_needed | filterExpired:search.expired  | orderBy:sortTerm:orderList ) | page: pageNumber:itemsPerPage) track by $index">
+              <td style="width: 70px;">
+                <a href="/project?id={{match.identifier_s}}">
+                  <img class="media-object img-rounded" style="max-width: 70px;max-height:70px;" ng-src="{{match.thumbnail_s | thumbnail}}" alt="" />
+                </a>
+              </td>
+              <td style="font-weight:bold;">
+                <a ng-href="/project?id={{match.identifier_s}}">
+                  <span class="media-heading">{{match.title_s}}</span>
+                </a>
+              </td>
+              <td nowrap style="font-weight:bold; text-transform:uppercase;">{{ match.startDate_s | date:'dd MMM yyyy':'UTC' }}</td>
+
+              <td>
+                <span style="font-weight:bold;" ng-repeat="country in match.countries"> {{country|term}}
+                  <br>
+                </span>
+              </td>
+              <td nowrap> {{match.totalCost | filterCurrency:'USD':currency}} </td>
+              <td nowrap> {{match.funding_needed | filterCurrency:'USD':currency}} </td>
 
 
-                    </div>
-                </section>
+              <td>
+                <span class="label label-success" ng-if="!match.expired_b">Project Active</span>
+                <span class="label label-danger" ng-if="match.expired_b">Project Expired</span>
 
-            </div><!-- end span 9-->
-    </div><!-- end row-->
-</div><!-- end container -->
+                <br>
+                <br>
+                <br>
+                <span ng:class="{'funded':'label label-success', 'not yet funded':'label label-danger', 'partially funded':'label label-info'}[match.funding_status]">
+                  <span ng-switch="match.funding_status">
+                    <span ng-switch-when="not yet funded">Not Yet Funded</span>
+                    <span ng-switch-when="funded">Fully Funded</span>
+                    <span ng-switch-default>Partially Funded</span>
+                  </span>
+
+                </span>
+              </td>
+              <td ng-if="user.roles.indexOf('LifewebAdmin') != -1">
+                <a ng-href="https://chm.cbd.int/submit/lwProject/{{match.identifier_s}}" target="_blank" style="font-size: 16pt; font-weight: bold;">EDIT</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" nowrap>
+                <button type="button" ng-click="firstPage()" class="btn btn-default" ng-show="canDecPage()">First</button>&nbsp;
+                <button type="button" ng-click="decPage()" class="btn btn-default" ng-show="canDecPage()">Prev {{itemsPerPage}} Projects</button>
+              </td>
+              <td colspan="2">&nbsp;</td>
+              <td colspan="2">&nbsp;</td>
+              <td colspan="2" nowrap>
+                <button type="button" ng-click="incPage()" class="btn btn-default" ng-show="canIncPage()">Next {{itemsPerPage}} Projects</button>&nbsp;
+                <button type="button" ng-click="lastPage()" class="btn btn-default" ng-show="canIncPage()">Last</button>
+              </td>
+            </tr>
+          </table>
+
+
+        </div>
+      </section>
+
+    </div>
+    <!-- end span 9-->
+  </div>
+  <!-- end row-->
+</div>
+<!-- end container -->
