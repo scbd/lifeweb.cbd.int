@@ -293,12 +293,12 @@
               <td class="lw-proj-text" style="border-left:1px solid #ccc;">{{eoi.total_cost | filterCurrency:eoi.currency:currency}}</td>
               <td class="lw-proj-text" style="border-left:1px solid #ccc;"></td>
             </tr>
-            <tr class="success" ng-hide="{{ ((eoi.total_cost) >= ((eoi.donations | filterTotalSecured)+(eoi.donations | filterTotalExpected)))}}">
-              <td class="lw-proj-text" align="right"><strong>PROJECT FULLY FUNDED</strong></td>
+            <tr class="success" ng-hide="((eoi.total_cost) - (eoi.donations | filterTotalSecured))">
+              <td class="lw-proj-text" align="right"><strong>PROJECT FULLY FUNDED </strong></td>
               <td class="lw-proj-text text-center" colspan="2" style="border-left:1px solid #ccc;">
-                {{ ((eoi.total_cost) - (eoi.donations | filterTotalSecured) + (eoi.donations | filterTotalExpected)) | filterCurrency:f.currency:currency}}</td>
+                {{ ((eoi.donations | filterTotalSecured) + (eoi.donations | filterTotalExpected)) | filterCurrency:f.currency:currency}}</td>
             </tr>
-            <tr ng-hide="{{ !((eoi.total_cost) - (eoi.donations | filterTotalSecured))}}">
+            <tr ng-hide="!((eoi.total_cost) - (eoi.donations | filterTotalSecured))">
               <td class="lw-proj-text" style="background-color:#F5A2A2;" align="right"><strong>FUNDING NEEDED</strong></td>
               <td class="lw-proj-text text-center" colspan="2" style="background-color:#F5A2A2;border-left:1px solid #ccc;">
                 {{ ((eoi.total_cost) - (eoi.donations | filterTotalSecured) + (eoi.donations | filterTotalExpected)) | filterCurrency:f.currency:currency}}</td>
