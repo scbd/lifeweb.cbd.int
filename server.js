@@ -7,39 +7,40 @@ var httpProxy = require('http-proxy');
 
 // Create server
 
-var app = express();
+var app = require('express')();
 var server = http.createServer(app);
-var oneDay = 24*60*60*1000;
+var oneDay = 24 * 60 * 60 * 1000;
 
-app.configure(function() {
-    app.use(express.favicon(__dirname + '/app/templates/favicon.png'));
-    app.set('port', process.env.PORT || 2020, '127.0.0.1');
 
-    app.use(express.logger('dev'));
-    app.use(express.compress());
+app.set('port', process.env.PORT || 2020, '127.0.0.1');
 
-    app.use('/app', express.static(__dirname + '/app'));
-    app.use('/afc_template', express.static(__dirname + '/app/libs/angular_form_controls/afc_template'));
-});
+app.use('/app', express.static(__dirname + '/app'));
+app.use('/afc_template', express.static(__dirname + '/app/libs/angular_form_controls/afc_template'));
+
 
 // Configure routes
 
 var proxy = httpProxy.createProxyServer({});
 
-app.get   ('/app/*'   , function(req, res) { res.send('404', 404); } );
-app.get   ('/public/*', function(req, res) { res.send('404', 404); } );
+app.get('/app/*', function(req, res) {
+    res.send('404', 404);
+});
+app.get('/public/*', function(req, res) {
+    res.send('404', 404);
+});
 
-app.get   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-app.put   ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-app.post  ('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-app.delete('/api/*', function(req, res) { proxy.web(req, res, { target: 'https://api.cbd.int', secure: false } ); } );
-
+app.all('/api/*', function(req, res) {
+    proxy.web(req, res, {
+        target: 'http://localhost:8000',
+        changeOrigin: true
+    });
+});
 // Configure index.html
 
 app.get('/*', function(req, res) {
-	fs.readFile(__dirname + '/app/templates/template.html', 'utf8', function (error, text) {
-		res.send(text);
-	});
+    fs.readFile(__dirname + '/app/templates/template.html', 'utf8', function(error, text) {
+        res.send(text);
+    });
 });
 
 // Start server
