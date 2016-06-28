@@ -1,0 +1,24 @@
+machine:
+  services:
+    - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t lifeweb-cbd-int --build-arg COMMIT=$CIRCLE_SHA1 .
+
+test:
+  override:
+    - docker run -d -p 8000:8000 lifeweb-cbd-int; sleep 10
+    - curl --retry 10 --retry-delay 5 -v http://localhost:8000
+
+deployment:
+  hub:
+    tag: /^v[0-9]+(\.[0-9]+)*$/
+    owner: scbd
+    commands:
+      - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+      - docker tag lifeweb-cbd-int scbd/lifeweb-cbd-int:${CIRCLE_TAG//v/}
+      - docker tag lifeweb-cbd-int scbd/lifeweb-cbd-int:latest
+      - docker push scbd/lifeweb-cbd-int:${CIRCLE_TAG//v/}
+      - docker push scbd/lifeweb-cbd-int:latest
